@@ -34,7 +34,7 @@
       <code value="US"/>
     </coding>
   </jurisdiction>
-  <packageId value="hl7.be.core.ig"/>
+  <packageId value="www.fhir.us.be.base.ig"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.1.0"/>
   <definition>

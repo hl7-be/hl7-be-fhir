@@ -39,7 +39,7 @@
       "code" : "US"
     }]
   }],
-  "packageId" : "hl7.be.core.ig",
+  "packageId" : "www.fhir.us.be.base.ig",
   "license" : "CC0-1.0",
   "fhirVersion" : ["4.1.0"],
   "definition" : {
