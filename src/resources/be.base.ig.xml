@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="be.base.ig"/>
-  <url value="https://www.ehealth.fgov.be/standards/fhir/be"/>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/be.base.ig"/>
   <version value="0"/>
   <name value="Base IG"/>
   <title value="Base IG"/>
@@ -15,7 +15,7 @@
       <code value="US"/>
     </coding>
   </jurisdiction>
-  <packageId value="ihe.base.ig"/>
+  <packageId value="be.base.ig"/>
   <definition>
     <grouping>
       <name value="BECore"/>
