@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../src-generated/schemas/fhir-single.xsd">
+  <id value="be.base.ig"/>
+  <url value="http://hl7.org/fhir/uv/sdc/ImplementationGuide/hl7.fhir.uv.sdc"/>
+  <name value="BaseIG"/>
+  <title value="Belgium Base IG"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <publisher value="HL7 Belgium"/>
+  <contact>
+    <telecom>
+      <system value="other"/>
+      <value value="http://hl7.org/Special/committees/fiwg"/>
+    </telecom>
+  </contact>
+  <description value="The Core Belgian Profiles provide the essential and common requirement for FHIR implementations in Belgium"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <packageId value="hl7.be.core"/>
+  <fhirVersion value="4.0.0"/>
+  <definition>
+
+    <grouping id="logicalmodels">
+      <name value="Logical Models"/>
+      <description value="The common Belgian Logical Models - these can be mapped to KMEHR and FHIR&#13;&#10;&#13;&#10;"/>
+    </grouping>
+    <grouping id="core">
+      <name value="Core Profiles"/>
+      <description value="Core resources to be reused in other resources&#13;&#10;&#13;&#10;"/>
+    </grouping>
+    <grouping id="communication">
+      <name value="Communication"/>
+      <description value="Communication, also known as Journal entry&#13;&#10;&#13;&#10;"/>
+    </grouping>
+    <grouping id="medication">
+      <name value="Medication"/>
+      <description value="Resource profiles defined for medication&#13;&#10;&#13;&#10;"/>
+    </grouping>
+    <grouping id="documents">
+      <name value="Documents"/>
+      <description value="Documents curated extracts of information - they represent a set of information for a given context at a given time.&#13;&#10;&#13;&#10;"/>
+    </grouping>
+    <grouping id="terminology">
+      <name value="Terminology"/>
+      <description value="Terminology resources - ValueSets and CodeSystems&#13;&#10;&#13;&#10;"/>
+    </grouping>
+
+    <resource>
+      <reference>
+        <reference value="ValueSet/be-diarytopic"/>
+      </reference>
+      <fhirVersion value="4.0.0"/>
+      <name value="ValueSet - CommunicationTopic"/>
+      <description value="The values for communication topic"/>
+      <groupingId value="terminology"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/be-contactperson"/>
+      </reference>
+      <fhirVersion value="4.0.0"/>
+      <name value="ValueSet - Contact Person"/>
+      <description value="The values for Contact Person type"/>
+      <groupingId value="terminology"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/be-causativeagent"/>
+      </reference>
+      <fhirVersion value="4.0.0"/>
+      <name value="ValueSet - Contact Person"/>
+      <description value="The list of causative agents"/>
+      <groupingId value="terminology"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/be-riskmanifestation"/>
+      </reference>
+      <fhirVersion value="4.0.0"/>
+      <name value="ValueSet - Risk Manifestation"/>
+      <description value="The values for Risk Manifestation"/>
+      <groupingId value="terminology"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/lm-be-communication"/>
+      </reference>
+      <fhirVersion value="4.0.0"/>
+      <name value="Logical Model Communication"/>
+      <description value="Communication / Diary Note logical model"/>
+      <groupingId value="logicalmodels"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/be-communication"/>
+      </reference>
+      <fhirVersion value="4.0.0"/>
+      <name value="Communication Profile"/>
+      <description value="Communication / Diary Note profile"/>
+      <groupingId value="communication"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/be-careplan"/>
+      </reference>
+      <fhirVersion value="4.0.0"/>
+      <name value="Logical Model Care Plan"/>
+      <description value="Care Plan logical model"/>
+      <groupingId value="logicalmodels"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/be-patient"/>
+      </reference>
+      <fhirVersion value="4.0.0"/>
+      <name value="BE Patient profile"/>
+      <description value="Core Belgian Patient profile"/>
+      <groupingId value="core"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/be-practitioner"/>
+      </reference>
+      <fhirVersion value="4.0.0"/>
+      <name value="BE Practitioner profile"/>
+      <description value="Core Belgian Practitioner profile"/>
+      <groupingId value="core"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/be-civilstate"/>
+      </reference>
+      <fhirVersion value="4.0.0"/>
+      <name value="ValueSet - Civil State"/>
+      <description value="The values for Civil State"/>
+      <groupingId value="terminology"/>
+    </resource>
+
+<!--
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/be-allergyintolerance"/>
+      </reference>
+      <fhirVersion value="4.0.0"/>
+      <name value="Logical Model Allergy / Intolerance"/>
+      <description value="Allergy / Intolerance logical model"/>
+      <groupingId value="logicalmodels"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/deviceimplantrecord"/>
+      </reference>
+      <fhirVersion value="4.0.0"/>
+      <name value="Device Implantation Record"/>
+      <description value="Device Implantation / explantation record"/>
+      <groupingId value="logicalmodels"/>
+    </resource>
+
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/be-deviceimplant"/>
+      </reference>
+      <fhirVersion value="4.0.0"/>
+      <name value="Device Implantation Record"/>
+      <description value="Device Implantation / explantation record"/>
+      <groupingId value="documents"/>
+    </resource>
+-->
+
+
+
+    <page>
+      <nameUrl value="toc.html"/>
+      <title value="Table of Contents"/>
+      <generation value="html"/>
+      <page>
+        <nameUrl value="index.html"/>
+        <title value="BE Core Home Page"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="artifacts.html"/>
+        <title value="Artifact List"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="downloads.html"/>
+        <title value="Useful Downloads"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="changes.html"/>
+        <title value="IG Change History"/>
+        <generation value="html"/>
+      </page>
+    </page>
+  </definition>
+</ImplementationGuide>

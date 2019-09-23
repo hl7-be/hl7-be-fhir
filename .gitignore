@@ -1,12 +1,5 @@
+/input/images/Thumbs.db
+/input-cache/org.hl7.fhir.publisher.jar
+temp
+template
 output
-/temp
-*.dropbox
-/src/resources/desktop.ini
-src/.DS_Store
-.DS_Store
-tempSTU3
-BUILD\.bat
-framework/pandoc/
-src/temp/
-src-generated/org\.hl7\.fhir\.publisher\.jar
-src-generated/org\.hl7\.fhir\.igpublisher\.jar

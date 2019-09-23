@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="deviceimplantationrecord" />
+  <url value="http://example.org/fhir/StructureDefinition/DeviceImplantationRecord" />
+  <name value="DeviceImplantationRecord" />
+  <status value="draft" />
+  <fhirVersion value="4.0.0" />
+  <kind value="logical" />
+  <abstract value="false" />
+  <type value="http://example.org/fhir/StructureDefinition/DeviceImplantationRecord" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element" />
+  <derivation value="specialization" />
+  <snapshot>
+    <element id="DeviceImplantationRecord">
+      <path value="DeviceImplantationRecord" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Element" />
+      </type>
+    </element>
+    <element id="DeviceImplantationRecord.patient">
+      <path value="DeviceImplantationRecord.patient" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="DeviceImplantationRecord.device">
+      <path value="DeviceImplantationRecord.device" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="DeviceImplantationRecord.device.deviceComponent">
+      <path value="DeviceImplantationRecord.device.deviceComponent" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device" />
+      </type>
+    </element>
+    <element id="DeviceImplantationRecord.device.udi">
+      <path value="DeviceImplantationRecord.device.udi" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="id" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/id" />
+      </type>
+    </element>
+    <element id="DeviceImplantationRecord.device.lotNumber">
+      <path value="DeviceImplantationRecord.device.lotNumber" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="DeviceImplantationRecord.device.serial">
+      <path value="DeviceImplantationRecord.device.serial" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Identifier" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Identifier" />
+      </type>
+    </element>
+    <element id="DeviceImplantationRecord.procedure">
+      <path value="DeviceImplantationRecord.procedure" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="DeviceImplantationRecord.procedure.performer">
+      <path value="DeviceImplantationRecord.procedure.performer" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="DeviceImplantationRecord.delivery">
+      <path value="DeviceImplantationRecord.delivery" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="DeviceImplantationRecord.delivery.dispenser">
+      <path value="DeviceImplantationRecord.delivery.dispenser" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+      </type>
+    </element>
+    <element id="DeviceImplantationRecord.delivery.dispenseDate">
+      <path value="DeviceImplantationRecord.delivery.dispenseDate" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="dateTime" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/dateTime" />
+      </type>
+    </element>
+    <element id="DeviceImplantationRecord.request">
+      <path value="DeviceImplantationRecord.request" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+  </snapshot>
+</StructureDefinition>

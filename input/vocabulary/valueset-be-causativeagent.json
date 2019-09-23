@@ -1,0 +1,2381 @@
+{
+    "resourceType":"ValueSet",
+    "id":"be-causativeagent",
+    "url":"https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-causativeagent",
+    "version":"1.0.0",
+    "name":"BeCausativeAgent",
+    "status":"draft",
+    "publisher":"eHealth Platform",
+    "contact": [
+        {
+            "name":"eHealth Platform",
+            "telecom": [
+                {
+                    "system":"url",
+                    "value":"https://www.ehealth.fgov.be/standards/kmehr/en"
+                }
+            ]
+        }
+    ],
+    "description":"Codes as communicated by NIHDI differentiating types of causative agent. This valueset supports the Belgian federal FHIR profiling effort.",
+    "compose":{
+        "include": [
+            {
+                "system":"http://snomed.info/sct",
+                "concept": [
+                    {
+                        "code":"373270004",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"penicillin"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"la pénicilline"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"penicilline"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"260170007",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Potato"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"pomme de terre"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Aardappel"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"102261002",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"strawberry"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"fraise"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Aardbei"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"52454007",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Albumin"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"albumine"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Albumine"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"391737006",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Almond oil"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"huile d'amande"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Amandelolie"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"256311001",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Apple"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"pomme"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Appel"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"226491003",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Apple juice"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"jus de pomme"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Appelsap"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"412069004",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Flavouring agent"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"aromatisants"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Aroma’s"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"11526002",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"aspartame"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"aspartame"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"aspartaam"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"256307007",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Banana"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"banane"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Banaan"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"227344001",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Broad bean"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"fève"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Boon"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"80237000",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Cocoa butter"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"beurre de cacao"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"cacao boter"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"227252000",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Mushroom"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"champignon"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"champignon"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"102262009",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"chocolate"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"chocolat"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Chocolade"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"59351004",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"citrate"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"citrate"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"citraat"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"102259006",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"citrus fruit"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"agrume"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Citrus"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"116273005",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"dietary substance"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"substance de régime"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"dieetproducten"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"303300008",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"egg protein"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"protéine d'œuf"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Ei eiwit"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"102263004",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"eggs"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"œufs"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"eieren"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"256443002",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"blanc d'œuf"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"blanc d'œuf"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Eiwit"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"12510000",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"eucalyptus oil"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"huile d'eucalyptus"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Eucalyptus olie"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"227444000",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Raspberries"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"framboises"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Framboos"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"72511004",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Fruit"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"fruit"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Fruit"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"278840001",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Shrimp product"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"crevette"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Garnalen"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"227313005",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Pulse vegetables"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"légumes secs"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Gedroogde groenten"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"28230009",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Poultry"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"volaille"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Gevogelte"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"430503006",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"glutamate"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"glutamate"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Glutamaat"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"89811004",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"gluten"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"gluten"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Gluten"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"23182003",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"cereal"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"céréale"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Granen"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"418504009",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"oats"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"avoine"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Haver"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"256352005",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Walnut - nut"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"noisette"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Hazelnoot"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"102264005",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"cheese"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"fromage"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Kaas"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"227388008",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Cinnamon"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"canelle"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Kaneel"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"256310000",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Cherry"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"cerise"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Kers"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"260176001",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Kiwi fruit"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"kiwi"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Kiwi"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"264295007",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Cow's milk protein"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"protéine de lait de vache"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"koe melkeiwit"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"230031005",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Lobster"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"homard"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Kreeft"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"227374009",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Herbs and spices"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"herbes et épices"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"kruiden en specerijen"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"47703008",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Lactose"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"lactose"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Lactose"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"59533004",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"food additive"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"additif alimentaire"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"levensmiddelenadditief"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"260172004",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Garlic"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"ail"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Look"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"412357001",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"corn"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"mais"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Maïs"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"226760005",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Dairy foods"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"produits laitiers"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Melkproducten"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"260177005",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Melon"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"melon"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Meloen"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"51905005",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Mustard"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"moutarde"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Mosterd"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"13577000",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Nut"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"noix"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Noten"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"230034002",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Nuts and seeds"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"noix et graines"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Noten en granen"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"227161006",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Octopus"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"poulpe"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Octopus"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"230032003",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Oyster"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"huitre"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Oester"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"256309005",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Peach"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"pêche"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Perzik"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"256349002",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Peanut"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"cacahuète"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Pinda"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"762952008",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"peanuts"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"arachides"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"pindanoten"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"67324005",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Rice"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"riz"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Rijst"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"412068007",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Rye"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"seigle"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Rogge"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"226915003",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Red meat"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"viande rouge"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Rood vlees"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"28647000",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Meat"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"viande rouge"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Rood vlees"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"227146005",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Shellfish"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"coquillages et crustacés"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Schaaldieren"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"256326004",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Celery"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"céleri"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Selder"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"260167008",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Sesame seed"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"graine de sésame"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Sesamzaad"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"256355007",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Soya bean"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"soja"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"soja"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"7791007",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Soy protein"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"protéine de soja"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"soja-eiwit"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"227163009",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Squid - dietary"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"calamar"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Squid"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"412071004",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Wheat"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"blé"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Tarwe"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"256327008",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Tomato"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"tomate"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Tomaat"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"227144008",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Tuna fish"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"thon"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Tonijn"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"256323007",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Onion"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"oignon"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Ui"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"226934003",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Pork"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"porc"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Varkensvlees"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"227425007",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Figs"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"figue"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Vijgen"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"227037002",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Fish"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"poisson"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Vis"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"406774009",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Fish derived omega 3 fatty acid"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"acides gras oméga 3 issus du poisson"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Vis afgeleid omega-3 vetzuur"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"226359003",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Fish oil - dietary"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"huile de poisson"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Visolie"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"419420009",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"watermelon"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"pastèque"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Watermeloen"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"256319004",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Carrot"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"carotte"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Wortel"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"264337003",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Seed"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"graines"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Zaden"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"44027008",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Seafood"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"fruits de mer"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Zeevruchten"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"412160003",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Suture allergen"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"Allergène lié à la suture"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Aan hechtdraad gerelateerde allergeen"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"12503006",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Aluminium"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"Aluminium et composés d'aluminium"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Aluminium en aluminium verbindingen"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"256303006",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Ragweed pollen"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"Pollen d'ambroisie"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Ambrosia stuifmeel"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"386936005",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Azelaic acid"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"Acide azélaïque"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Azelaïnezuur"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"91598004",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Benzoyl peroxide"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"Peroxyde de benzoyle"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Benzoylperoxide"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"59545008",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Pesticide"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"Pesticide"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Bestrijdingsmiddelen"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"288328004",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Bee venom"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"Venins d'abeille"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Bijengif"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"255640000",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Biocide"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"Biocide"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Biocide"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"256305004",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Tree resin"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"Résine d'arbre"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Boom hars"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"412061001",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Blueberries"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"Bleuets"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Bosbessen"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"9021002",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Carbaryl"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"Carbaryl"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Carbaryl"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"311984009",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Chemical or external agent"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"Produit chimique ou externe"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Chemicaliën of externe"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"11894001",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Clostridium botulinum toxin"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"Toxine du Clostridium botulinum"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Clostridium Botulinetoxine"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"406473004",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Contact allergen"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"Allergène de contact"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Contact allergeen"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"289122001",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Cosmetic material"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"Cosmétique"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Cosmetica"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"289949002",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Cypress pollen"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"Pollen de cyprès"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Cypress stuifmeel"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"406472009",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Animal protein and epidermal allergen"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"Protéine animale et allergène épidermique"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Dierlijke eiwitten en epidermale allergeen"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"276310004",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Animal hair"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"Poil animal"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Dierlijke haren"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"264287008",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Animal dander"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"Squame animale"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Dierlijke huidschilfers"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"396031000",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Dimeticone"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"Diméticone"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Dimeticon"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"387293003",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Dithranol"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"Dithranol"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Ditranol"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"260156007",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Mouse urine proteins"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"Protéines d’urine de souris"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Eiwit van muizenurine"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"256419000",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Mouse epithelium"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"Épithélium de souris"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Epitheel van muis"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"115589000",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Ethanolamine"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"éthanolamine"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Ethanolamine"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"418266005",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Yellow paraffin"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"Paraffine jaune"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Gele paraffine"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"410853002",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Perfluorochemical"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"Perfluorés"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Geperfluoreerde"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"2309006",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Gold"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"Or"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Goud"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"412145001",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Hair dye"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"Coloration pour cheveux"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Haarkleurmiddelen"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"260154005",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Dog dander"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"Squame de chien"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Hond huidschilfers"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"14402002",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Wood"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"Bois"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Hout"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"128488006",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"House dust"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"Poussière ménagère"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Huisstof"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"406466009",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"House dust allergen"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"Allergène de poussière de maison"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Huisstof allergeen"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"3829006",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Iron"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"Fer"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Ijzer"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"406470001",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Insect allergen"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"Allergène d’insecte"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Insect allergeen"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"280939008",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Insect venom"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"Venin d’insecte"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Insectengif"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"260118006",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Wall pellitory pollen"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"Pollen de pariétaire"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Judaica stuifmeel"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"260152009",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Cat dander"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"Squame de chat"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Kat huidschilfers"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"89889006",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Cotton fibre"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"Fibre de coton"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Katoenen vezels"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"61789006",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Dye"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"Colorant"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Kleurstof"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"260153004",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Cow dander"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"Squame de vache"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Koe huidschilfers"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"412153009",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Rabbit dander"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"Squame de lapin"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Konijn huidschilfers"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"66925006",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Copper"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"Cuivre"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Koper"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"395922006",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Wool alcohols"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"Lanoline"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Lanoline"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"42416001",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Lanolin"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"Lanoline"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Lanoline"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"57126000",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Glue"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"Colle"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Lijm"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"261243003",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Brass"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"Laiton"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Messing"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"420111002",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Contact metal agent"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"Métal"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Metaal"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"2799001",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Methylbenzethonium chloride"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"Chlorure de méthylbenzéthonium"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Methylbenzethonium chloride"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"33396006",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Nickel"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"Nickel"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"nikkel"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"260126003",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Olive pollen"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"Pollen d’olivier"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Olijfboom stuifmeel"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"419604006",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Weed pollen"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"Pollen de mauvaise herbe"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Onkruid stuifmeel"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"119417004",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Organophosphate insecticide"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"Organophosphate (insecticide)"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Organofosforverbinding (insecticide)"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"256417003",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Horse dander"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"Squame de cheval"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Paard huidschilfers"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"255667006",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Paraffin"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"parffine"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Paraffine"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"418785009",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Perfume"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"Parfum"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Parfum"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"31006001",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Kingdom Plantae"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"Plante"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Planten"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"387398009",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Podophyllum resin"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"Podophylline"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Podophyllin"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"256259004",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Pollen"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"Pollen"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Pollen"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"83619009",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Polyvinyl alcohol"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"Alcool de polyvinyle"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Polyvinylalcohol"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"311846002",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Pyrethroid insecticide"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"Pyréthrinoïde insecticide"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Pyrethroïde insecticide"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"43230003",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Rubber"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"Caoutchouc"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Rubber"
+                            }
+                        ]
+                    },
+                    {
+                        "code":"116549003",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Organochlorine pesticide"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"Composé organochloré (pesticide)"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Samengestelde organochlore (bestrijdingsmiddelen)"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "system":"http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+                "concept": [
+                    {
+                        "code":"OTH",
+                        "designation": [
+                            {
+                                "language":"en",
+                                "value":"Other"
+                            },
+                            {
+                                "language":"nl-BE",
+                                "value":"Andere"
+                            },
+                            {
+                                "language":"fr-BE",
+                                "value":"Autre"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}
