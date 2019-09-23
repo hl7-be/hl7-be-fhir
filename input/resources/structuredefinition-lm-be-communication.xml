@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="lm-be-communication" />
+  <text>
+    <status value="additional" />
+    <div xmlns="http://www.w3.org/1999/xhtml">This Logical Model represents the core attributes of a Diary Note or Communication used in Belgium.</div>
+  </text>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/logicalmodel-be-communication" />
+  <name value="BECommunicationLogicalModel" />
+  <status value="draft" />
+  <description value="The common model for Communication (messages or diary notes) in Belgium exchange." />
+  <jurisdiction>
+    <text value="Belgium" />
+  </jurisdiction>
+  <purpose value="This logical model can be instantiated in the technical standards that are used in Belgium - KMEHR and FHIR. This ensures semantic compatibility between systems and standards." />
+  <fhirVersion value="4.0.0" />
+  <kind value="logical" />
+  <abstract value="false" />
+  <type value="http://example.org/fhir/StructureDefinition/BECommunication" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element" />
+  <derivation value="specialization" />
+  <snapshot>
+    <element id="BECommunication">
+      <path value="BECommunication" />
+      <short value="Communication" />
+      <definition value="The Communication object represents a message sent or note entered in a diary, in the context of care." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Element" />
+      </type>
+    </element>
+    <element id="BECommunication.identifier">
+      <path value="BECommunication.identifier" />
+      <short value="Identifier for this communication" />
+      <definition value="A unique identifier for this communication." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Identifier" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Identifier" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="BECommunication.status">
+      <path value="BECommunication.status" />
+      <short value="Status of the communication" />
+      <definition value="The status of this communication entry." />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="code" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/code" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="BECommunication.validated">
+      <path value="BECommunication.validated" />
+      <short value="Validation status" />
+      <definition value="The validation status of the communication - whether this note is validated or not." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="code" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/code" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="BECommunication.dateTimeEntered">
+      <path value="BECommunication.dateTimeEntered" />
+      <short value="Time and Date of Communication entered" />
+      <definition value="Date or timestamp of entering the communication in its current status" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="dateTime" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/dateTime" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="BECommunication.basedOn">
+      <path value="BECommunication.basedOn" />
+      <short value="The trigger for this communication" />
+      <definition value="What is the trigger data element for this communication - whether it is an updated medication, or an encounter..." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Reference" />
+      </type>
+    </element>
+    <element id="BECommunication.inReponseTo">
+      <path value="BECommunication.inReponseTo" />
+      <short value="Communication for which this communication is a response" />
+      <definition value="The message that this communication is responding to. Similar to a &quot;quote&quot; in chats, or &quot;forward/reply&quot; in mail." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="BeCommunication" />
+      </type>
+    </element>
+    <element id="BECommunication.sender">
+      <path value="BECommunication.sender" />
+      <short value="Sender of the communication" />
+      <definition value="Sender of the communication" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Person" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="BECommunication.recipient">
+      <path value="BECommunication.recipient" />
+      <short value="Recipient(s) of the communication" />
+      <definition value="The addressees of this communication, the ones to whom the message is destined." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Person" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole" />
+      </type>
+    </element>
+    <element id="BECommunication.topic">
+      <path value="BECommunication.topic" />
+      <short value="Topic of the communication" />
+      <definition value="The topic of this communication. Should be coded e.g. &quot;medication&quot;, or &quot;vaccines&quot;" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
+      </type>
+      <binding>
+        <strength value="example" />
+        <description value="Communication Topic" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/communication-topic" />
+      </binding>
+    </element>
+    <element id="BECommunication.context">
+      <path value="BECommunication.context" />
+      <short value="The context (e.g. subject) for this communications" />
+      <definition value="Normally the context is a patient, or a plan" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="BECommunication.context.patient">
+      <path value="BECommunication.context.patient" />
+      <short value="The patient or subject of care" />
+      <definition value="The Patient or Subject of Care. This is a reference to a Patient resource, following the Logical Model for Belgian Patients." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="BEPatient" />
+      </type>
+    </element>
+    <element id="BECommunication.content">
+      <path value="BECommunication.content" />
+      <short value="Message payload" />
+      <definition value="The content of the message" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="BECommunication.content.text">
+      <path value="BECommunication.content.text" />
+      <short value="Communication text" />
+      <definition value="The text of the communication. Maximum 320 characters" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Annotation" />
+        <profile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/structuredefinition-be-annotation320" />
+      </type>
+    </element>
+    <element id="BECommunication.content.attachment">
+      <path value="BECommunication.content.attachment" />
+      <short value="Attachment (e.g. image)" />
+      <definition value="An encoded attachment such as an image, video or audio recording" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Attachment" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Attachment" />
+      </type>
+    </element>
+    <element id="BECommunication.content.link">
+      <path value="BECommunication.content.link" />
+      <short value="Link to message content - an attachment, an online video, a document in another server or vault" />
+      <definition value="A link to the message content e.g. an online video or an attachment that resides on a server or content in another vault" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Reference" />
+      </type>
+    </element>
+  </snapshot>
+</StructureDefinition>
