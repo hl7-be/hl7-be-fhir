@@ -1,0 +1,352 @@
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/CD-CIVILSTATE",
+      "concept" : [{
+        "code" : "diabetes",
+        "designation" : [{
+          "language" : "en",
+          "value" : "diabetes"
+        },
+        {
+          "language" : "nl-BE",
+          "value" : "diabetes"
+        },
+        {
+          "language" : "fr-BE",
+          "value" : "diabète"
+        }]
+      },
+      {
+        "code" : "medication",
+        "designation" : [{
+          "language" : "en",
+          "value" : "medication"
+        },
+        {
+          "language" : "nl-BE",
+          "value" : "medicatie"
+        },
+        {
+          "language" : "fr-BE",
+          "value" : "médication"
+        }]
+      },
+      {
+        "code" : "movement",
+        "designation" : [{
+          "language" : "en",
+          "value" : "movement"
+        },
+        {
+          "language" : "nl-BE",
+          "value" : "beweging"
+        },
+        {
+          "language" : "fr-BE",
+          "value" : "mouvement"
+        }]
+      },
+      {
+        "code" : "nutrition",
+        "designation" : [{
+          "language" : "en",
+          "value" : "nutrition"
+        },
+        {
+          "language" : "nl-BE",
+          "value" : "voeding"
+        },
+        {
+          "language" : "fr-BE",
+          "value" : "nutrition"
+        }]
+      },
+      {
+        "code" : "renalinsufficiency",
+        "designation" : [{
+          "language" : "en",
+          "value" : "renal insufficiency"
+        },
+        {
+          "language" : "nl-BE",
+          "value" : "nierinsufficiëntie"
+        },
+        {
+          "language" : "fr-BE",
+          "value" : "insuffisance rénale"
+        }]
+      },
+      {
+        "code" : "woundcare",
+        "designation" : [{
+          "language" : "en",
+          "value" : "wound care"
+        },
+        {
+          "language" : "nl-BE",
+          "value" : "wondverzorging"
+        },
+        {
+          "language" : "fr-BE",
+          "value" : "soins de plaies"
+        }]
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "Error from server: Unable to provide support for code system https://www.ehealth.fgov.be/standards/fhir/CodeSystem/CD-CIVILSTATE"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/CD-CIVILSTATE",
+      "concept" : [{
+        "code" : "diabetes",
+        "designation" : [{
+          "language" : "en",
+          "value" : "diabetes"
+        },
+        {
+          "language" : "nl-BE",
+          "value" : "diabetes"
+        },
+        {
+          "language" : "fr-BE",
+          "value" : "diabète"
+        }]
+      },
+      {
+        "code" : "medication",
+        "designation" : [{
+          "language" : "en",
+          "value" : "medication"
+        },
+        {
+          "language" : "nl-BE",
+          "value" : "medicatie"
+        },
+        {
+          "language" : "fr-BE",
+          "value" : "médication"
+        }]
+      },
+      {
+        "code" : "movement",
+        "designation" : [{
+          "language" : "en",
+          "value" : "movement"
+        },
+        {
+          "language" : "nl-BE",
+          "value" : "beweging"
+        },
+        {
+          "language" : "fr-BE",
+          "value" : "mouvement"
+        }]
+      },
+      {
+        "code" : "nutrition",
+        "designation" : [{
+          "language" : "en",
+          "value" : "nutrition"
+        },
+        {
+          "language" : "nl-BE",
+          "value" : "voeding"
+        },
+        {
+          "language" : "fr-BE",
+          "value" : "nutrition"
+        }]
+      },
+      {
+        "code" : "renalinsufficiency",
+        "designation" : [{
+          "language" : "en",
+          "value" : "renal insufficiency"
+        },
+        {
+          "language" : "nl-BE",
+          "value" : "nierinsufficiëntie"
+        },
+        {
+          "language" : "fr-BE",
+          "value" : "insuffisance rénale"
+        }]
+      },
+      {
+        "code" : "woundcare",
+        "designation" : [{
+          "language" : "en",
+          "value" : "wound care"
+        },
+        {
+          "language" : "nl-BE",
+          "value" : "wondverzorging"
+        },
+        {
+          "language" : "fr-BE",
+          "value" : "soins de plaies"
+        }]
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "Error from server: Unable to provide support for code system https://www.ehealth.fgov.be/standards/fhir/CodeSystem/CD-CIVILSTATE"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/CD-CIVILSTATE",
+      "concept" : [{
+        "code" : "10",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Unmarried"
+        },
+        {
+          "language" : "nl-BE",
+          "value" : "Ongehuwd"
+        },
+        {
+          "language" : "fr-BE",
+          "value" : "Célibataire"
+        }]
+      },
+      {
+        "code" : "26",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Putative marriage"
+        },
+        {
+          "language" : "nl-BE",
+          "value" : "Putatief huwelijk"
+        },
+        {
+          "language" : "fr-BE",
+          "value" : "Mariage putatif"
+        }]
+      },
+      {
+        "code" : "40",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Divorced"
+        },
+        {
+          "language" : "nl-BE",
+          "value" : "Echtgescheiden"
+        },
+        {
+          "language" : "fr-BE",
+          "value" : "Divorced"
+        }]
+      },
+      {
+        "code" : "41",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Divorced since 1/10/1994"
+        },
+        {
+          "language" : "nl-BE",
+          "value" : "Echtgescheiden vanaf 1/10/1994"
+        },
+        {
+          "language" : "fr-BE",
+          "value" : "Divorcé à partir du 1/10/1994"
+        }]
+      },
+      {
+        "code" : "50",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Legal separation"
+        },
+        {
+          "language" : "nl-BE",
+          "value" : "Gescheiden van tafel en bed"
+        },
+        {
+          "language" : "fr-BE",
+          "value" : "Séparé de corps et de biens"
+        }]
+      },
+      {
+        "code" : "51",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Legal separation since 1/10/1994"
+        },
+        {
+          "language" : "nl-BE",
+          "value" : "Gescheiden van tafel en bed sinds 1/10/1994"
+        },
+        {
+          "language" : "fr-BE",
+          "value" : "Séparé de corps et de biens à partir du 1/10/1994"
+        }]
+      },
+      {
+        "code" : "60",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Repudiation"
+        },
+        {
+          "language" : "nl-BE",
+          "value" : "Verstoting"
+        },
+        {
+          "language" : "fr-BE",
+          "value" : "Répudiation"
+        }]
+      },
+      {
+        "code" : "80",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Partnership"
+        },
+        {
+          "language" : "nl-BE",
+          "value" : "Partnerschap"
+        },
+        {
+          "language" : "fr-BE",
+          "value" : "Partenariat"
+        }]
+      },
+      {
+        "code" : "81",
+        "designation" : [{
+          "language" : "en",
+          "value" : "End of partnership"
+        },
+        {
+          "language" : "nl-BE",
+          "value" : "Partnerschap beeindigd"
+        },
+        {
+          "language" : "fr-BE",
+          "value" : "Fin de partenariat"
+        }]
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "Error from server: Unable to provide support for code system https://www.ehealth.fgov.be/standards/fhir/CodeSystem/CD-CIVILSTATE"
+}
+-------------------------------------------------------------------------------------
