@@ -1,0 +1,205 @@
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-diarytopic",
+      "concept" : [{
+        "code" : "diabetes",
+        "designation" : [{
+          "language" : "en",
+          "value" : "diabetes"
+        },
+        {
+          "language" : "nl-BE",
+          "value" : "diabetes"
+        },
+        {
+          "language" : "fr-BE",
+          "value" : "diabète"
+        }]
+      },
+      {
+        "code" : "medication",
+        "designation" : [{
+          "language" : "en",
+          "value" : "medication"
+        },
+        {
+          "language" : "nl-BE",
+          "value" : "medicatie"
+        },
+        {
+          "language" : "fr-BE",
+          "value" : "médication"
+        }]
+      },
+      {
+        "code" : "movement",
+        "designation" : [{
+          "language" : "en",
+          "value" : "movement"
+        },
+        {
+          "language" : "nl-BE",
+          "value" : "beweging"
+        },
+        {
+          "language" : "fr-BE",
+          "value" : "mouvement"
+        }]
+      },
+      {
+        "code" : "nutrition",
+        "designation" : [{
+          "language" : "en",
+          "value" : "nutrition"
+        },
+        {
+          "language" : "nl-BE",
+          "value" : "voeding"
+        },
+        {
+          "language" : "fr-BE",
+          "value" : "nutrition"
+        }]
+      },
+      {
+        "code" : "renalinsufficiency",
+        "designation" : [{
+          "language" : "en",
+          "value" : "renal insufficiency"
+        },
+        {
+          "language" : "nl-BE",
+          "value" : "nierinsufficiëntie"
+        },
+        {
+          "language" : "fr-BE",
+          "value" : "insuffisance rénale"
+        }]
+      },
+      {
+        "code" : "woundcare",
+        "designation" : [{
+          "language" : "en",
+          "value" : "wound care"
+        },
+        {
+          "language" : "nl-BE",
+          "value" : "wondverzorging"
+        },
+        {
+          "language" : "fr-BE",
+          "value" : "soins de plaies"
+        }]
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "Error from server: Unable to provide support for code system https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-diarytopic"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-diarytopic",
+      "concept" : [{
+        "code" : "diabetes",
+        "designation" : [{
+          "language" : "en",
+          "value" : "diabetes"
+        },
+        {
+          "language" : "nl-BE",
+          "value" : "diabetes"
+        },
+        {
+          "language" : "fr-BE",
+          "value" : "diabète"
+        }]
+      },
+      {
+        "code" : "medication",
+        "designation" : [{
+          "language" : "en",
+          "value" : "medication"
+        },
+        {
+          "language" : "nl-BE",
+          "value" : "medicatie"
+        },
+        {
+          "language" : "fr-BE",
+          "value" : "médication"
+        }]
+      },
+      {
+        "code" : "movement",
+        "designation" : [{
+          "language" : "en",
+          "value" : "movement"
+        },
+        {
+          "language" : "nl-BE",
+          "value" : "beweging"
+        },
+        {
+          "language" : "fr-BE",
+          "value" : "mouvement"
+        }]
+      },
+      {
+        "code" : "nutrition",
+        "designation" : [{
+          "language" : "en",
+          "value" : "nutrition"
+        },
+        {
+          "language" : "nl-BE",
+          "value" : "voeding"
+        },
+        {
+          "language" : "fr-BE",
+          "value" : "nutrition"
+        }]
+      },
+      {
+        "code" : "renalinsufficiency",
+        "designation" : [{
+          "language" : "en",
+          "value" : "renal insufficiency"
+        },
+        {
+          "language" : "nl-BE",
+          "value" : "nierinsufficiëntie"
+        },
+        {
+          "language" : "fr-BE",
+          "value" : "insuffisance rénale"
+        }]
+      },
+      {
+        "code" : "woundcare",
+        "designation" : [{
+          "language" : "en",
+          "value" : "wound care"
+        },
+        {
+          "language" : "nl-BE",
+          "value" : "wondverzorging"
+        },
+        {
+          "language" : "fr-BE",
+          "value" : "soins de plaies"
+        }]
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "Error from server: Unable to provide support for code system https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-diarytopic"
+}
+-------------------------------------------------------------------------------------

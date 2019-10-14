@@ -1,5 +1,5 @@
 #guidename must match the id of the implementation guide
-guidename=ihe-be
+guidename=hl7-be
 copyrightyear=2015+
 license=CC0-1.0
 version=2.8.0

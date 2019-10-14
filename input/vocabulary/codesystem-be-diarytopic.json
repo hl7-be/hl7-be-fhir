@@ -1,28 +1,16 @@
 {
-  "resourceType" : "ValueSet",
-  "id" : "be-diarytopic",
-  "url" : "https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-diarytopic",
-  "version" : "0.1.0",
-  "name" : "DiaryTopic",
-  "title" : "Diary Topics",
-  "status" : "draft",
-  "publisher" : "eHealth Platform",
-  "contact" : [
-    {
-      "name" : "eHealth Platform",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "https://www.ehealth.fgov.be/standards/kmehr/en"
-        }
-      ]
-    }
-  ],
-  "description" : "Codes supported by eHealth Platform differentiating types of communication topics.",
-  "compose" : {
-    "include" : [
-      {
-        "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-diarytopic",
+    "resourceType":"CodeSystem",
+    "id":"cd-civilstate",
+    "url":"https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-diarytopic",
+    "version":"0.1.0",
+    "name":"DiaryTopic",
+    "title":"Diary Topic",
+    "status":"active",
+    "experimental":false,
+    "publisher":"eHealth Platform",
+    "description":"Diary and Communication Topics",
+    "caseSensitive":false,
+    "content":"complete",
         "concept" : [
           {
             "code" : "diabetes",
@@ -129,5 +117,4 @@
         ]
       }
     ]
-  }
 }

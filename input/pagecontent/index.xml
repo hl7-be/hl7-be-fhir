@@ -2,14 +2,25 @@
   <a name="scope"> </a>
   <h3>Scope</h3>
 	<p>
-    This is the Core Belgian FHIR specification:
+    This is the DRAFT FHIR specification for Belgium. This document is being developed and may not be used for any implementation or testing purpose.
   </p>
+<blockquote class="stu-note">
+  <a name="dstu"/>
+<strong>This documentation and set of artefacts are still undergoing development, and they are NOT to be taken by implementations.</strong>
+The working groups of HL7 and the different interested parties are still defining the process, the requirements and the tooling. This is a placeholder or sandbox for content, and not any recommendation or preview, so there is no guarantee of completeness or correctness.
+</blockquote>
+
+This specification contains: 
 	<ul>
-    <li>Logical Models, describing several data sets and elements used in Belgian systems</li>
-    <li>Value Sets, containing specific Belgian value sets</li>
-    <li>Core profiles, which constitute the basis for Belgium FHIR profiling and can be reused in other profiles </li>
-    <li>Profiles, split by functional area for ease of access</li>
-    <li>Required Capability Statements for systems to implement</li>
+    <li><a href="http://fhir.ivlab.ilabt.imec.be/be-fhir/artifacts.html#logical-models">Logical Models</a>, which describe describing several data sets and elements used in Belgian systems</li>
+    <li><a href="http://fhir.ivlab.ilabt.imec.be/be-fhir/artifacts.html#terminology">Value Sets and code systems</a>, containing specific Belgian value sets</li>
+    <li><a href="http://fhir.ivlab.ilabt.imec.be/be-fhir/artifacts.html#core-profiles">Core profiles</a>, which constitute the basis for Belgium FHIR profiling and can be reused in other profiles </li>
+    <li>Functional Profiles, split by functional area for ease of access</li>
+	<ul>
+    <li><a href="http://fhir.ivlab.ilabt.imec.be/be-fhir/artifacts.html#communication">Care coordination and Communication</a>, </li>
+    <li><a href="http://fhir.ivlab.ilabt.imec.be/be-fhir/artifacts.html#communication">Patient conditions</a></li>
+	</ul>
+    <li>Required <a href="http://fhir.ivlab.ilabt.imec.be/be-fhir/artifacts.html#logical-models">Capability Statements</a> for systems to implement</li>
 	</ul>
 	<p>
     The implementation guide is structured to allow implementers to pick and choose the capabilities they need and combine them as necessary.

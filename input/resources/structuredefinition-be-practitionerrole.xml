@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="be-practitionerrole" />
+  <url value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitionerrole" />
+  <version value="0.1.0" />
+  <name value="BePractitionerRole" />
+  <status value="draft" />
+  <description value="Belgian profile on PractitionerRole" />
+  <fhirVersion value="4.0.0" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="PractitionerRole" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/PractitionerRole" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="PractitionerRole.practitioner">
+      <path value="PractitionerRole.practitioner" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner" />
+      </type>
+    </element>
+    <element id="PractitionerRole.organization">
+      <path value="PractitionerRole.organization" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization" />
+      </type>
+    </element>
+    <element id="PractitionerRole.code">
+      <path value="PractitionerRole.code" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="coding.system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="PractitionerRole.code:CD-HCPARTY">
+      <path value="PractitionerRole.code" />
+      <sliceName value="CD-HCPARTY" />
+    </element>
+    <element id="PractitionerRole.code:CD-HCPARTY.coding.system">
+      <path value="PractitionerRole.code.coding.system" />
+      <fixedUri value="https://www.ehealth.fgov.be/standards/fhir/CodeSystem/CD-HCPARTY" />
+    </element>
+    <element id="PractitionerRole.code:SNOMED-CT">
+      <path value="PractitionerRole.code" />
+      <sliceName value="SNOMED-CT" />
+    </element>
+    <element id="PractitionerRole.code:SNOMED-CT.coding.system">
+      <path value="PractitionerRole.code.coding.system" />
+      <fixedUri value="http://snomed.info/sct" />
+    </element>
+    <element id="PractitionerRole.specialty">
+      <path value="PractitionerRole.specialty" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="coding.system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="PractitionerRole.specialty:SNOMED-CT">
+      <path value="PractitionerRole.specialty" />
+      <sliceName value="SNOMED-CT" />
+    </element>
+    <element id="PractitionerRole.specialty:SNOMED-CT.coding">
+      <path value="PractitionerRole.specialty.coding" />
+      <binding>
+        <strength value="preferred" />
+        <description value="base resource valueset" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/c80-practice-codes" />
+      </binding>
+    </element>
+    <element id="PractitionerRole.specialty:SNOMED-CT.coding.system">
+      <path value="PractitionerRole.specialty.coding.system" />
+      <fixedUri value="http://snomed.info/sct" />
+    </element>
+  </differential>
+</StructureDefinition>

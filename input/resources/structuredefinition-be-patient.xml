@@ -2,6 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="be-patient" />
   <url value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient" />
+  <version value="0.1.0" />
   <name value="BePatient" />
   <status value="draft" />
   <fhirVersion value="4.0.0" />
@@ -610,6 +611,7 @@
           <type value="type" />
           <path value="$this" />
         </discriminator>
+        <rules value="open" />
       </slicing>
       <short value="Value of extension" />
       <definition value="Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list)." />
@@ -830,6 +832,7 @@
           <type value="type" />
           <path value="$this" />
         </discriminator>
+        <rules value="open" />
       </slicing>
       <short value="Value of extension" />
       <definition value="Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list)." />
@@ -1250,6 +1253,7 @@
           <type value="type" />
           <path value="$this" />
         </discriminator>
+        <rules value="open" />
       </slicing>
       <short value="Value of extension" />
       <definition value="Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list)." />
@@ -2379,6 +2383,7 @@
           <type value="type" />
           <path value="$this" />
         </discriminator>
+        <rules value="open" />
       </slicing>
       <short value="Value of extension" />
       <definition value="Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list)." />
@@ -2809,6 +2814,10 @@
     <element id="Patient.address.extension:humanLanguage.value[x]">
       <path value="Patient.address.extension.value[x]" />
       <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="item.resolve()" />
+        </discriminator>
         <rules value="open" />
       </slicing>
       <short value="Value of extension" />
@@ -4896,6 +4905,10 @@
     <element id="Patient.address.extension:humanLanguage.value[x]">
       <path value="Patient.address.extension.value[x]" />
       <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="item.resolve()" />
+        </discriminator>
         <rules value="open" />
       </slicing>
       <type>

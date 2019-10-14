@@ -111,7 +111,6 @@
                 ]
             },
             {
-                "system":"https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-civilstate",
                 "concept": [
                     {
                         "code":"10",

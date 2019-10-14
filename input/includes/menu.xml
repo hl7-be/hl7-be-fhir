@@ -4,9 +4,6 @@
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">BE Core Specification<b class="caret"> </b> </a>
     <ul class="dropdown-menu">
-      <li>
-        <a href="search.html">Finding a specification</a>
-      </li>
     </ul>
   </li>
   <li><a href="artifacts.html">Artifact Index</a></li>

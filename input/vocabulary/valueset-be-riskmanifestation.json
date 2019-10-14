@@ -31,11 +31,11 @@
                                 "value":"Anaphylaxis"
                             },
                             {
-                                "language":"BE-fr",
+                                "language":"fr-BE",
                                 "value":"Anaphylaxie"
                             },
                             {
-                                "language":"BE-nl",
+                                "language":"nl-BE",
                                 "value":"anafylaxie"
                             }
                         ]
@@ -48,11 +48,11 @@
                                 "value":"Angio-oedema"
                             },
                             {
-                                "language":"BE-fr",
+                                "language":"fr-BE",
                                 "value":"Angio-œdème"
                             },
                             {
-                                "language":"BE-nl",
+                                "language":"nl-BE",
                                 "value":"angio-oedeem"
                             }
                         ]
@@ -65,11 +65,11 @@
                                 "value":"Asthma"
                             },
                             {
-                                "language":"BE-fr",
+                                "language":"fr-BE",
                                 "value":"Asthme"
                             },
                             {
-                                "language":"BE-nl",
+                                "language":"nl-BE",
                                 "value":"astma"
                             }
                         ]
@@ -82,11 +82,11 @@
                                 "value":"Atopic dermatitis"
                             },
                             {
-                                "language":"BE-fr",
+                                "language":"fr-BE",
                                 "value":"Dermatite atopique"
                             },
                             {
-                                "language":"BE-nl",
+                                "language":"nl-BE",
                                 "value":"Atopische dermatitis"
                             }
                         ]
@@ -99,11 +99,11 @@
                                 "value":"Bronchospasm"
                             },
                             {
-                                "language":"BE-fr",
+                                "language":"fr-BE",
                                 "value":"Bronchospasme"
                             },
                             {
-                                "language":"BE-nl",
+                                "language":"nl-BE",
                                 "value":"Bronchospasme"
                             }
                         ]
@@ -116,11 +116,12 @@
                                 "value":"Bullous eruption"
                             },
                             {
-                                "language":"BE-fr",
+                                "language":"fr-BE",
                                 "value":"Eruption bulleuse"
                             },
                             {
-                                "language":"BE-nl"
+                                "language":"nl-BE",
+                                "value":"Bulleuze eruptie"
                             }
                         ]
                     },
@@ -132,11 +133,11 @@
                                 "value":"Cardiac arrhythmia"
                             },
                             {
-                                "language":"BE-fr",
+                                "language":"fr-BE",
                                 "value":"Arythmie cardique"
                             },
                             {
-                                "language":"BE-nl",
+                                "language":"nl-BE",
                                 "value":"Hartritmestoornis"
                             }
                         ]
@@ -149,11 +150,11 @@
                                 "value":"Cardiorespiratory arrest"
                             },
                             {
-                                "language":"BE-fr",
+                                "language":"fr-BE",
                                 "value":"Arrêt cardiorespiratoire"
                             },
                             {
-                                "language":"BE-nl",
+                                "language":"nl-BE",
                                 "value":"Cardiorespiratoire stilstand"
                             }
                         ]
@@ -166,11 +167,11 @@
                                 "value":"Conjunctivitis"
                             },
                             {
-                                "language":"BE-fr",
+                                "language":"fr-BE",
                                 "value":"Conjonctivite"
                             },
                             {
-                                "language":"BE-nl",
+                                "language":"nl-BE",
                                 "value":"conjonctivitis"
                             }
                         ]
@@ -183,11 +184,11 @@
                                 "value":"Cough"
                             },
                             {
-                                "language":"BE-fr",
+                                "language":"fr-BE",
                                 "value":"Toux"
                             },
                             {
-                                "language":"BE-nl",
+                                "language":"nl-BE",
                                 "value":"hoest"
                             }
                         ]
@@ -200,11 +201,11 @@
                                 "value":"Diarrhoea"
                             },
                             {
-                                "language":"BE-fr",
+                                "language":"fr-BE",
                                 "value":"Diarrhée"
                             },
                             {
-                                "language":"BE-nl",
+                                "language":"nl-BE",
                                 "value":"diarree"
                             }
                         ]
@@ -217,11 +218,11 @@
                                 "value":"Drug reaction with eosinophilia and systemic symptoms"
                             },
                             {
-                                "language":"BE-fr",
+                                "language":"fr-BE",
                                 "value":"Syndrome d'hypersensibilité médicamenteuse"
                             },
                             {
-                                "language":"BE-nl",
+                                "language":"nl-BE",
                                 "value":"Drug eruption met eosinofilie 
 en systemische symptomen"
                             }
@@ -235,11 +236,11 @@ en systemische symptomen"
                                 "value":"Dry eyes"
                             },
                             {
-                                "language":"BE-fr",
+                                "language":"fr-BE",
                                 "value":"Sécheresse oculaire"
                             },
                             {
-                                "language":"BE-nl",
+                                "language":"nl-BE",
                                 "value":"droge ogen"
                             }
                         ]
@@ -252,11 +253,11 @@ en systemische symptomen"
                                 "value":"Dyspnea"
                             },
                             {
-                                "language":"BE-fr",
+                                "language":"fr-BE",
                                 "value":"Dyspnée"
                             },
                             {
-                                "language":"BE-nl",
+                                "language":"nl-BE",
                                 "value":"kortademigheid"
                             }
                         ]
@@ -269,11 +270,11 @@ en systemische symptomen"
                                 "value":"Eczema"
                             },
                             {
-                                "language":"BE-fr",
+                                "language":"fr-BE",
                                 "value":"Eczéma"
                             },
                             {
-                                "language":"BE-nl",
+                                "language":"nl-BE",
                                 "value":"Eczeem"
                             }
                         ]
@@ -286,11 +287,11 @@ en systemische symptomen"
                                 "value":"Itching of skin"
                             },
                             {
-                                "language":"BE-fr",
+                                "language":"fr-BE",
                                 "value":"Prurit"
                             },
                             {
-                                "language":"BE-nl",
+                                "language":"nl-BE",
                                 "value":"jeuk"
                             }
                         ]
@@ -303,11 +304,11 @@ en systemische symptomen"
                                 "value":"Nausea"
                             },
                             {
-                                "language":"BE-fr",
+                                "language":"fr-BE",
                                 "value":"Nausée"
                             },
                             {
-                                "language":"BE-nl",
+                                "language":"nl-BE",
                                 "value":"Misselijkheid"
                             }
                         ]
@@ -320,11 +321,11 @@ en systemische symptomen"
                                 "value":"Ocular hyperaemia"
                             },
                             {
-                                "language":"BE-fr",
+                                "language":"fr-BE",
                                 "value":"Hyperémie oculaire"
                             },
                             {
-                                "language":"BE-nl",
+                                "language":"nl-BE",
                                 "value":"Oogbeschadigingen en/of hyperemia"
                             }
                         ]
@@ -337,11 +338,11 @@ en systemische symptomen"
                                 "value":"Oedema of larynx"
                             },
                             {
-                                "language":"BE-fr",
+                                "language":"fr-BE",
                                 "value":"Œdème laryngé"
                             },
                             {
-                                "language":"BE-nl",
+                                "language":"nl-BE",
                                 "value":"Oedeem van het strottenhoofd"
                             }
                         ]
@@ -354,11 +355,11 @@ en systemische symptomen"
                                 "value":"Papular eruption"
                             },
                             {
-                                "language":"BE-fr",
+                                "language":"fr-BE",
                                 "value":"Eruption papulaire"
                             },
                             {
-                                "language":"BE-nl",
+                                "language":"nl-BE",
                                 "value":"Papulaire uitbarsting"
                             }
                         ]
@@ -371,11 +372,11 @@ en systemische symptomen"
                                 "value":"Rhinitis"
                             },
                             {
-                                "language":"BE-fr",
+                                "language":"fr-BE",
                                 "value":"Rhinite"
                             },
                             {
-                                "language":"BE-nl",
+                                "language":"nl-BE",
                                 "value":"Rinitis"
                             }
                         ]
@@ -388,11 +389,11 @@ en systemische symptomen"
                                 "value":"Seizure"
                             },
                             {
-                                "language":"BE-fr",
+                                "language":"fr-BE",
                                 "value":"Crise épileptique"
                             },
                             {
-                                "language":"BE-nl",
+                                "language":"nl-BE",
                                 "value":"Epileptische aanval"
                             }
                         ]
@@ -405,11 +406,11 @@ en systemische symptomen"
                                 "value":"Sneezing"
                             },
                             {
-                                "language":"BE-fr",
+                                "language":"fr-BE",
                                 "value":"Eternuement"
                             },
                             {
-                                "language":"BE-nl",
+                                "language":"nl-BE",
                                 "value":"Niezen"
                             }
                         ]
@@ -422,11 +423,11 @@ en systemische symptomen"
                                 "value":"Stevens-Johnson syndrome"
                             },
                             {
-                                "language":"BE-fr",
+                                "language":"fr-BE",
                                 "value":"Syndrome de Stevens-Johnson"
                             },
                             {
-                                "language":"BE-nl",
+                                "language":"nl-BE",
                                 "value":"Stevens-Johnson syndroom"
                             }
                         ]
@@ -439,11 +440,11 @@ en systemische symptomen"
                                 "value":"Tight chest"
                             },
                             {
-                                "language":"BE-fr",
+                                "language":"fr-BE",
                                 "value":"Oppression thoracique"
                             },
                             {
-                                "language":"BE-nl",
+                                "language":"nl-BE",
                                 "value":"beklemmende borst"
                             }
                         ]
@@ -456,11 +457,11 @@ en systemische symptomen"
                                 "value":"Urticaria"
                             },
                             {
-                                "language":"BE-fr",
+                                "language":"fr-BE",
                                 "value":"Urticaire"
                             },
                             {
-                                "language":"BE-nl",
+                                "language":"nl-BE",
                                 "value":"netelroos"
                             }
                         ]
@@ -473,11 +474,11 @@ en systemische symptomen"
                                 "value":"Vasculitis"
                             },
                             {
-                                "language":"BE-fr",
+                                "language":"fr-BE",
                                 "value":"Vascularite"
                             },
                             {
-                                "language":"BE-nl",
+                                "language":"nl-BE",
                                 "value":"Vasculitis"
                             }
                         ]
@@ -490,11 +491,11 @@ en systemische symptomen"
                                 "value":"Vomitus"
                             },
                             {
-                                "language":"BE-fr",
+                                "language":"fr-BE",
                                 "value":"Vomi"
                             },
                             {
-                                "language":"BE-nl",
+                                "language":"nl-BE",
                                 "value":"braken"
                             }
                         ]
@@ -507,11 +508,11 @@ en systemische symptomen"
                                 "value":"Weal"
                             },
                             {
-                                "language":"BE-fr",
+                                "language":"fr-BE",
                                 "value":"Éruption cutanée"
                             },
                             {
-                                "language":"BE-nl",
+                                "language":"nl-BE",
                                 "value":"Huiduitslag"
                             }
                         ]
