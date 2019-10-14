@@ -33,6 +33,13 @@
       <path value="Communication.status" />
       <mustSupport value="true" />
     </element>
+    <element id="Communication.subject">
+      <path value="Communication.subject" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient" />
+      </type>
+    </element>
     <element id="Communication.topic">
       <path value="Communication.topic" />
       <mustSupport value="true" />

@@ -20,7 +20,7 @@
   <type value="http://example.org/fhir/StructureDefinition/BECommunication" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element" />
   <derivation value="specialization" />
-  <snapshot>
+  <differential>
     <element id="BECommunication">
       <path value="BECommunication" />
       <short value="Communication" />
@@ -163,7 +163,7 @@
       <max value="*" />
       <type>
         <code value="Reference" />
-        <targetProfile value="BEPatient" />
+        <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient" />
       </type>
     </element>
     <element id="BECommunication.content">
@@ -209,5 +209,5 @@
         <code value="Reference" />
       </type>
     </element>
-  </snapshot>
+  </differential>
 </StructureDefinition>

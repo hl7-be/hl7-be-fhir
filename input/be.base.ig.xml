@@ -37,7 +37,7 @@
     </grouping>
     <grouping id="communication">
       <name value="Communication"/>
-      <description value="Communication, also known as Journal entry"/>
+      <description value="Communication and Care Coordination"/>
     </grouping>
     <grouping id="condition">
       <name value="Conditions"/>
@@ -120,7 +120,7 @@
     </resource>
     <resource>
       <reference>
-        <reference value="StructureDefinition/be-careplan"/>
+        <reference value="StructureDefinition/lm-be-careplan"/>
       </reference>
       <fhirVersion value="4.0.0"/>
       <name value="Logical Model Care Plan"/>
@@ -162,6 +162,22 @@
       <name value="ValueSet - Civil State"/>
       <description value="The values for Civil State"/>
       <groupingId value="terminology"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/be-careplan"/>
+      </reference>
+      <fhirVersion value="4.0.0"/>
+      <name value="Care Plan profile"/>
+      <groupingId value="communication"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/be-careteam"/>
+      </reference>
+      <fhirVersion value="4.0.0"/>
+      <name value="Care Team profile"/>
+      <groupingId value="communication"/>
     </resource>
     <!--<resource>
       <reference>
@@ -216,8 +232,5 @@
         <generation value="html"/>
       </page>
     </page>
-
-
-
   </definition>
 </ImplementationGuide>
