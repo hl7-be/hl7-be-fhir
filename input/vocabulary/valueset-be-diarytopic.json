@@ -3,8 +3,8 @@
   "id" : "be-diarytopic",
   "url" : "https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-diarytopic",
   "version" : "0.1.0",
-  "name" : "DiaryTopic",
-  "title" : "Diary Topics",
+  "name" : "BEDiaryTopic",
+  "title" : "BE Diary Topics",
   "status" : "draft",
   "publisher" : "eHealth Platform",
   "contact" : [

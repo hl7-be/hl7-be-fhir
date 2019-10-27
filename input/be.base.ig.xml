@@ -179,6 +179,15 @@
       <name value="Care Team profile"/>
       <groupingId value="communication"/>
     </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/string320"/>
+      </reference>
+      <fhirVersion value="4.0.0"/>
+      <name value="String 320"/>
+      <groupingId value="core"/>
+    </resource>
+
     <!--<resource>
       <reference>
         <reference value="StructureDefinition/be-allergyintolerance"/>

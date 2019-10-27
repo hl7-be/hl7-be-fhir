@@ -69,8 +69,8 @@
       <short value="Message content" />
       <type>
         <code value="string" />
-        <profile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-string320" />
-      </type>
+        <profile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/string320" />
+      </type>           
       <type>
         <code value="Attachment" />
       </type>

@@ -89,6 +89,16 @@
         <code value="Reference" />
       </type>
     </element>
+    <element id="BECommunication.partOf">
+      <path value="BECommunication.partOf" />
+      <short value="The broader communication that this communication is a part of" />
+      <definition value="This will be used in multi-part messages, namely for when the content is beyond the character limit" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Reference" />
+      </type>
+    </element>
     <element id="BECommunication.inReponseTo">
       <path value="BECommunication.inReponseTo" />
       <short value="Communication for which this communication is a response" />
@@ -185,7 +195,7 @@
       <max value="*" />
       <type>
         <code value="Annotation" />
-        <profile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/structuredefinition-be-annotation320" />
+        <profile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/string320" />
       </type>
     </element>
     <element id="BECommunication.content.attachment">

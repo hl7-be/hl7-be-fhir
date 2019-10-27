@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="lm-be-careplan" />
-  <url value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careplan" />
+  <url value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/lm-be-careplan" />
   <version value="0.1.0" />
   <name value="BECarePlan" />
   <status value="draft" />

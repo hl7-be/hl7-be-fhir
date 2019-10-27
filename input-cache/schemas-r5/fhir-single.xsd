@@ -1,5 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- 
+ * #%L
+ * org.hl7.fhir.r5
+ * %%
+ * Copyright (C) 2014 - 2019 Health Level 7
+ * %%
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * 
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ * #L%
+ */
+
+/*
   Copyright (c) 2011+, HL7, Inc.
   All rights reserved.
   
@@ -27,7 +47,7 @@
   POSSIBILITY OF SUCH DAMAGE.
   
 
-  Generated on Fri, Oct 11, 2019 20:34+0000 for FHIR v4.1.0 
+  Generated on Sat, Oct 26, 2019 00:22+0000 for FHIR v4.1.0 
 -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" targetNamespace="http://hl7.org/fhir" elementFormDefault="qualified" version="4.1.0">
   <!-- Note: When using this schema with some tools, it may also be necessary to declare xmlns:xml="http://www.w3.org/XML/1998/namespace", however this causes performance issues with other tools and thus is not in the base schemas. -->
@@ -5404,6 +5424,21 @@ A coverage may only be responsible for specific types of charges, and the sequen
               <xs:documentation xml:lang="en">Describes the entity that is suspected to have caused the adverse event.</xs:documentation>
            </xs:annotation>
           </xs:element>
+          <xs:element name="contributingFactor" type="AdverseEvent.ContributingFactor" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">The contributing factors suspected to have increased the probability or severity of the adverse event.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="preventiveAction" type="AdverseEvent.PreventiveAction" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Preventive actions that contributed to avoiding the adverse event.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="mitigatingAction" type="AdverseEvent.MitigatingAction" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">The ameliorating action taken after the adverse event occured in order to reduce the extent of harm.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
           <xs:element name="supportingInfo" type="AdverseEvent.SupportingInfo" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
               <xs:documentation xml:lang="en">Supporting information relevant to the event.</xs:documentation>
@@ -5488,6 +5523,60 @@ A coverage may only be responsible for specific types of charges, and the sequen
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
+  <xs:complexType name="AdverseEvent.ContributingFactor">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">An event (i.e. any change to current patient status) that may be related to unintended effects on a patient or research subject.  The unintended effects may require additional monitoring, treatment or hospitalization or may result in death.  The AdverseEvent resource also extends to potential or avoided events that could have had such effects.</xs:documentation>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="BackboneElement">
+        <xs:sequence>
+          <xs:choice minOccurs="1" maxOccurs="1" >
+            <xs:annotation>
+              <xs:documentation xml:lang="en">The item that is suspected to have increased the probability or severity of the adverse event.</xs:documentation>
+            </xs:annotation>
+            <xs:element name="itemReference" type="Reference"/>
+            <xs:element name="itemCodeableConcept" type="CodeableConcept"/>
+          </xs:choice>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="AdverseEvent.PreventiveAction">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">An event (i.e. any change to current patient status) that may be related to unintended effects on a patient or research subject.  The unintended effects may require additional monitoring, treatment or hospitalization or may result in death.  The AdverseEvent resource also extends to potential or avoided events that could have had such effects.</xs:documentation>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="BackboneElement">
+        <xs:sequence>
+          <xs:choice minOccurs="1" maxOccurs="1" >
+            <xs:annotation>
+              <xs:documentation xml:lang="en">The action that contributed to avoiding the adverse event.</xs:documentation>
+            </xs:annotation>
+            <xs:element name="itemReference" type="Reference"/>
+            <xs:element name="itemCodeableConcept" type="CodeableConcept"/>
+          </xs:choice>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="AdverseEvent.MitigatingAction">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">An event (i.e. any change to current patient status) that may be related to unintended effects on a patient or research subject.  The unintended effects may require additional monitoring, treatment or hospitalization or may result in death.  The AdverseEvent resource also extends to potential or avoided events that could have had such effects.</xs:documentation>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="BackboneElement">
+        <xs:sequence>
+          <xs:choice minOccurs="1" maxOccurs="1" >
+            <xs:annotation>
+              <xs:documentation xml:lang="en">The ameliorating action taken after the adverse event occured in order to reduce the extent of harm.</xs:documentation>
+            </xs:annotation>
+            <xs:element name="itemReference" type="Reference"/>
+            <xs:element name="itemCodeableConcept" type="CodeableConcept"/>
+          </xs:choice>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
   <xs:complexType name="AdverseEvent.SupportingInfo">
     <xs:annotation>
       <xs:documentation xml:lang="en">An event (i.e. any change to current patient status) that may be related to unintended effects on a patient or research subject.  The unintended effects may require additional monitoring, treatment or hospitalization or may result in death.  The AdverseEvent resource also extends to potential or avoided events that could have had such effects.</xs:documentation>
@@ -5495,17 +5584,13 @@ A coverage may only be responsible for specific types of charges, and the sequen
     <xs:complexContent>
       <xs:extension base="BackboneElement">
         <xs:sequence>
-          <xs:element name="item" minOccurs="1" maxOccurs="1" type="Reference">
+          <xs:choice minOccurs="1" maxOccurs="1" >
             <xs:annotation>
-              <xs:documentation xml:lang="en">Relevant past history for the subject.  In a clinical care context, an example being a patient had an adverse event following a penciliin administration and the patient had a previously documented penicillin allergy.  In a clinical trials context, an example is a bunion or rash that was present prior to the study.
-Additionally, the supporting item can be a document that is relevant to this instance of the adverse event that is not part of the subject's medical history.  For example, a clinical note, staff list, or material safety data sheet (MSDS).</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="contributingFactor" minOccurs="0" maxOccurs="1" type="boolean">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">If true, the item has been assessed to be a contributing factor of the adverse event.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
+              <xs:documentation xml:lang="en">Relevant past history for the subject. In a clinical care context, an example being a patient had an adverse event following a pencillin administration and the patient had a previously documented penicillin allergy. In a clinical trials context, an example is a bunion or rash that was present prior to the study. Additionally, the supporting item can be a document that is relevant to this instance of the adverse event that is not part of the subject's medical history. For example, a clinical note, staff list, or material safety data sheet (MSDS).  Supporting information is not a contributing factor, preventive action, or mitigating action.</xs:documentation>
+            </xs:annotation>
+            <xs:element name="itemReference" type="Reference"/>
+            <xs:element name="itemCodeableConcept" type="CodeableConcept"/>
+          </xs:choice>
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
@@ -13741,7 +13826,7 @@ into another (possibly the same) biological entity.</xs:documentation>
           </xs:choice>
           <xs:choice minOccurs="0" maxOccurs="1" >
             <xs:annotation>
-              <xs:documentation xml:lang="en">The date or estimated date that the condition resolved or went into remission. This is called &quot;abatement&quot; because of the many overloaded connotations associated with &quot;remission&quot; or &quot;resolution&quot; - Conditions are never really resolved, but they can abate.</xs:documentation>
+              <xs:documentation xml:lang="en">The date or estimated date that the condition resolved or went into remission. This is called &quot;abatement&quot; because of the many overloaded connotations associated with &quot;remission&quot; or &quot;resolution&quot; - Some conditions, such as chronic conditions, are never really resolved, but they can abate.</xs:documentation>
             </xs:annotation>
             <xs:element name="abatementDateTime" type="dateTime"/>
             <xs:element name="abatementAge" type="Age"/>
@@ -14194,7 +14279,7 @@ into another (possibly the same) biological entity.</xs:documentation>
           </xs:element>
           <xs:element name="dateTime" minOccurs="0" maxOccurs="1" type="dateTime">
             <xs:annotation>
-              <xs:documentation xml:lang="en">When this  Consent was issued / created / indexed.</xs:documentation>
+              <xs:documentation xml:lang="en">Date and time the consent instance was agreed to.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="performer" minOccurs="0" maxOccurs="unbounded" type="Reference">
@@ -14463,19 +14548,9 @@ into another (possibly the same) biological entity.</xs:documentation>
           <xs:documentation xml:lang="en">Pending</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
-      <xs:enumeration value="proposed">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Proposed</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
       <xs:enumeration value="active">
         <xs:annotation>
           <xs:documentation xml:lang="en">Active</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="rejected">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Rejected</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="inactive">
@@ -14486,6 +14561,11 @@ into another (possibly the same) biological entity.</xs:documentation>
       <xs:enumeration value="entered-in-error">
         <xs:annotation>
           <xs:documentation xml:lang="en">Entered in Error</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="unknown">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Unknown</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
     </xs:restriction>
@@ -30783,7 +30863,7 @@ The primary difference between a medicationusage and a medicationadministration 
               <xs:documentation xml:lang="en">Whether the Medicinal Product is subject to additional monitoring for regulatory reasons.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="specialMeasure" minOccurs="0" maxOccurs="unbounded" type="string">
+          <xs:element name="specialMeasures" minOccurs="0" maxOccurs="unbounded" type="CodeableConcept">
             <xs:annotation>
               <xs:documentation xml:lang="en">Whether the Medicinal Product is subject to special measures for regulatory reasons.</xs:documentation>
            </xs:annotation>
@@ -45330,6 +45410,11 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
               <xs:documentation xml:lang="en">Exclude one or more codes from the value set based on code system filters and/or other value sets.</xs:documentation>
            </xs:annotation>
           </xs:element>
+          <xs:element name="property" minOccurs="0" maxOccurs="unbounded" type="string">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">A property to return in the expansion, if the client doesn't ask for any particular properties. May be either a code from the code system definition (convenient) or a the formal URI that refers to the property. The special value '*' means all properties known to the server.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
@@ -45480,6 +45565,11 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
               <xs:documentation xml:lang="en">A parameter that controlled the expansion process. These parameters may be used by users of expanded value sets to check whether the expansion is suitable for a particular purpose, or to pick the correct expansion.</xs:documentation>
            </xs:annotation>
           </xs:element>
+          <xs:element name="property" type="ValueSet.Property" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">A property defines an additional slot through which additional information can be provided about a concept.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
           <xs:element name="contains" type="ValueSet.Contains" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
               <xs:documentation xml:lang="en">The codes that are contained in the value set expansion.</xs:documentation>
@@ -45513,6 +45603,27 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
             <xs:element name="valueCode" type="code"/>
             <xs:element name="valueDateTime" type="dateTime"/>
           </xs:choice>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ValueSet.Property">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">A ValueSet resource instance specifies a set of codes drawn from one or more code systems, intended for use in a particular context. Value sets link between [[[CodeSystem]]] definitions and their use in [coded elements](terminologies.html).</xs:documentation>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="BackboneElement">
+        <xs:sequence>
+          <xs:element name="code" minOccurs="1" maxOccurs="1" type="code">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">A code that is used to identify the property. The code is used in ValueSet.expansion.contains.property.code.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="uri" minOccurs="0" maxOccurs="1" type="uri">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Reference to the formal meaning of the property. One possible source of meaning is the [Concept Properties](codesystem-concept-properties.html) code system.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
@@ -45559,11 +45670,44 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
               <xs:documentation xml:lang="en">Additional representations for this item - other languages, aliases, specialized purposes, used for particular purposes, etc. These are relevant when the conditions of the expansion do not fix to a single correct representation.</xs:documentation>
            </xs:annotation>
           </xs:element>
+          <xs:element name="property" type="ValueSet.Property1" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">A property value for this concept.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
           <xs:element name="contains" type="ValueSet.Contains" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
               <xs:documentation xml:lang="en">Other codes and entries contained under this entry in the hierarchy.</xs:documentation>
            </xs:annotation>
           </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ValueSet.Property1">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">A ValueSet resource instance specifies a set of codes drawn from one or more code systems, intended for use in a particular context. Value sets link between [[[CodeSystem]]] definitions and their use in [coded elements](terminologies.html).</xs:documentation>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="BackboneElement">
+        <xs:sequence>
+          <xs:element name="code" minOccurs="1" maxOccurs="1" type="code">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">A code that is a reference to ValueSet.expansion.property.code.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:choice minOccurs="1" maxOccurs="1" >
+            <xs:annotation>
+              <xs:documentation xml:lang="en">The value of this property.</xs:documentation>
+            </xs:annotation>
+            <xs:element name="valueCode" type="code"/>
+            <xs:element name="valueCoding" type="Coding"/>
+            <xs:element name="valueString" type="string"/>
+            <xs:element name="valueInteger" type="integer"/>
+            <xs:element name="valueBoolean" type="boolean"/>
+            <xs:element name="valueDateTime" type="dateTime"/>
+            <xs:element name="valueDecimal" type="decimal"/>
+          </xs:choice>
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
