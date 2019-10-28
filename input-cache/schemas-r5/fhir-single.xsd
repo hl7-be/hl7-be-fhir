@@ -47,7 +47,7 @@
   POSSIBILITY OF SUCH DAMAGE.
   
 
-  Generated on Sat, Oct 26, 2019 00:22+0000 for FHIR v4.1.0 
+  Generated on Sun, Oct 27, 2019 16:12+0000 for FHIR v4.1.0 
 -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" targetNamespace="http://hl7.org/fhir" elementFormDefault="qualified" version="4.1.0">
   <!-- Note: When using this schema with some tools, it may also be necessary to declare xmlns:xml="http://www.w3.org/XML/1998/namespace", however this causes performance issues with other tools and thus is not in the base schemas. -->
@@ -30977,7 +30977,7 @@ The primary difference between a medicationusage and a medicationadministration 
           </xs:element>
           <xs:element name="type" minOccurs="0" maxOccurs="1" type="Coding">
             <xs:annotation>
-              <xs:documentation xml:lang="en">Type of the product name, such as rINN or BAN.</xs:documentation>
+              <xs:documentation xml:lang="en">Type of product name, such as rINN, BAN, Proprietary, Non-Proprietary.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="namePart" type="MedicinalProductDefinition.NamePart" minOccurs="0" maxOccurs="unbounded">
@@ -34363,6 +34363,11 @@ For resource issues, this will be a simple XPath limited to element names, repet
           <xs:element name="marketingStatus" minOccurs="0" maxOccurs="unbounded" type="MarketingStatus">
             <xs:annotation>
               <xs:documentation xml:lang="en">Marketing information.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="copackagedIndicator" minOccurs="0" maxOccurs="1" type="boolean">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">States whether a drug product is supplied with another item such as a diluent or adjuvant.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="marketingAuthorization" minOccurs="0" maxOccurs="1" type="Reference">
@@ -41106,6 +41111,11 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
               <xs:documentation xml:lang="en">Textual comment about this record of a substance.</xs:documentation>
            </xs:annotation>
           </xs:element>
+          <xs:element name="manufacturer" minOccurs="0" maxOccurs="unbounded" type="Reference">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">A company that makes this substance.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
           <xs:element name="moiety" type="SubstanceDefinition.Moiety" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
               <xs:documentation xml:lang="en">Moiety, for structural modifications.</xs:documentation>
@@ -41559,9 +41569,9 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
             <xs:element name="substanceDefinitionReference" type="Reference"/>
             <xs:element name="substanceDefinitionCodeableConcept" type="CodeableConcept"/>
           </xs:choice>
-          <xs:element name="relationship" minOccurs="0" maxOccurs="1" type="CodeableConcept">
+          <xs:element name="type" minOccurs="0" maxOccurs="1" type="CodeableConcept">
             <xs:annotation>
-              <xs:documentation xml:lang="en">For example &quot;salt to parent&quot;, &quot;active moiety&quot;, &quot;starting material&quot;.</xs:documentation>
+              <xs:documentation xml:lang="en">For example &quot;salt to parent&quot;, &quot;active moiety&quot;, &quot;starting material&quot;, &quot;polymorph&quot;.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="isDefining" minOccurs="0" maxOccurs="1" type="boolean">

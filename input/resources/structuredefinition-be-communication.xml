@@ -67,10 +67,11 @@
     <element id="Communication.payload.content[x]">
       <path value="Communication.payload.content[x]" />
       <short value="Message content" />
+      <definition value="A communicated content (or for multi-part communications, one portion of the communication). This can be a string, an attachment, or a reference to a resource." />
       <type>
         <code value="string" />
         <profile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/string320" />
-      </type>           
+      </type>
       <type>
         <code value="Attachment" />
       </type>

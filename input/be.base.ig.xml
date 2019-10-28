@@ -187,7 +187,6 @@
       <name value="String 320"/>
       <groupingId value="core"/>
     </resource>
-
     <!--<resource>
       <reference>
         <reference value="StructureDefinition/be-allergyintolerance"/>

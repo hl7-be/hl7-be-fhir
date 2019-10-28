@@ -14,7 +14,7 @@
   <abstract value="false"/> 
   <type value="string320"/> 
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/string"/> 
-  <derivation value="specialization"/> 
+  <derivation value="constraint"/> 
   <snapshot> 
     <element id="string320">
       <path value="string320"/> 
