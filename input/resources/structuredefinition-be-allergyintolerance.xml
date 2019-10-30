@@ -30,6 +30,7 @@
     </element>
     <element id="AllergyIntolerance.code">
       <path value="AllergyIntolerance.code" />
+      <min value="1" />
       <binding>
         <strength value="extensible" />
         <description value="Causative agent codes as defined by NIHDI" />
@@ -46,10 +47,12 @@
     </element>
     <element id="AllergyIntolerance.recordedDate">
       <path value="AllergyIntolerance.recordedDate" />
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="AllergyIntolerance.recorder">
       <path value="AllergyIntolerance.recorder" />
+      <min value="1" />
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
@@ -68,6 +71,10 @@
         <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner" />
         <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitionerrole" />
       </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="AllergyIntolerance.note">
+      <path value="AllergyIntolerance.note" />
       <mustSupport value="true" />
     </element>
     <element id="AllergyIntolerance.reaction">
@@ -92,6 +99,7 @@
     </element>
     <element id="AllergyIntolerance.reaction.note">
       <path value="AllergyIntolerance.reaction.note" />
+      <max value="0" />
       <mustSupport value="true" />
     </element>
   </differential>

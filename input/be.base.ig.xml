@@ -225,9 +225,29 @@
         <generation value="html"/>
       </page>
       <page>
-        <nameUrl value="artifacts.html"/>
-        <title value="Artifact List"/>
+        <nameUrl value="functional-overview"/>
+        <title value="Functional Description"/>
         <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="logical-models"/>
+        <title value="Logical Data Models"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="artifacts.html"/>
+        <title value="Artifacts"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="example-resources"/>
+        <title value="Example Resources"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="example-scenarios"/>
+        <title value="Example Scenarios"/>
+        <generation value="markdown"/>
       </page>
       <page>
         <nameUrl value="downloads.html"/>

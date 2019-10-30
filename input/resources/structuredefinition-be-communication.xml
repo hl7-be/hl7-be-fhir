@@ -5,6 +5,7 @@
   <version value="0.1.0" />
   <name value="BECommunication" />
   <status value="draft" />
+  <description value="This is the technical specification for the Communication resource, as  it shall be used in Belgium.&#xD;&#xA;&#xD;&#xA;This technical specification corresponds to the FHIR implementation of the Communication section of the Logical Data Model.&#xD;&#xA;&#xD;&#xA;This specification is compatible with the current version of KMEHR Diary Note, namely the selection of attributes that are supported, and the maximum length of the payload (320 characters).&#xD;&#xA;&#xD;&#xA;It also relies on the foundation Belgium resources, for example the Belgian Patient, Practitioner and other resources.&#xD;&#xA;" />
   <fhirVersion value="4.0.0" />
   <mapping>
     <identity value="w5" />

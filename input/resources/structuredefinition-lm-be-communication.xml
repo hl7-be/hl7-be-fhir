@@ -9,7 +9,7 @@
   <version value="0.1.0" />
   <name value="BECommunicationLogicalModel" />
   <status value="draft" />
-  <description value="The common model for Communication (messages or diary notes) in Belgium exchange." />
+  <description value="This is the Logical Data Model for Communications. Communications can be:&#xD;&#xA;&#xD;&#xA;* Messages between healthcare professionals&#xD;&#xA;* Messages between professionals and the patient&#xD;&#xA;* A journal of notes and communications about a patient, a patient's care or a healthcare team's activities.&#xD;&#xA;&#xD;&#xA;This Logical Data Model is compatible with both FHIR Communication and KMEHR Diary Note, namely the selection of attributes that are supported, and the maximum length of the payload (320 characters).&#xD;&#xA;" />
   <jurisdiction>
     <text value="Belgium" />
   </jurisdiction>
