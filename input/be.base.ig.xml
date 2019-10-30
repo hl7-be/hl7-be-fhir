@@ -225,12 +225,16 @@
         <generation value="html"/>
       </page>
       <page>
-        <nameUrl value="functional-overview"/>
+        <nameUrl value="conventions.html"/>
+        <title value="Conventions"/>
+        <generation value="markdown"/>
+      </page>      <page>
+        <nameUrl value="functional-overview.html"/>
         <title value="Functional Description"/>
-        <generation value="html"/>
+        <generation value="markdown"/>
       </page>
       <page>
-        <nameUrl value="logical-models"/>
+        <nameUrl value="logical-models.html"/>
         <title value="Logical Data Models"/>
         <generation value="markdown"/>
       </page>
@@ -240,12 +244,12 @@
         <generation value="html"/>
       </page>
       <page>
-        <nameUrl value="example-resources"/>
+        <nameUrl value="example-resources.html"/>
         <title value="Example Resources"/>
         <generation value="markdown"/>
       </page>
       <page>
-        <nameUrl value="example-scenarios"/>
+        <nameUrl value="example-scenarios.html"/>
         <title value="Example Scenarios"/>
         <generation value="markdown"/>
       </page>
