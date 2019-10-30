@@ -3,7 +3,7 @@
 echo Checking internet connection...
 Ping tx.fhir.org -n 1 -w 1000 | findstr TTL && goto isonline
 echo We're offline...
-set txoption=-tx XXXXX
+set txoption=-tx na
 goto igpublish
 :isonline
 echo We're online
