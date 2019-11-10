@@ -31,7 +31,7 @@
 				]
 			},
 			{
-				"system": "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-contactperson",
+				"system": "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/CD-CONTACT-PERSON",
 				"concept": [
 					{
 						"code": "father",

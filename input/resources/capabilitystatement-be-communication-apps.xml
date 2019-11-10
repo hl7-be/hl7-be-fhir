@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CapabilityStatement xmlns="http://hl7.org/fhir">
+  <id value="be-communication-apps"/>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/CapabilityStatement/be-communication-apps"/>
+  <version value="0.1.0"/>
+  <name value="CommunicationApps"/>
+  <title value="Communication Apps"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2019-08-27T00:00:00.000+01:00"/>
+  <description value="This is a Capability Statement for all Apps and clients that wish to be conformant with the Communication system specifications in Belgium."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <kind value="requirements"/>
+  <fhirVersion value="4.0.1"/>
+  <format value="application/fhir+xml"/>
+  <format value="application/fhir+json"/>
+  <rest>
+    <mode value="server"/>
+    <resource>
+      <type value="Communication"/>
+      <supportedProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication"/>
+      <interaction>
+        <code value="read"/>
+      </interaction>
+      <interaction>
+        <code value="search-type"/>
+      </interaction>
+      <interaction>
+        <code value="update"/>
+      </interaction>
+      <interaction>
+        <code value="patch"/>
+      </interaction>
+      <interaction>
+        <code value="create"/>
+      </interaction>
+      <updateCreate value="false"/>
+      <conditionalCreate value="false"/>
+      <conditionalUpdate value="false"/>
+      <conditionalDelete value="not-supported"/>
+    </resource>
+  </rest>
+</CapabilityStatement>

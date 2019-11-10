@@ -5,7 +5,7 @@
   <version value="0.1.0" />
   <name value="BePractitioner" />
   <status value="draft" />
-  <fhirVersion value="4.0.0" />
+  <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
   <type value="Practitioner" />

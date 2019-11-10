@@ -9,7 +9,7 @@
     <valueInteger value="1"/>
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/language"/>
-  <version value="4.0.0"/>
+  <version value="4.0.1"/>
   <name value="Human Language"/>
   <title value="Human Language of the item"/>
   <status value="draft"/>
@@ -22,7 +22,7 @@
     </telecom>
   </contact>
   <description value="The Human Language of the item."/>
-  <fhirVersion value="4.0.0"/>
+  <fhirVersion value="4.0.1"/>
   <mapping>
     <identity value="rim"/>
     <uri value="http://hl7.org/v3"/>
@@ -51,7 +51,7 @@
         <valueCode value="normative"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0"/>
+        <valueCode value="4.0.1"/>
       </extension>
       <path value="Extension"/>
       <short value="Human Language for the item"/>

@@ -21,7 +21,7 @@
     </coding>
   </jurisdiction>
   <packageId value="hl7.be.core"/>
-  <fhirVersion value="4.0.0"/>
+  <fhirVersion value="4.0.1"/>
   <definition>
     <grouping id="logicalmodels">
       <name value="Logical Models"/>
@@ -59,8 +59,17 @@
       <reference>
         <reference value="ValueSet/be-diarytopic"/>
       </reference>
-      <fhirVersion value="4.0.0"/>
+      <fhirVersion value="4.0.1"/>
       <name value="ValueSet - CommunicationTopic"/>
+      <description value="The values for communication topic"/>
+      <groupingId value="terminology"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CodeSystem/be-diarytopic"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="CodeSystem - CommunicationTopic"/>
       <description value="The values for communication topic"/>
       <groupingId value="terminology"/>
     </resource>
@@ -68,7 +77,7 @@
       <reference>
         <reference value="StructureDefinition/be-allergyintolerance"/>
       </reference>
-      <fhirVersion value="4.0.0"/>
+      <fhirVersion value="4.0.1"/>
       <name value="Allergy Intolerance core BE profile"/>
       <description value="The Core BE profile for Allergy Intolerance"/>
       <groupingId value="condition"/>
@@ -77,8 +86,17 @@
       <reference>
         <reference value="ValueSet/be-contactperson"/>
       </reference>
-      <fhirVersion value="4.0.0"/>
+      <fhirVersion value="4.0.1"/>
       <name value="ValueSet - Contact Person"/>
+      <description value="The values for Contact Person type"/>
+      <groupingId value="terminology"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CodeSystem/be-contactperson"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="CodeSystem - Contact Person"/>
       <description value="The values for Contact Person type"/>
       <groupingId value="terminology"/>
     </resource>
@@ -86,7 +104,7 @@
       <reference>
         <reference value="ValueSet/be-causativeagent"/>
       </reference>
-      <fhirVersion value="4.0.0"/>
+      <fhirVersion value="4.0.1"/>
       <name value="ValueSet - Contact Person"/>
       <description value="The list of causative agents"/>
       <groupingId value="terminology"/>
@@ -95,7 +113,7 @@
       <reference>
         <reference value="ValueSet/be-riskmanifestation"/>
       </reference>
-      <fhirVersion value="4.0.0"/>
+      <fhirVersion value="4.0.1"/>
       <name value="ValueSet - Risk Manifestation"/>
       <description value="The values for Risk Manifestation"/>
       <groupingId value="terminology"/>
@@ -104,7 +122,7 @@
       <reference>
         <reference value="StructureDefinition/lm-be-communication"/>
       </reference>
-      <fhirVersion value="4.0.0"/>
+      <fhirVersion value="4.0.1"/>
       <name value="Logical Model Communication"/>
       <description value="Communication / Diary Note logical model"/>
       <groupingId value="logicalmodels"/>
@@ -113,7 +131,7 @@
       <reference>
         <reference value="StructureDefinition/be-communication"/>
       </reference>
-      <fhirVersion value="4.0.0"/>
+      <fhirVersion value="4.0.1"/>
       <name value="Communication Profile"/>
       <description value="Communication / Diary Note profile"/>
       <groupingId value="communication"/>
@@ -122,7 +140,7 @@
       <reference>
         <reference value="StructureDefinition/lm-be-careplan"/>
       </reference>
-      <fhirVersion value="4.0.0"/>
+      <fhirVersion value="4.0.1"/>
       <name value="Logical Model Care Plan"/>
       <description value="Care Plan logical model"/>
       <groupingId value="logicalmodels"/>
@@ -131,25 +149,16 @@
       <reference>
         <reference value="StructureDefinition/be-patient"/>
       </reference>
-      <fhirVersion value="4.0.0"/>
+      <fhirVersion value="4.0.1"/>
       <name value="BE Patient profile"/>
       <description value="Core Belgian Patient profile"/>
       <groupingId value="core"/>
     </resource>
     <resource>
       <reference>
-        <reference value="StructureDefinition/be-practitioner"/>
-      </reference>
-      <fhirVersion value="4.0.0"/>
-      <name value="BE Practitioner profile"/>
-      <description value="Core Belgian Practitioner profile"/>
-      <groupingId value="core"/>
-    </resource>
-    <resource>
-      <reference>
         <reference value="StructureDefinition/be-practitionerrole"/>
       </reference>
-      <fhirVersion value="4.0.0"/>
+      <fhirVersion value="4.0.1"/>
       <name value="BE Practitioner Role profile"/>
       <description value="Core Belgian Practitioner Role profile"/>
       <groupingId value="core"/>
@@ -158,16 +167,25 @@
       <reference>
         <reference value="ValueSet/be-civilstate"/>
       </reference>
-      <fhirVersion value="4.0.0"/>
+      <fhirVersion value="4.0.1"/>
       <name value="ValueSet - Civil State"/>
       <description value="The values for Civil State"/>
       <groupingId value="terminology"/>
     </resource>
     <resource>
       <reference>
+        <reference value="CodeSystem/be-civilstate"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="CodeSystem - Civil State"/>
+      <description value="The official values for Civil State"/>
+      <groupingId value="terminology"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="StructureDefinition/be-careplan"/>
       </reference>
-      <fhirVersion value="4.0.0"/>
+      <fhirVersion value="4.0.1"/>
       <name value="Care Plan profile"/>
       <groupingId value="communication"/>
     </resource>
@@ -175,7 +193,7 @@
       <reference>
         <reference value="StructureDefinition/be-careteam"/>
       </reference>
-      <fhirVersion value="4.0.0"/>
+      <fhirVersion value="4.0.1"/>
       <name value="Care Team profile"/>
       <groupingId value="communication"/>
     </resource>
@@ -183,15 +201,43 @@
       <reference>
         <reference value="StructureDefinition/string320"/>
       </reference>
-      <fhirVersion value="4.0.0"/>
+      <fhirVersion value="4.0.1"/>
       <name value="String 320"/>
       <groupingId value="core"/>
     </resource>
-    <!--<resource>
+    <resource>
+      <reference>
+        <reference value="CapabilityStatement/be-communication-apps"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Communication Apps"/>
+      <groupingId value="core"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CodeSystem/be-hcparty"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="CodeSystem - Healthcare Party"/>
+      <description value="The values for healthcare party types"/>
+      <groupingId value="terminology"/>
+    </resource>    <!--
+	
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/be-practitioner"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="BE Practitioner profile"/>
+      <description value="Core Belgian Practitioner profile"/>
+      <groupingId value="core"/>
+    </resource>
+	
+	<resource>
       <reference>
         <reference value="StructureDefinition/be-allergyintolerance"/>
       </reference>
-      <fhirVersion value="4.0.0"/>
+      <fhirVersion value="4.0.1"/>
       <name value="Logical Model Allergy / Intolerance"/>
       <description value="Allergy / Intolerance logical model"/>
       <groupingId value="logicalmodels"/>
@@ -200,7 +246,7 @@
       <reference>
         <reference value="StructureDefinition/deviceimplantrecord"/>
       </reference>
-      <fhirVersion value="4.0.0"/>
+      <fhirVersion value="4.0.1"/>
       <name value="Device Implantation Record"/>
       <description value="Device Implantation / explantation record"/>
       <groupingId value="logicalmodels"/>
@@ -210,7 +256,7 @@
       <reference>
         <reference value="StructureDefinition/be-deviceimplant"/>
       </reference>
-      <fhirVersion value="4.0.0"/>
+      <fhirVersion value="4.0.1"/>
       <name value="Device Implantation Record"/>
       <description value="Device Implantation / explantation record"/>
       <groupingId value="documents"/>

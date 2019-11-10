@@ -110,8 +110,8 @@
                     }
                 ]
             },
-            {
-                "system":"https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-civilstate",
+            {              
+                "system": "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-civilstate",
                 "concept": [
                     {
                         "code":"10",

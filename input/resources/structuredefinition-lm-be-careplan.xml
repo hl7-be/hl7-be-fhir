@@ -19,7 +19,7 @@
     </telecom>
   </contact>
   <description value="Describes the intention of how one or more practitioners intend to deliver care for a particular patient, group or community for a period of time, possibly limited to care for a specific condition or set of conditions." />
-  <fhirVersion value="4.0.0" />
+  <fhirVersion value="4.0.1" />
   <kind value="logical" />
   <abstract value="false" />
   <type value="http://example.org/fhir/StructureDefinition/CarePlan" />

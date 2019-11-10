@@ -1,0 +1,148 @@
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-civilstate",
+      "concept" : [{
+        "code" : "10",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Unmarried"
+        },
+        {
+          "language" : "nl-BE",
+          "value" : "Ongehuwd"
+        },
+        {
+          "language" : "fr-BE",
+          "value" : "Célibataire"
+        }]
+      },
+      {
+        "code" : "26",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Putative marriage"
+        },
+        {
+          "language" : "nl-BE",
+          "value" : "Putatief huwelijk"
+        },
+        {
+          "language" : "fr-BE",
+          "value" : "Mariage putatif"
+        }]
+      },
+      {
+        "code" : "40",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Divorced"
+        },
+        {
+          "language" : "nl-BE",
+          "value" : "Echtgescheiden"
+        },
+        {
+          "language" : "fr-BE",
+          "value" : "Divorced"
+        }]
+      },
+      {
+        "code" : "41",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Divorced since 1/10/1994"
+        },
+        {
+          "language" : "nl-BE",
+          "value" : "Echtgescheiden vanaf 1/10/1994"
+        },
+        {
+          "language" : "fr-BE",
+          "value" : "Divorcé à partir du 1/10/1994"
+        }]
+      },
+      {
+        "code" : "50",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Legal separation"
+        },
+        {
+          "language" : "nl-BE",
+          "value" : "Gescheiden van tafel en bed"
+        },
+        {
+          "language" : "fr-BE",
+          "value" : "Séparé de corps et de biens"
+        }]
+      },
+      {
+        "code" : "51",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Legal separation since 1/10/1994"
+        },
+        {
+          "language" : "nl-BE",
+          "value" : "Gescheiden van tafel en bed sinds 1/10/1994"
+        },
+        {
+          "language" : "fr-BE",
+          "value" : "Séparé de corps et de biens à partir du 1/10/1994"
+        }]
+      },
+      {
+        "code" : "60",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Repudiation"
+        },
+        {
+          "language" : "nl-BE",
+          "value" : "Verstoting"
+        },
+        {
+          "language" : "fr-BE",
+          "value" : "Répudiation"
+        }]
+      },
+      {
+        "code" : "80",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Partnership"
+        },
+        {
+          "language" : "nl-BE",
+          "value" : "Partnerschap"
+        },
+        {
+          "language" : "fr-BE",
+          "value" : "Partenariat"
+        }]
+      },
+      {
+        "code" : "81",
+        "designation" : [{
+          "language" : "en",
+          "value" : "End of partnership"
+        },
+        {
+          "language" : "nl-BE",
+          "value" : "Partnerschap beeindigd"
+        },
+        {
+          "language" : "fr-BE",
+          "value" : "Fin de partenariat"
+        }]
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "Error from server: Unable to provide support for code system https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-civilstate"
+}
+-------------------------------------------------------------------------------------

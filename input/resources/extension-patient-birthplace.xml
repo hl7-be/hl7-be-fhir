@@ -9,14 +9,14 @@
     <valueInteger value="1"/>
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/patient-birthPlace"/>
-  <version value="4.0.0"/>
+  <version value="4.0.1"/>
   <name value="birthPlace"/>
   <title value="Birth Place"/>
   <status value="draft"/>
   <date value="2018-12-27T22:37:54+11:00"/>
   <publisher value="HL7"/>
   <description value="The registered place of birth of the patient. A sytem may use the address.text if they don&#39;t store the birthPlace address in discrete elements."/>
-  <fhirVersion value="4.0.0"/>
+  <fhirVersion value="4.0.1"/>
   <mapping>
     <identity value="rim"/>
     <uri value="http://hl7.org/v3"/>
@@ -37,7 +37,7 @@
         <valueCode value="normative"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0"/>
+        <valueCode value="4.0.1"/>
       </extension>
       <path value="Extension"/>
       <short value="Place of Birth for patient"/>

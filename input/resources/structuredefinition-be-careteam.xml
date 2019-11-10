@@ -5,7 +5,7 @@
   <version value="0.1.0"/> 
   <name value="BECareTeam" />
   <status value="draft" />
-  <fhirVersion value="4.0.0" />
+  <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="w5" />
     <uri value="http://hl7.org/fhir/fivews" />
