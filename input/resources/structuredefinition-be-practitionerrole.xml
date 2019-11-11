@@ -43,7 +43,7 @@
     </element>
     <element id="PractitionerRole.code:CD-HCPARTY.coding.system">
       <path value="PractitionerRole.code.coding.system" />
-      <fixedUri value="https://www.ehealth.fgov.be/standards/fhir/CodeSystem/CD-HCPARTY" />
+      <fixedUri value="https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-hcparty" />
     </element>
     <element id="PractitionerRole.code:SNOMED-CT">
       <path value="PractitionerRole.code" />
