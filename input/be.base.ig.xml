@@ -4,7 +4,7 @@
   <url value="https://www.ehealth.fgov.be/standards/fhir/ImplementationGuide/be.base.ig"/>
   <version value="0.1.0"/>
   <name value="BaseIG"/>
-  <title value="Belgium Base IG"/>
+  <title value="FHIR Belgium Base IG"/>
   <status value="draft"/>
   <experimental value="false"/>
   <publisher value="HL7 Belgium"/>
@@ -55,6 +55,10 @@
     <grouping id="terminology">
       <name value="Terminology"/>
       <description value="Terminology resources - ValueSets and CodeSystems"/>
+    </grouping>
+    <grouping id="examples">
+      <name value="Examples"/>
+      <description value="Example resources"/>
     </grouping>
     <resource>
       <reference>
@@ -155,6 +159,8 @@
       <description value="Core Belgian Patient profile"/>
       <groupingId value="core"/>
     </resource>
+<!--
+
     <resource>
       <reference>
         <reference value="StructureDefinition/be-practitionerrole"/>
@@ -164,6 +170,7 @@
       <description value="Core Belgian Practitioner Role profile"/>
       <groupingId value="core"/>
     </resource>
+-->
     <resource>
       <reference>
         <reference value="ValueSet/be-civilstate"/>
@@ -208,7 +215,7 @@
     </resource>
     <resource>
       <reference>
-        <reference value="CapabilityStatement/be-communication-apps"/>
+        <reference value="CapabilityStatement/be-communicationclient"/>
       </reference>
       <fhirVersion value="4.0.1"/>
       <name value="Communication Apps"/>
@@ -222,8 +229,129 @@
       <name value="CodeSystem - Healthcare Party"/>
       <description value="The values for healthcare party types"/>
       <groupingId value="terminology"/>
-    </resource>    <!--
-	
+    </resource>    
+<!-- -->
+    <resource>
+      <reference>
+         <reference value="Communication/be.comm1"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Communication example 1"/>
+      <description value="New message from DZOP to nurse"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication"/>
+      <groupingId value="examples"/>
+    </resource>
+    <resource>
+      <reference>
+         <reference value="Communication/be.comm2.1"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Communication example 2"/>
+      <description value="Long message - part 1"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication"/>
+      <groupingId value="examples"/>
+    </resource>
+    <resource>
+      <reference>
+         <reference value="Communication/be.comm2.2"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Communication example 3"/>
+      <description value="Long message - part 2"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication"/>
+      <groupingId value="examples"/>
+    </resource>
+    <resource>
+      <reference>
+         <reference value="Communication/be.comm2.3"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Communication example 4"/>
+      <description value="Long message - part 3"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication"/>
+      <groupingId value="examples"/>
+    </resource>
+    <resource>
+      <reference>
+         <reference value="Communication/be.comm3.1"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Communication example 5"/>
+      <description value="Send notice / question"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication"/>
+      <groupingId value="examples"/>
+    </resource>
+    <resource>
+      <reference>
+         <reference value="Communication/be.comm3.2"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Communication example 6"/>
+      <description value="Reply to question"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication"/>
+      <groupingId value="examples"/>
+    </resource>
+    <resource>
+      <reference>
+         <reference value="Communication/be.comm4.1"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Communication example 7"/>
+      <description value="Send notification"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication"/>
+      <groupingId value="examples"/>
+    </resource>
+    <resource>
+      <reference>
+         <reference value="Communication/be.comm4.2"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Communication example 8"/>
+      <description value="Send reminder"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication"/>
+      <groupingId value="examples"/>
+    </resource>
+    <resource>
+      <reference>
+         <reference value="Communication/be.comm5.1"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Communication example 9"/>
+      <description value="Send attachment"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication"/>
+      <groupingId value="examples"/>
+    </resource>
+    <resource>
+      <reference>
+         <reference value="Communication/be.comm5.2"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Communication example 10"/>
+      <description value="Forward existing attachment"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication"/>
+      <groupingId value="examples"/>
+    </resource>
+    <resource>
+      <reference>
+         <reference value="Communication/be.comm6"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Communication example 11"/>
+      <description value="High-priority notification"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication"/>
+      <groupingId value="examples"/>
+    </resource>
+    <resource>
+      <reference>
+         <reference value="Patient/peter"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Peter"/>
+      <description value="Peter"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient"/>
+      <groupingId value="examples"/>
+    </resource>
+	<!--
     <resource>
       <reference>
         <reference value="StructureDefinition/be-practitioner"/>

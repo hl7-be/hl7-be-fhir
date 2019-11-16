@@ -1,8 +1,10 @@
 /input/images/Thumbs.db
+/input/examples/esRender
 /input-cache/org.hl7.fhir.publisher.jar
 /hl7.be.fhir.template#current
 temp
 template
 output
+copyStuff.ps1.bat
 template2
 exampletemplate

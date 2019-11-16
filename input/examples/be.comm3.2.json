@@ -1,0 +1,54 @@
+{
+	"resourceType": "Communication",
+	"id": "be.comm3.2",
+	"meta": {
+		"profile": [
+			"https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication"
+		]
+	},
+	"language": "nl-BE",
+	"identifier": [
+		{
+			"system": "http://www.dzop.be/archive/communication",
+			"value": "d0000000-0000-0000-0000-000000000006"
+		}
+	],
+	"inResponseTo": [
+		{
+			"reference": "Communication/be.comm3.1"
+		},
+		{
+			"display": "be.comm3.1"
+		}
+	],
+	"status": "completed",
+	"category": [
+		{
+			"coding": [
+				{
+					"code": "notification"
+				}
+			]
+		}
+	],
+	"subject": {
+		"reference": "Patient/peter",
+		"display": "peter"
+	},
+	"sent": "2019-11-11T08:30:45+01:00",
+	"recipient": [
+		{
+			"reference": "CareTeam/careteam",
+			"display": "Care Team"
+		}
+	],
+	"sender": {
+		"reference": "Practitioner/natalie",
+		"display": "Natalie"
+	},
+	"payload": [
+		{
+			"contentString": "Yes, Patient can go at 4h00 today"
+		}
+	]
+}

@@ -1,0 +1,46 @@
+{
+	"resourceType": "Communication",
+	"id": "be.comm4.1",
+	"meta": {
+		"profile": [
+			"https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication"
+		]
+	},
+	"language": "nl-BE",
+	"identifier": [
+		{
+			"system": "http://www.dzop.be/archive/communication",
+			"value": "d0000000-0000-0000-0000-000000000007"
+		}
+	],
+	"status": "completed",
+	"category": [
+		{
+			"coding": [
+				{
+					"code": "notification"
+				}
+			]
+		}
+	],
+	"subject": {
+		"reference": "Patient/peter",
+		"display": "peter"
+	},
+	"sent": "2019-11-11T09:00:01+01:00",
+	"recipient": [
+		{
+			"reference": "CareTeam/careteam",
+			"display": "Nurses"
+		}
+	],
+	"sender": {
+		"reference": "Practitioner/dzop",
+		"display": "DZOP"
+	},
+	"payload": [
+		{
+			"contentString": "New blood collection apppointment scheduled for 16h00"
+		}
+	]
+}

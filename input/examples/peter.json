@@ -1,0 +1,151 @@
+{
+    "resourceType":"Patient",
+    "id":"peter",
+    "meta":{
+        "profile": [
+            "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient"
+        ]
+    },
+    "extension": [
+        {
+            "url":"http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+            "valueAddress":{
+                "extension": [
+                    {
+                        "url":"http://hl7.org/fhir/StructureDefinition/language",
+                        "valueCode":"nl"
+                    }
+                ],
+                "text":"26, Rue du Labrador, 5000 Namen",
+                "city":"Namen",
+                "country":"BE"
+            }
+        },
+        {
+            "url":"http://hl7.org/fhir/StructureDefinition/patient-nationality",
+            "extension": [
+                {
+                    "url":"code",
+                    "valueCodeableConcept":{
+                        "coding": [
+                            {
+                                "code":"BE",
+                                "display":"Belgium"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ],
+    "active":true,
+    "identifier": [
+        {
+            "use":"official",
+            "type":{
+                "coding": [
+                    {
+                        "system":"http://terminology.hl7.org/CodeSystem/v2-0203",
+                        "code":"SB",
+                        "display":"Social Beneficiary Identifier"
+                    }
+                ]
+            },
+            "value":"79121137740"
+        }
+	],
+    "name": [
+        {
+            "use":"official",
+            "family":"Patient",
+            "given": [
+                "Peter"
+            ]
+        }
+    ],
+    "gender":"male",
+    "birthDate":"1979-12-11",
+    "_birthDate":{
+        "extension": [
+            {
+                "url":"http://hl7.org/fhir/StructureDefinition/patient-birthTime",
+                "valueDateTime":"1979-12-11T13:28:17-05:00"
+            }
+        ]
+    },
+    "address": [
+        {
+            "extension": [
+                {
+                    "url":"http://hl7.org/fhir/StructureDefinition/language",
+                    "valueCode":"nl"
+                }
+            ],
+            "use":"home",
+            "type":"both",
+            "text":"Sloordelle 42, 1160 Oudergem",
+            "city":"Oudergem",
+            "postalCode":"1160",
+            "country":"BE"
+        },
+        {
+            "extension": [
+                {
+                    "url":"http://hl7.org/fhir/StructureDefinition/language",
+                    "valueCode":"fr"
+                }
+            ],
+            "use":"home",
+            "type":"both",
+            "text":"42, Allee des Colzas, 1160 Auderghem",
+            "city":"Auderghem",
+            "postalCode":"1160",
+            "country":"BE"
+        }
+    ],
+    "maritalStatus":{
+        "coding": [
+            {
+                "system":"http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+                "code":"D",
+                "display":"Divorced"
+            }
+        ]
+    },
+    "contact": [
+        {
+            "relationship": [
+                {
+                    "coding": [
+                        {
+                            "system":"http://terminology.hl7.org/CodeSystem/v2-0131",
+                            "code":"N",
+                            "display":"Next of kin"
+                        },
+                        {
+                            "code":"mother"
+                        }
+                    ]
+                }
+            ],
+            "name":{
+                "family":"Vogels",
+                "given": [
+                    "Leia"
+                ]
+            },
+            "telecom": [
+                {
+                    "system":"phone",
+                    "value":"+31201234567",
+                    "use":"mobile"
+                }
+            ]
+        }
+    ],
+    "generalPractitioner": [
+        {
+            "reference":"Practitioner/Dragon"
+        }
+    ]
+}
