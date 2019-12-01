@@ -23,7 +23,7 @@
 			]
 		}
 	],
-	"priority": "high",
+	"priority": "urgent",
 	"subject": {
 		"reference": "Patient/peter",
 		"display": "peter"

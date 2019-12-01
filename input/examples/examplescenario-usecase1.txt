@@ -1,0 +1,61 @@
+@startuml
+title Process
+
+hide footbox
+
+participant "\n\n    DZOP    \n\n" as DZOP
+'actor "Patient\nPeter" as peter
+
+actor "Nurse\nNatalie" as natalie
+
+actor "Care\nTeam" as careteam
+actor "Doctor\nDragon" as dragon
+
+actor "Doctor\nDavid" as david
+
+actor "All\nNurses" as nurses
+actor "All\nDoctors" as doctors
+
+
+group Send notification
+DZOP-> natalie : Blood must be taken
+end
+...
+
+group Send a long message in 3 parts
+natalie-> careteam : Patient has eaten... (NL)
+natalie-> careteam : Patient has eaten... (FR)
+natalie-> careteam : Patient has eaten... (EN)
+end
+
+...
+    
+group Send message and reply
+dragon-> careteam : Today also possible\nif patient can be\nthere at 16h00
+...
+natalie-> careteam : Patient can be\n there at 16h00
+end
+
+...
+
+    
+group Send message and reminder
+DZOP-> nurses : New Appointment - 16h00
+...
+DZOP-> natalie : Reminder: \nblood collection\nat 16h00
+end
+...
+    
+group Send attachment and forward
+natalie-> david : Send attachment
+david-> doctors : Forward
+end
+
+...
+    
+group Send priority message
+dragon -> careteam : Please replace bandage
+end
+
+  
+@enduml

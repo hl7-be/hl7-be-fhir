@@ -159,8 +159,6 @@
       <description value="Core Belgian Patient profile"/>
       <groupingId value="core"/>
     </resource>
-<!--
-
     <resource>
       <reference>
         <reference value="StructureDefinition/be-practitionerrole"/>
@@ -170,7 +168,6 @@
       <description value="Core Belgian Practitioner Role profile"/>
       <groupingId value="core"/>
     </resource>
--->
     <resource>
       <reference>
         <reference value="ValueSet/be-civilstate"/>

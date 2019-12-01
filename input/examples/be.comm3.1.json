@@ -13,14 +13,6 @@
 			"value": "d0000000-0000-0000-0000-000000000005"
 		}
 	],
-	"partOf": [
-		{
-			"reference": ""
-		},
-		{
-			"display": "2"
-		}
-	],
 	"status": "completed",
 	"category": [
 		{
