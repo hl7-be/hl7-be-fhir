@@ -14,12 +14,12 @@ echo "$txoption"
 
 publisher=./input-cache/org.hl7.fhir.publisher.jar
 if test -f "$publisher"; then
-echo    JAVA -jar ./input-cache/org.hl7.fhir.publisher.jar -ig ig.ini $txoption
+    JAVA -jar ./input-cache/org.hl7.fhir.publisher.jar -ig ig.ini $txoption
 
 else
         publisher=../org.hl7.fhir.publisher.jar
         if test -f "$publisher"; then
-echo       JAVA -jar ../org.hl7.fhir.publisher.jar -ig ig.ini $txoption
+            JAVA -jar ../org.hl7.fhir.publisher.jar -ig ig.ini $txoption
         else
         echo IG Publisher NOT FOUND in input-cache or parent folder... aborting
         fi
