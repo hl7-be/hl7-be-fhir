@@ -184,6 +184,37 @@
       <description value="The values for Risk Manifestation"/>
       <groupingId value="terminology"/>
     </resource>
+
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/lm-be-communication"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Logical Model Communication"/>
+      <description value="Communication / Diary Note logical model"/>
+      <groupingId value="logicalmodels"/>
+    </resource>
+
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/lm-be-careplan"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Logical Model Care Plan"/>
+      <description value="Care Plan logical model"/>
+      <groupingId value="logicalmodels"/>
+    </resource>
+
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/be-communication"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Communication Profile"/>
+      <description value="Communication / Diary Note profile"/>
+      <groupingId value="communication"/>
+    </resource>
+
     <resource>
       <reference>
         <reference value="StructureDefinition/be-patient"/>
@@ -230,6 +261,17 @@
       <groupingId value="terminology"/>
     </resource>    
 
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/be-practitioner"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="BE Practitioner profile"/>
+      <description value="Core Belgian Practitioner profile"/>
+      <groupingId value="core"/>
+    </resource>
+	
+	
 <!--
     <resource>
       <reference>
@@ -352,16 +394,7 @@
       <groupingId value="examples"/>
     </resource>
 	
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/be-practitioner"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="BE Practitioner profile"/>
-      <description value="Core Belgian Practitioner profile"/>
-      <groupingId value="core"/>
-    </resource>
-	
+
 	<resource>
       <reference>
         <reference value="StructureDefinition/be-allergyintolerance"/>
