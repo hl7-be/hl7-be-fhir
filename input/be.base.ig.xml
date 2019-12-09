@@ -123,6 +123,7 @@
       <description value="The values for Risk Manifestation"/>
       <groupingId value="terminology"/>
     </resource>
+
     <resource>
       <reference>
         <reference value="StructureDefinition/lm-be-communication"/>
@@ -132,15 +133,7 @@
       <description value="Communication / Diary Note logical model"/>
       <groupingId value="logicalmodels"/>
     </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/be-communication"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="Communication Profile"/>
-      <description value="Communication / Diary Note profile"/>
-      <groupingId value="communication"/>
-    </resource>
+<!--
     <resource>
       <reference>
         <reference value="StructureDefinition/lm-be-careplan"/>
@@ -150,6 +143,17 @@
       <description value="Care Plan logical model"/>
       <groupingId value="logicalmodels"/>
     </resource>
+-->
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/be-communication"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Communication Profile"/>
+      <description value="Communication / Diary Note profile"/>
+      <groupingId value="communication"/>
+    </resource>
+
     <resource>
       <reference>
         <reference value="StructureDefinition/be-patient"/>
