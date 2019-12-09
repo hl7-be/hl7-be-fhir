@@ -133,7 +133,7 @@
       <description value="Communication / Diary Note logical model"/>
       <groupingId value="logicalmodels"/>
     </resource>
-<!--
+
     <resource>
       <reference>
         <reference value="StructureDefinition/lm-be-careplan"/>
@@ -143,7 +143,7 @@
       <description value="Care Plan logical model"/>
       <groupingId value="logicalmodels"/>
     </resource>
--->
+
     <resource>
       <reference>
         <reference value="StructureDefinition/be-communication"/>
