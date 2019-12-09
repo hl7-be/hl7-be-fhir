@@ -88,6 +88,24 @@
       <groupingId value="communication"/>
     </resource>
 
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/be-patient"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="BE Patient profile"/>
+      <description value="Core Belgian Patient profile"/>
+      <groupingId value="core"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/be-practitionerrole"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="BE Practitioner Role profile"/>
+      <description value="Core Belgian Practitioner Role profile"/>
+      <groupingId value="core"/>
+    </resource>
 
     <resource>
       <reference>
@@ -187,54 +205,6 @@
 
     <resource>
       <reference>
-        <reference value="StructureDefinition/lm-be-communication"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="Logical Model Communication"/>
-      <description value="Communication / Diary Note logical model"/>
-      <groupingId value="logicalmodels"/>
-    </resource>
-
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/lm-be-careplan"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="Logical Model Care Plan"/>
-      <description value="Care Plan logical model"/>
-      <groupingId value="logicalmodels"/>
-    </resource>
-
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/be-communication"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="Communication Profile"/>
-      <description value="Communication / Diary Note profile"/>
-      <groupingId value="communication"/>
-    </resource>
-
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/be-patient"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="BE Patient profile"/>
-      <description value="Core Belgian Patient profile"/>
-      <groupingId value="core"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/be-practitionerrole"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="BE Practitioner Role profile"/>
-      <description value="Core Belgian Practitioner Role profile"/>
-      <groupingId value="core"/>
-    </resource>
-    <resource>
-      <reference>
         <reference value="ValueSet/be-civilstate"/>
       </reference>
       <fhirVersion value="4.0.1"/>
@@ -261,6 +231,21 @@
       <groupingId value="terminology"/>
     </resource>    
 
+<!-- Examples used by this profile -->
+
+    <resource>
+      <reference>
+         <reference value="Communication/be.comm1"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Communication example 1"/>
+      <description value="New message from DZOP to nurse"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication"/>
+    </resource>
+
+
+	
+<!--
     <resource>
       <reference>
         <reference value="StructureDefinition/be-practitioner"/>
@@ -271,18 +256,7 @@
       <groupingId value="core"/>
     </resource>
 	
-	
-<!--
-    <resource>
-      <reference>
-         <reference value="Communication/be.comm1"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="Communication example 1"/>
-      <description value="New message from DZOP to nurse"/>
-      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication"/>
-      <groupingId value="examples"/>
-    </resource>
+
     <resource>
       <reference>
          <reference value="Communication/be.comm2.1"/>
