@@ -9,7 +9,7 @@
   <version value="0.1.0" />
   <name value="BECommunicationLogicalModel" />
   <status value="draft" />
-  <description value="This is the Logical Data Model for Communications. Communications can be:&#xD;&#xA;&#xD;&#xA;* Messages between healthcare professionals&#xD;&#xA;* Messages between professionals and the patient&#xD;&#xA;* A journal of notes and communications about a patient, a patient's care or a healthcare team's activities.&#xD;&#xA;&#xD;&#xA;This Logical Data Model is compatible with both FHIR Communication and KMEHR Diary Note, namely the selection of attributes that are supported, and the maximum length of the payload (320 characters).&#xD;&#xA;" />
+  <description value="This is the Logical Data Model for Communications. Communications can be:&#xD;&#xA;&#xD;&#xA;* Messages between healthcare professionals&#xD;&#xA;* Messages between professionals and the patient&#xD;&#xA;* A journal of notes and communications about a patient, a patient's care or a healthcare team's activities.&#xD;&#xA;&#xD;&#xA;This Logical Data Model is compatible with both FHIR Communication and KMEHR Diary Note, namely the selection of attributes that are supported, and the maximum length of the payload (320 characters)." />
   <jurisdiction>
     <text value="Belgium" />
   </jurisdiction>
@@ -20,16 +20,14 @@
   <type value="http://example.org/fhir/StructureDefinition/BECommunication" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element" />
   <derivation value="specialization" />
-  <differential>
+  <snapshot>
     <element id="BECommunication">
       <path value="BECommunication" />
       <short value="Communication" />
       <definition value="The Communication object represents a message sent or note entered in a diary, in the context of care." />
       <min value="0" />
       <max value="*" />
-      <type>
-        <code value="Element" />
-      </type>
+
     </element>
     <element id="BECommunication.identifier">
       <path value="BECommunication.identifier" />
@@ -213,5 +211,5 @@
         <code value="Reference" />
       </type>
     </element>
-  </differential>
+  </snapshot>
 </StructureDefinition>

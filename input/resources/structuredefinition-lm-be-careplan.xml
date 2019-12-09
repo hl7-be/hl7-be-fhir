@@ -9,12 +9,6 @@
   <contact>
     <telecom>
       <system value="url" />
-      <value value="http://hl7.org/fhir" />
-    </telecom>
-  </contact>
-  <contact>
-    <telecom>
-      <system value="url" />
       <value value="http://www.hl7.org/Special/committees/patientcare/index.cfm" />
     </telecom>
   </contact>
@@ -25,7 +19,7 @@
   <type value="http://example.org/fhir/StructureDefinition/CarePlan" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/CarePlan" />
   <derivation value="specialization" />
-  <differential>
+  <snapshot>
     <element id="CarePlan">
       <path value="CarePlan" />
       <short value="Healthcare plan for patient or group" />
@@ -33,14 +27,6 @@
       <alias value="Care Team" />
       <min value="0" />
       <max value="*" />
-      <mapping>
-        <identity value="workflow" />
-        <map value="Request" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value="Act[classCode=PCPR, moodCode=INT]" />
-      </mapping>
     </element>
     <element id="CarePlan.identifier">
       <path value="CarePlan.identifier" />
@@ -1059,5 +1045,5 @@
         <map value=".inboundRelationship[typeCode=SUBJ].source[classCode=OBS, moodCode=EVN, code=&quot;annotation&quot;].value" />
       </mapping>
     </element>
-  </differential>
+  </snapshot>
 </StructureDefinition>

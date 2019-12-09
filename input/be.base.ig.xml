@@ -60,6 +60,67 @@
       <name value="Examples"/>
       <description value="Example resources"/>
     </grouping>
+
+
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/be-communication"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Communication Profile"/>
+      <description value="Communication / Diary Note profile"/>
+      <groupingId value="communication"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/be-careplan"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Care Plan profile"/>
+      <groupingId value="communication"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/be-careteam"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Care Team profile"/>
+      <groupingId value="communication"/>
+    </resource>
+
+
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/lm-be-careplan"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Logical Model Care Plan"/>
+      <description value="Care Plan logical model"/>
+      <groupingId value="logicalmodels"/>
+    </resource>
+
+
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/lm-be-communication"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Logical Model Communication"/>
+      <description value="Communication / Diary Note logical model"/>
+      <groupingId value="logicalmodels"/>
+    </resource>
+
+
+
+    <resource>
+      <reference>
+        <reference value="CapabilityStatement/be-communicationclient"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Communication Apps"/>
+      <groupingId value="core"/>
+    </resource>
+
     <resource>
       <reference>
         <reference value="ValueSet/be-diarytopic"/>
@@ -125,33 +186,6 @@
     </resource>
     <resource>
       <reference>
-        <reference value="StructureDefinition/lm-be-communication"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="Logical Model Communication"/>
-      <description value="Communication / Diary Note logical model"/>
-      <groupingId value="logicalmodels"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/be-communication"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="Communication Profile"/>
-      <description value="Communication / Diary Note profile"/>
-      <groupingId value="communication"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/lm-be-careplan"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="Logical Model Care Plan"/>
-      <description value="Care Plan logical model"/>
-      <groupingId value="logicalmodels"/>
-    </resource>
-    <resource>
-      <reference>
         <reference value="StructureDefinition/be-patient"/>
       </reference>
       <fhirVersion value="4.0.1"/>
@@ -188,38 +222,6 @@
     </resource>
     <resource>
       <reference>
-        <reference value="StructureDefinition/be-careplan"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="Care Plan profile"/>
-      <groupingId value="communication"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/be-careteam"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="Care Team profile"/>
-      <groupingId value="communication"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/string320"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="String 320"/>
-      <groupingId value="core"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="CapabilityStatement/be-communicationclient"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="Communication Apps"/>
-      <groupingId value="core"/>
-    </resource>
-    <resource>
-      <reference>
         <reference value="CodeSystem/be-hcparty"/>
       </reference>
       <fhirVersion value="4.0.1"/>
@@ -227,7 +229,8 @@
       <description value="The values for healthcare party types"/>
       <groupingId value="terminology"/>
     </resource>    
-<!-- -->
+
+<!--
     <resource>
       <reference>
          <reference value="Communication/be.comm1"/>
@@ -348,7 +351,7 @@
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient"/>
       <groupingId value="examples"/>
     </resource>
-	<!--
+	
     <resource>
       <reference>
         <reference value="StructureDefinition/be-practitioner"/>
@@ -386,7 +389,8 @@
       <name value="Device Implantation Record"/>
       <description value="Device Implantation / explantation record"/>
       <groupingId value="documents"/>
-    </resource>-->
+    </resource>
+	-->
     <page>
       <nameUrl value="toc.html"/>
       <title value="Table of Contents"/>

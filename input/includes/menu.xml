@@ -1,6 +1,58 @@
 <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
   <li><a href="index.html">IG Home</a></li>
   <li><a href="toc.html">Table of Contents</a></li>
+
+
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Description<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a target="_blank" href="{{site.data.fhir.path}}index.html">Logical Models</a>
+      </li>
+      <li>
+        <a target="_blank" href="http://hl7.org/fhirpath">Use Cases</a>
+      </li>
+      <li>
+        <a href="downloads.html">Goals</a>
+      </li>
+    </ul>
+  </li>
+
+
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Transactions<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a target="_blank" href="{{site.data.fhir.path}}index.html">Actors<img src="external.png" style="text-align: baseline"/></a>
+      </li>
+      <li>
+        <a target="_blank" href="http://hl7.org/fhirpath">Services &amp; Transactions</a>
+      </li>
+    </ul>
+  </li>
+
+
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Implementation<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a target="_blank" href="{{site.data.fhir.path}}index.html">Test Data<img src="external.png" style="text-align: baseline"/></a>
+      </li>
+      <li>
+        <a target="_blank" href="{{site.data.fhir.path}}index.html">OpenAPI<img src="external.png" style="text-align: baseline"/></a>
+      </li>
+      <li>
+        <a target="_blank" href="http://hl7.org/fhirpath">Test Server<img src="external.png" style="text-align: baseline"/></a>
+      </li>
+    </ul>
+  </li>
+
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">BE Core Specification<b class="caret"> </b> </a>
     <ul class="dropdown-menu">
