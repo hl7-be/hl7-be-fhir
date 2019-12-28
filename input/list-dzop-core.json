@@ -1,0 +1,34 @@
+{
+  "resourceType": "List",
+  "id": "list-dzop-core",
+  "status": "current",
+  "mode": "working",
+  "date": "2019-11-25T22:17:00+11:00",
+  "note": [
+    {
+      "text": "These resources are specific for the DZOP project"
+    }
+  ],
+  "entry": [
+    {
+      "item": {
+        "reference": "StructureDefinition-be-communication"
+      }
+    },
+    {
+      "item": {
+        "reference": "StructureDefinition-be-careplan"
+      }
+    },
+    {
+      "item": {
+        "reference": "StructureDefinition-be-careteam"
+      }
+    },
+    {
+      "item": {
+        "reference": "StructureDefinition-be-goal"
+      }
+    },
+  ]
+}

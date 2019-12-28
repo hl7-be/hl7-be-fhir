@@ -1,0 +1,39 @@
+@startuml
+
+
+Title Process
+
+actor "Physician" as dragon
+participant "Care Planning app" as planner
+participant "DZOP" as dzop
+
+    
+    
+    
+    dragon-> planner : Query team members\n [[# ]]\n
+
+    planner-> dzop : Request List of Pracitioners\n [[# ]]\n
+
+    planner-> dragon : Show possible team members\n [[# ]]\n
+
+    
+group Propose team
+dragon-> planner : Select team members\n [[# ]]\n
+planner-> dzop : Propose CareTeam\n [[#teampiet1 CareTeam1]]\n
+dzop-> dzop : Validate team\n [[# ]]\n
+dzop-> planner : Return validated team\n [[#teampiet1 CareTeam1]]\n
+end
+
+    
+    
+group Update team
+dragon-> planner : Add new Team member\n [[# ]]\n
+planner-> dzop : Propose updated team\n [[#teampiet1 CareTeam1]]\n
+dzop-> dzop : Validate team\n [[# ]]\n
+dzop-> planner : Return validated team\n [[# ]]\n
+planner-> dragon : Show team composition\n [[# ]]\n
+end
+
+  
+
+@enduml

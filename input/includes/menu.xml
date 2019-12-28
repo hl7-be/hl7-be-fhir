@@ -1,78 +1,119 @@
-<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
-  <li><a href="index.html">IG Home</a></li>
-  <li><a href="toc.html">Table of Contents</a></li>
-
-
-  <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Description<b class="caret">
-      </b>
-    </a>
-    <ul class="dropdown-menu">
-      <li>
-        <a target="_blank" href="{{site.data.fhir.path}}index.html">Logical Models</a>
-      </li>
-      <li>
-        <a target="_blank" href="http://hl7.org/fhirpath">Use Cases</a>
-      </li>
-      <li>
-        <a href="downloads.html">Goals</a>
-      </li>
-    </ul>
-  </li>
-
-
-  <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Transactions<b class="caret">
-      </b>
-    </a>
-    <ul class="dropdown-menu">
-      <li>
-        <a target="_blank" href="{{site.data.fhir.path}}index.html">Actors<img src="external.png" style="text-align: baseline"/></a>
-      </li>
-      <li>
-        <a target="_blank" href="http://hl7.org/fhirpath">Services &amp; Transactions</a>
-      </li>
-    </ul>
-  </li>
-
-
-  <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Implementation<b class="caret">
-      </b>
-    </a>
-    <ul class="dropdown-menu">
-      <li>
-        <a target="_blank" href="{{site.data.fhir.path}}index.html">Test Data<img src="external.png" style="text-align: baseline"/></a>
-      </li>
-      <li>
-        <a target="_blank" href="{{site.data.fhir.path}}index.html">OpenAPI<img src="external.png" style="text-align: baseline"/></a>
-      </li>
-      <li>
-        <a target="_blank" href="http://hl7.org/fhirpath">Test Server<img src="external.png" style="text-align: baseline"/></a>
-      </li>
-    </ul>
-  </li>
-
-  <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">BE Core Specification<b class="caret"> </b> </a>
-    <ul class="dropdown-menu">
-    </ul>
-  </li>
-  <li><a href="artifacts.html">Artifact Index</a></li>
-  <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support<b class="caret">
-      </b>
-    </a>
-    <ul class="dropdown-menu">
-      <li>
-        <a target="_blank" href="{{site.data.fhir.path}}index.html">FHIR Spec <img src="external.png" style="text-align: baseline"/></a>
-      </li>
-      <li>
-        <a target="_blank" href="http://hl7.org/fhirpath">FHIRPath Spec <img src="external.png" style="text-align: baseline"/></a>
-      </li>
-      <li>
-        <a href="downloads.html">Downloads</a>
-      </li>
-    </ul>
-  </li>
+<ul
+	xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+	<li>
+		<a href="index.html">IG Home</a>
+	</li>
+	<li>
+		<a href="toc.html">Table of Contents</a>
+	</li>
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Background
+			<b class="caret"></b>
+		</a>
+		<ul class="dropdown-menu">
+			<li>
+				<a href="#">How to use this Publication</a>
+			</li>
+			<li>
+				<a href="#">Copyright</a>
+			</li>
+			<li>
+				<a target="_blank" href="{{site.data.fhir.path}}index.html">FHIR Spec 
+					<img src="external.png" style="text-align: baseline"/>
+				</a>
+			</li>		</ul>
+	</li>
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Functional Description
+			<b class="caret"></b>
+		</a>
+		<ul class="dropdown-menu">
+			<li>
+				<a href="downloads.html">Context and intro</a>
+			</li>
+			<li>
+				<a target="_blank" href="http://hl7.org/fhirpath">Use Cases</a>
+			</li>
+			<li>
+				<a target="_blank" href="{{site.data.fhir.path}}index.html">Logical Models</a>
+			</li>
+			<li>
+				<a target="_blank" href="#">Actors
+					<img src="external.png" style="text-align: baseline"/>
+				</a>
+			</li>
+			<li>
+				<a target="_blank" href="#">Services &amp; Transactions</a>
+			</li>
+		</ul>
+	</li>
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Detailed Specification
+			<b class="caret"></b>
+		</a>
+		<ul class="dropdown-menu">
+			<li>
+				<a href="#">Content Profiles</a>
+			</li>
+			<li>
+				<a href="artifacts.html">Artifact Index</a>
+			</li>
+		</ul>
+	</li>
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Terminology
+			<b class="caret"></b>
+		</a>
+		<ul class="dropdown-menu">
+			<li>
+				<a href="#">Terminology Resources</a>
+			</li>
+		</ul>
+	</li>
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Projects
+			<b class="caret"></b>
+		</a>
+		<ul class="dropdown-menu">
+			<li>
+				<a href="#">Core Profiles</a>
+			</li>
+			<li class="divider"></li>
+			<li>
+				<a href="#">DZOP</a>
+			</li>
+            <li>
+				<a href="#">EFRO</a>
+			</li>
+		</ul>
+	</li>
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Implementation
+			<b class="caret"></b>
+		</a>
+		<ul class="dropdown-menu">
+			<li>
+				<a target="_blank" href="{{site.data.fhir.path}}index.html">Test Data
+					<img src="external.png" style="text-align: baseline"/>
+				</a>
+			</li>
+			<li>
+				<a target="_blank" href="http://hl7.org/fhirpath">Test Scripts
+					<img src="external.png" style="text-align: baseline"/>
+				</a>
+			</li>
+			<li>
+				<a target="_blank" href="{{site.data.fhir.path}}index.html">OpenAPI
+					<img src="external.png" style="text-align: baseline"/>
+				</a>
+			</li>
+			<li>
+				<a target="_blank" href="http://hl7.org/fhirpath">Test Server
+					<img src="external.png" style="text-align: baseline"/>
+				</a>
+			</li>
+			<li>
+				<a href="downloads.html">Downloads</a>
+			</li>		</ul>
+	</li>
 </ul>      

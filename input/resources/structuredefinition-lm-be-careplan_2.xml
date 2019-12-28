@@ -5,28 +5,21 @@
   <version value="0.1.0" />
   <name value="BECarePlan" />
   <status value="draft" />
-  <date value="2019-01-10T06:44:59+01:00" />
-  <publisher value="HL7 Belgium" />
+  <date value="2019-01-10T05:44:59+00:00" />
   <contact>
     <telecom>
-      <system value="other" />
-      <value value="http://hl7.org/Special/committees/fiwg" />
+      <system value="url" />
+      <value value="http://www.hl7.org/Special/committees/patientcare/index.cfm" />
     </telecom>
   </contact>
   <description value="Describes the intention of how one or more practitioners intend to deliver care for a particular patient, group or community for a period of time, possibly limited to care for a specific condition or set of conditions." />
-  <jurisdiction>
-    <coding>
-      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm" />
-      <code value="001" />
-    </coding>
-  </jurisdiction>
   <fhirVersion value="4.0.1" />
   <kind value="logical" />
   <abstract value="false" />
   <type value="http://example.org/fhir/StructureDefinition/CarePlan" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/CarePlan" />
   <derivation value="specialization" />
-  <differential>
+  <snapshot>
     <element id="CarePlan">
       <path value="CarePlan" />
       <short value="Healthcare plan for patient or group" />
@@ -47,10 +40,26 @@
         <code value="Identifier" />
       </type>
       <isSummary value="true" />
+      <mapping>
+        <identity value="workflow" />
+        <map value="Request.identifier" />
+      </mapping>
+      <mapping>
+        <identity value="w5" />
+        <map value="FiveWs.identifier" />
+      </mapping>
+      <mapping>
+        <identity value="v2" />
+        <map value="PTH-3" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value=".id" />
+      </mapping>
     </element>
     <element id="CarePlan.instantiatesCanonical">
       <path value="CarePlan.instantiatesCanonical" />
-      <short value="The Instantiates FHIR protocol or definition" />
+      <short value="Instantiates FHIR protocol or definition" />
       <definition value="The URL pointing to a FHIR-defined protocol, guideline, questionnaire or other definition that is adhered to in whole or in part by this CarePlan." />
       <min value="0" />
       <max value="*" />
@@ -63,6 +72,14 @@
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/OperationDefinition" />
       </type>
       <isSummary value="true" />
+      <mapping>
+        <identity value="workflow" />
+        <map value="Request.instantiatesCanonical" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value=".outboundRelationship[typeCode=DEFN].target" />
+      </mapping>
     </element>
     <element id="CarePlan.instantiatesUri">
       <path value="CarePlan.instantiatesUri" />
@@ -75,6 +92,14 @@
         <code value="uri" />
       </type>
       <isSummary value="true" />
+      <mapping>
+        <identity value="workflow" />
+        <map value="Request.instantiatesUri" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value=".outboundRelationship[typeCode=DEFN].target" />
+      </mapping>
     </element>
     <element id="CarePlan.basedOn">
       <path value="CarePlan.basedOn" />
@@ -92,6 +117,10 @@
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/CarePlan" />
       </type>
       <isSummary value="true" />
+      <mapping>
+        <identity value="workflow" />
+        <map value="Request.basedOn" />
+      </mapping>
     </element>
     <element id="CarePlan.replaces">
       <path value="CarePlan.replaces" />
@@ -110,6 +139,10 @@
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/CarePlan" />
       </type>
       <isSummary value="true" />
+      <mapping>
+        <identity value="workflow" />
+        <map value="Request.replaces" />
+      </mapping>
     </element>
     <element id="CarePlan.partOf">
       <path value="CarePlan.partOf" />
@@ -146,6 +179,22 @@
         <description value="Indicates whether the plan is currently being acted upon, represents future intentions or is now a historical record." />
         <valueSet value="http://hl7.org/fhir/ValueSet/request-status|4.0.0" />
       </binding>
+      <mapping>
+        <identity value="workflow" />
+        <map value="Request.status {uses different ValueSet}" />
+      </mapping>
+      <mapping>
+        <identity value="w5" />
+        <map value="FiveWs.status" />
+      </mapping>
+      <mapping>
+        <identity value="v2" />
+        <map value="PTH-5" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value=".statusCode planned = new active = active completed = completed" />
+      </mapping>
     </element>
     <element id="CarePlan.intent">
       <path value="CarePlan.intent" />
@@ -166,6 +215,10 @@
         <description value="Codes indicating the degree of authority/intentionality associated with a care plan." />
         <valueSet value="http://hl7.org/fhir/ValueSet/care-plan-intent|4.0.0" />
       </binding>
+      <mapping>
+        <identity value="workflow" />
+        <map value="Request.intent" />
+      </mapping>
     </element>
     <element id="CarePlan.category">
       <path value="CarePlan.category" />
@@ -184,6 +237,10 @@
         <description value="Identifies what &quot;kind&quot; of plan this is to support differentiation between multiple co-existing plans; e.g. &quot;Home health&quot;, &quot;psychiatric&quot;, &quot;asthma&quot;, &quot;disease management&quot;, etc." />
         <valueSet value="http://hl7.org/fhir/ValueSet/care-plan-category" />
       </binding>
+      <mapping>
+        <identity value="w5" />
+        <map value="FiveWs.class" />
+      </mapping>
     </element>
     <element id="CarePlan.title">
       <path value="CarePlan.title" />
@@ -207,6 +264,10 @@
         <code value="string" />
       </type>
       <isSummary value="true" />
+      <mapping>
+        <identity value="w5" />
+        <map value="FiveWs.what[x]" />
+      </mapping>
     </element>
     <element id="CarePlan.subject">
       <path value="CarePlan.subject" />
@@ -221,6 +282,26 @@
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group" />
       </type>
       <isSummary value="true" />
+      <mapping>
+        <identity value="workflow" />
+        <map value="Request.subject" />
+      </mapping>
+      <mapping>
+        <identity value="w5" />
+        <map value="FiveWs.subject[x]" />
+      </mapping>
+      <mapping>
+        <identity value="v2" />
+        <map value="PID-3" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value=".participation[typeCode=PAT].role[classCode=PAT]" />
+      </mapping>
+      <mapping>
+        <identity value="w5" />
+        <map value="FiveWs.subject" />
+      </mapping>
     </element>
     <element id="CarePlan.encounter">
       <path value="CarePlan.encounter" />
@@ -234,6 +315,22 @@
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Encounter" />
       </type>
       <isSummary value="true" />
+      <mapping>
+        <identity value="workflow" />
+        <map value="Request.context" />
+      </mapping>
+      <mapping>
+        <identity value="w5" />
+        <map value="FiveWs.context" />
+      </mapping>
+      <mapping>
+        <identity value="v2" />
+        <map value="Associated PV1" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="." />
+      </mapping>
     </element>
     <element id="CarePlan.period">
       <path value="CarePlan.period" />
@@ -248,6 +345,22 @@
         <code value="Period" />
       </type>
       <isSummary value="true" />
+      <mapping>
+        <identity value="workflow" />
+        <map value="Request.occurrence[x]" />
+      </mapping>
+      <mapping>
+        <identity value="w5" />
+        <map value="FiveWs.planned" />
+      </mapping>
+      <mapping>
+        <identity value="v2" />
+        <map value="GOL-7 / GOL-8" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value=".effectiveTime" />
+      </mapping>
     </element>
     <element id="CarePlan.created">
       <path value="CarePlan.created" />
@@ -260,6 +373,18 @@
         <code value="dateTime" />
       </type>
       <isSummary value="true" />
+      <mapping>
+        <identity value="workflow" />
+        <map value="Request.authoredOn" />
+      </mapping>
+      <mapping>
+        <identity value="w5" />
+        <map value="FiveWs.recorded" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value=".participation[typeCode=AUT].time" />
+      </mapping>
     </element>
     <element id="CarePlan.author">
       <path value="CarePlan.author" />
@@ -279,6 +404,14 @@
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/CareTeam" />
       </type>
       <isSummary value="true" />
+      <mapping>
+        <identity value="workflow" />
+        <map value="Request.requester" />
+      </mapping>
+      <mapping>
+        <identity value="w5" />
+        <map value="FiveWs.author" />
+      </mapping>
     </element>
     <element id="CarePlan.contributor">
       <path value="CarePlan.contributor" />
@@ -307,7 +440,16 @@
       <max value="*" />
       <type>
         <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/CareTeam" />
       </type>
+      <mapping>
+        <identity value="workflow" />
+        <map value="Request.performer {similar but does not entail CareTeam}" />
+      </mapping>
+      <mapping>
+        <identity value="w5" />
+        <map value="FiveWs.actor" />
+      </mapping>
     </element>
     <element id="CarePlan.addresses">
       <path value="CarePlan.addresses" />
@@ -322,6 +464,22 @@
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Condition" />
       </type>
       <isSummary value="true" />
+      <mapping>
+        <identity value="workflow" />
+        <map value="Request.reasonReference" />
+      </mapping>
+      <mapping>
+        <identity value="w5" />
+        <map value="FiveWs.why[x]" />
+      </mapping>
+      <mapping>
+        <identity value="v2" />
+        <map value="PRB-4" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value=".actRelationship[typeCode=SUBJ].target[classCode=CONC, moodCode=EVN]" />
+      </mapping>
     </element>
     <element id="CarePlan.supportingInfo">
       <path value="CarePlan.supportingInfo" />
@@ -335,18 +493,10 @@
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource" />
       </type>
-    </element>
-    <element id="CarePlan.context">
-      <path value="CarePlan.context" />
-      <short value="The context of use for  this care plan" />
-      <definition value="Describes the constraints and aspects related to the care plan." />
-      <comment value="Can be additional clinical information, constraints or expectations etc" />
-      <requirements value="Provides context for this plan." />
-      <min value="0" />
-      <max value="*" />
-      <type>
-        <code value="Reference" />
-      </type>
+      <mapping>
+        <identity value="workflow" />
+        <map value="Request.supportingInfo" />
+      </mapping>
     </element>
     <element id="CarePlan.goal">
       <path value="CarePlan.goal" />
@@ -360,6 +510,14 @@
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Goal" />
       </type>
+      <mapping>
+        <identity value="v2" />
+        <map value="GOL.1" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value=".outboundRelationship[typeCode&lt;=OBJ]." />
+      </mapping>
     </element>
     <element id="CarePlan.activity">
       <path value="CarePlan.activity" />
@@ -378,6 +536,14 @@
         <expression value="detail.empty() or reference.empty()" />
         <xpath value="not(exists(f:detail)) or not(exists(f:reference))" />
       </constraint>
+      <mapping>
+        <identity value="workflow" />
+        <map value="{no mapping&#xA;NOTE: This is a list of contained Request-Event tuples!}" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value=".outboundRelationship[typeCode=COMP].target" />
+      </mapping>
     </element>
     <element id="CarePlan.activity.outcomeCodeableConcept">
       <path value="CarePlan.activity.outcomeCodeableConcept" />
@@ -407,6 +573,14 @@
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource" />
       </type>
+      <mapping>
+        <identity value="workflow" />
+        <map value="{Event that is outcome of Request in activity.reference}" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value=".inboundRelationship[typeCode=FLFS].source" />
+      </mapping>
     </element>
     <element id="CarePlan.activity.progress">
       <path value="CarePlan.activity.progress" />
@@ -419,6 +593,14 @@
       <type>
         <code value="Annotation" />
       </type>
+      <mapping>
+        <identity value="v2" />
+        <map value="NTE?" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value=".inboundRelationship[typeCode=SUBJ].source[classCode=OBS, moodCode=EVN, code=&quot;annotation&quot;].value" />
+      </mapping>
     </element>
     <element id="CarePlan.activity.reference">
       <path value="CarePlan.activity.reference" />
@@ -441,6 +623,14 @@
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/RequestGroup" />
       </type>
       <condition value="cpl-3" />
+      <mapping>
+        <identity value="workflow" />
+        <map value="{Request that resulted in Event in activity.actionResulting}" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value=".outboundRelationship[typeCode=COMP].target" />
+      </mapping>
     </element>
     <element id="CarePlan.activity.detail">
       <path value="CarePlan.activity.detail" />
@@ -453,6 +643,10 @@
         <code value="BackboneElement" />
       </type>
       <condition value="cpl-3" />
+      <mapping>
+        <identity value="rim" />
+        <map value=".outboundRelationship[typeCode=COMP, subsetCode=SUMM].target" />
+      </mapping>
     </element>
     <element id="CarePlan.activity.detail.kind">
       <path value="CarePlan.activity.detail.kind" />
@@ -469,6 +663,10 @@
         <description value="Resource types defined as part of FHIR that can be represented as in-line definitions of a care plan activity." />
         <valueSet value="http://hl7.org/fhir/ValueSet/care-plan-activity-kind|4.0.0" />
       </binding>
+      <mapping>
+        <identity value="rim" />
+        <map value=".inboundRelationship[typeCode=COMP].source[classCode=LIST].code" />
+      </mapping>
     </element>
     <element id="CarePlan.activity.detail.instantiatesCanonical">
       <path value="CarePlan.activity.detail.instantiatesCanonical" />
@@ -485,6 +683,14 @@
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Measure" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/OperationDefinition" />
       </type>
+      <mapping>
+        <identity value="workflow" />
+        <map value="Request.instantiatesCanonical" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value=".outboundRelationship[typeCode=DEFN].target" />
+      </mapping>
     </element>
     <element id="CarePlan.activity.detail.instantiatesUri">
       <path value="CarePlan.activity.detail.instantiatesUri" />
@@ -497,6 +703,14 @@
       <type>
         <code value="uri" />
       </type>
+      <mapping>
+        <identity value="workflow" />
+        <map value="Request.instantiatesUri" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value=".outboundRelationship[typeCode=DEFN].target" />
+      </mapping>
     </element>
     <element id="CarePlan.activity.detail.code">
       <path value="CarePlan.activity.detail.code" />
@@ -514,6 +728,18 @@
         <description value="Detailed description of the type of activity; e.g. What lab test, what procedure, what kind of encounter." />
         <valueSet value="http://hl7.org/fhir/ValueSet/procedure-code" />
       </binding>
+      <mapping>
+        <identity value="workflow" />
+        <map value="Request.code" />
+      </mapping>
+      <mapping>
+        <identity value="v2" />
+        <map value="OBR-4 / RXE-2 / RXO-1 / RXD-2" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value=".code" />
+      </mapping>
     </element>
     <element id="CarePlan.activity.detail.reasonCode">
       <path value="CarePlan.activity.detail.reasonCode" />
@@ -530,6 +756,10 @@
         <description value="Identifies why a care plan activity is needed.  Can include any health condition codes as well as such concepts as &quot;general wellness&quot;, prophylaxis, surgical preparation, etc." />
         <valueSet value="http://hl7.org/fhir/ValueSet/clinical-findings" />
       </binding>
+      <mapping>
+        <identity value="workflow" />
+        <map value="Request.reasonCode" />
+      </mapping>
     </element>
     <element id="CarePlan.activity.detail.reasonReference">
       <path value="CarePlan.activity.detail.reasonReference" />
@@ -545,6 +775,10 @@
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/DiagnosticReport" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/DocumentReference" />
       </type>
+      <mapping>
+        <identity value="workflow" />
+        <map value="Request.reasonReference" />
+      </mapping>
     </element>
     <element id="CarePlan.activity.detail.goal">
       <path value="CarePlan.activity.detail.goal" />
@@ -557,6 +791,10 @@
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Goal" />
       </type>
+      <mapping>
+        <identity value="rim" />
+        <map value=".outboundRelationship[typeCode&lt;=OBJ]." />
+      </mapping>
     </element>
     <element id="CarePlan.activity.detail.status">
       <path value="CarePlan.activity.detail.status" />
@@ -576,6 +814,18 @@
         <description value="Codes that reflect the current state of a care plan activity within its overall life cycle." />
         <valueSet value="http://hl7.org/fhir/ValueSet/care-plan-activity-status|4.0.0" />
       </binding>
+      <mapping>
+        <identity value="workflow" />
+        <map value="Request.status" />
+      </mapping>
+      <mapping>
+        <identity value="v2" />
+        <map value="ORC-5?" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value=".statusCode not-started = new scheduled = not-started (and fulfillment relationship to appointent) in-progress = active on-hold = suspended completed = completed cancelled = aborted" />
+      </mapping>
     </element>
     <element id="CarePlan.activity.detail.statusReason">
       <path value="CarePlan.activity.detail.statusReason" />
@@ -587,6 +837,10 @@
       <type>
         <code value="CodeableConcept" />
       </type>
+      <mapping>
+        <identity value="workflow" />
+        <map value="Request.statusReason" />
+      </mapping>
     </element>
     <element id="CarePlan.activity.detail.doNotPerform">
       <path value="CarePlan.activity.detail.doNotPerform" />
@@ -602,6 +856,14 @@
       <meaningWhenMissing value="If missing indicates that the described activity is one that should be engaged in when following the plan." />
       <isModifier value="true" />
       <isModifierReason value="If true this element negates the specified action. For example, instead of a request for a procedure, it is a request for the procedure to not occur." />
+      <mapping>
+        <identity value="workflow" />
+        <map value="Request.doNotPerform" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="actionNegationInd" />
+      </mapping>
     </element>
     <element id="CarePlan.activity.detail.scheduled">
       <path value="CarePlan.activity.detail.scheduled" />
@@ -613,6 +875,18 @@
       <type>
         <code value="Timing" />
       </type>
+      <mapping>
+        <identity value="workflow" />
+        <map value="Request.occurrence[x]" />
+      </mapping>
+      <mapping>
+        <identity value="v2" />
+        <map value="TQ1" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value=".effectiveTime" />
+      </mapping>
     </element>
     <element id="CarePlan.activity.detail.location">
       <path value="CarePlan.activity.detail.location" />
@@ -626,6 +900,14 @@
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Location" />
       </type>
+      <mapping>
+        <identity value="v2" />
+        <map value="OBR-24(???!!)" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value=".participation[typeCode=LOC].role" />
+      </mapping>
     </element>
     <element id="CarePlan.activity.detail.performer">
       <path value="CarePlan.activity.detail.performer" />
@@ -646,6 +928,18 @@
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/HealthcareService" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device" />
       </type>
+      <mapping>
+        <identity value="workflow" />
+        <map value="Request.performer" />
+      </mapping>
+      <mapping>
+        <identity value="v2" />
+        <map value="PRT-5 : ( PRV-4 = (provider participations)); PRT-5 : ( PRV-4 = (non-provider person participations )) ; PRT-5 : ( PRV-4 = (patient non-subject of care) ) ; PRT-8" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value=".participation[typeCode=PFM]" />
+      </mapping>
     </element>
     <element id="CarePlan.activity.detail.product">
       <path value="CarePlan.activity.detail.product" />
@@ -661,6 +955,14 @@
         <description value="A product supplied or administered as part of a care plan activity." />
         <valueSet value="http://hl7.org/fhir/ValueSet/medication-codes" />
       </binding>
+      <mapping>
+        <identity value="v2" />
+        <map value="RXE-2 / RXO-1 / RXD-2" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value=".participation[typeCode=PRD].role" />
+      </mapping>
     </element>
     <element id="CarePlan.activity.detail.dailyAmount">
       <path value="CarePlan.activity.detail.dailyAmount" />
@@ -674,6 +976,14 @@
         <code value="Quantity" />
         <profile value="http://hl7.org/fhir/StructureDefinition/SimpleQuantity" />
       </type>
+      <mapping>
+        <identity value="v2" />
+        <map value="RXO-23 / RXE-19 / RXD-12" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value=".outboundRelationship[typeCode=COMP][classCode=SBADM].doseQuantity" />
+      </mapping>
     </element>
     <element id="CarePlan.activity.detail.quantity">
       <path value="CarePlan.activity.detail.quantity" />
@@ -685,6 +995,14 @@
         <code value="Quantity" />
         <profile value="http://hl7.org/fhir/StructureDefinition/SimpleQuantity" />
       </type>
+      <mapping>
+        <identity value="v2" />
+        <map value="RXO-11 / RXE-10 / RXD-4 / RXG-5 / RXA-6 /  TQ1-2.1  *and*  RXO-12 /  RXE-11 / RXD-5 / RXG-7 / RXA-7 / TQ1-2.2" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value=".outboundRelationship[typeCode=COMP][classCode=SPLY].quantity" />
+      </mapping>
     </element>
     <element id="CarePlan.activity.detail.description">
       <path value="CarePlan.activity.detail.description" />
@@ -695,6 +1013,14 @@
       <type>
         <code value="string" />
       </type>
+      <mapping>
+        <identity value="v2" />
+        <map value="NTE?" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value=".text" />
+      </mapping>
     </element>
     <element id="CarePlan.note">
       <path value="CarePlan.note" />
@@ -706,6 +1032,18 @@
       <type>
         <code value="Annotation" />
       </type>
+      <mapping>
+        <identity value="workflow" />
+        <map value="Request.note" />
+      </mapping>
+      <mapping>
+        <identity value="v2" />
+        <map value="NTE?" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value=".inboundRelationship[typeCode=SUBJ].source[classCode=OBS, moodCode=EVN, code=&quot;annotation&quot;].value" />
+      </mapping>
     </element>
-  </differential>
+  </snapshot>
 </StructureDefinition>

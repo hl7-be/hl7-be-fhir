@@ -1,0 +1,39 @@
+{
+  "resourceType": "List",
+  "id": "list-be-core",
+  "status": "current",
+  "mode": "working",
+  "date": "2019-11-25T22:17:00+11:00",
+  "note": [
+    {
+      "text": "These resources are part of the CORE specification in Belgium"
+    }
+  ],
+  "entry": [
+    {
+      "item": {
+        "reference": "StructureDefinition-be-patient"
+      }
+    },
+    {
+      "item": {
+        "reference": "StructureDefinition-be-practitioner"
+      }
+    },
+    {
+      "item": {
+        "reference": "StructureDefinition-be-organization"
+      }
+    },
+    {
+      "item": {
+        "reference": "StructureDefinition-be-practitionerrole"
+      }
+    },
+    {
+      "item": {
+        "reference": "StructureDefinition-be-observation"
+      }
+    },
+  ]
+}
