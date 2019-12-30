@@ -42,7 +42,11 @@
 			"relativePath": "_includes"
 		}
 	],
-	"defaults": {
+    "swagger" : [{
+      "mode" : "split",
+      "capabilities" : ["be-communicationclient"]
+    }],
+    "defaults": {
 		"_documentation": "this object contains the default publishing policy for different types. Anything not mentioned defaults to true",
 		"Any": {
 			"java": false,

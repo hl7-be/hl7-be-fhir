@@ -18,15 +18,21 @@
   <jurisdiction>
     <coding>
       <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-      <code value="001"/>
+      <code value="056"/>
     </coding>
+    <text value="Belgium" />
   </jurisdiction>
+
   <packageId value="hl7.be.core"/>
   <fhirVersion value="4.0.1"/>
   <definition>
     <grouping id="logicalmodels">
       <name value="Logical Models"/>
       <description value="The common Belgian Logical Models - these can be mapped to KMEHR and FHIR"/>
+    </grouping>
+    <grouping id="datatypes">
+      <name value="Data Types"/>
+      <description value="Specific Belgian data types"/>
     </grouping>
     <grouping id="core">
       <name value="Core Profiles"/>
@@ -77,6 +83,7 @@
       </reference>
       <fhirVersion value="4.0.1"/>
       <name value="Care Plan profile"/>
+      <description value="Care Plan profile"/>
       <groupingId value="communication"/>
     </resource>
     <resource>
@@ -114,6 +121,16 @@
       <fhirVersion value="4.0.1"/>
       <name value="Logical Model Care Plan"/>
       <description value="Care Plan logical model"/>
+      <groupingId value="logicalmodels"/>
+    </resource>
+
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/lm-be-careteam"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Logical Model Care Team"/>
+      <description value="Care Team logical model"/>
       <groupingId value="logicalmodels"/>
     </resource>
 
@@ -243,6 +260,24 @@
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication"/>
     </resource>
 
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/be-address"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Belgian Address"/>
+      <description value="Belgian Address"/>
+      <groupingId value="datatypes"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/string320"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="String wih max 320 characters"/>
+      <description value="String wih max 320 characters"/>
+      <groupingId value="datatypes"/>
+    </resource>
 
 	
 <!--
@@ -447,5 +482,12 @@
         <generation value="html"/>
       </page>
     </page>
+	
+	  <parameter>
+		<code value="active-tables"/>
+		<value value="true"/>
+	  </parameter>	
+
+	
   </definition>
 </ImplementationGuide>
