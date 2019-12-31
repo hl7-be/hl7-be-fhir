@@ -124,7 +124,6 @@
       <xsl:with-param name="value" select="'input/images'"/>
     </xsl:call-template>
 
-
     <xsl:call-template name="setParameter">
       <xsl:with-param name="code" select="'apply'"/>
       <xsl:with-param name="value" select="'true'"/>
