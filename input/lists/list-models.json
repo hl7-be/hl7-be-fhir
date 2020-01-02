@@ -1,0 +1,33 @@
+{
+  "resourceType": "List",
+  "id": "list-be-models",
+  "status": "current",
+  "mode": "working",
+  "date": "2019-11-25T22:17:00+11:00",
+  "note": [
+    {
+      "text": "These are Logical Models"
+    }
+  ],
+  "entry": [
+    {
+      "item": {
+        "reference": "StructureDefinition-lm-be-careteam",
+        "display": "Care Team"
+      }
+    },
+    {
+      "item": {
+        "reference": "StructureDefinition-lm-be-careplan",
+        "display": "Care Plan"
+      }
+    },
+    {
+      "item": {
+        "reference": "StructureDefinition-lm-be-communication",
+        "display": "Communication"
+		
+      }
+    }
+  ]
+}

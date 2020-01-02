@@ -206,7 +206,7 @@
         <reference value="ValueSet/be-causativeagent"/>
       </reference>
       <fhirVersion value="4.0.1"/>
-      <name value="ValueSet - Contact Person"/>
+      <name value="ValueSet - Causative Agent"/>
       <description value="The list of causative agents"/>
       <groupingId value="terminology"/>
     </resource>

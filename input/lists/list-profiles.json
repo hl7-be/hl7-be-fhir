@@ -1,0 +1,39 @@
+{
+  "resourceType": "List",
+  "id": "list-be-profiles",
+  "status": "current",
+  "mode": "working",
+  "date": "2019-11-25T22:17:00+11:00",
+  "note": [
+    {
+      "text": "These are the profiles defined in this specification"
+    }
+  ],
+  "entry": [
+    {
+      "item": {
+        "reference": "StructureDefinition-be-patient",
+        "display": "Patient"
+      }
+    },
+    {
+      "item": {
+        "reference": "StructureDefinition-lm-be-practitionerrole",
+        "display": "Practitioner Role"
+      }
+    },
+    {
+      "item": {
+        "reference": "StructureDefinition-lm-be-allergyintolerance",
+        "display": "Allergy/Intolerance"
+      }
+    },
+    {
+      "item": {
+        "reference": "StructureDefinition-lm-be-communication",
+        "display": "Communication"
+		
+      }
+    }
+  ]
+}

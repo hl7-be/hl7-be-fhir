@@ -1,0 +1,68 @@
+{
+  "resourceType": "List",
+  "id": "list-be-profiles",
+  "status": "current",
+  "mode": "working",
+  "date": "2019-11-25T22:17:00+11:00",
+  "note": [
+    {
+      "text": "These are the profiles defined in this specification"
+    }
+  ],
+  "entry": [
+    {
+      "item": {
+        "reference": "CodeSystem-be-diarytopic",
+        "display": "Diary Topic"
+      }
+    },
+    {
+      "item": {
+        "reference": "ValueSet-be-diarytopic",
+        "display": "Diary Topic"
+      }
+    },
+    {
+      "item": {
+        "reference": "CodeSystem-be-contactperson",
+        "display": "Contact Person Type"
+      }
+    },
+    {
+      "item": {
+        "reference": "ValueSet-be-contactperson",
+        "display": "Contact Person Type"
+      }
+    },
+    {
+      "item": {
+        "reference": "ValueSet-be-causativeagent",
+        "display": "Contact Person Type"
+      }
+    },
+    {
+      "item": {
+        "reference": "ValueSet-be-riskmanifestation",
+        "display": "Contact Person Type"
+      }
+    },
+    {
+      "item": {
+        "reference": "CodeSystem-be-civilstate",
+        "display": "Contact Person Type"
+      }
+    },
+    {
+      "item": {
+        "reference": "ValueSet-be-civilstate",
+        "display": "Contact Person Type"
+      }
+    },
+    {
+      "item": {
+        "reference": "ValueSet-be-hcparty",
+        "display": "Party Type"
+      }
+    }
+  ]
+}
