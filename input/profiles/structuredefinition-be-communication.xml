@@ -20,8 +20,11 @@
   <differential>
     <element id="Communication.identifier">
       <path value="Communication.identifier" />
+      <short value="Unique identifier for this communication"/>
+      <definition value="Unique identifier for this communication. Unlike the resource's _id, this identifier must resolve across systems."/>
       <mustSupport value="true" />
     </element>
+<!--
     <element id="Communication.instantiatesCanonical">
       <path value="Communication.instantiatesCanonical" />
       <max value="0" />
@@ -30,12 +33,15 @@
       <path value="Communication.instantiatesUri" />
       <max value="0" />
     </element>
+-->
     <element id="Communication.status">
       <path value="Communication.status" />
+      <short value="Status of this communication: preparation | in-progress | not-done | on-hold | stopped | completed | entered-in-error | unknown"/>
       <mustSupport value="true" />
     </element>
     <element id="Communication.subject">
       <path value="Communication.subject" />
+      <short value="Subject of the communication - typically Patient"/>
       <type>
         <code value="Reference" />
         <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient" />
@@ -43,31 +49,41 @@
     </element>
     <element id="Communication.topic">
       <path value="Communication.topic" />
+      <short value="Topic of the communication ?????"/>
+      <definition value="The topic of communication is related to the type of goal (BE) / Type of activity that the communication is about (FHIR)"/>
       <mustSupport value="true" />
       <binding>
-        <strength value="required" />
+        <strength value="preferred" />
         <valueSet value="https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-diarytopic" />
       </binding>
     </element>
     <element id="Communication.sent">
       <path value="Communication.sent" />
+      <short value="Date and Time that the communication has been sent"/>
       <mustSupport value="true" />
     </element>
     <element id="Communication.recipient">
+      <short value="Intended receiver of the communication"/>
+      <definition value="This field indicates the intended receiver of the communication. For messages, this SHALL be explicitly indicated, even when it can be assumed e.g. to be the patient's Care Team. For diary notes, this can be optional."/>
       <path value="Communication.recipient" />
       <mustSupport value="true" />
     </element>
     <element id="Communication.sender">
       <path value="Communication.sender" />
+      <short value="The actual sender of the communication"/>
+      <definition value="This field contains the sender of the communication. If the communication is entered by a nurse on behalf of a physician, this shall refer to the nurse."/>
       <mustSupport value="true" />
     </element>
     <element id="Communication.payload">
       <path value="Communication.payload" />
+      <short value="The content of the communication or diary note. Text (up to 320 characters), Attachments (base-64 encoded) or References."/>
+      <definition value="This content can be free Text (up to 320 characters), or Attachments (e.g. a photo) or References to other resources (e.g. a Binary resource containing a photo)."/>
+      <comment value="For systems that are intending to be backwards compatible with KMEHR, only the text is allowed."/>
       <mustSupport value="true" />
     </element>
     <element id="Communication.payload.content[x]">
       <path value="Communication.payload.content[x]" />
-      <short value="Message content" />
+      <short value="Communication content" />
       <definition value="A communicated content (or for multi-part communications, one portion of the communication). This can be a string, an attachment, or a reference to a resource." />
       <type>
         <code value="string" />

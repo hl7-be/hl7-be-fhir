@@ -1,2 +1,2 @@
 @ECHO OFF
-CALL _genonce.bat -watch
+_genonce.bat -watch

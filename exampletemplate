@@ -1,0 +1,90 @@
+{
+  "resourceType": "Communication",
+  "id": "%007%",
+  "meta": {
+	  "profile": [
+		"%PROFILE%"
+	  ]
+  },  
+  "language": "%008%",
+  "identifier": [
+    {
+      "system": "%009%",
+      "value": "%010%"
+    }
+  ],
+  "basedOn": [
+    {
+      "reference": "%011%"
+    }
+  ],
+  "partOf": [
+    {
+      "reference": "%013%"
+    }
+  ],
+  "inResponseTo": [
+    {
+      "reference": "%015%"
+    }
+  ],
+  "status": "%017%",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "%018%",
+          "code": "%019%"
+        }
+      ]
+    }
+  ],
+  "priority": "%020%",
+  "subject": {
+    "reference": "%021%"
+    "display": "%022%"
+  },
+  "topic": {
+    "coding": {
+      "system": "%023%",
+      "code": "%024%"
+    }
+  },
+  "sent": "%025%",
+  "received": "%026%",
+  "recipient": [
+    {
+      "identifier": {
+		"reference": "%027%"
+		"display": "%028%"
+      }
+    }
+  ],
+  "sender": {
+    "identifier": {
+      "system": "%29%",
+      "value": "%30%"
+    }
+  },
+  "payload": [
+    {
+      "contentString": "%031%"
+    },
+    {
+      "contentAttachment": {
+        "contentType": "%32%",
+        "language": "%33%",
+        "data": "%34%",
+        "url": "%35%",
+        "size": "%36%",
+        "hash": "%37%"
+      }
+    },
+    {
+      "contentReference": {
+        "hash": "title",
+        "creation": "display"
+      }
+    }
+  ]
+}

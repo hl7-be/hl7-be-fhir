@@ -6,11 +6,8 @@ temp
 template
 output
 copyStuff.ps1.bat
-template2
-exampletemplate
 plantuml.jar
-hl7.be-template - kindofworking
-hl7.be-template_full
-template_old
-templatee
-be.federal.template
+old_templates
+template2
+txCache
+shorthand
