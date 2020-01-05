@@ -21,7 +21,8 @@
 				<a target="_blank" href="{{site.data.fhir.path}}index.html">FHIR Spec 
 					<img src="external.png" style="text-align: baseline"/>
 				</a>
-			</li>		</ul>
+			</li>
+		</ul>
 	</li>
 	<li class="dropdown">
 		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Functional Description
@@ -32,15 +33,10 @@
 				<a href="downloads.html">Context and intro</a>
 			</li>
 			<li>
-				<a target="_blank" href="http://hl7.org/fhirpath">Use Cases</a>
+				<a target="_blank" href="#">Use Cases</a>
 			</li>
 			<li>
-				<a target="_blank" href="{{site.data.fhir.path}}index.html">Logical Models</a>
-			</li>
-			<li>
-				<a target="_blank" href="#">Actors
-					<img src="external.png" style="text-align: baseline"/>
-				</a>
+				<a target="_blank" href="#">Logical Models</a>
 			</li>
 			<li>
 				<a target="_blank" href="#">Services &amp; Transactions</a>
@@ -48,13 +44,10 @@
 		</ul>
 	</li>
 	<li class="dropdown">
-		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Detailed Specification
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Detailed Specifications
 			<b class="caret"></b>
 		</a>
 		<ul class="dropdown-menu">
-			<li>
-				<a href="#">Content Profiles</a>
-			</li>
 			<li>
 				<a href="artifacts.html">Artifact Index</a>
 			</li>
@@ -71,7 +64,7 @@
 		</ul>
 	</li>
 	<li class="dropdown">
-		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Projects
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Project-specific
 			<b class="caret"></b>
 		</a>
 		<ul class="dropdown-menu">
@@ -98,22 +91,23 @@
 				</a>
 			</li>
 			<li>
-				<a target="_blank" href="http://hl7.org/fhirpath">Test Scripts
+				<a target="_blank" href="#">Test Scripts
 					<img src="external.png" style="text-align: baseline"/>
 				</a>
 			</li>
 			<li>
-				<a target="_blank" href="{{site.data.fhir.path}}index.html">OpenAPI
+				<a target="_blank" href="#">OpenAPI
 					<img src="external.png" style="text-align: baseline"/>
 				</a>
 			</li>
 			<li>
-				<a target="_blank" href="http://hl7.org/fhirpath">Test Server
+				<a target="_blank" href="#">Test Servers
 					<img src="external.png" style="text-align: baseline"/>
 				</a>
 			</li>
 			<li>
 				<a href="downloads.html">Downloads</a>
-			</li>		</ul>
+			</li>
+		</ul>
 	</li>
 </ul>      
