@@ -1,67 +1,27 @@
 {
   "resourceType": "List",
-  "id": "list-be-profiles",
+  "id": "list-terminology",
   "status": "current",
   "mode": "working",
   "date": "2019-11-25T22:17:00+11:00",
   "note": [
     {
-      "text": "These are the profiles defined in this specification"
+      "text": "These are the terminology resources defined or used in this specification"
     }
   ],
   "entry": [
     {
       "item": {
-        "reference": "CodeSystem-be-diarytopic",
-        "display": "Diary Topic"
+        "reference": "List-terminology-valuesets",
+        "type": "List",
+        "display": "Value Sets"
       }
     },
     {
       "item": {
-        "reference": "ValueSet-be-diarytopic",
-        "display": "Diary Topic"
-      }
-    },
-    {
-      "item": {
-        "reference": "CodeSystem-be-contactperson",
-        "display": "Contact Person Type"
-      }
-    },
-    {
-      "item": {
-        "reference": "ValueSet-be-contactperson",
-        "display": "Contact Person Type"
-      }
-    },
-    {
-      "item": {
-        "reference": "ValueSet-be-causativeagent",
-        "display": "Contact Person Type"
-      }
-    },
-    {
-      "item": {
-        "reference": "ValueSet-be-riskmanifestation",
-        "display": "Contact Person Type"
-      }
-    },
-    {
-      "item": {
-        "reference": "CodeSystem-be-civilstate",
-        "display": "Contact Person Type"
-      }
-    },
-    {
-      "item": {
-        "reference": "ValueSet-be-civilstate",
-        "display": "Contact Person Type"
-      }
-    },
-    {
-      "item": {
-        "reference": "ValueSet-be-hcparty",
-        "display": "Party Type"
+        "reference": "List-terminology-codesystems",
+        "type": "List",
+        "display": "Code Systems"
       }
     }
   ]

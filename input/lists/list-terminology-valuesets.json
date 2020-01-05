@@ -1,0 +1,56 @@
+{
+  "resourceType": "List",
+  "id": "list-terminology-valuesets",
+  "status": "current",
+  "mode": "working",
+  "date": "2019-11-25T22:17:00+11:00",
+  "note": [
+    {
+      "text": "These are the value sets used in this specification"
+    }
+  ],
+  "entry": [
+    {
+      "item": {
+        "reference": "ValueSet-be-diarytopic",
+        "type": "ValueSet",
+        "display": "Diary Topic"
+      }
+    },
+    {
+      "item": {
+        "reference": "ValueSet-be-contactperson",
+        "type": "ValueSet",
+        "display": "Contact Person Type"
+      }
+    },
+    {
+      "item": {
+        "reference": "ValueSet-be-causativeagent",
+        "type": "ValueSet",
+        "display": "Contact Person Type"
+      }
+    },
+    {
+      "item": {
+        "reference": "ValueSet-be-riskmanifestation",
+        "type": "ValueSet",
+        "display": "Contact Person Type"
+      }
+    },
+    {
+      "item": {
+        "reference": "ValueSet-be-civilstate",
+        "type": "ValueSet",
+        "display": "Contact Person Type"
+      }
+    },
+    {
+      "item": {
+        "reference": "ValueSet-be-hcparty",
+        "type": "ValueSet",
+        "display": "Party Type"
+      }
+    }
+  ]
+}

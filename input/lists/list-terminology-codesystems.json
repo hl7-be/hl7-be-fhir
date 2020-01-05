@@ -1,0 +1,36 @@
+{
+  "resourceType": "List",
+  "id": "list-terminology-codesystems",
+  "status": "current",
+  "mode": "working",
+  "date": "2019-11-25T22:17:00+11:00",
+  "note": [
+    {
+      "text": "These are the code systems defined in this specification"
+    }
+  ],
+  "entry": [
+    {
+      "item": {
+        "reference": "CodeSystem-be-diarytopic",
+        "type": "CodeSystem",
+        "display": "Diary Topic"
+      }
+    },
+    {
+      "item": {
+        "reference": "CodeSystem-be-contactperson",
+        "type": "CodeSystem",
+        "display": "Contact Person Type"
+      }
+    },
+    {
+      "item": {
+        "reference": "CodeSystem-be-civilstate",
+        "type": "CodeSystem",
+        "type": "ValueSet",
+        "display": "Contact Person Type"
+      }
+    }
+  ]
+}

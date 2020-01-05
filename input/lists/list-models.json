@@ -13,18 +13,21 @@
     {
       "item": {
         "reference": "StructureDefinition-lm-be-careteam",
+        "type": "StructureDefinition",
         "display": "Care Team"
       }
     },
     {
       "item": {
         "reference": "StructureDefinition-lm-be-careplan",
+        "type": "StructureDefinition",
         "display": "Care Plan"
       }
     },
     {
       "item": {
         "reference": "StructureDefinition-lm-be-communication",
+        "type": "StructureDefinition",
         "display": "Communication"
 		
       }

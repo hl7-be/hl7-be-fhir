@@ -13,26 +13,43 @@
     {
       "item": {
         "reference": "StructureDefinition-be-patient",
-        "display": "Patient"
+        "type": "StructureDefinition",
+        "display": "BE Patient"
       }
     },
     {
       "item": {
-        "reference": "StructureDefinition-lm-be-practitionerrole",
-        "display": "Practitioner Role"
+        "reference": "StructureDefinition-be-practitionerrole",
+        "type": "StructureDefinition",
+        "display": "BE Practitioner Role"
       }
     },
     {
       "item": {
-        "reference": "StructureDefinition-lm-be-allergyintolerance",
-        "display": "Allergy/Intolerance"
+        "reference": "StructureDefinition-be-allergyintolerance",
+        "type": "StructureDefinition",
+        "display": "BE Allergy/Intolerance"
       }
     },
     {
       "item": {
-        "reference": "StructureDefinition-lm-be-communication",
-        "display": "Communication"
-		
+        "reference": "StructureDefinition-be-communication",
+        "type": "StructureDefinition",
+        "display": "BE Communication"
+      }
+    },
+    {
+      "item": {
+        "reference": "StructureDefinition-be-careteam",
+        "type": "StructureDefinition",
+        "display": "BE Care Team"
+      }
+    },
+    {
+      "item": {
+        "reference": "StructureDefinition-be-careplan",
+        "type": "StructureDefinition",
+        "display": "BE Care Plan"
       }
     }
   ]
