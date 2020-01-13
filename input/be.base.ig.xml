@@ -477,11 +477,6 @@
         <generation value="markdown"/>
       </page>
       <page>
-        <nameUrl value="asciidoc.html"/>
-        <title value="AsciiDoc"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
         <nameUrl value="functional-overview.html"/>
         <title value="Functional Description"/>
         <generation value="markdown"/>
