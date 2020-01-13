@@ -475,6 +475,11 @@
         <nameUrl value="conventions.html"/>
         <title value="Conventions"/>
         <generation value="markdown"/>
+      </page>      
+	  <page>
+        <nameUrl value="asciidoc.html"/>
+        <title value="AsciiDoc"/>
+        <generation value="markdown"/>
       </page>
       <page>
         <nameUrl value="functional-overview.html"/>
