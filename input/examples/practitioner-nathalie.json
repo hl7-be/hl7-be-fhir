@@ -1,0 +1,12 @@
+{
+  "resourceType": "Practitioner",
+  "id": "nathalie",
+  "name": [
+	{
+	  "given": [
+		"Nathalie"
+	  ]
+	}
+  ]
+}
+

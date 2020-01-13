@@ -40,9 +40,7 @@
   </ul>
   <a name="root"> </a>
   <h2 id="root">StructureDefinition: {{[title]}}</h2>
-  <p>
-  {{site.data.structuredefinitions['{{[id]}}'].description}}
-  </p>
+  <p>{{site.data.structuredefinitions['{{[id]}}'].description | markdownify}}</p>
   <p>
   The official URL for this profile is:
   </p>
@@ -218,7 +216,7 @@
     </div>
   </div>
   <p>&#160;</p>
-  <p>Other representations of profile: <a href="{{[id]}}.sch">Schematron</a>
+  <p>Other representations of profile: <a href="{{[type]}}-{{[id]}}.sch">Schematron</a>
   </p>
   <a name="tx"> </a>
   <h3 id="tx">Terminology Bindings</h3>

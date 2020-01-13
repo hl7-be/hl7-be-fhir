@@ -134,7 +134,7 @@
       <groupingId value="logicalmodels"/>
     </resource>
 
-
+<!-- Examples used by this profile 
     <resource>
       <reference>
         <reference value="StructureDefinition/lm-be-communication"/>
@@ -145,6 +145,7 @@
       <groupingId value="logicalmodels"/>
     </resource>
 
+-->
 
 
     <resource>
@@ -267,6 +268,26 @@
       <description value="New message from DZOP to nurse"/>
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication"/>
     </resource>
+
+
+    <resource>
+      <reference>
+         <reference value="Patient/pia"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Patient Pia"/>
+      <description value="Patient Pia"/>
+    </resource>
+
+    <resource>
+      <reference>
+         <reference value="Practitioner/dragon"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Dr. Dragon"/>
+      <description value="Dr. Dragon"/>
+    </resource>
+
 
     <resource>
       <reference>
@@ -454,7 +475,13 @@
         <nameUrl value="conventions.html"/>
         <title value="Conventions"/>
         <generation value="markdown"/>
-      </page>      <page>
+      </page>
+      <page>
+        <nameUrl value="asciidoc.html"/>
+        <title value="AsciiDoc"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
         <nameUrl value="functional-overview.html"/>
         <title value="Functional Description"/>
         <generation value="markdown"/>

@@ -1,6 +1,6 @@
 {
 	"resourceType": "Communication",
-	"id": "be.comm1",
+	"id": "be-comm1",
 	"meta": {
 		"profile": [
 			"https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication"
@@ -24,13 +24,13 @@
 		}
 	],
 	"subject": {
-		"reference": "Patient/pia",
+		"reference": "Patient/peter",
 		"display": "peter"
 	},
 	"sent": "2019-11-11T07:50:01+01:00",
 	"recipient": [
 		{
-			"reference": "Practitioner/nathalie",
+			"reference": "Practitioner/natalie",
 			"display": "Natalie"
 		}
 	],
