@@ -5,22 +5,17 @@
   <version value="0.1.0"/> 
   <name value="BECareTeam" />
   <status value="draft" />
+  <description value="A Patient-centered care Team for a patient, typically in the context of a Care Plan. 
+  This is not the same as a definition of a Care Team e.g. a hospital team or specialists team."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="056"/>
+    </coding>
+    <text value="Belgium" />
+  </jurisdiction>
+  <purpose value="This profile is used in articulation with CarePlan, to achieve the purpose of defining and maintaining Teams and Sub-Teams for a given Care Plan for a given Patient."/>
   <fhirVersion value="4.0.1" />
-  <mapping>
-    <identity value="w5" />
-    <uri value="http://hl7.org/fhir/fivews" />
-    <name value="FiveWs Pattern Mapping" />
-  </mapping>
-  <mapping>
-    <identity value="v2" />
-    <uri value="http://hl7.org/v2" />
-    <name value="HL7 v2 Mapping" />
-  </mapping>
-  <mapping>
-    <identity value="rim" />
-    <uri value="http://hl7.org/v3" />
-    <name value="RIM Mapping" />
-  </mapping>
   <kind value="resource" />
   <abstract value="false" />
   <type value="CareTeam" />

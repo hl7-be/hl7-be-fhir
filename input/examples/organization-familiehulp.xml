@@ -1,0 +1,62 @@
+<Organization xmlns="http://hl7.org/fhir">
+   <id value="familiehulp"/>
+   <meta>
+      <versionId value="1"/>
+      <lastUpdated value="2020-01-16T15:40:35.269+01:00"/>
+   </meta>
+   <identifier>
+      <system value="urn:oid:2.16.840.1.113883.3.19.2.3"/>
+      <value value="666666"/>
+   </identifier>
+   <name value="Familiehulp"/>
+   <telecom>
+      <system value="phone"/>
+      <value value="(+1) 734-677-7777"/>
+   </telecom>
+   <telecom>
+      <system value="fax"/>
+      <value value="(+1) 734-677-6622"/>
+   </telecom>
+   <telecom>
+      <system value="email"/>
+      <value value="hq@HL7.org"/>
+   </telecom>
+   <address>
+      <extension url="http://hl7.org/fhir/StructureDefinition/language">
+         <valueCode value="nl"/>
+      </extension>
+      <use value="work"/>
+      <type value="both"/>
+      <text value="Koningsstraat 294, 1210 Sint-Jost-ten-Node"/>
+      <line value="Koningsstraat 294">
+         <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+            <valueString value="Koningsstraat"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+            <valueString value="294"/>
+         </extension>
+      </line>
+      <city value="Sint-Jost-ten-Node"/>
+      <postalCode value="1210"/>
+      <country value="BE"/>
+   </address>
+   <address>
+      <extension url="http://hl7.org/fhir/StructureDefinition/language">
+         <valueCode value="fr"/>
+      </extension>
+      <use value="work"/>
+      <type value="both"/>
+      <text value="294, Rue Royale, 1210 Saint-Josse-ten-Noode"/>
+      <line value="294, Rue Royale">
+         <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+            <valueString value="Rue Royale"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+            <valueString value="294"/>
+         </extension>
+      </line>
+      <city value="Saint-Josse-ten-Noode"/>
+      <postalCode value="1210"/>
+      <country value="BE"/>
+   </address>
+</Organization>
