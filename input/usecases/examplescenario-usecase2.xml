@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExampleScenario xmlns="http://hl7.org/fhir">
+  <id value="examplescenario-usecase2"/>
+  <name value="CareTeam formation"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2019-09-10T00:00:00.000+01:00"/>
+  <actor>
+    <actorId value="dragon"/>
+    <type value="person"/>
+    <name value="Physician"/>
+  </actor>
+  <actor>
+    <actorId value="planner"/>
+    <type value="entity"/>
+    <name value="Care Planning app"/>
+  </actor>
+  <actor>
+    <actorId value="dzop"/>
+    <type value="entity"/>
+    <name value="DZOP"/>
+  </actor>
+  <instance>
+    <resourceId value="teampiet1"/>
+    <resourceType value="CareTeam"/>
+    <name value="CareTeam1"/>
+    <version>
+      <versionId value="v1"/>
+    </version>
+    <version>
+      <versionId value="v2"/>
+    </version>
+    <version>
+      <versionId value="v3"/>
+    </version>
+  </instance>
+  <instance>
+    <resourceId value="L1"/>
+    <resourceType value="Location"/>
+    <name value="Practtioner List"/>
+  </instance>
+  <process>
+    <title value="Process"/>
+    <preConditions value="No care team is assigned to Patient Piet"/>
+    <postConditions value="A team is formally assigned to Patient Piet"/>
+    <step>
+      <operation>
+        <name value="Query team members"/>
+        <initiator value="dragon"/>
+        <receiver value="planner"/>
+        <request>
+          </request>
+      </operation>
+    </step>
+    <step>
+      <operation>
+        <name value="Request List of Pracitioners"/>
+        <initiator value="planner"/>
+        <receiver value="dzop"/>
+        <request>
+          </request>
+      </operation>
+    </step>
+    <step>
+      <operation>
+        <name value="Show possible team members"/>
+        <initiator value="planner"/>
+        <receiver value="dragon"/>
+        <request>
+          </request>
+      </operation>
+    </step>
+    <step>
+      <process>
+        <title value="Propose team"/>
+        <step>
+          <operation>
+            <name value="Select team members"/>
+            <initiator value="dragon"/>
+            <receiver value="planner"/>
+            <request>
+                  </request>
+          </operation>
+        </step>
+        <step>
+          <operation>
+            <name value="Propose CareTeam"/>
+            <initiator value="planner"/>
+            <receiver value="dzop"/>
+            <request>
+              <resourceId value="teampiet1"/>
+            </request>
+          </operation>
+        </step>
+        <step>
+          <operation>
+            <name value="Validate team"/>
+            <initiator value="dzop"/>
+            <receiver value="dzop"/>
+            <request>
+                  </request>
+          </operation>
+        </step>
+        <step>
+          <operation>
+            <name value="Return validated team"/>
+            <initiator value="dzop"/>
+            <receiver value="planner"/>
+            <request>
+              <resourceId value="teampiet1"/>
+            </request>
+          </operation>
+        </step>
+      </process>
+    </step>
+    <step>
+      <pause value="true"/>
+    </step>
+    <step>
+      <process>
+        <title value="Update team"/>
+        <step>
+          <operation>
+            <name value="Add new Team member"/>
+            <initiator value="dragon"/>
+            <receiver value="planner"/>
+            <request>
+                  </request>
+          </operation>
+        </step>
+        <step>
+          <operation>
+            <name value="Propose updated team"/>
+            <initiator value="planner"/>
+            <receiver value="dzop"/>
+            <request>
+              <resourceId value="teampiet1"/>
+            </request>
+          </operation>
+        </step>
+        <step>
+          <operation>
+            <name value="Validate team"/>
+            <initiator value="dzop"/>
+            <receiver value="dzop"/>
+            <request>
+                  </request>
+          </operation>
+        </step>
+        <step>
+          <operation>
+            <name value="Return validated team"/>
+            <initiator value="dzop"/>
+            <receiver value="planner"/>
+            <request>
+                  </request>
+          </operation>
+        </step>
+        <step>
+          <operation>
+            <name value="Show team composition"/>
+            <initiator value="planner"/>
+            <receiver value="dragon"/>
+            <request>
+                  </request>
+          </operation>
+        </step>
+      </process>
+    </step>
+  </process>
+</ExampleScenario>

@@ -13,3 +13,4 @@ txCache
 shorthand
 hl7.be.fhir.template/package/scripts/createArtifactSummary - Copy.xslt
 hl7.be.fhir.template/package/scripts/createArtifactSummary default.xslt
+build/
