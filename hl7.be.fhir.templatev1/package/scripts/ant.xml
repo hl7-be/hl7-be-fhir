@@ -22,7 +22,7 @@
     <get src="${fhirspec}xmldsig-core-schema.xsd" dest="${schemas-r5}" usetimestamp="true" ignoreerrors="true"/>
   </target>
 
-  <target name="onLoad.checkPublisher" depends="onLoad.getPlantUml">
+  <target name="onLoad.checkPublisher">
     <uptodate property="currentJar" targetfile="${ig.root}/input-cache/org.hl7.fhir.publisher.jar">
       <srcresources>
         <url url="https://fhir.github.io/latest-ig-publisher/org.hl7.fhir.publisher.jar"/>
@@ -31,10 +31,13 @@
   </target>
 
   <target name="check-plantUml">
-    <available file="${folder.lib}/plantuml.jar" property="plantumlExists"/>
+    <available file="${folder.lib}/plantuml.jar" property="plantUmlExists"/>
   </target>
 
-  <target name="onLoad.getPlantUml" depends="check-plantUml" unless="plantumlExists">
+<!--  <target name="onLoad.getPlantUml" depends="check-plantUml" unless="plantUmlExists"> -->
+<!--  <target name="onLoad.getPlantUml" > -->
+
+  <target name="onLoad.getPlantUml" depends="check-plantUml" unless="${plantUmlExists}">
 	<get src="https://iweb.dl.sourceforge.net/project/plantuml/1.2020.0/plantuml-jar-mit-1.2020.0.zip" dest="${folder.lib}" usetimestamp="true"/>
 	<unzip src="${folder.lib}/plantuml-jar-mit-1.2020.0.zip" dest="${folder.lib}"/>
 	<delete file="${folder.lib}/plantuml-jar-mit-1.2020.0.zip"/>
@@ -61,13 +64,13 @@
   <target name="onLoad.updateIg" depends="onLoad.findSpreadsheets, createExampleScenarioPage">
   <target name="onLoad.updateIg" depends="onLoad.findSpreadsheets">
   with diagrams-->
-  <target name="onLoad.updateIg" depends="onLoad.findSpreadsheets, createExampleScenarioPage">
+  <target name="onLoad.updateIg" depends="onLoad.findSpreadsheets">
     <!-- Supplement the IG file with various standard configuration files, as well as with a list of any found spreadsheets (if they're not already enumerated) -->
     <xslt in="${onLoad.ig.source}xml" out="${onLoad.ig.dest}xml" style="${ig.scripts}/onLoad.xslt">
       <param name="spreadsheetList" expression="${prop.spreadsheet.contents}"/>
     </xslt>
   </target>
-  <target name="onLoad" depends="onLoad.setup,onLoad.r5-schemas,onLoad.upgradeWarning,onLoad.updateIg">
+  <target name="onLoad" depends="onLoad.setup,onLoad.r5-schemas,onLoad.upgradeWarning,onLoad.updateIg, onLoad.getPlantUml">
     <concat destfile="${ig.template}/onLoad-validation.json" encoding="UTF-8" outputencoding="UTF-8">
       <header>{"resourceType":"OperationOutcome","issue":[</header>
       <footer>]}</footer>
@@ -92,8 +95,8 @@
 
 <!-- JCT Add plantuml -->
 
-<taskdef name="plantuml" classname="net.sourceforge.plantuml.ant.PlantUmlTask" classpath="${folder.lib}/plantuml.jar" />
   <target name="renderDiagram" depends="prepareDiagramSource">
+<taskdef name="plantuml" classname="net.sourceforge.plantuml.ant.PlantUmlTask" classpath="${folder.lib}/plantuml.jar" />
     <plantuml output="../images" format="svg">
   	  <fileset dir="${folder.input}/usecases" includes="**/examplescenario*.txt" />
     </plantuml>
@@ -126,7 +129,7 @@
   <target name="onGenerate.artifactList" depends="onGenerate.processIg,onGenerate.setup">
     <xslt in="${onGenerate.ig.dest}xml" out="${dir.temp.includes}/artifacts.xml" style="${ig.scripts}/createArtifactSummary.xslt"/>
   </target>
-  <target name="onGenerate" depends="onGenerate.infoFile,onGenerate.processIncludes,onGenerate.artifactList">
+  <target name="onGenerate" depends="onGenerate.infoFile,onGenerate.processIncludes,onGenerate.artifactList, createExampleScenarioPage">
     <fileset id="onGenerate.files.id" dir="${ig.root}">
       <include name="${dir.temp.includes}/artifacts.xml"/>
     </fileset>
