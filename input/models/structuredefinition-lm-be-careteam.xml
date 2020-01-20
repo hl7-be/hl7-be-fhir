@@ -50,6 +50,10 @@
 			<min value="0" />
 			<max value="1" />
 		  </base>
+		  <type>
+			 <code value="Identifier"/>
+			 <profile value="http://hl7.org/fhir/StructureDefinition/Identifier"/>
+		  </type>
 	   </element>
 	   <element id="BECareTeam.status">
 		  <path value="BECareTeam.status"/>
@@ -62,6 +66,10 @@
 			<min value="0" />
 			<max value="1" />
 		  </base>
+		  <type>
+			 <code value="code"/>
+			 <profile value="http://hl7.org/fhir/StructureDefinition/code"/>
+		  </type>
 	   </element>
 	   <element id="BECareTeam.category">
 		  <path value="BECareTeam.category"/>
@@ -74,6 +82,10 @@
 			<min value="0" />
 			<max value="1" />
 		  </base>
+		  <type>
+			 <code value="CodeableConcept"/>
+			 <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept"/>
+		  </type>
 		  <binding>
 			 <strength value="example"/>
 			 <description value="Care Team Category"/>
@@ -91,6 +103,9 @@
 			<min value="0" />
 			<max value="1" />
 		  </base>
+		  <type>
+			 <code value="string"/>
+		  </type>
 		  <isSummary value="true"/>
 	   </element>
 	   <element id="BECareTeam.subject">
@@ -106,6 +121,8 @@
 		  </base>
 		  <type>
 			 <code value="Reference"/>
+			 <targetProfile value="http://example.org/fhir/StructureDefinition/BePatient"/>
+			 <targetProfile value="http://example.org/fhir/StructureDefinition/Group"/>
 		  </type>
 	   </element>
 	   <element id="BECareTeam.period">
@@ -120,6 +137,9 @@
 			<min value="0" />
 			<max value="1" />
 		  </base>
+		  <type>
+			 <code value="Period"/>
+		  </type>
 	   </element>
 	   <element id="BECareTeam.participant">
 		  <path value="BECareTeam.participant"/>
@@ -132,6 +152,9 @@
 			<min value="0" />
 			<max value="1" />
 		  </base>
+		  <type>
+			 <code value="BackboneElement"/>
+		  </type>
 	   </element>
 	   <element id="BECareTeam.participant.role">
 		  <path value="BECareTeam.participant.role"/>
@@ -144,6 +167,9 @@
 			<min value="0" />
 			<max value="1" />
 		  </base>
+		  <type>
+			 <code value="CodeableConcept"/>
+		  </type>
 		  <binding>
 			 <strength value="example"/>
 			 <description value="Indicates specific responsibility of an individual within the care team, such as &quot;Primary physician&quot;, &quot;Team coordinator&quot;, &quot;Caregiver&quot;, etc."/>
@@ -164,6 +190,12 @@
 		  </base>
 		  <type>
 			 <code value="Reference"/>
+			 <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
+			 <targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole"/>
+			 <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
+			 <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
+			 <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
+			 <targetProfile value="http://hl7.org/fhir/StructureDefinition/CareTeam"/>
 		  </type>
 	   </element>
 	   <element id="BECareTeam.justification">
@@ -177,6 +209,9 @@
 			<min value="0" />
 			<max value="1" />
 		  </base>
+		  <type>
+			 <code value="BackboneElement"/>
+		  </type>
 	   </element>
 	   <element id="BECareTeam.justification.code">
 		  <path value="BECareTeam.justification.reasonCode"/>
@@ -189,6 +224,9 @@
 			<min value="0" />
 			<max value="1" />
 		  </base>
+		  <type>
+			 <code value="CodeableConcept"/>
+		  </type>
 	   </element>
 	   <element id="BECareTeam.justification.reference">
 		  <path value="BECareTeam.justification.reasonReference"/>
@@ -215,6 +253,7 @@
 		  </base>
 		  <type>
 			 <code value="Reference"/>
+			 <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
 		  </type>
 	   </element>
 	   <element id="BECareTeam.telecom">
@@ -228,6 +267,9 @@
 			<min value="0" />
 			<max value="1" />
 		  </base>
+		  <type>
+			 <code value="ContactPoint"/>
+		  </type>
 	   </element>
 	   <element id="BECareTeam.note">
 		  <path value="BECareTeam.note"/>
@@ -240,6 +282,9 @@
 			<min value="0" />
 			<max value="1" />
 		  </base>
+		  <type>
+			 <code value="Annotation"/>
+		  </type>
 	   </element>
 	</snapshot>
  </StructureDefinition>
