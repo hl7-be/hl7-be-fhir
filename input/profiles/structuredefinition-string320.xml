@@ -12,7 +12,7 @@
   <fhirVersion value="4.0.1"/> 
   <kind value="primitive-type"/> 
   <abstract value="false"/> 
-  <type value="string320"/> 
+  <type value="string"/> 
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/string"/> 
   <derivation value="constraint"/> 
   <snapshot> 
