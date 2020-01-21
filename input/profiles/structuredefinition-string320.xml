@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="string320"/> 
   <url value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/string320"/> 
@@ -15,28 +14,29 @@
   <type value="string"/> 
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/string"/> 
   <derivation value="constraint"/> 
+
   <snapshot> 
-    <element id="string320">
-      <path value="string320"/> 
+    <element id="string">
+      <path value="string"/> 
       <short value="String 320 characters"/> 
       <definition value="A string limited to 320 characters"/> 
       <min value="0"/> 
       <max value="*"/> 
       <base>
-        <path value="string320" />
+        <path value="string" />
         <min value="0" />
         <max value="*" />
       </base>
     </element> 
-    <element id="string320.value">
-      <path value="string320.value"/> 
+    <element id="string.value">
+      <path value="string.value"/> 
       <representation value="xmlAttr"/> 
       <short value="Primitive value for string320"/> 
       <definition value="Primitive value for string320"/> 
       <min value="0"/> 
       <max value="1"/> 
       <base>
-        <path value="string320.value" />
+        <path value="string.value" />
         <min value="0" />
         <max value="1" />
       </base>
@@ -49,4 +49,15 @@
       <maxLength value="320"/> 
     </element> 
   </snapshot> 
+  <differential> 
+    <element id="string.value">
+      <path value="string.value"/> 
+      <base>
+        <path value="string.value" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <maxLength value="320"/> 
+    </element> 
+  </differential> 
 </StructureDefinition>
