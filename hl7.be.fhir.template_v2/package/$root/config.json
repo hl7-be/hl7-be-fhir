@@ -105,18 +105,6 @@
 			"template-base": "template/layouts/layout-examplescenario.html",
 			"base": "{{[type]}}-{{[id]}}.html"
 		},
-		"CodeSystem": {
-			"template-base": "template/layouts/layout-codesystem.html",
-			"template-format": "template/layouts/layout-instance-format.html",
-			"base": "{{[type]}}-{{[id]}}.html",
-			"format": "{{[type]}}-{{[id]}}.{{[fmt]}}.html"
-		},
-		"ConceptMap": {
-			"template-base": "template/layouts/layout-conceptmap.html",
-			"template-format": "template/layouts/layout-instance-format.html",
-			"base": "{{[type]}}-{{[id]}}.html",
-			"format": "{{[type]}}-{{[id]}}.{{[fmt]}}.html"
-		},
 		"ValueSet": {
 			"template-base": "template/layouts/layout-valueset.html",
 			"template-format": "template/layouts/layout-instance-format.html",
