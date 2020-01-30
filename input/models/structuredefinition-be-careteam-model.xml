@@ -1,12 +1,12 @@
  <StructureDefinition xmlns="http://hl7.org/fhir">
-	<id value="lm-be-careteam"/>
+	<id value="be-careteam-model"/>
 	<meta>
 	   <versionId value="1"/>
 	   <lastUpdated value="2019-12-30T13:11:36.877+01:00"/>
 	</meta>
 	<url value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/lm-be-careteam"/>
 	<version value="0.1.0"/>
-	<name value="BECareTeamLogicalModel"/>
+	<name value="BECareTeamModel"/>
 	<status value="draft"/>
 	<date value="2019-12-29T09:41:09+01:00"/>
 	<publisher value="HL7 Belgium"/>
@@ -23,30 +23,30 @@
 	<fhirVersion value="4.0.1"/>
 	<kind value="logical"/>
 	<abstract value="false"/>
-	<type value="http://example.org/fhir/StructureDefinition/BECareTeam"/>
+	<type value="BECareTeamModel"/>
 	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
 	<derivation value="specialization"/>
-	<snapshot>
-	   <element id="BECareTeam">
-		  <path value="BECareTeam"/>
+	<differential>
+	   <element id="BECareTeamModel">
+		  <path value="BECareTeamModel"/>
 		  <short value="CareTeam"/>
 		  <definition value="The CareTeam represents a set of professionals or sub-teams that participate in the context of care."/>
 		  <min value="0"/>
 		  <max value="*"/>
 		  <base>
-			<path value="BECareTeam" />
+			<path value="BECareTeamModel" />
 			<min value="0" />
 			<max value="1" />
 		  </base>
 	   </element>
-	   <element id="BECareTeam.identifier">
-		  <path value="BECareTeam.identifier"/>
+	   <element id="BECareTeamModel.identifier">
+		  <path value="BECareTeamModel.identifier"/>
 		  <short value="Identifier for this care team"/>
 		  <definition value="A unique identifier for this care team."/>
 		  <min value="0"/>
 		  <max value="*"/>
 		  <base>
-			<path value="BECareTeam.identifier" />
+			<path value="BECareTeamModel.identifier" />
 			<min value="0" />
 			<max value="1" />
 		  </base>
@@ -55,14 +55,14 @@
 			 <profile value="http://hl7.org/fhir/StructureDefinition/Identifier"/>
 		  </type>
 	   </element>
-	   <element id="BECareTeam.status">
-		  <path value="BECareTeam.status"/>
+	   <element id="BECareTeamModel.status">
+		  <path value="BECareTeamModel.status"/>
 		  <short value="Status of the care team"/>
 		  <definition value="The status of this care team."/>
 		  <min value="1"/>
 		  <max value="1"/>
 		  <base>
-			<path value="BECareTeam.status" />
+			<path value="BECareTeamModel.status" />
 			<min value="0" />
 			<max value="1" />
 		  </base>
@@ -71,14 +71,14 @@
 			 <profile value="http://hl7.org/fhir/StructureDefinition/code"/>
 		  </type>
 	   </element>
-	   <element id="BECareTeam.category">
-		  <path value="BECareTeam.category"/>
+	   <element id="BECareTeamModel.category">
+		  <path value="BECareTeamModel.category"/>
 		  <short value="Type of team"/>
 		  <definition value="Identifies what kind of team.  This is to support differentiation between multiple co-existing teams, such as care plan team, episode of care team, longitudinal care team."/>
 		  <min value="0"/>
 		  <max value="*"/>
 		  <base>
-			<path value="BECareTeam.category" />
+			<path value="BECareTeamModel.category" />
 			<min value="0" />
 			<max value="1" />
 		  </base>
@@ -92,14 +92,14 @@
 			 <valueSet value="http://hl7.org/fhir/ValueSet/care-team-category"/>
 		  </binding>
 	   </element>
-	   <element id="BECareTeam.name">
-		  <path value="BECareTeam.name"/>
+	   <element id="BECareTeamModel.name">
+		  <path value="BECareTeamModel.name"/>
 		  <short value="Name of the team, such as emergency team, or diabetes care, or nutrition team"/>
 		  <definition value="A label for human use intended to distinguish like teams.  E.g. the &quot;red&quot; vs. &quot;green&quot; trauma teams."/>
 		  <min value="0"/>
 		  <max value="1"/>
 		  <base>
-			<path value="BECareTeam.name" />
+			<path value="BECareTeamModel.name" />
 			<min value="0" />
 			<max value="1" />
 		  </base>
@@ -108,14 +108,14 @@
 		  </type>
 		  <isSummary value="true"/>
 	   </element>
-	   <element id="BECareTeam.subject">
-		  <path value="BECareTeam.subject"/>
+	   <element id="BECareTeamModel.subject">
+		  <path value="BECareTeamModel.subject"/>
 		  <short value="Who care team is for"/>
 		  <definition value="Identifies the patient or group whose intended care is handled by the team."/>
 		  <min value="0"/>
 		  <max value="1"/>
 		  <base>
-			<path value="BECareTeam.subject" />
+			<path value="BECareTeamModel.subject" />
 			<min value="0" />
 			<max value="1" />
 		  </base>
@@ -125,15 +125,15 @@
 			 <targetProfile value="http://example.org/fhir/StructureDefinition/Group"/>
 		  </type>
 	   </element>
-	   <element id="BECareTeam.period">
-		  <path value="BECareTeam.period"/>
+	   <element id="BECareTeamModel.period">
+		  <path value="BECareTeamModel.period"/>
 		  <short value="Time period team covers"/>
 		  <definition value="Indicates when the team did (or is intended to) come into effect and end."/>
 		  <requirements value="Allows tracking what team(s) are in effect at a particular time."/>
 		  <min value="0"/>
 		  <max value="1"/>
 		  <base>
-			<path value="BECareTeam.period" />
+			<path value="BECareTeamModel.period" />
 			<min value="0" />
 			<max value="1" />
 		  </base>
@@ -141,14 +141,14 @@
 			 <code value="Period"/>
 		  </type>
 	   </element>
-	   <element id="BECareTeam.participant">
-		  <path value="BECareTeam.participant"/>
+	   <element id="BECareTeamModel.participant">
+		  <path value="BECareTeamModel.participant"/>
 		  <short value="Members of the team"/>
 		  <definition value="Identifies all people and organizations who are expected to be involved in the care team."/>
 		  <min value="0"/>
 		  <max value="*"/>
 		  <base>
-			<path value="BECareTeam.participant" />
+			<path value="BECareTeamModel.participant" />
 			<min value="0" />
 			<max value="1" />
 		  </base>
@@ -156,14 +156,14 @@
 			 <code value="BackboneElement"/>
 		  </type>
 	   </element>
-	   <element id="BECareTeam.participant.role">
-		  <path value="BECareTeam.participant.role"/>
+	   <element id="BECareTeamModel.participant.role">
+		  <path value="BECareTeamModel.participant.role"/>
 		  <short value="Type of involvement"/>
 		  <definition value="Indicates specific responsibility of the participant (individual or team) within the care team, such as &quot;Primary care physician&quot;, &quot;Trained social worker counselor&quot;, &quot;Caregiver&quot;, etc."/>
 		  <min value="0"/>
 		  <max value="*"/>
 		  <base>
-			<path value="BECareTeam.participant.role" />
+			<path value="BECareTeamModel.participant.role" />
 			<min value="0" />
 			<max value="1" />
 		  </base>
@@ -176,15 +176,15 @@
 			 <valueSet value="http://hl7.org/fhir/ValueSet/participant-role"/>
 		  </binding>
 	   </element>
-	   <element id="BECareTeam.participant.member">
-		  <path value="BECareTeam.participant.member"/>
+	   <element id="BECareTeamModel.participant.member">
+		  <path value="BECareTeamModel.participant.member"/>
 		  <short value="Who is involved"/>
 		  <definition value="The specific person or organization who is participating/expected to participate in the care team."/>
 		  <comment value="Patient only needs to be listed if they have a role other than &quot;subject of care&quot;.&#xa;&#xa;Member is optional because some participants may be known only by their role, particularly in draft plans."/>
 		  <min value="0"/>
 		  <max value="1"/>
 		  <base>
-			<path value="BECareTeam.participant.member" />
+			<path value="BECareTeamModel.participant.member" />
 			<min value="0" />
 			<max value="1" />
 		  </base>
@@ -198,14 +198,14 @@
 			 <targetProfile value="http://hl7.org/fhir/StructureDefinition/CareTeam"/>
 		  </type>
 	   </element>
-	   <element id="BECareTeam.justification">
-		  <path value="BECareTeam.justification"/>
+	   <element id="BECareTeamModel.justification">
+		  <path value="BECareTeamModel.justification"/>
 		  <short value="Members of the team"/>
 		  <definition value="Identifies all people and organizations who are expected to be involved in the care team."/>
 		  <min value="0"/>
 		  <max value="*"/>
 		  <base>
-			<path value="BECareTeam.justification" />
+			<path value="BECareTeamModel.justification" />
 			<min value="0" />
 			<max value="1" />
 		  </base>
@@ -213,14 +213,14 @@
 			 <code value="BackboneElement"/>
 		  </type>
 	   </element>
-	   <element id="BECareTeam.justification.code">
-		  <path value="BECareTeam.justification.reasonCode"/>
+	   <element id="BECareTeamModel.justification.code">
+		  <path value="BECareTeamModel.justification.reasonCode"/>
 		  <short value="Why the care team exists"/>
 		  <definition value="Describes why the care team exists."/>
 		  <min value="0"/>
 		  <max value="*"/>
 		  <base>
-			<path value="BECareTeam.justification.code" />
+			<path value="BECareTeamModel.justification.code" />
 			<min value="0" />
 			<max value="1" />
 		  </base>
@@ -228,26 +228,26 @@
 			 <code value="CodeableConcept"/>
 		  </type>
 	   </element>
-	   <element id="BECareTeam.justification.reference">
-		  <path value="BECareTeam.justification.reasonReference"/>
+	   <element id="BECareTeamModel.justification.reference">
+		  <path value="BECareTeamModel.justification.reasonReference"/>
 		  <short value="Why the care team exists"/>
 		  <definition value="Describes why this care team addresses."/>
 		  <min value="0"/>
 		  <max value="*"/>
 		  <base>
-			<path value="BECareTeam.justification.reference" />
+			<path value="BECareTeamModel.justification.reference" />
 			<min value="0" />
 			<max value="1" />
 		  </base>
 	   </element>
-	   <element id="BECareTeam.managingOrganization">
-		  <path value="BECareTeam.managingOrganization"/>
+	   <element id="BECareTeamModel.managingOrganization">
+		  <path value="BECareTeamModel.managingOrganization"/>
 		  <short value="Organization responsible for the care team"/>
 		  <definition value="The organization responsible for the care team."/>
 		  <min value="0"/>
 		  <max value="*"/>
 		  <base>
-			<path value="BECareTeam.managingOrganization" />
+			<path value="BECareTeamModel.managingOrganization" />
 			<min value="0" />
 			<max value="1" />
 		  </base>
@@ -256,14 +256,14 @@
 			 <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
 		  </type>
 	   </element>
-	   <element id="BECareTeam.telecom">
-		  <path value="BECareTeam.telecom"/>
+	   <element id="BECareTeamModel.telecom">
+		  <path value="BECareTeamModel.telecom"/>
 		  <short value="A contact detail for the care team (that applies to all members)"/>
 		  <definition value="A central contact detail for the care team (that applies to all members)."/>
 		  <min value="0"/>
 		  <max value="*"/>
 		  <base>
-			<path value="BECareTeam.telecom" />
+			<path value="BECareTeamModel.telecom" />
 			<min value="0" />
 			<max value="1" />
 		  </base>
@@ -271,14 +271,14 @@
 			 <code value="ContactPoint"/>
 		  </type>
 	   </element>
-	   <element id="BECareTeam.note">
-		  <path value="BECareTeam.note"/>
+	   <element id="BECareTeamModel.note">
+		  <path value="BECareTeamModel.note"/>
 		  <short value="Comments made about the CareTeam"/>
 		  <definition value="Comments made about the CareTeam."/>
 		  <min value="0"/>
 		  <max value="*"/>
 		  <base>
-			<path value="BECareTeam.note" />
+			<path value="BECareTeamModel.note" />
 			<min value="0" />
 			<max value="1" />
 		  </base>
@@ -286,5 +286,5 @@
 			 <code value="Annotation"/>
 		  </type>
 	   </element>
-	</snapshot>
+	</differential>
  </StructureDefinition>

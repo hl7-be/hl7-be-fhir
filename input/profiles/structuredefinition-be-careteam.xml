@@ -2,25 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="be-careteam" />
   <url value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careteam" />
-  <version value="0.1.0"/> 
+  <version value="0.1.0" />
   <name value="BECareTeam" />
   <status value="draft" />
-  <fhirVersion value="4.0.1" />
-  <mapping>
-    <identity value="w5" />
-    <uri value="http://hl7.org/fhir/fivews" />
-    <name value="FiveWs Pattern Mapping" />
-  </mapping>
-  <mapping>
-    <identity value="v2" />
-    <uri value="http://hl7.org/v2" />
-    <name value="HL7 v2 Mapping" />
-  </mapping>
-  <mapping>
-    <identity value="rim" />
-    <uri value="http://hl7.org/v3" />
-    <name value="RIM Mapping" />
-  </mapping>
+  <description value="This is the Belgian profile for Care Plan. A Care Plan contains the activities planned and/or performed by a care team to deliver care for a particular patient, usually targeting a specific condition or set of conditions." />
+  <fhirVersion value="4.0.0" />
   <kind value="resource" />
   <abstract value="false" />
   <type value="CareTeam" />
@@ -34,6 +20,10 @@
     <element id="CareTeam.category">
       <path value="CareTeam.category" />
       <mustSupport value="true" />
+      <binding>
+        <strength value="example" />
+        <valueSet value="https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-care-team-category" />
+      </binding>
     </element>
     <element id="CareTeam.subject">
       <path value="CareTeam.subject" />

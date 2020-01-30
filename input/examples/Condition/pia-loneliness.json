@@ -1,0 +1,16 @@
+{
+  "resourceType": "Condition",
+  "id": "pia-loneliness",
+  "subject": {
+    "reference": "Patient/pia",
+    "display": "Pia"
+  },
+  "code": {
+    "text": "Loneliness",
+    "coding": [
+      {
+        "code": "xxxxxxxxxx"
+      }
+    ]
+  }
+}

@@ -198,5 +198,5 @@
         <documentation value="Focus of message"/>
       </searchParam>
     </resource>
-  </rest>
+	</rest>
 </CapabilityStatement>

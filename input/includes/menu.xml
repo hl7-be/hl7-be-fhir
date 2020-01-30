@@ -24,6 +24,7 @@
 			</li>
 		</ul>
 	</li>
+<!--
 	<li class="dropdown">
 		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Functional Description
 			<b class="caret"></b>
@@ -43,6 +44,7 @@
 			</li>
 		</ul>
 	</li>
+-->
 	<li class="dropdown">
 		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Detailed Specifications
 			<b class="caret"></b>
@@ -53,6 +55,7 @@
 			</li>
 		</ul>
 	</li>
+<!--
 	<li class="dropdown">
 		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Terminology
 			<b class="caret"></b>
@@ -110,4 +113,5 @@
 			</li>
 		</ul>
 	</li>
+-->
 </ul>      

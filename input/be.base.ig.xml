@@ -74,6 +74,7 @@
       <description value="Example resources"/>
     </grouping>
 
+
     <resource>
       <reference>
         <reference value="StructureDefinition/be-communication"/>
@@ -83,6 +84,7 @@
       <description value="Communication / Diary Note profile"/>
       <groupingId value="communication"/>
     </resource>
+ 
     <resource>
       <reference>
         <reference value="StructureDefinition/be-careplan"/>
@@ -92,6 +94,7 @@
       <description value="Care Plan profile"/>
       <groupingId value="communication"/>
     </resource>
+
     <resource>
       <reference>
         <reference value="StructureDefinition/be-careteam"/>
@@ -101,7 +104,6 @@
       <groupingId value="communication"/>
     </resource>
 
-<!--
     <resource>
       <reference>
         <reference value="StructureDefinition/be-patient"/>
@@ -111,7 +113,7 @@
       <description value="Core Belgian Patient profile"/>
       <groupingId value="core"/>
     </resource>
--->
+
     <resource>
       <reference>
         <reference value="StructureDefinition/be-practitionerrole"/>
@@ -132,6 +134,7 @@
       <description value="Belgian Address"/>
       <groupingId value="datatypes"/>
     </resource>
+
     <resource>
       <reference>
         <reference value="StructureDefinition/string320"/>
@@ -141,8 +144,6 @@
       <description value="String wih max 320 characters"/>
       <groupingId value="datatypes"/>
     </resource>
-<!--
--->
 	
     <resource>
       <reference>
@@ -153,7 +154,8 @@
       <description value="Core Belgian Practitioner profile"/>
       <groupingId value="core"/>
     </resource>
-	
+
+<!--
     <resource>
       <reference>
         <reference value="StructureDefinition/lm-be-careplan"/>
@@ -163,18 +165,16 @@
       <description value="Care Plan logical model"/>
       <groupingId value="logicalmodels"/>
     </resource>
-
+-->
     <resource>
       <reference>
-        <reference value="StructureDefinition/lm-be-careteam"/>
+        <reference value="StructureDefinition/be-careteam-model"/>
       </reference>
       <fhirVersion value="4.0.1"/>
       <name value="Logical Model Care Team"/>
       <description value="Care Team logical model"/>
       <groupingId value="logicalmodels"/>
     </resource>
-
-<!-- Examples used by this profile 
     <resource>
       <reference>
         <reference value="StructureDefinition/lm-be-communication"/>
@@ -184,9 +184,6 @@
       <description value="Communication / Diary Note logical model"/>
       <groupingId value="logicalmodels"/>
     </resource>
-
--->
-
 
     <resource>
       <reference>
@@ -297,7 +294,6 @@
       <groupingId value="terminology"/>
     </resource>    
 
-
     <resource>
       <reference>
          <reference value="Communication/be.comm1"/>
@@ -306,6 +302,7 @@
       <name value="Communication example 1"/>
       <description value="New message from DZOP to nurse"/>
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication"/>
+      <groupingId value="examples"/>
     </resource>
 
 
@@ -316,6 +313,8 @@
       <fhirVersion value="4.0.1"/>
       <name value="Patient Pia"/>
       <description value="Patient Pia"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient"/>
+      <exampleBoolean value="true"/>
     </resource>
 
     <resource>
@@ -325,10 +324,11 @@
       <fhirVersion value="4.0.1"/>
       <name value="Dr. Dragon"/>
       <description value="Dr. Dragon"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner"/>
+
+      <exampleBoolean value="true"/>
     </resource>
 
-<!-- Examples used by this profile 
--->
     <resource>
       <reference>
          <reference value="Communication/be.comm2.1"/>
@@ -431,6 +431,78 @@
       <groupingId value="examples"/>
     </resource>
 
+    <resource>
+      <reference>
+         <reference value="CareTeam/dzop-team-0002"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Care Team Pia"/>
+      <description value="The Care Team responsible for Pia's care"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careteam"/>
+      <groupingId value="examples"/>
+    </resource>
+
+<!--
+    <resource>
+      <reference>
+         <reference value="CareTeam/dzop-team-0002-v0"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Care Team Pia"/>
+      <description value="The Care Team responsible for Pia's care"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careteam"/>
+      <groupingId value="examples"/>
+    </resource>
+
+    <resource>
+      <reference>
+         <reference value="CareTeam/dzop-team-0002-v1"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Care Team Pia"/>
+      <description value="The Care Team responsible for Pia's care"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careteam"/>
+      <groupingId value="examples"/>
+    </resource>
+-->
+
+    <resource>
+      <reference>
+         <reference value="Condition/pia-diabetes"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Condition - Pia diabetes"/>
+      <description value="Patient Pia has diabetes"/>
+      <groupingId value="examples"/>
+    </resource>
+    <resource>
+      <reference>
+         <reference value="Condition/pia-loneliness"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Condition - Pia loneliness"/>
+      <description value="Patient Pia feels lonely"/>
+      <groupingId value="examples"/>
+    </resource>
+    <resource>
+      <reference>
+         <reference value="Condition/pia-postop"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Condition - Pia's surgery recovery"/>
+      <description value="Patient Pia had a surgery and needs to recover"/>
+      <groupingId value="examples"/>
+    </resource>
+    <resource>
+      <reference>
+         <reference value="Condition/pia-depression"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Condition - Pia depression"/>
+      <description value="Patient Pia has a depression"/>
+      <groupingId value="examples"/>
+    </resource>
+
 <!--
     <resource>
       <reference>
@@ -442,7 +514,8 @@
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient"/>
       <groupingId value="examples"/>
     </resource>
--->	
+-->
+
 <!--
 	<resource>
       <reference>
@@ -528,7 +601,14 @@
 		<code value="active-tables"/>
 		<value value="true"/>
 	  </parameter>	
-
+	  <parameter>
+		<code value="copyrightyear"/>
+		<value value="2020"/>
+	  </parameter>	
+        <parameter>
+            <code value="releaselabel"/>
+            <value value="CI build"/>
+        </parameter>
 	
   </definition>
 </ImplementationGuide>
