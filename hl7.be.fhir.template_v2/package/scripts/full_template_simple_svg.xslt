@@ -138,24 +138,24 @@ $("[data-tab]").on('click', function() {
 													</ul>
 													<div class="tab-content">
 														<div id="sequence" class="tab-pane fade in active">
-															<h3>
+															<h4>
 																<a name="description" />
 																Description
-															</h3>
+															</h4>
 															<p>
 																<xsl:value-of select="/fhir:ExampleScenario/fhir:description/@value" />
 															</p>
-															<h4>
+															<h5>
 																<a name="preconditions" />
 																Pre-Conditions
-															</h4>
+															</h5>
 															<p>
 																<xsl:value-of select="/fhir:ExampleScenario/fhir:process/fhir:preConditions/@value" />
 															</p>
-															<h4>
+															<h5>
 																<a name="postconditions" />
 																Post Conditions
-															</h4>
+															</h5>
 															<p>
 																<xsl:value-of select="/fhir:ExampleScenario/fhir:process/fhir:postConditions/@value" />
 															</p>
@@ -168,10 +168,10 @@ $("[data-tab]").on('click', function() {
 
 
 														<div id="details" class="tab-pane fade">
-															<h2>
+															<h3>
 																<a name="details" />
 																Details
-															</h2>
+															</h3>
 															<div>
 																<table class="cols">
 																	<tr>
@@ -209,10 +209,10 @@ $("[data-tab]").on('click', function() {
 																<p />
 															</div>
 															<div>
-																<h3>
+																<h4>
 																	<a name="Actors" />
 																	Actors
-																</h3>
+																</h4>
 																<table class="grid">
 																	<tbody>
 																		<tr>
@@ -227,17 +227,17 @@ $("[data-tab]").on('click', function() {
 																<p />
 															</div>
 															<div>
-																<h3>
+																<h4>
 																	<a name="flow" />
 																	Process Flow -
 																	<xsl:value-of select="/fhir:ExampleScenario/fhir:process/fhir:description/@value" />
-																</h3>
+																</h4>
 																<xsl:apply-templates select="/fhir:ExampleScenario/fhir:process" />
 															</div>
 														</div>
 														<div id="resources" class="tab-pane fade">
+															<h4>Resources</h4>
 															<h3>Resources</h3>
-															<h2>Resources</h2>
 															<xsl:for-each-group select="/fhir:ExampleScenario/fhir:instance/fhir:resourceType" group-by="@value">
 																<xsl:apply-templates select="../fhir:resourceType" />
 															</xsl:for-each-group>
@@ -343,7 +343,7 @@ $("[data-tab]").on('click', function() {
 
 
 	<xsl:template match="/fhir:ExampleScenario/fhir:process">
-		<!--		<h3><xsl:value-of select="title/@value"/></h3> <br/>  -->
+		<!--		<h4><xsl:value-of select="title/@value"/></h4> <br/>  -->
 		<div class="container">
 					<!-- Áreas -->
 					<div>
@@ -475,9 +475,9 @@ $("[data-tab]").on('click', function() {
 	<xsl:template match="fhir:resourceType">
 		<p />
 		<xsl:variable name="thisResourceType" select="./@value" />
-		<h3>
+		<h4>
 			<xsl:value-of select="$thisResourceType" />
-		</h3>
+		</h4>
 		<table class="grid">
 			<tbody>
 				<tr>

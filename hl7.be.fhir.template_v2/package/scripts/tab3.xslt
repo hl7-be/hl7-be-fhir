@@ -5,8 +5,8 @@
 	<xsl:template match="/">
 
 														<div id="resources" class="tab-pane fade">
+															<h4>Resources</h4>
 															<h3>Resources</h3>
-															<h2>Resources</h2>
 															<xsl:for-each-group select="/fhir:ExampleScenario/fhir:instance/fhir:resourceType" group-by="@value">
 																<xsl:apply-templates select="../fhir:resourceType" />
 															</xsl:for-each-group>
@@ -33,7 +33,7 @@
 
 
 	<xsl:template match="/fhir:ExampleScenario/fhir:process">
-		<!--		<h3><xsl:value-of select="title/@value"/></h3> <br/>  -->
+		<!--		<h4><xsl:value-of select="title/@value"/></h4> <br/>  -->
 		<div class="container">
 					<!-- Áreas -->
 					<div>
@@ -165,9 +165,9 @@
 	<xsl:template match="fhir:resourceType">
 		<p />
 		<xsl:variable name="thisResourceType" select="./@value" />
-		<h3>
+		<h4>
 			<xsl:value-of select="$thisResourceType" />
-		</h3>
+		</h4>
 		<table class="grid">
 			<tbody>
 				<tr>

@@ -6,10 +6,10 @@
 
 
 														<div id="details" class="tab-pane fade">
-															<h2>
+															<h3>
 																<a name="details" />
 																Details
-															</h2>
+															</h3>
 															<div>
 																<table class="cols">
 																	<tr>
@@ -47,10 +47,10 @@
 																<p />
 															</div>
 															<div>
-																<h3>
+																<h4>
 																	<a name="Actors" />
 																	Actors
-																</h3>
+																</h4>
 																<table class="grid">
 																	<tbody>
 																		<tr>
@@ -65,11 +65,11 @@
 																<p />
 															</div>
 															<div>
-																<h3>
+																<h4>
 																	<a name="flow" />
 																	Process Flow -
 																	<xsl:value-of select="/fhir:ExampleScenario/fhir:process/fhir:description/@value" />
-																</h3>
+																</h4>
 																<xsl:apply-templates select="/fhir:ExampleScenario/fhir:process" />
 															</div>
 														</div>
@@ -95,7 +95,7 @@
 
 
 	<xsl:template match="/fhir:ExampleScenario/fhir:process">
-		<!--		<h3><xsl:value-of select="title/@value"/></h3> <br/>  -->
+		<!--		<h4><xsl:value-of select="title/@value"/></h4> <br/>  -->
 		<div class="container">
 					<!-- Áreas -->
 					<div>
@@ -227,9 +227,9 @@
 	<xsl:template match="fhir:resourceType">
 		<p />
 		<xsl:variable name="thisResourceType" select="./@value" />
-		<h3>
+		<h4>
 			<xsl:value-of select="$thisResourceType" />
-		</h3>
+		</h4>
 		<table class="grid">
 			<tbody>
 				<tr>

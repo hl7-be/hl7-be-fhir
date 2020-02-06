@@ -25,13 +25,6 @@
 
   <packageId value="hl7.be.core"/>
   <fhirVersion value="4.0.1"/>
-<!--
-  <dependsOn id="fedbecore">
-    <uri value="https://www.ehealth.fgov.be/standards/fhir/ImplementationGuide/fed-be-core"/> 
-    <packageId value="fed.be.core"/>
-    <version value="dev"/>
-  </dependsOn> 
--->
   <definition>
     <grouping id="logicalmodels">
       <name value="Logical Models"/>
@@ -74,6 +67,7 @@
       <description value="Example resources"/>
     </grouping>
 
+
     <resource>
       <reference>
         <reference value="StructureDefinition/be-communication"/>
@@ -101,7 +95,6 @@
       <groupingId value="communication"/>
     </resource>
 
-<!--
     <resource>
       <reference>
         <reference value="StructureDefinition/be-patient"/>
@@ -111,7 +104,6 @@
       <description value="Core Belgian Patient profile"/>
       <groupingId value="core"/>
     </resource>
--->
     <resource>
       <reference>
         <reference value="StructureDefinition/be-practitionerrole"/>
@@ -120,48 +112,6 @@
       <name value="BE Practitioner Role profile"/>
       <description value="Core Belgian Practitioner Role profile"/>
       <groupingId value="core"/>
-    </resource>
-
-
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/be-address"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="Belgian Address"/>
-      <description value="Belgian Address"/>
-      <groupingId value="datatypes"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/string320"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="String wih max 320 characters"/>
-      <description value="String wih max 320 characters"/>
-      <groupingId value="datatypes"/>
-    </resource>
-<!--
--->
-	
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/be-practitioner"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="BE Practitioner profile"/>
-      <description value="Core Belgian Practitioner profile"/>
-      <groupingId value="core"/>
-    </resource>
-	
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/lm-be-careplan"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="Logical Model Care Plan"/>
-      <description value="Care Plan logical model"/>
-      <groupingId value="logicalmodels"/>
     </resource>
 
     <resource>
@@ -297,6 +247,7 @@
       <groupingId value="terminology"/>
     </resource>    
 
+<!-- Examples used by this profile -->
 
     <resource>
       <reference>
@@ -327,8 +278,39 @@
       <description value="Dr. Dragon"/>
     </resource>
 
-<!-- Examples used by this profile 
--->
+
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/be-address"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Belgian Address"/>
+      <description value="Belgian Address"/>
+      <groupingId value="datatypes"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/string320"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="String wih max 320 characters"/>
+      <description value="String wih max 320 characters"/>
+      <groupingId value="datatypes"/>
+    </resource>
+
+	
+<!--
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/be-practitioner"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="BE Practitioner profile"/>
+      <description value="Core Belgian Practitioner profile"/>
+      <groupingId value="core"/>
+    </resource>
+	
+
     <resource>
       <reference>
          <reference value="Communication/be.comm2.1"/>
@@ -349,7 +331,6 @@
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication"/>
       <groupingId value="examples"/>
     </resource>
-
     <resource>
       <reference>
          <reference value="Communication/be.comm2.3"/>
@@ -430,8 +411,6 @@
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication"/>
       <groupingId value="examples"/>
     </resource>
-
-<!--
     <resource>
       <reference>
          <reference value="Patient/peter"/>
@@ -442,8 +421,8 @@
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient"/>
       <groupingId value="examples"/>
     </resource>
--->	
-<!--
+	
+
 	<resource>
       <reference>
         <reference value="StructureDefinition/be-allergyintolerance"/>
