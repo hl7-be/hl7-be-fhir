@@ -114,6 +114,7 @@
       <groupingId value="core"/>
     </resource>
 
+<!-- 
     <resource>
       <reference>
         <reference value="StructureDefinition/lm-be-careteam"/>
@@ -124,7 +125,6 @@
       <groupingId value="logicalmodels"/>
     </resource>
 
-<!-- Examples used by this profile 
     <resource>
       <reference>
         <reference value="StructureDefinition/lm-be-communication"/>
