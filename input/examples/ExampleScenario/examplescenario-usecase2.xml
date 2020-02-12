@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ExampleScenario xmlns="http://hl7.org/fhir">
-  <id value="examplescenario-usecase2"/>
+  <id value="usecase2"/>
   <name value="CareTeam formation"/>
   <status value="draft"/>
   <experimental value="false"/>
