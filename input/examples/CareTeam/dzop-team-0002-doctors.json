@@ -1,0 +1,66 @@
+{
+  "resourceType": "CareTeam",
+  "id": "dzop-team-0002-doctors",
+  "meta": 
+    {
+      "versionId": "3",
+      "profile": [
+		"https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careteam"
+	  ]
+    },
+  "identifier": [
+    {
+      "value": "DZOP-Pia-2020001"
+    }
+  ],
+  "status": "active",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "LA28866-4",
+          "display": "Home & Community Based Services (HCBS)-focused care team"
+        }
+      ]
+    }
+  ],
+  "name": "Pia's 2020 Care Team for post-op care - doctors ad-hoc team",
+  "subject": {
+    "reference": "Patient/pia",
+    "display": "Pia"
+  },
+  "period": {
+    "end": "2013-01-01"
+  },
+  "participant": [
+    {
+      "role": [
+        {
+          "text": "care-coordinator"
+        }
+      ],
+      "member": {
+        "reference": "Practitioner/dragon",
+        "display": "Dr Dragon"
+      }
+    },
+
+    {
+      "role": [
+        {
+          "text": "specialist"
+        }
+      ],
+      "member": {
+        "reference": "Practitioner/david",
+        "display": "Dr David"
+      }
+    }
+  ],
+  "managingOrganization": [
+    {
+      "reference": "Organization/dzop"
+    }
+  ]
+}

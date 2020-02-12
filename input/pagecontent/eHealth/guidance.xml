@@ -1,0 +1,216 @@
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd" >
+  
+
+  
+<h3>Guidance</h3>
+<p>As mentioned supra, the Belgian federal profiling effort considers 
+all published rules or constraints defined by HL7 on the FHIR resources strictly as an integral part of the standard 
+and as such, they SHALL be followed unless otherwise defined.</p>
+<p>Any guidance presented in this guide is not meant as an exhaustive description of the FHIR standard. 
+Rather, the guidelines presented here list some specific points of attention.</p>
+
+<p>Unless stated otherwise, we consider the mapping between KMEHR
+elements and the corresponding elements in FHIR resources to be overall self-evident.
+Any mapping initiative SHOULD consider the fact the approach of information in
+a KMEHR element as part of an XML document is fundamentally different from a
+modular FHIR resource. </p>
+
+<p>Some particularities in this context are described in the definitions or comments within the artefacts published in this guide when deemed
+necessary. Note the direction in this is how to functionally express that what
+is in KMEHR in FHIR, not the other way around. Attention points that could not directly be incorporated in the seperate artefacts follow here.</p>
+
+<p>As the FHIR specification is very developer friendly, there will be no public delivery of FHIR validation or visualisation tools by the eHealth Platform. Developers are encouraged to enjoy the speed and abundance of the <a href="https://www.hl7.org/fhir/R4/implsupport-module.html">existing FHIR eco system</a>, which existence is indeed one of the rationales behind the choice for FHIR.</p>
+<p>As a general principle for implementers, please note <a href="http://hl7.org/fhir/r4/validation.html#correct-use">Postel's Law is quoted</a> on the HL7 FHIR pages.</p>
+
+<h4>Use of extensions</h4>
+<p>“Note that, unlike in many other specifications, there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions. 
+The use of extensions is what allows the <a href="http://www.hl7.org/fhir/r4/extensibility.html">FHIR specification</a> to retain a core simplicity for everyone.”</p>
+<p>The FHIR standard has a strict way to define extensions in resources.This is the only way to define extensions. An implementer SHALL take extra note of the <a href="http://hl7.org/fhir/r4/defining-extensions.html">rules</a> concerning modifier extension.</p>
+<p>When going beyond the profiles in this guide, a project SHALL at least try to express its data using the bare FHIR standard and adapt its business rules accordingly.</p>
+<p>When an extension is needed and <a href="http://www.hl7.org/fhir/r4/extensibility-registry.html">there is already an extension</a>: this existing extension SHALL be used. In general, Belgian profiling on resources will endeavour to – when needed – only use the extensions already defined by HL7.
+In the Belgian profiling documentation, some available standard HL7 extensions of certain resources are recommended.</p>
+
+<h4>Valuesets binding</h4>
+<p>The <a href="https://www.hl7.org/fhir/r4/terminologies.html#strength">concept of valueset binding</a> is extremely important in the FHIR specification. The FHIR standard defines different levels of recommendation/ obligation towards the use of valuesets. 
+They are defined on the pages of HL7 but are partly copied here for easy reference.</p>
+<p>Almost all the elements that have a coded data type are bound to a value set. The bindings are associated with various degrees of flexibility as to how closely the value set SHALL be followed:</p>
+<table style="width:100%;border: 1px solid black;border-collapse: collapse;" >
+
+<tr>
+<td>required</td>
+<td>To be conformant, the concept in this element SHALL be from the specified value set.</td>
+</tr>
+<tr>
+<td>extensible</td>
+<td>To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated. 
+If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.</td>
+</tr>
+<tr>
+<td>preferred</td>
+<td>Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant.</td>
+</tr>
+<tr>
+<td>example</td>
+<td>Instances are not expected or even encouraged to draw from the specified value set. The value set merely provides examples of the types of concepts intended to be included.</td>
+</tr>
+</table>
+<p>Important note: there can be differences concerning the precise conformance of ‘required’ and ‘extensible’ depending to which datatype they are applied. 
+Consult the <a href="https://www.hl7.org/fhir/r4/terminologies.html#strength">HL7 pages</a> for extensive information.</p>
+
+<h4>SNOMED-CT usage</h4>
+<p>As SNOMED-CT is the preferred coding in the Belgian context and supported by the <a href="http://terminology-center.be">FPS Health</a>, it SHALL be clear there are some strict rules concerning its usage in a FHIR context 
+as defined by the FHIR specifications and they can be found on the <a href="https://www.hl7.org/fhir/R4/snomedct.html">HL7 pages</a>.</p>
+<p>This page does not aim to be exhaustive concerning the use of SNOMED-CT in FHIR but only lists some attention points that are in those specifications.</p>
+<ul>
+<li>Only SNOMED-CT Concept ID’s and SNOMED-CT expressions are valid in FHIR.</li>
+<li>The HL7 datatypes description contains <a href="https://www.hl7.org/fhir/datatypes-examples.html#codeableconcept">some examples of SNOMED-CT expressions</a> and how to use it in combination with other coding systems.</li>
+<li>Besides the pages describing specific SNOMED-CT usage, implementers SHALL also take note of the recommendations concerning SNOMED-CT use 
+in the Observation resource, in particular, <a href="https://hl7.org/fhir/R4/observation.html#code-interop">the different patterns</a> that are described.</li>
+</ul>
+
+<h4>Period</h4>
+<p>Period is a FHIR field and datatype that is often used in FHIR to describe the period of validity of something. 
+Depending on the information available, the period can include a start dateTime and/or an end dateTime.</p>
+<p>Mostly the period is an optional item but in general, it is good practice, RECOMMENDED to add it when available.</p>
+<p>Where it is specifically of interest to add it, it will be mentioned in the be- documentation.</p>
+
+
+<h4>Canonical Identifiers</h4>
+<p>
+FHIR resources often contain canonical identifiers. This datatype uses an URI to refer to the used system. Note when these take the form of a URL they are not by definition resolvable.
+Specific URIs to use in Belgian profiles are explained in the profiles and a general overview can be found here: <a href="https://www.ehealth.fgov.be/standards/kmehr/en/page/oid-overview">oid-overview</a>.</p>
+<p>Example:
+<br>To refer to a number of the national registry:</br>
+&lt;identifier&gt;  
+<br>&lt;use value=&quot;official&quot;/&gt; </br>
+&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin&quot;/&gt;
+<br>&lt;value value=&quot;7031966696&quot;/&gt;</br>
+&lt;/identifier&gt;
+</p>
+
+<p>Special Remarks for KMEHR users:
+<br>Note there is no S=’LOCAL’ way in FHIR. A local system will be identified by its own unique URI.</br>
+</p>
+
+<h4>Textual and parts/structured information</h4>
+<p>A narrative SHOULD be included in resource instances. When doing so, <a href="https://www.hl7.org/fhir/narrative.html#Narrative">the guidelines of the HL7 FHIR specification</a> SHALL be followed strictly.</p>
+
+
+<h4>ContactPoint</h4>
+<p>Notably used in the Patient and Practioner resource.</p>
+<p>Special remarks for KMEHR users:
+<br>This information is typically retrieved in the KMEHR element &lt;telecom&gt;. That element uses both KMEHR tables CD-TELECOM (in its version 1.0) and CD-ADDRESS (in its version 1.1) to describe the actual telecom value.</br>
+<br>Please take extra note of the accepted range of FHIR values in the ‘system’ and ‘use’ fields as FHIR uses its own tables to express this content. Further information about the functional meanings concerning the FHIR valueset can be found on its official page.</br>
+<br>Take extra note of the way a mobile phone is expressed in KMEHR vs. FHIR.</br>
+<table style="width:100%;border: 1px solid black;border-collapse: collapse;" >
+<tr>
+<th>KMEHR CD-ADDRESS</th>
+<th>FHIR: http://hl7.org/fhir/ValueSet/contact-point-use</th>
+</tr>
+<tr>
+<td>careaddress</td>
+<td>N/A, use value ‘temp.’ Also RECOMMENDED to add a ‘period.’ Please note when needed to express the availablity of a Patient at home (e.g. only Wednesdays), another solution will be defined in a future IG. </td>
+</tr>
+<tr>
+<td>home</td>
+<td>home</td>
+</tr>
+<tr>
+<td>other</td>
+<td>N/A, use value ‘temp.’ Also RECOMMENDED to add a ‘period’</td>
+</tr>
+<tr>
+<td>vacation</td>
+<td>N/A, use value ‘temp.’ Also RECOMMENDED to add a ‘period’</td>
+</tr>
+<tr>
+<td>work</td>
+<td>work</td>
+</tr>
+<tr>
+<td>N/A</td>
+<td>old (RECOMMENDED to also use ‘period’ when using this)</td>
+</tr>
+<tr>
+<td>N/A (cfr. table CD-TELECOM)</td>
+<td>mobile (cfr. next table)</td>
+
+</tr>
+<tr>
+<td>N/A</td>
+<td>temp (RECOMMENDED to also use ‘period’ when using this)</td>
+</tr>
+
+
+</table>
+
+<table style="width:100%;border: 1px solid black;border-collapse: collapse;" >
+<tr><th>KMEHR CD-TELECOM</th><th>FHIR: http://hl7.org/fhir/ValueSet/contact-point-system</th></tr> 
+<tr><td>email</td><td>email</td></tr>
+<tr><td>fax</td><td>fax</td></tr>
+<tr><td>mobile</td><td>N/A (use ‘phone’ from this table + ‘mobile’ in table supra. In case of doubt or when needed to specifically specify it is a work or private mobile, it is RECOMMENDED to use ‘phone’ with ‘home’ or ‘work’.)</td></tr>
+
+<tr><td>phone</td><td>phone</td></tr>
+<tr><td>N/A</td><td>pager</td></tr>
+<tr><td>N/A</td><td>url</td></tr>
+<tr><td>N/A</td><td>sms</td></tr>
+<tr><td>N/A</td><td>other</td></tr></table>
+</p>
+
+<h4>HumanName</h4>
+<p>Special remarks for KMEHR users:
+<br>In a KMEHR message, a human name is typically composed of one or more &lt;firstname&gt; elements and one &lt;familyname&gt; element. In the FHIR datatype HumanName, it is possible to map this using corresponding elements ‘given’ and ‘family’.</br>
+<p>
+Developers SHOULD take notice typical applications used to send information in a KMEHR context are centered around the approach of one familyname and one or more given names
+</p>
+<p>
+When needed, the more elaborate possibilities available in the HumanName can be leveraged.
+Note the HumanName.use is a required element. Typically the name that was used in KMEHR would be ‘official’. At least a HumanName with official use SHOULD be provided.
+</p>
+</p>
+<h4>Address</h4>
+<p>When needed in bilingual settings, an address MAY repeat using the standard HL7 extension for language.Note the HL7 specification points to the ‘text’ element as the most important element ‘to define what is printed on the envelope.For this purpose, as it is of the FHIR datatype ‘string’, it may contain some special characters like a carriage return.</p>
+<p>It is RECOMMENDED to also use the available elements to model the address in a structured way. (These are available in the BeAddress profile in this guide as also already used in the Patient resource and others.)</p>
+<p>
+Note: if it is needed to express the same address in different languages: 
+the entire Address element SHALL repeat with each time the language extension on its highest level within Address. 
+This is primarily meant for use cases that actually involve addresses that exist in multiple 
+languages (e.g. in the bilingual environment of Brussels-Capital Region) (also available in the BeAddress profile) </p>
+<p>Special remarks for KMEHR users:
+<br>Note when Address.use and Address.type are used they SHALL use the FHIR defined valuesets as per their required binding level in the FHIR specification. In a KMEHR address, the use was defined by CD-ADDRESS but those values can be found in the FHIR valueset. Cfr. table infra.</br>
+<br>Note there is not a specific FHIR value for care address – it might be defined in a future iteration or the FHIR ‘temp’ value can be used.
+In KMEHR, an address might be expressed using free text or a totally structured approach where the streetname and housenumber are put in separate fields. The structural approach is RECOMMENDED in FHIR using the streetname/number/box HL7 extensions defined in BeAddress.</br>
+<br>Note the FHIR address also allows to optionally define whether the address is a physical, postal or ‘both’ address using the Address.type field.</br>
+</p>
+<table style="width:100%;border: 1px solid black;border-collapse: collapse;" >
+<tr><th>KMEHR CD-ADDRESS</th><th>FHIR: http://hl7.org/fhir/ValueSet/address-use</th></tr> 
+<tr>
+<td>careaddress</td>
+<td>N/A, use value ‘temp.’ Also RECOMMENDED to add a ‘period.’ Please note when needed to express the availablity of a Patient at home (e.g. only Wednesdays), another solution will be defined in a future IG. </td>
+</tr>
+<tr><td>home</td><td>home</td></tr>
+<tr><td>other</td><td>N/A, use value ‘temp.’ Also RECOMMENDED to add a ‘period’</td></tr>
+<tr><td>vacation</td><td>N/A, use value ‘temp.’ Also RECOMMENDED to add a ‘period’</td></tr>
+
+<tr><td>work</td><td>work</td></tr>
+<tr><td>N/A</td><td>old (RECOMMENDED to also use ‘period’ when using this)</td></tr>
+<tr><td>N/A</td><td>billing</td></tr>
+<tr>
+<td>N/A</td>
+<td>temp (RECOMMENDED to also use ‘period’ when using this)</td>
+</tr>
+</table>
+<h4>Country codes</h4>
+<p>Concerning the codification of the country, the FHIR specification defines its country field as a string and suggests using a ISO 3166 2 or 3 letter codes.</p>
+<p>As that 2-letter format is also the standard in a KMEHR address, it is hence RECOMMENDED to codify the country in the same way as in KMEHR.</p>
+
+<h4>CodeableConcept</h4>
+<p>Clinical information is typically expressed using some form of coded content and very often <a href="https://www.hl7.org/fhir/r4/datatypes.html#CodeableConcept">the FHIR datatype ‘CodeableConcept’</a> is used for this. “It is one of the most common patterns in healthcare data. A typical use of CodeableConcept is to send the local code that the concept was coded with, and also one or more translations to publicly defined code systems such as LOINC or SNOMED CT. Sending local codes is useful and important for the purposes of debugging and integrity auditing.” Equally important in this way, it is RECOMMENDED to add display values when sending codes.</p>
+<p>Using UserSelected Boolean, it is possible to clarify which code was actually chosen by the user when multiple codes are sent. It is RECOMMENDED to use this Boolean.</p>
+<p>Please note that although in some profiles only ‘0..1’ ‘CodeableConcept’ is mentioned in the structure, this datatype actually contains possibilities to use more codes to define one concept. Refer to the official HL7 specification for further examples.</p>
+<p>Special remarks for KMEHR users:
+<br>In many KMEHR messages there is the need to describe one concept with multiple coding systems. In KMEHR this is done by using multiple &lt;cd&gt; elements. In a FHIR profile, it will be very common to find the datatype to use for this is the Codeable Concept.</br>
+<br>Note there is no S=’LOCAL’ way in FHIR. A local system will be identified by its own unique URI.</br></p>
+
+  
+</div>

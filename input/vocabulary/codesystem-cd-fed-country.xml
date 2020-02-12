@@ -1,0 +1,17 @@
+<CodeSystem xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/R4/codesystem.xsd">
+	<id value="cd-fed-country"/>
+	<url value="https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-fed-country"/>
+	<version value="1.2"/>
+	<name value="FedCountry"/>
+	<title value="FedCountry"/>
+	<status value="active"/>
+	<experimental value="false"/>
+
+
+	<publisher value="eHealth Platform"/>
+	<description value="FHIR code system definition for country codes as they are described on https://www.ehealth.fgov.be/standards/kmehr/en/tables/fedict-country-codes"/>
+	<caseSensitive value="false"/>
+	
+	<content value="not-present"/>
+	
+</CodeSystem>

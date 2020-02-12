@@ -1,0 +1,18 @@
+{
+  "resourceType": "RelatedPerson",
+  "id": "dina",
+	"patient": {
+		"reference": "Patient/pia",
+		"display": "pia"
+	},
+  "name": [
+	{
+	  "given": [
+		"Dina"
+	  ]
+	}
+  ]
+}
+
+
+

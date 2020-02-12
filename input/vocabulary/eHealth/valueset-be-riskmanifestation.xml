@@ -1,0 +1,910 @@
+<?xml version="1.0"?>
+<ValueSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://hl7.org/fhir">
+	<id value="be-riskmanifestation"/>
+	<url value="https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-riskmanifestation"/>
+	<version value="1.0.0"/>
+	<name value="BeRiskManifestation"/>
+	<status value="active"/>
+	<publisher value="eHealth Platform"/>
+	<contact>
+		<name value="eHealth Platform"/>
+		<telecom>
+			<system value="url"/>
+			<value value="https://www.ehealth.fgov.be/standards/kmehr/en"/>
+		</telecom>
+	</contact>
+	<description value="Codes as communicated by NIHDI and the FPS Terminology Center differentiating types of risk manifestation. This valueset supports the Belgian federal FHIR profiling effort."/>
+	<compose>
+		<include>
+			<system value="http://snomed.info/sct"/>
+			<concept>
+				<code value="473460002"/>
+				<display value="Allergic conjunctivitis (disorder)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Allergic conjunctivitis (disorder)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Allergic conjunctivitis"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="allergische conjunctivitis"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="conjonctivite allergique"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="39579001"/>
+				<display value="Anaphylaxis (disorder)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Anaphylaxis (disorder)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Anaphylaxis"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="anafylaxie"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="anaphylaxie"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="41291007"/>
+				<display value="Angioedema (disorder)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Angioedema (disorder)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Angioedema"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="angio-oedeem"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="angiœdème"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="195967001"/>
+				<display value="Asthma (disorder)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Asthma (disorder)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Asthma"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="astma"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="asthme"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="24079001"/>
+				<display value="Atopic dermatitis (disorder)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Atopic dermatitis (disorder)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Atopic dermatitis"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="atopische dermatitis"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="dermatite atopique"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="4386001"/>
+				<display value="Bronchospasm (finding)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Bronchospasm (finding)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Bronchospasm"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="bronchospasme"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="bronchospasme"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="271759003"/>
+				<display value="Bullous eruption (disorder)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Bullous eruption (disorder)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Bullous eruption"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="bulleuse huideruptie"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="éruption bulleuse"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="698247007"/>
+				<display value="Cardiac arrhythmia (disorder)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Cardiac arrhythmia (disorder)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Cardiac arrhythmia"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="hartritmestoornis"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="arythmie cardique"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="410430005"/>
+				<display value="Cardiorespiratory arrest (disorder)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Cardiorespiratory arrest (disorder)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Cardiorespiratory arrest"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="cardiopulmonale stilstand"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="arrêt cardiorespiratoire"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="9826008"/>
+				<display value="Conjunctivitis (disorder)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Conjunctivitis (disorder)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Conjunctivitis"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="conjunctivitis"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="conjonctivite"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="40275004"/>
+				<display value="Contact dermatitis (disorder)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Contact dermatitis (disorder)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Contact dermatitis"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="contactdermatitis"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="dermatite de contact"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="49727002"/>
+				<display value="Cough (finding)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Cough (finding)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Cough"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="hoesten"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="toux"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="62315008"/>
+				<display value="Diarrhea (finding)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Diarrhea (finding)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Diarrhea"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="diarree"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="diarrhée"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="702809001"/>
+				<display value="Drug reaction with eosinophilia and systemic symptoms (disorder)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Drug reaction with eosinophilia and systemic symptoms (disorder)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Drug reaction with eosinophilia and systemic symptoms"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="geneesmiddelexantheem met eosinofilie en systemische symptomen"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="réaction médicamenteuse avec éosinophilie et symptômes systémiques"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="297942002"/>
+				<display value="Drug-induced erythema multiforme (disorder)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Drug-induced erythema multiforme (disorder)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Drug-induced erythema multiforme"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="geneesmiddelengeïnduceerde erythema multiforme"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="érythème polymorphe d'origine médicamenteuse"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="162290004"/>
+				<display value="Dry eyes (finding)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Dry eyes (finding)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Dry eyes"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="droge ogen"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="sècheresse oculaire"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="267036007"/>
+				<display value="Dyspnea (finding)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Dyspnea (finding)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Dyspnea"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="dyspneu"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="dyspnée"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="43116000"/>
+				<display value="Eczema (disorder)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Eczema (disorder)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Eczema"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="eczeem"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="eczéma"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="51599000"/>
+				<display value="Edema of larynx (disorder)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Edema of larynx (disorder)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Edema of larynx"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="larynxoedeem"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="œdème du larynx"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="271807003"/>
+				<display value="Eruption of skin (disorder)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Eruption of skin (disorder)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Eruption"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="huideruptie"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="éruption cutanée"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="386661006"/>
+				<display value="Fever (finding)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Fever (finding)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Fever"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="koorts"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="fièvre"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="418363000"/>
+				<display value="Itching of skin (finding)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Itching of skin (finding)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Itching of skin"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="jeuk van huid"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="prurit de la peau"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="768962006"/>
+				<display value="Lyell syndrome (disorder)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Lyell syndrome (disorder)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Lyell syndrome"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="toxische epidermale necrolyse"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="nécrolyse épidermique toxique"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="422587007"/>
+				<display value="Nausea (finding)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Nausea (finding)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Nausea"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="nausea"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="nausées"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="16932000"/>
+				<display value="Nausea and vomiting (disorder)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Nausea and vomiting (disorder)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Nausea and vomiting"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="nausea en braken"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="nausées et vomissements"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="359610006"/>
+				<display value="Ocular hyperemia (disorder)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Ocular hyperemia (disorder)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Ocular hyperemia"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="oculaire hyperemie"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="hyperémie oculaire"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="271757001"/>
+				<display value="Papular eruption (disorder)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Papular eruption (disorder)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Papular eruption"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="papulaire huideruptie"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="éruption papuleuse"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="70076002"/>
+				<display value="Rhinitis (disorder)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Rhinitis (disorder)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Rhinitis"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="rinitis"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="rhinite"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="91175000"/>
+				<display value="Seizure (finding)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Seizure (finding)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Seizure"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="convulsie"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="convulsion"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="76067001"/>
+				<display value="Sneezing (finding)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Sneezing (finding)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Sneezing"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="niezen"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="éternuement"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="73442001"/>
+				<display value="Stevens-Johnson syndrome (disorder)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Stevens-Johnson syndrome (disorder)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Stevens-Johnson syndrome"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="syndroom van Stevens-Johnson"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="syndrome de Stevens-Johnson"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="23924001"/>
+				<display value="Tight chest (finding)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Tight chest (finding)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Tight chest"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="drukkend gevoel op de borst"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="oppression thoracique"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="490008"/>
+				<display value="Upper respiratory tract hypersensitivity reaction (disorder)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Upper respiratory tract hypersensitivity reaction (disorder)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Upper respiratory tract hypersensitivity reaction"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="overgevoeligheidsreactie van bovenste luchtwegen"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="réaction d'hypersensibilité des voies respiratoires supérieures"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="126485001"/>
+				<display value="Urticaria (disorder)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Urticaria (disorder)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Urticaria"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="urticaria"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="urticaire"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="31996006"/>
+				<display value="Vasculitis (disorder)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Vasculitis (disorder)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Vasculitis"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="vasculitis"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="vasculite"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="422400008"/>
+				<display value="Vomiting (disorder)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Vomiting (disorder)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Vomiting"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="braken"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="vomissements"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="247472004"/>
+				<display value="Weal (disorder)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Weal (disorder)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Weal"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="urticaire rash"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="éruption urticaire"/>
+				</designation>
+			</concept>
+		</include>
+	</compose>
+</ValueSet>

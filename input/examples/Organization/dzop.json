@@ -1,0 +1,11 @@
+{
+  "resourceType": "Organization",
+  "id": "dzop",
+  "meta": 
+    {
+      "profile": [
+		"https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization"
+	  ]
+    },
+  "name": "DZOP"
+}

@@ -24,13 +24,13 @@
 		}
 	],
 	"subject": {
-		"reference": "Patient/peter",
-		"display": "peter"
+		"reference": "Patient/pia",
+		"display": "pia"
 	},
 	"sent": "2019-11-11T08:30:01+01:00",
 	"recipient": [
 		{
-			"reference": "CareTeam/careteam",
+			"reference": "CareTeam/dzop-team-0002",
 			"display": "Care Team"
 		}
 	],

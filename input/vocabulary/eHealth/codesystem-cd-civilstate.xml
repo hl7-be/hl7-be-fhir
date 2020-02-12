@@ -1,0 +1,205 @@
+<CodeSystem xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/R4/codesystem.xsd">
+	<id value="cd-civilstate"/>
+	<url value="https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-civilstate"/>
+	<version value="1.0"/>
+	<name value="CivilState"/>
+	<title value="CivilState"/>
+	<status value="active"/>
+	<experimental value="false"/>
+	<publisher value="eHealth Platform"/>
+	<description value="Civil state in Belgium."/>
+	<caseSensitive value="false"/>
+	<content value="complete"/>
+	<concept>
+		<code value="10"/>
+		<display value="Unmarried"/>
+		<designation>
+			<language value="en"/>
+			<value value="Unmarried"/>
+		</designation>
+		<designation>
+			<language value="nl-BE"/>
+			<value value="Ongehuwd"/>
+		</designation>
+		<designation>
+			<language value="fr-BE"/>
+			<value value="Célibataire"/>
+		</designation>
+	</concept>
+	<concept>
+		<code value="20"/>
+			<display value="Married"/>
+		<designation>
+			<language value="en"/>
+			<value value="Married"/>
+		</designation>
+		<designation>
+			<language value="nl-BE"/>
+			<value value="Gehuwd"/>
+		</designation>
+		<designation>
+			<language value="fr-BE"/>
+			<value value="Marié"/>
+		</designation>
+	</concept>
+	<concept>
+		<code value="25"/>
+		<display value="Annuled"/>
+		<designation>
+			<language value="en"/>
+			<value value="Annuled"/>
+		</designation>
+		<designation>
+			<language value="nl-BE"/>
+			<value value="Nietigverklaring van het huwelijk"/>
+		</designation>
+		<designation>
+			<language value="fr-BE"/>
+			<value value="Annulation de marriage"/>
+		</designation>
+	</concept>
+	<concept>
+		<code value="26"/>
+			<display value="Putative marriage"/>
+		<designation>
+			<language value="en"/>
+			<value value="Putative marriage"/>
+		</designation>
+		<designation>
+			<language value="nl-BE"/>
+			<value value="Putatief huwelijk"/>
+		</designation>
+		<designation>
+			<language value="fr-BE"/>
+			<value value="Mariage putatif"/>
+		</designation>
+	</concept>
+	<concept>
+		<code value="30"/>
+		<display value="Widowed"/>
+		<designation>
+			<language value="en"/>
+			<value value="Widowed"/>
+		</designation>
+		<designation>
+			<language value="nl-BE"/>
+			<value value="Weduwnaar/weduwe"/>
+		</designation>
+		<designation>
+			<language value="fr-BE"/>
+			<value value="Veuf/veuve"/>
+		</designation>
+	</concept>
+	<concept>
+		<code value="40"/>
+			<display value="Divorced"/>
+		<designation>
+			<language value="en"/>
+			<value value="Divorced"/>
+		</designation>
+		<designation>
+			<language value="nl-BE"/>
+			<value value="Echtgescheiden"/>
+		</designation>
+		<designation>
+			<language value="fr-BE"/>
+			<value value="Divorced"/>
+		</designation>
+	</concept>
+	<concept>
+		<code value="41"/>
+		<display value="Divorced since 1/10/1994"/>
+		<designation>
+			<language value="en"/>
+			<value value="Divorced since 1/10/1994"/>
+		</designation>
+		<designation>
+			<language value="nl-BE"/>
+			<value value="Echtgescheiden vanaf 1/10/1994"/>
+		</designation>
+		<designation>
+			<language value="fr-BE"/>
+			<value value="Divorcé à partir du 1/10/1994"/>
+		</designation>
+	</concept>
+	<concept>
+		<code value="50"/>
+		<display value="Legal separation"/>
+		<designation>
+			<language value="en"/>
+			<value value="Legal separation"/>
+		</designation>
+		<designation>
+			<language value="nl-BE"/>
+			<value value="Gescheiden van tafel en bed"/>
+		</designation>
+		<designation>
+			<language value="fr-BE"/>
+			<value value="Séparé de corps et de biens"/>
+		</designation>
+	</concept>
+	<concept>
+		<code value="51"/>
+			<display value="Legal separation since 1/10/1994"/>
+		<designation>
+			<language value="en"/>
+			<value value="Legal separation since 1/10/1994"/>
+		</designation>
+		<designation>
+			<language value="nl-BE"/>
+			<value value="Gescheiden van tafel en bed sinds 1/10/1994"/>
+		</designation>
+		<designation>
+			<language value="fr-BE"/>
+			<value value="Séparé de corps et de biens à partir du 1/10/1994"/>
+		</designation>
+	</concept>
+	<concept>
+		<code value="60"/>
+			<display value="Repudiation"/>
+		<designation>
+			<language value="en"/>
+			<value value="Repudiation"/>
+		</designation>
+		<designation>
+			<language value="nl-BE"/>
+			<value value="Verstoting"/>
+		</designation>
+		<designation>
+			<language value="fr-BE"/>
+			<value value="Répudiation"/>
+		</designation>
+	</concept>
+	<concept>
+		<code value="80"/>
+				<display value="Partnership"/>
+		<designation>
+			<language value="en"/>
+			<value value="Partnership"/>
+		</designation>
+		<designation>
+			<language value="nl-BE"/>
+			<value value="Partnerschap"/>
+		</designation>
+		<designation>
+			<language value="fr-BE"/>
+			<value value="Partenariat"/>
+		</designation>
+	</concept>
+	<concept>
+		<code value="81"/>
+			<display value="End of partnership"/>
+		<designation>
+			<language value="en"/>
+			<value value="End of partnership"/>
+		</designation>
+		<designation>
+			<language value="nl-BE"/>
+			<value value="Partnerschap beeindigd"/>
+		</designation>
+		<designation>
+			<language value="fr-BE"/>
+			<value value="Fin de partenariat"/>
+		</designation>
+	</concept>
+</CodeSystem>

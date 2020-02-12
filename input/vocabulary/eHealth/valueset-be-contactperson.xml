@@ -1,0 +1,190 @@
+<ValueSet xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/R4/valueset.xsd">
+	<id value="be-contactperson"/>
+	<url value="https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-contactperson"/>
+	<version value="1.0.0"/>
+	<name value="BeContactPerson"/>
+	<status value="active"/>
+	<publisher value="eHealth Platform"/>
+	<contact>
+		<name value="eHealth Platform"/>
+		<telecom>
+			<system value="url"/>
+			<value value="https://www.ehealth.fgov.be/standards/kmehr/en"/>
+		</telecom>
+	</contact>
+	<description value="Maximum valuest to define category of a contact person, using the HL7 values and the Belgian CD-CONTACT-PERSON values."/>
+	<compose>
+		<include>
+			<system value="http://terminology.hl7.org/CodeSystem/v2-0131"/>
+			<filter>
+				<property value="concept"/>
+				<op value="is-not-a"/>
+				<value value="O"/>
+			</filter>
+		</include>
+		<include>
+			<system value="https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contact-person"/>
+			<concept>
+				<code value="father"/>
+				<designation>
+					<language value="en"/>
+					<value value="father"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="mother"/>
+				<designation>
+					<language value="en"/>
+					<value value="mother"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="child"/>
+				<designation>
+					<language value="en"/>
+					<value value="child"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="spouse"/>
+				<designation>
+					<language value="en"/>
+					<value value="spouse"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="husband"/>
+				<designation>
+					<language value="en"/>
+					<value value="husband"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="partner"/>
+				<designation>
+					<language value="en"/>
+					<value value="partner"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="brother"/>
+				<designation>
+					<language value="en"/>
+					<value value="brother"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="sister"/>
+				<designation>
+					<language value="en"/>
+					<value value="sister"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="brotherinlaw"/>
+				<designation>
+					<language value="en"/>
+					<value value="brother-in-law"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="tutor"/>
+				<designation>
+					<language value="en"/>
+					<value value="tutor"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="notary"/>
+				<designation>
+					<language value="en"/>
+					<value value="notary"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="lawyer"/>
+				<designation>
+					<language value="en"/>
+					<value value="lawyer"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="employer"/>
+				<designation>
+					<language value="en"/>
+					<value value="employer"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="grandparent"/>
+				<designation>
+					<language value="en"/>
+					<value value="grandparent"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="son"/>
+				<designation>
+					<language value="en"/>
+					<value value="son"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="daughter"/>
+				<designation>
+					<language value="en"/>
+					<value value="daughter"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="grandchild"/>
+				<designation>
+					<language value="en"/>
+					<value value="grandchild"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="neighbour"/>
+				<designation>
+					<language value="en"/>
+					<value value="neighbour"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="stepson"/>
+				<designation>
+					<language value="en"/>
+					<value value="stepson"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="stepdaughter"/>
+				<designation>
+					<language value="en"/>
+					<value value="stepdaughter"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="stepfather"/>
+				<designation>
+					<language value="en"/>
+					<value value="stepfather"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="stepmother"/>
+				<designation>
+					<language value="en"/>
+					<value value="stepmother"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="sisterinlaw"/>
+				<designation>
+					<language value="en"/>
+					<value value="sisterinlaw"/>
+				</designation>
+			</concept>
+		</include>
+	</compose>
+</ValueSet>

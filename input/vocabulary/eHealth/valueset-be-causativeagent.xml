@@ -1,0 +1,3406 @@
+<ValueSet xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/R4/valueset.xsd">
+	<id value="be-causativeagent"/>
+	<url value="https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-causativeagent"/>
+	<version value="1.0.0"/>
+	<name value="BeCausativeAgent"/>
+	<status value="active"/>
+	<publisher value="eHealth Platform"/>
+	<contact>
+		<name value="eHealth Platform"/>
+
+		<telecom>
+			<system value="url"/>
+			<value value="https://www.ehealth.fgov.be/standards/kmehr/en"/>
+		</telecom>
+	</contact>
+	<description value="Codes as communicated by NIHDI and the FPS Terminology Center differentiating types of causative agent. This valueset supports the Belgian federal FHIR profiling effort."/>
+	<compose>
+		<include>
+		<system value="http://snomed.info/sct"/>
+			<concept>
+				<code value="52454007"/>
+				<display value="Albumin (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Albumin (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Albumin"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="albumine"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="albumine"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="391737006"/>
+				<display value="Almond oil (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Almond oil (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Almond oil"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="amandelolie"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="huile d'amande"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="12503006"/>
+				<display value="Aluminium (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Aluminium (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Aluminum"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="aluminium"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="aluminium"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="767108006"/>
+				<display value="Aluminium and aluminium compound (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Aluminium and aluminium compound (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Aluminium and aluminium compound"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="aluminium en aluminium verbindingen"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="aluminium et composés d'aluminium"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="264287008"/>
+				<display value="Animal dander (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Animal dander (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Animal dander"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="huidschilfers van dieren"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="squame animale"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="711062002"/>
+				<display value="Animal protein and epidermal substance (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Animal protein and epidermal substance (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Animal protein and epidermal substance"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="dierlijke eiwitten en epidermaal materiaal"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="protéine animale et substance épidermique"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="735215001"/>
+				<display value="Apple (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Apple (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Apple"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="appel"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="pomme"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="226491003"/>
+				<display value="Apple juice (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Apple juice (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Apple juice"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="appelsap"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="jus de pomme"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="11526002"/>
+				<display value="Aspartame (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Aspartame (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Aspartame"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="aspartaam"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="aspartame"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="386936005"/>
+				<display value="Azelaic acid (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Azelaic acid (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Azelaic acid"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="azelaïnezuur"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="acide azélaïque"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="256307007"/>
+				<display value="Banana (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Banana (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Banana"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="banaan"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="banane"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="288328004"/>
+				<display value="Bee venom (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Bee venom (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Bee venom"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="bijengif"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="venin d'abeille"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="91598004"/>
+				<display value="Benzoyl peroxide (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Benzoyl peroxide (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Benzoyl peroxide"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="benzoylperoxide"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="peroxyde de benzoyle"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="255640000"/>
+				<display value="Biocide (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Biocide (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Biocide"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="biocide"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="biocide"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="412061001"/>
+				<display value="Blueberries (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Blueberries (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Blueberries"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="bosbessen"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="bleuets"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="261243003"/>
+				<display value="Brass (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Brass (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Brass"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="messing"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="laiton"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="726764009"/>
+				<display value="Broad bean (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Broad bean (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Broad bean"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="tuinboon"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="fève"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="9021002"/>
+				<display value="Carbaryl (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Carbaryl (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Carbaryl"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="carbaryl"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="carbaryl"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="256319004"/>
+				<display value="Carrot (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Carrot (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Carrot"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="wortel"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="carotte"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="260152009"/>
+				<display value="Cat dander (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Cat dander (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Cat dander"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="huidschilfers van kat"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="squame de chat"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="256326004"/>
+				<display value="Celery (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Celery (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Celery"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="selderij"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="céléri"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="23182003"/>
+				<display value="Cereal (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Cereal (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Cereal"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="granen"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="céréale"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="102264005"/>
+				<display value="Cheese (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Cheese (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Cheese"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="kaas"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="fromage"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="735248001"/>
+				<display value="Cherry (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Cherry (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Cherry"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="kers"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="cerise"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="102262009"/>
+				<display value="Chocolate (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Chocolate (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Chocolate"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="chocolade"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="chocolat"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="227388008"/>
+				<display value="Cinnamon (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Cinnamon (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Cinnamon"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="kaneel"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="canelle"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="59351004"/>
+				<display value="Citrate (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Citrate (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Citrate"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="citraat"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="citrate"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="102259006"/>
+				<display value="Citrus fruit (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Citrus fruit (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Citrus fruit"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="citrusvrucht"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="agrume"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="11894001"/>
+				<display value="Clostridium botulinum toxin (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Clostridium botulinum toxin (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Clostridium botulinum toxin"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="Clostridium botulinum-toxine"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="toxine du Clostridium botulinum"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="80237000"/>
+				<display value="Cocoa butter (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Cocoa butter (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Cocoa butter"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="cacaoboter"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="beurre de cacao"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="66925006"/>
+				<display value="Copper (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Copper (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Copper"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="koper"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="cuivre"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="412357001"/>
+				<display value="Corn (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Corn (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Corn"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="mais"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="maïs"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="289122001"/>
+				<display value="Cosmetic material (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Cosmetic material (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Cosmetic material"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="cosmetica"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="cosmétique"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="89889006"/>
+				<display value="Cotton fiber (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Cotton fiber (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Cotton fiber"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="katoenvezels"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="fibre de coton"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="260153004"/>
+				<display value="Cow dander (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Cow dander (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Cow dander"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="huidschilfers van koe"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="squame de vache"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="264295007"/>
+				<display value="Cow's milk protein (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Cow's milk protein (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Cow's milk protein"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="koemelkeiwit"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="protéine de lait de vache"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="289949002"/>
+				<display value="Cypress pollen (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Cypress pollen (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Cypress pollen"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="pollen van cipres"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="pollen de cyprès"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="226760005"/>
+				<display value="Dairy foods (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Dairy foods (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Dairy foods"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="zuivelproducten"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="produits laitiers"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="396031000"/>
+				<display value="Dimeticone (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Dimeticone (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Dimethicone"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="dimeticon"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="diméticone"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="387293003"/>
+				<display value="Dithranol (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Dithranol (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Anthralin"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="ditranol"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="dithranol"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="260154005"/>
+				<display value="Dog dander (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Dog dander (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Dog dander"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="huidschilfers van hond"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="squame de chien"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="61789006"/>
+				<display value="Dye (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Dye (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Dye"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="verfstof"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="teinture"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="762766007"/>
+				<display value="Edible substance (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Edible substance (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Edible substance"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="eetbare substantie"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="substance comestible"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="303300008"/>
+				<display value="Egg protein (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Egg protein (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Egg protein"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="ei-eiwit"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="protéine d'œuf"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="256443002"/>
+				<display value="Egg white (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Egg white (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Egg white"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="eiwit"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="blanc d'œuf"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="102263004"/>
+				<display value="Eggs (edible) (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Eggs (edible) (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Eggs (edible)"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="eetbare eieren"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="œufs comestibles"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="115589000"/>
+				<display value="Ethanolamine (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Ethanolamine (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Ethanolamine"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="ethanolamine"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="éthanolamine"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="12510000"/>
+				<display value="Eucalyptus oil (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Eucalyptus oil (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Eucalyptus oil"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="eucalyptusolie"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="huile d'eucalyptus"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="227425007"/>
+				<display value="Figs (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Figs (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Figs"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="vijg"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="figue"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="735971005"/>
+				<display value="Fish (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Fish (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Fish"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="vis"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="poisson"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="406774009"/>
+				<display value="Fish derived omega 3 fatty acid (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Fish derived omega 3 fatty acid (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Fish derived omega 3 fatty acid"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="omega-3-vetzuur uit vis"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="acides gras oméga 3 issus du poisson"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="735341005"/>
+				<display value="Fish oil (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Fish oil (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Fish oil"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="visolie"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="huile de poisson"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="59533004"/>
+				<display value="Food additive (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Food additive (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Food additive"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="voedseladditieven"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="additif alimentaire"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="80259003"/>
+				<display value="Food flavoring agent (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Food flavoring agent (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Food flavoring agent"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="smaakstof voor levensmiddelen"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="agent aromatisant d'un aliment"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="72511004"/>
+				<display value="Fruit (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Fruit (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Fruit"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="fruit"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="fruit"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="735030001"/>
+				<display value="Garlic (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Garlic (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Garlic"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="knoflook"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="ail"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="57126000"/>
+				<display value="Glue (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Glue (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Glue"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="lijm"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="colle"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="430503006"/>
+				<display value="Glutamate (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Glutamate (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Glutamate"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="glutamaat"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="glutamate"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="89811004"/>
+				<display value="Gluten (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Gluten (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Gluten"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="gluten"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="gluten"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="2309006"/>
+				<display value="Gold (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Gold (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Gold"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="goud"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="or"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="412145001"/>
+				<display value="Hair dye (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Hair dye (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Hair dye"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="haarverf"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="teinture pour cheveux"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="227374009"/>
+				<display value="Herbs and spices (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Herbs and spices (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Herbs and spices"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="kruiden en specerijen"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="herbes et épices"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="256417003"/>
+				<display value="Horse dander (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Horse dander (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Horse dander"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="huidschilfers van paard"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="squame de cheval"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="128488006"/>
+				<display value="House dust (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="House dust (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="House dust"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="huisstof"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="poussière de maison"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="710942001"/>
+				<display value="Insect protein (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Insect protein (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Insect protein"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="eiwit van insect"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="protéine d'insecte"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="280939008"/>
+				<display value="Insect venom (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Insect venom (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Insect venom"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="gif van insect"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="venin d'insecte"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="3829006"/>
+				<display value="Iron (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Iron (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Iron"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="ijzer"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="fer"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="260176001"/>
+				<display value="Kiwi fruit (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Kiwi fruit (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Kiwi fruit"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="kiwi"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="kiwi"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="47703008"/>
+				<display value="Lactose (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Lactose (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Lactose"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="lactose"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="lactose"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="42416001"/>
+				<display value="Lanolin (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Lanolin (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Lanolin"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="lanoline"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="lanoline"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="736162008"/>
+				<display value="Lobster (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Lobster (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Lobster"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="kreeft"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="homard"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="719108000"/>
+				<display value="Lupin flour (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Lupin flour (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Lupin flour"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="lupinemeel"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="farine de lupin"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="710179004"/>
+				<display value="Lupine seed (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Lupine seed (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Lupine seed"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="lupinezaad"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="graine de lupin"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="735977009"/>
+				<display value="Marine crustacean (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Marine crustacean (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Marine crustacean"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="schaaldieren"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="crustacés"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="28647000"/>
+				<display value="Meat (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Meat (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Meat"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="vlees"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="viande"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="260177005"/>
+				<display value="Melon (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Melon (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Melon"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="meloen"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="melon"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="425620007"/>
+				<display value="Metal (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Metal (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Metal"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="metaal"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="métal"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="2799001"/>
+				<display value="Methylbenzethonium chloride (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Methylbenzethonium chloride (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Methylbenzethonium chloride"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="methylbenzethoniumchloride"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="chlorure de méthylbenzéthonium"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="770326002"/>
+				<display value="Mollusk (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Mollusk (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Mollusk"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="weekdier"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="mollusque"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="256419000"/>
+				<display value="Mouse epithelium (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Mouse epithelium (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Mouse epithelium"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="epitheel van muis"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="épithélium de souris"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="260156007"/>
+				<display value="Mouse urine proteins (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Mouse urine proteins (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Mouse urine proteins"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="urine-eiwit van muis"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="protéines d’urine de souris"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="735045008"/>
+				<display value="Mushroom (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Mushroom (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Mushroom"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="paddenstoel"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="champignon"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="51905005"/>
+				<display value="Mustard (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Mustard (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Mustard"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="mosterdkruid"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="herbe de moutarde"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="762953003"/>
+				<display value="Mustard seasoning (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Mustard seasoning (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Mustard seasoning"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="mosterd smaakmaker"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="assaisonnement à la moutarde"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="33396006"/>
+				<display value="Nickel (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Nickel (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Nickel"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="nikkel"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="nickel"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="276310004"/>
+				<display value="Non-human hair - material (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Non-human hair - material (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Animal hair"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="dierenhaar"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="poil animal"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="13577000"/>
+				<display value="Nut (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Nut (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Nut"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="noten"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="noix"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="230034002"/>
+				<display value="Nuts and seeds (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Nuts and seeds (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Nuts and seeds"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="noten en zaden"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="noix et graines"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="418504009"/>
+				<display value="Oats (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Oats (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Oats"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="haver"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="avoine"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="735979007"/>
+				<display value="Octopus (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Octopus (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Octopus"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="octopus"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="poulpe"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="260126003"/>
+				<display value="Olive pollen (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Olive pollen (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Olive pollen"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="pollen van olijfboom"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="pollen d’olivier"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="735047000"/>
+				<display value="Onion (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Onion (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Onion"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="ui"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="oignon"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="116549003"/>
+				<display value="Organochlorine pesticide (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Organochlorine pesticide (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Organochlorine pesticide"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="organochloorpesticiden"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="pesticide organochloré"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="119417004"/>
+				<display value="Organophosphate insecticide (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Organophosphate insecticide (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Organophosphate insecticide"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="organofosfaatinsecticide"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="insecticide organophosphate"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="736031006"/>
+				<display value="Oyster (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Oyster (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Oyster"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="oester"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="huitre"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="255667006"/>
+				<display value="Paraffin (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Paraffin (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Paraffin"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="paraffine"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="paraffine"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="735049002"/>
+				<display value="Peach (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Peach (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Peach"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="perzik"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="pêche"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="762952008"/>
+				<display value="Peanut (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Peanut (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Peanut"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="pinda"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="cacahuète"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="410853002"/>
+				<display value="Perfluorochemical (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Perfluorochemical (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Perfluorochemical"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="perfluorochemicaliën"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="perfluorochimique"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="418785009"/>
+				<display value="Perfume (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Perfume (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Perfume"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="parfum"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="parfum"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="59545008"/>
+				<display value="Pesticide (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Pesticide (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Pesticide"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="pesticide"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="pesticide"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="256248008"/>
+				<display value="Plant material (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Plant material (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Plant material"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="plantaardig materiaal"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="matériel végétal"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="387398009"/>
+				<display value="Podophyllum resin (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Podophyllum resin (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Podophyllum resin"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="hars van Podophyllum"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="résine de Podophyllum"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="256259004"/>
+				<display value="Pollen (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Pollen (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Pollen"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="pollen"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="pollen"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="83619009"/>
+				<display value="Polyvinyl alcohol (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Polyvinyl alcohol (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Polyvinyl alcohol"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="polyvinylalcohol"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="alcool polyvinylique"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="226934003"/>
+				<display value="Pork (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Pork (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Pork"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="varkensvlees"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="porc"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="735053000"/>
+				<display value="Potato (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Potato (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Potato"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="aardappel"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="pomme de terre"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="28230009"/>
+				<display value="Poultry (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Poultry (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Poultry"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="gevogeltevlees"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="volaille"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="227313005"/>
+				<display value="Pulse vegetables (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Pulse vegetables (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Pulse vegetables"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="peulvrucht"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="légumes secs"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="311846002"/>
+				<display value="Pyrethroid insecticide (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Pyrethroid insecticide (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Pyrethroid insecticide"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="pyrethroïde insecticide"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="insecticide pyréthroïde"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="412153009"/>
+				<display value="Rabbit dander (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Rabbit dander (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Rabbit dander"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="huidschilfers van konijn"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="squame de lapin"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="256303006"/>
+				<display value="Ragweed pollen (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Ragweed pollen (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Ragweed pollen"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="pollen van ambrosia"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="pollen d'ambroisie"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="227444000"/>
+				<display value="Raspberries (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Raspberries (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Raspberries"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="framboos"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="framboise"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="226915003"/>
+				<display value="Red meat (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Red meat (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Red meat"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="rood vlees"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="viande rouge"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="67324005"/>
+				<display value="Rice (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Rice (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Rice"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="rijst"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="riz"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="43230003"/>
+				<display value="Rubber (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Rubber (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Rubber"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="rubber"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="caoutchouc"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="412068007"/>
+				<display value="Rye (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Rye (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Rye"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="rogge"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="seigle"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="264337003"/>
+				<display value="Seed (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Seed (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Seed"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="zaden"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="graines"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="89707004"/>
+				<display value="Sesame oil (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Sesame oil (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Sesame oil"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="sesamolie"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="huile de sésame"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="260167008"/>
+				<display value="Sesame seed (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Sesame seed (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Sesame seed"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="sesamzaad"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="graine de sésame"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="735029006"/>
+				<display value="Shellfish (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Shellfish (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Shellfish"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="schaal- en schelpdieren"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="coquillages et crustacés"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="278840001"/>
+				<display value="Shrimp (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Shrimp (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Shrimp"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="garnaal"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="crevette"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="7791007"/>
+				<display value="Soy protein (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Soy protein (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Soy protein"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="soja-eiwit"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="protéine de soya"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="256355007"/>
+				<display value="Soya bean (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Soya bean (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Soya bean"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="sojaboon"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="graine de soja"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="735006003"/>
+				<display value="Squid (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Squid (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Squid"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="inktvis"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="calamar"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="102261002"/>
+				<display value="Strawberry (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Strawberry (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Strawberry"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="aardbei"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="fraise"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="105590001"/>
+				<display value="Substance (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Substance (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Substance"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="substantie"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="substance"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="373270004"/>
+				<display value="Substance with penicillin structure and antibacterial mechanism of action (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Substance with penicillin structure and antibacterial mechanism of action (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Penicillin antibacterial"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="penicilline antibacterieel"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="pénicilline antibactérienne"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="767406000"/>
+				<display value="Sulfite and sulfite derivative (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Sulfite and sulfite derivative (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Sulfite and sulfite derivative"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="sulfiet en sulfietderivaat"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="sulfite et dérivé de sulfite"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="289964002"/>
+				<display value="Surgical material (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Surgical material (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Surgical material"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="chirurgisch materiaal"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="matériel chirurgical"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="734881000"/>
+				<display value="Tomato (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Tomato (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Tomato"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="tomaat"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="tomate"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="256305004"/>
+				<display value="Tree resin (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Tree resin (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Tree resin"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="boomhars"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="résine d'arbre"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="227144008"/>
+				<display value="Tuna fish (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Tuna fish (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Tuna fish"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="tonijn"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="thon"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="260118006"/>
+				<display value="Wall pellitory pollen (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Wall pellitory pollen (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Wall pellitory pollen"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="pollen van glaskruid"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="pollen de pariétaire"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="256352005"/>
+				<display value="Walnut - nut (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Walnut - nut (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Walnut - nut"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="walnoot"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="noix simple"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="419420009"/>
+				<display value="Watermelon (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Watermelon (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Watermelon"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="watermeloen"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="pastèque"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="419604006"/>
+				<display value="Weed pollen (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Weed pollen (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Weed pollen"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="pollen van onkruid"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="pollen de mauvaise herbe"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="412071004"/>
+				<display value="Wheat (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Wheat (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Wheat"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="tarwe"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="blé"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="14402002"/>
+				<display value="Wood (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Wood (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Wood"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="hout"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="bois"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="772245002"/>
+				<display value="Wool alcohol (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Wool alcohol (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Wool alcohol"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="wolalcohol"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="alcool de laine"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="418266005"/>
+				<display value="Yellow paraffin (substance)"/>
+				<designation>
+					<use>
+						<system value="http://snomed.info/sct"/>
+						<code value="900000000000003001"/>
+						<display value="Fully specified name"/>
+					</use>
+					<value value="Yellow paraffin (substance)"/>
+				</designation>
+				<designation>
+					<language value="en"/>
+					<value value="Yellow paraffin"/>
+				</designation>
+				<designation>
+					<language value="nl-BE"/>
+					<value value="gele paraffine"/>
+				</designation>
+				<designation>
+					<language value="fr-BE"/>
+					<value value="paraffine jaune"/>
+				</designation>
+			</concept>
+		</include>
+	</compose>
+</ValueSet>

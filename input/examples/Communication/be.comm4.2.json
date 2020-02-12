@@ -31,18 +31,18 @@
 		}
 	],
 	"subject": {
-		"reference": "Patient/peter",
-		"display": "peter"
+		"reference": "Patient/pia",
+		"display": "pia"
 	},
 	"sent": "2019-11-11T09:15:01+01:00",
 	"recipient": [
 		{
-			"reference": "CareTeam/nurses",
+			"reference": "CareTeam/dzop-team-0002-nurses",
 			"display": "Nurses"
 		}
 	],
 	"sender": {
-		"reference": "Practitioner/dzop",
+		"reference": "Organization/dzop",
 		"display": "DZOP"
 	},
 	"payload": [

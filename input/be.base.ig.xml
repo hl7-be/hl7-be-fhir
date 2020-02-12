@@ -69,9 +69,13 @@
       <name value="Terminology"/>
       <description value="Terminology resources - ValueSets and CodeSystems"/>
     </grouping>
+    <grouping id="capstatements">
+      <name value="Capability Statements"/>
+      <description value="Capability Statements"/>
+    </grouping>
     <grouping id="examples">
-      <name value="Examples"/>
-      <description value="Example resources"/>
+      <name value="Other Examples"/>
+      <description value="Examples of resources defined elsewhere"/>
     </grouping>
 
 
@@ -101,8 +105,10 @@
       </reference>
       <fhirVersion value="4.0.1"/>
       <name value="Care Team profile"/>
+      <description value="Care Plan profile"/>
       <groupingId value="communication"/>
     </resource>
+
 
     <resource>
       <reference>
@@ -155,6 +161,19 @@
       <groupingId value="core"/>
     </resource>
 
+	
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/be-organization"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Organization core BE profile"/>
+      <description value="The Core BE profile for Organization"/>
+      <groupingId value="core"/>
+    </resource>
+	
+<!--
+-->
 <!--
     <resource>
       <reference>
@@ -168,7 +187,7 @@
 -->
     <resource>
       <reference>
-        <reference value="StructureDefinition/be-careteam-model"/>
+        <reference value="StructureDefinition/model-careteam"/>
       </reference>
       <fhirVersion value="4.0.1"/>
       <name value="Logical Model Care Team"/>
@@ -177,7 +196,7 @@
     </resource>
     <resource>
       <reference>
-        <reference value="StructureDefinition/lm-be-communication"/>
+        <reference value="StructureDefinition/model-communication"/>
       </reference>
       <fhirVersion value="4.0.1"/>
       <name value="Logical Model Communication"/>
@@ -191,7 +210,7 @@
       </reference>
       <fhirVersion value="4.0.1"/>
       <name value="Communication Apps"/>
-      <groupingId value="core"/>
+      <groupingId value="capstatements"/>
     </resource>
     <resource>
       <reference>
@@ -199,7 +218,7 @@
       </reference>
       <fhirVersion value="4.0.1"/>
       <name value="Communication Server"/>
-      <groupingId value="core"/>
+      <groupingId value="capstatements"/>
     </resource>
 
     <resource>
@@ -229,6 +248,9 @@
       <description value="The Core BE profile for Allergy Intolerance"/>
       <groupingId value="condition"/>
     </resource>
+
+
+	
     <resource>
       <reference>
         <reference value="ValueSet/be-contactperson"/>
@@ -286,7 +308,7 @@
     </resource>
     <resource>
       <reference>
-        <reference value="CodeSystem/be-hcparty"/>
+        <reference value="CodeSystem/cd-hcparty"/>
       </reference>
       <fhirVersion value="4.0.1"/>
       <name value="CodeSystem - Healthcare Party"/>
@@ -302,7 +324,7 @@
       <name value="Communication example 1"/>
       <description value="New message from DZOP to nurse"/>
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication"/>
-      <groupingId value="examples"/>
+<!--      <groupingId value="examples"/>  -->
     </resource>
 
 
@@ -329,6 +351,91 @@
       <exampleBoolean value="true"/>
     </resource>
 
+
+    <resource>
+      <reference>
+         <reference value="Practitioner/david"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Dr. David"/>
+      <description value="Dr. David"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner"/>
+
+      <exampleBoolean value="true"/>
+    </resource>
+
+
+    <resource>
+      <reference>
+         <reference value="Practitioner/christa"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Christa"/>
+      <description value="Christa"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner"/>
+
+      <exampleBoolean value="true"/>
+    </resource>
+
+
+    <resource>
+      <reference>
+         <reference value="Practitioner/nathalie"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Nurse Nathalie"/>
+      <description value="Nurse Nathalie"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner"/>
+
+<!--
+      <exampleBoolean value="true"/>
+-->
+    </resource>
+
+
+    <resource>
+      <reference>
+         <reference value="Organization/diensten-gent"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Diensten Gent"/>
+      <description value="Diensten Gent"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization"/>
+
+<!--
+      <exampleBoolean value="true"/>
+-->
+    </resource>
+
+
+    <resource>
+      <reference>
+         <reference value="Organization/dzop"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="DZOP"/>
+      <description value="DZOP"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization"/>
+
+<!--
+      <exampleBoolean value="true"/>
+-->
+    </resource>
+
+
+
+    <resource>
+      <reference>
+         <reference value="RelatedPerson/dina"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Dina"/>
+      <description value="Dina"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="examples"/> 
+
+    </resource>
+
     <resource>
       <reference>
          <reference value="Communication/be.comm2.1"/>
@@ -337,7 +444,7 @@
       <name value="Communication example 2"/>
       <description value="Long message - part 1"/>
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication"/>
-      <groupingId value="examples"/>
+<!--      <groupingId value="examples"/>  -->
     </resource>
     <resource>
       <reference>
@@ -347,7 +454,7 @@
       <name value="Communication example 3"/>
       <description value="Long message - part 2"/>
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication"/>
-      <groupingId value="examples"/>
+<!--      <groupingId value="examples"/>  -->
     </resource>
 
     <resource>
@@ -358,7 +465,7 @@
       <name value="Communication example 4"/>
       <description value="Long message - part 3"/>
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication"/>
-      <groupingId value="examples"/>
+<!--      <groupingId value="examples"/>  -->
     </resource>
     <resource>
       <reference>
@@ -368,7 +475,7 @@
       <name value="Communication example 5"/>
       <description value="Send notice / question"/>
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication"/>
-      <groupingId value="examples"/>
+<!--      <groupingId value="examples"/>  -->
     </resource>
     <resource>
       <reference>
@@ -378,7 +485,7 @@
       <name value="Communication example 6"/>
       <description value="Reply to question"/>
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication"/>
-      <groupingId value="examples"/>
+<!--      <groupingId value="examples"/>  -->
     </resource>
     <resource>
       <reference>
@@ -388,7 +495,7 @@
       <name value="Communication example 7"/>
       <description value="Send notification"/>
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication"/>
-      <groupingId value="examples"/>
+<!--      <groupingId value="examples"/>  -->
     </resource>
     <resource>
       <reference>
@@ -398,7 +505,7 @@
       <name value="Communication example 8"/>
       <description value="Send reminder"/>
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication"/>
-      <groupingId value="examples"/>
+<!--      <groupingId value="examples"/>  -->
     </resource>
     <resource>
       <reference>
@@ -408,7 +515,7 @@
       <name value="Communication example 9"/>
       <description value="Send attachment"/>
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication"/>
-      <groupingId value="examples"/>
+<!--      <groupingId value="examples"/>  -->
     </resource>
     <resource>
       <reference>
@@ -418,7 +525,7 @@
       <name value="Communication example 10"/>
       <description value="Forward existing attachment"/>
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication"/>
-      <groupingId value="examples"/>
+<!--      <groupingId value="examples"/>  -->
     </resource>
     <resource>
       <reference>
@@ -428,7 +535,7 @@
       <name value="Communication example 11"/>
       <description value="High-priority notification"/>
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication"/>
-      <groupingId value="examples"/>
+<!--      <groupingId value="examples"/>  -->
     </resource>
 
     <resource>
@@ -439,8 +546,31 @@
       <name value="Care Team Pia"/>
       <description value="The Care Team responsible for Pia's care"/>
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careteam"/>
-      <groupingId value="examples"/>
+<!--      <groupingId value="examples"/>  -->
     </resource>
+
+    <resource>
+      <reference>
+         <reference value="CareTeam/dzop-team-0002-doctors"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Care Team Pia - doctors only"/>
+      <description value="The Care Team responsible for Pia's care - physicians sub-team"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careteam"/>
+<!--      <groupingId value="examples"/>  -->
+    </resource>
+
+    <resource>
+      <reference>
+         <reference value="CareTeam/dzop-team-0002-nurses"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Care Team Pia - nurses only"/>
+      <description value="The Care Team responsible for Pia's care - Nurses sub-team"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careteam"/>
+<!--      <groupingId value="examples"/>  -->
+    </resource>
+
 
 <!--
     <resource>
@@ -473,7 +603,7 @@
       <fhirVersion value="4.0.1"/>
       <name value="Condition - Pia diabetes"/>
       <description value="Patient Pia has diabetes"/>
-      <groupingId value="examples"/>
+      <groupingId value="examples"/>  
     </resource>
     <resource>
       <reference>
@@ -482,7 +612,7 @@
       <fhirVersion value="4.0.1"/>
       <name value="Condition - Pia loneliness"/>
       <description value="Patient Pia feels lonely"/>
-      <groupingId value="examples"/>
+      <groupingId value="examples"/>  
     </resource>
     <resource>
       <reference>
@@ -491,7 +621,7 @@
       <fhirVersion value="4.0.1"/>
       <name value="Condition - Pia's surgery recovery"/>
       <description value="Patient Pia had a surgery and needs to recover"/>
-      <groupingId value="examples"/>
+      <groupingId value="examples"/> 
     </resource>
     <resource>
       <reference>
@@ -500,8 +630,20 @@
       <fhirVersion value="4.0.1"/>
       <name value="Condition - Pia depression"/>
       <description value="Patient Pia has a depression"/>
-      <groupingId value="examples"/>
+      <groupingId value="examples"/> 
     </resource>
+
+
+    <resource>
+      <reference>
+         <reference value="Binary/photo1"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Photo"/>
+      <description value="Photo"/>
+      <exampleBoolean value="true"/>
+    </resource>
+
 
 <!--
     <resource>
@@ -546,57 +688,120 @@
       <groupingId value="documents"/>
     </resource>
 	-->
+
     <page>
       <nameUrl value="toc.html"/>
       <title value="Table of Contents"/>
       <generation value="html"/>
-      <page>
-        <nameUrl value="index.html"/>
+      <page> <nameUrl value="index.html"/>
         <title value="BE Core Home Page"/>
         <generation value="html"/>
       </page>
-      <page>
-        <nameUrl value="conventions.html"/>
-        <title value="Conventions"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <nameUrl value="functional-overview.html"/>
-        <title value="Functional Description"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <nameUrl value="logical-models.html"/>
-        <title value="Logical Data Models"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <nameUrl value="artifacts.html"/>
-        <title value="Artifacts"/>
+      <page> <nameUrl value="background.html"/>
+        <title value="Background information"/>
         <generation value="html"/>
+		  <page>
+			<nameUrl value="conventions.html"/>
+			<title value="Conventions"/>
+			<generation value="markdown"/>
+		  </page>
+		  <page>
+			<nameUrl value="howto.html"/>
+			<title value="How to read this document"/>
+			<generation value="html"/>
+		  </page>
+		  <page>
+			<nameUrl value="context.html"/>
+			<title value="Functional context"/>
+			<generation value="html"/>
+		  </page>
+		  <page>
+			<nameUrl value="functional-overview.html"/>
+			<title value="Functional Description"/>
+			<generation value="markdown"/>
+		  </page>
       </page>
-      <page>
-        <nameUrl value="example-resources.html"/>
-        <title value="Example Resources"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <nameUrl value="example-scenarios.html"/>
-        <title value="Example Scenarios"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <nameUrl value="downloads.html"/>
-        <title value="Useful Downloads"/>
+
+      <page> <nameUrl value="functional.html"/>
+        <title value="Functional Design"/>
         <generation value="html"/>
+		  <page> <nameUrl value="logical-models.html"/>
+			<title value="Logical Data Models"/>
+			<generation value="markdown"/>
+		  </page>
+		  <page>
+			<nameUrl value="usecases.html"/>
+			<title value="Use Cases"/>
+			<generation value="html"/>
+		  </page>
       </page>
-      <page>
-        <nameUrl value="changes.html"/>
-        <title value="IG Change History"/>
+
+      <page> <nameUrl value="specification.html"/>
+        <title value="Specification"/>
         <generation value="html"/>
+		  <page> <nameUrl value="artifacts.html"/>
+			<title value="Artifacts"/>
+			<generation value="html"/>
+		  </page>
+		  <page> <nameUrl value="example-resources.html"/>
+			<title value="Example Resources"/>
+			<generation value="markdown"/>
+		  </page>
+		  <page> <nameUrl value="example-scenarios.html"/>
+			<title value="Example Scenarios"/>
+			<generation value="markdown"/>
+		  </page>
+	  </page>
+
+      <page>
+        <nameUrl value="terminology.html"/>
+        <title value="Terminology considerations"/>
+        <generation value="html"/>
+		  <page>
+			<nameUrl value="terminologyartefacts.html"/>
+			<title value="Terminology artefacts"/>
+			<generation value="html"/>
+		  </page>
+		  <page>
+			<nameUrl value="terminologyservices.html"/>
+			<title value="Terminology services"/>
+			<generation value="html"/>
+		  </page>
       </page>
+
+      <page> <nameUrl value="support.html"/>
+        <title value="Support"/>
+        <generation value="html"/>
+		  <page>
+			<nameUrl value="testdata.html"/>
+			<title value="Test Data"/>
+			<generation value="html"/>
+		  </page>
+		  <page>
+			<nameUrl value="openapi.html"/>
+			<title value="Swagger / OpenAPI"/>
+			<generation value="html"/>
+		  </page>
+		  <page>
+			<nameUrl value="testservers.html"/>
+			<title value="Test Servers"/>
+			<generation value="html"/>
+		  </page>
+		  <page>
+			<nameUrl value="downloads.html"/>
+			<title value="Useful Downloads"/>
+			<generation value="html"/>
+		  </page>
+		  <page>
+			<nameUrl value="changes.html"/>
+			<title value="IG Change History"/>
+			<generation value="html"/>
+		  </page>
+
+		</page>
     </page>
-	
+
+
 	  <parameter>
 		<code value="active-tables"/>
 		<value value="true"/>

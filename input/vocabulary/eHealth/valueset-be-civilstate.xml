@@ -1,0 +1,252 @@
+<ValueSet xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id value="be-civilstate" />
+    <url value="https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-civilstate" />
+    <version value="1.0.0" />
+    <name value="BeCivilstate" />
+    <status value="active" />
+    <publisher value="eHealth Platform" />
+    <contact>
+        <name value="eHealth Platform" />
+        <telecom>
+            <system value="url" />
+            <value value="https://www.ehealth.fgov.be/standards/kmehr/en" />
+        </telecom>
+    </contact>
+    <description value="Codes supported by eHealth Platform differentiating types of civil state. This valueset supports the Belgian federal FHIR profiling effort. Whenever possible add a code from http://terminology.hl7.org/CodeSystem/v3-MaritalStatus for international interoperability but also use https://www.ehealth.fgov.be/standards/fhir/CodeSystem/CD-CIVILSTATE for the Belgian specific code." />
+    <compose>
+        <include>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus" />
+            <concept>
+                <code value="A" />
+                <designation>
+                    <language value="en" />
+                    <value value="Annuled" />
+                </designation>
+                <designation>
+                    <language value="nl-BE" />
+                    <value value="Nietigverklaring van huwelijk" />
+                </designation>
+                <designation>
+                    <language value="fr-BE" />
+                    <value value="Annulation de marriage" />
+                </designation>
+            </concept>
+            <concept>
+                <code value="D" />
+                <designation>
+                    <language value="en" />
+                    <value value="Divorced" />
+                </designation>
+                <designation>
+                    <language value="nl-BE" />
+                    <value value="Echtgescheiden" />
+                </designation>
+                <designation>
+                    <language value="fr-BE" />
+                    <value value="Divorced" />
+                </designation>
+            </concept>
+            <concept>
+                <code value="M" />
+                <designation>
+                    <language value="en" />
+                    <value value="Married" />
+                </designation>
+                <designation>
+                    <language value="nl-BE" />
+                    <value value="Gehuwd" />
+                </designation>
+                <designation>
+                    <language value="fr-BE" />
+                    <value value="Marié" />
+                </designation>
+            </concept>
+            <concept>
+                <code value="U" />
+                <designation>
+                    <language value="en" />
+                    <value value="Unmarried" />
+                </designation>
+                <designation>
+                    <language value="nl-BE" />
+                    <value value="Ongehuwd" />
+                </designation>
+                <designation>
+                    <language value="fr-BE" />
+                    <value value="Célibataire" />
+                </designation>
+            </concept>
+            <concept>
+                <code value="W" />
+                <designation>
+                    <language value="en" />
+                    <value value="Widowed" />
+                </designation>
+                <designation>
+                    <language value="nl-BE" />
+                    <value value="Weduwnaar/weduwe" />
+                </designation>
+                <designation>
+                    <language value="fr-BE" />
+                    <value value="Veuf/veuve" />
+                </designation>
+            </concept>
+        </include>
+        <include>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-civilstate" />
+            <concept>
+                <code value="10" />
+                <designation>
+                    <language value="en" />
+                    <value value="Unmarried" />
+                </designation>
+                <designation>
+                    <language value="nl-BE" />
+                    <value value="Ongehuwd" />
+                </designation>
+                <designation>
+                    <language value="fr-BE" />
+                    <value value="Célibataire" />
+                </designation>
+            </concept>
+            <concept>
+                <code value="26" />
+                <designation>
+                    <language value="en" />
+                    <value value="Putative marriage" />
+                </designation>
+                <designation>
+                    <language value="nl-BE" />
+                    <value value="Putatief huwelijk" />
+                </designation>
+                <designation>
+                    <language value="fr-BE" />
+                    <value value="Mariage putatif" />
+                </designation>
+            </concept>
+            <concept>
+                <code value="40" />
+                <designation>
+                    <language value="en" />
+                    <value value="Divorced" />
+                </designation>
+                <designation>
+                    <language value="nl-BE" />
+                    <value value="Echtgescheiden" />
+                </designation>
+                <designation>
+                    <language value="fr-BE" />
+                    <value value="Divorced" />
+                </designation>
+            </concept>
+            <concept>
+                <code value="41" />
+                <designation>
+                    <language value="en" />
+                    <value value="Divorced since 1/10/1994" />
+                </designation>
+                <designation>
+                    <language value="nl-BE" />
+                    <value value="Echtgescheiden vanaf 1/10/1994" />
+                </designation>
+                <designation>
+                    <language value="fr-BE" />
+                    <value value="Divorcé à partir du 1/10/1994" />
+                </designation>
+            </concept>
+            <concept>
+                <code value="50" />
+                <designation>
+                    <language value="en" />
+                    <value value="Legal separation" />
+                </designation>
+                <designation>
+                    <language value="nl-BE" />
+                    <value value="Gescheiden van tafel en bed" />
+                </designation>
+                <designation>
+                    <language value="fr-BE" />
+                    <value value="Séparé de corps et de biens" />
+                </designation>
+            </concept>
+            <concept>
+                <code value="51" />
+                <designation>
+                    <language value="en" />
+                    <value value="Legal separation since 1/10/1994" />
+                </designation>
+                <designation>
+                    <language value="nl-BE" />
+                    <value value="Gescheiden van tafel en bed sinds 1/10/1994" />
+                </designation>
+                <designation>
+                    <language value="fr-BE" />
+                    <value value="Séparé de corps et de biens à partir du 1/10/1994" />
+                </designation>
+            </concept>
+            <concept>
+                <code value="60" />
+                <designation>
+                    <language value="en" />
+                    <value value="Repudiation" />
+                </designation>
+                <designation>
+                    <language value="nl-BE" />
+                    <value value="Verstoting" />
+                </designation>
+                <designation>
+                    <language value="fr-BE" />
+                    <value value="Répudiation" />
+                </designation>
+            </concept>
+            <concept>
+                <code value="80" />
+                <designation>
+                    <language value="en" />
+                    <value value="Partnership" />
+                </designation>
+                <designation>
+                    <language value="nl-BE" />
+                    <value value="Partnerschap" />
+                </designation>
+                <designation>
+                    <language value="fr-BE" />
+                    <value value="Partenariat" />
+                </designation>
+            </concept>
+            <concept>
+                <code value="81" />
+                <designation>
+                    <language value="en" />
+                    <value value="End of partnership" />
+                </designation>
+                <designation>
+                    <language value="nl-BE" />
+                    <value value="Partnerschap beeindigd" />
+                </designation>
+                <designation>
+                    <language value="fr-BE" />
+                    <value value="Fin de partenariat" />
+                </designation>
+            </concept>
+        </include>
+        <include>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" />
+            <concept>
+                <code value="UNK" />
+                <designation>
+                    <language value="en" />
+                    <value value="Unknown" />
+                </designation>
+                <designation>
+                    <language value="nl-BE" />
+                    <value value="Onbepaald" />
+                </designation>
+                <designation>
+                    <language value="fr-BE" />
+                    <value value="Indéterminé" />
+                </designation>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

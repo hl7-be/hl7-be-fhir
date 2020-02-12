@@ -24,8 +24,8 @@
 		}
 	],
 	"subject": {
-		"reference": "Patient/peter",
-		"display": "peter"
+		"reference": "Patient/pia",
+		"display": "pia"
 	},
 	"sent": "2019-11-11T10:00:01+01:00",
 	"recipient": [
@@ -35,7 +35,7 @@
 		}
 	],
 	"sender": {
-		"reference": "Practitioner/natalie",
+		"reference": "Practitioner/nathalie",
 		"display": "Natalie"
 	},
 	"payload": [

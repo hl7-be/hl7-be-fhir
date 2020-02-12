@@ -1,29 +1,30 @@
-<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd">
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd" lang="en">
   <a name="scope"> </a>
   <h3>Scope</h3>
+	<p/>
 	<p>
-    This is the DRAFT FHIR specification for Belgium. This document is being developed and may not be used for any implementation or testing purpose.
-  </p>
-<blockquote class="stu-note">
-  <a name="dstu"/>
-<strong>This documentation and set of artefacts are still undergoing development, and they are NOT to be taken by implementations.</strong>
-The working groups of HL7 and the different interested parties are still defining the process, the requirements and the tooling. This is a placeholder or sandbox for content, and not any recommendation or preview, so there is no guarantee of completeness or correctness.
-</blockquote>
-
-This specification contains: 
+    This is the HL7 Belgium FHIR specification. This specification is being developed in collaboration with different parties and cannot be considered legally binding. The legally binding specifications for Belgium are those <a href="https://ehealthplatformstandards.github.io/">published by the eHealth federal platform</a>.
+   </p>
+	<blockquote class="stu-note">
+	<strong>This documentation and set of artefacts are still undergoing development, and they are in DRAFT mode.</strong>
+	The working groups of HL7 and the different interested parties are working on this specification. This is a DRAFT specification that has not yet been validated by the community of users and implementers.
+	</blockquote>
+	<p>
+	This specification contains: 
+	</p>
 	<ul>
-    <li><a href="http://fhir.ivlab.ilabt.imec.be/be-fhir/artifacts.html#logical-models">Logical Models</a>, which describe describing several data sets and elements used in Belgian systems</li>
-    <li><a href="http://fhir.ivlab.ilabt.imec.be/be-fhir/artifacts.html#terminology">Value Sets and code systems</a>, containing specific Belgian value sets</li>
-    <li><a href="http://fhir.ivlab.ilabt.imec.be/be-fhir/artifacts.html#core-profiles">Core profiles</a>, which constitute the basis for Belgium FHIR profiling and can be reused in other profiles </li>
+    <li><a href="artifacts.html#logical-models">Logical Models</a>, which describe describing several data sets and elements used in Belgian systems</li>
+    <li><a href="artifacts.html#terminology">Value Sets and code systems</a>, containing specific Belgian value sets</li>
+    <li><a href="artifacts.html#core-profiles">Core profiles</a>, which constitute the basis for Belgium FHIR profiling and can be reused in other profiles </li>
     <li>Functional Profiles, split by functional area for ease of access</li>
 	<ul>
-    <li><a href="http://fhir.ivlab.ilabt.imec.be/be-fhir/artifacts.html#communication">Care coordination and Communication</a>, </li>
-    <li><a href="http://fhir.ivlab.ilabt.imec.be/be-fhir/artifacts.html#communication">Patient conditions</a></li>
+    <li><a href="artifacts.html#communication">Care coordination and Communication</a>, </li>
+    <li><a href="artifacts.html#communication">Patient conditions</a></li>
 	</ul>
-    <li>Required <a href="http://fhir.ivlab.ilabt.imec.be/be-fhir/artifacts.html#logical-models">Capability Statements</a> for systems to implement</li>
+    <li>Required <a href="artifacts.html#logical-models">Capability Statements</a> for systems to implement</li>
 	</ul>
 	<p>
-    The implementation guide is structured to allow implementers to pick and choose the capabilities they need and combine them as necessary.
+    The implementation guide is structured to allow implementers to pick and choose the specifications needed, and combine them as necessary.
 	</p>
 	<a name="toc"> </a>
 	<h3>Navigation</h3>
@@ -46,7 +47,6 @@ This specification contains:
   </p>
   <p>
   </p>
-
 	<a name="ip"> </a>
 	<h3>Intellectual Property Considerations</h3>
 	<p>
@@ -59,7 +59,6 @@ This specification contains:
 	<a name="disclaimer"> </a>
 	<h3>Disclaimer</h3>
 	<p>
-  
     The specification herewith documented is a draft working specification, and may not be used for any implementation purposes. 
     This draft is provided without warranty of completeness or consistency, and the official publication supersedes this draft.
     No liability can be inferred from the use or misuse of this specification, or its consequences.

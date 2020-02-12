@@ -25,13 +25,13 @@
 	],
 	"priority": "urgent",
 	"subject": {
-		"reference": "Patient/peter",
-		"display": "peter"
+		"reference": "Patient/pia",
+		"display": "pia"
 	},
 	"sent": "2019-11-11T10:20:00+01:00",
 	"recipient": [
 		{
-			"reference": "CareTeam/doctors",
+			"reference": "CareTeam/dzop-team-0002-doctors",
 			"display": "Doctors"
 		}
 	],
@@ -41,7 +41,7 @@
 	},
 	"payload": [
 		{
-			"contentString": "Please replace the bandage today, I did not do it yesterday in the visit "
+			"contentString": "Please replace the bandage today, I did not do it yesterday in the visit"
 		}
 	]
 }

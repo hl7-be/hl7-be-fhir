@@ -1,0 +1,219 @@
+<ValueSet xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/R4/valueset.xsd">
+	<id value="be-noallergy"/>
+	<url value="https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-noallergy"/>
+	<version value="1.0.0"/>
+	<name value="BeNoAllergy"/>
+	<status value="active"/>
+	<publisher value="eHealth Platform"/>
+	<contact>
+		<name value="eHealth Platform"/>
+
+		<telecom>
+			<system value="url"/>
+			<value value="https://www.ehealth.fgov.be/standards/kmehr/en"/>
+		</telecom>
+	</contact>
+	<description value="Codes as communicated by the FOD Terminology Center differentiating types of no allergies. This valueset supports the Belgian federal FHIR profiling effort."/>
+<compose>
+		<include>
+			<system value="http://snomed.info/sct"/>
+<concept>
+		<code value="716186003"/>
+		<display value="No known allergy (situation)"/>
+		
+		
+		<designation>
+		<use>
+		<system value="http://snomed.info/sct"/>
+		<code value="900000000000003001"/>
+		<display value="Fully specified name"/>
+		</use>
+			<value value="No known allergy (situation)"/>
+		</designation>
+		
+		
+		
+		<designation>
+		<language value="en" />
+			<value value="No known allergy"/>
+		</designation>
+		<designation>
+		<language value="nl-BE" />
+			<value value="geen gekende allergie"/>
+		</designation>
+		<designation>
+		<language value="fr-BE" />
+			<value value="pas d'allergie connue"/>
+		</designation>
+	</concept>
+	<concept>
+		<code value="716220001"/>
+		<display value="No known animal allergy (situation)"/>
+		
+		<designation>
+		<use>
+		<system value="http://snomed.info/sct"/>
+		<code value="900000000000003001"/>
+		<display value="Fully specified name"/>
+		</use>
+			<value value="No known animal allergy (situation)"/>
+		</designation>
+		
+		
+		<designation>
+		<language value="en" />
+			<value value="No known animal allergy"/>
+		</designation>
+		<designation>
+			<language value="nl-BE" />
+			<value value="geen gekende allergie voor dieren"/>
+		</designation>
+		<designation>
+			<language value="fr-BE" />
+			<value value="pas d'allergie aux animaux connue"/>
+		</designation>
+	</concept>
+	<concept>
+		<code value="409137002"/>
+		<display value="No known drug allergy (situation)"/>
+		
+		<designation>
+		<use>
+		<system value="http://snomed.info/sct"/>
+		<code value="900000000000003001"/>
+		<display value="Fully specified name"/>
+		</use>
+			<value value="No known drug allergy (situation)"/>
+		</designation>
+		
+		
+		
+		<designation>
+		<language value="en" />
+			<value value="No known drug allergy"/>
+		</designation>
+		<designation>
+			<language value="nl-BE" />
+			<value value="geen gekende drugs- en/of geneesmiddelenallergie"/>
+		</designation>
+		<designation>
+			<language value="fr-BE" />
+			<value value="pas d'allergie aux drogues et/ou médicaments connue"/>
+		</designation>
+	</concept>
+	<concept>
+		<code value="428607008"/>
+		<display value="No known environmental allergy (situation)"/>
+		
+			<designation>
+		<use>
+		<system value="http://snomed.info/sct"/>
+		<code value="900000000000003001"/>
+		<display value="Fully specified name"/>
+		</use>
+			<value value="No known environmental allergy (situation)"/>
+		</designation>
+		
+		
+		<designation>
+		<language value="en" />
+			<value value="No known environmental allergy"/>
+		</designation>
+		<designation>
+			<language value="nl-BE" />
+			<value value="geen gekende omgevingsgerelateerde allergie"/>
+		</designation>
+		<designation>
+			<language value="fr-BE" />
+			<value value="pas d'allergie environnementale connue"/>
+		</designation>
+	</concept>
+	<concept>
+		<code value="429625007"/>
+		<display value="No known food allergy (situation)"/>
+		
+			<designation>
+		<use>
+		<system value="http://snomed.info/sct"/>
+		<code value="900000000000003001"/>
+		<display value="Fully specified name"/>
+		</use>
+			<value value="No known food allergy (situation)"/>
+		</designation>
+		
+		
+		
+		<designation>
+		<language value="en" />
+			<value value="No known food allergy"/>
+		</designation>
+		<designation>
+			<language value="nl-BE" />
+			<value value="geen gekende allergie voor voedsel"/>
+		</designation>
+		<designation>
+			<language value="fr-BE" />
+			<value value="pas d'allergie alimentaire connue"/>
+		</designation>
+	</concept>
+	<concept>
+		<code value="428197003"/>
+		<display value="No known insect allergy (situation)"/>
+		
+			<designation>
+		<use>
+		<system value="http://snomed.info/sct"/>
+		<code value="900000000000003001"/>
+		<display value="Fully specified name"/>
+		</use>
+			<value value="No known insect allergy (situation)"/>
+		</designation>
+		
+		
+		
+		
+		<designation>
+		<language value="en" />
+			<value value="No known insect allergy"/>
+		</designation>
+		<designation>
+			<language value="nl-BE" />
+			<value value="geen gekende allergie voor insecten"/>
+		</designation>
+		<designation>
+			<language value="fr-BE" />
+			<value value="pas d'allergie aux insectes connue"/>
+		</designation>
+	</concept>
+	<concept>
+		<code value="716184000"/>
+		<display value="No known latex allergy (situation)"/>
+		
+				<designation>
+		<use>
+		<system value="http://snomed.info/sct"/>
+		<code value="900000000000003001"/>
+		<display value="Fully specified name"/>
+		</use>
+			<value value="No known latex allergy (situation)"/>
+		</designation>
+		
+		
+		
+		<designation>
+		<language value="en" />
+			<value value="No known latex allergy"/>
+		</designation>
+		<designation>
+			<language value="nl-BE" />
+			<value value="geen gekende allergie voor latex"/>
+		</designation>
+		<designation>
+			<language value="fr-BE" />
+			<value value="pas d'allergie au latex connue"/>
+		</designation>
+	</concept>
+	</include>
+	  
+	</compose>
+</ValueSet>

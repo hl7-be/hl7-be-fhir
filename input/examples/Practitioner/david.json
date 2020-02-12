@@ -1,0 +1,20 @@
+{
+  "resourceType": "Practitioner",
+  "id": "david",
+    "meta": 
+    {
+      "profile": [
+		"https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner"
+	  ]
+    },
+  "name": [
+	{
+	  "given": [
+		"David"
+	  ]
+	}
+  ]
+}
+
+
+

@@ -7,7 +7,11 @@
 		]
 	},
 	"language": "nl-BE",
-	"identifier": [
+  "text" : {
+    "status" : "additional",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"nl-BE\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: be.comm1</p><p><b>meta</b>: </p><p><b>language</b>: nl-BE</p><p><b>identifier</b>: d0000000-0000-0000-0000-000000000001</p><p><b>status</b>: completed</p><p><b>category</b>: notification <span style=\"background: LightGoldenRodYellow\">(Details : {[not stated] code 'notification' = 'notification)</span></p><p><b>subject</b>: <a href=\"Communication-be.comm1.html\">pia. Generated Summary: id: pia; Pia </a></p><p><b>sent</b>: 11-Nov-2019 07:50:01</p><p><b>recipient</b>: <a href=\"Communication-be.comm1.html\">Natalie. Generated Summary: id: nathalie; Nathalie </a></p><p><b>sender</b>: <a href=\"Communication-be.comm1.html\">DZOP. Generated Summary: id: dzop; name: DZOP</a></p><h3>Payloads</h3><table class=\"grid\"><tr><td>-</td><td><b>Content[x]</b></td></tr><tr><td>*</td><td>Patient must take blood for analysis - see if conditions are met.</td></tr></table></div>"
+  },
+  "identifier": [
 		{
 			"system": "http://www.dzop.be/archive/communication",
 			"value": "d0000000-0000-0000-0000-000000000001"
@@ -25,7 +29,7 @@
 	],
 	"subject": {
 		"reference": "Patient/pia",
-		"display": "peter"
+		"display": "pia"
 	},
 	"sent": "2019-11-11T07:50:01+01:00",
 	"recipient": [
@@ -35,7 +39,7 @@
 		}
 	],
 	"sender": {
-		"reference": "Practitioner/dzop",
+		"reference": "Organization/dzop",
 		"display": "DZOP"
 	},
 	"payload": [
@@ -44,3 +48,4 @@
 		}
 	]
 }
+

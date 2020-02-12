@@ -1,0 +1,28 @@
+<NamingSystem  xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/R4/namingsystem.xsd">
+		<id value="be-cbe"/>
+	
+	<name value="BeCBENamingSystem"/>
+	<status value="active"/>
+	<kind value="identifier"/>
+	<date value="2019-06-05"/>
+	<publisher value="eHealth Platform"/>
+	<contact>
+		<name value="eHealth Platform"/>
+		<telecom>
+			<system value="email"/>
+			<value value="message-structure@ehealth.fgov.be"/>
+			<use value="work"/>
+		</telecom>
+	</contact>
+	<description value="BCE/KBO"/>
+	<uniqueId>
+		<type value="uri"/>
+		<value value="https://www.ehealth.fgov.be/standards/fhir/NamingSystem/cbe"/>
+		<preferred value="true"/>
+	</uniqueId>
+	<uniqueId>
+		<type value="oid"/>
+		<value value="2.16.840.1.113883.3.6777.5.5"/>
+		<preferred value="false"/>
+	</uniqueId>
+</NamingSystem>

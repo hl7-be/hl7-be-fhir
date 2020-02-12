@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="be-careteam" />
+  <url value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careteam" />
+  <version value="0.1.0" />
+  <name value="BECareTeam" />
+  <status value="draft" />
+  <description value="This is the Belgian profile for Care Plan. A Care Plan contains the activities planned and/or performed by a care team to deliver care for a particular patient, usually targeting a specific condition or set of conditions." />
+  <fhirVersion value="4.0.0" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="CareTeam" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/CareTeam" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="CareTeam.status">
+      <path value="CareTeam.status" />
+      <mustSupport value="true" />
+    </element>
+    <element id="CareTeam.category">
+      <path value="CareTeam.category" />
+      <mustSupport value="true" />
+      <binding>
+        <strength value="example" />
+        <valueSet value="https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-care-team-category" />
+      </binding>
+    </element>
+    <element id="CareTeam.subject">
+      <path value="CareTeam.subject" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient" />
+      </type>
+    </element>
+    <element id="CareTeam.participant">
+      <path value="CareTeam.participant" />
+      <mustSupport value="true" />
+    </element>
+    <element id="CareTeam.note">
+      <path value="CareTeam.note" />
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>

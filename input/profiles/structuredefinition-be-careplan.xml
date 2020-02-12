@@ -5,7 +5,7 @@
   <version value="0.1.0" />
   <name value="BECarePlan" />
   <status value="draft" />
-  <description value="This is the Belgian profile for Care Plan. A Care Plan contains the activities planned and/or performed by a care team to deliver care for a particular patient, usually targeting a specific condition or set of conditions. " />
+  <description value="This is the profile for Care Plan in a home care setting. A Care Plan contains the activities planned and/or performed by a care team to deliver care for a particular patient, usually targeting a specific goal or condition - or a set thereof." />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />

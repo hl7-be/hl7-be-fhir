@@ -77,6 +77,27 @@
 }</echo>
   </target>
 
+<!-- JCT Add plantuml 
+
+<taskdef name="plantuml" classname="net.sourceforge.plantuml.ant.PlantUmlTask" classpath="${folder.lib}/plantuml.jar" />
+  <target name="renderDiagram" depends="prepareDiagramSource">
+    <plantuml output="../images" format="svg">
+  	  <fileset dir="${folder.input}/examples" includes="**/examplescenario*.txt" />
+    </plantuml>
+  </target>
+
+  <target name="createExampleScenarioPage" depends="renderDiagram">
+     <xslt basedir="${folder.input}/examples" includes="examplescenario*.xml" destdir="${folder.input}/examples" extension="-full.html" style="${ig.scripts}/full_template_simple_svg.xslt"/>
+     <xslt basedir="${folder.input}/examples" includes="examplescenario*.xml" destdir="${folder.input}/examples" extension="-tab1.xhtml" style="${ig.scripts}/tab1_svg.xslt"/>
+     <xslt basedir="${folder.input}/examples" includes="examplescenario*.xml" destdir="${folder.input}/examples" extension="-tab2.xhtml" style="${ig.scripts}/tab2.xslt"/>
+     <xslt basedir="${folder.input}/examples" includes="examplescenario*.xml" destdir="${folder.input}/examples" extension="-tab3.xhtml" style="${ig.scripts}/tab3.xslt"/>
+  </target>
+
+  <target name="prepareDiagramSource">
+     <xslt basedir="${folder.input}/examples" includes="examplescenario*.xml" destdir="${folder.input}/examples" extension=".txt" style="${ig.scripts}/diagram.xslt"/>
+  </target>
+  
+-->
 
   <target name="onGenerate.processIg">
     <xslt in="${onGenerate.ig.source}xml" out="${onGenerate.ig.source}1.xml" style="${ig.scripts}/onGenerate.group.xslt"/>

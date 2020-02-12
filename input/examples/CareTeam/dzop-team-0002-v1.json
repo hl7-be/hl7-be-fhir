@@ -3,7 +3,10 @@
   "id": "dzop-team-0002",
   "meta": 
     {
-      "versionId": "3"
+      "versionId": "3",
+      "profile": [
+		"https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careteam"
+	  ]
     },
   "identifier": [
     {

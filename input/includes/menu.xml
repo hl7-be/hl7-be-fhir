@@ -7,47 +7,41 @@
 		<a href="toc.html">Table of Contents</a>
 	</li>
 	<li class="dropdown">
-		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Background
-			<b class="caret"></b>
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Background<b class="caret"></b>
 		</a>
 		<ul class="dropdown-menu">
 			<li>
-				<a href="#">How to use this Publication</a>
+				<a href="howto.html">How to use this Publication</a>
 			</li>
 			<li>
-				<a href="#">Copyright</a>
-			</li>
-			<li>
-				<a target="_blank" href="{{site.data.fhir.path}}index.html">FHIR Spec 
-					<img src="external.png" style="text-align: baseline"/>
+				<a target="_blank" href="{{site.data.fhir.path}}index.html">FHIR Spec<img src="external.png" style="text-align: baseline"/>
 				</a>
 			</li>
 		</ul>
 	</li>
-<!--
 	<li class="dropdown">
-		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Functional Description
-			<b class="caret"></b>
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Functional Description<b class="caret"></b>
 		</a>
 		<ul class="dropdown-menu">
 			<li>
-				<a href="downloads.html">Context and intro</a>
+				<a href="context.html">Context and intro</a>
 			</li>
 			<li>
-				<a target="_blank" href="#">Use Cases</a>
+				<a href="usecases.html">Use Cases</a>
 			</li>
 			<li>
-				<a target="_blank" href="#">Logical Models</a>
+				<a href="logical-models.html">Logical Models</a>
 			</li>
+<!--
 			<li>
 				<a target="_blank" href="#">Services &amp; Transactions</a>
 			</li>
-		</ul>
-	</li>
 -->
+		</ul>
+
+	</li>
 	<li class="dropdown">
-		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Detailed Specifications
-			<b class="caret"></b>
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Detailed Specifications<b class="caret"></b>
 		</a>
 		<ul class="dropdown-menu">
 			<li>
@@ -55,17 +49,16 @@
 			</li>
 		</ul>
 	</li>
-<!--
 	<li class="dropdown">
-		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Terminology
-			<b class="caret"></b>
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Terminology<b class="caret"></b>
 		</a>
 		<ul class="dropdown-menu">
 			<li>
-				<a href="#">Terminology Resources</a>
+				<a href="terminology.html">Terminology Resources</a>
 			</li>
 		</ul>
 	</li>
+<!--
 	<li class="dropdown">
 		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Project-specific
 			<b class="caret"></b>
@@ -83,35 +76,14 @@
 			</li>
 		</ul>
 	</li>
+-->
 	<li class="dropdown">
-		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Implementation
-			<b class="caret"></b>
-		</a>
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Implementation<b class="caret"></b></a>
 		<ul class="dropdown-menu">
-			<li>
-				<a target="_blank" href="{{site.data.fhir.path}}index.html">Test Data
-					<img src="external.png" style="text-align: baseline"/>
-				</a>
-			</li>
-			<li>
-				<a target="_blank" href="#">Test Scripts
-					<img src="external.png" style="text-align: baseline"/>
-				</a>
-			</li>
-			<li>
-				<a target="_blank" href="#">OpenAPI
-					<img src="external.png" style="text-align: baseline"/>
-				</a>
-			</li>
-			<li>
-				<a target="_blank" href="#">Test Servers
-					<img src="external.png" style="text-align: baseline"/>
-				</a>
-			</li>
-			<li>
-				<a href="downloads.html">Downloads</a>
-			</li>
+			<li><a href="testdata.html">Test Data<img src="external.png" style="text-align: baseline"/></a></li>
+			<li><a target="_blank" href="openapi.html">OpenAPI</a></li>
+			<li><a href="testservers.html">Test Servers<img src="external.png" style="text-align: baseline"/></a></li>
+			<li><a href="downloads.html">Downloads</a></li>
 		</ul>
 	</li>
--->
 </ul>      
