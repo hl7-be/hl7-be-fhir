@@ -1,7 +1,7 @@
 <CodeSystem xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/R4/codesystem.xsd">
 	<id value="cd-civilstate"/>
 	<url value="https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-civilstate"/>
-	<version valhttps://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-civilstateue="1.0"/>
+	<version value="1.0"/>
 	<name value="CivilState"/>
 	<title value="CivilState"/>
 	<status value="active"/>
