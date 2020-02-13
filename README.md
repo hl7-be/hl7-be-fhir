@@ -7,7 +7,7 @@ These specifications do not imply any legal status - both communities (eHealth a
 
 Please contact us for adding to these specifications.
 
-
+ 
 
 NL:
 
