@@ -1,0 +1,61 @@
+{
+  "resourceType": "Appointment",
+  "id": "pia-001-v1",
+  "status": "proposed",
+  "serviceCategory": [
+    {
+      "coding": [
+        {
+          "code": "7"
+        }
+      ]
+    }
+  ],
+  "serviceType": [
+    {
+      "coding": [
+        {
+          "code": "59"
+        }
+      ]
+    }
+  ],
+  "description": "1st appointment to plan diabetes care.",
+  "participant": [
+    {
+      "type": [
+        {
+          "coding": [
+            {
+              "code": "PAT"
+            }
+          ]
+        }
+      ],
+      "required": "required",
+      "status": "needs-action"
+    },
+    {
+      "type": [
+        {
+          "coding": [
+            {
+              "code": "PPRF"
+            }
+          ]
+        }
+      ],
+      "actor": {
+        "reference": "Practitioner/nathalie"
+      },
+      "required": "required",
+      "status": "needs-action"
+    }
+  ],
+  "requestedPeriod": [
+    {
+      "start": "2019-11-14T09:00:00Z",
+      "end": "2019-11-14T09:30:00Z"
+    }
+  ]
+}

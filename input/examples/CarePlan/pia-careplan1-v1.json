@@ -1,0 +1,75 @@
+{
+  "resourceType": "CarePlan",
+  "meta": {
+    "profile": [
+      "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careplan"
+    ],
+    "versionId": "1"
+  },
+  "id": "pia-careplan1-v1",
+  "status": "active",
+  "intent": "proposal",
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "homecare"
+        }
+      ]
+    }
+  ],
+  "title": "Careplan Pia 2019-2020",
+  "description": "Care plan for Pia to manage diabetes.",
+  "period": {
+    "start": "2019-11-02"
+  },
+  "created": "2019-11-02T09:15:15Z",
+  "author": {
+    "reference": "Practitioner/dragon"
+  },
+  "subject": {
+    "reference": "Patient/pia"
+  },
+  "contributor": [
+    {
+      "reference": "Practitioner/dragon"
+    }
+  ],
+  "careTeam": [
+    {
+      "reference": "CareTeam/dzop-team-0002-v1"
+    }
+  ],
+  "addresses": [
+    {
+      "reference": "Condition/pia-diabetes"
+    }
+  ],
+  "supportingInfo": [
+    {
+      "identifier": {
+        "system": "http://belrai.be",
+        "type": {
+          "coding": [
+            {
+              "code": "74196-7"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "activity": [
+    {
+      "progress": [
+        {
+          "text": "Planned"
+        }
+      ],
+      "reference": {
+        "reference": "Appointment/pia-001-v0",
+        "display": "Appointment with nurse"
+      }
+    }
+  ]
+}

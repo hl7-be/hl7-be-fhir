@@ -347,7 +347,6 @@
       <name value="Dr. Dragon"/>
       <description value="Dr. Dragon"/>
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner"/>
-
       <exampleBoolean value="true"/>
     </resource>
 
@@ -390,6 +389,16 @@
 <!--
       <exampleBoolean value="true"/>
 -->
+    </resource>
+
+    <resource>
+      <reference>
+         <reference value="PractitionerRole/nurse-gent"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Nurse"/>
+      <description value="Role - Nurse in Gent"/>
+
     </resource>
 
 
@@ -540,7 +549,7 @@
 
     <resource>
       <reference>
-         <reference value="CareTeam/dzop-team-0002"/>
+         <reference value="CareTeam/dzop-team-0002-v0"/>
       </reference>
       <fhirVersion value="4.0.1"/>
       <name value="Care Team Pia"/>
@@ -548,6 +557,18 @@
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careteam"/>
 <!--      <groupingId value="examples"/>  -->
     </resource>
+
+    <resource>
+      <reference>
+         <reference value="CareTeam/dzop-team-0002-v1"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Care Team Pia"/>
+      <description value="The Care Team responsible for Pia's care"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careteam"/>
+<!--      <groupingId value="examples"/>  -->
+    </resource>
+
 
     <resource>
       <reference>
@@ -570,6 +591,63 @@
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careteam"/>
 <!--      <groupingId value="examples"/>  -->
     </resource>
+
+
+    <resource>
+      <reference>
+         <reference value="CarePlan/pia-careplan1-v0"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Care Plan Pia - initial nurse visit"/>
+      <description value="The Care Team created by the physician as a placeholder before the nurse appointment"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careplan"/>
+    </resource>
+
+    <resource>
+      <reference>
+         <reference value="CarePlan/pia-careplan1-v1"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Care Plan Pia - details initial nurse visit"/>
+      <description value="The Care Team created by the system with the details for the nurse appointment"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careplan"/>
+    </resource>
+    <resource>
+      <reference>
+         <reference value="CarePlan/pia-careplan2-v1"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Care Plan Pia - initial nurse visit"/>
+      <description value="The Care Team created by the nurse with the detailed activities for diabetes, loneliness and depression"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careplan"/>
+    </resource>
+
+
+    <resource>
+      <reference>
+         <reference value="Appointment/pia-001-v0"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Appointment suggested by the GP"/>
+      <description value="Appointment request to see the nurse for planning, during the week"/>
+      <exampleBoolean value="true"/>
+    </resource>
+
+    <resource>
+      <reference>
+         <reference value="Appointment/pia-001-v1"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Appointment scheduled"/>
+      <description value="Appointment scheduled between nurse and patient"/>
+      <exampleBoolean value="true"/>
+    </resource>
+
+
+
+
+
+
 
 
 <!--

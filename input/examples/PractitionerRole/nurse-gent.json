@@ -1,0 +1,23 @@
+{
+  "resourceType": "PractitionerRole",
+  "id": "nurse-gent",
+    "meta": 
+    {
+      "profile": [
+		"https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitionerrole"
+	  ]
+    },
+	"identifier": [
+		{
+			"system": "http://www.dzop.be/archive/roles",
+			"value": "nurse-dienstencentrum-gent"
+		}
+	],	
+	"active": true,
+	"organization":
+	{"reference":"Organization/diensten-gent"},
+	"code": [
+	{"coding":[ {"code":"nurse", "display":"Nurse"} ]}
+	]
+}
+

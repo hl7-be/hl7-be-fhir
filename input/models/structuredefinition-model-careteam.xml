@@ -41,8 +41,14 @@
 	   </element>
 	   <element id="BECareTeamModel.identifier">
 		  <path value="BECareTeamModel.identifier"/>
-		  <short value="Identifier for this care team"/>
-		  <definition value="A unique identifier for this care team."/>
+		  <short value="A unique business identifier for this care team"/>
+		  <definition value="A unique business identifier for this care team. This is not a technical system-wide identifier such as primary key or REST resource id, but rather an identifier that can be used across systems to represent the same care team."/>
+		  <example>
+			<label value="550301-005.22-diabetescare2020-02"/>
+		  </example>
+		  <example>
+			<label value="550301-005.22-postopcare2020-09"/>
+		  </example>
 		  <min value="0"/>
 		  <max value="*"/>
 		  <base>
@@ -58,7 +64,13 @@
 	   <element id="BECareTeamModel.status">
 		  <path value="BECareTeamModel.status"/>
 		  <short value="Status of the care team"/>
-		  <definition value="The status of this care team."/>
+		  <definition value="The status of this care team - whether it is active or just being proposed (drafted), or if it is no longer active."/>
+		  <example>
+			<label value="active"/>
+		  </example>
+		  <example>
+			<label value="draft"/>
+		  </example>
 		  <min value="1"/>
 		  <max value="1"/>
 		  <base>
@@ -74,7 +86,13 @@
 	   <element id="BECareTeamModel.category">
 		  <path value="BECareTeamModel.category"/>
 		  <short value="Type of team"/>
-		  <definition value="Identifies what kind of team.  This is to support differentiation between multiple co-existing teams, such as care plan team, episode of care team, longitudinal care team."/>
+		  <definition value="Identifies what kind of team.  This is to support differentiation between multiple co-existing teams, such as care plan team, episode of care team, longitudinal care team. It may also be specialised categories such as "/>
+		  <example>
+			<valueCode value="home-care"/>
+		  </example>
+		  <example>
+			<valueCode value="specialists"/>
+		  </example>
 		  <min value="0"/>
 		  <max value="*"/>
 		  <base>
@@ -94,8 +112,11 @@
 	   </element>
 	   <element id="BECareTeamModel.name">
 		  <path value="BECareTeamModel.name"/>
-		  <short value="Name of the team, such as emergency team, or diabetes care, or nutrition team"/>
-		  <definition value="A label for human use intended to distinguish like teams.  E.g. the &quot;red&quot; vs. &quot;green&quot; trauma teams."/>
+		  <short value="Name of the actual team - such as a patient's diabetes care team, or another patient's nutrition team"/>
+		  <definition value="A label for human use intended to distinguish between teams.  E.g. the &quot;red&quot; vs. &quot;green&quot; trauma teams. Note that this is NOT a type of team, but a name for an actual team. For example team name is not &quot;diabetes team&quot; but &quot;patient Pia Peters's diabetes care team&quot;"/>
+		  <example>
+			<valueCode value="Pia's diabetes care team"/>
+		  </example>
 		  <min value="0"/>
 		  <max value="1"/>
 		  <base>
@@ -121,8 +142,6 @@
 		  </base>
 		  <type>
 			 <code value="Reference"/>
-			 <targetProfile value="http://example.org/fhir/StructureDefinition/BePatient"/>
-			 <targetProfile value="http://example.org/fhir/StructureDefinition/Group"/>
 		  </type>
 	   </element>
 	   <element id="BECareTeamModel.period">
