@@ -805,7 +805,7 @@
         <generation value="html"/>
 		  <page> <nameUrl value="logical-models.html"/>
 			<title value="Logical Data Models"/>
-			<generation value="markdown"/>
+			<generation value="html"/>
 		  </page>
 		  <page>
 			<nameUrl value="usecases.html"/>
