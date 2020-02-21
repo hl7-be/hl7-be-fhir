@@ -15,3 +15,6 @@ shorthand
 hl7.be.fhir.template/package/scripts/createArtifactSummary - Copy.xslt
 hl7.be.fhir.template/package/scripts/createArtifactSummary default.xslt
 oldContent/
+hl7.be.fhir.template-local
+hl7.be.fhir.template2
+
