@@ -1,8 +1,8 @@
-<div class="col-12">
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas-r5/fhir-single.xsd">
 <p>Logical Data Models Overview</p>
 
 <a name="purpose"> </a>
-<h4 id="purpose">Purpose</h4>
+<h3 id="purpose">Purpose</h3>
 
 <p>A Logical Data Model is intended for non-technical users to express and validate the functional requirements for exchange of information, from a functional or clinical perspective.</p>
 
@@ -16,7 +16,7 @@
 </p>
  .
 <a name="logical-data-models-in-the-overall-architecture"> </a>
-<h4 id="logical-data-models-in-the-overall-architecture">Logical Data Models in the overall Architecture</h4>
+<h3 id="logical-data-models-in-the-overall-architecture">Logical Data Models in the overall Architecture</h3>
 
 <ul>
   <li>The Logical Data Model is located at the System level (Zachman framework) and Data Architecture (TOGAF).</li>
@@ -24,7 +24,7 @@
 </ul>
 
 <a name="logical-data-model-representation"> </a>
-<h4 id="logical-data-model-representation">Logical Data Model representation</h4>
+<h3 id="logical-data-model-representation">Logical Data Model representation</h3>
 
 <p>The Logical Data Models can be represented in several forms. They are stored as FHIR artefacts, which makes them computable, which in turn provides the following possibilities:</p>
 
@@ -34,7 +34,7 @@
 </ul>
 
 <a name="common-considerations-on-belgian-logical-data-models"> </a>
-<h4 id="common-considerations-on-belgian-logical-data-models">Common considerations on Belgian Logical Data Models</h4>
+<h3 id="common-considerations-on-belgian-logical-data-models">Common considerations on Belgian Logical Data Models</h3>
 
 <ul>
   <li>To maintain consistency, the Logical Data Models may rely on the existing FHIR data types. This is just an option and is not mandatory.</li>
@@ -44,7 +44,7 @@
 <p><a name="108e4d54-cc85-45e4-a738-de67152936a2">​</a><img src=".\image-20200216105813642.png" alt="image-20200216105813642" style="width:100%;"/></p>
   .
 <a name="list-of-logical-data-models"> </a>
-<h4 id="list-of-logical-data-models">List of Logical Data Models</h4>
+<h3 id="list-of-logical-data-models">List of Logical Data Models</h3>
 
 <p>The following Logical Data Models are defined in this specification:</p>
 
