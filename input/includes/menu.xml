@@ -14,6 +14,15 @@
 				<a href="howto.html">How to use this Publication</a>
 			</li>
 			<li>
+				<a href="artifacttypes.html">Artifact types</a>
+			</li>
+			<li>
+				<a href="privacy.html">Privacy considerations</a>
+			</li>
+			<li>
+				<a href="security.html">Security considerations</a>
+			</li>
+			<li>
 				<a target="_blank" href="{{site.data.fhir.path}}index.html">FHIR Spec<img src="external.png" style="text-align: baseline"/>
 				</a>
 			</li>

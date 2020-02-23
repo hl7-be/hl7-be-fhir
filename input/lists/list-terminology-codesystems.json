@@ -6,30 +6,30 @@
   "date": "2019-11-25T22:17:00+11:00",
   "note": [
     {
-      "text": "These are the code systems defined in this specification"
+      "text": "These are the code systems used in this specification"
     }
   ],
   "entry": [
     {
       "item": {
-        "reference": "CodeSystem-be-diarytopic",
+        "reference": "CodeSystem/be-diarytopic",
         "type": "CodeSystem",
         "display": "Diary Topic"
       }
     },
     {
       "item": {
-        "reference": "CodeSystem-be-contactperson",
+        "reference": "CodeSystem/be-contactperson",
         "type": "CodeSystem",
         "display": "Contact Person Type"
       }
     },
     {
       "item": {
-        "reference": "CodeSystem-be-civilstate",
+        "reference": "CodeSystem/be-civilstate",
         "type": "CodeSystem",
         "type": "ValueSet",
-        "display": "Contact Person Type"
+        "display": "Belgian Civil States"
       }
     }
   ]

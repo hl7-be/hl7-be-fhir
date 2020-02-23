@@ -210,6 +210,7 @@
       </reference>
       <fhirVersion value="4.0.1"/>
       <name value="Communication Apps"/>
+      <description value="Capability Statement (requirements) for systems implementing the Communication client"/>
       <groupingId value="capstatements"/>
     </resource>
     <resource>
@@ -218,6 +219,7 @@
       </reference>
       <fhirVersion value="4.0.1"/>
       <name value="Communication Server"/>
+      <description value="Capability Statement (requirements) for servers implementing the Communication features"/>
       <groupingId value="capstatements"/>
     </resource>
 
@@ -315,17 +317,6 @@
       <description value="The values for healthcare party types"/>
       <groupingId value="terminology"/>
     </resource>    
-
-    <resource>
-      <reference>
-         <reference value="Communication/be.comm1"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="Communication example 1"/>
-      <description value="New message from DZOP to nurse"/>
-      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication"/>
-<!--      <groupingId value="examples"/>  -->
-    </resource>
 
 
     <resource>
@@ -445,6 +436,20 @@
 
     </resource>
 
+
+    <resource>
+      <reference>
+         <reference value="Communication/be.comm1"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Communication example 1"/>
+      <description value="New message from DZOP to nurse"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication"/>
+<!--      <groupingId value="examples"/>  -->
+    </resource>
+
+
+
     <resource>
       <reference>
          <reference value="Communication/be.comm2.1"/>
@@ -553,7 +558,7 @@
       </reference>
       <fhirVersion value="4.0.1"/>
       <name value="Care Team Pia"/>
-      <description value="The Care Team responsible for Pia's care"/>
+      <description value="The proposed Care Team for Pia"/>
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careteam"/>
 <!--      <groupingId value="examples"/>  -->
     </resource>
@@ -564,7 +569,7 @@
       </reference>
       <fhirVersion value="4.0.1"/>
       <name value="Care Team Pia"/>
-      <description value="The Care Team responsible for Pia's care"/>
+      <description value="The Care Team assigned to patient Pia"/>
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careteam"/>
 <!--      <groupingId value="examples"/>  -->
     </resource>
@@ -576,7 +581,7 @@
       </reference>
       <fhirVersion value="4.0.1"/>
       <name value="Care Team Pia - doctors only"/>
-      <description value="The Care Team responsible for Pia's care - physicians sub-team"/>
+      <description value="Care Team assigned to Pia - physicians sub-team"/>
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careteam"/>
 <!--      <groupingId value="examples"/>  -->
     </resource>
@@ -587,7 +592,7 @@
       </reference>
       <fhirVersion value="4.0.1"/>
       <name value="Care Team Pia - nurses only"/>
-      <description value="The Care Team responsible for Pia's care - Nurses sub-team"/>
+      <description value="Care Team assigned to Pia - Nurses sub-team"/>
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careteam"/>
 <!--      <groupingId value="examples"/>  -->
     </resource>
@@ -599,7 +604,7 @@
       </reference>
       <fhirVersion value="4.0.1"/>
       <name value="Care Plan Pia - initial nurse visit"/>
-      <description value="The Care Team created by the physician as a placeholder before the nurse appointment"/>
+      <description value="The Care Team created by the physician as a placeholder for the nurse appointment"/>
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careplan"/>
     </resource>
 
@@ -608,7 +613,7 @@
          <reference value="CarePlan/pia-careplan1-v1"/>
       </reference>
       <fhirVersion value="4.0.1"/>
-      <name value="Care Plan Pia - details initial nurse visit"/>
+      <name value="Care Plan Pia - details planned by nurse"/>
       <description value="The Care Team created by the system with the details for the nurse appointment"/>
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careplan"/>
     </resource>
@@ -617,7 +622,7 @@
          <reference value="CarePlan/pia-careplan2-v1"/>
       </reference>
       <fhirVersion value="4.0.1"/>
-      <name value="Care Plan Pia - initial nurse visit"/>
+      <name value="Care Plan Pia - details scheduled"/>
       <description value="The Care Team created by the nurse with the detailed activities for diabetes, loneliness and depression"/>
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careplan"/>
     </resource>
@@ -791,6 +796,21 @@
 		  <page>
 			<nameUrl value="context.html"/>
 			<title value="Functional context"/>
+			<generation value="html"/>
+		  </page>
+		  <page>
+			<nameUrl value="artifacttypes.html"/>
+			<title value="Types od artifacts"/>
+			<generation value="html"/>
+		  </page>
+		  <page>
+			<nameUrl value="privacy.html"/>
+			<title value="Privacy considerations"/>
+			<generation value="html"/>
+		  </page>
+		  <page>
+			<nameUrl value="security.html"/>
+			<title value="Security considerations"/>
 			<generation value="html"/>
 		  </page>
 		  <page>

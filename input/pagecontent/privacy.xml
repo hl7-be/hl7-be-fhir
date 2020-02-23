@@ -1,0 +1,61 @@
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"> <head> <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> </head><p>This is a list of use cases supported by this specification. These use cases will be further detailed.</p>
+
+<a name="patient-privacy-considerations-and-requirements-wip"> </a>
+<h3 id="patient-privacy-considerations-and-requirements-wip">Patient Privacy considerations and requirements (WIP)</h3>
+<p>Een prototype bouwen dat toegang verschaft aan het bekijken van FHIR Resources, FHIR velden, of een FHIR veldencluster (R01). Tevens zal het mogelijk zijn om de toegangsregulering aan te passen, zowel op vlak van het wijzigen van reeds bestaande regels (R03) als het toevoegen van nieuwe regels (R02).</p>
+
+<a name="story-map"> </a>
+<h4 id="story-map">Story map</h4>
+
+<a name="r01"> </a>
+<h5 id="r01">R01</h5>
+<p>Onderzoeksvraag: Wat zijn verschillende oplossingen om toegangsregulering te implementeren voor een FHIR server?</p>
+<p>1. Als patiënt kan ik enkel obv mijn rol mijn persoonlijke data bekijken. (R01.1)</p>
+<p>○ opzetten van simpele toegangsregulering</p>
+<p>○ toegang (grant) verlenen aan patient obv rol</p>
+<p>○ toegang (grant) weigeren aan alle andere</p>
+<p>○ evalueren van verschillende toegangsmodellen</p>
+<p>2. Als patiënt heb ik toegang tot mijn allergieën (medische data, AllergyIntolerance Resource). (R01.1)</p>
+<p>○ toegangsregulering uitbreiden naar meer FHIR Resources</p>
+<p>3. Als zorgverstrekker kan ik de allergieën van de patiënt bekijken. (R01.1)</p>
+<p>○ toegangsregulering uitbreiden naar verschillende actoren</p>
+<p>4. Enkel als huisarts kan ik de persoonlijke data van mijn patienten bekijken. (R01.1)</p>
+<p>○ toegangsregulering uitbreiden naar nuance binnen eenzelfde actor</p>
+<p>5. Als zorgverstrekker kan ik niet de NISS nummer van de patiënt bekijken, maar wel de naam. (R01.2)</p>
+<p>○ toegangsregulering uitbreiden naar restrictie op veldniveau in FHIR Resource</p>
+<p>6. Als zorgverstrekker kan ik geen velden bekijken uit de patiëntendata die gemarkeerd zijn als "privé". (R01.3)</p>
+<p>○ toegangsregulering uitbreiden naar restrictie op niveau van veldencluster</p>
+<p>7. Als zorgverstrekker mag ik zoeken naar medische data, maar niet obv patiëntendata gemarkeerde als privé. (search for everything, not retrieve it!)</p>
+<p>○ Niet toegestaan:</p>
+<p>§ /AllergyIntolerance?subject.address=Privéstraat</p>
+<p>§ /AllergyIntolerance?subject.SSIN=123456789</p>
+<p>○ Wel toegestaan:</p>
+<p>§ /AllergyIntolerance?code=Hay fever</p>
+<p>§ /AllergyIntolerance?subject.family=Janssens</p>
+
+<a name="r02"> </a>
+<h5 id="r02">R02</h5>
+<p>Onderzoeksvraag: Hoe kunnen we een systeembeheerder en patiënt op een veilige manier gelimiteerde controle geven over de toegangsregulering?</p>
+<p>1. Als systeembeheerder kan ik de inhoud van de toegangsregels bekijken. (R02.1) (define who is the system admin)</p>
+<p>○ user interface voor systeembeheerder opzetten (authenticatie niet in scope)</p>
+<p>○ toegangsregulering kunnen visualiseren</p>
+<p>2. Als systeembeheerder kan ik de inhoud van sommige van de toegangsregels wijzigen. (R02.1)</p>
+<p>○ toegangsregulering via user interface kunnen aanpassen</p>
+<p>3. Als systeembeheerder wordt ik geweigerd om de toegangsregels aan te passen bij een fout. (R02.1)</p>
+<p>○ foutvalidatie van toegangsregels</p>
+<p>4. Als patient kan ik bekijken welke zorgverstrekkers toegang hebben tot mijn data. (R02.2)</p>
+<p>○ user interface voor patient opzetten (authenticatie niet in scope)</p>
+<p>○ deel van de toegangsregulering visualiseren: blacklist van zorgverstrekkers</p>
+<p>○ purpose for viewing data + permissions (clinical, marketing, ...)</p>
+<p>5. Als patient kan ik de zorgverstrekker weigeren toegang te geven tot mijn data. (R02.2)</p>
+<p>○ blacklist van zorgverstrekkers aanpassen</p>
+<p>• Als patient kan ik zien wie toegang heeft tot mijn data.</p>
+
+<a name="r03"> </a>
+<h5 id="r03">R03</h5>
+<p>Onderzoeksvraag: Hoe kunnen we een systeembeheerder op een veilige manier volledige controle geven over de toegangsregulering?</p>
+<p>1. Als systeembeheerder kan ik aan de toegangsregeling extra regels toevoegen.</p>
+<p>○ Mogelijkheid geven om regels toe te voegen aan bestaande data elementen</p>
+<p>○ Mogelijkheid geven om extra data elementen toe te voegen</p>
+<p>○ Valideren dat de wijzigingen correct zijn</p>
+</div>
