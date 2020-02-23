@@ -1,63 +1,66 @@
-<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas-r5/fhir-single.xsd">
-<p>Logical Data Models Overview</p>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"> <head> <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> </head><p>Logical Data Models Overview</p>
 
 <a name="purpose"> </a>
 <h3 id="purpose">Purpose</h3>
-
-<p>A Logical Data Model is intended for non-technical users to express and validate the functional requirements for exchange of information, from a functional or clinical perspective.</p>
-
-<p>Logical Data Models represent an abstract data model, independently of FHIR resources or datatypes or any technical implementation. They are building blocks that can be reused and across other models. For example models like Patient or Practitioner can be reused in a series of more complex models:<a name="e0644222-a151-480b-b8fd-fd3d1b0d865f">​</a><img src=".\image-20200216102037316.png" alt="image-20200216102037316" style="width:100%;"/></p>
-
-
+<p>Logical Data Models are intended for non-technical users to express and validate the functional requirements for exchange of information, from a functional or clinical perspective.</p>
+<p>​Logical Data Models represent an abstract data model, independently of FHIR resources or datatypes or any technical implementation. They are building blocks that can be reused and across other models. For example models like Patient or Practitioner can be reused in a series of more complex models:</p>
+<p>​</p>
+<table>
+<tbody>
+<tr class="odd">
+<td><img src="logical-models-image1.png" alt="image-20200216102037316" style="width:6.26736in;height:1.96806in" /></td>
+</tr>
+</tbody>
+</table>
 <p>Because they are decoupled from any technical implementation, Logical Data Models constitute a foundational aspect of the interoperability design, by supporting a stable, common understanding of the interoperability data needs.</p>
-
-<p>The Logical Data Models are mapped to the corresponding FHIR implementations. They can also be mapped to KMEHR or CDA implementations, which allows for a pathway for migration and legacy support.
-<a name="b7a09c3f-5a80-43e0-93be-5d9fcbe7526b">​</a><img src=".\image-20200216102338553.png" alt="image-20200216102338553" />
-</p>
- .
-<a name="logical-data-models-in-the-overall-architecture"> </a>
-<h3 id="logical-data-models-in-the-overall-architecture">Logical Data Models in the overall Architecture</h3>
-
+<p>The Logical Data Models are mapped to the corresponding FHIR implementations. They can also be mapped to KMEHR or CDA implementations, which allows for a pathway for migration and legacy support. ​</p>
+<table>
+<tbody>
+<tr class="odd">
+<td><img src="logical-models-image2.png" alt="image-20200216102338553" style="width:6.0625in;height:2.82014in" /></td>
+</tr>
+</tbody>
+</table>
 <ul>
-  <li>The Logical Data Model is located at the System level (Zachman framework) and Data Architecture (TOGAF).</li>
-  <li>It is possible to express also conceptual data models (which are similar to the Dutch ZIBs) - therefore on the Business level. The key difference between Logical and Conceptual data models is that the Conceptual Data Model focuses on the relations and definitions, while the Logical Data Model expresses more details about supported relations, optionality, cardinality, data types, referential integrity, etc. In short, Conceptual Data Models express <em>what the information means</em>, while Logical Data Models provide more details on <em>how the information is materialized</em>.</li>
+<li><p>Logical Data Model are situated in the Zachman framework at the System level and are part of the Data Architecture (in TOGAF).</p></li>
+<li><p>It is possible to express also conceptual data models (which are similar to the Dutch ZIBs) - therefore on the Business level. The key difference between Logical and Conceptual data models is that the Conceptual Data Model focuses on the relations and definitions, while the Logical Data Model expresses more details about supported relations, optionality, cardinality, data types, referential integrity, etc. In short, Conceptual Data Models express <em>what the information means</em>, while Logical Data Models provide more details on <em>how the information is materialized</em>.</p></li>
 </ul>
 
-<a name="logical-data-model-representation"> </a>
-<h3 id="logical-data-model-representation">Logical Data Model representation</h3>
 
-<p>The Logical Data Models can be represented in several forms. They are stored as FHIR artefacts, which makes them computable, which in turn provides the following possibilities:</p>
-
+<a name="logical-data-model-representation-and-storage"> </a>
+<h3 id="logical-data-model-representation-and-storage">Logical Data Model representation and storage</h3>
+<p>The Logical Data Models can be represented in several forms - UML being the standard language for representation. In this Implementation Guide, the use of Logical Data Models is more importantly focused on how they are stored. By storing Logical Data Models as FHIR artefacts, which are computable artefacts, we enable the following possibilities:</p>
 <ul>
-  <li>Data Classification</li>
-  <li>Assisted or automated mapping between data elements</li>
+<li><p>Data Classification</p></li>
+<li><p>Assisted or automated mapping between data elements</p></li>
 </ul>
 
 <a name="common-considerations-on-belgian-logical-data-models"> </a>
 <h3 id="common-considerations-on-belgian-logical-data-models">Common considerations on Belgian Logical Data Models</h3>
-
 <ul>
-  <li>To maintain consistency, the Logical Data Models may rely on the existing FHIR data types. This is just an option and is not mandatory.</li>
-  <li>Many of the data elements that contain text can have multiple language representations. This is obvious for example for reference data that has several display values in different languages, but also in other data elements such as “Street name”. When a Logical Data Model expresses a data element as being a String with cardinality 1, this means that the data element is one, but it may have different representations in different languages. In the example below, of a Care Team having a name (0..1), this does not mean that the team it will have only one expression of the name - it rather means that the team has one name. The translations and language representations of that name are left to the implementation.</li>
+<li><p>The Logical Data Models may rely on the existing FHIR data types. This is just an option and is not mandatory. It has been the approach taken in several cases, one primary reason being that doing this allows to complement the initial modelling and analysis in international best practices.</p></li>
+<li><p>Many of the data elements that contain text can have multiple language representations. This is obvious for example for reference data that has several display values in different languages, but also in other data elements such as “Street name”. When a Logical Data Model expresses a data element as being a String with cardinality 1, this means that the data element is one, but it may have different representations in different languages. In the example below, of a Care Team having a name (0..1), this does not mean that the team it will have only one expression of the name - it rather means that the team has one name, and the translations and language representations of that name are left to the implementation layer.</p></li>
 </ul>
+<table>
+<tbody>
+<tr class="odd">
+<td><img src="logical-models-image3.png" alt="image-20200216105813642" style="width:6.09236in;height:2.18542in" /></td>
+</tr>
+</tbody>
+</table>
+<p>​</p>
 
-<p><a name="108e4d54-cc85-45e4-a738-de67152936a2">​</a><img src=".\image-20200216105813642.png" alt="image-20200216105813642" /></p>
-  .
-<a name="list-of-logical-data-models"> </a>
-<h3 id="list-of-logical-data-models">List of Logical Data Models</h3>
-
+<a name="list-of-logical-data-models-1"> </a>
+<h3 id="list-of-logical-data-models-1">List of Logical Data Models</h3>
 <p>The following Logical Data Models are defined in this specification:</p>
-
 <ul>
-  <li>Patient</li>
-  <li>Practitioner</li>
-  <li>PractitionerRole</li>
-  <li>Communication</li>
-  <li>Allergy Intolerance</li>
-  <li>Care Team</li>
-  <li>Care Plan</li>
-  <li>Immunization Record</li>
+<li><p>Patient</p></li>
+<li><p>Practitioner</p></li>
+<li><p>PractitionerRole</p></li>
+<li><p>Communication</p></li>
+<li><p>Allergy Intolerance</p></li>
+<li><p>Care Team</p></li>
+<li><p>Care Plan</p></li>
+<li><p>Immunization Record</p></li>
 </ul>
-
-
 </div>
