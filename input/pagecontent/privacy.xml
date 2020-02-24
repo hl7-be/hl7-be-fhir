@@ -2,60 +2,76 @@
 
 <a name="patient-privacy-considerations-and-requirements-wip"> </a>
 <h3 id="patient-privacy-considerations-and-requirements-wip">Patient Privacy considerations and requirements (WIP)</h3>
-<p>Een prototype bouwen dat toegang verschaft aan het bekijken van FHIR Resources, FHIR velden, of een FHIR veldencluster (R01). Tevens zal het mogelijk zijn om de toegangsregulering aan te passen, zowel op vlak van het wijzigen van reeds bestaande regels (R03) als het toevoegen van nieuwe regels (R02).</p>
+<p>Access to read or change FHIR resources, or elements, or a set of elements, must depend on a set of rules and criteria (Requirement 1). Therefore, the actors (patients themselves, regulators, or practitioners) must have their access based on those rules, and must be able to consult those rules (Requirement 2). These access rules are managed by other actors, and access to these access rules is itself depending on the rules defined by the actors.</p>
+<p>There are different justifications for data exchange, namely those in GDPR. When addressing health data, which is sensitive information, special safeguards are to be put in place, and the consent by the patient has to be considered in the context – in a context of care, patients are usually not in a position to give explicit, specific and free consent.</p>
 
 <a name="story-map"> </a>
 <h4 id="story-map">Story map</h4>
 
 <a name="r01"> </a>
 <h5 id="r01">R01</h5>
-<p>Onderzoeksvraag: Wat zijn verschillende oplossingen om toegangsregulering te implementeren voor een FHIR server?</p>
-<p>1. Als patiënt kan ik enkel obv mijn rol mijn persoonlijke data bekijken. (R01.1)</p>
-<p>○ opzetten van simpele toegangsregulering</p>
-<p>○ toegang (grant) verlenen aan patient obv rol</p>
-<p>○ toegang (grant) weigeren aan alle andere</p>
-<p>○ evalueren van verschillende toegangsmodellen</p>
-<p>2. Als patiënt heb ik toegang tot mijn allergieën (medische data, AllergyIntolerance Resource). (R01.1)</p>
-<p>○ toegangsregulering uitbreiden naar meer FHIR Resources</p>
-<p>3. Als zorgverstrekker kan ik de allergieën van de patiënt bekijken. (R01.1)</p>
-<p>○ toegangsregulering uitbreiden naar verschillende actoren</p>
-<p>4. Enkel als huisarts kan ik de persoonlijke data van mijn patienten bekijken. (R01.1)</p>
-<p>○ toegangsregulering uitbreiden naar nuance binnen eenzelfde actor</p>
-<p>5. Als zorgverstrekker kan ik niet de NISS nummer van de patiënt bekijken, maar wel de naam. (R01.2)</p>
-<p>○ toegangsregulering uitbreiden naar restrictie op veldniveau in FHIR Resource</p>
-<p>6. Als zorgverstrekker kan ik geen velden bekijken uit de patiëntendata die gemarkeerd zijn als "privé". (R01.3)</p>
-<p>○ toegangsregulering uitbreiden naar restrictie op niveau van veldencluster</p>
-<p>7. Als zorgverstrekker mag ik zoeken naar medische data, maar niet obv patiëntendata gemarkeerde als privé. (search for everything, not retrieve it!)</p>
-<p>○ Niet toegestaan:</p>
-<p>§ /AllergyIntolerance?subject.address=Privéstraat</p>
-<p>§ /AllergyIntolerance?subject.SSIN=123456789</p>
-<p>○ Wel toegestaan:</p>
-<p>§ /AllergyIntolerance?code=Hay fever</p>
-<p>§ /AllergyIntolerance?subject.family=Janssens</p>
+<p>Different access permissions to data:</p>
+<ol style="list-style-type: decimal">
+<li><p>Patient roles can access their demographics and personal data</p></li>
+</ol>
+<ul>
+<li><p>Setting of simple access rules</p></li>
+<li><p>Grant access to certain roles</p></li>
+<li><p>Remove access to any role*</p></li>
+<li><p>Evaluate impact of my consented access</p></li>
+</ul>
+<ol start="2" style="list-style-type: decimal">
+<li><p>Patients roles have access to clinical data (e.g. AllergyIntolerance)</p>
+<ol style="list-style-type: lower-alpha">
+<li><p>Rules apply to different resource types, as determined by the roles and purposes – must distinguish between primary and secondary data.</p></li>
+</ol></li>
+<li><p>Rules should be dependent on profile or transaction, because the same resource (e.g. CarePlan, Observations) can be used in different contexts with different sensitivity constraints</p></li>
+<li><p>Patients can grant access for specific purposes only</p></li>
+<li><p>GPs can see the access the data but of patients only if they are their family doctors</p>
+<ol start="2" style="list-style-type: lower-alpha">
+<li><p>Access control must be extended to sub-roles and relations</p></li>
+</ol></li>
+<li><p>As care giver I cannot access the NISS number of the patient, only the name</p>
+<ol start="3" style="list-style-type: lower-alpha">
+<li><p>Access to some fields may be restricted</p></li>
+</ol></li>
+<li><p>As a care giver I cannot access patient health data marked as “private”</p>
+<ol start="4" style="list-style-type: lower-alpha">
+<li><p>Need to classify the data elements, sets of elements, or resources</p></li>
+</ol></li>
+<li><p>As a care giver I can search for data, but I cannot obtain data that is beyond my access level</p>
+<ol start="5" style="list-style-type: lower-alpha">
+<li><p>Not allowed:</p>
+<ol style="list-style-type: lower-roman">
+<li><p>AllergyIntolerance?subject.address=Privéstraat</p></li>
+<li><p>AllergyIntolerance?subject.SSIN=123456789</p></li>
+</ol></li>
+<li><p>Allowed</p>
+<ol start="3" style="list-style-type: lower-roman">
+<li><p>/AllergyIntolerance?code=Hay fever</p></li>
+<li><p>/AllergyIntolerance?subject.family=Janssens</p></li>
+</ol></li>
+</ol></li>
+</ol>
 
 <a name="r02"> </a>
-<h5 id="r02">R02</h5>
-<p>Onderzoeksvraag: Hoe kunnen we een systeembeheerder en patiënt op een veilige manier gelimiteerde controle geven over de toegangsregulering?</p>
-<p>1. Als systeembeheerder kan ik de inhoud van de toegangsregels bekijken. (R02.1) (define who is the system admin)</p>
-<p>○ user interface voor systeembeheerder opzetten (authenticatie niet in scope)</p>
-<p>○ toegangsregulering kunnen visualiseren</p>
-<p>2. Als systeembeheerder kan ik de inhoud van sommige van de toegangsregels wijzigen. (R02.1)</p>
-<p>○ toegangsregulering via user interface kunnen aanpassen</p>
-<p>3. Als systeembeheerder wordt ik geweigerd om de toegangsregels aan te passen bij een fout. (R02.1)</p>
-<p>○ foutvalidatie van toegangsregels</p>
-<p>4. Als patient kan ik bekijken welke zorgverstrekkers toegang hebben tot mijn data. (R02.2)</p>
-<p>○ user interface voor patient opzetten (authenticatie niet in scope)</p>
-<p>○ deel van de toegangsregulering visualiseren: blacklist van zorgverstrekkers</p>
-<p>○ purpose for viewing data + permissions (clinical, marketing, ...)</p>
-<p>5. Als patient kan ik de zorgverstrekker weigeren toegang te geven tot mijn data. (R02.2)</p>
-<p>○ blacklist van zorgverstrekkers aanpassen</p>
-<p>• Als patient kan ik zien wie toegang heeft tot mijn data.</p>
-
-<a name="r03"> </a>
-<h5 id="r03">R03</h5>
-<p>Onderzoeksvraag: Hoe kunnen we een systeembeheerder op een veilige manier volledige controle geven over de toegangsregulering?</p>
-<p>1. Als systeembeheerder kan ik aan de toegangsregeling extra regels toevoegen.</p>
-<p>○ Mogelijkheid geven om regels toe te voegen aan bestaande data elementen</p>
-<p>○ Mogelijkheid geven om extra data elementen toe te voegen</p>
-<p>○ Valideren dat de wijzigingen correct zijn</p>
+<h5 id="r02">R02 </h5>
+<p>Access to system and access managers:</p>
+<ol style="list-style-type: decimal">
+<li><p>Access managers can see the content of the Personal Data Access Rules</p></li>
+<li><p>Some rules are enabled but not visible to the patient - e.g. if the law requires some data to be shared with or without consent, the patient may not see that.</p>
+<ol style="list-style-type: lower-alpha">
+<li><p>Example cases:</p>
+<ol style="list-style-type: lower-roman">
+<li><p>Mandatory reporting of infectious diseases</p></li>
+<li><p>Court-ordered access to data</p></li>
+</ol></li>
+</ol></li>
+<li><p>Patients can see the content of the personal data access rules (the rules that they are allowed to see)</p></li>
+<li><p>Patients can see which individuals (not only roles) has access to their data</p></li>
+<li><p>Patients can refuse consent to data by some users (note that refusing consent is not the same as blocking access)</p></li>
+<li><p>Access managers’ access to the Personal Data Access Rules is itself limited by a set of rules (Access Control Rules)</p></li>
+<li><p>Any change of access (from the any of the actors) must be checked for errors – if a user tries to change a rule outside their permissions, or a conflicting rule, this will be logged</p></li>
+<li><p>Users and access managers must have a User Interface to monitor their permissions (in the scope of their visibility to them)</p></li>
+</ol>
 </div>
