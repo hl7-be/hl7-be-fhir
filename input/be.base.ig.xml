@@ -91,7 +91,7 @@
  
     <resource>
       <reference>
-        <reference value="StructureDefinition/be-careplan"/>
+        <reference value="StructureDefinition/be-careplan-homecare"/>
       </reference>
       <fhirVersion value="4.0.1"/>
       <name value="Care Plan profile"/>
@@ -605,7 +605,7 @@
       <fhirVersion value="4.0.1"/>
       <name value="Care Plan Pia - initial nurse visit"/>
       <description value="The Care Team created by the physician as a placeholder for the nurse appointment"/>
-      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careplan"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careplan-homecare"/>
     </resource>
 
     <resource>
@@ -615,7 +615,7 @@
       <fhirVersion value="4.0.1"/>
       <name value="Care Plan Pia - details planned by nurse"/>
       <description value="The Care Team created by the system with the details for the nurse appointment"/>
-      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careplan"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careplan-homecare"/>
     </resource>
     <resource>
       <reference>
@@ -624,7 +624,7 @@
       <fhirVersion value="4.0.1"/>
       <name value="Care Plan Pia - details scheduled"/>
       <description value="The Care Team created by the nurse with the detailed activities for diabetes, loneliness and depression"/>
-      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careplan"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careplan-homecare"/>
     </resource>
 
 

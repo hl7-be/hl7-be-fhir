@@ -1,9 +1,13 @@
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"> <head> <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> </head><p>This is a list of use cases supported by this specification. These use cases will be further detailed.</p>
+<br/>
 
 <a name="patient-privacy-considerations-and-requirements-wip"> </a>
 <h3 id="patient-privacy-considerations-and-requirements-wip">Patient Privacy considerations and requirements (WIP)</h3>
+<br/>
 <p>Access to read or change FHIR resources, or elements, or a set of elements, must depend on a set of rules and criteria (Requirement 1). Therefore, the actors (patients themselves, regulators, or practitioners) must have their access based on those rules, and must be able to consult those rules (Requirement 2). These access rules are managed by other actors, and access to these access rules is itself depending on the rules defined by the actors.</p>
 <p>There are different justifications for data exchange, namely those in GDPR. When addressing health data, which is sensitive information, special safeguards are to be put in place, and the consent by the patient has to be considered in the context – in a context of care, patients are usually not in a position to give explicit, specific and free consent.</p>
+<br/>
+<br/>
 
 <a name="story-map"> </a>
 <h4 id="story-map">Story map</h4>
@@ -28,31 +32,32 @@
 <li><p>Rules should be dependent on profile or transaction, because the same resource (e.g. CarePlan, Observations) can be used in different contexts with different sensitivity constraints</p></li>
 <li><p>Patients can grant access for specific purposes only</p></li>
 <li><p>GPs can see the access the data but of patients only if they are their family doctors</p>
-<ol start="2" style="list-style-type: lower-alpha">
+<ol style="list-style-type: lower-alpha">
 <li><p>Access control must be extended to sub-roles and relations</p></li>
 </ol></li>
 <li><p>As care giver I cannot access the NISS number of the patient, only the name</p>
-<ol start="3" style="list-style-type: lower-alpha">
+<ol style="list-style-type: lower-alpha">
 <li><p>Access to some fields may be restricted</p></li>
 </ol></li>
 <li><p>As a care giver I cannot access patient health data marked as “private”</p>
-<ol start="4" style="list-style-type: lower-alpha">
+<ol style="list-style-type: lower-alpha">
 <li><p>Need to classify the data elements, sets of elements, or resources</p></li>
 </ol></li>
 <li><p>As a care giver I can search for data, but I cannot obtain data that is beyond my access level</p>
-<ol start="5" style="list-style-type: lower-alpha">
+<ol style="list-style-type: lower-alpha">
 <li><p>Not allowed:</p>
 <ol style="list-style-type: lower-roman">
 <li><p>AllergyIntolerance?subject.address=Privéstraat</p></li>
 <li><p>AllergyIntolerance?subject.SSIN=123456789</p></li>
 </ol></li>
 <li><p>Allowed</p>
-<ol start="3" style="list-style-type: lower-roman">
+<ol style="list-style-type: lower-roman">
 <li><p>/AllergyIntolerance?code=Hay fever</p></li>
 <li><p>/AllergyIntolerance?subject.family=Janssens</p></li>
 </ol></li>
 </ol></li>
 </ol>
+<br/>
 
 <a name="r02"> </a>
 <h5 id="r02">R02 </h5>
@@ -74,4 +79,9 @@
 <li><p>Any change of access (from the any of the actors) must be checked for errors – if a user tries to change a rule outside their permissions, or a conflicting rule, this will be logged</p></li>
 <li><p>Users and access managers must have a User Interface to monitor their permissions (in the scope of their visibility to them)</p></li>
 </ol>
+<blockquote>
+<p></p>
+</blockquote>
+<p></p>
+<br/>
 </div>
