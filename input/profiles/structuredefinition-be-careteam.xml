@@ -39,6 +39,8 @@
     <element id="CareTeam.note">
       <path value="CareTeam.note" />
       <mustSupport value="true" />
+      <comment value="This field has a Must Support flag. In this case it means: systems receiving the attribute SHALL NOT ignore it. Systems that can populate this information SHALL be able to fill in the field. For those systems, the decision on which information is appropriate to send must consider relevance, privacy considerations, etc. - this can be understood simply as 'Systems that contain appropriate information to send SHALL be able to send it using this field'" />
+
     </element>
   </differential>
 </StructureDefinition>

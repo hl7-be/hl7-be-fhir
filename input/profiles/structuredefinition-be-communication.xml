@@ -95,6 +95,8 @@
       <type>
         <code value="Reference" />
       </type>
+      <comment value="NOTE: The string element is valid only for FHIR 4.0.1, and it will likely be replaced by another data type (Annotation) in future releases of FHIR and of this profile." />
+
     </element>
   </differential>
 </StructureDefinition>
