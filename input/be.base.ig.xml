@@ -554,10 +554,10 @@
 
     <resource>
       <reference>
-         <reference value="CareTeam/dzop-team-0002-v0"/>
+         <reference value="CareTeam/dzop-team-0002.v0"/>
       </reference>
       <fhirVersion value="4.0.1"/>
-      <name value="Care Team Pia"/>
+      <name value="Care Team Pia - v0"/>
       <description value="The proposed Care Team for Pia"/>
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careteam"/>
 <!--      <groupingId value="examples"/>  -->
@@ -565,11 +565,33 @@
 
     <resource>
       <reference>
-         <reference value="CareTeam/dzop-team-0002-v1"/>
+         <reference value="CareTeam/dzop-team-0002.v1"/>
       </reference>
       <fhirVersion value="4.0.1"/>
-      <name value="Care Team Pia"/>
+      <name value="Care Team Pia - v1"/>
       <description value="The Care Team assigned to patient Pia"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careteam"/>
+<!--      <groupingId value="examples"/>  -->
+    </resource>
+
+    <resource>
+      <reference>
+         <reference value="CareTeam/dzop-team-0002.v2"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Care Team Pia - v2"/>
+      <description value="The Care Team assigned to patient Pia"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careteam"/>
+<!--      <groupingId value="examples"/>  -->
+    </resource>
+
+    <resource>
+      <reference>
+         <reference value="CareTeam/dzop-team-0002"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Care Team Pia - current version"/>
+      <description value="The Care Team assigned to patient Pia - current"/>
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careteam"/>
 <!--      <groupingId value="examples"/>  -->
     </resource>
@@ -831,6 +853,16 @@
 			<nameUrl value="usecases.html"/>
 			<title value="Use Cases"/>
 			<generation value="html"/>
+			  <page>
+				<nameUrl value="examplescenario-usecase1.html"/>
+				<title value="Use Case 1 - Communication"/>
+				<generation value="html"/>
+			  </page>
+			  <page>
+				<nameUrl value="examplescenario-usecase2.html"/>
+				<title value="Use Case 2 - CareTeam"/>
+				<generation value="html"/>
+			  </page>
 		  </page>
       </page>
 
@@ -912,6 +944,12 @@
             <code value="releaselabel"/>
             <value value="CI build"/>
         </parameter>
+	 <parameter>
+            <code value="show-inherited-invariants"/>
+            <value value="false"/>
+       </parameter>
+		
+		
 	
   </definition>
 </ImplementationGuide>
