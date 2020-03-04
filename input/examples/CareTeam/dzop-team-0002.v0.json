@@ -1,9 +1,9 @@
 {
   "resourceType": "CareTeam",
-  "id": "dzop-team-0002-v0",
+  "id": "dzop-team-0002.v0",
   "meta": 
     {
-      "versionId": "3",
+      "versionId": "0",
       "profile": [
 		"https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careteam"
 	  ]
@@ -44,17 +44,6 @@
       "member": {
         "reference": "Practitioner/dragon",
         "display": "Dr Dragon"
-      }
-    },
-    {
-      "role": [
-        {
-          "text": "welfare-actor"
-        }
-      ],
-      "member": {
-        "reference": "Practitioner/christa",
-        "display": "Caregiver Christa"
       }
     },
     {

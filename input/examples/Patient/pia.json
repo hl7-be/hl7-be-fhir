@@ -9,6 +9,8 @@
     },
   "name": [
 	{
+      "use" : "official",
+      "family" : "Peters",
 	  "given": [
 		"Pia"
 	  ]

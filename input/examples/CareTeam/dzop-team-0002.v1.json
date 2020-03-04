@@ -1,9 +1,9 @@
 {
   "resourceType": "CareTeam",
-  "id": "dzop-team-0002-v1",
+  "id": "dzop-team-0002.v1",
   "meta": 
     {
-      "versionId": "3",
+      "versionId": "1",
       "profile": [
 		"https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careteam"
 	  ]
@@ -90,7 +90,7 @@
       ],
       "member": {
         "reference": "Organization/diensten-gent",
-        "display": "Lokaal dienstencentrum Gen"
+        "display": "Lokaal dienstencentrum Gent"
       }
     }
   ],

@@ -1,0 +1,393 @@
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fhir="http://hl7.org/fhir" xsi:schemaLocation="http://hl7.org/fhir ../../../../schema/fhir-single.xsd">
+   <div id="segment-content" class="segment">
+      <div class="container">
+         <div class="row">
+            <div class="inner-wrapper">
+               <div class="col-12">
+                  <ul class="nav nav-tabs">
+                     <li class="active"><a data-toggle="tab" href="#sequence">Sequence</a></li>
+                     <li><a data-toggle="tab" href="#details">Details</a></li>
+                     <li><a data-toggle="tab" href="#resources">Resources</a></li>
+                  </ul>
+                  <div class="tab-content">
+                     <div id="sequence" class="tab-pane fade in active">
+                        <h3><a name="description"></a>
+                           																Description
+                           															
+                        </h3>
+                        <p></p>
+                        <h4><a name="preconditions"></a>
+                           																Pre-Conditions
+                           															
+                        </h4>
+                        <p>No care team is assigned to Patient Piet</p>
+                        <h4><a name="postconditions"></a>
+                           																Post Conditions
+                           															
+                        </h4>
+                        <p>A team is formally assigned to Patient Piet</p>
+                        <p></p>
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="759px" preserveAspectRatio="none" style="width:579px;height:759px;" version="1.1" viewBox="0 0 579 759" width="579px" zoomAndPan="magnify">
+                           <defs>
+                              <filter height="300%" id="f1dwi3pcur2p2x" width="300%" x="-1" y="-1">
+                                 <feGaussianBlur result="blurOut" stdDeviation="2.0"></feGaussianBlur>
+                                 <feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"></feColorMatrix>
+                                 <feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"></feOffset>
+                                 <feBlend in="SourceGraphic" in2="blurOut3" mode="normal"></feBlend>
+                              </filter>
+                           </defs>
+                           <g>
+                              <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="57" x="262" y="24.5332">Process</text>
+                              <rect fill="#FFFFFF" filter="url(#f1dwi3pcur2p2x)" height="185.4609" style="stroke: #000000; stroke-width: 2.0;" width="555" x="13" y="227.2734"></rect>
+                              <rect fill="#FFFFFF" filter="url(#f1dwi3pcur2p2x)" height="199.4609" style="stroke: #000000; stroke-width: 2.0;" width="555" x="13" y="454.7344"></rect>
+                              <line style="stroke: #A80036; stroke-width: 1.0;" x1="56" x2="56" y1="119.2188" y2="419.7344"></line>
+                              <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,4.0;" x1="56" x2="56" y1="419.7344" y2="447.7344"></line>
+                              <line style="stroke: #A80036; stroke-width: 1.0;" x1="56" x2="56" y1="447.7344" y2="671.1953"></line>
+                              <line style="stroke: #A80036; stroke-width: 1.0;" x1="265" x2="265" y1="119.2188" y2="419.7344"></line>
+                              <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,4.0;" x1="265" x2="265" y1="419.7344" y2="447.7344"></line>
+                              <line style="stroke: #A80036; stroke-width: 1.0;" x1="265" x2="265" y1="447.7344" y2="671.1953"></line>
+                              <line style="stroke: #A80036; stroke-width: 1.0;" x1="459" x2="459" y1="119.2188" y2="419.7344"></line>
+                              <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,4.0;" x1="459" x2="459" y1="419.7344" y2="447.7344"></line>
+                              <line style="stroke: #A80036; stroke-width: 1.0;" x1="459" x2="459" y1="447.7344" y2="671.1953"></line>
+                              <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="60" x="23" y="116.1426">Physician</text>
+                              <ellipse cx="56" cy="44.6094" fill="#FEFECE" filter="url(#f1dwi3pcur2p2x)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"></ellipse>
+                              <path d="M56,52.6094 L56,79.6094 M43,60.6094 L69,60.6094 M56,79.6094 L43,94.6094 M56,79.6094 L69,94.6094 " fill="none" filter="url(#f1dwi3pcur2p2x)" style="stroke: #A80036; stroke-width: 2.0;"></path>
+                              <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="60" x="23" y="684.7285">Physician</text>
+                              <ellipse cx="56" cy="697.8047" fill="#FEFECE" filter="url(#f1dwi3pcur2p2x)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"></ellipse>
+                              <path d="M56,705.8047 L56,732.8047 M43,713.8047 L69,713.8047 M56,732.8047 L43,747.8047 M56,732.8047 L69,747.8047 " fill="none" filter="url(#f1dwi3pcur2p2x)" style="stroke: #A80036; stroke-width: 2.0;"></path>
+                              <rect fill="#FEFECE" filter="url(#f1dwi3pcur2p2x)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="132" x="197" y="82.6094"></rect>
+                              <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="118" x="204" y="104.1426">Care Planning app</text>
+                              <rect fill="#FEFECE" filter="url(#f1dwi3pcur2p2x)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="132" x="197" y="670.1953"></rect>
+                              <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="118" x="204" y="691.7285">Care Planning app</text>
+                              <rect fill="#FEFECE" filter="url(#f1dwi3pcur2p2x)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="52" x="431" y="82.6094"></rect>
+                              <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="38" x="438" y="104.1426">DZOP</text>
+                              <rect fill="#FEFECE" filter="url(#f1dwi3pcur2p2x)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="52" x="431" y="670.1953"></rect>
+                              <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="38" x="438" y="691.7285">DZOP</text>
+                              <polygon fill="#A80036" points="253,147.2188,263,151.2188,253,155.2188,257,151.2188" style="stroke: #A80036; stroke-width: 1.0;"></polygon>
+                              <line style="stroke: #A80036; stroke-width: 1.0;" x1="56" x2="259" y1="151.2188" y2="151.2188"></line>
+                              <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="136" x="63" y="146.7139">"Query team members"</text>
+                              <polygon fill="#A80036" points="447,177.5703,457,181.5703,447,185.5703,451,181.5703" style="stroke: #A80036; stroke-width: 1.0;"></polygon>
+                              <line style="stroke: #A80036; stroke-width: 1.0;" x1="265" x2="453" y1="181.5703" y2="181.5703"></line>
+                              <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="170" x="272" y="177.0654">"Request List of Pracitioners"</text>
+                              <polygon fill="#A80036" points="67,207.9219,57,211.9219,67,215.9219,63,211.9219" style="stroke: #A80036; stroke-width: 1.0;"></polygon>
+                              <line style="stroke: #A80036; stroke-width: 1.0;" x1="61" x2="264" y1="211.9219" y2="211.9219"></line>
+                              <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="185" x="73" y="207.417">"Show possible team members"</text>
+                              <path d="M13,227.2734 L146,227.2734 L146,235.2734 L136,245.2734 L13,245.2734 L13,227.2734 " fill="#EEEEEE" style="stroke: #000000; stroke-width: 1.0;"></path>
+                              <rect fill="none" height="185.4609" style="stroke: #000000; stroke-width: 2.0;" width="555" x="13" y="227.2734"></rect>
+                              <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="88" x="28" y="241.7686">Propose team</text>
+                              <polygon fill="#A80036" points="253,263.625,263,267.625,253,271.625,257,267.625" style="stroke: #A80036; stroke-width: 1.0;"></polygon>
+                              <line style="stroke: #A80036; stroke-width: 1.0;" x1="56" x2="259" y1="267.625" y2="267.625"></line>
+                              <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="138" x="63" y="263.1201">"Select team members"</text>
+                              <polygon fill="#A80036" points="447,309.9766,457,313.9766,447,317.9766,451,313.9766" style="stroke: #A80036; stroke-width: 1.0;"></polygon>
+                              <line style="stroke: #A80036; stroke-width: 1.0;" x1="265" x2="453" y1="313.9766" y2="313.9766"></line>
+                              <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="116" x="272" y="293.4717">"Propose CareTeam</text><a target="_top" xlink:actuate="onRequest" xlink:href="#teampiet1" xlink:show="new" xlink:title="#teampiet1" xlink:type="simple">
+                                 <text fill="#0000FF" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="66" x="272" y="309.8232">CareTeam1</text>
+                                 <line style="stroke: #0000FF; stroke-width: 1.0;" x1="272" x2="338" y1="311.8232" y2="311.8232"></line></a><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="5" x="338" y="309.8232">"</text>
+                              <line style="stroke: #A80036; stroke-width: 1.0;" x1="459" x2="501" y1="345.0313" y2="345.0313"></line>
+                              <line style="stroke: #A80036; stroke-width: 1.0;" x1="501" x2="501" y1="345.0313" y2="358.0313"></line>
+                              <line style="stroke: #A80036; stroke-width: 1.0;" x1="460" x2="501" y1="358.0313" y2="358.0313"></line>
+                              <polygon fill="#A80036" points="470,354.0313,460,358.0313,470,362.0313,466,358.0313" style="stroke: #A80036; stroke-width: 1.0;"></polygon>
+                              <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="90" x="466" y="340.1748">"Validate team"</text>
+                              <polygon fill="#A80036" points="276,400.0313,266,404.0313,276,408.0313,272,404.0313" style="stroke: #A80036; stroke-width: 1.0;"></polygon>
+                              <line style="stroke: #A80036; stroke-width: 1.0;" x1="270" x2="458" y1="404.0313" y2="404.0313"></line>
+                              <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="130" x="282" y="383.5264">"Return validated team</text><a target="_top" xlink:actuate="onRequest" xlink:href="#teampiet1" xlink:show="new" xlink:title="#teampiet1" xlink:type="simple">
+                                 <text fill="#0000FF" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="66" x="282" y="399.8779">CareTeam1</text>
+                                 <line style="stroke: #0000FF; stroke-width: 1.0;" x1="282" x2="348" y1="401.8779" y2="401.8779"></line></a><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="5" x="348" y="399.8779">"</text>
+                              <path d="M13,454.7344 L139,454.7344 L139,462.7344 L129,472.7344 L13,472.7344 L13,454.7344 " fill="#EEEEEE" style="stroke: #000000; stroke-width: 1.0;"></path>
+                              <rect fill="none" height="199.4609" style="stroke: #000000; stroke-width: 2.0;" width="555" x="13" y="454.7344"></rect>
+                              <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="81" x="28" y="469.2295">Update team</text>
+                              <polygon fill="#A80036" points="253,491.0859,263,495.0859,253,499.0859,257,495.0859" style="stroke: #A80036; stroke-width: 1.0;"></polygon>
+                              <line style="stroke: #A80036; stroke-width: 1.0;" x1="56" x2="259" y1="495.0859" y2="495.0859"></line>
+                              <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="147" x="63" y="490.5811">"Add new Team member"</text>
+                              <polygon fill="#A80036" points="447,537.4375,457,541.4375,447,545.4375,451,541.4375" style="stroke: #A80036; stroke-width: 1.0;"></polygon>
+                              <line style="stroke: #A80036; stroke-width: 1.0;" x1="265" x2="453" y1="541.4375" y2="541.4375"></line>
+                              <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="136" x="272" y="520.9326">"Propose updated team</text><a target="_top" xlink:actuate="onRequest" xlink:href="#teampiet1" xlink:show="new" xlink:title="#teampiet1" xlink:type="simple">
+                                 <text fill="#0000FF" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="66" x="272" y="537.2842">CareTeam1</text>
+                                 <line style="stroke: #0000FF; stroke-width: 1.0;" x1="272" x2="338" y1="539.2842" y2="539.2842"></line></a><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="5" x="338" y="537.2842">"</text>
+                              <line style="stroke: #A80036; stroke-width: 1.0;" x1="459" x2="501" y1="572.4922" y2="572.4922"></line>
+                              <line style="stroke: #A80036; stroke-width: 1.0;" x1="501" x2="501" y1="572.4922" y2="585.4922"></line>
+                              <line style="stroke: #A80036; stroke-width: 1.0;" x1="460" x2="501" y1="585.4922" y2="585.4922"></line>
+                              <polygon fill="#A80036" points="470,581.4922,460,585.4922,470,589.4922,466,585.4922" style="stroke: #A80036; stroke-width: 1.0;"></polygon>
+                              <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="90" x="466" y="567.6357">"Validate team"</text>
+                              <polygon fill="#A80036" points="276,611.4922,266,615.4922,276,619.4922,272,615.4922" style="stroke: #A80036; stroke-width: 1.0;"></polygon>
+                              <line style="stroke: #A80036; stroke-width: 1.0;" x1="270" x2="458" y1="615.4922" y2="615.4922"></line>
+                              <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="135" x="282" y="610.9873">"Return validated team"</text>
+                              <polygon fill="#A80036" points="67,641.8438,57,645.8438,67,649.8438,63,645.8438" style="stroke: #A80036; stroke-width: 1.0;"></polygon>
+                              <line style="stroke: #A80036; stroke-width: 1.0;" x1="61" x2="264" y1="645.8438" y2="645.8438"></line>
+                              <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="149" x="73" y="641.3389">"Show team composition"</text>
+                              <!--
+@startuml
+title Process
+
+actor "Physician" as dragon
+participant "Care Planning app" as planner
+participant "DZOP" as dzop
+
+    
+title Process
+    
+    
+    dragon-> planner : "Query team members"
+
+
+    planner-> dzop : "Request List of Pracitioners"
+
+
+    planner-> dragon : "Show possible team members"
+
+
+    
+group Propose team
+dragon-> planner : "Select team members"
+
+planner-> dzop : "Propose CareTeam \n[[#teampiet1 CareTeam1]]"
+
+dzop-> dzop : "Validate team"
+
+dzop-> planner : "Return validated team \n[[#teampiet1 CareTeam1]]"
+
+end
+
+    
+...
+
+
+    
+group Update team
+dragon-> planner : "Add new Team member"
+
+planner-> dzop : "Propose updated team \n[[#teampiet1 CareTeam1]]"
+
+dzop-> dzop : "Validate team"
+
+dzop-> planner : "Return validated team"
+
+planner-> dragon : "Show team composition"
+
+end
+
+  
+@enduml
+
+PlantUML version 1.2018.01(Sun Jan 28 18:08:22 GMT 2018)
+(APACHE source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Java Version: 1.8.0_231-b11
+Operating System: Windows 10
+OS Version: 10.0
+Default Encoding: Cp1252
+Language: en
+Country: GB
+-->
+                           </g>
+                        </svg>
+                     </div>
+                     <div id="details" class="tab-pane fade">
+                        <h2><a name="details"></a>
+                           																Details
+                           															
+                        </h2>
+                        <div>
+                           <table class="cols">
+                              <tr>
+                                 <td>
+                                    																			Publisher: (link?)
+                                    																			
+                                 </td>
+                                 <td><a href="versions.html#maturity">Status</a>
+                                    																			:
+                                    																			draft
+                                 </td>
+                                 <td><a href="versions.html#maturity">Experimental</a>
+                                    																			:
+                                    																			false
+                                 </td>
+                                 <td><a href="versions.html#maturity">Copyright</a>
+                                    																			:
+                                    																			
+                                 </td>
+                              </tr>
+                           </table>
+                           <table class="cols">
+                              <tr>
+                                 <td><a href="versions.html#maturity">Purpose</a>
+                                    																			:
+                                    																			
+                                 </td>
+                              </tr>
+                           </table>
+                           <p></p>
+                           <p></p>
+                        </div>
+                        <div>
+                           <h3><a name="Actors"></a>
+                              																	Actors
+                              																
+                           </h3>
+                           <table class="grid">
+                              <tbody>
+                                 <tr>
+                                    <th>Name</th>
+                                    <th>Type</th>
+                                    <th>Description</th>
+                                 </tr>
+                                 <tr xmlns="">
+                                    <td><b>Physician</b></td>
+                                    <td>person</td>
+                                    <td></td>
+                                 </tr>
+                                 <tr xmlns="">
+                                    <td><b>Care Planning app</b></td>
+                                    <td>entity</td>
+                                    <td></td>
+                                 </tr>
+                                 <tr xmlns="">
+                                    <td><b>DZOP</b></td>
+                                    <td>entity</td>
+                                    <td></td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <p></p>
+                           <p></p>
+                        </div>
+                        <div>
+                           <h3><a name="flow"></a>
+                              																	Process Flow -
+                              																	
+                           </h3>
+                           <div xmlns="" class="container">
+                              <div>
+                                 <div>Main Flow</div>
+                                 <table class="cols">
+                                    <tbody>
+                                       <tr>
+                                          <th>Step</th>
+                                          <th>Description</th>
+                                          <th>Operation</th>
+                                          <th>Request</th>
+                                          <th>Response</th>
+                                          <th>z</th>
+                                          <th>x</th>
+                                          <th>x</th>
+                                          <th>x</th>
+                                       </tr>
+                                       <tr><a href="#1"></a><td><a name="p2">Query team members</a></td>
+                                          <td></td>
+                                          <td>
+                                             		RQ:<b>Request</b>
+                                             		(
+                                             		planner
+                                             		-
+                                             		dragon
+                                             		):
+                                             		<br></td>
+                                          <td>
+                                             		RP:
+                                          </td>
+                                       </tr>
+                                       <tr><a href="#2"></a><td><a name="p2">Request List of Pracitioners</a></td>
+                                          <td></td>
+                                          <td>
+                                             		RQ:<b>Request</b>
+                                             		(
+                                             		dzop
+                                             		-
+                                             		planner
+                                             		):
+                                             		<br></td>
+                                          <td>
+                                             		RP:
+                                          </td>
+                                       </tr>
+                                       <tr><a href="#3"></a><td><a name="p2">Show possible team members</a></td>
+                                          <td></td>
+                                          <td>
+                                             		RQ:<b>Request</b>
+                                             		(
+                                             		dragon
+                                             		-
+                                             		planner
+                                             		):
+                                             		<br></td>
+                                          <td>
+                                             		RP:
+                                          </td>
+                                       </tr>
+                                       <tr><a href="#4"></a></tr>
+                                       <tr><a href="#5"></a></tr>
+                                       <tr><a href="#6"></a></tr>
+                                    </tbody>
+                                 </table>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div id="resources" class="tab-pane fade">
+                        <h3>Resources</h3>
+                        <h2>Resources</h2>
+                        <p xmlns=""></p>
+                        <h3 xmlns="">CareTeam</h3>
+                        <table xmlns="" class="grid">
+                           <tbody>
+                              <tr>
+                                 <th>Artifact</th>
+                                 <th>Version</th>
+                                 <th>Description</th>
+                                 <th>Created by step</th>
+                                 <th>Creating actor</th>
+                              </tr>
+                              <tr>
+                                 <td rowspan="4"><a name="" href="../fhir:examples/"><b>CareTeam1</b></a></td>
+                                 <td>
+                                    (3)
+                                    			
+                                 </td>
+                                 <td><b></b></td>
+                                 <td colspan="3"></td>
+                              </tr>
+                              <tr>
+                                 <td>v1</td>
+                                 <td></td>
+                              </tr>
+                              <tr>
+                                 <td>v2</td>
+                                 <td></td>
+                              </tr>
+                              <tr>
+                                 <td>v3</td>
+                                 <td></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <p xmlns=""></p>
+                        <h3 xmlns="">Location</h3>
+                        <table xmlns="" class="grid">
+                           <tbody>
+                              <tr>
+                                 <th>Artifact</th>
+                                 <th>Version</th>
+                                 <th>Description</th>
+                                 <th>Created by step</th>
+                                 <th>Creating actor</th>
+                              </tr>
+                              <tr>
+                                 <td rowspan="1"><a name="" href="../fhir:examples/"><b>Practtioner List</b></a></td>
+                                 <td>
+                                    (0)
+                                    			
+                                 </td>
+                                 <td><b></b></td>
+                                 <td colspan="3"></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
