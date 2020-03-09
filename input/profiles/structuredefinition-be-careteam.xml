@@ -36,6 +36,23 @@
       <path value="CareTeam.participant" />
       <mustSupport value="true" />
     </element>
+    <element id="CareTeam.participant.member">
+      <path value="CareTeam.participant.member" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient" />
+        <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner" />
+        <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization" />
+        <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careteam" />
+      </type>
+    </element>
+    <element id="CareTeam.participant.onBehalfOf">
+      <path value="CareTeam.participant.onBehalfOf" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization" />
+      </type>
+    </element>
     <element id="CareTeam.note">
       <path value="CareTeam.note" />
       <mustSupport value="true" />

@@ -11,20 +11,20 @@
                   </ul>
                   <div class="tab-content">
                      <div id="sequence" class="tab-pane fade in active">
-                        <h3><a name="description"></a>
+                        <h4><a name="description"></a>
                            																Description
                            															
-                        </h3>
+                        </h4>
                         <p></p>
-                        <h4><a name="preconditions"></a>
+                        <h5><a name="preconditions"></a>
                            																Pre-Conditions
                            															
-                        </h4>
+                        </h5>
                         <p>No care team is assigned to Patient Piet</p>
-                        <h4><a name="postconditions"></a>
+                        <h5><a name="postconditions"></a>
                            																Post Conditions
                            															
-                        </h4>
+                        </h5>
                         <p>A team is formally assigned to Patient Piet</p>
                         <p></p>
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="759px" preserveAspectRatio="none" style="width:579px;height:759px;" version="1.1" viewBox="0 0 579 759" width="579px" zoomAndPan="magnify">
@@ -169,7 +169,7 @@ end
   
 @enduml
 
-PlantUML version 1.2018.01(Sun Jan 28 18:08:22 GMT 2018)
+PlantUML version 1.2018.01(Sun Jan 28 19:08:22 CET 2018)
 (APACHE source distribution)
 Java Runtime: Java(TM) SE Runtime Environment
 JVM: Java HotSpot(TM) 64-Bit Server VM
@@ -184,10 +184,10 @@ Country: GB
                         </svg>
                      </div>
                      <div id="details" class="tab-pane fade">
-                        <h2><a name="details"></a>
+                        <h3><a name="details"></a>
                            																Details
                            															
-                        </h2>
+                        </h3>
                         <div>
                            <table class="cols">
                               <tr>
@@ -221,10 +221,10 @@ Country: GB
                            <p></p>
                         </div>
                         <div>
-                           <h3><a name="Actors"></a>
+                           <h4><a name="Actors"></a>
                               																	Actors
                               																
-                           </h3>
+                           </h4>
                            <table class="grid">
                               <tbody>
                                  <tr>
@@ -232,17 +232,17 @@ Country: GB
                                     <th>Type</th>
                                     <th>Description</th>
                                  </tr>
-                                 <tr xmlns="">
+                                 <tr>
                                     <td><b>Physician</b></td>
                                     <td>person</td>
                                     <td></td>
                                  </tr>
-                                 <tr xmlns="">
+                                 <tr>
                                     <td><b>Care Planning app</b></td>
                                     <td>entity</td>
                                     <td></td>
                                  </tr>
-                                 <tr xmlns="">
+                                 <tr>
                                     <td><b>DZOP</b></td>
                                     <td>entity</td>
                                     <td></td>
@@ -253,11 +253,11 @@ Country: GB
                            <p></p>
                         </div>
                         <div>
-                           <h3><a name="flow"></a>
+                           <h4><a name="flow"></a>
                               																	Process Flow -
                               																	
-                           </h3>
-                           <div xmlns="" class="container">
+                           </h4>
+                           <div class="container">
                               <div>
                                  <div>Main Flow</div>
                                  <table class="cols">
@@ -282,7 +282,8 @@ Country: GB
                                              		-
                                              		dragon
                                              		):
-                                             		<br></td>
+                                             		
+                                          </td>
                                           <td>
                                              		RP:
                                           </td>
@@ -296,7 +297,8 @@ Country: GB
                                              		-
                                              		planner
                                              		):
-                                             		<br></td>
+                                             		
+                                          </td>
                                           <td>
                                              		RP:
                                           </td>
@@ -310,7 +312,8 @@ Country: GB
                                              		-
                                              		planner
                                              		):
-                                             		<br></td>
+                                             		
+                                          </td>
                                           <td>
                                              		RP:
                                           </td>
@@ -325,64 +328,70 @@ Country: GB
                         </div>
                      </div>
                      <div id="resources" class="tab-pane fade">
-                        <h3>Resources</h3>
-                        <h2>Resources</h2>
-                        <p xmlns=""></p>
-                        <h3 xmlns="">CareTeam</h3>
-                        <table xmlns="" class="grid">
-                           <tbody>
-                              <tr>
-                                 <th>Artifact</th>
-                                 <th>Version</th>
-                                 <th>Description</th>
-                                 <th>Created by step</th>
-                                 <th>Creating actor</th>
-                              </tr>
-                              <tr>
-                                 <td rowspan="4"><a name="" href="../fhir:examples/"><b>CareTeam1</b></a></td>
-                                 <td>
-                                    (3)
-                                    			
-                                 </td>
-                                 <td><b></b></td>
-                                 <td colspan="3"></td>
-                              </tr>
-                              <tr>
-                                 <td>v1</td>
-                                 <td></td>
-                              </tr>
-                              <tr>
-                                 <td>v2</td>
-                                 <td></td>
-                              </tr>
-                              <tr>
-                                 <td>v3</td>
-                                 <td></td>
-                              </tr>
-                           </tbody>
-                        </table>
-                        <p xmlns=""></p>
-                        <h3 xmlns="">Location</h3>
-                        <table xmlns="" class="grid">
-                           <tbody>
-                              <tr>
-                                 <th>Artifact</th>
-                                 <th>Version</th>
-                                 <th>Description</th>
-                                 <th>Created by step</th>
-                                 <th>Creating actor</th>
-                              </tr>
-                              <tr>
-                                 <td rowspan="1"><a name="" href="../fhir:examples/"><b>Practtioner List</b></a></td>
-                                 <td>
-                                    (0)
-                                    			
-                                 </td>
-                                 <td><b></b></td>
-                                 <td colspan="3"></td>
-                              </tr>
-                           </tbody>
-                        </table>
+                        <h3><a name="resources"></a>
+                           																Resources
+                           															
+                        </h3>
+                        <div>
+                           <p></p>
+                           <h4>CareTeam</h4>
+                           <table class="grid">
+                              <tbody>
+                                 <tr>
+                                    <th>Artifact</th>
+                                    <th>Version</th>
+                                    <th>Description</th>
+                                    <th>Created by step</th>
+                                    <th>Creating actor</th>
+                                 </tr>
+                                 <tr>
+                                    <td rowspan="4"><a name="" href="../fhir:examples/"><b>CareTeam1</b></a></td>
+                                    <td>
+                                       (3)
+                                       			
+                                    </td>
+                                    <td><b></b></td>
+                                    <td colspan="3"></td>
+                                 </tr>
+                                 <tr>
+                                    <td>v1</td>
+                                    <td></td>
+                                 </tr>
+                                 <tr>
+                                    <td>v2</td>
+                                    <td></td>
+                                 </tr>
+                                 <tr>
+                                    <td>v3</td>
+                                    <td></td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </div>
+                        <div>
+                           <p></p>
+                           <h4>Location</h4>
+                           <table class="grid">
+                              <tbody>
+                                 <tr>
+                                    <th>Artifact</th>
+                                    <th>Version</th>
+                                    <th>Description</th>
+                                    <th>Created by step</th>
+                                    <th>Creating actor</th>
+                                 </tr>
+                                 <tr>
+                                    <td rowspan="1"><a name="" href="../fhir:examples/"><b>Practtioner List</b></a></td>
+                                    <td>
+                                       (0)
+                                       			
+                                    </td>
+                                    <td><b></b></td>
+                                    <td colspan="3"></td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </div>
                      </div>
                   </div>
                </div>

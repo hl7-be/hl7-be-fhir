@@ -854,12 +854,12 @@
 			<title value="Use Cases"/>
 			<generation value="html"/>
 			  <page>
-				<nameUrl value="examplescenario-usecase1.html"/>
+				<nameUrl value="scenario-communication.html"/>
 				<title value="Use Case 1 - Communication"/>
 				<generation value="html"/>
 			  </page>
-			  <page>
-				<nameUrl value="examplescenario-usecase2.html"/>
+	    	  <page>
+				<nameUrl value="scenario-careteam.html"/>
 				<title value="Use Case 2 - CareTeam"/>
 				<generation value="html"/>
 			  </page>

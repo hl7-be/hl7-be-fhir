@@ -35,16 +35,28 @@
     </element>
     <element id="CarePlan.basedOn">
       <path value="CarePlan.basedOn" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careplan" />
+      </type>
       <mustSupport value="true" />
     </element>
     <element id="CarePlan.replaces">
       <path value="CarePlan.replaces" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careplan" />
+      </type>
       <mustSupport value="true" />
     </element>
     <element id="CarePlan.partOf">
       <path value="CarePlan.partOf" />
       <definition value="Another care plan of which this particular care plan is a component or step.&#xD;&#xA;Initially we start with 1 umbrella plan, but we want to evolve to include subplans (e.g. specialities) so we include this." />
-      <comment value="Each care plan is an independent request, such that having a care plan be part of another care plan can cause issues with cascading statuses.&#xD;&#xA;" />
+      <comment value="Each care plan is an independent request, such that having a care plan be part of another care plan can cause issues with cascading statuses." />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careplan" />
+      </type>
       <mustSupport value="true" />
     </element>
     <element id="CarePlan.status">
@@ -91,9 +103,21 @@
     <element id="CarePlan.author">
       <path value="CarePlan.author" />
       <mustSupport value="true" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient" />
+        <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner" />
+        <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitionerrole" />
+        <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization" />
+        <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careteam" />
+      </type>
     </element>
     <element id="CarePlan.careTeam">
       <path value="CarePlan.careTeam" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careteam" />
+      </type>
       <mustSupport value="true" />
     </element>
     <element id="CarePlan.goal">
@@ -150,6 +174,14 @@
     </element>
     <element id="CarePlan.activity.detail.performer">
       <path value="CarePlan.activity.detail.performer" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient" />
+        <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner" />
+        <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitionerrole" />
+        <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization" />
+        <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careteam" />
+      </type>
       <mustSupport value="true" />
     </element>
     <element id="CarePlan.activity.detail.description">
