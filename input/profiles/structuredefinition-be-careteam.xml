@@ -44,6 +44,7 @@
         <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner" />
         <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization" />
         <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careteam" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
       </type>
     </element>
     <element id="CareTeam.participant.onBehalfOf">
