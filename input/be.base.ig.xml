@@ -69,6 +69,10 @@
       <name value="Terminology"/>
       <description value="Terminology resources - ValueSets and CodeSystems"/>
     </grouping>
+    <grouping id="extensions">
+      <name value="Extensions"/>
+      <description value="Extensions"/>
+    </grouping>
     <grouping id="capstatements">
       <name value="Capability Statements"/>
       <description value="Capability Statements"/>
@@ -150,6 +154,19 @@
       <description value="String wih max 320 characters"/>
       <groupingId value="datatypes"/>
     </resource>
+	
+<!--
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/be-observationCodeableConcept"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Observation - CodeableConcept"/>
+      <description value="Observation - CodeableConcept"/>
+      <groupingId value="datatypes"/>
+    </resource>
+-->		
+
 	
     <resource>
       <reference>
@@ -252,7 +269,6 @@
     </resource>
 
 
-	
     <resource>
       <reference>
         <reference value="ValueSet/be-contactperson"/>
@@ -417,9 +433,7 @@
       <description value="DZOP"/>
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization"/>
 
-<!--
-      <exampleBoolean value="true"/>
--->
+
     </resource>
 
 
@@ -750,6 +764,35 @@
     </resource>
 
 
+<!-- Extensions 
+    <resource>
+      <reference>
+         <reference value="StructureDefinition/iso21090-ADXP-houseNumber"/>
+      </reference>
+      <name value="House Number"/>
+      <description value="House Number - standard extension"/>
+      <groupingId value="extensions"/> 
+    </resource>
+
+    <resource>
+      <reference>
+         <reference value="StructureDefinition/iso21090-ADXP-postBox"/>
+      </reference>
+      <name value="Post Box"/>
+      <description value="Post Box - standard extension"/>
+      <groupingId value="extensions"/> 
+    </resource>
+
+    <resource>
+      <reference>
+         <reference value="StructureDefinition/iso21090-ADXP-streetName"/>
+      </reference>
+      <name value="Street Name"/>
+      <description value="Street Name - standard extension"/>
+      <groupingId value="extensions"/> 
+    </resource>
+-->
+
 <!--
     <resource>
       <reference>
@@ -822,7 +865,7 @@
 		  </page>
 		  <page>
 			<nameUrl value="artifacttypes.html"/>
-			<title value="Types od artifacts"/>
+			<title value="Types of artifacts"/>
 			<generation value="html"/>
 		  </page>
 		  <page>

@@ -30,7 +30,7 @@
 	"sent": "2019-11-11T08:01:00+01:00",
 	"recipient": [
 		{
-			"reference": "CareTeam/dzop-team-0002-v1",
+			"reference": "CareTeam/dzop-team-0002.v2",
 			"display": "Care Team"
 		}
 	],
