@@ -70,6 +70,17 @@
       }
     }
   ],
+  "goal": [
+    {
+      "display":"Diabetes management for Patient Pia"
+    },
+    {
+      "display":"Depression recovery"
+    },
+    {
+      "display":"Restore family connections"
+    }
+  ],
   "activity": [
     {
       "progress": [
