@@ -1,0 +1,396 @@
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fhir="http://hl7.org/fhir" xsi:schemaLocation="http://hl7.org/fhir ../../../../schema/fhir-single.xsd">
+   <div id="segment-content" class="segment">
+      <div class="container">
+         <div class="row">
+            <div class="inner-wrapper">
+               <div class="col-12">
+                  <ul class="nav nav-tabs">
+                     <li class="active"><a data-toggle="tab" href="#sequence">Sequence</a></li>
+                     <li><a data-toggle="tab" href="#details">Details</a></li>
+                     <li><a data-toggle="tab" href="#resources">Resources</a></li>
+                  </ul>
+                  <div class="tab-content">
+                     <div id="sequence" class="tab-pane fade in active">
+                        <h4><a name="description"></a>
+                           																Description
+                           															
+                        </h4>
+                        <p></p>
+                        <h5><a name="preconditions"></a>
+                           																Pre-Conditions
+                           															
+                        </h5>
+                        <p>precondition</p>
+                        <h5><a name="postconditions"></a>
+                           																Post Conditions
+                           															
+                        </h5>
+                        <p>post status</p>
+                        <p></p>
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="496px" preserveAspectRatio="none" style="width:459px;height:496px;" version="1.1" viewBox="0 0 459 496" width="459px" zoomAndPan="magnify">
+                           <defs>
+                              <filter height="300%" id="f1ky2t5xg40agy" width="300%" x="-1" y="-1">
+                                 <feGaussianBlur result="blurOut" stdDeviation="2.0"></feGaussianBlur>
+                                 <feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"></feColorMatrix>
+                                 <feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"></feOffset>
+                                 <feBlend in="SourceGraphic" in2="blurOut3" mode="normal"></feBlend>
+                              </filter>
+                           </defs>
+                           <g>
+                              <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="202" x="129.5" y="24.5332">Allergy Intolerance Use Case</text>
+                              <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="44" x2="44" y1="136.8281" y2="390.3438"></line>
+                              <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="254" x2="254" y1="136.8281" y2="390.3438"></line>
+                              <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="415" x2="415" y1="136.8281" y2="390.3438"></line>
+                              <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="66" x="8" y="116.1426">Dr. Durant</text>
+                              <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="30" x="26" y="133.752">(GP)</text>
+                              <ellipse cx="44" cy="44.6094" fill="#FEFECE" filter="url(#f1ky2t5xg40agy)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"></ellipse>
+                              <path d="M44,52.6094 L44,79.6094 M31,60.6094 L57,60.6094 M44,79.6094 L31,94.6094 M44,79.6094 L57,94.6094 " fill="none" filter="url(#f1ky2t5xg40agy)" style="stroke: #A80036; stroke-width: 2.0;"></path>
+                              <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="66" x="8" y="403.877">Dr. Durant</text>
+                              <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="30" x="26" y="421.4863">(GP)</text>
+                              <ellipse cx="44" cy="434.5625" fill="#FEFECE" filter="url(#f1ky2t5xg40agy)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"></ellipse>
+                              <path d="M44,442.5625 L44,469.5625 M31,450.5625 L57,450.5625 M44,469.5625 L31,484.5625 M44,469.5625 L57,484.5625 " fill="none" filter="url(#f1ky2t5xg40agy)" style="stroke: #A80036; stroke-width: 2.0;"></path>
+                              <rect fill="#FEFECE" filter="url(#f1ky2t5xg40agy)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="46" x="229" y="100.2188"></rect>
+                              <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="32" x="236" y="121.752">Vault</text>
+                              <rect fill="#FEFECE" filter="url(#f1ky2t5xg40agy)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="46" x="229" y="389.3438"></rect>
+                              <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="32" x="236" y="410.877">Vault</text>
+                              <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="63" x="380.5" y="116.1426">Dr. Lenoir</text>
+                              <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="70" x="377" y="133.752">(Specialist)</text>
+                              <ellipse cx="415" cy="44.6094" fill="#FEFECE" filter="url(#f1ky2t5xg40agy)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"></ellipse>
+                              <path d="M415,52.6094 L415,79.6094 M402,60.6094 L428,60.6094 M415,79.6094 L402,94.6094 M415,79.6094 L428,94.6094 " fill="none" filter="url(#f1ky2t5xg40agy)" style="stroke: #A80036; stroke-width: 2.0;"></path>
+                              <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="63" x="380.5" y="403.877">Dr. Lenoir</text>
+                              <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="70" x="377" y="421.4863">(Specialist)</text>
+                              <ellipse cx="415" cy="434.5625" fill="#FEFECE" filter="url(#f1ky2t5xg40agy)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"></ellipse>
+                              <path d="M415,442.5625 L415,469.5625 M402,450.5625 L428,450.5625 M415,469.5625 L402,484.5625 M415,469.5625 L428,484.5625 " fill="none" filter="url(#f1ky2t5xg40agy)" style="stroke: #A80036; stroke-width: 2.0;"></path>
+                              <polygon fill="#A80036" points="242,180.8281,252,184.8281,242,188.8281,246,184.8281" style="stroke: #A80036; stroke-width: 1.0;"></polygon>
+                              <line style="stroke: #A80036; stroke-width: 1.0;" x1="44" x2="248" y1="184.8281" y2="184.8281"></line>
+                              <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="125" x="51" y="164.3232">Get patient's allergies</text><a target="_top" xlink:actuate="onRequest" xlink:href="#EB" xlink:show="new" xlink:title="#EB" xlink:type="simple">
+                                 <text fill="#0000FF" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="82" x="51" y="180.6748">Empty Bundle</text>
+                                 <line style="stroke: #0000FF; stroke-width: 1.0;" x1="51" x2="133" y1="182.6748" y2="182.6748"></line></a><polygon fill="#A80036" points="242,227.5313,252,231.5313,242,235.5313,246,231.5313" style="stroke: #A80036; stroke-width: 1.0;"></polygon>
+                              <line style="stroke: #A80036; stroke-width: 1.0;" x1="44" x2="248" y1="231.5313" y2="231.5313"></line>
+                              <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="182" x="51" y="211.0264">Create new Allergy record entry</text><a target="_top" xlink:actuate="onRequest" xlink:href="#noel-allergy.v0" xlink:show="new" xlink:title="#noel-allergy.v0" xlink:type="simple">
+                                 <text fill="#0000FF" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="85" x="51" y="227.3779">Allergy Record</text>
+                                 <line style="stroke: #0000FF; stroke-width: 1.0;" x1="51" x2="136" y1="229.3779" y2="229.3779"></line></a><polygon fill="#A80036" points="265,274.2344,255,278.2344,265,282.2344,261,278.2344" style="stroke: #A80036; stroke-width: 1.0;"></polygon>
+                              <line style="stroke: #A80036; stroke-width: 1.0;" x1="259" x2="414" y1="278.2344" y2="278.2344"></line>
+                              <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="125" x="271" y="257.7295">Get patient's allergies</text><a target="_top" xlink:actuate="onRequest" xlink:href="#noel-allergy.v0" xlink:show="new" xlink:title="#noel-allergy.v0" xlink:type="simple">
+                                 <text fill="#0000FF" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="85" x="271" y="274.0811">Allergy Record</text>
+                                 <line style="stroke: #0000FF; stroke-width: 1.0;" x1="271" x2="356" y1="276.0811" y2="276.0811"></line></a><polygon fill="#A80036" points="265,320.9375,255,324.9375,265,328.9375,261,324.9375" style="stroke: #A80036; stroke-width: 1.0;"></polygon>
+                              <line style="stroke: #A80036; stroke-width: 1.0;" x1="259" x2="414" y1="324.9375" y2="324.9375"></line>
+                              <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="125" x="271" y="304.4326">Update Allergy record</text><a target="_top" xlink:actuate="onRequest" xlink:href="#noel-allergy.v1" xlink:show="new" xlink:title="#noel-allergy.v1" xlink:type="simple">
+                                 <text fill="#0000FF" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="137" x="271" y="320.7842">Updated Allergy Record</text>
+                                 <line style="stroke: #0000FF; stroke-width: 1.0;" x1="271" x2="408" y1="322.7842" y2="322.7842"></line></a><polygon fill="#A80036" points="242,367.6406,252,371.6406,242,375.6406,246,371.6406" style="stroke: #A80036; stroke-width: 1.0;"></polygon>
+                              <line style="stroke: #A80036; stroke-width: 1.0;" x1="44" x2="248" y1="371.6406" y2="371.6406"></line>
+                              <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="125" x="51" y="351.1357">Get patient's allergies</text><a target="_top" xlink:actuate="onRequest" xlink:href="#noel-allergy.v1" xlink:show="new" xlink:title="#noel-allergy.v1" xlink:type="simple">
+                                 <text fill="#0000FF" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="137" x="51" y="367.4873">Updated Allergy Record</text>
+                                 <line style="stroke: #0000FF; stroke-width: 1.0;" x1="51" x2="188" y1="369.4873" y2="369.4873"></line></a>
+                              <!--
+@startuml
+title Allergy Intolerance Use Case
+
+actor "Dr. Durant\n(GP)" as GP
+participant "Vault" as VAULT
+actor "Dr. Lenoir\n(Specialist)" as SPEC
+
+    
+title Allergy Intolerance Use Case
+    
+    
+    
+
+    GP-> VAULT : Get patient's allergies\n[[#EB Empty Bundle]]
+
+
+
+
+    GP-> VAULT : Create new Allergy record entry \n[[#noel-allergy.v0 Allergy Record]]
+
+
+
+    SPEC-> VAULT : Get patient's allergies\n[[#noel-allergy.v0 Allergy Record]]
+
+
+
+
+    SPEC-> VAULT : Update Allergy record \n[[#noel-allergy.v1 Updated Allergy Record]]
+
+
+
+    GP-> VAULT : Get patient's allergies\n[[#noel-allergy.v1 Updated Allergy Record]]
+
+
+
+
+
+  
+@enduml
+
+PlantUML version 1.2018.01(Sun Jan 28 19:08:22 CET 2018)
+(APACHE source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Java Version: 1.8.0_231-b11
+Operating System: Windows 10
+OS Version: 10.0
+Default Encoding: Cp1252
+Language: en
+Country: GB
+--></g>
+                        </svg>
+                     </div>
+                     <div id="details" class="tab-pane fade">
+                        <h3><a name="details"></a>
+                           																Details
+                           															
+                        </h3>
+                        <div>
+                           <table class="cols">
+                              <tr>
+                                 <td>
+                                    																			Publisher: (link?)
+                                    																			DZOP
+                                 </td>
+                                 <td><a>Status</a>
+                                    																			:
+                                    																			draft
+                                 </td>
+                              </tr>
+                           </table>
+                           <table class="cols">
+                              <tr>
+                                 <td><a href="#maturity">Purpose</a>
+                                    																			:
+                                    																			
+                                 </td>
+                              </tr>
+                           </table>
+                           <p></p>
+                           <p></p>
+                        </div>
+                        <div>
+                           <h4><a name="Actors"></a>
+                              																	Actors
+                              																
+                           </h4>
+                           <table class="grid">
+                              <tbody>
+                                 <tr>
+                                    <th>Name</th>
+                                    <th>Type</th>
+                                    <th>Description</th>
+                                 </tr>
+                                 <tr>
+                                    <td><b>Dr. Durant\n(GP)</b></td>
+                                    <td>person</td>
+                                    <td></td>
+                                 </tr>
+                                 <tr>
+                                    <td><b>Vault</b></td>
+                                    <td>entity</td>
+                                    <td></td>
+                                 </tr>
+                                 <tr>
+                                    <td><b>Dr. Lenoir\n(Specialist)</b></td>
+                                    <td>person</td>
+                                    <td></td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <p></p>
+                           <p></p>
+                        </div>
+                        <div>
+                           <h4><a name="flow"></a>
+                              																	Process Flow -
+                              																	description
+                           </h4>
+                           <div class="container">
+                              <div>
+                                 <div>Main Flow</div>
+                                 <table class="cols">
+                                    <tbody>
+                                       <tr>
+                                          <th>Step</th>
+                                          <th>Description</th>
+                                          <th>Operation</th>
+                                          <th>Request</th>
+                                          <th>Response</th>
+                                          <th>z</th>
+                                          <th>x</th>
+                                          <th>x</th>
+                                          <th>x</th>
+                                       </tr>
+                                       <tr><a href="#1"></a><td><a name="p2">Get patient's allergies</a></td>
+                                          <td></td>
+                                          <td>
+                                             		RQ:<b>Request</b>
+                                             		(
+                                             		VAULT
+                                             		-
+                                             		GP
+                                             		):
+                                             		
+                                          </td>
+                                          <td>
+                                             		RP:<b xmlns="">Response</b>
+                                             		(
+                                             		VAULT
+                                             		-
+                                             		GP
+                                             		):
+                                             		<a href="#EB">Empty Bundle</a></td>
+                                       </tr>
+                                       <tr><a href="#2"></a><td><a name="p2">Create new Allergy record entry</a></td>
+                                          <td></td>
+                                          <td>
+                                             		RQ:<b>Request</b>
+                                             		(
+                                             		VAULT
+                                             		-
+                                             		GP
+                                             		):
+                                             		<a href="#noel-allergy.v0">Allergy Record</a></td>
+                                          <td>
+                                             		RP:<b xmlns="">Response</b>
+                                             		(
+                                             		VAULT
+                                             		-
+                                             		GP
+                                             		):
+                                             		
+                                          </td>
+                                       </tr>
+                                       <tr><a href="#3"></a><td><a name="p2">Get patient's allergies</a></td>
+                                          <td></td>
+                                          <td>
+                                             		RQ:<b>Request</b>
+                                             		(
+                                             		VAULT
+                                             		-
+                                             		SPEC
+                                             		):
+                                             		
+                                          </td>
+                                          <td>
+                                             		RP:<b xmlns="">Response</b>
+                                             		(
+                                             		VAULT
+                                             		-
+                                             		SPEC
+                                             		):
+                                             		<a href="#noel-allergy.v0">Allergy Record</a></td>
+                                       </tr>
+                                       <tr><a href="#4"></a><td><a name="p2">Update Allergy record</a></td>
+                                          <td></td>
+                                          <td>
+                                             		RQ:<b>Request</b>
+                                             		(
+                                             		VAULT
+                                             		-
+                                             		SPEC
+                                             		):
+                                             		<a href="#noel-allergy.v1">Updated Allergy Record</a></td>
+                                          <td>
+                                             		RP:<b xmlns="">Response</b>
+                                             		(
+                                             		VAULT
+                                             		-
+                                             		SPEC
+                                             		):
+                                             		
+                                          </td>
+                                       </tr>
+                                       <tr><a href="#5"></a><td><a name="p2">Get patient's allergies</a></td>
+                                          <td></td>
+                                          <td>
+                                             		RQ:<b>Request</b>
+                                             		(
+                                             		VAULT
+                                             		-
+                                             		GP
+                                             		):
+                                             		
+                                          </td>
+                                          <td>
+                                             		RP:<b xmlns="">Response</b>
+                                             		(
+                                             		VAULT
+                                             		-
+                                             		GP
+                                             		):
+                                             		<a href="#noel-allergy.v1">Updated Allergy Record</a></td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div id="resources" class="tab-pane fade">
+                        <h3><a name="resources"></a>
+                           																Resources
+                           															
+                        </h3>
+                        <div>
+                           <p></p>
+                           <h4>AllergyIntolerance</h4>
+                           <table class="grid">
+                              <tbody>
+                                 <tr>
+                                    <th>Artifact</th>
+                                    <th>Version</th>
+                                    <th>Description</th>
+                                    <th>Created by step</th>
+                                    <th>Creating actor</th>
+                                 </tr>
+                                 <tr>
+                                    <td rowspan="1"><a name="noel-allergy.v0" href="AllergyIntolerance-noel-allergy.v0.html"><b>Allergy Record</b></a></td>
+                                    <td>
+                                       (0)
+                                       			
+                                    </td>
+                                    <td><b></b></td>
+                                    <td colspan="3"></td>
+                                 </tr>
+                                 <tr>
+                                    <td rowspan="1"><a name="noel-allergy.v1" href="AllergyIntolerance-noel-allergy.v1.html"><b>Updated Allergy Record</b></a></td>
+                                    <td>
+                                       (0)
+                                       			
+                                    </td>
+                                    <td><b></b></td>
+                                    <td colspan="3"></td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </div>
+                        <div>
+                           <p></p>
+                           <h4>Bundle</h4>
+                           <table class="grid">
+                              <tbody>
+                                 <tr>
+                                    <th>Artifact</th>
+                                    <th>Version</th>
+                                    <th>Description</th>
+                                    <th>Created by step</th>
+                                    <th>Creating actor</th>
+                                 </tr>
+                                 <tr>
+                                    <td rowspan="1"><a name="EB" href="Bundle-EB.html"><b>Empty Bundle</b></a></td>
+                                    <td>
+                                       (0)
+                                       			
+                                    </td>
+                                    <td><b></b></td>
+                                    <td colspan="3"></td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>

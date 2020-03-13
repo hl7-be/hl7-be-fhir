@@ -1,0 +1,52 @@
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="lenoir"/>
+  <meta>
+    <profile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner"/>
+  </meta>
+  <identifier>
+    <use value="official"/>
+    <system value="https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"/>
+    <value value="60010112355"/>
+  </identifier>
+  <identifier>
+    <use value="official"/>
+    <system
+            value="https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi"/>
+    <value value="17535484332"/>
+  </identifier>
+  <name>
+    <use value="official"/>
+    <family value="François"/>
+    <given value="Katherine"/>
+    <suffix value="MD"/>
+  </name>
+  <telecom>
+    <system value="phone"/>
+    <value value="022675198"/>
+    <use value="work"/>
+  </telecom>
+  <telecom>
+    <system value="email"/>
+    <value value="katherine.pulaski@enterprisehospital.be"/>
+    <use value="work"/>
+  </telecom>
+  <address>
+    <use value="home"/>
+    <text value="Jupiterlaan 5, 1853 Grimbergen"/>
+    <line value="Jupiterlaan 5">
+      <extension
+                 url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+        <valueString value="Jupiterlaan"/>
+      </extension>
+      <extension
+                 url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+        <valueString value="5"/>
+      </extension>
+    </line>
+    <city value="Grimbergen"/>
+    <postalCode value="1853"/>
+    <country value="BE"/>
+  </address>
+  <gender value="female"/>
+  <birthDate value="1979-12-11"/>
+</Practitioner>

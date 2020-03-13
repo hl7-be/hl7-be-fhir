@@ -189,6 +189,126 @@
       <groupingId value="core"/>
     </resource>
 	
+	
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/be-observation"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Observation core BE profile"/>
+      <description value="The Core BE profile for Observation"/>
+      <groupingId value="core"/>
+    </resource>
+	
+	
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/be-provenance"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Organization core BE profile"/>
+      <description value="The Core BE profile for Provenance"/>
+      <groupingId value="core"/>
+    </resource>
+	
+	
+	
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/be-observationcodeableconcept"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Organization CodeableConcept BE profile"/>
+      <description value="CodeableConcept profile for Belgian Observations"/>
+      <groupingId value="core"/>
+    </resource>
+
+
+
+
+
+    <resource>
+      <reference>
+        <reference value="NamingSystem/be-cbe"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="CBE Naming System"/>
+      <description value="Belgian Core Naming System"/>
+      <groupingId value="core"/>
+    </resource>
+
+    <resource>
+      <reference>
+        <reference value="NamingSystem/be-ehp"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="EHP Naming System"/>
+      <description value="Belgian Core Naming System"/>
+      <groupingId value="core"/>
+    </resource>
+
+    <resource>
+      <reference>
+        <reference value="NamingSystem/be-nihdi"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="NIHDI Naming System"/>
+      <description value="Belgian Naming System ofr NIDHI identifiers"/>
+      <groupingId value="core"/>
+    </resource>
+
+    <resource>
+      <reference>
+        <reference value="NamingSystem/be-ssin"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="SSIN / INSZ Naming System"/>
+      <description value="Belgian National Identity Number Naming System"/>
+      <groupingId value="core"/>
+    </resource>
+
+    <resource>
+      <reference>
+        <reference value="ValueSet/be-allergyintolerancecode"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Allergy Intolerance code Naming System"/>
+      <description value="Belgian Naming System for Allergy or Intolerance codes"/>
+      <groupingId value="core"/>
+    </resource>
+
+    <resource>
+      <reference>
+        <reference value="ValueSet/be-exposureroute"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Exposure Route Naming System"/>
+      <description value="Belgian Naming System for routes of exposure to external agents"/>
+      <groupingId value="core"/>
+    </resource>
+
+    <resource>
+      <reference>
+        <reference value="ValueSet/be-noallergy"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="&quot;No Allergy&quot; Naming System"/>
+      <description value="Naming System for &quot;No Allergy&quot;"/>
+      <groupingId value="core"/>
+    </resource>
+
+
+
+
+
+
+
+
+
+
+
+
+	
 <!--
 -->
 <!--
@@ -220,7 +340,7 @@
       <description value="Communication / Diary Note logical model"/>
       <groupingId value="logicalmodels"/>
     </resource>
-
+<!--
     <resource>
       <reference>
         <reference value="CapabilityStatement/be-communicationclient"/>
@@ -239,7 +359,7 @@
       <description value="Capability Statement (requirements) for servers implementing the Communication features"/>
       <groupingId value="capstatements"/>
     </resource>
-
+-->
     <resource>
       <reference>
         <reference value="ValueSet/be-diarytopic"/>
@@ -685,6 +805,58 @@
     </resource>
 
 
+<!-- allergy -->
+    <resource>
+      <reference>
+         <reference value="Practitioner/durant"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Dr Durant (GP)"/>
+      <description value="Dr. Paul Durant (GP)"/>
+      <exampleBoolean value="true"/>
+    </resource>
+
+    <resource>
+      <reference>
+         <reference value="Practitioner/lenoir"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Dr Lenoir"/>
+      <description value="Lr François Lenoir"/>
+      <exampleBoolean value="true"/>
+    </resource>
+
+    <resource>
+      <reference>
+         <reference value="Patient/noel"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Patient Noel Joyeux"/>
+      <description value="Patient Noel Joyeux"/>
+      <exampleBoolean value="true"/>
+    </resource>
+
+
+
+    <resource>
+      <reference>
+         <reference value="AllergyIntolerance/noel-allergy.v0"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Suspected Allergy"/>
+      <description value="Suspected Allergy to Penicillin"/>
+      <exampleBoolean value="true"/>
+    </resource>
+
+    <resource>
+      <reference>
+         <reference value="AllergyIntolerance/noel-allergy.v1"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Refuted Allergy"/>
+      <description value="Allergy has been refuted - confirmed as non-existent"/>
+      <exampleBoolean value="true"/>
+    </resource>
 
 
 
@@ -904,6 +1076,11 @@
 	    	  <page>
 				<nameUrl value="scenario-careteam.html"/>
 				<title value="Use Case 2 - CareTeam"/>
+				<generation value="html"/>
+			  </page>
+	    	  <page>
+				<nameUrl value="scenario-allergy.html"/>
+				<title value="Use Case 3 - Allergy"/>
 				<generation value="html"/>
 			  </page>
 		  </page>
