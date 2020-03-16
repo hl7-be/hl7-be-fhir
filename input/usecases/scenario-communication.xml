@@ -49,10 +49,12 @@
   </actor>
   <instance>
     <resourceId value="be.comm1"/>
-    <name value="Resource 1"/>
+    <resourceType value="Communication"/>
+    <name value="Resource 1"/>	
   </instance>
   <instance>
     <resourceId value="be.comm2"/>
+    <resourceType value="Bundle"/>
     <name value="Resource 2"/>
   </instance>
   <process>

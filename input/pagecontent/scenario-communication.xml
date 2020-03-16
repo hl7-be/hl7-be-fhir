@@ -29,7 +29,7 @@
                         <p></p>
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="887px" preserveAspectRatio="none" style="width:855px;height:887px;" version="1.1" viewBox="0 0 855 887" width="855px" zoomAndPan="magnify">
                            <defs>
-                              <filter height="300%" id="f1v14eg19e025l" width="300%" x="-1" y="-1">
+                              <filter height="300%" id="fmme8x92kuwwy" width="300%" x="-1" y="-1">
                                  <feGaussianBlur result="blurOut" stdDeviation="2.0"></feGaussianBlur>
                                  <feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"></feColorMatrix>
                                  <feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"></feOffset>
@@ -38,10 +38,10 @@
                            </defs>
                            <g>
                               <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="208" x="324.75" y="24.5332">Full Communication Use Case</text>
-                              <rect fill="#FFFFFF" filter="url(#f1v14eg19e025l)" height="158.4609" style="stroke: #000000; stroke-width: 2.0;" width="242.5" x="255.5" y="200.5313"></rect>
-                              <rect fill="#FFFFFF" filter="url(#f1v14eg19e025l)" height="111.7578" style="stroke: #000000; stroke-width: 2.0;" width="537" x="255.5" y="372.9922"></rect>
-                              <rect fill="#FFFFFF" filter="url(#f1v14eg19e025l)" height="139.7578" style="stroke: #000000; stroke-width: 2.0;" width="545" x="13" y="498.75"></rect>
-                              <rect fill="#FFFFFF" filter="url(#f1v14eg19e025l)" height="111.7578" style="stroke: #000000; stroke-width: 2.0;" width="589" x="255.5" y="652.5078"></rect>
+                              <rect fill="#FFFFFF" filter="url(#fmme8x92kuwwy)" height="158.4609" style="stroke: #000000; stroke-width: 2.0;" width="246.5" x="251.5" y="200.5313"></rect>
+                              <rect fill="#FFFFFF" filter="url(#fmme8x92kuwwy)" height="111.7578" style="stroke: #000000; stroke-width: 2.0;" width="541" x="251.5" y="372.9922"></rect>
+                              <rect fill="#FFFFFF" filter="url(#fmme8x92kuwwy)" height="139.7578" style="stroke: #000000; stroke-width: 2.0;" width="545" x="13" y="498.75"></rect>
+                              <rect fill="#FFFFFF" filter="url(#fmme8x92kuwwy)" height="111.7578" style="stroke: #000000; stroke-width: 2.0;" width="593" x="251.5" y="652.5078"></rect>
                               <line style="stroke: #A80036; stroke-width: 1.0;" x1="51" x2="51" y1="136.8281" y2="610.5078"></line>
                               <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,4.0;" x1="51" x2="51" y1="610.5078" y2="638.5078"></line>
                               <line style="stroke: #A80036; stroke-width: 1.0;" x1="51" x2="51" y1="638.5078" y2="781.2656"></line>
@@ -66,118 +66,118 @@
                               <line style="stroke: #A80036; stroke-width: 1.0;" x1="813.5" x2="813.5" y1="136.8281" y2="610.5078"></line>
                               <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,4.0;" x1="813.5" x2="813.5" y1="610.5078" y2="638.5078"></line>
                               <line style="stroke: #A80036; stroke-width: 1.0;" x1="813.5" x2="813.5" y1="638.5078" y2="781.2656"></line>
-                              <rect fill="#FEFECE" filter="url(#f1v14eg19e025l)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="52" x="23" y="100.2188"></rect>
+                              <rect fill="#FEFECE" filter="url(#fmme8x92kuwwy)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="52" x="23" y="100.2188"></rect>
                               <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="38" x="30" y="121.752">DZOP</text>
-                              <rect fill="#FEFECE" filter="url(#f1v14eg19e025l)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="52" x="23" y="780.2656"></rect>
+                              <rect fill="#FEFECE" filter="url(#fmme8x92kuwwy)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="52" x="23" y="780.2656"></rect>
                               <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="38" x="30" y="801.7988">DZOP</text>
                               <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="44" x="89" y="116.1426">Patient</text>
-                              <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="34" x="94" y="133.752">Peter</text>
-                              <ellipse cx="114" cy="44.6094" fill="#FEFECE" filter="url(#f1v14eg19e025l)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"></ellipse>
-                              <path d="M114,52.6094 L114,79.6094 M101,60.6094 L127,60.6094 M114,79.6094 L101,94.6094 M114,79.6094 L127,94.6094 " fill="none" filter="url(#f1v14eg19e025l)" style="stroke: #A80036; stroke-width: 2.0;"></path>
+                              <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="20" x="101" y="133.752">Pia</text>
+                              <ellipse cx="114" cy="44.6094" fill="#FEFECE" filter="url(#fmme8x92kuwwy)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"></ellipse>
+                              <path d="M114,52.6094 L114,79.6094 M101,60.6094 L127,60.6094 M114,79.6094 L101,94.6094 M114,79.6094 L127,94.6094 " fill="none" filter="url(#fmme8x92kuwwy)" style="stroke: #A80036; stroke-width: 2.0;"></path>
                               <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="44" x="89" y="794.7988">Patient</text>
-                              <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="34" x="94" y="812.4082">Peter</text>
-                              <ellipse cx="114" cy="825.4844" fill="#FEFECE" filter="url(#f1v14eg19e025l)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"></ellipse>
-                              <path d="M114,833.4844 L114,860.4844 M101,841.4844 L127,841.4844 M114,860.4844 L101,875.4844 M114,860.4844 L127,875.4844 " fill="none" filter="url(#f1v14eg19e025l)" style="stroke: #A80036; stroke-width: 2.0;"></path>
+                              <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="20" x="101" y="812.4082">Pia</text>
+                              <ellipse cx="114" cy="825.4844" fill="#FEFECE" filter="url(#fmme8x92kuwwy)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"></ellipse>
+                              <path d="M114,833.4844 L114,860.4844 M101,841.4844 L127,841.4844 M114,860.4844 L101,875.4844 M114,860.4844 L127,875.4844 " fill="none" filter="url(#fmme8x92kuwwy)" style="stroke: #A80036; stroke-width: 2.0;"></path>
                               <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="37" x="268.5" y="116.1426">Nurse</text>
-                              <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="43" x="265.5" y="133.752">Natalie</text>
-                              <ellipse cx="290" cy="44.6094" fill="#FEFECE" filter="url(#f1v14eg19e025l)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"></ellipse>
-                              <path d="M290,52.6094 L290,79.6094 M277,60.6094 L303,60.6094 M290,79.6094 L277,94.6094 M290,79.6094 L303,94.6094 " fill="none" filter="url(#f1v14eg19e025l)" style="stroke: #A80036; stroke-width: 2.0;"></path>
+                              <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="51" x="261.5" y="133.752">Nathalie</text>
+                              <ellipse cx="290" cy="44.6094" fill="#FEFECE" filter="url(#fmme8x92kuwwy)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"></ellipse>
+                              <path d="M290,52.6094 L290,79.6094 M277,60.6094 L303,60.6094 M290,79.6094 L277,94.6094 M290,79.6094 L303,94.6094 " fill="none" filter="url(#fmme8x92kuwwy)" style="stroke: #A80036; stroke-width: 2.0;"></path>
                               <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="37" x="268.5" y="794.7988">Nurse</text>
-                              <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="43" x="265.5" y="812.4082">Natalie</text>
-                              <ellipse cx="290" cy="825.4844" fill="#FEFECE" filter="url(#f1v14eg19e025l)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"></ellipse>
-                              <path d="M290,833.4844 L290,860.4844 M277,841.4844 L303,841.4844 M290,860.4844 L277,875.4844 M290,860.4844 L303,875.4844 " fill="none" filter="url(#f1v14eg19e025l)" style="stroke: #A80036; stroke-width: 2.0;"></path>
+                              <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="51" x="261.5" y="812.4082">Nathalie</text>
+                              <ellipse cx="290" cy="825.4844" fill="#FEFECE" filter="url(#fmme8x92kuwwy)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"></ellipse>
+                              <path d="M290,833.4844 L290,860.4844 M277,841.4844 L303,841.4844 M290,860.4844 L277,875.4844 M290,860.4844 L303,875.4844 " fill="none" filter="url(#fmme8x92kuwwy)" style="stroke: #A80036; stroke-width: 2.0;"></path>
                               <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="31" x="448.5" y="116.1426">Care</text>
                               <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="36" x="446" y="133.752">Team</text>
-                              <ellipse cx="467" cy="44.6094" fill="#FEFECE" filter="url(#f1v14eg19e025l)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"></ellipse>
-                              <path d="M467,52.6094 L467,79.6094 M454,60.6094 L480,60.6094 M467,79.6094 L454,94.6094 M467,79.6094 L480,94.6094 " fill="none" filter="url(#f1v14eg19e025l)" style="stroke: #A80036; stroke-width: 2.0;"></path>
+                              <ellipse cx="467" cy="44.6094" fill="#FEFECE" filter="url(#fmme8x92kuwwy)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"></ellipse>
+                              <path d="M467,52.6094 L467,79.6094 M454,60.6094 L480,60.6094 M467,79.6094 L454,94.6094 M467,79.6094 L480,94.6094 " fill="none" filter="url(#fmme8x92kuwwy)" style="stroke: #A80036; stroke-width: 2.0;"></path>
                               <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="31" x="448.5" y="794.7988">Care</text>
                               <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="36" x="446" y="812.4082">Team</text>
-                              <ellipse cx="467" cy="825.4844" fill="#FEFECE" filter="url(#f1v14eg19e025l)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"></ellipse>
-                              <path d="M467,833.4844 L467,860.4844 M454,841.4844 L480,841.4844 M467,860.4844 L454,875.4844 M467,860.4844 L480,875.4844 " fill="none" filter="url(#f1v14eg19e025l)" style="stroke: #A80036; stroke-width: 2.0;"></path>
+                              <ellipse cx="467" cy="825.4844" fill="#FEFECE" filter="url(#fmme8x92kuwwy)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"></ellipse>
+                              <path d="M467,833.4844 L467,860.4844 M454,841.4844 L480,841.4844 M467,860.4844 L454,875.4844 M467,860.4844 L480,875.4844 " fill="none" filter="url(#fmme8x92kuwwy)" style="stroke: #A80036; stroke-width: 2.0;"></path>
                               <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="44" x="498" y="133.752">Nurses</text>
-                              <ellipse cx="523" cy="62.2188" fill="#FEFECE" filter="url(#f1v14eg19e025l)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"></ellipse>
-                              <path d="M523,70.2188 L523,97.2188 M510,78.2188 L536,78.2188 M523,97.2188 L510,112.2188 M523,97.2188 L536,112.2188 " fill="none" filter="url(#f1v14eg19e025l)" style="stroke: #A80036; stroke-width: 2.0;"></path>
+                              <ellipse cx="523" cy="62.2188" fill="#FEFECE" filter="url(#fmme8x92kuwwy)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"></ellipse>
+                              <path d="M523,70.2188 L523,97.2188 M510,78.2188 L536,78.2188 M523,97.2188 L510,112.2188 M523,97.2188 L536,112.2188 " fill="none" filter="url(#fmme8x92kuwwy)" style="stroke: #A80036; stroke-width: 2.0;"></path>
                               <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="44" x="498" y="794.7988">Nurses</text>
-                              <ellipse cx="523" cy="807.875" fill="#FEFECE" filter="url(#f1v14eg19e025l)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"></ellipse>
-                              <path d="M523,815.875 L523,842.875 M510,823.875 L536,823.875 M523,842.875 L510,857.875 M523,842.875 L536,857.875 " fill="none" filter="url(#f1v14eg19e025l)" style="stroke: #A80036; stroke-width: 2.0;"></path>
+                              <ellipse cx="523" cy="807.875" fill="#FEFECE" filter="url(#fmme8x92kuwwy)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"></ellipse>
+                              <path d="M523,815.875 L523,842.875 M510,823.875 L536,823.875 M523,842.875 L510,857.875 M523,842.875 L536,857.875 " fill="none" filter="url(#fmme8x92kuwwy)" style="stroke: #A80036; stroke-width: 2.0;"></path>
                               <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="49" x="558" y="133.752">Doctors</text>
-                              <ellipse cx="585.5" cy="62.2188" fill="#FEFECE" filter="url(#f1v14eg19e025l)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"></ellipse>
-                              <path d="M585.5,70.2188 L585.5,97.2188 M572.5,78.2188 L598.5,78.2188 M585.5,97.2188 L572.5,112.2188 M585.5,97.2188 L598.5,112.2188 " fill="none" filter="url(#f1v14eg19e025l)" style="stroke: #A80036; stroke-width: 2.0;"></path>
+                              <ellipse cx="585.5" cy="62.2188" fill="#FEFECE" filter="url(#fmme8x92kuwwy)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"></ellipse>
+                              <path d="M585.5,70.2188 L585.5,97.2188 M572.5,78.2188 L598.5,78.2188 M585.5,97.2188 L572.5,112.2188 M585.5,97.2188 L598.5,112.2188 " fill="none" filter="url(#fmme8x92kuwwy)" style="stroke: #A80036; stroke-width: 2.0;"></path>
                               <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="49" x="558" y="794.7988">Doctors</text>
-                              <ellipse cx="585.5" cy="807.875" fill="#FEFECE" filter="url(#f1v14eg19e025l)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"></ellipse>
-                              <path d="M585.5,815.875 L585.5,842.875 M572.5,823.875 L598.5,823.875 M585.5,842.875 L572.5,857.875 M585.5,842.875 L598.5,857.875 " fill="none" filter="url(#f1v14eg19e025l)" style="stroke: #A80036; stroke-width: 2.0;"></path>
+                              <ellipse cx="585.5" cy="807.875" fill="#FEFECE" filter="url(#fmme8x92kuwwy)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"></ellipse>
+                              <path d="M585.5,815.875 L585.5,842.875 M572.5,823.875 L598.5,823.875 M585.5,842.875 L572.5,857.875 M585.5,842.875 L598.5,857.875 " fill="none" filter="url(#fmme8x92kuwwy)" style="stroke: #A80036; stroke-width: 2.0;"></path>
                               <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="47" x="729.5" y="133.752">Dragon</text>
-                              <ellipse cx="756" cy="62.2188" fill="#FEFECE" filter="url(#f1v14eg19e025l)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"></ellipse>
-                              <path d="M756,70.2188 L756,97.2188 M743,78.2188 L769,78.2188 M756,97.2188 L743,112.2188 M756,97.2188 L769,112.2188 " fill="none" filter="url(#f1v14eg19e025l)" style="stroke: #A80036; stroke-width: 2.0;"></path>
+                              <ellipse cx="756" cy="62.2188" fill="#FEFECE" filter="url(#fmme8x92kuwwy)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"></ellipse>
+                              <path d="M756,70.2188 L756,97.2188 M743,78.2188 L769,78.2188 M756,97.2188 L743,112.2188 M756,97.2188 L769,112.2188 " fill="none" filter="url(#fmme8x92kuwwy)" style="stroke: #A80036; stroke-width: 2.0;"></path>
                               <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="47" x="729.5" y="794.7988">Dragon</text>
-                              <ellipse cx="756" cy="807.875" fill="#FEFECE" filter="url(#f1v14eg19e025l)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"></ellipse>
-                              <path d="M756,815.875 L756,842.875 M743,823.875 L769,823.875 M756,842.875 L743,857.875 M756,842.875 L769,857.875 " fill="none" filter="url(#f1v14eg19e025l)" style="stroke: #A80036; stroke-width: 2.0;"></path>
+                              <ellipse cx="756" cy="807.875" fill="#FEFECE" filter="url(#fmme8x92kuwwy)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"></ellipse>
+                              <path d="M756,815.875 L756,842.875 M743,823.875 L769,823.875 M756,842.875 L743,857.875 M756,842.875 L769,857.875 " fill="none" filter="url(#fmme8x92kuwwy)" style="stroke: #A80036; stroke-width: 2.0;"></path>
                               <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="36" x="792.5" y="133.752">David</text>
-                              <ellipse cx="813.5" cy="62.2188" fill="#FEFECE" filter="url(#f1v14eg19e025l)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"></ellipse>
-                              <path d="M813.5,70.2188 L813.5,97.2188 M800.5,78.2188 L826.5,78.2188 M813.5,97.2188 L800.5,112.2188 M813.5,97.2188 L826.5,112.2188 " fill="none" filter="url(#f1v14eg19e025l)" style="stroke: #A80036; stroke-width: 2.0;"></path>
+                              <ellipse cx="813.5" cy="62.2188" fill="#FEFECE" filter="url(#fmme8x92kuwwy)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"></ellipse>
+                              <path d="M813.5,70.2188 L813.5,97.2188 M800.5,78.2188 L826.5,78.2188 M813.5,97.2188 L800.5,112.2188 M813.5,97.2188 L826.5,112.2188 " fill="none" filter="url(#fmme8x92kuwwy)" style="stroke: #A80036; stroke-width: 2.0;"></path>
                               <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="36" x="792.5" y="794.7988">David</text>
-                              <ellipse cx="813.5" cy="807.875" fill="#FEFECE" filter="url(#f1v14eg19e025l)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"></ellipse>
-                              <path d="M813.5,815.875 L813.5,842.875 M800.5,823.875 L826.5,823.875 M813.5,842.875 L800.5,857.875 M813.5,842.875 L826.5,857.875 " fill="none" filter="url(#f1v14eg19e025l)" style="stroke: #A80036; stroke-width: 2.0;"></path>
+                              <ellipse cx="813.5" cy="807.875" fill="#FEFECE" filter="url(#fmme8x92kuwwy)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"></ellipse>
+                              <path d="M813.5,815.875 L813.5,842.875 M800.5,823.875 L826.5,823.875 M813.5,842.875 L800.5,857.875 M813.5,842.875 L826.5,857.875 " fill="none" filter="url(#fmme8x92kuwwy)" style="stroke: #A80036; stroke-width: 2.0;"></path>
                               <polygon fill="#A80036" points="278,180.8281,288,184.8281,278,188.8281,282,184.8281" style="stroke: #A80036; stroke-width: 1.0;"></polygon>
                               <line style="stroke: #A80036; stroke-width: 1.0;" x1="51" x2="284" y1="184.8281" y2="184.8281"></line>
-                              <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="120" x="58" y="164.3232">Blood must be taken</text><a target="_top" xlink:actuate="onRequest" xlink:href="#R1" xlink:show="new" xlink:title="#R1" xlink:type="simple">
+                              <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="120" x="58" y="164.3232">Blood must be taken</text><a target="_top" xlink:actuate="onRequest" xlink:href="#be.comm1" xlink:show="new" xlink:title="#be.comm1" xlink:type="simple">
                                  <text fill="#0000FF" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="66" x="58" y="180.6748">Resource 1</text>
-                                 <line style="stroke: #0000FF; stroke-width: 1.0;" x1="58" x2="124" y1="182.6748" y2="182.6748"></line></a><path d="M255.5,200.5313 L349.5,200.5313 L349.5,208.5313 L339.5,218.5313 L255.5,218.5313 L255.5,200.5313 " fill="#EEEEEE" style="stroke: #000000; stroke-width: 1.0;"></path>
-                              <rect fill="none" height="158.4609" style="stroke: #000000; stroke-width: 2.0;" width="242.5" x="255.5" y="200.5313"></rect>
-                              <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="49" x="270.5" y="215.0264">Process</text>
+                                 <line style="stroke: #0000FF; stroke-width: 1.0;" x1="58" x2="124" y1="182.6748" y2="182.6748"></line></a><path d="M251.5,200.5313 L345.5,200.5313 L345.5,208.5313 L335.5,218.5313 L251.5,218.5313 L251.5,200.5313 " fill="#EEEEEE" style="stroke: #000000; stroke-width: 1.0;"></path>
+                              <rect fill="none" height="158.4609" style="stroke: #000000; stroke-width: 2.0;" width="246.5" x="251.5" y="200.5313"></rect>
+                              <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="49" x="266.5" y="215.0264">Process</text>
                               <polygon fill="#A80036" points="455,252.8828,465,256.8828,455,260.8828,459,256.8828" style="stroke: #A80036; stroke-width: 1.0;"></polygon>
                               <line style="stroke: #A80036; stroke-width: 1.0;" x1="290" x2="461" y1="256.8828" y2="256.8828"></line>
-                              <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="142" x="297" y="236.3779">Patient has eaten... (NL)</text><a target="_top" xlink:actuate="onRequest" xlink:href="#(none)" xlink:show="new" xlink:title="#(none)" xlink:type="simple">
-                                 <text fill="#0000FF" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="43" x="297" y="252.7295">#(none)</text>
-                                 <line style="stroke: #0000FF; stroke-width: 1.0;" x1="297" x2="340" y1="254.7295" y2="254.7295"></line></a><polygon fill="#A80036" points="455,299.5859,465,303.5859,455,307.5859,459,303.5859" style="stroke: #A80036; stroke-width: 1.0;"></polygon>
+                              <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="142" x="297" y="236.3779">Patient has eaten... (NL)</text><a target="_top" xlink:actuate="onRequest" xlink:href="#be.comm2" xlink:show="new" xlink:title="#be.comm2" xlink:type="simple">
+                                 <text fill="#0000FF" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="66" x="297" y="252.7295">Resource 2</text>
+                                 <line style="stroke: #0000FF; stroke-width: 1.0;" x1="297" x2="363" y1="254.7295" y2="254.7295"></line></a><polygon fill="#A80036" points="455,299.5859,465,303.5859,455,307.5859,459,303.5859" style="stroke: #A80036; stroke-width: 1.0;"></polygon>
                               <line style="stroke: #A80036; stroke-width: 1.0;" x1="290" x2="461" y1="303.5859" y2="303.5859"></line>
-                              <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="143" x="297" y="283.0811">Patient has eaten... (FR)</text><a target="_top" xlink:actuate="onRequest" xlink:href="#(none)" xlink:show="new" xlink:title="#(none)" xlink:type="simple">
-                                 <text fill="#0000FF" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="43" x="297" y="299.4326">#(none)</text>
-                                 <line style="stroke: #0000FF; stroke-width: 1.0;" x1="297" x2="340" y1="301.4326" y2="301.4326"></line></a><polygon fill="#A80036" points="455,346.2891,465,350.2891,455,354.2891,459,350.2891" style="stroke: #A80036; stroke-width: 1.0;"></polygon>
+                              <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="143" x="297" y="283.0811">Patient has eaten... (FR)</text><a target="_top" xlink:actuate="onRequest" xlink:href="#be.comm2" xlink:show="new" xlink:title="#be.comm2" xlink:type="simple">
+                                 <text fill="#0000FF" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="66" x="297" y="299.4326">Resource 2</text>
+                                 <line style="stroke: #0000FF; stroke-width: 1.0;" x1="297" x2="363" y1="301.4326" y2="301.4326"></line></a><polygon fill="#A80036" points="455,346.2891,465,350.2891,455,354.2891,459,350.2891" style="stroke: #A80036; stroke-width: 1.0;"></polygon>
                               <line style="stroke: #A80036; stroke-width: 1.0;" x1="290" x2="461" y1="350.2891" y2="350.2891"></line>
-                              <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="144" x="297" y="329.7842">Patient has eaten... (EN)</text><a target="_top" xlink:actuate="onRequest" xlink:href="#(none)" xlink:show="new" xlink:title="#(none)" xlink:type="simple">
-                                 <text fill="#0000FF" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="43" x="297" y="346.1357">#(none)</text>
-                                 <line style="stroke: #0000FF; stroke-width: 1.0;" x1="297" x2="340" y1="348.1357" y2="348.1357"></line></a><path d="M255.5,372.9922 L349.5,372.9922 L349.5,380.9922 L339.5,390.9922 L255.5,390.9922 L255.5,372.9922 " fill="#EEEEEE" style="stroke: #000000; stroke-width: 1.0;"></path>
-                              <rect fill="none" height="111.7578" style="stroke: #000000; stroke-width: 2.0;" width="537" x="255.5" y="372.9922"></rect>
-                              <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="49" x="270.5" y="387.4873">Process</text>
+                              <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="144" x="297" y="329.7842">Patient has eaten... (EN)</text><a target="_top" xlink:actuate="onRequest" xlink:href="#be.comm2" xlink:show="new" xlink:title="#be.comm2" xlink:type="simple">
+                                 <text fill="#0000FF" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="66" x="297" y="346.1357">Resource 2</text>
+                                 <line style="stroke: #0000FF; stroke-width: 1.0;" x1="297" x2="363" y1="348.1357" y2="348.1357"></line></a><path d="M251.5,372.9922 L345.5,372.9922 L345.5,380.9922 L335.5,390.9922 L251.5,390.9922 L251.5,372.9922 " fill="#EEEEEE" style="stroke: #000000; stroke-width: 1.0;"></path>
+                              <rect fill="none" height="111.7578" style="stroke: #000000; stroke-width: 2.0;" width="541" x="251.5" y="372.9922"></rect>
+                              <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="49" x="266.5" y="387.4873">Process</text>
                               <polygon fill="#A80036" points="478,425.3438,468,429.3438,478,433.3438,474,429.3438" style="stroke: #A80036; stroke-width: 1.0;"></polygon>
                               <line style="stroke: #A80036; stroke-width: 1.0;" x1="472" x2="755" y1="429.3438" y2="429.3438"></line>
-                              <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="261" x="484" y="408.8389">Today is also possible if patient can at 16h00</text><a target="_top" xlink:actuate="onRequest" xlink:href="#(none)" xlink:show="new" xlink:title="#(none)" xlink:type="simple">
-                                 <text fill="#0000FF" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="43" x="484" y="425.1904">#(none)</text>
-                                 <line style="stroke: #0000FF; stroke-width: 1.0;" x1="484" x2="527" y1="427.1904" y2="427.1904"></line></a><polygon fill="#A80036" points="455,472.0469,465,476.0469,455,480.0469,459,476.0469" style="stroke: #A80036; stroke-width: 1.0;"></polygon>
+                              <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="261" x="484" y="408.8389">Today is also possible if patient can at 16h00</text><a target="_top" xlink:actuate="onRequest" xlink:href="#be.comm2" xlink:show="new" xlink:title="#be.comm2" xlink:type="simple">
+                                 <text fill="#0000FF" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="66" x="484" y="425.1904">Resource 2</text>
+                                 <line style="stroke: #0000FF; stroke-width: 1.0;" x1="484" x2="550" y1="427.1904" y2="427.1904"></line></a><polygon fill="#A80036" points="455,472.0469,465,476.0469,455,480.0469,459,476.0469" style="stroke: #A80036; stroke-width: 1.0;"></polygon>
                               <line style="stroke: #A80036; stroke-width: 1.0;" x1="290" x2="461" y1="476.0469" y2="476.0469"></line>
-                              <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="149" x="297" y="455.542">Patient can do it at 16h00</text><a target="_top" xlink:actuate="onRequest" xlink:href="#(none)" xlink:show="new" xlink:title="#(none)" xlink:type="simple">
-                                 <text fill="#0000FF" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="43" x="297" y="471.8936">#(none)</text>
-                                 <line style="stroke: #0000FF; stroke-width: 1.0;" x1="297" x2="340" y1="473.8936" y2="473.8936"></line></a><path d="M13,498.75 L107,498.75 L107,506.75 L97,516.75 L13,516.75 L13,498.75 " fill="#EEEEEE" style="stroke: #000000; stroke-width: 1.0;"></path>
+                              <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="149" x="297" y="455.542">Patient can do it at 16h00</text><a target="_top" xlink:actuate="onRequest" xlink:href="#be.comm2" xlink:show="new" xlink:title="#be.comm2" xlink:type="simple">
+                                 <text fill="#0000FF" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="66" x="297" y="471.8936">Resource 2</text>
+                                 <line style="stroke: #0000FF; stroke-width: 1.0;" x1="297" x2="363" y1="473.8936" y2="473.8936"></line></a><path d="M13,498.75 L107,498.75 L107,506.75 L97,516.75 L13,516.75 L13,498.75 " fill="#EEEEEE" style="stroke: #000000; stroke-width: 1.0;"></path>
                               <rect fill="none" height="139.7578" style="stroke: #000000; stroke-width: 2.0;" width="545" x="13" y="498.75"></rect>
                               <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="49" x="28" y="513.2451">Process</text>
                               <polygon fill="#A80036" points="511,551.1016,521,555.1016,511,559.1016,515,555.1016" style="stroke: #A80036; stroke-width: 1.0;"></polygon>
                               <line style="stroke: #A80036; stroke-width: 1.0;" x1="51" x2="517" y1="555.1016" y2="555.1016"></line>
-                              <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="149" x="58" y="534.5967">New Appointment - 16h00</text><a target="_top" xlink:actuate="onRequest" xlink:href="#(none)" xlink:show="new" xlink:title="#(none)" xlink:type="simple">
-                                 <text fill="#0000FF" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="43" x="58" y="550.9482">#(none)</text>
-                                 <line style="stroke: #0000FF; stroke-width: 1.0;" x1="58" x2="101" y1="552.9482" y2="552.9482"></line></a><polygon fill="#A80036" points="278,597.8047,288,601.8047,278,605.8047,282,601.8047" style="stroke: #A80036; stroke-width: 1.0;"></polygon>
+                              <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="149" x="58" y="534.5967">New Appointment - 16h00</text><a target="_top" xlink:actuate="onRequest" xlink:href="#be.comm2" xlink:show="new" xlink:title="#be.comm2" xlink:type="simple">
+                                 <text fill="#0000FF" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="66" x="58" y="550.9482">Resource 2</text>
+                                 <line style="stroke: #0000FF; stroke-width: 1.0;" x1="58" x2="124" y1="552.9482" y2="552.9482"></line></a><polygon fill="#A80036" points="278,597.8047,288,601.8047,278,605.8047,282,601.8047" style="stroke: #A80036; stroke-width: 1.0;"></polygon>
                               <line style="stroke: #A80036; stroke-width: 1.0;" x1="51" x2="284" y1="601.8047" y2="601.8047"></line>
-                              <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="211" x="58" y="581.2998">Reminder - blood collection at 16h00</text><a target="_top" xlink:actuate="onRequest" xlink:href="#(none)" xlink:show="new" xlink:title="#(none)" xlink:type="simple">
-                                 <text fill="#0000FF" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="43" x="58" y="597.6514">#(none)</text>
-                                 <line style="stroke: #0000FF; stroke-width: 1.0;" x1="58" x2="101" y1="599.6514" y2="599.6514"></line></a><path d="M255.5,652.5078 L349.5,652.5078 L349.5,660.5078 L339.5,670.5078 L255.5,670.5078 L255.5,652.5078 " fill="#EEEEEE" style="stroke: #000000; stroke-width: 1.0;"></path>
-                              <rect fill="none" height="111.7578" style="stroke: #000000; stroke-width: 2.0;" width="589" x="255.5" y="652.5078"></rect>
-                              <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="49" x="270.5" y="667.0029">Process</text>
+                              <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="211" x="58" y="581.2998">Reminder - blood collection at 16h00</text><a target="_top" xlink:actuate="onRequest" xlink:href="#be.comm2" xlink:show="new" xlink:title="#be.comm2" xlink:type="simple">
+                                 <text fill="#0000FF" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="66" x="58" y="597.6514">Resource 2</text>
+                                 <line style="stroke: #0000FF; stroke-width: 1.0;" x1="58" x2="124" y1="599.6514" y2="599.6514"></line></a><path d="M251.5,652.5078 L345.5,652.5078 L345.5,660.5078 L335.5,670.5078 L251.5,670.5078 L251.5,652.5078 " fill="#EEEEEE" style="stroke: #000000; stroke-width: 1.0;"></path>
+                              <rect fill="none" height="111.7578" style="stroke: #000000; stroke-width: 2.0;" width="593" x="251.5" y="652.5078"></rect>
+                              <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="49" x="266.5" y="667.0029">Process</text>
                               <polygon fill="#A80036" points="801.5,704.8594,811.5,708.8594,801.5,712.8594,805.5,708.8594" style="stroke: #A80036; stroke-width: 1.0;"></polygon>
                               <line style="stroke: #A80036; stroke-width: 1.0;" x1="290" x2="807.5" y1="708.8594" y2="708.8594"></line>
-                              <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="99" x="297" y="688.3545">Send attachment</text><a target="_top" xlink:actuate="onRequest" xlink:href="#(none)" xlink:show="new" xlink:title="#(none)" xlink:type="simple">
-                                 <text fill="#0000FF" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="43" x="297" y="704.7061">#(none)</text>
-                                 <line style="stroke: #0000FF; stroke-width: 1.0;" x1="297" x2="340" y1="706.7061" y2="706.7061"></line></a><polygon fill="#A80036" points="596.5,751.5625,586.5,755.5625,596.5,759.5625,592.5,755.5625" style="stroke: #A80036; stroke-width: 1.0;"></polygon>
+                              <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="99" x="297" y="688.3545">Send attachment</text><a target="_top" xlink:actuate="onRequest" xlink:href="#be.comm2" xlink:show="new" xlink:title="#be.comm2" xlink:type="simple">
+                                 <text fill="#0000FF" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="66" x="297" y="704.7061">Resource 2</text>
+                                 <line style="stroke: #0000FF; stroke-width: 1.0;" x1="297" x2="363" y1="706.7061" y2="706.7061"></line></a><polygon fill="#A80036" points="596.5,751.5625,586.5,755.5625,596.5,759.5625,592.5,755.5625" style="stroke: #A80036; stroke-width: 1.0;"></polygon>
                               <line style="stroke: #A80036; stroke-width: 1.0;" x1="590.5" x2="812.5" y1="755.5625" y2="755.5625"></line>
-                              <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="46" x="602.5" y="735.0576">Forward</text><a target="_top" xlink:actuate="onRequest" xlink:href="#(none)" xlink:show="new" xlink:title="#(none)" xlink:type="simple">
-                                 <text fill="#0000FF" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="43" x="602.5" y="751.4092">#(none)</text>
-                                 <line style="stroke: #0000FF; stroke-width: 1.0;" x1="602.5" x2="645.5" y1="753.4092" y2="753.4092"></line></a>
+                              <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="46" x="602.5" y="735.0576">Forward</text><a target="_top" xlink:actuate="onRequest" xlink:href="#be.comm2" xlink:show="new" xlink:title="#be.comm2" xlink:type="simple">
+                                 <text fill="#0000FF" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="66" x="602.5" y="751.4092">Resource 2</text>
+                                 <line style="stroke: #0000FF; stroke-width: 1.0;" x1="602.5" x2="668.5" y1="753.4092" y2="753.4092"></line></a>
                               <!--
 @startuml
 title Full Communication Use Case
 
 participant "DZOP" as DZOP
-actor "Patient\nPeter" as peter
-actor "Nurse\nNatalie" as natalie
+actor "Patient\nPia" as peter
+actor "Nurse\nNathalie" as natalie
 actor "Care\nTeam" as careteam
 actor "Nurses" as nurses
 actor "Doctors" as doctors
@@ -189,25 +189,25 @@ title Full Communication Use Case
     
     
     
-    DZOP-> natalie : Blood must be taken \n[[#R1 Resource 1]]
+    DZOP-> natalie : Blood must be taken \n[[#be.comm1 Resource 1]]
 
     
 group Process
-natalie-> careteam : Patient has eaten... (NL) \n[[#(none) ]]
-natalie-> careteam : Patient has eaten... (FR) \n[[#(none) ]]
-natalie-> careteam : Patient has eaten... (EN) \n[[#(none) ]]
+natalie-> careteam : Patient has eaten... (NL) \n[[#be.comm2 Resource 2]]
+natalie-> careteam : Patient has eaten... (FR) \n[[#be.comm2 Resource 2]]
+natalie-> careteam : Patient has eaten... (EN) \n[[#be.comm2 Resource 2]]
 end
 
     
 group Process
-dragon-> careteam : Today is also possible if patient can at 16h00 \n[[#(none) ]]
-natalie-> careteam : Patient can do it at 16h00 \n[[#(none) ]]
+dragon-> careteam : Today is also possible if patient can at 16h00 \n[[#be.comm2 Resource 2]]
+natalie-> careteam : Patient can do it at 16h00 \n[[#be.comm2 Resource 2]]
 end
 
     
 group Process
-DZOP-> nurses : New Appointment - 16h00 \n[[#(none) ]]
-DZOP-> natalie : Reminder - blood collection at 16h00 \n[[#(none) ]]
+DZOP-> nurses : New Appointment - 16h00 \n[[#be.comm2 Resource 2]]
+DZOP-> natalie : Reminder - blood collection at 16h00 \n[[#be.comm2 Resource 2]]
 
 ...
 
@@ -215,8 +215,8 @@ end
 
     
 group Process
-natalie-> david : Send attachment \n[[#(none) ]]
-david-> doctors : Forward \n[[#(none) ]]
+natalie-> david : Send attachment \n[[#be.comm2 Resource 2]]
+david-> doctors : Forward \n[[#be.comm2 Resource 2]]
 end
 
   
@@ -282,12 +282,12 @@ Country: GB
                                     <td></td>
                                  </tr>
                                  <tr>
-                                    <td><b>Patient\nPeter</b></td>
+                                    <td><b>Patient\nPia</b></td>
                                     <td>person</td>
                                     <td></td>
                                  </tr>
                                  <tr>
-                                    <td><b>Nurse\nNatalie</b></td>
+                                    <td><b>Nurse\nNathalie</b></td>
                                     <td>person</td>
                                     <td></td>
                                  </tr>
@@ -351,7 +351,7 @@ Country: GB
                                              		-
                                              		DZOP
                                              		):
-                                             		<a href="#R1">Resource 1</a></td>
+                                             		<a href="#be.comm1">Resource 1</a></td>
                                           <td>
                                              		RP:
                                           </td>
@@ -367,10 +367,56 @@ Country: GB
                         </div>
                      </div>
                      <div id="resources" class="tab-pane fade">
-                        <h3><a name="resources"></a>
-                           																Resources
-                           															
+                        <h3><a name="resources"></a>Resources
                         </h3>
+                        <div>
+                           <p></p>
+                           <h4>Communication</h4>
+                           <table class="grid">
+                              <tbody>
+                                 <tr>
+                                    <th>Artifact</th>
+                                    <th>Version</th>
+                                    <th>Description</th>
+                                    <th>Created by step</th>
+                                    <th>Creating actor</th>
+                                 </tr>
+                                 <tr>
+                                    <td rowspan="1"><a name="be.comm1" href="Communication-be.comm1.html"><b>Resource 1</b></a></td>
+                                    <td>
+                                       (0)
+                                       			
+                                    </td>
+                                    <td><b></b></td>
+                                    <td colspan="3"></td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </div>
+                        <div>
+                           <p></p>
+                           <h4>Bundle</h4>
+                           <table class="grid">
+                              <tbody>
+                                 <tr>
+                                    <th>Artifact</th>
+                                    <th>Version</th>
+                                    <th>Description</th>
+                                    <th>Created by step</th>
+                                    <th>Creating actor</th>
+                                 </tr>
+                                 <tr>
+                                    <td rowspan="1"><a name="be.comm2" href="Bundle-be.comm2.html"><b>Resource 2</b></a></td>
+                                    <td>
+                                       (0)
+                                       			
+                                    </td>
+                                    <td><b></b></td>
+                                    <td colspan="3"></td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </div>
                      </div>
                   </div>
                </div>

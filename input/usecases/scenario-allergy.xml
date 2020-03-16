@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExampleScenario xmlns="http://hl7.org/fhir">
+  <id value="scenario-communication"/>
+  <version value="0.0.1"/>
+  <name value="DZOP Communication - Demo use case"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2019-09-11T00:00:00.000+01:00"/>
+  <publisher value="DZOP"/>
+  <actor>
+    <actorId value="GP"/>
+    <type value="person"/>
+    <name value="Dr. Durant\n(GP)"/>
+  </actor>
+  <actor>
+    <actorId value="VAULT"/>
+    <type value="entity"/>
+    <name value="Vault"/>
+  </actor>
+  <actor>
+    <actorId value="SPEC"/>
+    <type value="person"/>
+    <name value="Dr. Lenoir\n(Specialist)"/>
+  </actor>
+
+  <instance>
+    <resourceId value="noel-allergy.v0"/>
+    <resourceType value="AllergyIntolerance"/>
+    <name value="Allergy Record"/>
+  </instance>
+
+  <instance>
+    <resourceId value="EB"/>
+    <resourceType value="Bundle"/>
+    <name value="Empty Bundle"/>
+  </instance>
+
+
+  <instance>
+    <resourceId value="noel-allergy.v1"/>
+    <resourceType value="AllergyIntolerance"/>
+    <name value="Updated Allergy Record"/>
+  </instance>
+
+  <process>
+    <title value="Allergy Intolerance Use Case"/>
+    <description value="description"/>
+    <preConditions value="precondition"/>
+    <postConditions value="post status"/>
+
+    <step>
+      <operation>
+        <name value="Get patient's allergies"/>
+        <initiator value="GP"/>
+        <receiver value="VAULT"/>
+        <request>
+        </request>
+        <response>
+          <resourceId value="EB"/>
+        </response>
+      </operation>
+    </step>
+
+
+
+    <step>
+      <operation>
+        <name value="Create new Allergy record entry"/>
+        <initiator value="GP"/>
+        <receiver value="VAULT"/>
+        <request>
+          <resourceId value="noel-allergy.v0"/>
+        </request>
+        <response>
+        </response>
+      </operation>
+    </step>
+
+
+    <step>
+      <operation>
+        <name value="Get patient's allergies"/>
+        <initiator value="SPEC"/>
+        <receiver value="VAULT"/>
+        <request>
+        </request>
+        <response>
+          <resourceId value="noel-allergy.v0"/>
+        </response>
+      </operation>
+    </step>
+
+
+
+    <step>
+      <operation>
+        <name value="Update Allergy record"/>
+        <initiator value="SPEC"/>
+        <receiver value="VAULT"/>
+        <request>
+          <resourceId value="noel-allergy.v1"/>
+        </request>
+        <response>
+        </response>
+      </operation>
+    </step>
+
+
+    <step>
+      <operation>
+        <name value="Get patient's allergies"/>
+        <initiator value="GP"/>
+        <receiver value="VAULT"/>
+        <request>
+        </request>
+        <response>
+          <resourceId value="noel-allergy.v1"/>
+        </response>
+      </operation>
+    </step>
+
+
+
+
+  </process>
+</ExampleScenario>

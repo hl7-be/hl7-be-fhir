@@ -29,7 +29,7 @@
                         <p></p>
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="759px" preserveAspectRatio="none" style="width:549px;height:759px;" version="1.1" viewBox="0 0 549 759" width="549px" zoomAndPan="magnify">
                            <defs>
-                              <filter height="300%" id="fyxb74dbvzaj3" width="300%" x="-1" y="-1">
+                              <filter height="300%" id="f13qz1i7drajwl" width="300%" x="-1" y="-1">
                                  <feGaussianBlur result="blurOut" stdDeviation="2.0"></feGaussianBlur>
                                  <feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"></feColorMatrix>
                                  <feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"></feOffset>
@@ -38,8 +38,8 @@
                            </defs>
                            <g>
                               <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="57" x="247" y="24.5332">Process</text>
-                              <rect fill="#FFFFFF" filter="url(#fyxb74dbvzaj3)" height="185.4609" style="stroke: #000000; stroke-width: 2.0;" width="525" x="13" y="227.2734"></rect>
-                              <rect fill="#FFFFFF" filter="url(#fyxb74dbvzaj3)" height="199.4609" style="stroke: #000000; stroke-width: 2.0;" width="525" x="13" y="454.7344"></rect>
+                              <rect fill="#FFFFFF" filter="url(#f13qz1i7drajwl)" height="185.4609" style="stroke: #000000; stroke-width: 2.0;" width="525" x="13" y="227.2734"></rect>
+                              <rect fill="#FFFFFF" filter="url(#f13qz1i7drajwl)" height="199.4609" style="stroke: #000000; stroke-width: 2.0;" width="525" x="13" y="454.7344"></rect>
                               <line style="stroke: #A80036; stroke-width: 1.0;" x1="56" x2="56" y1="119.2188" y2="419.7344"></line>
                               <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,4.0;" x1="56" x2="56" y1="419.7344" y2="447.7344"></line>
                               <line style="stroke: #A80036; stroke-width: 1.0;" x1="56" x2="56" y1="447.7344" y2="671.1953"></line>
@@ -50,18 +50,18 @@
                               <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,4.0;" x1="439" x2="439" y1="419.7344" y2="447.7344"></line>
                               <line style="stroke: #A80036; stroke-width: 1.0;" x1="439" x2="439" y1="447.7344" y2="671.1953"></line>
                               <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="60" x="23" y="116.1426">Physician</text>
-                              <ellipse cx="56" cy="44.6094" fill="#FEFECE" filter="url(#fyxb74dbvzaj3)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"></ellipse>
-                              <path d="M56,52.6094 L56,79.6094 M43,60.6094 L69,60.6094 M56,79.6094 L43,94.6094 M56,79.6094 L69,94.6094 " fill="none" filter="url(#fyxb74dbvzaj3)" style="stroke: #A80036; stroke-width: 2.0;"></path>
+                              <ellipse cx="56" cy="44.6094" fill="#FEFECE" filter="url(#f13qz1i7drajwl)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"></ellipse>
+                              <path d="M56,52.6094 L56,79.6094 M43,60.6094 L69,60.6094 M56,79.6094 L43,94.6094 M56,79.6094 L69,94.6094 " fill="none" filter="url(#f13qz1i7drajwl)" style="stroke: #A80036; stroke-width: 2.0;"></path>
                               <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="60" x="23" y="684.7285">Physician</text>
-                              <ellipse cx="56" cy="697.8047" fill="#FEFECE" filter="url(#fyxb74dbvzaj3)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"></ellipse>
-                              <path d="M56,705.8047 L56,732.8047 M43,713.8047 L69,713.8047 M56,732.8047 L43,747.8047 M56,732.8047 L69,747.8047 " fill="none" filter="url(#fyxb74dbvzaj3)" style="stroke: #A80036; stroke-width: 2.0;"></path>
-                              <rect fill="#FEFECE" filter="url(#fyxb74dbvzaj3)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="132" x="187" y="82.6094"></rect>
+                              <ellipse cx="56" cy="697.8047" fill="#FEFECE" filter="url(#f13qz1i7drajwl)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"></ellipse>
+                              <path d="M56,705.8047 L56,732.8047 M43,713.8047 L69,713.8047 M56,732.8047 L43,747.8047 M56,732.8047 L69,747.8047 " fill="none" filter="url(#f13qz1i7drajwl)" style="stroke: #A80036; stroke-width: 2.0;"></path>
+                              <rect fill="#FEFECE" filter="url(#f13qz1i7drajwl)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="132" x="187" y="82.6094"></rect>
                               <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="118" x="194" y="104.1426">Care Planning app</text>
-                              <rect fill="#FEFECE" filter="url(#fyxb74dbvzaj3)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="132" x="187" y="670.1953"></rect>
+                              <rect fill="#FEFECE" filter="url(#f13qz1i7drajwl)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="132" x="187" y="670.1953"></rect>
                               <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="118" x="194" y="691.7285">Care Planning app</text>
-                              <rect fill="#FEFECE" filter="url(#fyxb74dbvzaj3)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="52" x="411" y="82.6094"></rect>
+                              <rect fill="#FEFECE" filter="url(#f13qz1i7drajwl)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="52" x="411" y="82.6094"></rect>
                               <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="38" x="418" y="104.1426">DZOP</text>
-                              <rect fill="#FEFECE" filter="url(#fyxb74dbvzaj3)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="52" x="411" y="670.1953"></rect>
+                              <rect fill="#FEFECE" filter="url(#f13qz1i7drajwl)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="52" x="411" y="670.1953"></rect>
                               <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="38" x="418" y="691.7285">DZOP</text>
                               <polygon fill="#A80036" points="243,147.2188,253,151.2188,243,155.2188,247,151.2188" style="stroke: #A80036; stroke-width: 1.0;"></polygon>
                               <line style="stroke: #A80036; stroke-width: 1.0;" x1="56" x2="249" y1="151.2188" y2="151.2188"></line>
@@ -80,7 +80,7 @@
                               <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="128" x="63" y="263.1201">Select team members</text>
                               <polygon fill="#A80036" points="427,309.9766,437,313.9766,427,317.9766,431,313.9766" style="stroke: #A80036; stroke-width: 1.0;"></polygon>
                               <line style="stroke: #A80036; stroke-width: 1.0;" x1="255" x2="433" y1="313.9766" y2="313.9766"></line>
-                              <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="111" x="262" y="293.4717">Propose CareTeam</text><a target="_top" xlink:actuate="onRequest" xlink:href="#teampiet1" xlink:show="new" xlink:title="#teampiet1" xlink:type="simple">
+                              <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="115" x="262" y="293.4717">Propose Care Team</text><a target="_top" xlink:actuate="onRequest" xlink:href="#teampiet1" xlink:show="new" xlink:title="#teampiet1" xlink:type="simple">
                                  <text fill="#0000FF" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="66" x="262" y="309.8232">CareTeam1</text>
                                  <line style="stroke: #0000FF; stroke-width: 1.0;" x1="262" x2="328" y1="311.8232" y2="311.8232"></line></a><line style="stroke: #A80036; stroke-width: 1.0;" x1="439" x2="481" y1="345.0313" y2="345.0313"></line>
                               <line style="stroke: #A80036; stroke-width: 1.0;" x1="481" x2="481" y1="345.0313" y2="358.0313"></line>
@@ -96,7 +96,7 @@
                               <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="81" x="28" y="469.2295">Update team</text>
                               <polygon fill="#A80036" points="243,491.0859,253,495.0859,243,499.0859,247,495.0859" style="stroke: #A80036; stroke-width: 1.0;"></polygon>
                               <line style="stroke: #A80036; stroke-width: 1.0;" x1="56" x2="249" y1="495.0859" y2="495.0859"></line>
-                              <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="137" x="63" y="490.5811">Add new Team member</text>
+                              <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="134" x="63" y="490.5811">Add new team member</text>
                               <polygon fill="#A80036" points="427,537.4375,437,541.4375,427,545.4375,431,541.4375" style="stroke: #A80036; stroke-width: 1.0;"></polygon>
                               <line style="stroke: #A80036; stroke-width: 1.0;" x1="255" x2="433" y1="541.4375" y2="541.4375"></line>
                               <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="131" x="262" y="520.9326">Propose updated team</text><a target="_top" xlink:actuate="onRequest" xlink:href="#teampiet1" xlink:show="new" xlink:title="#teampiet1" xlink:type="simple">
@@ -133,7 +133,7 @@ title Process
     
 group Propose team
 dragon-> planner : Select team members
-planner-> dzop : Propose CareTeam \n[[#teampiet1 CareTeam1]]
+planner-> dzop : Propose Care Team \n[[#teampiet1 CareTeam1]]
 dzop-> dzop : Validate team
 dzop-> planner : Return validated team \n[[#teampiet1 CareTeam1]]
 end
@@ -144,7 +144,7 @@ end
 
     
 group Update team
-dragon-> planner : Add new Team member
+dragon-> planner : Add new team member
 planner-> dzop : Propose updated team \n[[#teampiet1 CareTeam1]]
 dzop-> dzop : Validate team
 dzop-> planner : Return validated team
@@ -305,9 +305,7 @@ Country: GB
                         </div>
                      </div>
                      <div id="resources" class="tab-pane fade">
-                        <h3><a name="resources"></a>
-                           																Resources
-                           															
+                        <h3><a name="resources"></a>Resources
                         </h3>
                         <div>
                            <p></p>
