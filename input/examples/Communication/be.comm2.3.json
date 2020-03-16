@@ -3,7 +3,7 @@
 	"id": "be.comm2.3",
 	"meta": {
 		"profile": [
-			"https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication"
+			"https://www.hl7belgium.org/fhir/StructureDefinition/be-communication"
 		]
 	},
 	"language": "en",
@@ -39,7 +39,7 @@
 	"recipient": [
 		{
 			"reference": "CareTeam/dzop-team-0002.v2",
-			"display": "Care Team"
+			"display": "Care team"
 		}
 	],
 	"sender": {
@@ -48,7 +48,7 @@
 	},
 	"payload": [
 		{
-			"contentString": "Dear Team"
+			"contentString": "Dear team"
 		}
 	]
 }

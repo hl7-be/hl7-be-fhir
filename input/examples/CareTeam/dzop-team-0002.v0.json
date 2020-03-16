@@ -3,9 +3,8 @@
   "id": "dzop-team-0002.v0",
   "meta": 
     {
-      "versionId": "0",
       "profile": [
-		"https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careteam"
+		"https://www.hl7belgium.org/fhir/StructureDefinition/be-homecare-team"
 	  ]
     },
   "identifier": [
@@ -25,7 +24,7 @@
       ]
     }
   ],
-  "name": "Pia's 2020 Care Team for post-op care",
+  "name": "Pia's 2020 Care team for post-op care",
   "subject": {
     "reference": "Patient/pia",
     "display": "Pia"

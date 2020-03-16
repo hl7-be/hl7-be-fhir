@@ -2,7 +2,7 @@
   "resourceType": "CarePlan",
   "meta": {
     "profile": [
-      "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careplan-homecare"
+      "https://www.hl7belgium.org/fhir/StructureDefinition/be-homecare-plan"
     ],
     "versionId": "1"
   },

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="be-careplan-homecare" />
-  <url value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careplan-homecare" />
+  <id value="be-homecare-plan" />
+  <url value="https://www.hl7belgium.org/fhir/StructureDefinition/be-homecare-plan" />
   <version value="0.1.0" />
   <name value="BECarePlan" />
   <status value="draft" />
@@ -37,7 +37,7 @@
       <path value="CarePlan.basedOn" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careplan-homecare" />
+        <targetProfile value="https://www.hl7belgium.org/fhir/StructureDefinition/be-homecare-plan" />
       </type>
       <mustSupport value="true" />
     </element>
@@ -45,7 +45,7 @@
       <path value="CarePlan.replaces" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careplan-homecare" />
+        <targetProfile value="https://www.hl7belgium.org/fhir/StructureDefinition/be-homecare-plan" />
       </type>
       <mustSupport value="true" />
     </element>
@@ -55,7 +55,7 @@
       <comment value="Each care plan is an independent request, such that having a care plan be part of another care plan can cause issues with cascading statuses." />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careplan-homecare" />
+        <targetProfile value="https://www.hl7belgium.org/fhir/StructureDefinition/be-homecare-plan" />
       </type>
       <mustSupport value="true" />
     </element>
@@ -108,7 +108,7 @@
         <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner" />
         <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitionerrole" />
         <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization" />
-        <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careteam" />
+        <targetProfile value="https://www.hl7belgium.org/fhir/StructureDefinition/be-homecare-team" />
       </type>
       <mustSupport value="true" />
     </element>
@@ -120,14 +120,14 @@
         <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner" />
         <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitionerrole" />
         <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization" />
-        <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careteam" />
+        <targetProfile value="https://www.hl7belgium.org/fhir/StructureDefinition/be-homecare-team" />
       </type>
     </element>
     <element id="CarePlan.careTeam">
       <path value="CarePlan.careTeam" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careteam" />
+        <targetProfile value="https://www.hl7belgium.org/fhir/StructureDefinition/be-homecare-team" />
       </type>
       <mustSupport value="true" />
     </element>
@@ -191,7 +191,7 @@
         <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner" />
         <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitionerrole" />
         <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization" />
-        <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careteam" />
+        <targetProfile value="https://www.hl7belgium.org/fhir/StructureDefinition/be-homecare-team" />
       </type>
       <mustSupport value="true" />
     </element>

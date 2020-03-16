@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="be-careteam" />
-  <url value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careteam" />
+  <id value="be-homecare-team" />
+  <url value="https://www.hl7belgium.org/fhir/StructureDefinition/be-homecare-team" />
   <version value="0.1.0" />
   <name value="BECareTeam" />
   <status value="draft" />
-  <description value="This is the Belgian profile for Care Team. A Care Team defines the people and roles organized around a patient's care activities planned. It may also imply additional aspects such as access to information etc." />
+  <description value="This is the Belgian profile for home care team. A home care team defines the people and roles organized around a patient's care activities planned. It may also imply additional aspects such as access to information etc." />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
@@ -43,7 +43,7 @@
         <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient" />
         <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner" />
         <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization" />
-        <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careteam" />
+        <targetProfile value="https://www.hl7belgium.org/fhir/StructureDefinition/be-homecare-team" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
       </type>
     </element>

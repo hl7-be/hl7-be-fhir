@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="string320"/> 
-  <url value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/string320"/> 
+  <url value="https://www.hl7belgium.org/fhir/StructureDefinition/string320"/> 
   <version value="4.0.1"/> 
   <name value="String320"/> 
   <status value="active"/> 

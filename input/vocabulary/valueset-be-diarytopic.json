@@ -1,7 +1,7 @@
 {
 	"resourceType": "ValueSet",
 	"id": "be-diarytopic",
-	"url": "https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-diarytopic",
+	"url": "https://www.hl7belgium.org/fhir/ValueSet/be-diarytopic",
 	"version": "1.0",
 	"name": "BEDiaryTopic",
 	"status": "draft",

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="be.base.ig"/>
-  <url value="https://www.ehealth.fgov.be/standards/fhir/ImplementationGuide/be.base.ig"/>
+  <url value="https://www.hl7belgium.org/fhir/ImplementationGuide/be.base.ig"/>
   <version value="0.1.0"/>
   <name value="BaseIG"/>
   <title value="FHIR Belgium Base IG"/>
@@ -95,21 +95,21 @@
  
     <resource>
       <reference>
-        <reference value="StructureDefinition/be-careplan-homecare"/>
+        <reference value="StructureDefinition/be-homecare-plan"/>
       </reference>
       <fhirVersion value="4.0.1"/>
-      <name value="Care Plan profile"/>
-      <description value="Care Plan profile"/>
+      <name value="Home Care Plan profile"/>
+      <description value="Home Care Plan profile"/>
       <groupingId value="communication"/>
     </resource>
 
     <resource>
       <reference>
-        <reference value="StructureDefinition/be-careteam"/>
+        <reference value="StructureDefinition/be-homecare-team"/>
       </reference>
       <fhirVersion value="4.0.1"/>
-      <name value="Care Team profile"/>
-      <description value="Care Plan profile"/>
+      <name value="Home Care team profile"/>
+      <description value="Home Care team profile"/>
       <groupingId value="communication"/>
     </resource>
 
@@ -324,11 +324,11 @@
 -->
     <resource>
       <reference>
-        <reference value="StructureDefinition/model-careteam"/>
+        <reference value="StructureDefinition/model-homecare-team"/>
       </reference>
       <fhirVersion value="4.0.1"/>
-      <name value="Logical Model Care Team"/>
-      <description value="Care Team logical model"/>
+      <name value="Logical Model Care team"/>
+      <description value="Care team logical model"/>
       <groupingId value="logicalmodels"/>
     </resource>
     <resource>
@@ -416,6 +416,7 @@
       <description value="The list of causative agents"/>
       <groupingId value="terminology"/>
     </resource>
+
     <resource>
       <reference>
         <reference value="ValueSet/be-riskmanifestation"/>
@@ -578,7 +579,7 @@
       <fhirVersion value="4.0.1"/>
       <name value="Communication example 1"/>
       <description value="New message from DZOP to nurse"/>
-      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication"/>
+      <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-communication"/>
 <!--      <groupingId value="examples"/>  -->
     </resource>
 
@@ -591,7 +592,7 @@
       <fhirVersion value="4.0.1"/>
       <name value="Communication example 2"/>
       <description value="Long message - part 1"/>
-      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication"/>
+      <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-communication"/>
 <!--      <groupingId value="examples"/>  -->
     </resource>
     <resource>
@@ -601,7 +602,7 @@
       <fhirVersion value="4.0.1"/>
       <name value="Communication example 3"/>
       <description value="Long message - part 2"/>
-      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication"/>
+      <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-communication"/>
 <!--      <groupingId value="examples"/>  -->
     </resource>
 
@@ -612,7 +613,7 @@
       <fhirVersion value="4.0.1"/>
       <name value="Communication example 4"/>
       <description value="Long message - part 3"/>
-      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication"/>
+      <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-communication"/>
 <!--      <groupingId value="examples"/>  -->
     </resource>
     <resource>
@@ -622,7 +623,7 @@
       <fhirVersion value="4.0.1"/>
       <name value="Communication example 5"/>
       <description value="Send notice / question"/>
-      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication"/>
+      <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-communication"/>
 <!--      <groupingId value="examples"/>  -->
     </resource>
     <resource>
@@ -632,7 +633,7 @@
       <fhirVersion value="4.0.1"/>
       <name value="Communication example 6"/>
       <description value="Reply to question"/>
-      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication"/>
+      <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-communication"/>
 <!--      <groupingId value="examples"/>  -->
     </resource>
     <resource>
@@ -642,7 +643,7 @@
       <fhirVersion value="4.0.1"/>
       <name value="Communication example 7"/>
       <description value="Send notification"/>
-      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication"/>
+      <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-communication"/>
 <!--      <groupingId value="examples"/>  -->
     </resource>
     <resource>
@@ -652,7 +653,7 @@
       <fhirVersion value="4.0.1"/>
       <name value="Communication example 8"/>
       <description value="Send reminder"/>
-      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication"/>
+      <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-communication"/>
 <!--      <groupingId value="examples"/>  -->
     </resource>
     <resource>
@@ -662,7 +663,7 @@
       <fhirVersion value="4.0.1"/>
       <name value="Communication example 9"/>
       <description value="Send attachment"/>
-      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication"/>
+      <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-communication"/>
 <!--      <groupingId value="examples"/>  -->
     </resource>
     <resource>
@@ -672,7 +673,7 @@
       <fhirVersion value="4.0.1"/>
       <name value="Communication example 10"/>
       <description value="Forward existing attachment"/>
-      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication"/>
+      <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-communication"/>
 <!--      <groupingId value="examples"/>  -->
     </resource>
     <resource>
@@ -682,7 +683,7 @@
       <fhirVersion value="4.0.1"/>
       <name value="Communication example 11"/>
       <description value="High-priority notification"/>
-      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication"/>
+      <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-communication"/>
 <!--      <groupingId value="examples"/>  -->
     </resource>
 
@@ -693,7 +694,7 @@
       <fhirVersion value="4.0.1"/>
       <name value="Care Team Pia - v0"/>
       <description value="The proposed Care Team for Pia"/>
-      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careteam"/>
+      <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-homecare-team"/>
 <!--      <groupingId value="examples"/>  -->
     </resource>
 
@@ -702,9 +703,9 @@
          <reference value="CareTeam/dzop-team-0002.v1"/>
       </reference>
       <fhirVersion value="4.0.1"/>
-      <name value="Care Team Pia - v1"/>
-      <description value="The Care Team assigned to patient Pia"/>
-      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careteam"/>
+      <name value="Care team Pia - v1"/>
+      <description value="The Care team assigned to patient Pia"/>
+      <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-homecare-team"/>
 <!--      <groupingId value="examples"/>  -->
     </resource>
 
@@ -713,9 +714,9 @@
          <reference value="CareTeam/dzop-team-0002.v2"/>
       </reference>
       <fhirVersion value="4.0.1"/>
-      <name value="Care Team Pia - v2"/>
+      <name value="Care team Pia - v2"/>
       <description value="The Care Team assigned to patient Pia"/>
-      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careteam"/>
+      <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-homecare-team"/>
 <!--      <groupingId value="examples"/>  -->
     </resource>
 
@@ -724,9 +725,9 @@
          <reference value="CareTeam/dzop-team-0002"/>
       </reference>
       <fhirVersion value="4.0.1"/>
-      <name value="Care Team Pia - current version"/>
-      <description value="The Care Team assigned to patient Pia - current"/>
-      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careteam"/>
+      <name value="Care team Pia - current version"/>
+      <description value="The Care team assigned to patient Pia - current"/>
+      <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-homecare-team"/>
 <!--      <groupingId value="examples"/>  -->
     </resource>
 
@@ -736,9 +737,9 @@
          <reference value="CareTeam/dzop-team-0002-doctors"/>
       </reference>
       <fhirVersion value="4.0.1"/>
-      <name value="Care Team Pia - doctors only"/>
-      <description value="Care Team assigned to Pia - physicians sub-team"/>
-      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careteam"/>
+      <name value="Care team Pia - doctors only"/>
+      <description value="Care team assigned to Pia - physicians sub-team"/>
+      <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-homecare-team"/>
 <!--      <groupingId value="examples"/>  -->
     </resource>
 
@@ -747,9 +748,9 @@
          <reference value="CareTeam/dzop-team-0002-nurses"/>
       </reference>
       <fhirVersion value="4.0.1"/>
-      <name value="Care Team Pia - nurses only"/>
-      <description value="Care Team assigned to Pia - Nurses sub-team"/>
-      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careteam"/>
+      <name value="Care team Pia - nurses only"/>
+      <description value="Care team assigned to Pia - Nurses sub-team"/>
+      <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-homecare-team"/>
 <!--      <groupingId value="examples"/>  -->
     </resource>
 
@@ -760,8 +761,8 @@
       </reference>
       <fhirVersion value="4.0.1"/>
       <name value="Care Plan Pia - initial nurse visit"/>
-      <description value="The Care Team created by the physician as a placeholder for the nurse appointment"/>
-      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careplan-homecare"/>
+      <description value="The Care team created by the physician as a placeholder for the nurse appointment"/>
+      <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-homecare-plan"/>
     </resource>
 
     <resource>
@@ -770,8 +771,8 @@
       </reference>
       <fhirVersion value="4.0.1"/>
       <name value="Care Plan Pia - details planned by nurse"/>
-      <description value="The Care Team created by the system with the details for the nurse appointment"/>
-      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careplan-homecare"/>
+      <description value="The Care team created by the system with the details for the nurse appointment"/>
+      <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-homecare-plan"/>
     </resource>
     <resource>
       <reference>
@@ -779,8 +780,8 @@
       </reference>
       <fhirVersion value="4.0.1"/>
       <name value="Care Plan Pia - details scheduled"/>
-      <description value="The Care Team created by the nurse with the detailed activities for diabetes, loneliness and depression"/>
-      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careplan-homecare"/>
+      <description value="The Care team created by the nurse with the detailed activities for diabetes, loneliness and depression"/>
+      <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-homecare-plan"/>
     </resource>
 
 
@@ -869,9 +870,9 @@
          <reference value="CareTeam/dzop-team-0002-v0"/>
       </reference>
       <fhirVersion value="4.0.1"/>
-      <name value="Care Team Pia"/>
-      <description value="The Care Team responsible for Pia's care"/>
-      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careteam"/>
+      <name value="Care team Pia"/>
+      <description value="The Care team responsible for Pia's care"/>
+      <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-careteam"/>
       <groupingId value="examples"/>
     </resource>
 
@@ -880,9 +881,9 @@
          <reference value="CareTeam/dzop-team-0002-v1"/>
       </reference>
       <fhirVersion value="4.0.1"/>
-      <name value="Care Team Pia"/>
-      <description value="The Care Team responsible for Pia's care"/>
-      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careteam"/>
+      <name value="Care team Pia"/>
+      <description value="The Care team responsible for Pia's care"/>
+      <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-careteam"/>
       <groupingId value="examples"/>
     </resource>
 -->

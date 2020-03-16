@@ -5,7 +5,7 @@
     <status value="additional" />
     <div xmlns="http://www.w3.org/1999/xhtml">This Logical Model represents the core attributes of a Diary Note or Communication used in Belgium.</div>
   </text>
-  <url value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/model-communication" />
+  <url value="https://www.hl7belgium.org/fhir/StructureDefinition/model-communication" />
   <version value="0.1.0" />
   <name value="CommunicationLogicalModel" />
   <status value="draft" />
@@ -199,8 +199,10 @@
       <max value="*"/>
       <type>
         <code value="string"/>
+<!--
         <profile
                  value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/string320"/>
+-->
       </type>
     </element>
     <element id="BECommunication.content.attachment">

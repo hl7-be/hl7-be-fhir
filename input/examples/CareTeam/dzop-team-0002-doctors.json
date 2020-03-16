@@ -5,7 +5,7 @@
     {
       "versionId": "3",
       "profile": [
-		"https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-careteam"
+		"https://www.hl7belgium.org/fhir/StructureDefinition/be-homecare-team"
 	  ]
     },
   "identifier": [
@@ -20,7 +20,7 @@
         {
           "system": "http://loinc.org",
           "code": "LA28866-4",
-          "display": "Home & Community Based Services (HCBS)-focused care team"
+          "display": "Home & Community Based Services (HCBS)-focused care Team"
         }
       ]
     }
