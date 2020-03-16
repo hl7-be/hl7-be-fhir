@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="be-communication" />
-  <url value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication" />
+  <url value="https://www.hl7belgium.org/fhir/StructureDefinition/be-communication" />
   <version value="0.1.0" />
   <name value="BECommunication" />
   <status value="draft" />
@@ -87,7 +87,9 @@
       <definition value="A communicated content (or for multi-part communications, one portion of the communication). This can be a string, an attachment, or a reference to a resource." />
       <type>
         <code value="string" />
-        <profile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/string320" />
+<!--
+        <profile value="https://www.hl7belgium.org/fhir/StructureDefinition/string320" />
+-->
       </type>
       <type>
         <code value="Attachment" />
