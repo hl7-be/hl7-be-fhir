@@ -1,52 +1,38 @@
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd" lang="en">
   <a name="scope"> </a>
-  <h3>Scope</h3>
-	<p/>
 	<p>
-    This is the HL7 Belgium FHIR specification. This specification is being developed in collaboration with different parties and cannot be considered legally binding. The legally binding specifications for Belgium are those <a href="https://ehealthplatformstandards.github.io/">published by the eHealth federal platform</a>.
+    This is the HL7 Belgium FHIR Implementation Guide. It contains a collection of specifications developed by the HL7 community in Belgium. 
+This specification is being developed in collaboration with different parties and is not a legal standard. The legally binding specifications for Belgium are those published by the Federal eHealth Platform
+ <a href="https://ehealthplatformstandards.github.io/">which can be consulted here</a>.
    </p>
 	<blockquote class="stu-note">
-	<strong>This documentation and set of artefacts are still undergoing development, and they are in DRAFT mode.</strong>
-	The working groups of HL7 and the different interested parties are working on this specification. This is a DRAFT specification that has not yet been validated by the community of users and implementers.
+	<strong>This documentation and set of artefacts are still undergoing development.</strong>
+	The working groups of HL7 and the different interested parties are working on this specification. This publication is a development version that has not yet been validated by HL7 nor by the users and implementers.
 	</blockquote>
-	<p>
-	This specification contains: 
-	</p>
-	<ul>
-    <li><a href="artifacts.html#logical-models">Logical Models</a>, which describe describing several data sets and elements used in Belgian systems</li>
-    <li><a href="artifacts.html#terminology">Value Sets and code systems</a>, containing specific Belgian value sets</li>
-    <li><a href="artifacts.html#core-profiles">Core profiles</a>, which constitute the basis for Belgium FHIR profiling and can be reused in other profiles </li>
-    <li>Functional Profiles, split by functional area for ease of access</li>
-	<ul>
-    <li><a href="artifacts.html#communication">Care coordination and Communication</a>, </li>
-    <li><a href="artifacts.html#communication">Patient conditions</a></li>
-	</ul>
-    <li>Required <a href="artifacts.html#logical-models">Capability Statements</a> for systems to implement</li>
-	</ul>
-	<p>
-    The implementation guide is structured to allow implementers to pick and choose the specifications needed, and combine them as necessary.
-	</p>
-	<a name="toc"> </a>
-	<h3>Navigation</h3>
-	<p>
-    This implementation guide follows the FHIR pattern of being published as a web-based specification.  This
-    allows easy navigation between the Belgium-specific portion of the implementation guide and the resources,
-    data types, value sets and other specification components leveraged from the FHIR core specification.  This
-    approach also allows implementers to easily navigate to the information needed to perform a task.
-  </p>
-	<p>
-    A <a href="toc.html">Table of Contents</a> page is provided that lists all of the pages defined as part of this implementation guide.  (Do be aware 
-    that some pages have multiple tabs.)  A table of contents is also available for the full <a href="{{site.data.fhir.path}}toc.html">FHIR specification</a> 
-    if you really want to read absolutely everything.  There's also an <a href="artifacts.html">Artifact index</a> that lists all formal FHIR artifacts 
-    defined within this implementation guide.  The <i>Support</i> menu provides links to the HL7 standards used by this implementation guide as well as
-    providing a <a href="downloads.html">downloads</a> link to retrieve a local copy of this implementation guide and/or particular subsets of it.
-  </p>
-	<p>
-    Bread-crumb navigation is provided in the gray bar just below the menu at the top of each page, allowing
-    easy navigation back to the main page.
-  </p>
-  <p>
-  </p>
+	<p> </p>
+  <h3>Content</h3>
+	<p/>
+
+<p>This publication contains the full set of specifications and is structured in the following content sections:</p>
+<p></p>
+<p><strong>Background:</strong> Information about the HL7 Belgium specifications, or what you should know to be able to best navigate and use these specifications. Contains a general introduction to the publication structure and content, the artefact types, common privacy and security specifications and the official HL7 FHIR release that this specification is based upon.</p>
+<p></p>
+<p><strong>Functional Description:</strong> Functional content, more relevant for business or functional analysts, as well as health professionals. Contains the context around these specifications (relevant projects, legal and implementation aspects), the interoperability actors and transactions, and especially the use cases that have been considered in the specification and the logical data models – the functional (i.e. non-technical) data sets that are used in data exchange.</p>
+<p></p>
+<p><strong>Detailed Specifications:</strong> The actual technical specifications – the FHIR conformance resources that are defined in this specification – profiles, data types, capability statements. This is targeted at (technical) implementers.</p>
+<p></p>
+<p><strong>Terminology:</strong> The vocabulary resources – Code Systems and value sets, that support semantic interoperability. These resources promote the use of standard, controlled terminologies (e.g. SNOMED-CT) and define internal codes for Belgium, e.g. official codes for Civil Status).</p>
+<p></p>
+<p><strong>Implementation:</strong> Content, Tools and resources to help in implementation – test data (example resources), currently available test servers, and other tools to validate the compatibility between systems and these specifications.</p>
+<p> </p>
+<p>There is also an overview of the projects and motivation for the specifications.</p>
+<p></p>
+
+<a name="navigation"> </a>
+<h3 id="navigation">Navigation</h3>
+<p>This implementation guide uses the FHIR web-based publication. This allows easy navigation between the Belgium-specific portion of the implementation guide and the resources, data types, value sets and other specification components leveraged from the FHIR core specification. This approach also allows implementers to easily navigate to the information needed to perform a task.</p>
+<p>The top menu allows quick navigation to the different sections, and a <a href="file:///C:\ImplementationGuides\be-core\output\toc.html">Table of Contents</a>  is provided with the entire content of this Implementation Guide. (Be aware that some pages have multiple tabs).</p>
+<p></p>
 	<a name="ip"> </a>
 	<h3>Intellectual Property Considerations</h3>
 	<p>

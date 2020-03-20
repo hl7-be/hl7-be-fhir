@@ -29,7 +29,7 @@
                         <p></p>
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="496px" preserveAspectRatio="none" style="width:459px;height:496px;" version="1.1" viewBox="0 0 459 496" width="459px" zoomAndPan="magnify">
                            <defs>
-                              <filter height="300%" id="f1ky2t5xg40agy" width="300%" x="-1" y="-1">
+                              <filter height="300%" id="fbln9pfzey7bs" width="300%" x="-1" y="-1">
                                  <feGaussianBlur result="blurOut" stdDeviation="2.0"></feGaussianBlur>
                                  <feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"></feColorMatrix>
                                  <feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"></feOffset>
@@ -43,24 +43,24 @@
                               <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="415" x2="415" y1="136.8281" y2="390.3438"></line>
                               <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="66" x="8" y="116.1426">Dr. Durant</text>
                               <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="30" x="26" y="133.752">(GP)</text>
-                              <ellipse cx="44" cy="44.6094" fill="#FEFECE" filter="url(#f1ky2t5xg40agy)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"></ellipse>
-                              <path d="M44,52.6094 L44,79.6094 M31,60.6094 L57,60.6094 M44,79.6094 L31,94.6094 M44,79.6094 L57,94.6094 " fill="none" filter="url(#f1ky2t5xg40agy)" style="stroke: #A80036; stroke-width: 2.0;"></path>
+                              <ellipse cx="44" cy="44.6094" fill="#FEFECE" filter="url(#fbln9pfzey7bs)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"></ellipse>
+                              <path d="M44,52.6094 L44,79.6094 M31,60.6094 L57,60.6094 M44,79.6094 L31,94.6094 M44,79.6094 L57,94.6094 " fill="none" filter="url(#fbln9pfzey7bs)" style="stroke: #A80036; stroke-width: 2.0;"></path>
                               <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="66" x="8" y="403.877">Dr. Durant</text>
                               <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="30" x="26" y="421.4863">(GP)</text>
-                              <ellipse cx="44" cy="434.5625" fill="#FEFECE" filter="url(#f1ky2t5xg40agy)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"></ellipse>
-                              <path d="M44,442.5625 L44,469.5625 M31,450.5625 L57,450.5625 M44,469.5625 L31,484.5625 M44,469.5625 L57,484.5625 " fill="none" filter="url(#f1ky2t5xg40agy)" style="stroke: #A80036; stroke-width: 2.0;"></path>
-                              <rect fill="#FEFECE" filter="url(#f1ky2t5xg40agy)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="46" x="229" y="100.2188"></rect>
+                              <ellipse cx="44" cy="434.5625" fill="#FEFECE" filter="url(#fbln9pfzey7bs)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"></ellipse>
+                              <path d="M44,442.5625 L44,469.5625 M31,450.5625 L57,450.5625 M44,469.5625 L31,484.5625 M44,469.5625 L57,484.5625 " fill="none" filter="url(#fbln9pfzey7bs)" style="stroke: #A80036; stroke-width: 2.0;"></path>
+                              <rect fill="#FEFECE" filter="url(#fbln9pfzey7bs)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="46" x="229" y="100.2188"></rect>
                               <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="32" x="236" y="121.752">Vault</text>
-                              <rect fill="#FEFECE" filter="url(#f1ky2t5xg40agy)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="46" x="229" y="389.3438"></rect>
+                              <rect fill="#FEFECE" filter="url(#fbln9pfzey7bs)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="46" x="229" y="389.3438"></rect>
                               <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="32" x="236" y="410.877">Vault</text>
                               <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="63" x="380.5" y="116.1426">Dr. Lenoir</text>
                               <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="70" x="377" y="133.752">(Specialist)</text>
-                              <ellipse cx="415" cy="44.6094" fill="#FEFECE" filter="url(#f1ky2t5xg40agy)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"></ellipse>
-                              <path d="M415,52.6094 L415,79.6094 M402,60.6094 L428,60.6094 M415,79.6094 L402,94.6094 M415,79.6094 L428,94.6094 " fill="none" filter="url(#f1ky2t5xg40agy)" style="stroke: #A80036; stroke-width: 2.0;"></path>
+                              <ellipse cx="415" cy="44.6094" fill="#FEFECE" filter="url(#fbln9pfzey7bs)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"></ellipse>
+                              <path d="M415,52.6094 L415,79.6094 M402,60.6094 L428,60.6094 M415,79.6094 L402,94.6094 M415,79.6094 L428,94.6094 " fill="none" filter="url(#fbln9pfzey7bs)" style="stroke: #A80036; stroke-width: 2.0;"></path>
                               <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="63" x="380.5" y="403.877">Dr. Lenoir</text>
                               <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="70" x="377" y="421.4863">(Specialist)</text>
-                              <ellipse cx="415" cy="434.5625" fill="#FEFECE" filter="url(#f1ky2t5xg40agy)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"></ellipse>
-                              <path d="M415,442.5625 L415,469.5625 M402,450.5625 L428,450.5625 M415,469.5625 L402,484.5625 M415,469.5625 L428,484.5625 " fill="none" filter="url(#f1ky2t5xg40agy)" style="stroke: #A80036; stroke-width: 2.0;"></path>
+                              <ellipse cx="415" cy="434.5625" fill="#FEFECE" filter="url(#fbln9pfzey7bs)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"></ellipse>
+                              <path d="M415,442.5625 L415,469.5625 M402,450.5625 L428,450.5625 M415,469.5625 L402,484.5625 M415,469.5625 L428,484.5625 " fill="none" filter="url(#fbln9pfzey7bs)" style="stroke: #A80036; stroke-width: 2.0;"></path>
                               <polygon fill="#A80036" points="242,180.8281,252,184.8281,242,188.8281,246,184.8281" style="stroke: #A80036; stroke-width: 1.0;"></polygon>
                               <line style="stroke: #A80036; stroke-width: 1.0;" x1="44" x2="248" y1="184.8281" y2="184.8281"></line>
                               <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="125" x="51" y="164.3232">Get patient's allergies</text><a target="_top" xlink:actuate="onRequest" xlink:href="#EB" xlink:show="new" xlink:title="#EB" xlink:type="simple">
@@ -85,42 +85,19 @@
                               <!--
 @startuml
 title Allergy Intolerance Use Case
-
 actor "Dr. Durant\n(GP)" as GP
 participant "Vault" as VAULT
 actor "Dr. Lenoir\n(Specialist)" as SPEC
 
-    
-title Allergy Intolerance Use Case
-    
-    
-    
+GP -> VAULT : Get patient's allergies\n[[#EB Empty Bundle]]
 
-    GP-> VAULT : Get patient's allergies\n[[#EB Empty Bundle]]
+GP -> VAULT : Create new Allergy record entry \n[[#noel-allergy.v0 Allergy Record]]
 
+SPEC -> VAULT : Get patient's allergies\n[[#noel-allergy.v0 Allergy Record]]
 
+SPEC -> VAULT : Update Allergy record \n[[#noel-allergy.v1 Updated Allergy Record]]
 
-
-    GP-> VAULT : Create new Allergy record entry \n[[#noel-allergy.v0 Allergy Record]]
-
-
-
-    SPEC-> VAULT : Get patient's allergies\n[[#noel-allergy.v0 Allergy Record]]
-
-
-
-
-    SPEC-> VAULT : Update Allergy record \n[[#noel-allergy.v1 Updated Allergy Record]]
-
-
-
-    GP-> VAULT : Get patient's allergies\n[[#noel-allergy.v1 Updated Allergy Record]]
-
-
-
-
-
-  
+GP -> VAULT : Get patient's allergies\n[[#noel-allergy.v1 Updated Allergy Record]]
 @enduml
 
 PlantUML version 1.2018.01(Sun Jan 28 19:08:22 CET 2018)
@@ -156,20 +133,14 @@ Country: GB
                            </table>
                            <table class="cols">
                               <tr>
-                                 <td><a href="#maturity">Purpose</a>
-                                    																			:
-                                    																			
-                                 </td>
+                                 <td><a href="#maturity">Purpose:</a></td>
                               </tr>
                            </table>
                            <p></p>
                            <p></p>
                         </div>
                         <div>
-                           <h4><a name="Actors"></a>
-                              																	Actors
-                              																
-                           </h4>
+                           <h4><a name="Actors">Actors</a></h4>
                            <table class="grid">
                               <tbody>
                                  <tr>
@@ -198,8 +169,7 @@ Country: GB
                            <p></p>
                         </div>
                         <div>
-                           <h4><a name="flow"></a>
-                              																	Process Flow -
+                           <h4><a name="flow"></a>Process Flow -
                               																	description
                            </h4>
                            <div class="container">

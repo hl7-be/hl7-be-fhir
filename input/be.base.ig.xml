@@ -35,7 +35,7 @@
   <definition>
     <grouping id="logicalmodels">
       <name value="Logical Models"/>
-      <description value="The common Belgian Logical Models - these can be mapped to KMEHR and FHIR"/>
+      <description value="The common Belgian Logical Model. These can be mapped to KMEHR, CDA, HL7 v2 and FHIR"/>
     </grouping>
     <grouping id="datatypes">
       <name value="Data Types"/>
@@ -50,7 +50,7 @@
       <description value="Conditions and findings about patients"/>
     </grouping>
     <grouping id="communication">
-      <name value="Communication"/>
+      <name value="Care Coordination"/>
       <description value="Communication and Care Coordination"/>
     </grouping>
     <grouping id="condition">
@@ -145,6 +145,7 @@
       <groupingId value="datatypes"/>
     </resource>
 
+<!--
     <resource>
       <reference>
         <reference value="StructureDefinition/string320"/>
@@ -155,7 +156,6 @@
       <groupingId value="datatypes"/>
     </resource>
 	
-<!--
     <resource>
       <reference>
         <reference value="StructureDefinition/be-observationCodeableConcept"/>
@@ -1084,6 +1084,13 @@
 				<title value="Use Case 3 - Allergy"/>
 				<generation value="html"/>
 			  </page>
+<!--
+			  <page>
+				<nameUrl value="scenario-mma.html"/>
+				<title value="Use Case X - MMA"/>
+				<generation value="html"/>
+			  </page>
+-->			  
 		  </page>
       </page>
 

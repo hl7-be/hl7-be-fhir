@@ -188,20 +188,14 @@ Country: GB
                            </table>
                            <table class="cols">
                               <tr>
-                                 <td><a href="#maturity">Purpose</a>
-                                    																			:
-                                    																			
-                                 </td>
+                                 <td><a href="#maturity">Purpose:</a></td>
                               </tr>
                            </table>
                            <p></p>
                            <p></p>
                         </div>
                         <div>
-                           <h4><a name="Actors"></a>
-                              																	Actors
-                              																
-                           </h4>
+                           <h4><a name="Actors">Actors</a></h4>
                            <table class="grid">
                               <tbody>
                                  <tr>
@@ -230,8 +224,7 @@ Country: GB
                            <p></p>
                         </div>
                         <div>
-                           <h4><a name="flow"></a>
-                              																	Process Flow -
+                           <h4><a name="flow"></a>Process Flow -
                               																	
                            </h4>
                            <div class="container">

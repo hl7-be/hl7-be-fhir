@@ -1,0 +1,608 @@
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fhir="http://hl7.org/fhir" xsi:schemaLocation="http://hl7.org/fhir ../../../../schema/fhir-single.xsd">
+   <div id="segment-content" class="segment">
+      <div class="container">
+         <div class="row">
+            <div class="inner-wrapper">
+               <div class="col-12">
+                  <ul class="nav nav-tabs">
+                     <li class="active"><a data-toggle="tab" href="#sequence">Sequence</a></li>
+                     <li><a data-toggle="tab" href="#details">Details</a></li>
+                     <li><a data-toggle="tab" href="#resources">Resources</a></li>
+                  </ul>
+                  <div class="tab-content">
+                     <div id="sequence" class="tab-pane fade in active">
+                        <h4><a name="description"></a>
+                           																Description
+                           															
+                        </h4>
+                        <p></p>
+                        <h5><a name="preconditions"></a>
+                           																Pre-Conditions
+                           															
+                        </h5>
+                        <p>Medication administration requests are in the EHR / MAR, scheduled for each individual
+                           intake.
+                        </p>
+                        <h5><a name="postconditions"></a>
+                           																Post Conditions
+                           															
+                        </h5>
+                        <p>Medication administration Reports are submitted, EHR is updated.</p>
+                        <p></p>
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="1019px" preserveAspectRatio="none" style="width:738px;height:1019px;" version="1.1" viewBox="0 0 738 1019" width="738px" zoomAndPan="magnify">
+                           <defs>
+                              <filter height="300%" id="fstwn5cv9xeha" width="300%" x="-1" y="-1">
+                                 <feGaussianBlur result="blurOut" stdDeviation="2.0"></feGaussianBlur>
+                                 <feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"></feColorMatrix>
+                                 <feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"></feOffset>
+                                 <feBlend in="SourceGraphic" in2="blurOut3" mode="normal"></feBlend>
+                              </filter>
+                           </defs>
+                           <g>
+                              <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="235" x="274.75" y="24.5332">Mobile Medication Administration</text>
+                              <rect fill="#FFFFFF" filter="url(#fstwn5cv9xeha)" height="114.1094" style="stroke: #000000; stroke-width: 2.0;" width="409.5" x="234" y="166.5703"></rect>
+                              <rect fill="#FFFFFF" filter="url(#fstwn5cv9xeha)" height="76.7031" style="stroke: #000000; stroke-width: 2.0;" width="330" x="33" y="535.7891"></rect>
+                              <line style="stroke: #A80036; stroke-width: 1.0;" x1="64" x2="64" y1="119.2188" y2="287.6797"></line>
+                              <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,4.0;" x1="64" x2="64" y1="287.6797" y2="315.6797"></line>
+                              <line style="stroke: #A80036; stroke-width: 1.0;" x1="64" x2="64" y1="315.6797" y2="376.3828"></line>
+                              <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,4.0;" x1="64" x2="64" y1="376.3828" y2="404.3828"></line>
+                              <line style="stroke: #A80036; stroke-width: 1.0;" x1="64" x2="64" y1="404.3828" y2="584.4922"></line>
+                              <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,4.0;" x1="64" x2="64" y1="584.4922" y2="612.4922"></line>
+                              <line style="stroke: #A80036; stroke-width: 1.0;" x1="64" x2="64" y1="612.4922" y2="619.4922"></line>
+                              <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,4.0;" x1="64" x2="64" y1="619.4922" y2="647.4922"></line>
+                              <line style="stroke: #A80036; stroke-width: 1.0;" x1="64" x2="64" y1="647.4922" y2="721.1953"></line>
+                              <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,4.0;" x1="64" x2="64" y1="721.1953" y2="749.1953"></line>
+                              <line style="stroke: #A80036; stroke-width: 1.0;" x1="64" x2="64" y1="749.1953" y2="821.25"></line>
+                              <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,4.0;" x1="64" x2="64" y1="821.25" y2="849.25"></line>
+                              <line style="stroke: #A80036; stroke-width: 1.0;" x1="64" x2="64" y1="849.25" y2="931.3047"></line>
+                              <line style="stroke: #A80036; stroke-width: 1.0;" x1="298" x2="298" y1="119.2188" y2="287.6797"></line>
+                              <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,4.0;" x1="298" x2="298" y1="287.6797" y2="315.6797"></line>
+                              <line style="stroke: #A80036; stroke-width: 1.0;" x1="298" x2="298" y1="315.6797" y2="376.3828"></line>
+                              <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,4.0;" x1="298" x2="298" y1="376.3828" y2="404.3828"></line>
+                              <line style="stroke: #A80036; stroke-width: 1.0;" x1="298" x2="298" y1="404.3828" y2="584.4922"></line>
+                              <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,4.0;" x1="298" x2="298" y1="584.4922" y2="612.4922"></line>
+                              <line style="stroke: #A80036; stroke-width: 1.0;" x1="298" x2="298" y1="612.4922" y2="619.4922"></line>
+                              <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,4.0;" x1="298" x2="298" y1="619.4922" y2="647.4922"></line>
+                              <line style="stroke: #A80036; stroke-width: 1.0;" x1="298" x2="298" y1="647.4922" y2="721.1953"></line>
+                              <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,4.0;" x1="298" x2="298" y1="721.1953" y2="749.1953"></line>
+                              <line style="stroke: #A80036; stroke-width: 1.0;" x1="298" x2="298" y1="749.1953" y2="821.25"></line>
+                              <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,4.0;" x1="298" x2="298" y1="821.25" y2="849.25"></line>
+                              <line style="stroke: #A80036; stroke-width: 1.0;" x1="298" x2="298" y1="849.25" y2="931.3047"></line>
+                              <line style="stroke: #A80036; stroke-width: 1.0;" x1="571.5" x2="571.5" y1="119.2188" y2="287.6797"></line>
+                              <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,4.0;" x1="571.5" x2="571.5" y1="287.6797" y2="315.6797"></line>
+                              <line style="stroke: #A80036; stroke-width: 1.0;" x1="571.5" x2="571.5" y1="315.6797" y2="376.3828"></line>
+                              <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,4.0;" x1="571.5" x2="571.5" y1="376.3828" y2="404.3828"></line>
+                              <line style="stroke: #A80036; stroke-width: 1.0;" x1="571.5" x2="571.5" y1="404.3828" y2="584.4922"></line>
+                              <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,4.0;" x1="571.5" x2="571.5" y1="584.4922" y2="612.4922"></line>
+                              <line style="stroke: #A80036; stroke-width: 1.0;" x1="571.5" x2="571.5" y1="612.4922" y2="619.4922"></line>
+                              <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,4.0;" x1="571.5" x2="571.5" y1="619.4922" y2="647.4922"></line>
+                              <line style="stroke: #A80036; stroke-width: 1.0;" x1="571.5" x2="571.5" y1="647.4922" y2="721.1953"></line>
+                              <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,4.0;" x1="571.5" x2="571.5" y1="721.1953" y2="749.1953"></line>
+                              <line style="stroke: #A80036; stroke-width: 1.0;" x1="571.5" x2="571.5" y1="749.1953" y2="821.25"></line>
+                              <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,4.0;" x1="571.5" x2="571.5" y1="821.25" y2="849.25"></line>
+                              <line style="stroke: #A80036; stroke-width: 1.0;" x1="571.5" x2="571.5" y1="849.25" y2="931.3047"></line>
+                              <line style="stroke: #A80036; stroke-width: 1.0;" x1="687.5" x2="687.5" y1="119.2188" y2="287.6797"></line>
+                              <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,4.0;" x1="687.5" x2="687.5" y1="287.6797" y2="315.6797"></line>
+                              <line style="stroke: #A80036; stroke-width: 1.0;" x1="687.5" x2="687.5" y1="315.6797" y2="376.3828"></line>
+                              <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,4.0;" x1="687.5" x2="687.5" y1="376.3828" y2="404.3828"></line>
+                              <line style="stroke: #A80036; stroke-width: 1.0;" x1="687.5" x2="687.5" y1="404.3828" y2="584.4922"></line>
+                              <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,4.0;" x1="687.5" x2="687.5" y1="584.4922" y2="612.4922"></line>
+                              <line style="stroke: #A80036; stroke-width: 1.0;" x1="687.5" x2="687.5" y1="612.4922" y2="619.4922"></line>
+                              <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,4.0;" x1="687.5" x2="687.5" y1="619.4922" y2="647.4922"></line>
+                              <line style="stroke: #A80036; stroke-width: 1.0;" x1="687.5" x2="687.5" y1="647.4922" y2="721.1953"></line>
+                              <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,4.0;" x1="687.5" x2="687.5" y1="721.1953" y2="749.1953"></line>
+                              <line style="stroke: #A80036; stroke-width: 1.0;" x1="687.5" x2="687.5" y1="749.1953" y2="821.25"></line>
+                              <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,4.0;" x1="687.5" x2="687.5" y1="821.25" y2="849.25"></line>
+                              <line style="stroke: #A80036; stroke-width: 1.0;" x1="687.5" x2="687.5" y1="849.25" y2="931.3047"></line>
+                              <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="37" x="43" y="116.1426">Nurse</text>
+                              <ellipse cx="64.5" cy="44.6094" fill="#FEFECE" filter="url(#fstwn5cv9xeha)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"></ellipse>
+                              <path d="M64.5,52.6094 L64.5,79.6094 M51.5,60.6094 L77.5,60.6094 M64.5,79.6094 L51.5,94.6094 M64.5,79.6094 L77.5,94.6094 " fill="none" filter="url(#fstwn5cv9xeha)" style="stroke: #A80036; stroke-width: 2.0;"></path>
+                              <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="37" x="43" y="944.8379">Nurse</text>
+                              <ellipse cx="64.5" cy="957.9141" fill="#FEFECE" filter="url(#fstwn5cv9xeha)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"></ellipse>
+                              <path d="M64.5,965.9141 L64.5,992.9141 M51.5,973.9141 L77.5,973.9141 M64.5,992.9141 L51.5,1007.9141 M64.5,992.9141 L77.5,1007.9141 " fill="none" filter="url(#fstwn5cv9xeha)" style="stroke: #A80036; stroke-width: 2.0;"></path>
+                              <rect fill="#FEFECE" filter="url(#fstwn5cv9xeha)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="105" x="244" y="82.6094"></rect>
+                              <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="91" x="251" y="104.1426">Nurse's Tablet</text>
+                              <rect fill="#FEFECE" filter="url(#fstwn5cv9xeha)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="105" x="244" y="930.3047"></rect>
+                              <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="91" x="251" y="951.8379">Nurse's Tablet</text>
+                              <rect fill="#FEFECE" filter="url(#fstwn5cv9xeha)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="120" x="509.5" y="82.6094"></rect>
+                              <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="106" x="516.5" y="104.1426">MAR / Scheduler</text>
+                              <rect fill="#FEFECE" filter="url(#fstwn5cv9xeha)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="120" x="509.5" y="930.3047"></rect>
+                              <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="106" x="516.5" y="951.8379">MAR / Scheduler</text>
+                              <rect fill="#FEFECE" filter="url(#fstwn5cv9xeha)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="84" x="643.5" y="82.6094"></rect>
+                              <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="70" x="650.5" y="104.1426">MAR / EHR</text>
+                              <rect fill="#FEFECE" filter="url(#fstwn5cv9xeha)" height="31.6094" style="stroke: #A80036; stroke-width: 1.5;" width="84" x="643.5" y="930.3047"></rect>
+                              <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="70" x="650.5" y="951.8379">MAR / EHR</text>
+                              <polygon fill="#A80036" points="286.5,147.2188,296.5,151.2188,286.5,155.2188,290.5,151.2188" style="stroke: #A80036; stroke-width: 1.0;"></polygon>
+                              <line style="stroke: #A80036; stroke-width: 1.0;" x1="64.5" x2="292.5" y1="151.2188" y2="151.2188"></line>
+                              <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="181" x="71.5" y="146.7139">Nurse checks today's schedule</text>
+                              <path d="M234,166.5703 L474,166.5703 L474,174.5703 L464,184.5703 L234,184.5703 L234,166.5703 " fill="#EEEEEE" style="stroke: #000000; stroke-width: 1.0;"></path>
+                              <rect fill="none" height="114.1094" style="stroke: #000000; stroke-width: 2.0;" width="409.5" x="234" y="166.5703"></rect>
+                              <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="195" x="249" y="181.0654">Query Administration Requests</text>
+                              <polygon fill="#A80036" points="559.5,267.9219,569.5,271.9219,559.5,275.9219,563.5,271.9219" style="stroke: #A80036; stroke-width: 1.0;"></polygon>
+                              <line style="stroke: #A80036; stroke-width: 1.0;" x1="298.5" x2="565.5" y1="271.9219" y2="271.9219"></line>
+                              <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="249" x="305.5" y="202.417">Query for medication administration orders,</text>
+                              <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="107" x="305.5" y="218.7686">- For today's shifts</text>
+                              <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="122" x="305.5" y="235.1201">- For today's patients</text><a target="_top" xlink:actuate="onRequest" xlink:href="#iherxqry" xlink:show="new" xlink:title="#iherxqry" xlink:type="simple">
+                                 <text fill="#0000FF" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="84" x="305.5" y="251.4717">Search query1</text>
+                                 <line style="stroke: #0000FF; stroke-width: 1.0;" x1="305.5" x2="389.5" y1="253.4717" y2="253.4717"></line></a><a target="_top" xlink:actuate="onRequest" xlink:href="#iherx001bundle" xlink:show="new" xlink:title="#iherx001bundle" xlink:type="simple">
+                                 <text fill="#0000FF" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="180" x="305.5" y="267.8232">Bundle of Medication Requests</text>
+                                 <line style="stroke: #0000FF; stroke-width: 1.0;" x1="305.5" x2="485.5" y1="269.8232" y2="269.8232"></line></a><polygon fill="#A80036" points="75.5,333.6797,65.5,337.6797,75.5,341.6797,71.5,337.6797" style="stroke: #A80036; stroke-width: 1.0;"></polygon>
+                              <line style="stroke: #A80036; stroke-width: 1.0;" x1="69.5" x2="297.5" y1="337.6797" y2="337.6797"></line>
+                              <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="70" x="81.5" y="333.1748">Notify (alert)</text>
+                              <polygon fill="#A80036" points="286.5,364.0313,296.5,368.0313,286.5,372.0313,290.5,368.0313" style="stroke: #A80036; stroke-width: 1.0;"></polygon>
+                              <line style="stroke: #A80036; stroke-width: 1.0;" x1="64.5" x2="292.5" y1="368.0313" y2="368.0313"></line>
+                              <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="70" x="71.5" y="363.5264">Read orders</text>
+                              <line style="stroke: #A80036; stroke-width: 1.0;" x1="64.5" x2="106.5" y1="426.7344" y2="426.7344"></line>
+                              <line style="stroke: #A80036; stroke-width: 1.0;" x1="106.5" x2="106.5" y1="426.7344" y2="439.7344"></line>
+                              <line style="stroke: #A80036; stroke-width: 1.0;" x1="65.5" x2="106.5" y1="439.7344" y2="439.7344"></line>
+                              <polygon fill="#A80036" points="75.5,435.7344,65.5,439.7344,75.5,443.7344,71.5,439.7344" style="stroke: #A80036; stroke-width: 1.0;"></polygon>
+                              <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="141" x="71.5" y="421.8779">Ask if patient took meds</text>
+                              <polygon fill="#A80036" points="286.5,516.4375,296.5,520.4375,286.5,524.4375,290.5,520.4375" style="stroke: #A80036; stroke-width: 1.0;"></polygon>
+                              <line style="stroke: #A80036; stroke-width: 1.0;" x1="64.5" x2="292.5" y1="520.4375" y2="520.4375"></line>
+                              <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="141" x="71.5" y="515.9326">Register Meds takenend</text>
+                              <path d="M33,535.7891 L206,535.7891 L206,543.7891 L196,553.7891 L33,553.7891 L33,535.7891 " fill="#EEEEEE" style="stroke: #000000; stroke-width: 1.0;"></path>
+                              <rect fill="none" height="76.7031" style="stroke: #000000; stroke-width: 2.0;" width="330" x="33" y="535.7891"></rect>
+                              <text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="128" x="48" y="550.2842">No, Meds NOT taken</text>
+                              <polygon fill="#A80036" points="286.5,572.1406,296.5,576.1406,286.5,580.1406,290.5,576.1406" style="stroke: #A80036; stroke-width: 1.0;"></polygon>
+                              <line style="stroke: #A80036; stroke-width: 1.0;" x1="64.5" x2="292.5" y1="576.1406" y2="576.1406"></line>
+                              <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="171" x="71.5" y="571.6357">Register Meds NOT takenend</text>
+                              <line style="stroke: #A80036; stroke-width: 1.0;" x1="64.5" x2="106.5" y1="669.8438" y2="669.8438"></line>
+                              <line style="stroke: #A80036; stroke-width: 1.0;" x1="106.5" x2="106.5" y1="669.8438" y2="682.8438"></line>
+                              <line style="stroke: #A80036; stroke-width: 1.0;" x1="65.5" x2="106.5" y1="682.8438" y2="682.8438"></line>
+                              <polygon fill="#A80036" points="75.5,678.8438,65.5,682.8438,75.5,686.8438,71.5,682.8438" style="stroke: #A80036; stroke-width: 1.0;"></polygon>
+                              <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="91" x="71.5" y="664.9873">Administer drug</text>
+                              <polygon fill="#A80036" points="286.5,708.8438,296.5,712.8438,286.5,716.8438,290.5,712.8438" style="stroke: #A80036; stroke-width: 1.0;"></polygon>
+                              <line style="stroke: #A80036; stroke-width: 1.0;" x1="64.5" x2="292.5" y1="712.8438" y2="712.8438"></line>
+                              <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="133" x="71.5" y="708.3389">Register administration</text>
+                              <polygon fill="#A80036" points="286.5,808.5469,296.5,812.5469,286.5,816.5469,290.5,812.5469" style="stroke: #A80036; stroke-width: 1.0;"></polygon>
+                              <line style="stroke: #A80036; stroke-width: 1.0;" x1="64.5" x2="292.5" y1="812.5469" y2="812.5469"></line>
+                              <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="206" x="71.5" y="792.042">Nurse updates administration report</text><a target="_top" xlink:actuate="onRequest" xlink:href="#iheadm002" xlink:show="new" xlink:title="#iheadm002" xlink:type="simple">
+                                 <text fill="#0000FF" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="115" x="71.5" y="808.3936">Lunch meds - taken</text>
+                                 <line style="stroke: #0000FF; stroke-width: 1.0;" x1="71.5" x2="186.5" y1="810.3936" y2="810.3936"></line></a><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="21" x="186.5" y="808.3936">end</text>
+                              <polygon fill="#A80036" points="675.5,908.6016,685.5,912.6016,675.5,916.6016,679.5,912.6016" style="stroke: #A80036; stroke-width: 1.0;"></polygon>
+                              <line style="stroke: #A80036; stroke-width: 1.0;" x1="298.5" x2="681.5" y1="912.6016" y2="912.6016"></line>
+                              <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="44" x="305.5" y="892.0967">Refresh</text><a target="_top" xlink:actuate="onRequest" xlink:href="#iheadm001" xlink:show="new" xlink:title="#iheadm001" xlink:type="simple">
+                                 <text fill="#0000FF" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="70" x="305.5" y="908.4482">#iheadm001</text>
+                                 <line style="stroke: #0000FF; stroke-width: 1.0;" x1="305.5" x2="375.5" y1="910.4482" y2="910.4482"></line></a><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="21" x="375.5" y="908.4482">end</text>
+                              <!--
+@startuml
+title Mobile Medication Administration
+actor "Nurse" as Nurse
+participant "Nurse's Tablet" as MAP
+participant "MAR / Scheduler" as OP
+participant "MAR / EHR" as MAC
+		
+title Mobile Medication Administration
+		
+		
+		
+
+		
+Nurse-> MAP : Nurse checks today's schedule
+
+		
+group Query Administration Requests
+
+MAP-> OP : Query for medication administration orders,\n- For today's shifts\n- For today's patients \n[[#iherxqry Search query1]]\n[[#iherx001bundle Bundle of Medication Requests]]
+end
+
+
+		
+...
+
+
+
+		
+MAP-> Nurse : Notify (alert)
+		
+Nurse-> MAP : Read orders
+
+
+		
+...
+
+
+		
+Nurse-> Nurse : Ask if patient took meds
+
+		
+alt
+
+group Yes, Meds taken
+
+Nurse-> MAP : Register Meds takenend
+
+group No, Meds NOT taken
+
+Nurse-> MAP : Register Meds NOT takenend
+
+...
+end
+
+
+		
+...
+
+
+
+
+		
+Nurse-> Nurse : Administer drug
+		
+Nurse-> MAP : Register administration
+
+		
+...
+
+
+		
+group P2. Update administration reports
+
+Nurse-> MAP : Nurse updates administration report \n[[#iheadm002 Lunch meds - taken]]end
+
+
+		
+...
+
+
+		
+group P3. Upload administration reports
+
+MAP-> MAC : Refresh \n[[#iheadm001 ]]end
+
+
+
+
+	
+@enduml
+
+PlantUML version 1.2018.01(Sun Jan 28 19:08:22 CET 2018)
+(APACHE source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Java Version: 1.8.0_231-b11
+Operating System: Windows 10
+OS Version: 10.0
+Default Encoding: Cp1252
+Language: en
+Country: GB
+-->
+                           </g>
+                        </svg>
+                     </div>
+                     <div id="details" class="tab-pane fade">
+                        <h3><a name="details"></a>
+                           																Details
+                           															
+                        </h3>
+                        <div>
+                           <table class="cols">
+                              <tr>
+                                 <td>
+                                    																			Publisher: (link?)
+                                    																			
+                                 </td>
+                                 <td><a>Status</a>
+                                    																			:
+                                    																			draft
+                                 </td>
+                              </tr>
+                           </table>
+                           <table class="cols">
+                              <tr>
+                                 <td><a href="#maturity">Purpose:</a>Purpose: this serves to enable remote performing of medication administration, by
+                                    using remote / mobile devices to a) Get the planned medication administrations and
+                                    b) Record the performing of these administrations without a permanent connection to
+                                    the EHR.
+                                 </td>
+                              </tr>
+                           </table>
+                           <p></p>
+                           <p></p>
+                        </div>
+                        <div>
+                           <h4><a name="Actors">Actors</a></h4>
+                           <table class="grid">
+                              <tbody>
+                                 <tr>
+                                    <th>Name</th>
+                                    <th>Type</th>
+                                    <th>Description</th>
+                                 </tr>
+                                 <tr>
+                                    <td><b>Nurse</b></td>
+                                    <td>person</td>
+                                    <td>The Nurse</td>
+                                 </tr>
+                                 <tr>
+                                    <td><b>Nurse's Tablet</b></td>
+                                    <td>entity</td>
+                                    <td>The entity that receives the Administration Requests to show the nurse to perform
+                                       them
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td><b>MAR / Scheduler</b></td>
+                                    <td>entity</td>
+                                    <td>The Medication Administration Order Placer</td>
+                                 </tr>
+                                 <tr>
+                                    <td><b>MAR / EHR</b></td>
+                                    <td>entity</td>
+                                    <td>The entity that receives the Medication Administration reports</td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <p></p>
+                           <p></p>
+                        </div>
+                        <div>
+                           <h4><a name="flow"></a>Process Flow -
+                              																	This scenario demonstrates the process of getting the relevant medication instructions
+                              for a patient visit and reporting the results of administration. The scenario is as
+                              follows: After the prescription is issued, the institution schedules each individual
+                              administration event in the Medication Administration Record (MAR). When preparing
+                              for a visit, the nurse queries the MAR for the scheduled administrations, obtaining
+                              a bundle of records. The nurse then performs the care activities and registers the
+                              results in the device. Upon synchronization of the device and the institution, the
+                              results of administration are uploaded to the EHR, thus updating the MAR.
+                           </h4>
+                           <div class="container">
+                              <div>
+                                 <div>Main Flow</div>
+                                 <table class="cols">
+                                    <tbody>
+                                       <tr>
+                                          <th>Step</th>
+                                          <th>Description</th>
+                                          <th>Operation</th>
+                                          <th>Request</th>
+                                          <th>Response</th>
+                                          <th>z</th>
+                                          <th>x</th>
+                                          <th>x</th>
+                                          <th>x</th>
+                                       </tr>
+                                       <tr><a href="#1"></a><td><a name="p2">1Nurse checks today's schedule</a></td>
+                                          <td></td>
+                                          <td>
+                                             		RQ:
+                                          </td>
+                                          <td>
+                                             		RP:
+                                          </td>
+                                       </tr>
+                                       <tr><a href="#2"></a></tr>
+                                       <tr><a href="#3"></a></tr>
+                                       <tr><a href="#4"></a><td><a name="p2">3Notify (alert)</a></td>
+                                          <td></td>
+                                          <td>
+                                             		RQ:
+                                          </td>
+                                          <td>
+                                             		RP:
+                                          </td>
+                                       </tr>
+                                       <tr><a href="#5"></a><td><a name="p2">4Read orders</a></td>
+                                          <td></td>
+                                          <td>
+                                             		RQ:
+                                          </td>
+                                          <td>
+                                             		RP:
+                                          </td>
+                                       </tr>
+                                       <tr><a href="#6"></a></tr>
+                                       <tr><a href="#7"></a><td><a name="p2">5Ask if patient took meds</a></td>
+                                          <td></td>
+                                          <td>
+                                             		RQ:
+                                          </td>
+                                          <td>
+                                             		RP:
+                                          </td>
+                                       </tr>
+                                       <tr><a href="#8"></a></tr>
+                                       <tr><a href="#9"></a></tr>
+                                       <tr><a href="#10"></a><td><a name="p2">6Administer drug</a></td>
+                                          <td></td>
+                                          <td>
+                                             		RQ:
+                                          </td>
+                                          <td>
+                                             		RP:
+                                          </td>
+                                       </tr>
+                                       <tr><a href="#11"></a><td><a name="p2">7Register administration</a></td>
+                                          <td></td>
+                                          <td>
+                                             		RQ:
+                                          </td>
+                                          <td>
+                                             		RP:
+                                          </td>
+                                       </tr>
+                                       <tr><a href="#12"></a></tr>
+                                       <tr><a href="#13"></a></tr>
+                                       <tr><a href="#14"></a></tr>
+                                       <tr><a href="#15"></a></tr>
+                                    </tbody>
+                                 </table>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div id="resources" class="tab-pane fade">
+                        <h3><a name="resources"></a>Resources
+                        </h3>
+                        <div>
+                           <p></p>
+                           <h4>MedicationRequest</h4>
+                           <table class="grid">
+                              <tbody>
+                                 <tr>
+                                    <th>Artifact</th>
+                                    <th>Version</th>
+                                    <th>Description</th>
+                                    <th>Created by step</th>
+                                    <th>Creating actor</th>
+                                 </tr>
+                                 <tr>
+                                    <td rowspan="1"><a name="iherx001" href="MedicationRequest-iherx001.html"><b>Initial Prescription</b></a></td>
+                                    <td>
+                                       (0)
+                                       			
+                                    </td>
+                                    <td><b>The initial prescription which describes "medication X, 3 times per day" - the exact
+                                          scheduling is not   in the initial prescription (it is left for the care teams to
+                                          decide on the schedule).</b></td>
+                                    <td colspan="3"></td>
+                                 </tr>
+                                 <tr>
+                                    <td rowspan="1"><a name="iherx001.001" href="MedicationRequest-iherx001.001.html"><b>Request for day 1, morning</b></a></td>
+                                    <td>
+                                       (0)
+                                       			
+                                    </td>
+                                    <td><b>The administration request for day 1, morning</b></td>
+                                    <td colspan="3"></td>
+                                 </tr>
+                                 <tr>
+                                    <td rowspan="1"><a name="iherx001.002" href="MedicationRequest-iherx001.002.html"><b>Request for day 1, lunch</b></a></td>
+                                    <td>
+                                       (0)
+                                       			
+                                    </td>
+                                    <td><b>The administration request for day 1, lunch</b></td>
+                                    <td colspan="3"></td>
+                                 </tr>
+                                 <tr>
+                                    <td rowspan="1"><a name="iherx001.003" href="MedicationRequest-iherx001.003.html"><b>Request for day 1, evening</b></a></td>
+                                    <td>
+                                       (0)
+                                       			
+                                    </td>
+                                    <td><b>The administration request for day 1, evening</b></td>
+                                    <td colspan="3"></td>
+                                 </tr>
+                                 <tr>
+                                    <td rowspan="1"><a name="iherx001.004" href="MedicationRequest-iherx001.004.html"><b>Request for day 2, morning</b></a></td>
+                                    <td>
+                                       (0)
+                                       			
+                                    </td>
+                                    <td><b>The administration request for day 2, morning</b></td>
+                                    <td colspan="3"></td>
+                                 </tr>
+                                 <tr>
+                                    <td rowspan="1"><a name="iherx001.005" href="MedicationRequest-iherx001.005.html"><b>Request for day 2, lunch</b></a></td>
+                                    <td>
+                                       (0)
+                                       			
+                                    </td>
+                                    <td><b>The administration request for day 2, lunch</b></td>
+                                    <td colspan="3"></td>
+                                 </tr>
+                                 <tr>
+                                    <td rowspan="1"><a name="iherx001.006" href="MedicationRequest-iherx001.006.html"><b>Request for day 2, evening</b></a></td>
+                                    <td>
+                                       (0)
+                                       			
+                                    </td>
+                                    <td><b>The administration request for day 2, evening</b></td>
+                                    <td colspan="3"></td>
+                                 </tr>
+                                 <tr>
+                                    <td rowspan="1"><a name="iherx001bundle" href="MedicationRequest-iherx001bundle.html"><b>Bundle of Medication Requests</b></a></td>
+                                    <td>
+                                       (0)
+                                       			
+                                    </td>
+                                    <td><b>All the medication Requests for Day 1</b></td>
+                                    <td colspan="3"></td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </div>
+                        <div>
+                           <p></p>
+                           <h4>MedicationAdministration</h4>
+                           <table class="grid">
+                              <tbody>
+                                 <tr>
+                                    <th>Artifact</th>
+                                    <th>Version</th>
+                                    <th>Description</th>
+                                    <th>Created by step</th>
+                                    <th>Creating actor</th>
+                                 </tr>
+                                 <tr>
+                                    <td rowspan="1"><a name="iheadm001a" href="MedicationAdministration-iheadm001a.html"><b>Morning meds - taken</b></a></td>
+                                    <td>
+                                       (0)
+                                       			
+                                    </td>
+                                    <td><b>Administration report for day 1, morning: Taken</b></td>
+                                    <td colspan="3"></td>
+                                 </tr>
+                                 <tr>
+                                    <td rowspan="1"><a name="iheadm001b" href="MedicationAdministration-iheadm001b.html"><b>Morning meds - not taken</b></a></td>
+                                    <td>
+                                       (0)
+                                       			
+                                    </td>
+                                    <td><b>Administration report for day 1, morning: NOT Taken</b></td>
+                                    <td colspan="3"></td>
+                                 </tr>
+                                 <tr>
+                                    <td rowspan="3"><a name="iheadm002" href="MedicationAdministration-iheadm002.html"><b>Lunch meds - taken</b></a></td>
+                                    <td>
+                                       (2)
+                                       			
+                                    </td>
+                                    <td><b>Administration report for day 1, lunch: Taken</b></td>
+                                    <td colspan="3"></td>
+                                 </tr>
+                                 <tr>
+                                    <td>iheadm002v1</td>
+                                    <td>Medication just taken</td>
+                                 </tr>
+                                 <tr>
+                                    <td>iheadm002v2</td>
+                                    <td>Medication rejected</td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </div>
+                        <div>
+                           <p></p>
+                           <h4>SearchParameter</h4>
+                           <table class="grid">
+                              <tbody>
+                                 <tr>
+                                    <th>Artifact</th>
+                                    <th>Version</th>
+                                    <th>Description</th>
+                                    <th>Created by step</th>
+                                    <th>Creating actor</th>
+                                 </tr>
+                                 <tr>
+                                    <td rowspan="1"><a name="iherxqry" href="SearchParameter-iherxqry.html"><b>Search query1</b></a></td>
+                                    <td>
+                                       (0)
+                                       			
+                                    </td>
+                                    <td><b>The search administration request for day 1, morning</b></td>
+                                    <td colspan="3"></td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
