@@ -206,7 +206,7 @@
         <reference value="StructureDefinition/be-provenance"/>
       </reference>
       <fhirVersion value="4.0.1"/>
-      <name value="Organization core BE profile"/>
+      <name value="Provenance core BE profile"/>
       <description value="The Core BE profile for Provenance"/>
       <groupingId value="core"/>
     </resource>
@@ -220,7 +220,7 @@
       <fhirVersion value="4.0.1"/>
       <name value="Organization CodeableConcept BE profile"/>
       <description value="CodeableConcept profile for Belgian Observations"/>
-      <groupingId value="core"/>
+      <groupingId value="datatypes"/>
     </resource>
 
 
@@ -253,7 +253,7 @@
       </reference>
       <fhirVersion value="4.0.1"/>
       <name value="NIHDI Naming System"/>
-      <description value="Belgian Naming System ofr NIDHI identifiers"/>
+      <description value="Belgian Naming System for NIDHI identifiers"/>
       <groupingId value="core"/>
     </resource>
 
@@ -447,7 +447,7 @@
     </resource>
     <resource>
       <reference>
-        <reference value="CodeSystem/cd-hcparty"/>
+        <reference value="CodeSystem/be-hcparty"/>
       </reference>
       <fhirVersion value="4.0.1"/>
       <name value="CodeSystem - Healthcare Party"/>
@@ -1037,8 +1037,8 @@
 			<generation value="html"/>
 		  </page>
 		  <page>
-			<nameUrl value="artifacttypes.html"/>
-			<title value="Types of artifacts"/>
+			<nameUrl value="standardsstatus.html"/>
+			<title value="Standards Status"/>
 			<generation value="html"/>
 		  </page>
 		  <page>

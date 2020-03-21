@@ -1,0 +1,229 @@
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"> <head> <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> </head><p>Standards Status</p>
+<p></p>
+<p>The artifacts in this standard have followed the governance process for HL7 Belgium and/or eHealth platform.</p>
+<p>The artifacts promoted by HL7 Belgium have a “Community status” – they have been reviewed by the HL7 Belgium community.</p>
+<p>Those promoted by the eHealth Platform have been accepted as Legal standards.</p>
+<p>HL7 Belgium and eHealth Platform share the goal that their specifications should coincide as much as possible – Community standards should also be Legal standards, and vice-versa. This can be done thanks to a process and common criteria that have been defined.</p>
+<p>In practice, both the HL7 Belgium Community and eHealth will follow a similar process with specific steps and criteria – the status is granted when criteria is met (by following the process).</p>
+<p></p>
+<p></p>
+<table class ="table table-striped table-bordered">
+<thead>
+<tr class="header">
+<th><strong>Type</strong></th>
+<th><strong>Name</strong></th>
+<th><strong>Community</strong></th>
+<th><strong>Legal</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Data Type</td>
+<td>Belgian Address</td>
+<td>Y</td>
+<td>Y</td>
+</tr>
+<tr class="even">
+<td>Data Type</td>
+<td>BE Organization CodeableConcept profile</td>
+<td>Y</td>
+<td>Y</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Profile</td>
+<td>BE Patient profile</td>
+<td>Y</td>
+<td>Y</td>
+</tr>
+<tr class="odd">
+<td>Profile</td>
+<td>BE Practitioner Role profile</td>
+<td>Y</td>
+<td>Y</td>
+</tr>
+<tr class="even">
+<td>Profile</td>
+<td>BE Practitioner profile</td>
+<td>Y</td>
+<td>Y</td>
+</tr>
+<tr class="odd">
+<td>Profile</td>
+<td>BE Organization core profile</td>
+<td>Y</td>
+<td>Y</td>
+</tr>
+<tr class="even">
+<td>Profile</td>
+<td>BE Observation core profile</td>
+<td>Y</td>
+<td>Y</td>
+</tr>
+<tr class="odd">
+<td>Profile</td>
+<td>BE Provenance core profile</td>
+<td>Y</td>
+<td>Y</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Naming System</td>
+<td>CBE Naming System</td>
+<td>Y</td>
+<td>Y</td>
+</tr>
+<tr class="even">
+<td>Naming System</td>
+<td>EHP Naming System</td>
+<td>Y</td>
+<td>Y</td>
+</tr>
+<tr class="odd">
+<td>Naming System</td>
+<td>NIHDI Naming System</td>
+<td>Y</td>
+<td>Y</td>
+</tr>
+<tr class="even">
+<td>Naming System</td>
+<td>SSIN / INSZ Naming System</td>
+<td>Y</td>
+<td>Y</td>
+</tr>
+<tr class="odd">
+<td>Naming System</td>
+<td>Allergy Intolerance code Naming System</td>
+<td>Y</td>
+<td>Y</td>
+</tr>
+<tr class="even">
+<td>Naming System</td>
+<td>Exposure Route Naming System</td>
+<td>Y</td>
+<td>Y</td>
+</tr>
+<tr class="odd">
+<td>Naming System</td>
+<td>"No Allergy" Naming System</td>
+<td>Y</td>
+<td>Y</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Profile</td>
+<td>Communication Profile</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Profile</td>
+<td>Home Care Plan profile</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Profile</td>
+<td>Home Care team profile</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Profile</td>
+<td>Allergy Intolerance core BE profile</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>CodeSystem</td>
+<td>Civil State</td>
+<td>Y</td>
+<td>Y</td>
+</tr>
+<tr class="even">
+<td>CodeSystem</td>
+<td>Healthcare Party</td>
+<td>Y</td>
+<td>Y</td>
+</tr>
+<tr class="odd">
+<td>CodeSystem</td>
+<td>CommunicationTopic</td>
+<td>Y</td>
+<td>Y</td>
+</tr>
+<tr class="even">
+<td>CodeSystem</td>
+<td>Contact Person</td>
+<td>Y</td>
+<td>Y</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>ValueSet</td>
+<td>CommunicationTopic</td>
+<td>Y</td>
+<td>Y</td>
+</tr>
+<tr class="odd">
+<td>ValueSet</td>
+<td>Contact Person</td>
+<td>Y</td>
+<td>Y</td>
+</tr>
+<tr class="even">
+<td>ValueSet</td>
+<td>Causative Agent</td>
+<td>Y</td>
+<td>Y</td>
+</tr>
+<tr class="odd">
+<td>ValueSet</td>
+<td>Risk Manifestation</td>
+<td>Y</td>
+<td>Y</td>
+</tr>
+<tr class="even">
+<td>ValueSet</td>
+<td>Civil State</td>
+<td>Y</td>
+<td>Y</td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<p></p>
+<p></p>
+</div>
