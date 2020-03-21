@@ -243,7 +243,10 @@ Country: GB
                            </table>
                            <table class="cols">
                               <tr>
-                                 <td><a href="#maturity">Purpose:</a></td>
+                                 <td>
+                                    																			Purpose: 
+                                    																			
+                                 </td>
                               </tr>
                            </table>
                            <p></p>
@@ -323,24 +326,26 @@ Country: GB
                                           <th>x</th>
                                           <th>x</th>
                                        </tr>
-                                       <tr><a href="#1"></a><td><a name="p2">Blood must be taken</a></td>
+                                       <tr><a href="#"></a>1
+                                          <td><a name="p2">Blood must be taken</a></td>
                                           <td></td>
-                                          <td>
-                                             		RQ:<b>Request</b>
+                                          <td><b>Request</b>
                                              		(
                                              		natalie
                                              		-
                                              		DZOP
                                              		):
                                              		<a href="#be.comm1">Resource 1</a></td>
-                                          <td>
-                                             		RP:
-                                          </td>
+                                          <td></td>
                                        </tr>
-                                       <tr><a href="#2"></a></tr>
-                                       <tr><a href="#3"></a></tr>
-                                       <tr><a href="#4"></a></tr>
-                                       <tr><a href="#5"></a></tr>
+                                       <tr><a href="#"></a>2
+                                       </tr>
+                                       <tr><a href="#"></a>3
+                                       </tr>
+                                       <tr><a href="#"></a>4
+                                       </tr>
+                                       <tr><a href="#"></a>5
+                                       </tr>
                                     </tbody>
                                  </table>
                               </div>

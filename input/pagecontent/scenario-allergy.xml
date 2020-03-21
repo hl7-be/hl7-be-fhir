@@ -133,7 +133,10 @@ Country: GB
                            </table>
                            <table class="cols">
                               <tr>
-                                 <td><a href="#maturity">Purpose:</a></td>
+                                 <td>
+                                    																			Purpose: 
+                                    																			
+                                 </td>
                               </tr>
                            </table>
                            <p></p>
@@ -188,10 +191,10 @@ Country: GB
                                           <th>x</th>
                                           <th>x</th>
                                        </tr>
-                                       <tr><a href="#1"></a><td><a name="p2">Get patient's allergies</a></td>
+                                       <tr><a href="#"></a>1
+                                          <td><a name="p2">Get patient's allergies</a></td>
                                           <td></td>
-                                          <td>
-                                             		RQ:<b>Request</b>
+                                          <td><b>Request</b>
                                              		(
                                              		VAULT
                                              		-
@@ -199,8 +202,7 @@ Country: GB
                                              		):
                                              		
                                           </td>
-                                          <td>
-                                             		RP:<b xmlns="">Response</b>
+                                          <td><b xmlns="">Response</b>
                                              		(
                                              		VAULT
                                              		-
@@ -208,18 +210,17 @@ Country: GB
                                              		):
                                              		<a href="#EB">Empty Bundle</a></td>
                                        </tr>
-                                       <tr><a href="#2"></a><td><a name="p2">Create new Allergy record entry</a></td>
+                                       <tr><a href="#"></a>2
+                                          <td><a name="p2">Create new Allergy record entry</a></td>
                                           <td></td>
-                                          <td>
-                                             		RQ:<b>Request</b>
+                                          <td><b>Request</b>
                                              		(
                                              		VAULT
                                              		-
                                              		GP
                                              		):
                                              		<a href="#noel-allergy.v0">Allergy Record</a></td>
-                                          <td>
-                                             		RP:<b xmlns="">Response</b>
+                                          <td><b xmlns="">Response</b>
                                              		(
                                              		VAULT
                                              		-
@@ -228,10 +229,10 @@ Country: GB
                                              		
                                           </td>
                                        </tr>
-                                       <tr><a href="#3"></a><td><a name="p2">Get patient's allergies</a></td>
+                                       <tr><a href="#"></a>3
+                                          <td><a name="p2">Get patient's allergies</a></td>
                                           <td></td>
-                                          <td>
-                                             		RQ:<b>Request</b>
+                                          <td><b>Request</b>
                                              		(
                                              		VAULT
                                              		-
@@ -239,8 +240,7 @@ Country: GB
                                              		):
                                              		
                                           </td>
-                                          <td>
-                                             		RP:<b xmlns="">Response</b>
+                                          <td><b xmlns="">Response</b>
                                              		(
                                              		VAULT
                                              		-
@@ -248,18 +248,17 @@ Country: GB
                                              		):
                                              		<a href="#noel-allergy.v0">Allergy Record</a></td>
                                        </tr>
-                                       <tr><a href="#4"></a><td><a name="p2">Update Allergy record</a></td>
+                                       <tr><a href="#"></a>4
+                                          <td><a name="p2">Update Allergy record</a></td>
                                           <td></td>
-                                          <td>
-                                             		RQ:<b>Request</b>
+                                          <td><b>Request</b>
                                              		(
                                              		VAULT
                                              		-
                                              		SPEC
                                              		):
                                              		<a href="#noel-allergy.v1">Updated Allergy Record</a></td>
-                                          <td>
-                                             		RP:<b xmlns="">Response</b>
+                                          <td><b xmlns="">Response</b>
                                              		(
                                              		VAULT
                                              		-
@@ -268,10 +267,10 @@ Country: GB
                                              		
                                           </td>
                                        </tr>
-                                       <tr><a href="#5"></a><td><a name="p2">Get patient's allergies</a></td>
+                                       <tr><a href="#"></a>5
+                                          <td><a name="p2">Get patient's allergies</a></td>
                                           <td></td>
-                                          <td>
-                                             		RQ:<b>Request</b>
+                                          <td><b>Request</b>
                                              		(
                                              		VAULT
                                              		-
@@ -279,8 +278,7 @@ Country: GB
                                              		):
                                              		
                                           </td>
-                                          <td>
-                                             		RP:<b xmlns="">Response</b>
+                                          <td><b xmlns="">Response</b>
                                              		(
                                              		VAULT
                                              		-

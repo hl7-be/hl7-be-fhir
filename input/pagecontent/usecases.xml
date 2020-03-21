@@ -1,4 +1,5 @@
-<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"> <head> <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> </head><p>This is a list of use cases supported by this specification. These use cases will be further detailed.</p>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"> <head> <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> </head><p>This is a list of use cases supported by this specification. These use cases are implemented in the scenarios section.</p>
+<p></p>
 
 <a name="patient-demographics"> </a>
 <h3 id="patient-demographics">Patient demographics</h3>
@@ -6,28 +7,29 @@
 <li><p>Patient Pia Peters’s record is created</p></li>
 <li><p>Patient’s record is updated with name, address (in Brussels), the SSIN, nationality and birth place.</p></li>
 </ul>
-<p> </p>
+<p></p>
 
 <a name="allergies-and-intolerance-reporting"> </a>
 <h3 id="allergies-and-intolerance-reporting">Allergies and intolerance reporting</h3>
 <ul>
-<li><p>Patient reports an allergy to seafood</p></li>
-<li><p>To be more specific, GP checks what are the possible causative agentes grouped under Seafood</p></li>
-<li><p>GP updates allergy info with "Shrimp"</p></li>
-<li><p>GP updates the allergy reactions to "mild tingling in face" and "strong nausea"</p></li>
+<li><p>Patient reports an allergy to Penicillin</p></li>
+<li><p>GP records a suspected allergy to Penicillin</p></li>
+<li><p>Specialist performs tests and sees that the suspected reaction is na expectable adverse reaction to Penicillin and updates the allergy record to Refuted</p></li>
+<li><p>GP consults the allergy and sees it is updated</p></li>
 </ul>
 <p> </p>
 
 <a name="communication-and-journaling"> </a>
 <h3 id="communication-and-journaling">Communication and Journaling</h3>
 <ul>
-<li><p>Nurse Nathalie sends a message to the team</p></li>
-<li><p>Nurse sends messages in different languages</p></li>
+<li><p>System notifies practitioner when an event is due</p></li>
+<li><p>Nurse sends a message to the team - in different languages</p></li>
 <li><p>Caregiver replies to message</p></li>
 <li><p>Nurse issues a note with attachments (e.g. a picture)</p></li>
 <li><p>Physician forwards a message to another participant</p></li>
 </ul>
 <p> </p>
+<p></p>
 
 <a name="care-team-definition"> </a>
 <h3 id="care-team-definition">Care Team definition</h3>
@@ -38,4 +40,11 @@
 <li><p>After checking availabilities and any constraints, the team gets approved (status "active")</p></li>
 </ul>
 <p> </p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
 </div>

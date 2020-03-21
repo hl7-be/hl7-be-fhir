@@ -22,5 +22,6 @@ hl7.be.fhir.template-local/
 hl7.be.fhir.template2/
 input/examples/esRender/
 hl7.be.fhir.template#current/
-hl7.be.fhir.template/
-hl7.be.fhir.template/
+**/hl7.be.fhir.template/
+**/be.federal.template/
+

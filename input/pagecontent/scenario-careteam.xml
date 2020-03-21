@@ -188,7 +188,10 @@ Country: GB
                            </table>
                            <table class="cols">
                               <tr>
-                                 <td><a href="#maturity">Purpose:</a></td>
+                                 <td>
+                                    																			Purpose: 
+                                    																			
+                                 </td>
                               </tr>
                            </table>
                            <p></p>
@@ -243,10 +246,10 @@ Country: GB
                                           <th>x</th>
                                           <th>x</th>
                                        </tr>
-                                       <tr><a href="#1"></a><td><a name="p2">Query team members</a></td>
+                                       <tr><a href="#"></a>1
+                                          <td><a name="p2">Query team members</a></td>
                                           <td></td>
-                                          <td>
-                                             		RQ:<b>Request</b>
+                                          <td><b>Request</b>
                                              		(
                                              		planner
                                              		-
@@ -254,14 +257,12 @@ Country: GB
                                              		):
                                              		
                                           </td>
-                                          <td>
-                                             		RP:
-                                          </td>
-                                       </tr>
-                                       <tr><a href="#2"></a><td><a name="p2">Request List of Pracitioners</a></td>
                                           <td></td>
-                                          <td>
-                                             		RQ:<b>Request</b>
+                                       </tr>
+                                       <tr><a href="#"></a>2
+                                          <td><a name="p2">Request List of Pracitioners</a></td>
+                                          <td></td>
+                                          <td><b>Request</b>
                                              		(
                                              		dzop
                                              		-
@@ -269,14 +270,12 @@ Country: GB
                                              		):
                                              		
                                           </td>
-                                          <td>
-                                             		RP:
-                                          </td>
-                                       </tr>
-                                       <tr><a href="#3"></a><td><a name="p2">Show possible team members</a></td>
                                           <td></td>
-                                          <td>
-                                             		RQ:<b>Request</b>
+                                       </tr>
+                                       <tr><a href="#"></a>3
+                                          <td><a name="p2">Show possible team members</a></td>
+                                          <td></td>
+                                          <td><b>Request</b>
                                              		(
                                              		dragon
                                              		-
@@ -284,13 +283,14 @@ Country: GB
                                              		):
                                              		
                                           </td>
-                                          <td>
-                                             		RP:
-                                          </td>
+                                          <td></td>
                                        </tr>
-                                       <tr><a href="#4"></a></tr>
-                                       <tr><a href="#5"></a></tr>
-                                       <tr><a href="#6"></a></tr>
+                                       <tr><a href="#"></a>4
+                                       </tr>
+                                       <tr><a href="#"></a>5
+                                       </tr>
+                                       <tr><a href="#"></a>6
+                                       </tr>
                                     </tbody>
                                  </table>
                               </div>
