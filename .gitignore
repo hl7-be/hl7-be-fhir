@@ -1,20 +1,26 @@
 /input/images/Thumbs.db
-/input/examples/esRender
-/input-cache/
-/hl7.be.fhir.template#current
-/input - Copy/
-temp
-template
-output
 copyStuff.ps1.bat
 plantuml.jar
-old_templates
-template2
-txCache
-shorthand
-hl7.be.fhir.template/package/scripts/createArtifactSummary - Copy.xslt
-hl7.be.fhir.template/package/scripts/createArtifactSummary default.xslt
+allergy/
+template-ihe-local/
+ihe-ig-template-local/
+input/pagesource/
+template-base/
+template-ihe/
+"template-ihe - Copy"/
+input-cache/
+input - Copy/
+temp/
+template/
+output/
+old_templates/
+template2/
+txCache/
+shorthand/
 oldContent/
-hl7.be.fhir.template-local
-hl7.be.fhir.template2
-
+hl7.be.fhir.template-local/
+hl7.be.fhir.template2/
+input/examples/esRender/
+hl7.be.fhir.template#current/
+hl7.be.fhir.template/
+hl7.be.fhir.template/
