@@ -12,9 +12,9 @@
   "entry": [
     {
       "item": {
-        "reference": "StructureDefinition-lm-be-careteam",
+        "reference": "StructureDefinition-lm-be-homecare-team",
         "type": "StructureDefinition",
-        "display": "Care Team"
+        "display": "Homecare Team"
       }
     },
     {

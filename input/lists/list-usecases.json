@@ -12,14 +12,14 @@
   "entry": [
     {
       "item": {
-        "reference": "ExampleScenario-communication",
+        "reference": "ExampleScenario-scenario-communication",
         "type": "ExampleScenario",
         "display": "Use Case - Communication example 1"
       }
     },
     {
       "item": {
-        "reference": "ExampleScenario-careteam",
+        "reference": "ExampleScenario-scenario-careteam",
         "type": "ExampleScenario",
         "display": "Use Case - CareTeam Creation"
       }

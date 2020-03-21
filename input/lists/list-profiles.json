@@ -42,7 +42,7 @@
       "item": {
         "reference": "StructureDefinition-be-careteam",
         "type": "StructureDefinition",
-        "display": "BE Care Team"
+        "display": "BE Care team"
       }
     },
     {

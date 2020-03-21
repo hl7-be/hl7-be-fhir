@@ -22,7 +22,7 @@
     },
     {
       "item": {
-        "reference": "StructureDefinition-be-careteam"
+        "reference": "StructureDefinition-be-homecare-team"
       }
     },
     {
