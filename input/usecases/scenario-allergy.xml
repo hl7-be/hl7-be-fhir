@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ExampleScenario xmlns="http://hl7.org/fhir">
-  <id value="scenario-communication"/>
+  <id value="scenario-allergy"/>
   <version value="0.0.1"/>
-  <name value="DZOP Communication - Demo use case"/>
+  <name value="Allergy scenario"/>
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2019-09-11T00:00:00.000+01:00"/>

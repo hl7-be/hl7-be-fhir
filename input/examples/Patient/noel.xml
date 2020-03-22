@@ -8,7 +8,7 @@
       <valueCodeableConcept>
         <coding>
           <system
-                  value="https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-fed-country"/>
+                  value="https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-fed-country"/>
           <code value="BE"/>
           <display value="Belgium"/>
         </coding>
@@ -100,7 +100,7 @@
     </coding>
     <coding>
       <system
-              value="https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-civilstate"/>
+              value="https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-civilstate"/>
       <code value="20"/>
       <display value="Married"/>
     </coding>

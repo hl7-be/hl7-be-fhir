@@ -119,19 +119,19 @@ Country: GB
                            															
                         </h3>
                         <div>
-                           <table class="cols">
+                           <table class="table cols table-bordered">
                               <tr>
                                  <td>
-                                    																			Publisher: (link?)
+                                    																			Publisher: 
                                     																			DZOP
                                  </td>
-                                 <td><a>Status</a>
-                                    																			:
+                                 <td>
+                                    																			Status:
                                     																			draft
                                  </td>
                               </tr>
                            </table>
-                           <table class="cols">
+                           <table class="table table-bordered cols">
                               <tr>
                                  <td>
                                     																			Purpose: 
@@ -178,7 +178,7 @@ Country: GB
                            <div class="container">
                               <div>
                                  <div>Main Flow</div>
-                                 <table class="cols">
+                                 <table class="table table-striped table-bordered">
                                     <tbody>
                                        <tr>
                                           <th>Step</th>
@@ -186,105 +186,96 @@ Country: GB
                                           <th>Operation</th>
                                           <th>Request</th>
                                           <th>Response</th>
-                                          <th>z</th>
-                                          <th>x</th>
-                                          <th>x</th>
-                                          <th>x</th>
                                        </tr>
-                                       <tr><a href="#"></a>1
-                                          <td><a name="p2">Get patient's allergies</a></td>
-                                          <td></td>
-                                          <td><b>Request</b>
-                                             		(
-                                             		VAULT
-                                             		-
-                                             		GP
-                                             		):
-                                             		
-                                          </td>
-                                          <td><b xmlns="">Response</b>
-                                             		(
-                                             		VAULT
-                                             		-
-                                             		GP
-                                             		):
-                                             		<a href="#EB">Empty Bundle</a></td>
-                                       </tr>
-                                       <tr><a href="#"></a>2
-                                          <td><a name="p2">Create new Allergy record entry</a></td>
-                                          <td></td>
-                                          <td><b>Request</b>
-                                             		(
-                                             		VAULT
-                                             		-
-                                             		GP
-                                             		):
-                                             		<a href="#noel-allergy.v0">Allergy Record</a></td>
-                                          <td><b xmlns="">Response</b>
-                                             		(
-                                             		VAULT
-                                             		-
-                                             		GP
-                                             		):
-                                             		
+                                       <tr>
+                                          <td>1
+                                             <td><a name="p2">Get patient's allergies</a></td>
+                                             <td></td>
+                                             <td><b></b>
+                                                		(VAULT
+                                                		-&gt;
+                                                		GP):
+                                                		
+                                             </td>
+                                             <td>
+                                                		
+                                                		(GP
+                                                		-&gt;
+                                                		VAULT):
+                                                		<a href="#EB">Empty Bundle</a></td>
                                           </td>
                                        </tr>
-                                       <tr><a href="#"></a>3
-                                          <td><a name="p2">Get patient's allergies</a></td>
-                                          <td></td>
-                                          <td><b>Request</b>
-                                             		(
-                                             		VAULT
-                                             		-
-                                             		SPEC
-                                             		):
-                                             		
-                                          </td>
-                                          <td><b xmlns="">Response</b>
-                                             		(
-                                             		VAULT
-                                             		-
-                                             		SPEC
-                                             		):
-                                             		<a href="#noel-allergy.v0">Allergy Record</a></td>
-                                       </tr>
-                                       <tr><a href="#"></a>4
-                                          <td><a name="p2">Update Allergy record</a></td>
-                                          <td></td>
-                                          <td><b>Request</b>
-                                             		(
-                                             		VAULT
-                                             		-
-                                             		SPEC
-                                             		):
-                                             		<a href="#noel-allergy.v1">Updated Allergy Record</a></td>
-                                          <td><b xmlns="">Response</b>
-                                             		(
-                                             		VAULT
-                                             		-
-                                             		SPEC
-                                             		):
-                                             		
+                                       <tr>
+                                          <td>2
+                                             <td><a name="p2">Create new Allergy record entry</a></td>
+                                             <td></td>
+                                             <td><b></b>
+                                                		(VAULT
+                                                		-&gt;
+                                                		GP):
+                                                		<a href="#noel-allergy.v0">Allergy Record</a></td>
+                                             <td>
+                                                		
+                                                		(GP
+                                                		-&gt;
+                                                		VAULT):
+                                                		
+                                             </td>
                                           </td>
                                        </tr>
-                                       <tr><a href="#"></a>5
-                                          <td><a name="p2">Get patient's allergies</a></td>
-                                          <td></td>
-                                          <td><b>Request</b>
-                                             		(
-                                             		VAULT
-                                             		-
-                                             		GP
-                                             		):
-                                             		
+                                       <tr>
+                                          <td>3
+                                             <td><a name="p2">Get patient's allergies</a></td>
+                                             <td></td>
+                                             <td><b></b>
+                                                		(VAULT
+                                                		-&gt;
+                                                		SPEC):
+                                                		
+                                             </td>
+                                             <td>
+                                                		
+                                                		(SPEC
+                                                		-&gt;
+                                                		VAULT):
+                                                		<a href="#noel-allergy.v0">Allergy Record</a></td>
                                           </td>
-                                          <td><b xmlns="">Response</b>
-                                             		(
-                                             		VAULT
-                                             		-
-                                             		GP
-                                             		):
-                                             		<a href="#noel-allergy.v1">Updated Allergy Record</a></td>
+                                       </tr>
+                                       <tr>
+                                          <td>4
+                                             <td><a name="p2">Update Allergy record</a></td>
+                                             <td></td>
+                                             <td><b></b>
+                                                		(VAULT
+                                                		-&gt;
+                                                		SPEC):
+                                                		<a href="#noel-allergy.v1">Updated Allergy Record</a></td>
+                                             <td>
+                                                		
+                                                		(SPEC
+                                                		-&gt;
+                                                		VAULT):
+                                                		
+                                             </td>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>5
+                                             <td><a name="p2">Get patient's allergies</a></td>
+                                             <td></td>
+                                             <td><b></b>
+                                                		(VAULT
+                                                		-&gt;
+                                                		GP):
+                                                		
+                                             </td>
+                                             <td>
+                                                		
+                                                		(GP
+                                                		-&gt;
+                                                		VAULT):
+                                                		<a href="#noel-allergy.v1">Updated Allergy Record</a></td>
+                                          </td>
                                        </tr>
                                     </tbody>
                                  </table>

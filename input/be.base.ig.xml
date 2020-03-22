@@ -1071,17 +1071,17 @@
 			<generation value="html"/>
 			  <page>
 				<nameUrl value="scenario-communication.html"/>
-				<title value="Use Case 1 - Communication"/>
+				<title value="Communication and Journal scenario"/>
 				<generation value="html"/>
 			  </page>
 	    	  <page>
 				<nameUrl value="scenario-careteam.html"/>
-				<title value="Use Case 2 - CareTeam"/>
+				<title value="Home Care Team scenario"/>
 				<generation value="html"/>
 			  </page>
 	    	  <page>
 				<nameUrl value="scenario-allergy.html"/>
-				<title value="Use Case 3 - Allergy"/>
+				<title value="Allergy scenario"/>
 				<generation value="html"/>
 			  </page>
 <!--

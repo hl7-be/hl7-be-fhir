@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ExampleScenario xmlns="http://hl7.org/fhir">
   <id value="scenario-careteam"/>
-  <name value="CareTeam formation"/>
+  <name value="Home Care Team definition"/>
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2019-09-10T00:00:00.000+01:00"/>

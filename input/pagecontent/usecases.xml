@@ -17,7 +17,8 @@
 <li><p>Specialist performs tests and sees that the suspected reaction is na expectable adverse reaction to Penicillin and updates the allergy record to Refuted</p></li>
 <li><p>GP consults the allergy and sees it is updated</p></li>
 </ul>
-<p> </p>
+<p></p>
+<p>Validation: This use case is implemented in the <a href="scenario-allergy.html">Allergy scenario</a>.</p>
 
 <a name="communication-and-journaling"> </a>
 <h3 id="communication-and-journaling">Communication and Journaling</h3>
@@ -29,6 +30,7 @@
 <li><p>Physician forwards a message to another participant</p></li>
 </ul>
 <p> </p>
+<p>Validation: This use case is implemented in the <a href="scenario-communication.html">Communication and Journal scenario</a>.</p>
 <p></p>
 
 <a name="care-team-definition"> </a>
@@ -39,6 +41,8 @@
 <li><p>A nurse is assigned to start the team and composes a proposed team for a care plan, including the GP, a specialist, the nurse, the care giver, the patient’s daughter and the Dienstencentrum that will provide assistance when needed.</p></li>
 <li><p>After checking availabilities and any constraints, the team gets approved (status "active")</p></li>
 </ul>
+<p></p>
+<p>Validation: This use case is implemented in the <a href="scenario-careteam.html">Home Care Team scenario</a>.</p>
 <p> </p>
 <p></p>
 <p></p>
