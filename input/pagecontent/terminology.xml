@@ -1,2 +1,92 @@
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"> <head> <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> </head>
+   <a> </a>
+   <h3>Terminology </h3>
+<p></p>
+<p>The Belgian FHIR profiles preferably use controlled, standard terminologies.</p>
+<p>The terminologies referenced in this specification are:</p>
+<ul>
+<li><p>SNOMED-CT</p></li>
+<li><p>Belgian-specific Code Systems and value sets</p></li>
+</ul>
+<p></p>
+<p>  </p>
+<a name="snomed"> </a>
+<h2 id="snomed">SNOMED</h2>
+<p>The current version of SNOMED-CT to use with FHIR profiles is the Belgian release (15-03-2020). It can be browsed here:</p>
+<p><a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=404684003&amp;edition=MAIN/SNOMEDCT-BE/2020-03-15&amp;release=&amp;languages=en,nl,fr">https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=404684003&amp;edition=MAIN/SNOMEDCT-BE/2020-03-15&amp;release=&amp;languages=en,nl,fr</a></p>
+<p>This server has the FHIR capabilities in the endpoint <a href="https://snowstorm-fhir.snomedtools.org/fhir">https://snowstorm-fhir.snomedtools.org/fhir</a></p>
+<p></p>
+<p>The general SNOMED – online browser is found here: <a href="https://browser.ihtsdotools.org">https://browser.ihtsdotools.org</a></p>
+<p></p>
+<p>To try out the SNOMED CT server, please consult the documentation.</p>
+<p>The terminologies in Belgium are governed by the <a href="https://www.health.belgium.be/language_selection?destination=terminology-center">Terminology Center</a>.</p>
+<p>  </p>
+<p>  </p><a name="bevalues"> </a>
+<h2 id="bevalues">Belgian Value Sets and Code Systems</h2>
+<p>The following value sets and code systems have been defined for the Belgium implemnentations - they are technical, legal or clinical concepts for which the international terminologies were not sufficient. These code systems and value sets follow the same governance as the other FHIR resources.</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-be-diarytopic.html" title="ValueSet/be-diarytopic">ValueSet - CommunicationTopic</a>
+               </td>
+               <td>The values for communication topic</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-be-diarytopic.html" title="CodeSystem/be-diarytopic">CodeSystem - CommunicationTopic</a>
+               </td>
+               <td>The values for communication topic</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-be-contactperson.html" title="ValueSet/be-contactperson">ValueSet - Contact Person</a>
+               </td>
+               <td>The values for Contact Person type</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-be-contactperson.html"
+                     title="CodeSystem/be-contactperson">CodeSystem - Contact Person</a>
+               </td>
+               <td>The values for Contact Person type</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-be-causativeagent.html"
+                     title="ValueSet/be-causativeagent">ValueSet - Causative Agent</a>
+               </td>
+               <td>The list of causative agents</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-be-riskmanifestation.html"
+                     title="ValueSet/be-riskmanifestation">ValueSet - Risk Manifestation</a>
+               </td>
+               <td>The values for Risk Manifestation</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-be-civilstate.html" title="ValueSet/be-civilstate">ValueSet - Civil State</a>
+               </td>
+               <td>The values for Civil State</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-be-civilstate.html" title="CodeSystem/be-civilstate">CodeSystem - Civil State</a>
+               </td>
+               <td>The official values for Civil State</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-be-hcparty.html" title="CodeSystem/be-hcparty">CodeSystem - Healthcare Party</a>
+               </td>
+               <td>The values for healthcare party types</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+<p>  </p><p>  </p>   
 </div>

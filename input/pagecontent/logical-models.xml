@@ -8,24 +8,29 @@
 <table>
 <tbody>
 <tr class="odd">
-<td><img src="logical-models-image1.png" alt="image-20200216102037316" style="width:6.26736in;height:1.96806in" /></td>
+<td><img src="logical-models-image1.png" style="width:6.26736in;height:1.96806in" alt="image-20200216102037316" /></td>
 </tr>
 </tbody>
 </table>
+<p></p>
+<p></p>
 <p>Because they are decoupled from any technical implementation, Logical Data Models constitute a foundational aspect of the interoperability design, by supporting a stable, common understanding of the interoperability data needs.</p>
 <p>The Logical Data Models are mapped to the corresponding FHIR implementations. They can also be mapped to KMEHR or CDA implementations, which allows for a pathway for migration and legacy support. ​</p>
 <table>
 <tbody>
 <tr class="odd">
-<td><img src="logical-models-image2.png" alt="image-20200216102338553" style="width:6.0625in;height:2.82014in" /></td>
+<td><img src="logical-models-image2.png" style="width:6.0625in;height:2.82014in" alt="image-20200216102338553" /></td>
 </tr>
 </tbody>
 </table>
+<p></p>
+<p></p>
 <ul>
 <li><p>Logical Data Model are situated in the Zachman framework at the System level and are part of the Data Architecture (in TOGAF).</p></li>
 <li><p>It is possible to express also conceptual data models (which are similar to the Dutch ZIBs) - therefore on the Business level. The key difference between Logical and Conceptual data models is that the Conceptual Data Model focuses on the relations and definitions, while the Logical Data Model expresses more details about supported relations, optionality, cardinality, data types, referential integrity, etc. In short, Conceptual Data Models express <em>what the information means</em>, while Logical Data Models provide more details on <em>how the information is materialized</em>.</p></li>
 </ul>
-
+<p></p>
+<p></p>
 
 <a name="logical-data-model-representation-and-storage"> </a>
 <h3 id="logical-data-model-representation-and-storage">Logical Data Model representation and storage</h3>
@@ -34,20 +39,29 @@
 <li><p>Data Classification</p></li>
 <li><p>Assisted or automated mapping between data elements</p></li>
 </ul>
+<p></p>
+<p></p>
+<p></p>
 
 <a name="common-considerations-on-belgian-logical-data-models"> </a>
 <h3 id="common-considerations-on-belgian-logical-data-models">Common considerations on Belgian Logical Data Models</h3>
 <ul>
 <li><p>The Logical Data Models may rely on the existing FHIR data types. This is just an option and is not mandatory. It has been the approach taken in several cases, one primary reason being that doing this allows to complement the initial modelling and analysis in international best practices.</p></li>
-<li><p>Many of the data elements that contain text can have multiple language representations. This is obvious for example for reference data that has several display values in different languages, but also in other data elements such as “Street name”. When a Logical Data Model expresses a data element as being a String with cardinality 1, this means that the data element is one, but it may have different representations in different languages. In the example below, of a Care team having a name (0..1), this does not mean that the team it will have only one expression of the name - it rather means that the team has one name, and the translations and language representations of that name are left to the implementation layer.</p></li>
 </ul>
+<p></p>
+<ul>
+<li><p>Many of the data elements that contain text can have multiple language representations. This is obvious for example for reference data that has several display values in different languages, but also in other data elements such as “Street name”. When a Logical Data Model expresses a data element as being a String with cardinality 1, this means that the data element is one, but it may have different representations in different languages. In the example below, of a Care Team having a name (0..1), this does not mean that the team it will have only one expression of the name - it rather means that the team has one name, and the translations and language representations of that name are left to the implementation layer.</p></li>
+</ul>
+<p></p>
 <table>
 <tbody>
 <tr class="odd">
-<td><img src="logical-models-image3.png" alt="image-20200216105813642" style="width:6.09236in;height:2.18542in" /></td>
+<td><img src="logical-models-image3.png" style="width:6.09236in;height:2.18542in" alt="image-20200216105813642" /></td>
 </tr>
 </tbody>
 </table>
+<p></p>
+<p></p>
 <p>​</p>
 
 <a name="list-of-logical-data-models-1"> </a>
@@ -57,10 +71,12 @@
 <li><p>Patient</p></li>
 <li><p>Practitioner</p></li>
 <li><p>PractitionerRole</p></li>
-<li><p>Communication</p></li>
+<li><p><a href="StructureDefinition-model-communication.html">Communication</a></p></li>
 <li><p>Allergy Intolerance</p></li>
-<li><p>Care Team</p></li>
+<li><p><a href="StructureDefinition-model-homecare-team.html">Home Care Team</a></p></li>
 <li><p>Care Plan</p></li>
 <li><p>Immunization Record</p></li>
 </ul>
+<p></p>
+<p></p>
 </div>

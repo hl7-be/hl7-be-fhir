@@ -174,19 +174,19 @@ Country: GB
                            															
                         </h3>
                         <div>
-                           <table class="cols">
+                           <table class="table cols table-bordered">
                               <tr>
                                  <td>
-                                    																			Publisher: (link?)
+                                    																			Publisher: 
                                     																			
                                  </td>
-                                 <td><a>Status</a>
-                                    																			:
+                                 <td>
+                                    																			Status:
                                     																			draft
                                  </td>
                               </tr>
                            </table>
-                           <table class="cols">
+                           <table class="table table-bordered cols">
                               <tr>
                                  <td>
                                     																			Purpose: 
@@ -233,7 +233,7 @@ Country: GB
                            <div class="container">
                               <div>
                                  <div>Main Flow</div>
-                                 <table class="cols">
+                                 <table class="table table-striped table-bordered">
                                     <tbody>
                                        <tr>
                                           <th>Step</th>
@@ -241,55 +241,54 @@ Country: GB
                                           <th>Operation</th>
                                           <th>Request</th>
                                           <th>Response</th>
-                                          <th>z</th>
-                                          <th>x</th>
-                                          <th>x</th>
-                                          <th>x</th>
                                        </tr>
-                                       <tr><a href="#"></a>1
-                                          <td><a name="p2">Query team members</a></td>
-                                          <td></td>
-                                          <td><b>Request</b>
-                                             		(
-                                             		planner
-                                             		-
-                                             		dragon
-                                             		):
-                                             		
+                                       <tr>
+                                          <td>1
+                                             <td><a name="p2">Query team members</a></td>
+                                             <td></td>
+                                             <td><b></b>
+                                                		(planner
+                                                		-&gt;
+                                                		dragon):
+                                                		
+                                             </td>
+                                             <td></td>
                                           </td>
-                                          <td></td>
                                        </tr>
-                                       <tr><a href="#"></a>2
-                                          <td><a name="p2">Request List of Pracitioners</a></td>
-                                          <td></td>
-                                          <td><b>Request</b>
-                                             		(
-                                             		dzop
-                                             		-
-                                             		planner
-                                             		):
-                                             		
+                                       <tr>
+                                          <td>2
+                                             <td><a name="p2">Request List of Pracitioners</a></td>
+                                             <td></td>
+                                             <td><b></b>
+                                                		(dzop
+                                                		-&gt;
+                                                		planner):
+                                                		
+                                             </td>
+                                             <td></td>
                                           </td>
-                                          <td></td>
                                        </tr>
-                                       <tr><a href="#"></a>3
-                                          <td><a name="p2">Show possible team members</a></td>
-                                          <td></td>
-                                          <td><b>Request</b>
-                                             		(
-                                             		dragon
-                                             		-
-                                             		planner
-                                             		):
-                                             		
+                                       <tr>
+                                          <td>3
+                                             <td><a name="p2">Show possible team members</a></td>
+                                             <td></td>
+                                             <td><b></b>
+                                                		(dragon
+                                                		-&gt;
+                                                		planner):
+                                                		
+                                             </td>
+                                             <td></td>
                                           </td>
-                                          <td></td>
                                        </tr>
-                                       <tr><a href="#"></a>4
+                                       <tr>
+                                          <td>4</td>
                                        </tr>
-                                       <tr><a href="#"></a>5
+                                       <tr>
+                                          <td>5</td>
                                        </tr>
-                                       <tr><a href="#"></a>6
+                                       <tr>
+                                          <td>6</td>
                                        </tr>
                                     </tbody>
                                  </table>
@@ -313,7 +312,7 @@ Country: GB
                                     <th>Creating actor</th>
                                  </tr>
                                  <tr>
-                                    <td rowspan="4"><a name="teampiet1" href="CareTeam-teampiet1.html"><b>CareTeam1</b></a></td>
+                                    <td rowspan="4"><a name="dzop-team-0002" href="CareTeam-dzop-team-0002.html"><b>Pia's CareTeam</b></a></td>
                                     <td>
                                        (3)
                                        			
@@ -332,30 +331,6 @@ Country: GB
                                  <tr>
                                     <td>v3</td>
                                     <td></td>
-                                 </tr>
-                              </tbody>
-                           </table>
-                        </div>
-                        <div>
-                           <p></p>
-                           <h4>Location</h4>
-                           <table class="grid">
-                              <tbody>
-                                 <tr>
-                                    <th>Artifact</th>
-                                    <th>Version</th>
-                                    <th>Description</th>
-                                    <th>Created by step</th>
-                                    <th>Creating actor</th>
-                                 </tr>
-                                 <tr>
-                                    <td rowspan="1"><a name="L1" href="Location-L1.html"><b>Practtioner List</b></a></td>
-                                    <td>
-                                       (0)
-                                       			
-                                    </td>
-                                    <td><b></b></td>
-                                    <td colspan="3"></td>
                                  </tr>
                               </tbody>
                            </table>
