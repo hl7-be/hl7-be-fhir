@@ -7,7 +7,7 @@
 <li><p>Patient Pia Peters’s record is created</p></li>
 <li><p>Patient’s record is updated with name, address (in Brussels), the SSIN, nationality and birth place.</p></li>
 </ul>
-<p></p>
+<p> </p>
 
 <a name="allergies-and-intolerance-reporting"> </a>
 <h3 id="allergies-and-intolerance-reporting">Allergies and intolerance reporting</h3>
@@ -19,6 +19,8 @@
 </ul>
 <p></p>
 <p>Validation: This use case is implemented in the <a href="scenario-allergy.html">Allergy scenario</a>.</p>
+<p> </p>
+<p></p>
 
 <a name="communication-and-journaling"> </a>
 <h3 id="communication-and-journaling">Communication and Journaling</h3>
@@ -31,7 +33,7 @@
 </ul>
 <p> </p>
 <p>Validation: This use case is implemented in the <a href="scenario-communication.html">Communication and Journal scenario</a>.</p>
-<p></p>
+<p> </p>
 
 <a name="care-team-definition"> </a>
 <h3 id="care-team-definition">Care Team definition</h3>
@@ -43,9 +45,7 @@
 </ul>
 <p></p>
 <p>Validation: This use case is implemented in the <a href="scenario-careteam.html">Home Care Team scenario</a>.</p>
-<p> </p>
-<p></p>
-<p></p>
+<p>  </p>
 <p></p>
 <p></p>
 <p></p>

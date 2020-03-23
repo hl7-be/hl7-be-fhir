@@ -49,12 +49,12 @@
     </element>
     <element id="Communication.topic">
       <path value="Communication.topic" />
-      <short value="Topic of the communication ?????"/>
+      <short value="Topic of the communication"/>
       <definition value="The topic of communication is related to the type of goal (BE) / Type of activity that the communication is about (FHIR)"/>
       <mustSupport value="true" />
       <binding>
         <strength value="preferred" />
-        <valueSet value="https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-diarytopic" />
+        <valueSet value="https://www.hl7belgium.org/fhir/ValueSet/be-diarytopic" />
       </binding>
     </element>
     <element id="Communication.sent">

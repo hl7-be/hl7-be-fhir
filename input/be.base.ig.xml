@@ -340,6 +340,15 @@
       <description value="Communication / Diary Note logical model"/>
       <groupingId value="logicalmodels"/>
     </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/model-addiction"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Logical Model Addiction"/>
+      <description value="Addiction record logical model"/>
+      <groupingId value="logicalmodels"/>
+    </resource>
 <!--
     <resource>
       <reference>
