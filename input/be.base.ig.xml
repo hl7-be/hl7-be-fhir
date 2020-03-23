@@ -35,7 +35,7 @@
   <definition>
     <grouping id="logicalmodels">
       <name value="Logical Models"/>
-      <description value="The common Belgian Logical Model. These can be mapped to KMEHR, CDA, HL7 v2 and FHIR"/>
+      <description value="The Logical Data Models. These are common, functional data descriptions which can be implemented in and mapped to KMEHR, CDA, HL7 v2 and FHIR technical implementations."/>
     </grouping>
     <grouping id="datatypes">
       <name value="Data Types"/>
@@ -846,7 +846,7 @@
       <fhirVersion value="4.0.1"/>
       <name value="Suspected Allergy"/>
       <description value="Suspected Allergy to Penicillin"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-allergyintolerance"/>
     </resource>
 
     <resource>
@@ -856,7 +856,7 @@
       <fhirVersion value="4.0.1"/>
       <name value="Refuted Allergy"/>
       <description value="Allergy has been refuted - confirmed as non-existent"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-allergyintolerance"/>
     </resource>
 
 

@@ -33,9 +33,6 @@
 		</a>
 		<ul class="dropdown-menu">
 			<li>
-				<a href="context.html">Context and intro</a>
-			</li>
-			<li>
 				<a href="usecases.html">Use Cases</a>
 			</li>
 			<li>

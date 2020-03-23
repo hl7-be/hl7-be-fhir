@@ -21,9 +21,9 @@
     <name value="DZOP"/>
   </actor>
   <instance>
-    <resourceId value="teampiet1"/>
+    <resourceId value="dzop-team-0002"/>
     <resourceType value="CareTeam"/>
-    <name value="CareTeam1"/>
+    <name value="Pia's CareTeam"/>
     <version>
       <versionId value="v1"/>
     </version>
@@ -33,11 +33,6 @@
     <version>
       <versionId value="v3"/>
     </version>
-  </instance>
-  <instance>
-    <resourceId value="L1"/>
-    <resourceType value="Location"/>
-    <name value="Practtioner List"/>
   </instance>
   <process>
     <title value="Process"/>
