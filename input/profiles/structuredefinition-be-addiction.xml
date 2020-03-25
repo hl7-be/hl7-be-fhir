@@ -1,0 +1,174 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <!--trial-->
+  <id value="be-addiction" />
+  <url value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-addiction" />
+  <version value="0.0.1" />
+  <name value="BeAddiction" />
+  <status value="draft" />
+  <description value="*************!DRAFT!DRAFT!DRAFT! VALUESETS STILL TO BE DELIVERED FOR THIS PROFILE *********** Belgian federal profile for an addiction. Initially based on the functional description of the NIHDI." />
+  <fhirVersion value="4.0.0" />
+  <mapping>
+    <identity value="workflow" />
+    <uri value="http://hl7.org/fhir/workflow" />
+    <name value="Workflow Pattern" />
+  </mapping>
+  <mapping>
+    <identity value="sct-concept" />
+    <uri value="http://snomed.info/conceptdomain" />
+    <name value="SNOMED CT Concept Domain Binding" />
+  </mapping>
+  <mapping>
+    <identity value="v2" />
+    <uri value="http://hl7.org/v2" />
+    <name value="HL7 v2 Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="w5" />
+    <uri value="http://hl7.org/fhir/fivews" />
+    <name value="FiveWs Pattern Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="sct-attr" />
+    <uri value="http://snomed.org/attributebinding" />
+    <name value="SNOMED CT Attribute Binding" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Observation" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Observation.status">
+      <path value="Observation.status" />
+      <comment value="This element is labeled as a modifier because the status contains codes that mark the resource as not currently valid.&#xD;&#xA;When this is given a consumer SHALL NOT ignore it." />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.code">
+      <path value="Observation.code" />
+      <definition value="Here the actual addiction will be specified (e.g. alcohol, tobacco use, medication abuse) (Valueset will be delivered by NIHDI) It SHOULD be expressed in a codified way." />
+      <comment value="*All* code-value and, if present, component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation.&#xD;&#xA;A consumer SHALL NOT ignore this." />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.subject">
+      <path value="Observation.subject" />
+      <comment value="One would expect this element to be a cardinality of 1..1. The only circumstance in which the subject can be missing is when the observation is made by a device that does not know the patient. In this case, the observation SHALL be matched to a patient through some context/channel matching technique, and at this point, the observation should be updated.&#xD;&#xA;When this is given, a consumer SHALL NOT ignore it." />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Location" />
+        <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.encounter">
+      <path value="Observation.encounter" />
+      <comment value="This will typically be the encounter the event occurred within, but some events may be initiated prior to or after the official completion of an encounter but still be tied to the context of the encounter (e.g. pre-admission laboratory tests).&#xD;&#xA;When this is given, a consumer SHALL not ignore it." />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.effective[x]">
+      <path value="Observation.effective[x]" />
+      <comment value="At least a date should be present unless this observation is a historical report.  For recording imprecise or &quot;fuzzy&quot; times (For example, a blood glucose measurement taken &quot;after breakfast&quot;) use the [Timing](datatypes.html#timing) datatype which allow the measurement to be tied to regular life events.&#xD;&#xA;When this information is available, it SHALL be given and a consumer SHALL NOT ignore it." />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.performer">
+      <path value="Observation.performer" />
+      <comment value="References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc.). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository.&#xD;&#xA;A consumer SHALL NOT ignore this - it is vital for the degree of confidence.&#xD;&#xA;Use the PerformerFunction extension when needed to specify an informer (value INF)" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/CareTeam" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
+        <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient" />
+        <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner" />
+        <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitionerrole" />
+        <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.performer.extension">
+      <path value="Observation.performer.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Observation.performer.extension:PerformerFunction">
+      <path value="Observation.performer.extension" />
+      <sliceName value="PerformerFunction" />
+      <definition value="To optionally further define the performer. This extensiaon SHALL be used when needed to define an informer." />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/event-performerFunction" />
+      </type>
+    </element>
+    <element id="Observation.performer.extension:PerformerFunction.value[x]">
+      <path value="Observation.performer.extension.value[x]" />
+      <slicing>
+        <rules value="open" />
+      </slicing>
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
+    <element id="Observation.note">
+      <path value="Observation.note" />
+      <comment value="May include general statements about the observation, or statements about significant, unexpected or unreliable results values, or information about its source when relevant to its interpretation.&#xD;&#xA;It is the prerogative of the provider to include a note, when a consumer receives a note, it SHALL NOT be ignored." />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component">
+      <path value="Observation.component" />
+      <slicing>
+        <discriminator>
+          <type value="exists" />
+          <path value="code.coding" />
+        </discriminator>
+        <discriminator>
+          <type value="exists" />
+          <path value="code.text" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Observation.component:productAndQuantity">
+      <path value="Observation.component" />
+      <sliceName value="productAndQuantity" />
+      <definition value="The actual product of the addiction (e.g. cocaine, cigarettes, beer, wine, slot machines, video games,...) (Valueset will be delivered by the NIHDI) It SHOULD be expressed in a codified way and SHALL be given when possible, if given, a consumer SHALL NOT ignore this." />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:productAndQuantity.code.coding.system">
+      <path value="Observation.component.code.coding.system" />
+      <definition value="System to identify a product of the addiction" />
+    </element>
+    <element id="Observation.component:productAndQuantity.value[x]">
+      <path value="Observation.component.value[x]" />
+      <definition value="e.g. number of cigarettes/day" />
+      <type>
+        <code value="Quantity" />
+      </type>
+    </element>
+    <element id="Observation.component:productAndQuantity.dataAbsentReason">
+      <path value="Observation.component.dataAbsentReason" />
+      <max value="0" />
+    </element>
+    <element id="Observation.component:productAndQuantity.interpretation">
+      <path value="Observation.component.interpretation" />
+      <max value="0" />
+    </element>
+    <element id="Observation.component:productAndQuantity.referenceRange">
+      <path value="Observation.component.referenceRange" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

@@ -223,6 +223,17 @@
       <groupingId value="datatypes"/>
     </resource>
 
+	
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/be-addiction"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Addiction BE profile"/>
+      <description value="Belgian Profile to capture Addictions (on substances or others)"/>
+      <groupingId value="datatypes"/>
+    </resource>
+
 
 
 
@@ -349,6 +360,16 @@
       <description value="Addiction record logical model"/>
       <groupingId value="logicalmodels"/>
     </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/model-patientwill"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Logical Model Addiction"/>
+      <description value="Patient Will logical model"/>
+      <groupingId value="logicalmodels"/>
+    </resource>
+
 <!--
     <resource>
       <reference>
@@ -396,6 +417,16 @@
       <description value="The Core BE profile for Allergy Intolerance"/>
       <groupingId value="condition"/>
     </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/be-patientwill"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Patient Will core BE profile"/>
+      <description value="The Core BE profile for Patient Will"/>
+      <groupingId value="condition"/>
+    </resource>
+
 
 
     <resource>
