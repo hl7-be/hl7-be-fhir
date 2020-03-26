@@ -365,7 +365,7 @@
         <reference value="StructureDefinition/model-patientwill"/>
       </reference>
       <fhirVersion value="4.0.1"/>
-      <name value="Logical Model Addiction"/>
+      <name value="Logical Model Patient Will"/>
       <description value="Patient Will logical model"/>
       <groupingId value="logicalmodels"/>
     </resource>
