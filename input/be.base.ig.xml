@@ -231,10 +231,8 @@
       <fhirVersion value="4.0.1"/>
       <name value="Addiction BE profile"/>
       <description value="Belgian Profile to capture Addictions (on substances or others)"/>
-      <groupingId value="datatypes"/>
+      <groupingId value="core"/>
     </resource>
-
-
 
 
 
@@ -424,7 +422,7 @@
       <fhirVersion value="4.0.1"/>
       <name value="Patient Will core BE profile"/>
       <description value="The Core BE profile for Patient Will"/>
-      <groupingId value="condition"/>
+      <groupingId value="core"/>
     </resource>
 
 
@@ -899,6 +897,26 @@
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-allergyintolerance"/>
     </resource>
 
+
+
+    <resource>
+      <reference>
+         <reference value="Consent/patientwill-example"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Patient Will"/>
+      <description value="Patient Will"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patientwill" />
+    </resource>
+    <resource>
+      <reference>
+         <reference value="Observation/addiction-example"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Addiction example"/>
+      <description value="Example of an Addiction"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-addiction" />
+    </resource>
 
 
 
