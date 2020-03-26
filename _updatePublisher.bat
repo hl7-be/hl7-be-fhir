@@ -2,6 +2,8 @@
 SET dlurl=https://fhir.github.io/latest-ig-publisher/org.hl7.fhir.publisher.jar
 SET publisher_jar=org.hl7.fhir.publisher.jar
 SET input_cache_path=%CD%\input-cache\
+set updatebaturl=https://raw.githubusercontent.com/hl7-be/be-core/master/_updatePublisher.bat
+set genbaturl=https://raw.githubusercontent.com/hl7-be/be-core/master/_genonce.bat
 
 FOR %%x IN ("%CD%") DO SET upper_path=%%~dpx
 
@@ -70,4 +72,11 @@ ECHO This script does not yet support Windows %winver%.  Please ask for help on 
 GOTO done
 
 :done
+SETLOCAL DisableDelayedExpansion
+
+POWERSHELL -command if ('System.Net.WebClient' -as [type]) {(new-object System.Net.WebClient).DownloadFile(\"%updatebaturl%\",\"_updatePublisher.new.bat\") } else { Invoke-WebRequest -Uri "%updatebaturl%" -Outfile "_updatePublisher.new.bat" }
+POWERSHELL -command if ('System.Net.WebClient' -as [type]) {(new-object System.Net.WebClient).DownloadFile(\"%genbaturl%\",\"_genOnce.bat\") } else { Invoke-WebRequest -Uri "%genbaturl%" -Outfile "_genOnce.bat" }
+
+echo start copy "_updatePublisher.new.bat" "_updatePublisher.bat"
+
 PAUSE
