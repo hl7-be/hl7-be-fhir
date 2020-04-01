@@ -5,21 +5,18 @@
   <version value="0.1.0" />
   <name value="BEAddiction" />
   <status value="draft" />
-  <description value="This is the logical model of an addiction of a patient. Initially based on the input of the NIHDI.&#xD;&#xA;The actual FHIR instance will use a profile on the FHIR resource Observation ( https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-observation-addiction )" />
+  <description value="This is the logical model of an addiction of a patient. Initially based on the input of the NIHDI.&#xD;&#xA; This model represents a known,  suspected or resolved addiction. This models does not intend to represent a point-in-time observation of substance intake or related event or behaviour. In other words, this logical model represents the addiction condition, not an addiction-related event or observation.)" />
   <fhirVersion value="4.0.0" />
 
 
 
 
 
+<!--
 
+      <short value="" />
 
-
-
-
-
-
-
+-->
 
 
 
@@ -30,13 +27,15 @@
   <derivation value="specialization" />
   <differential>
     <element id="BeAddiction">
+      <short value="A subject's addiction" />
       <path value="BeAddiction" />
       <min value="0" />
       <max value="*" />
     </element>
-    <element id="BeAddiction.status">
-      <path value="BeAddiction.status" />
-      <min value="1" />
+    <element id="BeAddiction.clinicalStatus">
+      <path value="BeAddiction.clinicalStatus" />
+      <short value="The clinical status of the addiction - whether it is active, resolved..." />
+      <min value="0" />
       <max value="1" />
       <type>
         <code value="code" />
@@ -44,12 +43,40 @@
       </type>
       <binding>
         <strength value="required" />
-        <valueSet value="https://www.hl7.org/fhir/valueset-observation-status.html" />
+        <valueSet value="https://www.hl7.org/fhir/valueset-condition-clinical.html" />
       </binding>
     </element>
-    <element id="BeAddiction.code">
-      <path value="BeAddiction.code" />
-      <definition value="Here the actual addiction will be specified (e.g. alcohol, tobacco use, medication abuse) (Valueset will be delivered by NIHDI) &#xD;&#xA;It SHOULD be expressed in a codified way." />
+    <element id="BeAddiction.verificationStatus">
+      <path value="BeAddiction.verificationStatus" />
+      <short value="The verification status of the addiction - whether it is suspected, confirmed, etc." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="code" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/code" />
+      </type>
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://www.hl7.org/fhir/valueset-condition-ver-status.html" />
+      </binding>
+    </element>
+    <element id="BeAddiction.subject">
+      <path value="BeAddiction.subject" />
+      <short value="The person that has/had the addiction" />
+      <definition value="The patient" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <profile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient" />
+      </type>
+    </element>
+
+
+    <element id="BeAddiction.type">
+      <path value="BeAddiction.type" />
+      <short value="The type of addiction" />
+      <definition value="Here the type of addiction will be specified (e.g. alcohol, drugs, medication). &#xD;&#xA;It SHOULD be expressed in a codified way (Valueset will be delivered by NIHDI)." />
       <min value="1" />
       <max value="1" />
       <type>
@@ -57,36 +84,22 @@
         <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
       </type>
     </element>
-    <element id="BeAddiction.subject">
-      <path value="BeAddiction.subject" />
-      <definition value="The patient" />
+	
+    <element id="BeAddiction.code">
+      <path value="BeAddiction.code" />
+      <short value="The specific addiction substance or activity" />
+      <definition value="Here it is possible to further refine the addiction information e.g. when &quot;narcotics&quot; is indicated, this can specify the substance" />
       <min value="1" />
       <max value="1" />
       <type>
-        <code value="Reference" />
+        <code value="CodeableConcept" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
       </type>
     </element>
-    <element id="BeAddiction.recordedDate">
-      <path value="BeAddiction.recordedDate" />
-      <min value="1" />
-      <max value="1" />
-      <type>
-        <code value="dateTime" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/dateTime" />
-      </type>
-    </element>
-    <element id="BeAddiction.effective">
-      <path value="BeAddiction.effective" />
-      <definition value="The actual period this addiction was true. (e.g. used when a patient used to abuse alcohol)" />
-      <min value="0" />
-      <max value="*" />
-      <type>
-        <code value="Period" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/Period" />
-      </type>
-    </element>
+
     <element id="BeAddiction.product">
       <path value="BeAddiction.product" />
+      <short value="The specific product or activity" />
       <definition value="the actual product of the addiction (e.g. cocaine, cigarettes, beer, wine, slot machines, video games,...) (Valueset will be delivered by the NIHDI)&#xD;&#xA;It SHOULD be expressed in a codified way." />
       <min value="0" />
       <max value="1" />
@@ -95,8 +108,37 @@
         <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
       </type>
     </element>
+
+	
+    <element id="BeAddiction.recordedDate">
+      <path value="BeAddiction.recordedDate" />
+      <short value="The date when the addiction is being recorded or updated" />
+      <definition value="The date when the addiction is being recorded or updated" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="dateTime" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/dateTime" />
+      </type>
+    </element>
+
+
+
+    <element id="BeAddiction.effective">
+      <path value="BeAddiction.effective" />
+      <definition value="The actual period this addiction was true. (e.g. used when a patient used to abuse alcohol)" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Period" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Period" />
+      </type>
+    </element>
+
+
     <element id="BeAddiction.quantity">
       <path value="BeAddiction.quantity" />
+      <short value="e.g. number of cigarettes per day" />
       <definition value="e.g. number of cigarettes per day" />
       <min value="0" />
       <max value="1" />
@@ -105,6 +147,56 @@
         <profile value="http://hl7.org/fhir/StructureDefinition/Quantity" />
       </type>
     </element>
+
+
+    <element id="BeAddiction.treatment">
+      <path value="BeAddiction.treatment" />
+      <short value="?????????????" />
+      <definition value="Is this patient following a treatment for this addiction?&#xD;&#xA;(In technical reality, this will be actually a Procedure instance that refers to the Addication instance)" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Reference" />
+      </type>
+    </element>
+
+    <element id="BeAddiction.recorder">
+      <path value="BeAddiction.recorder" />
+      <short value="Participants that report the addiction" />
+      <definition value="Clinical parties or informers that participate in reporting the addiction" />
+      <min value="1" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="BeAddiction.recorder.performer">
+      <path value="BeAddiction.recorder.performer" />
+      <short value="Person that performed the recording or reporting" />
+      <definition value="Who was responsible for asserting the observed value as &quot;true&quot;." />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="CodeableReference" />
+      </type>
+    </element>
+    <element id="BeAddiction.recorder.performerCode">
+      <path value="BeAddiction.recorder.performerCode" />
+      <short value="The role or action that the person took - for example informer, recorder, verifier.." />
+      <definition value="To mark the performer as 'INF' (informer) - in case the addiction is reported by family" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
+      </type>
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://hl7.org/fhir/valueset-performer-function.html" />
+      </binding>
+    </element>
+
+
     <element id="BeAddiction.note">
       <path value="BeAddiction.note" />
       <definition value="extra information" />
@@ -115,46 +207,6 @@
         <profile value="http://hl7.org/fhir/StructureDefinition/Annotation" />
       </type>
     </element>
-    <element id="BeAddiction.treatment">
-      <path value="BeAddiction.treatment" />
-      <definition value="Is this patient following a treatment for this addiction?&#xD;&#xA;(In technical reality, this will be actually a Procedure instance that refers to the Addication instance)" />
-      <min value="0" />
-      <max value="*" />
-      <type>
-        <code value="Reference" />
-      </type>
-    </element>
-    <element id="BeAddiction.performer">
-      <path value="BeAddiction.performer" />
-      <definition value="clinical parties or informers about the addiction" />
-      <min value="1" />
-      <max value="*" />
-      <type>
-        <code value="BackboneElement" />
-      </type>
-    </element>
-    <element id="BeAddiction.performer.performer">
-      <path value="BeAddiction.performer.performer" />
-      <definition value="Who was responsible for asserting the observed value as &quot;true&quot;." />
-      <min value="1" />
-      <max value="1" />
-      <type>
-        <code value="Reference" />
-      </type>
-    </element>
-    <element id="BeAddiction.performer.performerCode">
-      <path value="BeAddiction.performer.performerCode" />
-      <definition value="To mark the performer as 'INF' (informer) - in case the addiction is reported by family" />
-      <min value="0" />
-      <max value="1" />
-      <type>
-        <code value="CodeableConcept" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
-      </type>
-      <binding>
-        <strength value="required" />
-        <valueSet value="http://hl7.org/fhir/StructureDefinition/event-performerFunction" />
-      </binding>
-    </element>
+
   </differential>
 </StructureDefinition>
