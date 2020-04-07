@@ -3,8 +3,7 @@
 <a name="requirements"> </a>
 <h3 id="requirements">General Security Requirements</h3>
 <p>Unless otherwise stated, all interfaces implementing these profiles shall be considered as containing Protected Health Information and as such shall implement the adequate security mechanisms.</p>
-<p><strong>These security requirements are usually defined by the parties that will interoperate.</strong></p>
-<p>For example, when exchanging data with the regional data vaults, systems shall comply with the security mechamisms defined and implemented for those vaults. A different example is when the exchange is between two systems inside a hospital, and in this case the security mechanisms will be defined by the hospital.</p>
+<p><strong>These security requirements are usually defined by the parties that will interoperate. </strong>For example, when exchanging data with the regional data vaults, systems shall comply with the security mechamisms defined and implemented for those vaults. A different example is when the exchange is between two systems inside a hospital, and in this case the security mechanisms will be defined by the hospital.</p>
 <p>While rules can be defined locally, it is expected that any system implementing these profiles will not present a point of failure or weakness.</p>
 
 <a name="architecture"> </a>
