@@ -1,49 +1,38 @@
-<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"> <head> <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> </head><p>Security options for FHIR applications</p>
-<p></p>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"> <head> <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> </head><p>Security requirements for FHIR profiles</p>
+
+<a name="requirements"> </a>
+<h3 id="requirements">General Security Requirements</h3>
+<p>Unless otherwise stated, all interfaces implementing these profiles shall be considered as containing Protected Health Information and as such shall implement the adequate security mechanisms.</p>
+<p><strong>These security requirements are usually defined by the parties that will interoperate.</strong></p>
+<p>For example, when exchanging data with the regional data vaults, systems shall comply with the security mechamisms defined and implemented for those vaults. A different example is when the exchange is between two systems inside a hospital, and in this case the security mechanisms will be defined by the hospital.</p>
+<p>While rules can be defined locally, it is expected that any system implementing these profiles will not present a point of failure or weakness.</p>
 
 <a name="architecture"> </a>
 <h3 id="architecture">Architecture</h3>
-<p>The technical architecture for security must be decided with all parties – vaults, authorities, vendor community. At present there are no agreed solutions.</p>
+<blockquote class="stu-note">
+<strong>The technical architecture for security is not yet decided by the parties – vaults, authorities, vendor community. This is only background information and no recommendation.</strong>
+</blockquote>
 
-<a name="section"> </a>
-<h3 id="section"></h3>
 
-<a name="fundamental-connection"> </a>
-<h3 id="fundamental-connection">Fundamental connection</h3>
-<p>There are no defined requirements yet, so here are a few options:</p>
+<a name="security-options"> </a>
+<h3 id="security-options">Security Options</h3>
 <p></p>
 <ol style="list-style-type: decimal">
-<li><p>Promote a similar (end-to-end, double encryption) solution.</p></li>
-<li><p>Adopt industry-standard security layer – TLS 1.2+ with mutual authentication. This is represented schematically below:</p></li>
+<li><p>End-to-end, double encryption solution.</p></li>
+<li><p>TLS 1.2+ with mutual authentication, represented schematically below:</p></li>
 </ol>
-<p></p>
+<p> </p>
 <table>
 <tbody>
 <tr class="odd">
 
 <a name="tls-1.2-w-mutual-auth"> </a>
-<td><h1 id="tls-1.2-w-mutual-auth"><strong>TLS 1.2 w/ Mutual Auth</strong></h1>
+<td><h1 id="tls-1.2-w-mutual-auth"><strong></strong></h1>
 <p></p>
-<p><img src="security-image1.png" style="width:6.28889in;height:4.85in" /></p></td>
+<p><img src="security-image1.png" style="width:5.1867in;height:4in" /></p></td>
 </tr>
 </tbody>
 </table>
-<p></p>
-<p></p>
-<p>Whatever solution is adopted, proper handling of certificates is required.</p>
-<p></p>
-
-<a name="vault-to-vault-communication"> </a>
-<h3 id="vault-to-vault-communication">Vault-to-vault communication</h3>
-<p>(TBD)</p>
-<p></p>
-
-<a name="achiving-redundancy"> </a>
-<h3 id="achiving-redundancy">Achiving, redundancy</h3>
-<p>(TBD)</p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
+<p> </p>
+<p> </p>
 </div>
