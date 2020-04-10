@@ -6,7 +6,7 @@
   <name value="BeObservationCodeableConcept" />
   <status value="active" />
   <description value="This is a supporting profile, only to give guidelines how to express a few of the typical coding systems.&#xD;&#xA;In general, it shall be noted SNOMED-CT is the preferred national terminology. Other coding systems remain allowed or MAY be preferred in specific flows (e.g. the use of LOINC codes to express a laboratory test.)" />
-  <fhirVersion value="4.0.0" />
+  <fhirVersion value="4.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
   <type value="CodeableConcept" />

@@ -6,7 +6,7 @@
   <name value="BePatientWill" />
   <status value="draft" />
   <description value="*************!DRAFT!DRAFT!DRAFT! VALUESETS STILL TO BE DELIVERED FOR THIS PROFILE BY THE NIHDI *********** Belgian federal profile for a patient will ONLY in the context of the patient will in the context of limitations to treatment, DNR etc. Initially based on the functional description of the NIHDI. This profile will in the future be also used to record agreement to participate in clinical trials etc. Any usecase around informed consent is out of scope for this profile." />
-  <fhirVersion value="4.0.0" />
+  <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="workflow" />
     <uri value="http://hl7.org/fhir/workflow" />
@@ -41,6 +41,7 @@
     <element id="Consent.scope">
       <path value="Consent.scope" />
       <comment value="Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.&#xD;&#xA;SHALL be given and a consumer SHALL NOT ignore this." />
+      <fixedCode value="treatment" />
       <mustSupport value="true" />
     </element>
     <element id="Consent.category">
@@ -52,7 +53,7 @@
     </element>
     <element id="Consent.patient">
       <path value="Consent.patient" />
-      <comment value="Commonly, the patient the consent pertains to is the author, but for young and old people, it may be some other person.&#xD;&#xA;SHALL be given and a consumer SHALL NOT ignore this." />
+      <comment value="Commonly, the patient the consent pertains to is the author, but for some cases like young and old people, it may be some other person.&#xD;&#xA;SHALL be given and a consumer SHALL NOT ignore this." />
       <min value="1" />
       <type>
         <code value="Reference" />
@@ -60,22 +61,30 @@
       </type>
       <mustSupport value="true" />
     </element>
+    <element id="Consent.performer">
+      <path value="Consent.performer" />
+      <comment value="Commonly, the patient the consent pertains to is the author, but for some cases like young and old people, it may be some other person.&#xD;&#xA;SHALL be given and a consumer SHALL NOT ignore this." />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization" />
+        <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient" />
+        <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/relatedPerson" />
+        <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitionerRole" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+
     <element id="Consent.dateTime">
       <path value="Consent.dateTime" />
       <comment value="This is not the time of the original consent, but the time that this statement was made or derived.&#xD;&#xA;SHALL be given and a consumer SHALL NOT ignore this." />
       <min value="1" />
       <mustSupport value="true" />
     </element>
-    <element id="Consent.performer">
-      <path value="Consent.performer" />
-      <comment value="Commonly, the patient the consent pertains to is the consentor, but particularly for young and old people, it may be some other person - e.g. a legal guardian.&#xD;&#xA;SHALL be given and a consumer SHALL NOT ignore this." />
-      <min value="1" />
-      <max value="1" />
-      <mustSupport value="true" />
-    </element>
     <element id="Consent.source[x]">
       <path value="Consent.source[x]" />
-      <comment value="The source can be contained inline (Attachment), referenced directly (Consent), referenced in a consent repository (DocumentReference), or simply by an identifier (Identifier), e.g. a CDA document id.&#xD;&#xA;It is at the discretion of the practitioner whether to include this when available.A consumer SHALL NOT ignore it when available." />
+      <comment value="The source can be contained inline (Attachment), referenced directly (Consent), referenced in a consent repository (DocumentReference), or simply by an identifier (Identifier), e.g. a CDA document id.&#xD;&#xA;It is at the discretion of the practitioner whether to include this when available. A consumer SHALL NOT ignore it when available." />
       <mustSupport value="true" />
     </element>
     <element id="Consent.policyRule">

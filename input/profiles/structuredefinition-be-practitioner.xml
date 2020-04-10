@@ -86,7 +86,7 @@
         <valueCode value="normative" />
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
+        <valueCode value="4.0.1" />
       </extension>
       <path value="Practitioner.id" />
       <short value="Logical id of this artifact" />
@@ -121,7 +121,7 @@
         <valueCode value="normative" />
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
+        <valueCode value="4.0.1" />
       </extension>
       <path value="Practitioner.meta" />
       <short value="Metadata about the resource" />
@@ -159,7 +159,7 @@
         <valueCode value="normative" />
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
+        <valueCode value="4.0.1" />
       </extension>
       <path value="Practitioner.implicitRules" />
       <short value="A set of rules under which this content was created" />
@@ -196,7 +196,7 @@
         <valueCode value="normative" />
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
+        <valueCode value="4.0.1" />
       </extension>
       <path value="Practitioner.language" />
       <short value="Language of the resource content" />
@@ -244,7 +244,7 @@
         <valueCode value="normative" />
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
+        <valueCode value="4.0.1" />
       </extension>
       <path value="Practitioner.text" />
       <short value="Text summary of the resource, for human interpretation" />
@@ -317,7 +317,7 @@
         <valueCode value="normative" />
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
+        <valueCode value="4.0.1" />
       </extension>
       <path value="Practitioner.extension" />
       <slicing>
@@ -372,7 +372,7 @@
         <valueCode value="normative" />
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
+        <valueCode value="4.0.1" />
       </extension>
       <path value="Practitioner.modifierExtension" />
       <slicing>
@@ -430,7 +430,7 @@
         <valueCode value="normative" />
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
+        <valueCode value="4.0.1" />
       </extension>
       <path value="Practitioner.identifier" />
       <slicing>
@@ -501,7 +501,7 @@
         <valueCode value="normative" />
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
+        <valueCode value="4.0.1" />
       </extension>
       <path value="Practitioner.identifier" />
       <sliceName value="NIHDI" />
@@ -595,7 +595,7 @@
         <valueCode value="normative" />
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
+        <valueCode value="4.0.1" />
       </extension>
       <path value="Practitioner.identifier.extension" />
       <slicing>
@@ -650,7 +650,7 @@
         <valueCode value="normative" />
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
+        <valueCode value="4.0.1" />
       </extension>
       <path value="Practitioner.identifier.use" />
       <short value="usual | official | temp | secondary | old (If known)" />
@@ -684,7 +684,7 @@
         </extension>
         <strength value="required" />
         <description value="Identifies the purpose for this identifier, if known ." />
-        <valueSet value="http://hl7.org/fhir/ValueSet/identifier-use|4.0.0" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/identifier-use|4.0.1" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -704,7 +704,7 @@
         <valueCode value="normative" />
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
+        <valueCode value="4.0.1" />
       </extension>
       <path value="Practitioner.identifier.type" />
       <short value="Description of identifier" />
@@ -771,7 +771,7 @@
         <valueCode value="normative" />
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
+        <valueCode value="4.0.1" />
       </extension>
       <path value="Practitioner.identifier.system" />
       <short value="The namespace for the identifier value" />
@@ -824,7 +824,7 @@
         <valueCode value="normative" />
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
+        <valueCode value="4.0.1" />
       </extension>
       <path value="Practitioner.identifier.value" />
       <short value="The value that is unique" />
@@ -875,7 +875,7 @@
         <valueCode value="normative" />
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
+        <valueCode value="4.0.1" />
       </extension>
       <path value="Practitioner.identifier.period" />
       <short value="Time period when id is/was valid for use" />
@@ -937,7 +937,7 @@
         <valueCode value="normative" />
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
+        <valueCode value="4.0.1" />
       </extension>
       <path value="Practitioner.identifier.assigner" />
       <short value="Organization that issued id (may be just text)" />
@@ -996,7 +996,7 @@
         <valueCode value="normative" />
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
+        <valueCode value="4.0.1" />
       </extension>
       <path value="Practitioner.identifier" />
       <sliceName value="SSIN" />
@@ -1090,7 +1090,7 @@
         <valueCode value="normative" />
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
+        <valueCode value="4.0.1" />
       </extension>
       <path value="Practitioner.identifier.extension" />
       <slicing>
@@ -1145,7 +1145,7 @@
         <valueCode value="normative" />
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
+        <valueCode value="4.0.1" />
       </extension>
       <path value="Practitioner.identifier.use" />
       <short value="usual | official | temp | secondary | old (If known)" />
@@ -1179,7 +1179,7 @@
         </extension>
         <strength value="required" />
         <description value="Identifies the purpose for this identifier, if known ." />
-        <valueSet value="http://hl7.org/fhir/ValueSet/identifier-use|4.0.0" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/identifier-use|4.0.1" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -1199,7 +1199,7 @@
         <valueCode value="normative" />
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
+        <valueCode value="4.0.1" />
       </extension>
       <path value="Practitioner.identifier.type" />
       <short value="Description of identifier" />
@@ -1266,7 +1266,7 @@
         <valueCode value="normative" />
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
+        <valueCode value="4.0.1" />
       </extension>
       <path value="Practitioner.identifier.system" />
       <short value="The namespace for the identifier value" />
@@ -1319,7 +1319,7 @@
         <valueCode value="normative" />
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
+        <valueCode value="4.0.1" />
       </extension>
       <path value="Practitioner.identifier.value" />
       <short value="The value that is unique" />
@@ -1370,7 +1370,7 @@
         <valueCode value="normative" />
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
+        <valueCode value="4.0.1" />
       </extension>
       <path value="Practitioner.identifier.period" />
       <short value="Time period when id is/was valid for use" />
@@ -1432,7 +1432,7 @@
         <valueCode value="normative" />
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
+        <valueCode value="4.0.1" />
       </extension>
       <path value="Practitioner.identifier.assigner" />
       <short value="Organization that issued id (may be just text)" />
@@ -1491,7 +1491,7 @@
         <valueCode value="normative" />
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
+        <valueCode value="4.0.1" />
       </extension>
       <path value="Practitioner.identifier" />
       <sliceName value="CBE" />
@@ -1585,7 +1585,7 @@
         <valueCode value="normative" />
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
+        <valueCode value="4.0.1" />
       </extension>
       <path value="Practitioner.identifier.extension" />
       <slicing>
@@ -1640,7 +1640,7 @@
         <valueCode value="normative" />
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
+        <valueCode value="4.0.1" />
       </extension>
       <path value="Practitioner.identifier.use" />
       <short value="usual | official | temp | secondary | old (If known)" />
@@ -1674,7 +1674,7 @@
         </extension>
         <strength value="required" />
         <description value="Identifies the purpose for this identifier, if known ." />
-        <valueSet value="http://hl7.org/fhir/ValueSet/identifier-use|4.0.0" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/identifier-use|4.0.1" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -1694,7 +1694,7 @@
         <valueCode value="normative" />
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
+        <valueCode value="4.0.1" />
       </extension>
       <path value="Practitioner.identifier.type" />
       <short value="Description of identifier" />
@@ -1761,7 +1761,7 @@
         <valueCode value="normative" />
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
+        <valueCode value="4.0.1" />
       </extension>
       <path value="Practitioner.identifier.system" />
       <short value="The namespace for the identifier value" />
@@ -1814,7 +1814,7 @@
         <valueCode value="normative" />
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
+        <valueCode value="4.0.1" />
       </extension>
       <path value="Practitioner.identifier.value" />
       <short value="The value that is unique" />
@@ -1865,7 +1865,7 @@
         <valueCode value="normative" />
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
+        <valueCode value="4.0.1" />
       </extension>
       <path value="Practitioner.identifier.period" />
       <short value="Time period when id is/was valid for use" />
@@ -1927,7 +1927,7 @@
         <valueCode value="normative" />
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
+        <valueCode value="4.0.1" />
       </extension>
       <path value="Practitioner.identifier.assigner" />
       <short value="Organization that issued id (may be just text)" />
@@ -1986,7 +1986,7 @@
         <valueCode value="normative" />
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
+        <valueCode value="4.0.1" />
       </extension>
       <path value="Practitioner.active" />
       <short value="Whether this practitioner's record is in active use" />
@@ -2031,7 +2031,7 @@
         <valueCode value="normative" />
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
+        <valueCode value="4.0.1" />
       </extension>
       <path value="Practitioner.name" />
       <short value="The name(s) associated with the practitioner" />
@@ -2091,7 +2091,7 @@
         <valueCode value="normative" />
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
+        <valueCode value="4.0.1" />
       </extension>
       <path value="Practitioner.telecom" />
       <short value="A contact detail for the practitioner (that apply to all roles)" />
@@ -2158,7 +2158,7 @@
         <valueCode value="normative" />
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
+        <valueCode value="4.0.1" />
       </extension>
       <path value="Practitioner.address" />
       <short value="Address(es) of the practitioner that are not role specific (typically home address)" />
@@ -2251,7 +2251,7 @@
         <valueCode value="normative" />
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
+        <valueCode value="4.0.1" />
       </extension>
       <path value="Practitioner.address.extension" />
       <slicing>
@@ -2307,7 +2307,7 @@
         <valueCode value="normative" />
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
+        <valueCode value="4.0.1" />
       </extension>
       <path value="Practitioner.address.use" />
       <short value="home | work | temp | old | billing - purpose of this address" />
@@ -2345,7 +2345,7 @@
         </extension>
         <strength value="required" />
         <description value="The use of an address." />
-        <valueSet value="http://hl7.org/fhir/ValueSet/address-use|4.0.0" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/address-use|4.0.1" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -2369,7 +2369,7 @@
         <valueCode value="normative" />
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
+        <valueCode value="4.0.1" />
       </extension>
       <path value="Practitioner.address.type" />
       <short value="postal | physical | both" />
@@ -2404,7 +2404,7 @@
         </extension>
         <strength value="required" />
         <description value="The type of an address (physical / postal)." />
-        <valueSet value="http://hl7.org/fhir/ValueSet/address-type|4.0.0" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/address-type|4.0.1" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -2428,7 +2428,7 @@
         <valueCode value="normative" />
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
+        <valueCode value="4.0.1" />
       </extension>
       <path value="Practitioner.address.text" />
       <short value="Text representation of the address" />
@@ -2480,7 +2480,7 @@
         <valueCode value="normative" />
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
+        <valueCode value="4.0.1" />
       </extension>
       <path value="Practitioner.address.line" />
       <short value="Street name, number, direction &amp; P.O. Box etc." />
@@ -2536,7 +2536,7 @@
         <valueCode value="normative" />
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
+        <valueCode value="4.0.1" />
       </extension>
       <path value="Practitioner.address.city" />
       <short value="Name of city, town etc." />
@@ -2592,7 +2592,7 @@
         <valueCode value="normative" />
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
+        <valueCode value="4.0.1" />
       </extension>
       <path value="Practitioner.address.district" />
       <short value="District name (aka county)" />
@@ -2640,7 +2640,7 @@
         <valueCode value="normative" />
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
+        <valueCode value="4.0.1" />
       </extension>
       <path value="Practitioner.address.state" />
       <short value="Sub-unit of country (abbreviations ok)" />
@@ -2693,7 +2693,7 @@
         <valueCode value="normative" />
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
+        <valueCode value="4.0.1" />
       </extension>
       <path value="Practitioner.address.postalCode" />
       <short value="Postal code for area" />
@@ -2749,7 +2749,7 @@
         <valueCode value="normative" />
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
+        <valueCode value="4.0.1" />
       </extension>
       <path value="Practitioner.address.country" />
       <short value="Country (e.g. can be ISO 3166 2 or 3 letter code)" />
@@ -2800,7 +2800,7 @@
         <valueCode value="normative" />
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
+        <valueCode value="4.0.1" />
       </extension>
       <path value="Practitioner.address.period" />
       <short value="Time period when address was/is in use" />
@@ -2870,7 +2870,7 @@
         <valueCode value="normative" />
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
+        <valueCode value="4.0.1" />
       </extension>
       <path value="Practitioner.gender" />
       <short value="male | female | other | unknown" />
@@ -2905,7 +2905,7 @@
         </extension>
         <strength value="required" />
         <description value="The gender of a person used for administrative purposes." />
-        <valueSet value="http://hl7.org/fhir/ValueSet/administrative-gender|4.0.0" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/administrative-gender|4.0.1" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -2929,7 +2929,7 @@
         <valueCode value="normative" />
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
+        <valueCode value="4.0.1" />
       </extension>
       <path value="Practitioner.birthDate" />
       <short value="The date  on which the practitioner was born" />
@@ -2976,7 +2976,7 @@
         <valueCode value="normative" />
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
+        <valueCode value="4.0.1" />
       </extension>
       <path value="Practitioner.photo" />
       <short value="Image of the person" />
@@ -3034,7 +3034,7 @@
         <valueCode value="normative" />
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
+        <valueCode value="4.0.1" />
       </extension>
       <path value="Practitioner.qualification" />
       <short value="Certification, licenses, or training pertaining to the provision of care" />
@@ -3109,7 +3109,7 @@
         <valueCode value="normative" />
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
+        <valueCode value="4.0.1" />
       </extension>
       <path value="Practitioner.qualification.extension" />
       <slicing>
@@ -3164,7 +3164,7 @@
         <valueCode value="normative" />
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
+        <valueCode value="4.0.1" />
       </extension>
       <path value="Practitioner.qualification.modifierExtension" />
       <short value="Extensions that cannot be ignored even if unrecognized" />
@@ -3216,7 +3216,7 @@
         <valueCode value="normative" />
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
+        <valueCode value="4.0.1" />
       </extension>
       <path value="Practitioner.qualification.identifier" />
       <short value="An identifier for this qualification for the practitioner" />
@@ -3266,7 +3266,7 @@
         <valueCode value="normative" />
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
+        <valueCode value="4.0.1" />
       </extension>
       <path value="Practitioner.qualification.code" />
       <short value="Coded representation of the qualification" />
@@ -3328,7 +3328,7 @@
         <valueCode value="normative" />
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
+        <valueCode value="4.0.1" />
       </extension>
       <path value="Practitioner.qualification.period" />
       <short value="Period during which the qualification is valid" />
@@ -3386,7 +3386,7 @@
         <valueCode value="normative" />
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
+        <valueCode value="4.0.1" />
       </extension>
       <path value="Practitioner.qualification.issuer" />
       <short value="Organization that regulates and issues the qualification" />
@@ -3436,7 +3436,7 @@
         <valueCode value="normative" />
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
+        <valueCode value="4.0.1" />
       </extension>
       <path value="Practitioner.communication" />
       <short value="A language the practitioner can use in patient communication" />

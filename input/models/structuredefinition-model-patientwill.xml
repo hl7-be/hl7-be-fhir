@@ -5,11 +5,11 @@
   <name value="BEPatientWill" />
   <status value="draft" />
   <description value="This is the logical model of the patient will for a patient. Initially based on the input of the NIHDI.&#xD;&#xA;The actual FHIR instance will use a profile on the FHIR resource Consent ( https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-consent-patientwill ) Belgian federal profile for a patient will ONLY in the context of the patient will in the context of limitations to treatment, DNR etc. Initially based on the functional description of the NIHDI. This might in the future be also used to record agreement to participate in clinical trials etc. Any usecase around informed consent is out of scope for this profile." />
-  <fhirVersion value="4.0.0" />
+  <fhirVersion value="4.0.1" />
   <kind value="logical" />
   <abstract value="false" />
   <type value="BEPatientWill" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base" />
   <derivation value="specialization" />
   <differential>
     <element id="BEPatientWill">

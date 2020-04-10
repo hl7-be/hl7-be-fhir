@@ -6,7 +6,7 @@
   <name value="BeObservation" />
   <status value="active" />
   <description value="Belgian federal profile for an observation. Initially based on the functional description of the NIHDI.&#xD;&#xA;As Observation is used in many instances in FHIR, please refer to the HL7 specs of the base resource for guidance around expression of actual values using UCUM, methods, location on body etc.&#xD;&#xA;&#xD;&#xA;Special remarks for KMEHR users:&#xD;&#xA;The FHIR Observation resource captures many things that are in a KMEHR message structured as an 'item'. This includes things like 'vital signs such as body weight, blood pressure, and temperature […], personal characteristics such as eye-color […] social history like tobacco use, family support, or cognitive status […]' ( https://www.hl7.org/fhir/R4/observation.html )&#xD;&#xA;For some of these things, HL7 already has worked out profiles and they SHALL be used when such a use case is needed. Specifically, projects SHALL take note of the existing profiles described on https://www.hl7.org/fhir/R4/observation-vitalsigns.html" />
-  <fhirVersion value="4.0.0" />
+  <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
   <type value="Observation" />
@@ -626,7 +626,7 @@
       <binding>
         <strength value="required" />
         <description value="Codes providing the status of an observation." />
-        <valueSet value="http://hl7.org/fhir/ValueSet/observation-status|4.0.0" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/observation-status|4.0.1" />
       </binding>
       <mapping>
         <identity value="rim" />

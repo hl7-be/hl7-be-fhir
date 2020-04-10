@@ -6,7 +6,7 @@
 	<name value="BePatient"/>
 	<status value="active"/>
 	<description value="Belgian federal profile for a patient. Initially based on the functional description of the NIHDI. Special remarks for KMEHR users: following elements in KMEHR are not available in this FHIR resource. If needed, an extension can be defined in a future iteration of these specifications: the 'deathlocation' (location is not available but the death of the patient is expressed by either date or Boolean cfr. infra.), the 'insurancystatus' (covered in a seperate FHIR resource: Coverage), 'insurancymembership' (covered in a seperate FHIR resource: Coverage) and 'profession' (covered in a possible future FHIR resource: OccupationalData.)"/>
-	<fhirVersion value="4.0.0"/>
+	<fhirVersion value="4.0.1"/>
 	<kind value="resource"/>
 	<abstract value="false"/>
 	<type value="Patient"/>
@@ -1613,7 +1613,7 @@
 			<binding>
 				<strength value="required"/>
 				<description value="Identifies the purpose for this identifier, if known ."/>
-				<valueSet value="http://hl7.org/fhir/ValueSet/identifier-use|4.0.0"/>
+				<valueSet value="http://hl7.org/fhir/ValueSet/identifier-use|4.0.1"/>
 			</binding>
 			<mapping>
 				<identity value="rim"/>
@@ -2086,7 +2086,7 @@
 			<binding>
 				<strength value="required"/>
 				<description value="The gender of a person used for administrative purposes."/>
-				<valueSet value="http://hl7.org/fhir/ValueSet/administrative-gender|4.0.0"/>
+				<valueSet value="http://hl7.org/fhir/ValueSet/administrative-gender|4.0.1"/>
 			</binding>
 			<mapping>
 				<identity value="rim"/>
@@ -2705,7 +2705,7 @@
 			<binding>
 				<strength value="required"/>
 				<description value="The use of an address."/>
-				<valueSet value="http://hl7.org/fhir/ValueSet/address-use|4.0.0"/>
+				<valueSet value="http://hl7.org/fhir/ValueSet/address-use|4.0.1"/>
 			</binding>
 			<mapping>
 				<identity value="rim"/>
@@ -2756,7 +2756,7 @@
 			<binding>
 				<strength value="required"/>
 				<description value="The type of an address (physical / postal)."/>
-				<valueSet value="http://hl7.org/fhir/ValueSet/address-type|4.0.0"/>
+				<valueSet value="http://hl7.org/fhir/ValueSet/address-type|4.0.1"/>
 			</binding>
 			<mapping>
 				<identity value="rim"/>
@@ -3777,7 +3777,7 @@ The codesystem ‘https://www.ehealth.fgov.be/standards/fhir/CodeSystem/CD-CONTA
 			<binding>
 				<strength value="required"/>
 				<description value="The gender of a person used for administrative purposes."/>
-				<valueSet value="http://hl7.org/fhir/ValueSet/administrative-gender|4.0.0"/>
+				<valueSet value="http://hl7.org/fhir/ValueSet/administrative-gender|4.0.1"/>
 			</binding>
 			<mapping>
 				<identity value="rim"/>
@@ -4544,7 +4544,7 @@ Note in the FHIR base definition of this element that the scope of this element 
 			<binding>
 				<strength value="required"/>
 				<description value="The type of link between this patient resource and another patient resource."/>
-				<valueSet value="http://hl7.org/fhir/ValueSet/link-type|4.0.0"/>
+				<valueSet value="http://hl7.org/fhir/ValueSet/link-type|4.0.1"/>
 			</binding>
 			<mapping>
 				<identity value="rim"/>

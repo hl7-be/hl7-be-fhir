@@ -636,7 +636,7 @@
       <binding>
         <strength value="required" />
         <description value="Identifies the purpose for this identifier, if known ." />
-        <valueSet value="http://hl7.org/fhir/ValueSet/identifier-use|4.0.0" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/identifier-use|4.0.1" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -1086,7 +1086,7 @@
       <binding>
         <strength value="required" />
         <description value="Identifies the purpose for this identifier, if known ." />
-        <valueSet value="http://hl7.org/fhir/ValueSet/identifier-use|4.0.0" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/identifier-use|4.0.1" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -1536,7 +1536,7 @@
       <binding>
         <strength value="required" />
         <description value="Identifies the purpose for this identifier, if known ." />
-        <valueSet value="http://hl7.org/fhir/ValueSet/identifier-use|4.0.0" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/identifier-use|4.0.1" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -1986,7 +1986,7 @@
       <binding>
         <strength value="required" />
         <description value="Identifies the purpose for this identifier, if known ." />
-        <valueSet value="http://hl7.org/fhir/ValueSet/identifier-use|4.0.0" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/identifier-use|4.0.1" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -3304,7 +3304,7 @@
       <binding>
         <strength value="required" />
         <description value="The use of an address." />
-        <valueSet value="http://hl7.org/fhir/ValueSet/address-use|4.0.0" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/address-use|4.0.1" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -3355,7 +3355,7 @@
       <binding>
         <strength value="required" />
         <description value="The type of an address (physical / postal)." />
-        <valueSet value="http://hl7.org/fhir/ValueSet/address-type|4.0.0" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/address-type|4.0.1" />
       </binding>
       <mapping>
         <identity value="rim" />

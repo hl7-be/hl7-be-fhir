@@ -5,25 +5,12 @@
   <version value="0.1.0" />
   <name value="BEAddiction" />
   <status value="draft" />
-  <description value="This is the logical model of an addiction of a patient. Initially based on the input of the NIHDI.&#xD;&#xA; This model represents a known,  suspected or resolved addiction. This models does not intend to represent a point-in-time observation of substance intake or related event or behaviour. In other words, this logical model represents the addiction condition, not an addiction-related event or observation.)" />
-  <fhirVersion value="4.0.0" />
-
-
-
-
-
-<!--
-
-      <short value="" />
-
--->
-
-
-
+  <description value="This is the logical model of an addiction of a patient. Initially based on the input of the NIHDI.&#xD;&#xA; This model represents a known,  suspected or resolved addiction. This models does not intend to represent a point-in-time observation of substance intake or related event or behaviour. In other words, this logical model represents the addiction condition, not an addiction-related event or observation." />
+  <fhirVersion value="4.0.1" />
   <kind value="logical" />
   <abstract value="false" />
   <type value="BeAddiction" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base" />
   <derivation value="specialization" />
   <differential>
     <element id="BeAddiction">
@@ -31,6 +18,20 @@
       <path value="BeAddiction" />
       <min value="0" />
       <max value="*" />
+    </element>
+    <element id="BeAddiction.identifier">
+      <path value="BeAddiction.identifier" />
+      <short value="The business identifier(s) for the addiction condition" />
+      <description value="The business identifier(s) for the addiction condition - This is an optional attribute, used for example to track an addiction throughout its lifecycle, or across vaults." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Identifier" />
+      </type>
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://www.hl7.org/fhir/valueset-condition-clinical.html" />
+      </binding>
     </element>
     <element id="BeAddiction.clinicalStatus">
       <path value="BeAddiction.clinicalStatus" />
