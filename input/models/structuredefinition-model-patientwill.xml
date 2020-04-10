@@ -40,13 +40,14 @@
         <profile value="http://hl7.org/fhir/StructureDefinition/dateTime" />
       </type>
     </element>
-    <element id="BEPatientWill.performer">
-      <path value="BEPatientWill.performer" />
+    <element id="BEPatientWill.informer">
+      <path value="BEPatientWill.informer" />
       <definition value="The healthcare professional who takes responsibility for this content." />
       <min value="1" />
       <max value="1" />
       <type>
         <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
       </type>
     </element>
     <element id="BEPatientWill.patient">
@@ -56,6 +57,8 @@
       <max value="1" />
       <type>
         <code value="Reference" />
+        <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient" />
+
       </type>
     </element>
     <element id="BEPatientWill.category">
