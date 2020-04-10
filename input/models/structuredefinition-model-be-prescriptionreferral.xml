@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="model-be-prescriptionreferral" />
+  <url value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/model-be-prescriptionreferral" />
+  <version value="0.1" />
+  <name value="BePrescriptionReferral" />
+  <status value="draft" />
+  <description value="Logical model describing the model for the prescription referral. This draft is used in the HL7 Belgian workgroup for referral." />
+  <fhirVersion value="4.0.0" />
+  <kind value="logical" />
+  <abstract value="false" />
+  <type value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/model-be-prescriptionreferral" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element" />
+  <derivation value="specialization" />
+  <differential>
+    <element id="model-be-prescriptionreferral">
+      <path value="model-be-prescriptionreferral" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Element" />
+      </type>
+    </element>
+    <element id="model-be-prescriptionreferral.prescriber">
+      <path value="model-be-prescriptionreferral.prescriber" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner" />
+      </type>
+    </element>
+    <element id="model-be-prescriptionreferral.signer">
+      <path value="model-be-prescriptionreferral.signer" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner" />
+      </type>
+    </element>
+    <element id="model-be-prescriptionreferral.patient">
+      <path value="model-be-prescriptionreferral.patient" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient" />
+      </type>
+    </element>
+    <element id="model-be-prescriptionreferral.service">
+      <path value="model-be-prescriptionreferral.service" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ServiceRequest" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>
