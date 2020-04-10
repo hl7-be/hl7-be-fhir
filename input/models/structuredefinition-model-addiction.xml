@@ -157,7 +157,7 @@
       <max value="*" />
       <type>
         <code value="Reference" />
-        <targetProfile value="Procedure"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Procedure"/>
       </type>
     </element>
 
@@ -179,7 +179,7 @@
       <max value="1" />
       <type>
         <code value="CodeableReference" />
-        <targetProfile value="Practitioner"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
       </type>
     </element>
     <element id="BeAddiction.recorder.performerCode">
