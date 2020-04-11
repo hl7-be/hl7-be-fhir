@@ -28,10 +28,6 @@
       <type>
         <code value="Identifier" />
       </type>
-      <binding>
-        <strength value="required" />
-        <valueSet value="https://www.hl7.org/fhir/valueset-condition-clinical.html" />
-      </binding>
     </element>
     <element id="BeAddiction.clinicalStatus">
       <path value="BeAddiction.clinicalStatus" />
@@ -90,7 +86,7 @@
       <path value="BeAddiction.code" />
       <short value="The specific addiction substance or activity" />
       <definition value="Here it is possible to further refine the addiction information e.g. when &quot;narcotics&quot; is indicated, this can specify the substance" />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <type>
         <code value="CodeableConcept" />
@@ -127,7 +123,8 @@
 
     <element id="BeAddiction.effective">
       <path value="BeAddiction.effective" />
-      <definition value="The actual period this addiction was true. (e.g. used when a patient used to abuse alcohol)" />
+      <short value="The time period when the patient suffered or suffers from addiction" />
+      <definition value="The actual period this addiction was true. (e.g. used when a patient used to abuse alcohol) - or the beginning of addiction in case the addiction is still active" />
       <min value="0" />
       <max value="1" />
       <type>
@@ -150,9 +147,20 @@
     </element>
 
 
+    <element id="BeAddiction.inTreatment">
+      <path value="BeAddiction.inTreatment" />
+      <short value="Whether the addiction is known to be under treatment" />
+      <definition value="Is this patient following a treatment for this addiction?" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Boolean" />
+      </type>
+    </element>
+
     <element id="BeAddiction.treatment">
       <path value="BeAddiction.treatment" />
-      <short value="The treatment(s) associated with this addition" />
+      <short value="The links to the treatment(s) associated with this addition, if existing and known" />
       <definition value="Is this patient following a treatment for this addiction?&#xD;&#xA;(In technical reality, this will be actually a Procedure instance that refers to the Addiction instance)" />
       <min value="0" />
       <max value="*" />
@@ -180,7 +188,7 @@
       <max value="1" />
       <type>
         <code value="CodeableReference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/be-practitioner"/>
       </type>
     </element>
     <element id="BeAddiction.recorder.performerCode">
@@ -202,7 +210,8 @@
 
     <element id="BeAddiction.note">
       <path value="BeAddiction.note" />
-      <definition value="extra information" />
+      <short value="Additional information about the addiction" />
+      <definition value="Additional information about the addiction - this can be relevant history, any remarks by the patient or professional, etc." />
       <min value="0" />
       <max value="*" />
       <type>

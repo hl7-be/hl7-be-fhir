@@ -7,32 +7,17 @@
   <status value="draft" />
   <description value="*************!DRAFT!DRAFT!DRAFT! VALUESETS STILL TO BE DELIVERED FOR THIS PROFILE BY THE NIHDI *********** Belgian federal profile for a patient will ONLY in the context of the patient will in the context of limitations to treatment, DNR etc. Initially based on the functional description of the NIHDI. This profile will in the future be also used to record agreement to participate in clinical trials etc. Any usecase around informed consent is out of scope for this profile." />
   <fhirVersion value="4.0.1" />
-  <mapping>
-    <identity value="workflow" />
-    <uri value="http://hl7.org/fhir/workflow" />
-    <name value="Workflow Pattern" />
-  </mapping>
-  <mapping>
-    <identity value="v2" />
-    <uri value="http://hl7.org/v2" />
-    <name value="HL7 v2 Mapping" />
-  </mapping>
-  <mapping>
-    <identity value="rim" />
-    <uri value="http://hl7.org/v3" />
-    <name value="RIM Mapping" />
-  </mapping>
-  <mapping>
-    <identity value="w5" />
-    <uri value="http://hl7.org/fhir/fivews" />
-    <name value="FiveWs Pattern Mapping" />
-  </mapping>
   <kind value="resource" />
   <abstract value="false" />
   <type value="Consent" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Consent" />
   <derivation value="constraint" />
   <differential>
+    <element id="Consent.identifier">
+      <path value="Consent.identifier" />
+      <comment value="SHALL be given and a consumer SHALL NOT ignore this." />
+      <mustSupport value="true" />
+    </element>
     <element id="Consent.status">
       <path value="Consent.status" />
       <comment value="This element is labeled as a modifier because the status contains the codes rejected and entered-in-error that mark the Consent as not currently valid.&#xD;&#xA;SHALL be given and a consumer SHALL NOT ignore this." />
@@ -40,19 +25,22 @@
     </element>
     <element id="Consent.scope">
       <path value="Consent.scope" />
-      <comment value="Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.&#xD;&#xA;SHALL be given and a consumer SHALL NOT ignore this." />
-      <fixedCode value="treatment" />
+      <short value="The actual directive in the will" />
+      <definition value="The detailed patient will directive (e.g. no hospitalization, bloodtransfusion refusal) (Valueset will be delivered by a working group of NIHDI)" />
       <mustSupport value="true" />
     </element>
     <element id="Consent.category">
       <path value="Consent.category" />
-      <definition value="A classification of the type of consents found in the statement. This element supports indexing and retrieval of consent statements.&#xD;&#xA;The actual detail of the patient will (e.g. no hospitalization, bloodtransfusion refusal) (Valueset will be delivered by a working group of NIHDI)" />
+      <short value="The category or the patient will directive" />
+      <definition value="The types or classification of patient will. This element supports indexing and retrieval of consent statements.&#xD;&#xA;The actual detail of the patient will (e.g. no hospitalization, bloodtransfusion refusal) (Valueset will be delivered by a working group of NIHDI)" />
       <comment value="Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.&#xD;&#xA;SHALL be given and a consumer SHALL NOT ignore this." />
       <max value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Consent.patient">
       <path value="Consent.patient" />
+      <short value="The subject of the patient will." />
+      <definition value="The subject of the patient will." />
       <comment value="Commonly, the patient the consent pertains to is the author, but for some cases like young and old people, it may be some other person.&#xD;&#xA;SHALL be given and a consumer SHALL NOT ignore this." />
       <min value="1" />
       <type>
@@ -78,27 +66,72 @@
 
     <element id="Consent.dateTime">
       <path value="Consent.dateTime" />
+      <short value="The dateTime when the patient will has been recorded" />
+      <definition value="The date and/or time when the patient will has been recorded" />
       <comment value="This is not the time of the original consent, but the time that this statement was made or derived.&#xD;&#xA;SHALL be given and a consumer SHALL NOT ignore this." />
       <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Consent.source[x]">
       <path value="Consent.source[x]" />
+      <short value="The evidence used to support the patient will." />
+      <definition value="Supporting evidence for the patient will (e.g. a paper signed by the patient to refuse a specific treatment)" />
       <comment value="The source can be contained inline (Attachment), referenced directly (Consent), referenced in a consent repository (DocumentReference), or simply by an identifier (Identifier), e.g. a CDA document id.&#xD;&#xA;It is at the discretion of the practitioner whether to include this when available. A consumer SHALL NOT ignore it when available." />
       <mustSupport value="true" />
     </element>
     <element id="Consent.policyRule">
       <path value="Consent.policyRule" />
       <min value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="Consent.policyRule.text">
       <path value="Consent.policyRule.text" />
       <fixedString value="Belgian policy" />
-    </element>
-    <element id="Consent.provision.dataPeriod">
-      <path value="Consent.provision.dataPeriod" />
-      <definition value="Clinical or Operational Relevant period of time that bounds the data controlled by this rule.&#xD;&#xA;When availiable, a provider SHALL provide this and the consumer SHALL record this in its consuming system." />
       <mustSupport value="true" />
     </element>
+	
+	
+    <element id="Consent.provision.type">
+      <path value="Consent.provision.type" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Consent.provision.securityLabel">
+      <path value="Consent.provision.securityLabel" />
+      <max value="0" />
+    </element>
+    <element id="Consent.provision.purpose">
+      <path value="Consent.provision.purpose" />
+      <max value="0" />
+    </element>
+    <element id="Consent.provision.class">
+      <path value="Consent.provision.class" />
+      <max value="0" />
+    </element>
+    <element id="Consent.provision.period">
+      <path value="Consent.provision.period" />
+      <short value="The period of validity for the patient will directive" />
+      <definition value="The period of validity for the patient will directive" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Consent.provision.data">
+      <path value="Consent.provision.data" />
+      <max value="0" />
+    </element>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   </differential>
 </StructureDefinition>
