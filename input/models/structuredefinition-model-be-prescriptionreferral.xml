@@ -9,7 +9,7 @@
   <fhirVersion value="4.0.0" />
   <kind value="logical" />
   <abstract value="false" />
-  <type value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/model-be-prescriptionreferral" />
+  <type value="model-be-prescriptionreferral" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element" />
   <derivation value="specialization" />
   <differential>
@@ -17,9 +17,6 @@
       <path value="model-be-prescriptionreferral" />
       <min value="0" />
       <max value="*" />
-      <type>
-        <code value="Element" />
-      </type>
     </element>
     <element id="model-be-prescriptionreferral.prescriber">
       <path value="model-be-prescriptionreferral.prescriber" />
