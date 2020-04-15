@@ -1,0 +1,249 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="model-immunization" />
+  <url value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-immunization-model" />
+  <name value="BEImmunization" />
+  <status value="draft" />
+  <description value="This is the logical model of the patient's immunization entries in an immunization or vaccination record. The patient immunization record of several entries as modeled here." />
+  <fhirVersion value="4.0.1" />
+  <kind value="logical" />
+  <abstract value="false" />
+  <type value="BEImmunization" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base" />
+  <derivation value="specialization" />
+  <differential>
+    <element id="BEImmunization">
+      <path value="BEImmunization" />
+      <short value="A record of an immunization or vaccination" />
+      <min value="0" />
+      <max value="*" />
+    </element>
+    <element id="BEImmunization.identifier">
+      <path value="BEImmunization.identifier" />
+      <short value="The business identifier(s) for the immunization entry" />
+      <description value="The business identifier(s) for the immunization entry - This is an optional attribute, used for example to track an entry throughout its lifecycle, or across vaults." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Identifier" />
+      </type>
+    </element>
+    <element id="BEImmunization.status">
+      <path value="BEImmunization.status" />
+      <short value="The status of this immunization record entry" />
+      <description value="The status of the immunization record entry - whether it is active, entered in error, etc." />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="code" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/code" />
+      </type>
+    </element>
+    <element id="BEImmunization.statusReason">
+      <path value="BEImmunization.source" />
+      <short value="The reason for the status e.g. entered in error because ..." />
+      <definition value="Supporting reason for status information....." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
+      </type>
+    </element>
+
+
+    <element id="BEImmunization.dateTime">
+      <path value="BEImmunization.dateTime" />
+      <short value="The dateTime when the immunization has been recorded" />
+      <definition value="The date and/or time when the immunization will has been recorded" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="dateTime" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/dateTime" />
+      </type>
+    </element>
+	
+    <element id="BEImmunization.immunizationPlan">
+      <path value="BEImmunization.immunizationPlan" />
+      <short value="The patient-specific order or recommendation for the immunization" />
+      <definition value="The patient-specific order or recommendation for the immunization, for example a prescription or a request for immunization for a patient by a physician." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner"/>
+      </type>
+    </element>
+
+    <element id="BEImmunization.protocol">
+      <path value="BEImmunization.protocol" />
+      <short value="The vaccination plan or protocol (not patient-specific) that this immunization is fulfilling" />
+      <definition value="The vaccination plan or protocol (not patient-specific) that this immunization is fulfilling." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+      </type>
+    </element>
+
+    <element id="BEImmunization.type">
+      <path value="BEImmunization.type" />
+      <short value="The type of immunization action - for example first dose or reinforcement." />
+      <definition value="The type of immunization action - for example first dose or reinforcement." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="code" />
+      </type>
+    </element>
+	
+	
+    <element id="BEImmunization.reporter">
+      <path value="BEImmunization.reporter" />
+      <short value="The professional that registered the patient will" />
+      <definition value="The healthcare professional who takes responsibility for collecting content." />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+      </type>
+    </element>
+	
+    <element id="BEImmunization.administrator">
+      <path value="BEImmunization.administrator" />
+      <short value="The professional that registered the patient will" />
+      <definition value="The healthcare professional who takes responsibility for collecting content." />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner"/>
+      </type>
+    </element>
+	
+	
+	
+	
+    <element id="BEImmunization.patient">
+      <path value="BEImmunization.patient" />
+      <short value="The patient that received immunization." />
+      <definition value="The patient that has received the immunization." />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient" />
+      </type>
+    </element>
+
+
+    <element id="BEImmunization.targetImmunity">
+      <path value="BEImmunization.targetImmunity" />
+      <short value="The target of the immunization - the disease that the immunization action is protecting against - e.g. Polio, Tetanus, HPV" />
+      <definition value="The target of the immunization - the disease that the immunization action is protecting against. This should be a coded value." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
+
+
+
+
+    <element id="BEImmunization.route">
+      <path value="BEImmunization.route" />
+      <short value="The evidence used to support the patient will." />
+      <definition value="Supporting evidence for the patient will (e.g. a paper signed by the patient to refuse a specific treatment)" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
+
+
+
+    <element id="BEImmunization.administeredProduct">
+      <path value="BEImmunization.administeredProduct" />
+      <short value="The details of the product that was administered." />
+      <definition value="" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+
+
+    <element id="BEImmunization.administeredProduct.product">
+      <path value="BEImmunization.administeredProduct.product" />
+      <short value="The actual product that was administered." />
+      <definition value="" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableReference" />
+      </type>
+    </element>
+
+
+    <element id="BEImmunization.administeredProduct.lotNumber">
+      <path value="BEImmunization.administeredProduct.lotNumber" />
+      <short value="The lot number" />
+      <definition value="The lot number" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+
+    <element id="BEImmunization.administeredProduct.expirationDate">
+      <path value="BEImmunization.administeredProduct.expirationDate" />
+      <short value="The expiration date of the product." />
+      <definition value="The expiration date of the product." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Attachment" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Attachment" />
+      </type>
+    </element>
+
+
+
+    <element id="BEImmunization.location">
+      <path value="BEImmunization.location" />
+      <short value="The evidence used to support the patient will." />
+      <definition value="Supporting evidence for the patient will (e.g. a paper signed by the patient to refuse a specific treatment)" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Attachment" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Attachment" />
+      </type>
+    </element>
+
+
+
+
+    <element id="BEImmunization.note">
+      <path value="BEImmunization.note" />
+      <short value="Additional notes for the immunization." />
+      <definition value="Additional notes for the immunization" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Attachment" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Attachment" />
+      </type>
+    </element>
+
+
+
+
+
+
+  </differential>
+</StructureDefinition>

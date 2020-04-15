@@ -11,7 +11,7 @@
 <p></p>
 <p>  </p>
 <a name="snomed"> </a>
-<h2 id="snomed">SNOMED</h2>
+<h3 id="snomed">SNOMED</h3>
 <p>The current version of SNOMED-CT to use with FHIR profiles is the Belgian release (15-03-2020). It can be browsed here:</p>
 <p><a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=404684003&amp;edition=MAIN/SNOMEDCT-BE/2020-03-15&amp;release=&amp;languages=en,nl,fr">https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=404684003&amp;edition=MAIN/SNOMEDCT-BE/2020-03-15&amp;release=&amp;languages=en,nl,fr</a></p>
 <p>This server has the FHIR capabilities in the endpoint <a href="https://snowstorm-fhir.snomedtools.org/fhir">https://snowstorm-fhir.snomedtools.org/fhir</a></p>
@@ -22,7 +22,7 @@
 <p>The terminologies in Belgium are governed by the <a href="https://www.health.belgium.be/language_selection?destination=terminology-center">Terminology Center</a>.</p>
 <p>  </p>
 <p>  </p><a name="bevalues"> </a>
-<h2 id="bevalues">Belgian Value Sets and Code Systems</h2>
+<h3 id="bevalues">Belgian Value Sets and Code Systems</h3>
 <p>The following value sets and code systems have been defined for the Belgium implemnentations - they are technical, legal or clinical concepts for which the international terminologies were not sufficient. These code systems and value sets follow the same governance as the other FHIR resources.</p>
    <p>
       <table class="grid">
