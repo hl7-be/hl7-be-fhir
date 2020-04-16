@@ -367,6 +367,15 @@
       <description value="Patient Will logical model"/>
       <groupingId value="logicalmodels"/>
     </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/model-immunization"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Logical Model Immunization"/>
+      <description value="Immunization logical model"/>
+      <groupingId value="logicalmodels"/>
+    </resource>
 
 <!--
     <resource>
