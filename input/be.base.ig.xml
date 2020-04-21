@@ -434,6 +434,15 @@
       <groupingId value="core"/>
     </resource>
 
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/be-immunization"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Immunization core BE profile"/>
+      <description value="The Core BE profile for Immunization (event)"/>
+      <groupingId value="core"/>
+    </resource>
 
 
     <resource>
@@ -917,16 +926,17 @@
       <description value="Patient Will"/>
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patientwill" />
     </resource>
+<!--
     <resource>
       <reference>
-         <reference value="Observation/addiction-example"/>
+         <reference value="Condition/addiction-example"/>
       </reference>
       <fhirVersion value="4.0.1"/>
       <name value="Addiction example"/>
       <description value="Example of an Addiction"/>
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-addiction" />
     </resource>
-
+-->
 
 
 

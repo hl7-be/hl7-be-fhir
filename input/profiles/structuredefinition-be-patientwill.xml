@@ -58,7 +58,7 @@
         <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization" />
         <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient" />
         <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/relatedPerson" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
         <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitionerRole" />
       </type>
       <mustSupport value="true" />

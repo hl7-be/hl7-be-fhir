@@ -1,0 +1,171 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "be-immunization",
+  "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-immunization",
+  "version": "0.1.0",
+  "name": "BEImmunization",
+  "title": "BEImmunization",
+  "status": "active",
+  "description": "Defines constraints and extensions on the immunization resource to represent an immunization event i.e. the administration of a vaccine.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "cda",
+      "uri": "http://hl7.org/v3/cda",
+      "name": "CDA (R2)"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Immunization",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Immunization",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Immunization.identifier",
+        "path": "Immunization.identifier",
+        "mustSupport": true
+      },
+      {
+        "id": "Immunization.identifier.system",
+        "path": "Immunization.identifier.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Immunization.identifier.value",
+        "path": "Immunization.identifier.value",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Immunization.status",
+        "path": "Immunization.status",
+        "mustSupport": true
+      },
+      {
+        "id": "Immunization.statusReason",
+        "path": "Immunization.statusReason",
+        "mustSupport": true
+      },
+      {
+        "id": "Immunization.vaccineCode",
+        "path": "Immunization.vaccineCode",
+        "mustSupport": true
+      },
+      {
+        "id": "Immunization.patient",
+        "path": "Immunization.patient",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient"
+            ]
+          }
+        ],        "mustSupport": true
+      },
+      {
+        "id": "Immunization.occurrenceDateTime",
+        "path": "Immunization.occurrenceDateTime",
+        "min": 0,
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Immunization.occurrenceString",
+        "path": "Immunization.occurrenceString",
+        "min": 0,
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Immunization.recorded",
+        "path": "Immunization.recorded",
+        "mustSupport": true
+      },
+      {
+        "id": "Immunization.location",
+        "path": "Immunization.location",
+        "mustSupport": true
+      },
+      {
+        "id": "Immunization.lotNumber",
+        "path": "Immunization.lotNumber",
+        "mustSupport": true
+      },
+      {
+        "id": "Immunization.expirationDate",
+        "path": "Immunization.expirationDate",
+        "mustSupport": true
+      },
+      {
+        "id": "Immunization.site",
+        "path": "Immunization.site",
+        "mustSupport": true
+      },
+      {
+        "id": "Immunization.route",
+        "path": "Immunization.route",
+        "mustSupport": true
+      },
+      {
+        "id": "Immunization.performer",
+        "path": "Immunization.performer",
+        "mustSupport": true
+      },
+      {
+        "id": "Immunization.performer.actor",
+        "path": "Immunization.performer.actor",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Immunization.reaction",
+        "path": "Immunization.reaction",
+        "mustSupport": true
+      },
+      {
+        "id": "Immunization.protocolApplied",
+        "path": "Immunization.protocolApplied",
+        "mustSupport": true
+      }
+    ]
+  }
+}

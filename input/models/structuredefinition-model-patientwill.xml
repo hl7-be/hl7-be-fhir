@@ -20,7 +20,7 @@
     <element id="BEPatientWill.identifier">
       <path value="BEPatientWill.identifier" />
       <short value="The business identifier(s) for the Patient will assertion" />
-      <description value="The business identifier(s) for the patient will entry - This is an optional attribute, used for example to track an entry throughout its lifecycle, or across vaults." />
+      <definition value="The business identifier(s) for the patient will entry - This is an optional attribute, used for example to track an entry throughout its lifecycle, or across vaults." />
       <min value="0" />
       <max value="1" />
       <type>
