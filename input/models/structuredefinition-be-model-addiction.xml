@@ -1,7 +1,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <!--trial-->
-  <id value="model-addiction" />
-  <url value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/model-addiction" />
+  <id value="be-model-addiction" />
+  <url value="https://www.hl7belgium.org/fhir/StructureDefinition/be-model-addiction" />
   <version value="0.1.0" />
   <name value="BEAddiction" />
   <status value="draft" />
@@ -10,7 +10,7 @@
   <kind value="logical" />
   <abstract value="false" />
   <type value="BeAddiction" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Resource" />
   <derivation value="specialization" />
   <differential>
     <element id="BeAddiction">
@@ -22,7 +22,7 @@
     <element id="BeAddiction.identifier">
       <path value="BeAddiction.identifier" />
       <short value="The business identifier(s) for the addiction condition" />
-      <description value="The business identifier(s) for the addiction condition - This is an optional attribute, used for example to track an addiction throughout its lifecycle, or across vaults." />
+      <definition value="The business identifier(s) for the addiction condition - This is an optional attribute, used for example to track an addiction throughout its lifecycle, or across vaults." />
       <min value="0" />
       <max value="1" />
       <type>
@@ -188,9 +188,27 @@
       <max value="1" />
       <type>
         <code value="CodeableReference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/be-practitioner"/>
       </type>
     </element>
+
+    <element id="BeAddiction.recorder.performer.reference">
+      <path value="BeAddiction.recorder.performer.reference" />
+      <short value="Reference to person that performed the recording or reporting" />
+      <definition value="Who was responsible for asserting the observed value as &quot;true&quot;. (Reference)" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner"/>
+      </type>
+    </element>
+
+
+
+
+
+
+
     <element id="BeAddiction.recorder.performerCode">
       <path value="BeAddiction.recorder.performerCode" />
       <short value="The role or action that the person took - for example informer, recorder, verifier.." />

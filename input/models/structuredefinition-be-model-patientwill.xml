@@ -1,7 +1,7 @@
 <!-- trial trial -->
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="model-patientwill" />
-  <url value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patientwill-model" />
+  <id value="be-model-patientwill" />
+  <url value="https://www.hl7belgium.org/fhir/StructureDefinition/be-model-patientwill" />
   <name value="BEPatientWill" />
   <status value="draft" />
   <description value="This is the logical model of the patient will for a patient - in fact, each entry of the patient's will assertions. The patient will consists of several entries as modeled here. Initially based on the input of the NIHDI.&#xD;&#xA;The Belgian federal profile for a patient will ONLY in the context of the patient will in the context of limitations to treatment, DNR etc. Initially based on the functional description of the NIHDI. This might in the future be also used to record agreement to participate in clinical trials etc. Any use case around informed consent or data sharing is out of scope for this logical model." />
@@ -9,11 +9,13 @@
   <kind value="logical" />
   <abstract value="false" />
   <type value="BEPatientWill" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Resource" />
   <derivation value="specialization" />
   <differential>
     <element id="BEPatientWill">
       <path value="BEPatientWill" />
+      <short value="A patient will (a single entry in the patient will) - an individual statement of permission or refusal for care-related activities such as live organ donation, ressuscitation, etc." />
+      <definition value="A patient will (a single entry in the patient will) - an individual statement of permission or refusal for care-related activities such as live organ donation, ressuscitation, etc." />
       <min value="0" />
       <max value="*" />
     </element>
@@ -37,7 +39,7 @@
       </type>
       <binding>
         <strength value="required" />
-        <valueSet value="http://hl7.org/fhir/r4/valueset-consent-state-codes.html" />
+        <valueSet value="http://hl7.org/fhir/valueset-consent-state-codes" />
       </binding>
     </element>
     <element id="BEPatientWill.dateTime">

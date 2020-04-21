@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="model-communication" />
+  <id value="be-model-communication" />
   <text>
     <status value="additional" />
     <div xmlns="http://www.w3.org/1999/xhtml">This Logical Model represents the core attributes of a Diary Note or Communication used in Belgium.</div>
   </text>
-  <url value="https://www.hl7belgium.org/fhir/StructureDefinition/model-communication" />
+  <url value="https://www.hl7belgium.org/fhir/StructureDefinition/be-model-communication" />
   <version value="0.1.0" />
   <name value="CommunicationLogicalModel" />
   <status value="draft" />
@@ -104,7 +104,7 @@
       <max value="*"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="BeCommunication"/>
+        <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-communication" />
       </type>
     </element>
     <element id="BECommunication.sender">
@@ -115,11 +115,9 @@
       <max value="*"/>
       <type>
         <code value="Reference"/>
-        <targetProfile
-                       value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient"/>
+        <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient"/>
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Person"/>
-        <targetProfile
-                       value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
       </type>
       <mustSupport value="true"/>
     </element>
@@ -177,7 +175,7 @@
       <max value="*"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="BEPatient"/>
+        <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient" />
       </type>
     </element>
     <element id="BECommunication.content">

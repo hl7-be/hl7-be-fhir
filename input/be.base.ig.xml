@@ -333,7 +333,7 @@
 -->
     <resource>
       <reference>
-        <reference value="StructureDefinition/model-homecare-team"/>
+        <reference value="StructureDefinition/be-model-homecare-team"/>
       </reference>
       <fhirVersion value="4.0.1"/>
       <name value="Logical Model Care team"/>
@@ -342,7 +342,7 @@
     </resource>
     <resource>
       <reference>
-        <reference value="StructureDefinition/model-communication"/>
+        <reference value="StructureDefinition/be-model-communication"/>
       </reference>
       <fhirVersion value="4.0.1"/>
       <name value="Logical Model Communication"/>
@@ -351,7 +351,7 @@
     </resource>
     <resource>
       <reference>
-        <reference value="StructureDefinition/model-addiction"/>
+        <reference value="StructureDefinition/be-model-addiction"/>
       </reference>
       <fhirVersion value="4.0.1"/>
       <name value="Logical Model Addiction"/>
@@ -360,7 +360,7 @@
     </resource>
     <resource>
       <reference>
-        <reference value="StructureDefinition/model-patientwill"/>
+        <reference value="StructureDefinition/be-model-patientwill"/>
       </reference>
       <fhirVersion value="4.0.1"/>
       <name value="Logical Model Patient Will"/>
@@ -369,7 +369,16 @@
     </resource>
     <resource>
       <reference>
-        <reference value="StructureDefinition/model-immunization"/>
+        <reference value="StructureDefinition/be-model-immunization"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Logical Model Immunization"/>
+      <description value="Immunization logical model"/>
+      <groupingId value="logicalmodels"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/be-model-prescriptionreferral"/>
       </reference>
       <fhirVersion value="4.0.1"/>
       <name value="Logical Model Immunization"/>
