@@ -381,8 +381,8 @@
         <reference value="StructureDefinition/be-model-prescriptionreferral"/>
       </reference>
       <fhirVersion value="4.0.1"/>
-      <name value="Logical Model Immunization"/>
-      <description value="Immunization logical model"/>
+      <name value="Logical Model Prescription Referral"/>
+      <description value="Prescription Referral logical model"/>
       <groupingId value="logicalmodels"/>
     </resource>
 
