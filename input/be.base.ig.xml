@@ -45,10 +45,6 @@
       <name value="Core Profiles"/>
       <description value="Core resources to be reused in other resources"/>
     </grouping>
-    <grouping>
-      <name value="Conditions"/>
-      <description value="Conditions and findings about patients"/>
-    </grouping>
     <grouping id="communication">
       <name value="Care Coordination"/>
       <description value="Communication and Care Coordination"/>
@@ -529,7 +525,6 @@
       <name value="Patient Pia"/>
       <description value="Patient Pia"/>
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient"/>
-      <exampleBoolean value="true"/>
     </resource>
 
     <resource>
@@ -540,7 +535,6 @@
       <name value="Dr. Dragon"/>
       <description value="Dr. Dragon"/>
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner"/>
-      <exampleBoolean value="true"/>
     </resource>
 
 
@@ -552,8 +546,6 @@
       <name value="Dr. David"/>
       <description value="Dr. David"/>
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner"/>
-
-      <exampleBoolean value="true"/>
     </resource>
 
 
@@ -1100,7 +1092,8 @@
       <nameUrl value="toc.html"/>
       <title value="Table of Contents"/>
       <generation value="html"/>
-      <page> <nameUrl value="index.html"/>
+      <page>
+  	    <nameUrl value="index.html"/>
         <title value="BE Core Home Page"/>
         <generation value="html"/>
       </page>
