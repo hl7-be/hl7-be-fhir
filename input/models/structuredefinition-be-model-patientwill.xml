@@ -14,8 +14,8 @@
   <differential>
     <element id="BEPatientWill">
       <path value="BEPatientWill" />
-      <short value="A patient will (a single entry in the patient will) - an individual statement of permission or refusal for care-related activities such as live organ donation, ressuscitation, etc." />
-      <definition value="A patient will (a single entry in the patient will) - an individual statement of permission or refusal for care-related activities such as live organ donation, ressuscitation, etc." />
+      <short value="A patient will (a single entry in the patient will) - an individual statement of permission or refusal for care-related activities such as live organ donation, resuscitation, etc." />
+      <definition value="A patient will (a single entry in the patient will) - an individual statement of permission or refusal for care-related activities such as live organ donation, resuscitation, etc." />
       <min value="0" />
       <max value="*" />
     </element>
@@ -44,8 +44,8 @@
     </element>
     <element id="BEPatientWill.dateTime">
       <path value="BEPatientWill.dateTime" />
-      <short value="The dateTime when the patient will has been recorded" />
-      <definition value="The date and/or time when the patient will has been recorded" />
+      <short value="The dateTime when the patient will has been declared" />
+      <definition value="The date and/or time when the patient will has been declared - for example if this captures a physical document that was sgined by a patient on a given date, this element would correspond with that date" />
       <min value="1" />
       <max value="1" />
       <type>
@@ -76,32 +76,6 @@
 
       </type>
     </element>
-    <element id="BEPatientWill.scope">
-      <path value="BEPatientWill.scope" />
-      <short value="The actual directive in the will" />
-      <definition value="The detailed patient will directive (e.g. no hospitalization, bloodtransfusion refusal) (Valueset will be delivered by a working group of NIHDI)" />
-      <min value="1" />
-      <max value="1" />
-      <type>
-        <code value="CodeableConcept" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
-      </type>
-    </element>
-    <element id="BEPatientWill.category">
-      <path value="BEPatientWill.category" />
-      <short value="The category or the patient will directive" />
-      <definition value="The main types of patient will" />
-      <min value="0" />
-      <max value="1" />
-      <type>
-        <code value="CodeableConcept" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
-      </type>
-      <binding>
-        <strength value="extensible" />
-        <valueSet value="http://hl7.org/fhir/ValueSet/consent-scope" />
-      </binding>
-    </element>
 
     <element id="BEPatientWill.source">
       <path value="BEPatientWill.source" />
@@ -114,16 +88,91 @@
         <profile value="http://hl7.org/fhir/StructureDefinition/Attachment" />
       </type>
     </element>
-    <element id="BEPatientWill.period">
-      <path value="BEPatientWill.period" />
+
+    <element id="BEPatientWill.directive">
+      <path value="BEPatientWill.directive" />
+      <short value="The actual directive in the will" />
+      <definition value="The patient will directive" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+
+    <element id="BEPatientWill.directive.action">
+      <path value="BEPatientWill.directive.action" />
+      <short value="The actual directive in the will" />
+      <definition value="The detailed patient will directive (e.g. no hospitalization, bloodtransfusion refusal) (Valueset will be delivered by a working group of NIHDI)" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
+      </type>
+    </element>
+
+    <element id="BEPatientWill.directive.type">
+      <path value="BEPatientWill.directive.type" />
+      <short value="permit | deny" />
+      <definition value="Whether the patient will action is explicitly permitted or explicitly denied" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
+      </type>
+    </element>
+
+    <element id="BEPatientWill.directive.category">
+      <path value="BEPatientWill.directive.category" />
+      <short value="The category or the patient will directive" />
+      <definition value="The main types of patient will" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
+      </type>
+      <binding>
+        <strength value="extensible" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/valueset-consent-category.html" />
+      </binding>
+    </element>
+
+    <element id="BEPatientWill.directive.effectiveTime">
+      <path value="BEPatientWill.directive.effectiveTime" />
       <short value="The period of validity for the patient will directive" />
       <definition value="The period of validity for the patient will directive" />
       <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+	
+    <element id="BEPatientWill.directive.effectiveTime.period">
+      <path value="BEPatientWill.directive.effectiveTime.period" />
+      <short value="The time period of validity for the patient will directive" />
+      <definition value="The time period of validity for the patient will directive" />
+      <min value="0" />
       <max value="1" />
       <type>
         <code value="Period" />
         <profile value="http://hl7.org/fhir/StructureDefinition/Period" />
       </type>
     </element>
+    <element id="BEPatientWill.directive.effectiveTime.time">
+      <path value="BEPatientWill.directive.effectiveTime.time" />
+      <short value="A free-text indication of the period of validity for the patient will directive - e.g. until recovery, 5 years after death.." />
+      <definition value="A free-text indication of the period of validity for the patient will directive" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Period" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Period" />
+      </type>
+    </element>	
+	
   </differential>
 </StructureDefinition>

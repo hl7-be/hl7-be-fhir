@@ -35,7 +35,8 @@
       {
         "id": "Condition.category",
         "path": "Condition.category",
-        "mustSupport": true
+         "short": "The category of the addiction - alcohol, drugs, gaming...",
+       "mustSupport": true
       },
       {
         "id": "Condition.code",
@@ -70,22 +71,30 @@
       {
         "id": "Condition.abatement[x]",
         "path": "Condition.abatement[x]",
-        "short": "The time, event or period when the addiction ended."
+        "short": "The time, event or period when the addiction ended.",
+        "mustSupport": true
+
       },
       {
         "id": "Condition.recordedDate",
         "path": "Condition.recordedDate",
-        "short": "The date when the addiction was first recorded"
+        "short": "The date when the addiction was first recorded",
+        "mustSupport": true
+
       },
       {
         "id": "Condition.recorder",
         "path": "Condition.recorder",
-        "short": "The person that first recorded the addiction"
+        "short": "The person that first recorded the addiction",
+        "mustSupport": true
+
       },
       {
         "id": "Condition.asserter",
         "path": "Condition.asserter",
-        "short": "The person that asserted or informed about the addiction."
+        "short": "The person that asserted or informed about the addiction.",
+        "mustSupport": true
+
       }
     ]
   }

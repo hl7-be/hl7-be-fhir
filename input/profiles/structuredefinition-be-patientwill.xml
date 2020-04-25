@@ -86,6 +86,7 @@
     </element>
     <element id="Consent.policyRule.text">
       <path value="Consent.policyRule.text" />
+      <comment value="Thie field is added as a fixed value because in FHIR 4.0.1 this is technically required. It has no functional purpose in Belgium." />
       <fixedString value="Belgian policy" />
       <mustSupport value="true" />
     </element>

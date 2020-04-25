@@ -38,10 +38,6 @@
         <code value="code" />
         <profile value="http://hl7.org/fhir/StructureDefinition/code" />
       </type>
-      <binding>
-        <strength value="required" />
-        <valueSet value="https://www.hl7.org/fhir/valueset-condition-clinical.html" />
-      </binding>
     </element>
     <element id="BeAddiction.verificationStatus">
       <path value="BeAddiction.verificationStatus" />
@@ -52,10 +48,6 @@
         <code value="code" />
         <profile value="http://hl7.org/fhir/StructureDefinition/code" />
       </type>
-      <binding>
-        <strength value="required" />
-        <valueSet value="https://www.hl7.org/fhir/valueset-condition-ver-status.html" />
-      </binding>
     </element>
     <element id="BeAddiction.subject">
       <path value="BeAddiction.subject" />
@@ -94,17 +86,6 @@
       </type>
     </element>
 
-    <element id="BeAddiction.product">
-      <path value="BeAddiction.product" />
-      <short value="The specific product or activity" />
-      <definition value="the actual product of the addiction (e.g. cocaine, cigarettes, beer, wine, slot machines, video games,...) (Valueset will be delivered by the NIHDI)&#xD;&#xA;It SHOULD be expressed in a codified way." />
-      <min value="0" />
-      <max value="1" />
-      <type>
-        <code value="CodeableConcept" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
-      </type>
-    </element>
 
 	
     <element id="BeAddiction.recordedDate">
@@ -121,18 +102,35 @@
 
 
 
-    <element id="BeAddiction.effective">
-      <path value="BeAddiction.effective" />
-      <short value="The time period when the patient suffered or suffers from addiction" />
+    <element id="BeAddiction.period">
+      <path value="BeAddiction.period" />
+      <short value="The time when the patient suffered or suffers from addiction" />
       <definition value="The actual period this addiction was true. (e.g. used when a patient used to abuse alcohol) - or the beginning of addiction in case the addiction is still active" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="BackboneElement" />
+      </type>    </element>
+    <element id="BeAddiction.period.time">
+      <path value="BeAddiction.period.time" />
+      <short value="The actual time period of the addiction, if it is known" />
+      <definition value="The actual period of the addiction or the beginning of addiction in case the addiction is still active" />
       <min value="0" />
       <max value="1" />
       <type>
         <code value="Period" />
         <profile value="http://hl7.org/fhir/StructureDefinition/Period" />
       </type>
+    </element>    <element id="BeAddiction.period.text">
+      <path value="BeAddiction.period.text" />
+      <short value="A free text indication of the time period of addiction - e.g. &quot;teenager&quot;, etc. " />
+      <definition value="A free text indication of the time period of addiction - e.g. as &quot;teenager&quot;, &quot;approx 5 years ago&quot;, etc" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
     </element>
-
 
     <element id="BeAddiction.quantity">
       <path value="BeAddiction.quantity" />
@@ -166,7 +164,6 @@
       <max value="*" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Procedure"/>
       </type>
     </element>
 
