@@ -2,18 +2,14 @@
   <a name="scope"> </a>
 	<p>
     This is the HL7 Belgium FHIR Implementation Guide. It contains a collection of specifications developed by the HL7 community in Belgium. 
-This specification is being developed in collaboration with different parties and is not a legal standard. The legally binding specifications for Belgium are those published by the Federal eHealth Platform
- <a href="https://ehealthplatformstandards.github.io/">which can be consulted here</a>.
+	When applicable, these specifications rely on the Belgian Federal FHIR profiles, which can be found at <a href="https://ehealthplatformstandards.github.io/">the eHealth official FHR Implementation Guide publication</a>.
    </p>
-	<blockquote class="stu-note">
-	<strong>This documentation and set of artefacts are still undergoing development.</strong>
-	The working groups of HL7 and the different interested parties are working on this specification. This publication is a development version that has not yet been validated by HL7 nor by the users and implementers.
-	</blockquote>
+
 	<p> </p>
   <h3>Content</h3>
 	<p/>
 
-<p>This publication contains the full set of specifications and is structured in the following content sections:</p>
+<p>This publication contains the full set of specifications and is structured in the following sections:</p>
 <p></p>
 <p><strong>Background:</strong> Information about the HL7 Belgium specifications, or what you should know to be able to best navigate and use these specifications. Contains a general introduction to the publication structure and content, the artefact types, common privacy and security specifications and the official HL7 FHIR release that this specification is based upon.</p>
 <p></p>
@@ -24,7 +20,6 @@ This specification is being developed in collaboration with different parties an
 <p><strong>Terminology:</strong> The vocabulary resources – Code Systems and value sets, that support semantic interoperability. These resources promote the use of standard, controlled terminologies (e.g. SNOMED-CT) and define internal codes for Belgium, e.g. official codes for Civil Status).</p>
 <p></p>
 <p><strong>Implementation:</strong> Content, Tools and resources to help in implementation – test data (example resources), currently available test servers, and other tools to validate the compatibility between systems and these specifications.</p>
-<p> </p>
 <p>There is also an overview of the projects and motivation for the specifications.</p>
 <p></p>
 
@@ -49,4 +44,6 @@ This specification is being developed in collaboration with different parties an
     This draft is provided without warranty of completeness or consistency, and the official publication supersedes this draft.
     No liability can be inferred from the use or misuse of this specification, or its consequences.
   </p>
+<p> </p>
+<p> </p>
 </div>
