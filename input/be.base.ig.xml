@@ -4,7 +4,7 @@
   <url value="https://www.hl7belgium.org/fhir/ImplementationGuide/hl7.be.base.ig"/>
   <version value="0.1.0"/>
   <name value="BaseIG"/>
-  <title value="FHIR Belgium Base IG"/>
+  <title value="HL7 Belgium FHIR specifications"/>
   <status value="active"/>
   <experimental value="false"/>
   <publisher value="HL7 Belgium"/>
@@ -1241,7 +1241,7 @@
 	  </parameter>	
         <parameter>
             <code value="releaselabel"/>
-            <value value="0.1"/>
+            <value value="May 2020"/>
         </parameter>
 	 <parameter>
             <code value="show-inherited-invariants"/>
