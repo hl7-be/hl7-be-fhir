@@ -1249,7 +1249,7 @@
 	  </parameter>	
         <parameter>
             <code value="releaselabel"/>
-            <value value="CI build"/>
+            <value value="2020 May"/>
         </parameter>
 	 <parameter>
             <code value="show-inherited-invariants"/>
