@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-  <id value="be.base.ig"/>
+  <id value="hl7.be.core.ig"/>
   <url value="https://www.hl7belgium.org/fhir/ImplementationGuide/be.base.ig"/>
   <version value="0.1.0"/>
   <name value="BaseIG"/>
   <title value="FHIR Belgium Base IG"/>
-  <status value="draft"/>
+  <status value="active"/>
   <experimental value="false"/>
   <publisher value="HL7 Belgium"/>
   <contact>
     <telecom>
       <system value="other"/>
-      <value value="http://hl7.org/Special/committees/fiwg"/>
+      <value value="http://hl7belgium.org"/>
     </telecom>
   </contact>
   <description value="The Core Belgian Profiles provide the essential and common requirement for FHIR implementations in Belgium"/>
@@ -1249,7 +1249,7 @@
 	  </parameter>	
         <parameter>
             <code value="releaselabel"/>
-            <value value="2020 May"/>
+            <value value="0.1"/>
         </parameter>
 	 <parameter>
             <code value="show-inherited-invariants"/>
