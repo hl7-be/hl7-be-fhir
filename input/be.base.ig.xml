@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-  <id value="hl7.be.core.ig"/>
-  <url value="https://www.hl7belgium.org/fhir/ImplementationGuide/be.base.ig"/>
+  <id value="hl7.be.base.ig"/>
+  <url value="https://www.hl7belgium.org/fhir/ImplementationGuide/hl7.be.base.ig"/>
   <version value="0.1.0"/>
   <name value="BaseIG"/>
   <title value="FHIR Belgium Base IG"/>
