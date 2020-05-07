@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-  <id value="hl7.be.base.ig"/>
-  <url value="https://www.hl7belgium.org/fhir/ImplementationGuide/hl7.be.base.ig"/>
+  <id value="hl7.be.fhir.core"/>
+  <url value="https://www.hl7belgium.org/fhir/ImplementationGuide/hl7.be.fhir.core"/>
   <version value="0.1.0"/>
   <name value="BaseIG"/>
   <title value="HL7 Belgium FHIR specifications"/>
@@ -23,7 +23,7 @@
     <text value="Belgium" />
   </jurisdiction>
 
-  <packageId value="hl7.be.core"/>
+  <packageId value="hl7.be.fhir.core"/>
   <fhirVersion value="4.0.1"/>
 <!--
   <dependsOn id="fedbecore">
