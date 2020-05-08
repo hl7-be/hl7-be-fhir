@@ -41,7 +41,7 @@
   ],
   "priority": "%020%",
   "subject": {
-    "reference": "%021%"
+    "reference": "%021%",
     "display": "%022%"
   },
   "topic": {
@@ -55,7 +55,7 @@
   "recipient": [
     {
       "identifier": {
-		"reference": "%027%"
+		"reference": "%027%",
 		"display": "%028%"
       }
     }
