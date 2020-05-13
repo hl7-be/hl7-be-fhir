@@ -1225,6 +1225,11 @@
 			<generation value="html"/>
 		  </page>
 		  <page>
+			<nameUrl value="companion-app.html"/>
+			<title value="ClinFHIR"/>
+			<generation value="html"/>
+		  </page>
+		  <page>
 			<nameUrl value="downloads.html"/>
 			<title value="Useful Downloads"/>
 			<generation value="html"/>

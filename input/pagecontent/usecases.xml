@@ -1,9 +1,9 @@
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"> <head> <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> </head><p>This is a list of use cases supported by this specification. These use cases are implemented in the scenarios section.</p>
-<p></p>
 
 <a name="patient-demographics"> </a>
 <h3 id="patient-demographics">Patient demographics</h3>
 
+<p>Use Cases for patient demographics and administrative patient records</p>
 <a name="use-case-1"> </a>
 <h4 id="use-case-1">Use Case 1</h4>
 <p>This is a basic use case of first creating and then updating a patient record.</p>
