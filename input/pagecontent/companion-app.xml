@@ -1,6 +1,35 @@
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd">
-<iframe src="http://clinfhir.com/IGCompanion.html">
-  <p>Your browser does not support iframes.</p>
-</iframe>
+<div style="display: flex; width: 100%; height: 100%; flex-direction: column; background-color: blue; overflow: hidden">
+  <div style="background-color: lime;">
+    <p>Some text</p>
+    <p>And some more text</p>
+  </div>
+  <iframe src="http://clinfhir.com/IGCompanion.html" style="flex-grow: 1; border: none; margin: 0; padding: 0;">
+    <p>Your browser does not support iframes.</p>
+  </iframe>
+</div>
 
 </div>
+
+<!--
+<div style="display: flex; width: 100%; height: 100%; flex-direction: column; background-color: blue; overflow: hidden">
+  <div style="background-color: lime;">
+    <p>Some text</p>
+    <p>And some more text</p>
+  </div>
+  <iframe src="http://clinfhir.com/IGCompanion.html" style="flex-grow: 1; border: none; margin: 0; padding: 0;">
+    <p>Your browser does not support iframes.</p>
+  </iframe>
+</div>
+
+
+
+body, html {width: 100%; height: 100%; margin: 0; padding: 0}
+.row-container {display: flex; width: 100%; height: 100%; flex-direction: column; background-color: blue; overflow: hidden;}
+.first-row {background-color: lime; }
+.second-row { flex-grow: 1; border: none; margin: 0; padding: 0; }
+
+
+
+<div style="height:100px; width:100px; background:#000000"></div>
+-->
