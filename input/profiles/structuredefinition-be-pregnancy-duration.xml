@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="be-pregnancy-duration" />
+  <url value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-pregnancy-duration" />
+  <version value="0.0.1" />
+  <name value="BePregnancyDuration" />
+  <title value="BePregnancyDuration" />
+  <status value="draft" />
+  <description value="*************!DRAFT!DRAFT!DRAFT! POC PROFILE TO INVESTIGATE STRATEGY IN PROFLING*********** Belgian federal profile for a parturition. Initially based on the functional description of the NIHDI." />
+  <fhirVersion value="4.0.0" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Observation" />
+  <baseDefinition value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-observation" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Observation.status">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint">
+        <valueString value="default: final" />
+      </extension>
+      <path value="Observation.status" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.code">
+      <path value="Observation.code" />
+      <min value="1" />
+      <fixedCodeableConcept>
+        <coding>
+          <system value="http://snomed.info/sct" />
+          <code value="412726003" />
+          <display value="Length of gestation at birth (observable entity)" />
+        </coding>
+      </fixedCodeableConcept>
+    </element>
+    <element id="Observation.code.coding">
+      <path value="Observation.code.coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Observation.code.coding:SNOMED-CT">
+      <path value="Observation.code.coding" />
+      <sliceName value="SNOMED-CT" />
+      <max value="1" />
+    </element>
+    <element id="Observation.value[x]">
+      <path value="Observation.value[x]" />
+      <min value="1" />
+      <type>
+        <code value="Quantity" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.value[x].system">
+      <path value="Observation.value[x].system" />
+      <min value="1" />
+      <fixedUri value="http://unitsofmeasure.org" />
+    </element>
+    <element id="Observation.value[x].code">
+      <path value="Observation.value[x].code" />
+      <min value="1" />
+      <fixedCode value="wk" />
+    </element>
+  </differential>
+</StructureDefinition>
