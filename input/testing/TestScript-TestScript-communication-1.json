@@ -3,9 +3,7 @@
   "id": "testScript-communication-1",
   "extension": [
     {
-      "valueReference": {
-        "reference": "StructureDefinition/be-communication"
-      },
+      "valueCanonical": "http://hl7belgium.org/fhir/StructureDefinition/be-communication",
       "url": "http://hl7belgium.org/fhir/StructureDefinition/scope"
     }
   ],
