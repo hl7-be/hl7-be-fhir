@@ -1,0 +1,43 @@
+{
+  "resourceType": "TestScript",
+  "id": "testScript-communication-1",
+  "extension": [
+    {
+      "valueReference": {
+        "reference": "be-communication"
+      },
+      "url": "http://hl7belgium.org/fhir/StructureDefinition/scope"
+    }
+  ],
+  "name": "TestScript 1 - Communication",
+  "url": "http://hl7belgium.org/fhir/TestScript/testScript-communication-1",
+  "version": "0.1",
+  "status": "draft",
+  "description": "TestScript example resource with setup to delete if present and create a new instance of a Patient then update that Patient to create a minimum history; and single test definition to get the history of that Patient with various asserts.",
+  "date": "2017-01-18",
+  "publisher": "HL7 Belgium",
+  "fixture": [
+    {
+      "id": "patient-axel",
+      "autocreate": false,
+      "autodelete": false,
+      "resource": {
+        "reference": "Patient/159"
+      }
+    }
+  ],
+  "setup": {
+    "action": [
+      {
+        "operation": {
+          "type": {
+            "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes",
+            "code": "delete"
+          },
+          "resource": "Patient",
+          "encodeRequestUrl": false
+        }
+      }
+    ]
+  }
+}

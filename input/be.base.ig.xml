@@ -468,6 +468,101 @@
       <description value="The values for Contact Person type"/>
       <groupingId value="terminology"/>
     </resource>
+	
+	
+	
+    <resource>
+      <reference>
+        <reference value="CodeSystem/be-cs-care-location"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="CodeSystem - Care location"/>
+      <description value="The location of the care event"/>
+      <groupingId value="terminology"/>
+    </resource>
+
+    <resource>
+      <reference>
+        <reference value="CodeSystem/be-cs-immunization-confirmation-status"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="CodeSystem - immunization confirmation status"/>
+      <description value="The list of immunization confirmation status"/>
+      <groupingId value="terminology"/>
+    </resource>
+
+    <resource>
+      <reference>
+        <reference value="ValueSet/be-vs-care-location"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="ValueSet - Care location"/>
+      <description value="The list of Care locations"/>
+      <groupingId value="terminology"/>
+    </resource>
+
+    <resource>
+      <reference>
+        <reference value="ValueSet/be-vs-immunization-confirmation-status"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="ValueSet - immunization confirmation status"/>
+      <description value="The list of immunization confirmation status"/>
+      <groupingId value="terminology"/>
+    </resource>
+
+
+
+
+
+
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/basedOn"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Immunization request"/>
+      <description value="Immunization order or request"/>
+      <groupingId value="core"/>
+    </resource>
+
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/administeredProduct"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Administered Product"/>
+      <description value="Administered Product"/>
+      <groupingId value="core"/>
+    </resource>
+
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/immunizationLocation"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Immunization location"/>
+      <description value="Immunization location"/>
+      <groupingId value="core"/>
+    </resource>
+
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/verificationStatus"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Immunization verification status"/>
+      <description value="Immunization verification status"/>
+      <groupingId value="core"/>
+    </resource>
+
+
+
+
+
+
+
+	
     <resource>
       <reference>
         <reference value="ValueSet/be-causativeagent"/>

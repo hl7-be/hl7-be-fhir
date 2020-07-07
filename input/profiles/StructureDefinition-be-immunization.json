@@ -79,21 +79,21 @@
           {
             "code": "Extension",
             "profile": [
-              "https://www.hl7belgium.org/standards/fhir/StructureDefinition/administeredProdut"
+              "https://www.hl7belgium.org/standards/fhir/StructureDefinition/administeredProduct"
             ]
           }
         ]
       },
       {
-        "id": "Immunization.extension:Note",
+        "id": "Immunization.extension:immunizationLocation",
         "path": "Immunization.extension",
-        "sliceName": "Note",
+        "sliceName": "immunizationLocation",
         "max": "1",
         "type": [
           {
             "code": "Extension",
             "profile": [
-              "https://www.hl7belgium.org/standards/fhir/StructureDefinition/note"
+              "https://www.hl7belgium.org/standards/fhir/StructureDefinition/immunizationLocation"
             ]
           }
         ]
@@ -204,9 +204,9 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner",
-              "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitionerrole",
-              "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization"
+              "http://hl7.org/fhir/StructureDefinition/Practitioner",
+              "http://hl7.org/fhir/StructureDefinition/Organization",
+              "http://hl7.org/fhir/StructureDefinition/PractitionerRole"
             ]
           }
         ]

@@ -1,0 +1,32 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "159",
+        "name": [
+          {
+            "use": "official",
+            "family": "Larssonsson",
+            "given": [
+              "Axel"
+            ]
+          }
+        ],
+        "gender": "male"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Patient/159"
+      }
+    },
+    {
+      "request": {
+        "method": "DELETE",
+        "url": "Patient/159"
+      }
+    }
+  ]
+}

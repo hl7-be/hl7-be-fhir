@@ -1,12 +1,12 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "basedOn",
-  "url": "https://www.hl7belgium.org/standards/fhir/StructureDefinition/basedOn",
+  "id": "be-immunizationLocation",
+  "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-immunizationLocation",
   "version": "0.1.0",
-  "name": "BasedOn",
-  "title": "Order fulfilled by this event.",
+  "name": "BeImmunizationLocation",
+  "title": "Location (reference, code or text) of the immunization",
   "status": "active",
-  "description": "A plan, proposal or order that is fulfilled in whole or in part by this event.",
+  "description": "Location (reference, code or text) of the immunization",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -36,7 +36,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://www.hl7belgium.org/standards/fhir/StructureDefinition/basedOn"
+        "fixedUri": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-immunizationLocation"
       },
       {
         "id": "Extension.value[x]",
@@ -53,6 +53,9 @@
         },
         "type": [
           {
+            "code": "CodeableConcept"
+          },
+          {
             "code": "Reference"
           }
         ]
@@ -64,12 +67,23 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation",
-              "http://hl7.org/fhir/StructureDefinition/MedicationRequest",
-              "http://hl7.org/fhir/StructureDefinition/CarePlan"
+              "http://hl7.org/fhir/StructureDefinition/Location"
             ]
           }
         ]
+      },
+      {
+        "id": "Extension.valueCodeableConcept",
+        "path": "Extension.valueCodeableConcept",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-vs-care-location"
+        }
       }
     ]
   }

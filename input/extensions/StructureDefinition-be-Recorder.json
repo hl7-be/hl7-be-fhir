@@ -1,12 +1,12 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "administeredProdut",
-  "url": "https://www.hl7belgium.org/standards/fhir/StructureDefinition/administeredProdut",
+  "id": "be-recorder",
+  "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-recorder",
   "version": "0.1.0",
-  "name": "AdministeredProdut",
-  "title": "Product administered",
+  "name": "BeRecorder",
+  "title": "Who recorded the information",
   "status": "active",
-  "description": "The product administered",
+  "description": "The recorder of the information - note that this may not always be the same as the asserter - when a patient reports to a nurse and the nurse enters the data, the asserter is the patient, but the recorder is the nurse",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -36,7 +36,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://www.hl7belgium.org/standards/fhir/StructureDefinition/administeredProdut"
+        "fixedUri": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-recorder"
       },
       {
         "id": "Extension.value[x]",
@@ -67,7 +67,10 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Medication"
+              "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient",
+              "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner",
+              "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitionerrole",
+              "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization"
             ]
           }
         ]

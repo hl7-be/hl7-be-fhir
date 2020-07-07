@@ -1,0 +1,51 @@
+{
+  "resourceType": "Immunization",
+  "id": "immunization-example-not-given-refusal",
+  "meta": {
+    "profile": [
+      "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-immunization"
+    ]
+  },
+  "extension": [
+    {
+      "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-recorder",
+      "valueReference": {
+        "reference": "Organization/org-uz-gent"
+      }
+    },
+    {
+      "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-immunizationLocation",
+      "valueReference": {
+        "reference": "Organization/org-uz-gent"
+      }
+    }
+  ],
+  "language": "nl-BE",
+  "identifier": [
+    {
+      "value": "2687758923",
+      "system": "https://www.kindengezin.be/vaccinatie/immunization-register"
+    }
+  ],
+  "status": "not-done",
+  "vaccineCode": {
+    "coding": [
+      {
+        "code": "HBV",
+        "display": "Hepatitis B"
+      }
+    ]
+  },
+  "occurrenceDateTime": "2020-03-12",
+  "patient": {
+    "reference": "Patient/pia"
+  },
+  "performer": [
+    {
+      "actor": {
+        "reference": "Organization/org-uz-gent"
+      }
+    }
+  ],
+  "occurrenceString": "Summer 2011"
+}

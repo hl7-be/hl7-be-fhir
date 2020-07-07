@@ -1,0 +1,105 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "BeCSCareLocation",
+  "id": "be-cs-care-location",
+  "title": "Care Location Code System",
+  "description": "Care Location Code System",
+  "version": "0.1.0",
+  "url": "https://www.hl7belgium.org/standards/fhir/CodeSystem/be-cs-care-location",
+  "concept": [
+    {
+      "code": "hospital",
+      "display": "Hospital"
+    },
+    {
+      "code": "patient-home",
+      "display": "Patient home"
+    },
+    {
+      "code": "nursing-home",
+      "display": "Nursing home"
+    },
+    {
+      "code": "recovery-home",
+      "display": "Recovery home (?)"
+    },
+    {
+      "code": "workplace",
+      "display": "Workplace"
+    },
+    {
+      "code": "medical-center",
+      "display": "Medical center"
+    },
+    {
+      "code": "clinic",
+      "display": "Clinic"
+    },
+    {
+      "code": "pediatric-ic",
+      "display": "Pediatric IC"
+    },
+    {
+      "code": "neonatal-ic",
+      "display": "Neonatal IC"
+    },
+    {
+      "code": "prenatal-consult",
+      "display": "Prenatal consult"
+    },
+    {
+      "code": "m-accueil",
+      "display": "Milieu d’accueil"
+    },
+    {
+      "code": "child-consult",
+      "display": "Child consult"
+    },
+    {
+      "code": "one",
+      "display": "ONE"
+    },
+    {
+      "code": "kind-gezin",
+      "display": "Kind&Gezin"
+    },
+    {
+      "code": "ambulance",
+      "display": "Ambulance"
+    },
+    {
+      "code": "school",
+      "display": "School"
+    },
+    {
+      "code": "school-health-serv",
+      "display": "School health service"
+    },
+    {
+      "code": "pharmacy",
+      "display": "Pharmacy"
+    },
+    {
+      "code": "med-monde",
+      "display": "Doctor of the world"
+    },
+    {
+      "code": "ong",
+      "display": "ONG"
+    },
+    {
+      "code": "family-planning",
+      "display": "Family planning center"
+    },
+    {
+      "code": "abroad",
+      "display": "Another country"
+    },
+    {
+      "code": "other",
+      "display": "other"
+    }
+  ]
+}

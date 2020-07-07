@@ -1,0 +1,17 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "BeVSImmunizationConfirmationStatus",
+  "id": "be-vs-immunization-confirmation-status",
+  "title": "Immunization status Value Set",
+  "description": "Immunization status Value Set",
+  "version": "0.1.0",
+  "url": "https://www.hl7belgium.org/standards/fhir/ValueSet/be-vs-immunization-confirmation-status",
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.hl7belgium.org/standards/fhir/CodeSystem/be-cs-immunization-confirmation-status"
+      }
+    ]
+  }
+}
