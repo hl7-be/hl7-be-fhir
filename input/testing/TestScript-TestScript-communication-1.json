@@ -4,7 +4,7 @@
   "extension": [
     {
       "valueReference": {
-        "reference": "be-communication"
+        "reference": "StructureDefinition/be-communication"
       },
       "url": "http://hl7belgium.org/fhir/StructureDefinition/scope"
     }
