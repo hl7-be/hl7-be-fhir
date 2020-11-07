@@ -316,17 +316,15 @@
 	
 <!--
 -->
-<!--
     <resource>
       <reference>
-        <reference value="StructureDefinition/lm-be-careplan"/>
+        <reference value="StructureDefinition/be-model-homecare-plan"/>
       </reference>
       <fhirVersion value="4.0.1"/>
       <name value="Logical Model Care Plan"/>
       <description value="Care Plan logical model"/>
       <groupingId value="logicalmodels"/>
     </resource>
--->
     <resource>
       <reference>
         <reference value="StructureDefinition/be-model-homecare-team"/>
@@ -363,6 +361,7 @@
       <description value="Patient Will logical model"/>
       <groupingId value="logicalmodels"/>
     </resource>
+<!--
     <resource>
       <reference>
         <reference value="StructureDefinition/be-model-immunization"/>
@@ -372,6 +371,7 @@
       <description value="Immunization logical model"/>
       <groupingId value="logicalmodels"/>
     </resource>
+-->
     <resource>
       <reference>
         <reference value="StructureDefinition/be-model-prescriptionreferral"/>
@@ -514,7 +514,7 @@
 
 
 
-
+<!--
 
     <resource>
       <reference>
@@ -525,7 +525,6 @@
       <description value="Immunization order or request"/>
       <groupingId value="core"/>
     </resource>
-
     <resource>
       <reference>
         <reference value="StructureDefinition/administeredProduct"/>
@@ -557,6 +556,7 @@
     </resource>
 
 
+-->
 
 
 

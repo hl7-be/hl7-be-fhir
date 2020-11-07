@@ -1,0 +1,447 @@
+{
+    "resourceType": "StructureDefinition",
+    "id": "be-model-homecare-plan",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2019-12-30T12:11:36.877+00:00"
+    },
+    "url": "https://www.hl7belgium.org/fhir/StructureDefinition/be-model-homecare-plan",
+    "version": "0.1.0",
+    "name": "BEPatientCarePlan",
+    "status": "draft",
+    "date": "2019-12-29T08:41:09+00:00",
+    "publisher": "HL7 Belgium",
+    "contact": [
+      {
+        "telecom": [
+          {
+            "system": "other",
+            "value": "http://hl7belgium.org"
+          }
+        ]
+      }
+    ],
+    "description": "A Patient-centered care team for. This is not the same as a definition of a Care team e.g. a hospital team or specialists team.",
+    "jurisdiction": [
+      {
+        "coding": [
+          {
+            "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+            "code": "056"
+          }
+        ],
+        "text": "Belgium"
+      }
+    ],
+    "purpose": "This logical model can be instantiated in the technical standards that are used in Belgium - KMEHR and FHIR. This ensures semantic compatibility between systems and standards.",
+    "fhirVersion": "4.0.1",
+    "mapping": [
+      {
+        "identity": "rim",
+        "uri": "http://hl7.org/v3",
+        "name": "RIM Mapping"
+      }
+    ],
+    "kind": "logical",
+    "abstract": false,
+    "type": "BEPatientCarePlan",
+    "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+    "derivation": "specialization",
+    "differential": {
+      "element": [
+        {
+          "id": "BEPatientCarePlan",
+          "path": "BEPatientCarePlan",
+          "short": "A Patient's Care Plan",
+          "definition": "The Care Team represents a set of activities that are laid out and performed for a patient, normally aiming at defined goals",
+          "min": 0,
+          "max": "*",
+          "base": {
+            "path": "BEPatientCarePlan",
+            "min": 0,
+            "max": "1"
+          }
+        },
+        {
+          "id": "BEPatientCarePlan.identifier",
+          "path": "BEPatientCarePlan.identifier",
+          "short": "A unique business identifier for this care team",
+          "definition": "A unique business identifier for this care team. This is not a technical system-wide identifier such as primary key or REST resource id, but rather an identifier that can be used across systems to represent the same care team.",
+          "min": 0,
+          "max": "*",
+          "base": {
+            "path": "BEPatientCarePlan.identifier",
+            "min": 0,
+            "max": "1"
+          },
+          "type": [
+            {
+              "code": "Identifier",
+              "profile": [
+                "http://hl7.org/fhir/StructureDefinition/Identifier"
+              ]
+            }
+          ],
+          "example": [
+            {
+              "label": "",
+              "valueString": "dzop-careplan-2978993989"
+            }
+          ]
+        },
+        {
+          "id": "BEPatientCarePlan.instantiates",
+          "path": "BEPatientCarePlan.instantiates",
+          "short": "The protocol or definition that is instantiated by this care plan",
+          "min": 0,
+          "max": "*",
+          "type": [
+            {
+              "code": "Reference"
+            }
+          ]
+        },
+        {
+          "id": "BEPatientCarePlan.basedOn",
+          "path": "BEPatientCarePlan.basedOn",
+          "short": "The request or plan that is fulfilled by this care plan",
+          "min": 0,
+          "max": "*",
+          "type": [
+            {
+              "code": "Reference"
+            }
+          ]
+        },
+        {
+          "id": "BEPatientCarePlan.replaces",
+          "path": "BEPatientCarePlan.replaces",
+          "short": "Another plan that is replaced by this plan",
+          "min": 0,
+          "max": "*",
+          "type": [
+            {
+              "code": "Reference"
+            }
+          ]
+        },
+        {
+          "id": "BEPatientCarePlan.partOf",
+          "path": "BEPatientCarePlan.partOf",
+          "short": "The protocol or definition that this careplan is a part of",
+          "min": 0,
+          "max": "*",
+          "type": [
+            {
+              "code": "Reference"
+            }
+          ]
+        },
+        {
+          "id": "BEPatientCarePlan.status",
+          "path": "BEPatientCarePlan.status",
+          "short": "....",
+          "min": 0,
+          "max": "1",
+          "type": [
+            {
+              "code": "code"
+            }
+          ]
+        },
+        {
+          "id": "BEPatientCarePlan.intent",
+          "path": "BEPatientCarePlan.intent",
+          "short": "....",
+          "min": 0,
+          "max": "1",
+          "type": [
+            {
+              "code": "code"
+            }
+          ]
+        },
+        {
+          "id": "BEPatientCarePlan.category",
+          "path": "BEPatientCarePlan.category",
+          "short": "....",
+          "min": 0,
+          "max": "*",
+          "type": [
+            {
+              "code": "CodeableConcept"
+            }
+          ]
+        },
+        {
+          "id": "BEPatientCarePlan.title",
+          "path": "BEPatientCarePlan.title",
+          "short": "....",
+          "min": 0,
+          "max": "1",
+          "type": [
+            {
+              "code": "string"
+            }
+          ]
+        },
+        {
+          "id": "BEPatientCarePlan.description",
+          "path": "BEPatientCarePlan.description",
+          "short": "....",
+          "min": 0,
+          "max": "1",
+          "type": [
+            {
+              "code": "string"
+            }
+          ]
+        },
+        {
+          "id": "BEPatientCarePlan.subject",
+          "path": "BEPatientCarePlan.subject",
+          "short": "The protocol or definition that this careplan is a part of",
+          "min": 1,
+          "max": 1,
+          "type": [
+            {
+              "code": "Reference"
+            }
+          ]
+        },
+        {
+          "id": "BEPatientCarePlan.encounter",
+          "path": "BEPatientCarePlan.encounter",
+          "short": "The protocol or definition that this careplan is a part of",
+          "min": 0,
+          "max": 1,
+          "type": [
+            {
+              "code": "Reference"
+            }
+          ]
+        },
+        {
+          "id": "BEPatientCarePlan.period",
+          "path": "BEPatientCarePlan.period",
+          "short": "The protocol or definition that this careplan is a part of",
+          "min": 0,
+          "max": 1,
+          "type": [
+            {
+              "code": "Period"
+            }
+          ]
+        },
+
+
+        {
+          "id": "BEPatientCarePlan.author",
+          "path": "BEPatientCarePlan.author",
+          "short": "The protocol or definition that this careplan is a part of",
+          "min": 0,
+          "max": 1,
+          "type": [
+            {
+              "code": "Reference"
+            }
+          ]
+        },
+        {
+          "id": "BEPatientCarePlan.team",
+          "path": "BEPatientCarePlan.team",
+          "short": "The protocol or definition that this careplan is a part of",
+          "min": 0,
+          "max": "*",
+          "type": [
+            {
+              "code": "Reference"
+            }
+          ]
+        },
+        {
+          "id": "BEPatientCarePlan.goal",
+          "path": "BEPatientCarePlan.goal",
+          "short": "The protocol or definition that this careplan is a part of",
+          "min": 0,
+          "max": "*",
+          "type": [
+            {
+              "code": "Reference"
+            }
+          ]
+        },
+        {
+          "id": "BEPatientCarePlan.activity",
+          "path": "BEPatientCarePlan.activity",
+          "short": "The protocol or definition that this careplan is a part of",
+          "min": 0,
+          "max": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        {
+          "id": "BEPatientCarePlan.activity.target",
+          "path": "BEPatientCarePlan.activity.target",
+          "short": "The protocol or definition that this careplan is a part of",
+          "min": 0,
+          "max": "*",
+          "type": [
+            {
+              "code": "CodeableConcept"
+            }
+          ]
+        },
+        {
+          "id": "BEPatientCarePlan.activity.progress",
+          "path": "BEPatientCarePlan.activity.progress",
+          "short": "The protocol or definition that this careplan is a part of",
+          "min": 0,
+          "max": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        {
+          "id": "BEPatientCarePlan.activity.detail",
+          "path": "BEPatientCarePlan.activity.detail",
+          "short": "The protocol or definition that this careplan is a part of",
+          "min": 0,
+          "max": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        {
+          "id": "BEPatientCarePlan.activity.detail.type",
+          "path": "BEPatientCarePlan.activity.detail.type",
+          "short": "The protocol or definition that this careplan is a part of",
+          "min": 0,
+          "max": "1",
+          "type": [
+            {
+              "code": "code"
+            }
+          ]
+        },
+        {
+          "id": "BEPatientCarePlan.activity.detail.protocol",
+          "path": "BEPatientCarePlan.activity.detail.protocol",
+          "short": "The protocol or definition that this careplan is a part of",
+          "min": 0,
+          "max": "*",
+          "type": [
+            {
+              "code": "Reference"
+            }
+          ]
+        },
+        {
+          "id": "BEPatientCarePlan.activity.detail.code",
+          "path": "BEPatientCarePlan.activity.detail.code",
+          "short": "The protocol or definition that this careplan is a part of",
+          "min": 0,
+          "max": 1,
+          "type": [
+            {
+              "code": "CodeableConcept"
+            }
+          ]
+        },
+        {
+          "id": "BEPatientCarePlan.activity.detail.status",
+          "path": "BEPatientCarePlan.activity.detail.status",
+          "short": "The protocol or definition that this careplan is a part of",
+          "min": 1,
+          "max": 1,
+          "type": [
+            {
+              "code": "code"
+            }
+          ]
+        },
+        {
+          "id": "BEPatientCarePlan.activity.detail.statusReason",
+          "path": "BEPatientCarePlan.activity.detail.statusReason",
+          "short": "The protocol or definition that this careplan is a part of",
+          "min": 0,
+          "max": 1,
+          "type": [
+            {
+              "code": "CodeableConcept"
+            }
+          ]
+        },
+        {
+          "id": "BEPatientCarePlan.activity.detail.doNotPerform",
+          "path": "BEPatientCarePlan.activity.detail.doNotPerform",
+          "short": "The protocol or definition that this careplan is a part of",
+          "min": 0,
+          "max": 1,
+          "type": [
+            {
+              "code": "boolean"
+            }
+          ]
+        },
+        {
+          "id": "BEPatientCarePlan.activity.detail.schedule",
+          "path": "BEPatientCarePlan.activity.detail.schedule",
+          "short": "The protocol or definition that this careplan is a part of",
+          "min": 0,
+          "max": 1,
+          "type": [
+            {
+              "code": "timing"
+            }
+          ]
+        },
+        {
+          "id": "BEPatientCarePlan.activity.detail.location",
+          "path": "BEPatientCarePlan.activity.detail.location",
+          "short": "The protocol or definition that this careplan is a part of",
+          "min": 0,
+          "max": 1,
+          "type": [
+            {
+              "code": "Reference  "
+            }
+          ]
+        },
+        {
+          "id": "BEPatientCarePlan.activity.performer",
+          "path": "BEPatientCarePlan.activity.performer",
+          "short": "The protocol or definition that this careplan is a part of",
+          "min": 0,
+          "max": "*",
+          "type": [
+            {
+              "code": "Reference"
+            }
+          ]
+        },
+        {
+          "id": "BEPatientCarePlan.activity.description",
+          "path": "BEPatientCarePlan.activity.description",
+          "short": "The protocol or definition that this careplan is a part of",
+          "min": 0,
+          "max": 1,
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        }
+        
+
+
+      ]
+    }
+  }
