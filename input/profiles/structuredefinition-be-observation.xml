@@ -1636,7 +1636,7 @@
     <element id="Observation.referenceRange">
       <path value="Observation.referenceRange" />
       <short value="Provides guide for interpretation" />
-      <definition value="Guidance on how to interpret the value by comparison to a normal or recommended range.  Multiple reference ranges are interpreted as an &quot;OR&quot;.   In other words, to represent two distinct target populations, two `referenceRange` elements would be used." />
+      <definition value="Guidance on how to interpret the value by comparison to a normal or recommended range.  Multiple reference ranges are interpreted as an &quot;OR&quot;.   In other words, to represent two distinct target populations, two &quot;referenceRange&quot; elements would be used." />
       <comment value="Most observations only have one generic reference range. Systems MAY choose to restrict to only supplying the relevant reference range based on knowledge about the patient (e.g., specific to the patient's age, gender, weight and other factors), but this might not be possible or appropriate. Whenever more than one reference range is supplied, the differences between them SHOULD be provided in the reference range and/or age properties." />
       <requirements value="Knowing what values are considered &quot;normal&quot; can help evaluate the significance of a particular result. Need to be able to provide multiple reference ranges for different contexts." />
       <min value="0" />
