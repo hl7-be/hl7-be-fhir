@@ -140,7 +140,7 @@
         {
           "id": "BEPatientCarePlan.status",
           "path": "BEPatientCarePlan.status",
-          "short": "....",
+          "short": "draft | active | on-hold | revoked | completed | entered-in-error | unknown",
           "min": 0,
           "max": "1",
           "type": [
@@ -152,7 +152,7 @@
         {
           "id": "BEPatientCarePlan.intent",
           "path": "BEPatientCarePlan.intent",
-          "short": "....",
+          "short": "proposal | plan | order | option",
           "min": 0,
           "max": "1",
           "type": [
@@ -164,7 +164,7 @@
         {
           "id": "BEPatientCarePlan.category",
           "path": "BEPatientCarePlan.category",
-          "short": "....",
+          "short": "Type of plan",
           "min": 0,
           "max": "*",
           "type": [
@@ -176,7 +176,7 @@
         {
           "id": "BEPatientCarePlan.title",
           "path": "BEPatientCarePlan.title",
-          "short": "....",
+          "short": "A readable name of the plan",
           "min": 0,
           "max": "1",
           "type": [
@@ -188,7 +188,7 @@
         {
           "id": "BEPatientCarePlan.description",
           "path": "BEPatientCarePlan.description",
-          "short": "....",
+          "short": "A description of the care plan",
           "min": 0,
           "max": "1",
           "type": [
@@ -200,7 +200,7 @@
         {
           "id": "BEPatientCarePlan.subject",
           "path": "BEPatientCarePlan.subject",
-          "short": "The protocol or definition that this careplan is a part of",
+          "short": "Who this plan is for",
           "min": 1,
           "max": 1,
           "type": [
@@ -212,7 +212,7 @@
         {
           "id": "BEPatientCarePlan.encounter",
           "path": "BEPatientCarePlan.encounter",
-          "short": "The protocol or definition that this careplan is a part of",
+          "short": "Encounter created as part of",
           "min": 0,
           "max": 1,
           "type": [
@@ -224,7 +224,7 @@
         {
           "id": "BEPatientCarePlan.period",
           "path": "BEPatientCarePlan.period",
-          "short": "The protocol or definition that this careplan is a part of",
+          "short": "Time period that the plan is covering",
           "min": 0,
           "max": 1,
           "type": [
@@ -238,7 +238,7 @@
         {
           "id": "BEPatientCarePlan.author",
           "path": "BEPatientCarePlan.author",
-          "short": "The protocol or definition that this careplan is a part of",
+          "short": "The main author of this care plan",
           "min": 0,
           "max": 1,
           "type": [
@@ -250,7 +250,7 @@
         {
           "id": "BEPatientCarePlan.team",
           "path": "BEPatientCarePlan.team",
-          "short": "The protocol or definition that this careplan is a part of",
+          "short": "The ream or teams involved in performing the plan",
           "min": 0,
           "max": "*",
           "type": [
@@ -262,7 +262,7 @@
         {
           "id": "BEPatientCarePlan.goal",
           "path": "BEPatientCarePlan.goal",
-          "short": "The protocol or definition that this careplan is a part of",
+          "short": "Desired outcome of plan",
           "min": 0,
           "max": "*",
           "type": [
@@ -274,7 +274,7 @@
         {
           "id": "BEPatientCarePlan.activity",
           "path": "BEPatientCarePlan.activity",
-          "short": "The protocol or definition that this careplan is a part of",
+          "short": "Each activity of the plan",
           "min": 0,
           "max": "*",
           "type": [
@@ -284,9 +284,9 @@
           ]
         },
         {
-          "id": "BEPatientCarePlan.activity.target",
-          "path": "BEPatientCarePlan.activity.target",
-          "short": "The protocol or definition that this careplan is a part of",
+          "id": "BEPatientCarePlan.activity.outcome",
+          "path": "BEPatientCarePlan.activity.outcome",
+          "short": "Results of the activity (expected or accomplished)",
           "min": 0,
           "max": "*",
           "type": [
@@ -298,21 +298,21 @@
         {
           "id": "BEPatientCarePlan.activity.progress",
           "path": "BEPatientCarePlan.activity.progress",
-          "short": "The protocol or definition that this careplan is a part of",
+          "short": "Updates about the activity status/progress",
           "min": 0,
           "max": "*",
           "type": [
             {
-              "code": "BackboneElement"
+              "code": "Annotation"
             }
           ]
         },
         {
           "id": "BEPatientCarePlan.activity.detail",
           "path": "BEPatientCarePlan.activity.detail",
-          "short": "The protocol or definition that this careplan is a part of",
+          "short": "Detailed description of the activity",
           "min": 0,
-          "max": "*",
+          "max": 1,
           "type": [
             {
               "code": "BackboneElement"
@@ -322,7 +322,7 @@
         {
           "id": "BEPatientCarePlan.activity.detail.type",
           "path": "BEPatientCarePlan.activity.detail.type",
-          "short": "The protocol or definition that this careplan is a part of",
+          "short": "The type of activity",
           "min": 0,
           "max": "1",
           "type": [
@@ -334,7 +334,7 @@
         {
           "id": "BEPatientCarePlan.activity.detail.protocol",
           "path": "BEPatientCarePlan.activity.detail.protocol",
-          "short": "The protocol or definition that this careplan is a part of",
+          "short": "The protocol or definition that is instantiated by this activity",
           "min": 0,
           "max": "*",
           "type": [
@@ -346,7 +346,7 @@
         {
           "id": "BEPatientCarePlan.activity.detail.code",
           "path": "BEPatientCarePlan.activity.detail.code",
-          "short": "The protocol or definition that this careplan is a part of",
+          "short": "The code for the detailed activity e.g. a procedure code, etc.",
           "min": 0,
           "max": 1,
           "type": [
@@ -358,7 +358,7 @@
         {
           "id": "BEPatientCarePlan.activity.detail.status",
           "path": "BEPatientCarePlan.activity.detail.status",
-          "short": "The protocol or definition that this careplan is a part of",
+          "short": "The current status of the activity",
           "min": 1,
           "max": 1,
           "type": [
@@ -370,7 +370,7 @@
         {
           "id": "BEPatientCarePlan.activity.detail.statusReason",
           "path": "BEPatientCarePlan.activity.detail.statusReason",
-          "short": "The protocol or definition that this careplan is a part of",
+          "short": "The reason for the current status",
           "min": 0,
           "max": 1,
           "type": [
@@ -382,7 +382,7 @@
         {
           "id": "BEPatientCarePlan.activity.detail.doNotPerform",
           "path": "BEPatientCarePlan.activity.detail.doNotPerform",
-          "short": "The protocol or definition that this careplan is a part of",
+          "short": "An indication that the activity is NOT to be performed",
           "min": 0,
           "max": 1,
           "type": [
@@ -394,7 +394,7 @@
         {
           "id": "BEPatientCarePlan.activity.detail.schedule",
           "path": "BEPatientCarePlan.activity.detail.schedule",
-          "short": "The protocol or definition that this careplan is a part of",
+          "short": "The schedule or timing for the activity",
           "min": 0,
           "max": 1,
           "type": [
@@ -406,7 +406,7 @@
         {
           "id": "BEPatientCarePlan.activity.detail.location",
           "path": "BEPatientCarePlan.activity.detail.location",
-          "short": "The protocol or definition that this careplan is a part of",
+          "short": "The location where the activity should take / has taken place",
           "min": 0,
           "max": 1,
           "type": [
@@ -418,7 +418,7 @@
         {
           "id": "BEPatientCarePlan.activity.performer",
           "path": "BEPatientCarePlan.activity.performer",
-          "short": "The protocol or definition that this careplan is a part of",
+          "short": "The intended / actual performer of the activity",
           "min": 0,
           "max": "*",
           "type": [
@@ -430,12 +430,12 @@
         {
           "id": "BEPatientCarePlan.activity.description",
           "path": "BEPatientCarePlan.activity.description",
-          "short": "The protocol or definition that this careplan is a part of",
+          "short": "Additional description of the activity",
           "min": 0,
           "max": 1,
           "type": [
             {
-              "code": "BackboneElement"
+              "code": "string"
             }
           ]
         }
