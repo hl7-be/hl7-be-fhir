@@ -21,7 +21,7 @@
         ]
       }
     ],
-    "description": "A Patient-centered care team for. This is not the same as a definition of a Care team e.g. a hospital team or specialists team.",
+    "description": "A team of healthcare professionals and / or persons related to the patient, having the purpose of providing and coordinating care activities for the patient. The team may be associated with one or more goals, via one or more care plans.",
     "jurisdiction": [
       {
         "coding": [
