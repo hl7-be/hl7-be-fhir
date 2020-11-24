@@ -1,12 +1,12 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "immunization-originalorder",
-  "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/immunization-originalorder",
+  "id": "be-ext-administeredProduct",
+  "url": "https://www.hl7belgium.org/fhir/StructureDefinition/be-ext-administeredProduct",
   "version": "0.1.0",
-  "name": "BeImmunizationOriginalOrder",
-  "title": "Immunization Order, prescription or request",
+  "name": "BeAdministeredProduct",
+  "title": "Product administered",
   "status": "active",
-  "description": "A plan, proposal or order that is fulfilled in whole or in part by an event.",
+  "description": "The product administered",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -36,7 +36,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/immunization-originalorder"
+        "fixedUri": "https://www.hl7belgium.org/fhir/StructureDefinition/be-ext-administeredProduct"
       },
       {
         "id": "Extension.value[x]",
@@ -60,13 +60,13 @@
       {
         "id": "Extension.valueReference",
         "path": "Extension.valueReference",
+        "min": 0,
+        "max": "1",
         "type": [
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation",
-              "http://hl7.org/fhir/StructureDefinition/MedicationRequest",
-              "http://hl7.org/fhir/StructureDefinition/CarePlan"
+              "http://hl7.org/fhir/StructureDefinition/Medication"
             ]
           }
         ]

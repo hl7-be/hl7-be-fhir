@@ -185,7 +185,7 @@
       <groupingId value="core"/>
     </resource>
 	
-	
+
     <resource>
       <reference>
         <reference value="StructureDefinition/be-observation"/>
@@ -195,7 +195,6 @@
       <description value="The Core BE profile for Observation"/>
       <groupingId value="core"/>
     </resource>
-	
 	
     <resource>
       <reference>
@@ -361,17 +360,17 @@
       <description value="Patient Will logical model"/>
       <groupingId value="logicalmodels"/>
     </resource>
-<!--
+
     <resource>
       <reference>
-        <reference value="StructureDefinition/be-model-immunization"/>
+        <reference value="StructureDefinition/be-model-vaccination"/>
       </reference>
       <fhirVersion value="4.0.1"/>
       <name value="Logical Model Immunization"/>
       <description value="Immunization logical model"/>
       <groupingId value="logicalmodels"/>
     </resource>
--->
+
     <resource>
       <reference>
         <reference value="StructureDefinition/be-model-prescriptionreferral"/>
@@ -441,11 +440,11 @@
 
     <resource>
       <reference>
-        <reference value="StructureDefinition/be-immunization"/>
+        <reference value="StructureDefinition/be-vaccination"/>
       </reference>
       <fhirVersion value="4.0.1"/>
-      <name value="Immunization core BE profile"/>
-      <description value="The Core BE profile for Immunization (event)"/>
+      <name value="Vacccination core BE profile"/>
+      <description value="The Core BE profile for Vaccination or Immunization (event)"/>
       <groupingId value="core"/>
     </resource>
 

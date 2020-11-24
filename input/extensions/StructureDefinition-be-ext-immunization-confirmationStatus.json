@@ -1,12 +1,12 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "be-administeredProduct",
-  "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-administeredProduct",
+  "id": "be-ext-immunization-confirmationStatus",
+  "url": "https://www.hl7belgium.org/fhir/StructureDefinition/be-ext-immunization-confirmationStatus",
   "version": "0.1.0",
-  "name": "BeAdministeredProduct",
-  "title": "Product administered",
+  "name": "BeImmunizationConfirmationStatus",
+  "title": "How certain is the immunization information - confirmed, not confirmed",
   "status": "active",
-  "description": "The product administered",
+  "description": "How certain/reliable is the immunization information",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -36,7 +36,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-administeredProduct"
+        "fixedUri": "https://www.hl7belgium.org/fhir/StructureDefinition/be-ext-immunization-confirmationStatus"
       },
       {
         "id": "Extension.value[x]",
@@ -53,24 +53,19 @@
         },
         "type": [
           {
-            "code": "CodeableConcept"
-          },
-          {
-            "code": "Reference"
+            "code": "code"
           }
         ]
       },
       {
-        "id": "Extension.valueReference",
-        "path": "Extension.valueReference",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Medication"
-            ]
-          }
-        ]
+        "id": "Extension.valueCode",
+        "path": "Extension.valueCode",
+        "min": 0,
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.hl7belgium.org/fhir/ValueSet/be-vs-immunization-confirmation-status"
+        }
       }
     ]
   }

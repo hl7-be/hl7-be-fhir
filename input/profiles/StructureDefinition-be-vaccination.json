@@ -1,12 +1,32 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "be-immunization",
-  "url": "https://www.hl7belgium.org/standards/fhir/StructureDefinition/be-immunization",
+  "id": "be-vaccination",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Clinical.Medications"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "patient"
+    }
+  ],
+  "url": "https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination",
   "version": "0.1.0",
-  "name": "BEImmunization",
-  "title": "BEImmunization",
+  "name": "BeVaccination",
+  "title": "BEVaccination",
   "status": "active",
   "description": "Defines constraints and extensions on the immunization resource to represent an immunization event i.e. the administration of a vaccine.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "BE",
+          "system": "urn:iso:std:iso:3166"
+        }
+      ]
+    }
+  ],
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -57,15 +77,16 @@
         }
       },
       {
-        "id": "Immunization.extension:basedOn",
+        "id": "Immunization.extension:immunization-originalorder",
         "path": "Immunization.extension",
-        "sliceName": "basedOn",
+        "sliceName": "immunization-originalorder",
+        "min": 0,
         "max": "1",
         "type": [
           {
             "code": "Extension",
             "profile": [
-              "https://www.hl7belgium.org/standards/fhir/StructureDefinition/basedOn"
+              "https://www.hl7belgium.org/fhir/StructureDefinition/be-ext-immunization-originalorder"
             ]
           }
         ]
@@ -74,26 +95,58 @@
         "id": "Immunization.extension:administeredProduct",
         "path": "Immunization.extension",
         "sliceName": "administeredProduct",
+        "min": 0,
         "max": "1",
         "type": [
           {
             "code": "Extension",
             "profile": [
-              "https://www.hl7belgium.org/standards/fhir/StructureDefinition/administeredProduct"
+              "https://www.hl7belgium.org/fhir/StructureDefinition/be-ext-administeredProduct"
             ]
           }
         ]
       },
       {
-        "id": "Immunization.extension:immunizationLocation",
+        "id": "Immunization.extension:immunization-location",
         "path": "Immunization.extension",
-        "sliceName": "immunizationLocation",
+        "sliceName": "immunization-location",
+        "min": 0,
         "max": "1",
         "type": [
           {
             "code": "Extension",
             "profile": [
-              "https://www.hl7belgium.org/standards/fhir/StructureDefinition/immunizationLocation"
+              "https://www.hl7belgium.org/fhir/StructureDefinition/be-ext-immunization-location"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Immunization.extension:immunization-confirmationStatus",
+        "path": "Immunization.extension",
+        "sliceName": "immunization-confirmationStatus",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.hl7belgium.org/fhir/StructureDefinition/be-ext-immunization-confirmationStatus"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Immunization.extension:recorder",
+        "path": "Immunization.extension",
+        "sliceName": "recorder",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.hl7belgium.org/fhir/StructureDefinition/be-ext-recorder"
             ]
           }
         ]
@@ -101,8 +154,7 @@
       {
         "id": "Immunization.identifier",
         "path": "Immunization.identifier",
-        "short": "The clinical status of the immunization - whether it is active, resolved...",
-        "min": 1,
+        "short": "A unique business identifier for an immunization entry",
         "mustSupport": true
       },
       {
@@ -131,18 +183,27 @@
       {
         "id": "Immunization.vaccineCode",
         "path": "Immunization.vaccineCode",
-        "short": "The target of the immunization - the disease that the immunization action is protecting against - e.g. Polio, Tetanus, HPV",
+        "short": "The vaccine code - a type of vaccine, typically identified by the diseas(s) it covers. For example MMR, HPV, Tetanus, DTPa",
         "mustSupport": true
       },
       {
         "id": "Immunization.patient",
         "path": "Immunization.patient",
-        "short": "The patient that this received immunization entry refers to"
+        "short": "The patient that this received immunization entry refers to",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient"
+            ]
+          }
+        ]
       },
       {
         "id": "Immunization.occurrenceDateTime",
         "path": "Immunization.occurrenceDateTime",
         "min": 0,
+        "max": "1",
         "type": [
           {
             "code": "dateTime"
@@ -154,6 +215,7 @@
         "id": "Immunization.occurrenceString",
         "path": "Immunization.occurrenceString",
         "min": 0,
+        "max": "1",
         "type": [
           {
             "code": "string"
@@ -165,11 +227,13 @@
         "id": "Immunization.recorded",
         "path": "Immunization.recorded",
         "short": "The date/time when the immunization event has been recorded",
+        "min": 1,
         "mustSupport": true
       },
       {
         "id": "Immunization.location",
         "path": "Immunization.location",
+        "max": "0",
         "mustSupport": true
       },
       {
@@ -190,7 +254,11 @@
       {
         "id": "Immunization.route",
         "path": "Immunization.route",
-        "mustSupport": true
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.hl7belgium.org/fhir/ValueSet/be-vs-vaccine-administration-route"
+        }
       },
       {
         "id": "Immunization.performer",
@@ -204,12 +272,24 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Practitioner",
-              "http://hl7.org/fhir/StructureDefinition/Organization",
-              "http://hl7.org/fhir/StructureDefinition/PractitionerRole"
+              "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner",
+              "https://www.hl7belgium.org/fhir/StructureDefinition/be-organization",
+              "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitionerrole"
             ]
           }
         ]
+      },
+      {
+        "id": "Immunization.reasonCode",
+        "path": "Immunization.reasonCode",
+        "short": "Why immunization has occurred or not (code or text)",
+        "mustSupport": true
+      },
+      {
+        "id": "Immunization.reasonReference",
+        "path": "Immunization.reasonReference",
+        "short": "Why immunization has occurred or not (reference to a finding)",
+        "mustSupport": true
       },
       {
         "id": "Immunization.reaction",
@@ -226,22 +306,26 @@
         "path": "Immunization.protocolApplied.doseNumberString",
         "short": "Whether this is a first immunization or a reinforcement",
         "min": 0,
+        "max": "1",
         "type": [
           {
             "code": "string"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Immunization.protocolApplied.doseNumberPositiveInt",
         "path": "Immunization.protocolApplied.doseNumberPositiveInt",
         "short": "The numeric/sequential number of the dose, when adequate",
         "min": 0,
+        "max": "1",
         "type": [
           {
             "code": "positiveInt"
           }
-        ]
+        ],
+        "mustSupport": true
       }
     ]
   }

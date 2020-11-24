@@ -1,12 +1,12 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "be-immunizationLocation",
-  "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-immunizationLocation",
+  "id": "be-ext-immunization-originalorder",
+  "url": "https://www.hl7belgium.org/fhir/StructureDefinition/be-ext-immunization-originalorder",
   "version": "0.1.0",
-  "name": "BeImmunizationLocation",
-  "title": "Location (reference, code or text) of the immunization",
+  "name": "BeImmunizationOriginalOrder",
+  "title": "Immunization Order, prescription or request",
   "status": "active",
-  "description": "Location (reference, code or text) of the immunization",
+  "description": "A plan, proposal or order that is fulfilled in whole or in part by an event.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -36,7 +36,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-immunizationLocation"
+        "fixedUri": "https://www.hl7belgium.org/fhir/StructureDefinition/be-ext-immunization-originalorder"
       },
       {
         "id": "Extension.value[x]",
@@ -53,9 +53,6 @@
         },
         "type": [
           {
-            "code": "CodeableConcept"
-          },
-          {
             "code": "Reference"
           }
         ]
@@ -63,27 +60,18 @@
       {
         "id": "Extension.valueReference",
         "path": "Extension.valueReference",
+        "min": 0,
+        "max": "1",
         "type": [
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Location"
+              "http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation",
+              "http://hl7.org/fhir/StructureDefinition/MedicationRequest",
+              "http://hl7.org/fhir/StructureDefinition/CarePlan"
             ]
           }
         ]
-      },
-      {
-        "id": "Extension.valueCodeableConcept",
-        "path": "Extension.valueCodeableConcept",
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ],
-        "binding": {
-          "strength": "preferred",
-          "valueSet": "https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-vs-care-location"
-        }
       }
     ]
   }
