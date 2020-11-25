@@ -1,0 +1,21 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "be-cs-vaccine-administration-route",
+  "url": "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-vaccine-administration-route",
+  "version": "0.1.0",
+  "name": "BeCSVaccineAdministrationRoute",
+  "title": "Vaccine Administration Route",
+  "status": "draft",
+  "description": "Vaccine Administration Route",
+  "content": "complete",
+  "concept": [
+    {"code" : "IM","display" : "Instramuscular","definition" : "","designation" : [{"language" : "fr-BE","value" : "Intramusculaire"},{"language" : "nl-BE","value" : "Intramusculaire"}]},
+    {"code" : "SC","display" : "Subcutaneous","definition" : "","designation" : [{"language" : "fr-BE","value" : "Sous-cutanée"},{"language" : "nl-BE","value" : "Subcutane"}]},
+    {"code" : "IV","display" : "Intravenous","definition" : "","designation" : [{"language" : "fr-BE","value" : "intraveineuse"},{"language" : "nl-BE","value" : "intraveneus"}]},
+    {"code" : "ID","display" : "Intradermal","definition" : "","designation" : [{"language" : "fr-BE","value" : "Intradermique"},{"language" : "nl-BE","value" : "Intradermale"}]},
+    {"code" : "Oral","display" : "Oral","definition" : "","designation" : [{"language" : "fr-BE","value" : "Orale"},{"language" : "nl-BE","value" : "Mondeling"}]},
+    {"code" : "Nasal","display" : "Nasal","definition" : "","designation" : [{"language" : "fr-BE","value" : "Nasal"},{"language" : "nl-BE","value" : "nasaal"}]},
+    {"code" : "Other","display" : "Other","definition" : "","designation" : [{"language" : "fr-BE","value" : "Autre"},{"language" : "nl-BE","value" : "andere"}]}
+
+  ]
+}
