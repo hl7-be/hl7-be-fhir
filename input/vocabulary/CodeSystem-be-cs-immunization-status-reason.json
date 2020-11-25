@@ -1,0 +1,97 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "BeCSStatusReason",
+  "id": "be-cs-immunization-status-reason",
+  "title": "Immunization status reason Code System.",
+  "description": "Immunization reason status Code System.",
+  "version": "0.1.0",
+  "url": "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-immunization-status-reason",
+  "concept": [
+    {
+      "code": "other",
+      "display": "Other",
+      "designation" : [
+        {
+          "language" : "fr-BE",
+          "value" : "Autre"
+        },
+        {
+          "language" : "nl-BE",
+          "value" : "Andere"
+        }
+      ]
+    },
+    {
+      "code": "IMMUNE",
+      "display": "Immunity",
+      "designation" : [
+        {
+          "language" : "fr-BE",
+          "value" : "Immune"
+        },
+        {
+          "language" : "nl-BE",
+          "value" : "Immuniteit"
+        }
+      ]
+    },
+    {
+      "code": "MEDPREC",
+      "display": "Medical precaution",
+      "designation" : [
+        {
+          "language" : "fr-BE",
+          "value" : "Contre indication médicale"
+        },
+        {
+          "language" : "nl-BE",
+          "value" : "Medische contra-indicatie"
+        }
+      ]
+    },
+    {
+      "code": "OSTOCK",
+      "display": "Product out of stock",
+      "designation" : [
+        {
+          "language" : "fr-BE",
+          "value" : "Hors stock"
+        },
+        {
+          "language" : "nl-BE",
+          "value" : "Geen voorraad"
+        }
+      ]
+    },
+    {
+      "code": "PATOBJ",
+      "display": "Patient objection",
+      "designation" : [
+        {
+          "language" : "fr-BE",
+          "value" : "Refus"
+        },
+        {
+          "language" : "nl-BE",
+          "value" : "Weigering"
+        }
+      ]
+    },
+    {
+      "code": "ALLERGY",
+      "display": "Allergy to vaccine ingredient",
+      "designation" : [
+        {
+          "language" : "fr-BE",
+          "value" : "Allergie"
+        },
+        {
+          "language" : "nl-BE",
+          "value" : "Allergie"
+        }
+      ]
+    }
+  ]
+}

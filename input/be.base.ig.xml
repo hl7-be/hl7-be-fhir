@@ -79,6 +79,45 @@
     </grouping>
 
 
+
+      <grouping id="patientwill">
+         <name value="Patient Will" />
+         <description value="Patient Will profile and vocabulary. The Patient Will captures a patient's expressed preferences related to care provision.  
+The Logical Data Model defines the functional data needs.  
+An example demonstrates the use of the profile." />
+      </grouping>
+      <grouping id="addiction">
+         <name value="Addiction" />
+         <description value="The profile for Addiction, intended to capture known or suspected substance or other addictions.   
+The Logical Data Model defines the functional data needs.  
+An example demonstrates the use of the profile." />
+      </grouping>
+      <grouping id="immunization">
+         <name value="Vaccination" />
+         <description value="Vaccination related resources.  These artefacts define the constraints and vocabulary necessary to record the administration of vaccine administrations, including the reference to a vaccination schema or protocol, and eventual immediate reactions. 
+The Logical Data Model defines the functional data needs.  
+The vocabulary resources help ensure conformity and data consistency.  
+The profile and extensions define the technical specifications.  
+A set of examples demonstrates the use of the profile." />
+      </grouping>
+      <grouping id="problem">
+         <name value="Problem" />
+         <description value="The Problem resources are intended to capture a short description of a patient's clinical condition.  
+The Logical Data Model defines the functional data needs.  
+The vocabulary resources help ensure conformity and data consistency.  
+The profile and extensions define the technical specifications.  
+A set of examples demonstrates the use of the profile." />
+      </grouping>
+      <grouping id="scoreresults">
+         <name value="Score Results" />
+         <description value="The Score Results resource captures an overal assessment score about a health indicator associated with a patient.  
+The vocabulary resources help ensure conformity and data consistency.  
+The profile defines the technical specifications.  
+A set of examples demonstrates the use of the profile." />
+      </grouping>
+
+
+
     <resource>
       <reference>
         <reference value="StructureDefinition/be-communication"/>
@@ -361,6 +400,7 @@
       <groupingId value="logicalmodels"/>
     </resource>
 
+<!--
     <resource>
       <reference>
         <reference value="StructureDefinition/be-model-vaccination"/>
@@ -370,6 +410,7 @@
       <description value="Immunization logical model"/>
       <groupingId value="logicalmodels"/>
     </resource>
+-->
 
     <resource>
       <reference>
@@ -437,7 +478,7 @@
       <description value="The Core BE profile for Patient Will"/>
       <groupingId value="core"/>
     </resource>
-
+<!--
     <resource>
       <reference>
         <reference value="StructureDefinition/be-vaccination"/>
@@ -447,7 +488,7 @@
       <description value="The Core BE profile for Vaccination or Immunization (event)"/>
       <groupingId value="core"/>
     </resource>
-
+-->
 
     <resource>
       <reference>
@@ -467,54 +508,7 @@
       <description value="The values for Contact Person type"/>
       <groupingId value="terminology"/>
     </resource>
-	
-	
-	
-    <resource>
-      <reference>
-        <reference value="CodeSystem/be-cs-care-location"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="CodeSystem - Care location"/>
-      <description value="The location of the care event"/>
-      <groupingId value="terminology"/>
-    </resource>
-
-    <resource>
-      <reference>
-        <reference value="CodeSystem/be-cs-immunization-confirmation-status"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="CodeSystem - immunization confirmation status"/>
-      <description value="The list of immunization confirmation status"/>
-      <groupingId value="terminology"/>
-    </resource>
-
-    <resource>
-      <reference>
-        <reference value="ValueSet/be-vs-care-location"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="ValueSet - Care location"/>
-      <description value="The list of Care locations"/>
-      <groupingId value="terminology"/>
-    </resource>
-
-    <resource>
-      <reference>
-        <reference value="ValueSet/be-vs-immunization-confirmation-status"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="ValueSet - immunization confirmation status"/>
-      <description value="The list of immunization confirmation status"/>
-      <groupingId value="terminology"/>
-    </resource>
-
-
-
-
 <!--
-
     <resource>
       <reference>
         <reference value="StructureDefinition/basedOn"/>
@@ -1182,6 +1176,517 @@
     </resource>
 	-->
 
+
+
+      <!-- Immunization -->
+      <resource>
+         <reference>
+            <reference value="StructureDefinition/be-model-vaccination" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Logical Model Vaccination" />
+         <description value="Vaccination logical model" />
+         <groupingId value="immunization" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="StructureDefinition/be-vaccination" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Vaccination core BE profile" />
+         <description value="The Core BE profile for Vaccination (event)" />
+         <groupingId value="immunization" />
+      </resource>
+      
+      <resource>
+        <reference>
+          <reference value="StructureDefinition/be-ext-immunization-location"/>
+        </reference>
+        <fhirVersion value="4.0.1"/>
+        <name value="Location of the vaccination event"/>
+        <description value="Location of the vaccination event"/>
+        <groupingId value="immunization"/>
+      </resource>
+  
+      <resource>
+         <reference>
+            <reference value="CodeSystem/be-cs-care-location" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="CodeSystem - Care location" />
+         <description value="The location of the care event" />
+         <groupingId value="immunization" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="CodeSystem/be-cs-immunization-confirmation-status" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="CodeSystem - vaccination confirmation status" />
+         <description value="The list of immunization confirmation status" />
+         <groupingId value="immunization" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="CodeSystem/be-cs-immunization-status-reason" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="CodeSystem - immunization status-reason" />
+         <description value="The list of immunization status-reason" />
+         <groupingId value="immunization" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="CodeSystem/be-cs-vaccine-administration-route" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="CodeSystem - Vaccine Administration Route" />
+         <description value="The list of administration routes for vaccines" />
+         <groupingId value="immunization" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="ValueSet/be-vs-care-location" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="ValueSet - Care location" />
+         <description value="The list of Care locations" />
+         <groupingId value="immunization" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="ValueSet/be-vs-vaccine-administration-route" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="ValueSet - Vaccine Administration Route" />
+         <description value="The list of administration routes for vaccines" />
+         <groupingId value="immunization" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="ValueSet/be-vs-immunization-confirmation-status" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="ValueSet - vaccination confirmation status" />
+         <description value="The list of immunization confirmation status" />
+         <groupingId value="immunization" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="ValueSet/be-vs-immunization-status-reason" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="ValueSet - vaccination status reason" />
+         <description value="The list of vaccination status reason" />
+         <groupingId value="immunization" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="StructureDefinition/be-ext-administeredProduct" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Extension - Administered Product" />
+         <description value="Administered Product" />
+         <groupingId value="immunization" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="StructureDefinition/be-ext-immunization-originalorder" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Extension - Vaccination original order" />
+         <description value="Immunization original order  (e.g. prescription)" />
+         <groupingId value="immunization" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="StructureDefinition/be-ext-recorder" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Extension - Vaccination recorder" />
+         <description value="Immunization recorder" />
+         <groupingId value="immunization" />
+      </resource>
+
+
+
+      <resource>
+         <reference>
+            <reference value="StructureDefinition/be-ext-immunization-confirmationStatus" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Extension - Vaccination confirmation status" />
+         <description value="Immunization confirmation status" />
+         <groupingId value="immunization" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="NamingSystem/be-ns-cnk-codes" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="NamingSystem" />
+         <description value="" />
+         <groupingId value="immunization" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="NamingSystem/be-ns-nihdi-organization" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="BeNSNIHDIOrganization" />
+         <description value="NamingSystem - NIHDI Organization numbers" />
+         <groupingId value="immunization" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="NamingSystem/be-ns-nihdi-professional" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="BeNSNIHDIProfessional" />
+         <description value="NamingSystem - NIHDI Professional numbers" />
+         <groupingId value="immunization" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="NamingSystem/be-ns-one-immunizations" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="BeNSONEImmunization" />
+         <description value="NamingSystem for ONE immunizations" />
+         <groupingId value="immunization" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="NamingSystem/be-ns-product-manufacturer" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="BeNSNIHDIProductManufacturer" />
+         <description value="NamingSystem - Product Manufacturer" />
+         <groupingId value="immunization" />
+      </resource>
+
+      <resource>
+         <reference>
+            <reference value="Immunization/toto-hexa1" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Toto - First hexavalent immunization" />
+         <description value="Toto - First hexavalent immunization" />
+         <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination" />
+         <groupingId value="immunization" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="Immunization/toto-hexa2" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Toto - 2nd hexavalent immunization" />
+         <description value="Toto - 2nd hexavalent immunization" />
+         <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination" />
+         <groupingId value="immunization" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="Immunization/toto-hexa3" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Toto - 3rd hexavalent immunization" />
+         <description value="Toto - 3rd hexavalent immunization" />
+         <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination" />
+         <groupingId value="immunization" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="Immunization/toto-hexa4-skipped" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Toto - 4th hexavalent immunization - skipped (fever)" />
+         <description value="Toto - 4th hexavalent immunization - skipped (fever)" />
+         <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination" />
+         <groupingId value="immunization" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="Immunization/toto-hexa4-swelling" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Toto - 4th hexavalent immunization" />
+         <description value="Toto - 4th hexavalent immunization" />
+         <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination" />
+         <groupingId value="immunization" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="Immunization/juan-hexa1-reported" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Juan - 1st hexa (reported)" />
+         <description value="Juan - 1st hexa (reported)" />
+         <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination" />
+         <groupingId value="immunization" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="Immunization/juan-hexa2-reported-hospital" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Juan - 2nd hexa (hospital)" />
+         <description value="Juan - 2nd hexa (hospital)" />
+         <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination" />
+         <groupingId value="immunization" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="Immunization/juan-hexa3-skipped" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Juan - 3rd hexa (not done)" />
+         <description value="Juan - 3rd hexa (not done)" />
+         <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination" />
+         <groupingId value="immunization" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="Immunization/juan-hexa4" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Juan - 3rd hexa (effective)" />
+         <description value="Juan - 3rd hexa (effective)" />
+         <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination" />
+         <groupingId value="immunization" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="Immunization/eva-hpv1-school" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Eva - HPV 1st dose" />
+         <description value="Eva - HPV 1st dose" />
+         <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination" />
+         <groupingId value="immunization" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="Immunization/eva-hpv2-school" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Eva - HPV 2nd dose" />
+         <description value="Eva - HPV 2nd dose" />
+         <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination" />
+         <groupingId value="immunization" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="Immunization/julia-refuse-hpv" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Julia - refuse HPV" />
+         <description value="Julia - refuse HPV" />
+         <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination" />
+         <groupingId value="immunization" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="ImmunizationRecommendation/order-gabriel-flu" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Gabriel - Flu vaccine prescription" />
+         <description value="Gabriel - flu vacccine prescription" />
+         <groupingId value="immunization" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="ImmunizationRecommendation/order-simon-hpv" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Simon - HPV vaccine prescription" />
+         <description value="Simon - HPV vacccine prescription" />
+         <groupingId value="immunization" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="Observation/erythema" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Toto reaction - erythema" />
+         <description value="Toto - example of reaction (erythema)" />
+         <groupingId value="immunization" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="Observation/fever" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Toto finding - fever" />
+         <description value="Toto - example of finding that prevents vaccination (fever)" />
+         <groupingId value="immunization" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="Immunization/simon-hpv-at-work" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Simon HPV - work" />
+         <description value="Simon HPV - work" />
+         <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination" />
+         <groupingId value="immunization" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="ImmunizationRecommendation/aymeric-rota" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Aymeric - rotavirus prescription" />
+         <description value="Aymeric - rotavirus prescription" />
+         <groupingId value="immunization" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="Immunization/aymeric-rota1" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Aymeric - rotavirus 1st dose" />
+         <description value="Aymeric - rotavirus 1st dose" />
+         <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination" />
+         <groupingId value="immunization" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="Immunization/aymeric-rota2" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Aymeric - rotavirus 2nd dose" />
+         <description value="Aymeric - rotavirus 2nd dose" />
+         <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination" />
+         <groupingId value="immunization" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="Immunization/aymeric-rota3" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Aymeric - rotavirus 3rd dose" />
+         <description value="Aymeric - rotavirus 3rd dose" />
+         <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination" />
+         <groupingId value="immunization" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="Immunization/gabriel-flu" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Gabriel - influenza vaccine" />
+         <description value="Gabriel - influenza vaccine" />
+         <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination" />
+         <groupingId value="immunization" />
+      </resource>
+
+      <resource>
+         <reference>
+            <reference value="Observation/observation-swelling" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Observation - swelling reaction" />
+         <description value="Observation - swelling reaction" />
+         <groupingId value="immunization" />
+      </resource>
+
+<!--
+      <resource>
+         <reference>
+            <reference value="Patient/pia" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Example Patient - Pia Peters" />
+         <description value="Example Patient - Pia Peters" />
+         <groupingId value="immunization" />
+      </resource>
+-->
+      <!--
+    <resource>
+      <reference>
+         <reference value="Immunization/immunization-example-hpv"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Example - HPV Immunization"/>
+      <description value="Vaccination Example - HPV Vaccination"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-vaccination"/>
+      <groupingId value="immunization"/>
+    </resource>
+    <resource>
+      <reference>
+         <reference value="Immunization/immunization-example-childhood-measles"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Example - Childhood measles vaccination (reported)"/>
+      <description value="Vaccination Example - Reported vaccination for measles as child"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-vaccination"/>
+      <groupingId value="immunization"/>
+    </resource>
+    <resource>
+      <reference>
+         <reference value="Immunization/immunization-example-tetanus-cautious-reinforcement"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Example - Tetanus reinforcement (precaution)"/>
+      <description value="Vaccination Example - Tetanus reinforcement (precaution)"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-vaccination"/>
+      <groupingId value="immunization"/>
+    </resource>
+    <resource>
+      <reference>
+         <reference value="Immunization/immunization-example-not-given-stock"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Example - Not given - out of stock"/>
+      <description value="Vaccination Example - Not given (Out of stock)"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-vaccination"/>
+      <groupingId value="immunization"/>
+    </resource>
+    <resource>
+      <reference>
+         <reference value="Immunization/immunization-example-not-given-contraindication"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Example - Not given - contraindication"/>
+      <description value="Vaccination Example - Not given (contraindication)"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-vaccination"/>
+      <groupingId value="immunization"/>
+    </resource>
+    <resource>
+      <reference>
+         <reference value="Immunization/immunization-example-not-given-refusal"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Example - Not given - refusal"/>
+      <description value="Vaccination Example - Not given (Refusal)"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-vaccination"/>
+      <groupingId value="immunization"/>
+    </resource>
+    <resource>
+      <reference>
+         <reference value="Immunization/immunization-example-mistaken-entry"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Example - Mistaken Entry"/>
+      <description value="Vaccination Example - Mistaken entry (wrong vaccine code)"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-vaccination"/>
+      <groupingId value="immunization"/>
+    </resource>
+    <resource>
+      <reference>
+         <reference value="Immunization/immunization-example-mistaken-entry-update"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Example - Update mistaken entry"/>
+      <description value="Vaccination Example - Update mistaken entry to correct vaccine code"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-vaccination"/>
+      <groupingId value="immunization"/>
+    </resource>
+-->
+
+
+<!--################################################################################################################################-->
     <page>
       <nameUrl value="toc.html"/>
       <title value="Table of Contents"/>
