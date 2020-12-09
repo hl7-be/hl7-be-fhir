@@ -1580,6 +1580,36 @@ A set of examples demonstrates the use of the profile." />
          <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination" />
          <groupingId value="immunization" />
       </resource>
+      <resource>
+         <reference>
+            <reference value="Immunization/Immunization-covid-jan-1" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Jan's first COVID-19 vaccine" />
+         <description value="Jan's first COVID-19 vaccine" />
+         <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination" />
+         <groupingId value="immunization" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="Immunization/Immunization-covid-jan-2-discarded" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Jan's second COVID-19 vaccine - discarded" />
+         <description value="Jan's second COVID-19 vaccine - discarded" />
+         <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination" />
+         <groupingId value="immunization" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="Immunization/Immunization-covid-jan-3" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Jan's second COVID-19 vaccine" />
+         <description value="Jan's second COVID-19 vaccine" />
+         <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination" />
+         <groupingId value="immunization" />
+      </resource>
 
       <resource>
          <reference>
