@@ -21,7 +21,7 @@ Usage: #example
 * status = #final
 
 Instance: order-gabriel-flu
-InstanceOf: MedicationRequest
+InstanceOf: ImmunizationRecommendation
 Usage: #example
 * patient.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
 * patient.identifier.value = "55011779911"
@@ -30,7 +30,7 @@ Usage: #example
 * recommendation.forecastStatus = http://terminology.hl7.org/CodeSystem/immunization-recommendation-status#due
 
 Instance: order-simon-hpv
-InstanceOf: MedicationRequest
+InstanceOf: ImmunizationRecommendation
 Usage: #example
 * patient.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
 * patient.identifier.value = "80112136791"
@@ -353,7 +353,7 @@ Title:   "Simon HPV - work"
 * extension[immunization-confirmationStatus].valueCode = #confirmed
 /*============================================= Example 14 =============================================*/
 Instance: aymeric-rota
-InstanceOf: MedicationRequest
+InstanceOf: ImmunizationRecommendation
 Usage: #example 
 Description: "Aymeric - rotavirus prescription"
 Title:   "Aymeric - rotavirus prescription"
