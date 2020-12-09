@@ -21,22 +21,24 @@ Usage: #example
 * status = #final
 
 Instance: order-gabriel-flu
-InstanceOf: ImmunizationRecommendation
+InstanceOf: MedicationRequest
 Usage: #example
-* patient.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
-* patient.identifier.value = "55011779911"
-* date = "2019-09-02"
-* recommendation.vaccineCode = http://hl7.org/fhir/sid/cvx#141
-* recommendation.forecastStatus = http://terminology.hl7.org/CodeSystem/immunization-recommendation-status#due
+* subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
+* subject.identifier.value = "55011779911"
+* authoredOn = "2019-09-02"
+* status = #active
+* intent = #order
+* medicationCodeableConcept.coding = http://hl7.org/fhir/sid/cvx#141
 
 Instance: order-simon-hpv
-InstanceOf: ImmunizationRecommendation
+InstanceOf: MedicationRequest
 Usage: #example
-* patient.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
-* patient.identifier.value = "80112136791"
-* date = "2020-03-22"
-* recommendation.vaccineCode = http://hl7.org/fhir/sid/cvx#165
-* recommendation.forecastStatus = http://terminology.hl7.org/CodeSystem/immunization-recommendation-status#due
+* subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
+* subject.identifier.value = "80112136791"
+* authoredOn = "2020-03-22"
+* status = #active
+* intent = #order
+* medicationCodeableConcept.coding = http://hl7.org/fhir/sid/cvx#165
 
 
 /*============================================= Example 1 =============================================*/
@@ -353,15 +355,16 @@ Title:   "Simon HPV - work"
 * extension[immunization-confirmationStatus].valueCode = #confirmed
 /*============================================= Example 14 =============================================*/
 Instance: aymeric-rota
-InstanceOf: ImmunizationRecommendation
+InstanceOf: MedicationRequest
 Usage: #example 
 Description: "Aymeric - rotavirus prescription"
 Title:   "Aymeric - rotavirus prescription"
-* patient.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
-* patient.identifier.value = "20020142173"
-* date = "2020-04-06"
-* recommendation.forecastStatus.text = "Recommended"
-* recommendation.targetDisease = http://snomed.info/sct#64694002
+* subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
+* subject.identifier.value = "20020142173"
+* authoredOn = "2020-04-06"
+* status = #active
+* intent = #order
+* medicationCodeableConcept.coding = http://snomed.info/sct#871761004
 
 
 
