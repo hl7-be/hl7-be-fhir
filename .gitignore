@@ -1,3 +1,4 @@
+fsh-generated/
 /input/images/Thumbs.db
 copyStuff.ps1.bat
 plantuml.jar
@@ -26,3 +27,4 @@ hl7.be.fhir.template#current/
 **/be.federal.template/
 
 output - Copy/
+
