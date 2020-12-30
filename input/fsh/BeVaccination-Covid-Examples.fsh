@@ -61,8 +61,8 @@ Usage: #inline
 Instance: covid-jan-1
 InstanceOf: BeVaccination
 Usage: #example
-Description: "Jan's first COVID-19 immunization"
-Title:   "Jan's first COVID-19 immunization"
+Description: "Jan's first COVID-19 vaccination"
+Title:   "Jan's first COVID-19 vaccination"
 * contained[0] =  pfizer-s0001
 * identifier.value = "134c357c-745b-4a55-43b5-3856240bc740"
 * identifier.system = "https://www.ehealth.fgov.be/covid-vaccination/vaccination-register"
@@ -70,7 +70,7 @@ Title:   "Jan's first COVID-19 immunization"
 * patient.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
 * patient.identifier.value = "70072376921"
 * recorded = "2020-02-22"
-* extension[immunization-location].valueReference = Reference(org-vub-brussels)
+* extension[vaccination-location].valueReference = Reference(org-vub-brussels)
 * lotNumber = "B037453"
 * occurrenceDateTime = "2020-02-22"
 * manufacturer = Reference(org-pfizer)
@@ -84,15 +84,15 @@ Title:   "Jan's first COVID-19 immunization"
 * protocolApplied.doseNumberPositiveInt = 1
 * protocolApplied.seriesDosesPositiveInt = 2
 * extension[administeredProduct].valueReference = Reference(pfizer-s0001)
-* extension[immunization-confirmationStatus].valueCode = #confirmed
+* extension[vaccination-confirmationStatus].valueCode = #confirmed
 
 
 /*============================================= Example 2 =============================================*/
 Instance: covid-jan-2-discarded
 InstanceOf: BeVaccination
 Usage: #example
-Description: "Jan's second failed COVID-19 immunization"
-Title:   "Jan's second failed COVID-19 immunization"
+Description: "Jan's second failed COVID-19 vaccination"
+Title:   "Jan's second failed COVID-19 vaccination"
 * contained[0] =  pfizer-s0002
 * identifier.value = "134c357c-745b-4a55-43b5-1248340bc711"
 * identifier.system = "https://www.ehealth.fgov.be/covid-vaccination/vaccination-register"
@@ -101,7 +101,7 @@ Title:   "Jan's second failed COVID-19 immunization"
 * patient.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
 * patient.identifier.value = "70072376921"
 * recorded = "2020-03-22"
-* extension[immunization-location].valueReference = Reference(org-vub-brussels)
+* extension[vaccination-location].valueReference = Reference(org-vub-brussels)
 * lotNumber = "B037471"
 * occurrenceDateTime = "2020-03-22"
 * manufacturer = Reference(org-pfizer)
@@ -115,14 +115,14 @@ Title:   "Jan's second failed COVID-19 immunization"
 * protocolApplied.doseNumberPositiveInt = 1
 * protocolApplied.seriesDosesPositiveInt = 2
 * extension[administeredProduct].valueReference = Reference(pfizer-s0002)
-* extension[immunization-confirmationStatus].valueCode = #confirmed
+* extension[vaccination-confirmationStatus].valueCode = #confirmed
 
 /*============================================= Example 3 =============================================*/
 Instance: covid-jan-3
 InstanceOf: BeVaccination
 Usage: #example
-Description: "Jan's second successful COVID-19 immunization"
-Title:   "Jan's second successful COVID-19 immunization"
+Description: "Jan's second successful COVID-19 vaccination"
+Title:   "Jan's second successful COVID-19 vaccination"
 * contained[0] =  pfizer-s0003
 * identifier.value = "134c357c-745b-4a55-43b5-3856240bc740"
 * identifier.system = "https://www.ehealth.fgov.be/covid-vaccination/vaccination-register"
@@ -130,7 +130,7 @@ Title:   "Jan's second successful COVID-19 immunization"
 * patient.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
 * patient.identifier.value = "70072376921"
 * recorded = "2020-03-24"
-* extension[immunization-location].valueReference = Reference(org-vub-brussels)
+* extension[vaccination-location].valueReference = Reference(org-vub-brussels)
 * lotNumber = "B037477"
 * occurrenceDateTime = "2020-03-24"
 * manufacturer = Reference(org-pfizer)
@@ -144,5 +144,5 @@ Title:   "Jan's second successful COVID-19 immunization"
 * protocolApplied.doseNumberPositiveInt = 1
 * protocolApplied.seriesDosesPositiveInt = 2
 * extension[administeredProduct].valueReference = Reference(pfizer-s0003)
-* extension[immunization-confirmationStatus].valueCode = #confirmed
+* extension[vaccination-confirmationStatus].valueCode = #confirmed
 

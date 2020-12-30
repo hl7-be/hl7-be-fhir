@@ -2,12 +2,12 @@
   "resourceType": "CodeSystem",
   "status": "draft",
   "content": "complete",
-  "name": "BeCSImmunizationConfirmationStatus",
-  "id": "be-cs-immunization-confirmation-status",
-  "title": "Immunization status Code System.",
-  "description": "Immunization status Code System.",
+  "name": "BeCSVaccinationConfirmationStatus",
+  "id": "be-cs-vaccination-confirmation-status",
+  "title": "Vaccination status Code System.",
+  "description": "Vaccination status Code System.",
   "version": "0.1.0",
-  "url": "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-immunization-confirmation-status",
+  "url": "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-vaccination-confirmation-status",
   "concept": [
     {
       "code": "unconfirmed",

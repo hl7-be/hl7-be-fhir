@@ -4,9 +4,9 @@
   "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-verificationStatus",
   "version": "0.1.0",
   "name": "BeVerificationStatus",
-  "title": "How certain is the immunization information - confirmed, not confirmed",
+  "title": "How certain is the vaccination information - confirmed, not confirmed",
   "status": "active",
-  "description": "How certain/reliable is the immunization information",
+  "description": "How certain/reliable is the vaccination information",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -62,7 +62,7 @@
         "path": "Extension.valueCode",
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-vs-immunization-confirmation-status"
+          "valueSet": "https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-vs-vaccination-confirmation-status"
         }
       }
     ]

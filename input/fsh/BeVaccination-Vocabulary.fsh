@@ -4,10 +4,10 @@
  */
 /*
 CodeSystem:  BeCSStatusReason
-Id: be-cs-immunization-status-reason
+Id: be-cs-vaccination-status-reason
 //Usage: #definition
-Title: "Immunization status reason Code System."
-Description:  "Immunization reason status Code System."
+Title: "vaccination status reason Code System."
+Description:  "vaccination reason status Code System."
 * #other "other"
 * #IMMUNE "immunity"
 * #MEDPREC "medical precaution"
@@ -22,7 +22,7 @@ Description:  "Immunization reason status Code System."
 
 /*
 CodeSystem:  BeCSVaccineAdministrationRoute
-Id: be-cs-vaccine-administration-route
+Id: be-cs-vaccination-administration-route
 //Usage: #definition
 Title: "Vaccine Administration Route"
 Description:  "Vaccine Administration Route"
@@ -31,41 +31,47 @@ Description:  "Vaccine Administration Route"
 
 
 ValueSet: BeVSVaccineAdministrationRoute
-Id: be-vs-vaccine-administration-route
+Id: be-vs-vaccination-administration-route
 //Usage: #definition
 Title: "Vaccine Administration Route"
 Description:  "Vaccine Administration Route"
 * ^status = #draft
 * codes from system BeCSVaccineAdministrationRoute
+* include http://terminology.hl7.org/CodeSystem/v3-NullFlavor#OTH "Other"
 
 
-
-ValueSet: BeVSImmunizationStatusReason
-Id: be-vs-immunization-status-reason
+ValueSet: BeVSVaccinationStatusReason
+Id: be-vs-vaccination-status-reason
 //Usage: #definition
-Title: "Immunization status Value Set"
-Description:  "Immunization status Value Set"
+Title: "Vaccination status reason Value Set"
+Description:  "Vaccination status reason Value Set - the reasons for an vaccination status - typically representing the reason why a vaccination is not performed"
 * ^status = #draft
 * codes from system BeCSStatusReason
+* include http://terminology.hl7.org/CodeSystem/v3-ActReason#IMMUNE "Immune"
+* include http://terminology.hl7.org/CodeSystem/v3-ActReason#MEDPREC "Medical Precaution"
+* include http://terminology.hl7.org/CodeSystem/v3-ActReason#OSTOCK "Out of Stock"
+* include http://terminology.hl7.org/CodeSystem/v3-ActReason#PATOBJ "Patient Objection"
+
+
 
 /*
-CodeSystem:  BeCSImmunizationConfirmationStatus
-Id: be-cs-immunization-confirmation-status
+CodeSystem:  BeCSVaccinationConfirmationStatus
+Id: be-cs-vaccination-confirmation-status
 //Usage: #definition
-Title: "Immunization status Code System."
-Description:  "Immunization status Code System."
+Title: "vaccination status Code System."
+Description:  "vaccination status Code System."
 * #unconfirmed "unconfirmed"
 * #confirmed "confirmed"
 * #other "other"
 */
 
-ValueSet: BeVSImmunizationConfirmationStatus
+ValueSet: BeVSVaccinationConfirmationStatus
 //Usage: #definition
-Id: be-vs-immunization-confirmation-status
+Id: be-vs-vaccination-confirmation-status
 Title: "Vaccination status Value Set"
 Description:  "Vaccination status Value Set"
 * ^status = #draft
-* codes from system BeCSImmunizationConfirmationStatus
+* codes from system BeCSVaccinationConfirmationStatus
 
 
 /*
@@ -139,19 +145,17 @@ Description: "Naming System - Product Manufacturers"
 * uniqueId[0].preferred = true
 * jurisdiction = urn:iso:std:iso:3166#BE
 
-
-
-Instance: be-ns-one-immunizations
+Instance: be-ns-one-vaccination
 InstanceOf: NamingSystem
 Usage: #definition
-Description: "Naming System - ONE Immunizations"
+Description: "Naming System - ONE vaccinations"
 * status = #active
 * date = "2020-07-24"
-* name = "BeNSONEImmunizations"
+* name = "BeNSONEVaccinations"
 * kind = #identifier
-* description = "Naming System - ONE Immunizations"
+* description = "Naming System - ONE Vaccination"
 * uniqueId[0].type = #uri
-* uniqueId[0].value = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/one-immunizations"
+* uniqueId[0].value = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/one-vaccinations"
 * uniqueId[0].preferred = true
 * jurisdiction = urn:iso:std:iso:3166#BE
 

@@ -75,21 +75,21 @@ Title:    "Immunization Example - 1. Toto normal"
 */
 
 /*
-2m 8 weeks: 
+2m/8 weeks: 
   hexavalent ()
   pneumo
   OPT: rotavirus
-3m 12 weeks: 
+3m/12 weeks: 
   hexavalent
   OPT: rotavirus
  
-4m 16 weeks: 
+4m/16 weeks: 
   hexavalent
   pneumo
   OPT: rotavirus
-12 m:
+12m:
   MMR
-15 m : 
+15m : 
   hexavalent
   mening C
 5-6y:
