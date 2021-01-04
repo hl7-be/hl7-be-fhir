@@ -108,7 +108,7 @@ Title:    ""
 * code = http://snomed.info/sct#762952008
 * patient.reference = "Patient/patient1"
 * onsetDateTime = "2004"
-* encounter.reference = "(allergyintolerance-encounterReference"
+* encounter.reference = "example-encounter-uzgent"
 * recordedDate = "2014-10-09T14:58:00+11:00"
 * recorder.reference = "Practitioner/practitioner1"
 * asserter.reference = "Patient/patient1"
