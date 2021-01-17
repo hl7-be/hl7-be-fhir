@@ -1072,7 +1072,7 @@ A set of examples demonstrates the use of the profile." />
       <description value="Patient Pia feels lonely"/>
       <groupingId value="examples"/>  
     </resource>
-    <resource>
+<!--    <resource>
       <reference>
          <reference value="Condition/pia-postop"/>
       </reference>
@@ -1081,6 +1081,7 @@ A set of examples demonstrates the use of the profile." />
       <description value="Patient Pia had a surgery and needs to recover"/>
       <groupingId value="examples"/> 
     </resource>
+-->
     <resource>
       <reference>
          <reference value="Condition/pia-depression"/>

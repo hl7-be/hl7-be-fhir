@@ -1,0 +1,76 @@
+{
+  "resourceType": "Practitioner",
+  "id": "durant",
+  "meta": {
+    "profile": [
+      "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 50010112345 (OFFICIAL), id: 18749704355 (OFFICIAL)</p><p><b>name</b>: Paul Durant (OFFICIAL)</p><p><b>telecom</b>: ph: 023544117(WORK), <a href=\"mailto:paul.durant@durantclinique.be\">paul.durant@durantclinique.be</a></p><p><b>address</b>: Koning Albertstraat 32, 1785 Merchtem(HOME)</p><p><b>gender</b>: male</p></div>"
+  },
+  "identifier": [
+    {
+      "use": "official",
+      "system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+      "value": "50010112345"
+    },
+    {
+      "use": "official",
+      "system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi",
+      "value": "18749704355"
+    }
+  ],
+  "name": [
+    {
+      "use": "official",
+      "family": "Durant",
+      "given": [
+        "Paul"
+      ],
+      "suffix": [
+        "MD"
+      ]
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "023544117",
+      "use": "work"
+    },
+    {
+      "system": "email",
+      "value": "paul.durant@durantclinique.be",
+      "use": "work"
+    }
+  ],
+  "address": [
+    {
+      "use": "home",
+      "text": "Koning Albertstraat 32, 1785 Merchtem",
+      "line": [
+        "Koning Albertstraat 32"
+      ],
+      "_line": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
+              "valueString": "Koning Albertstraat"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
+              "valueString": "32"
+            }
+          ]
+        }
+      ],
+      "city": "Merchtem",
+      "postalCode": "1785",
+      "country": "BE"
+    }
+  ],
+  "gender": "male"
+}

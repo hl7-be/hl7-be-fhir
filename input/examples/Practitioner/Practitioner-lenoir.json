@@ -1,0 +1,77 @@
+{
+  "resourceType": "Practitioner",
+  "id": "lenoir",
+  "meta": {
+    "profile": [
+      "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 60010112355 (OFFICIAL), id: 17535484332 (OFFICIAL)</p><p><b>name</b>: Katherine François (OFFICIAL)</p><p><b>telecom</b>: ph: 022675198(WORK), <a href=\"mailto:katherine.pulaski@enterprisehospital.be\">katherine.pulaski@enterprisehospital.be</a></p><p><b>address</b>: Jupiterlaan 5, 1853 Grimbergen(HOME)</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1979-12-11</p></div>"
+  },
+  "identifier": [
+    {
+      "use": "official",
+      "system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+      "value": "60010112355"
+    },
+    {
+      "use": "official",
+      "system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi",
+      "value": "17535484332"
+    }
+  ],
+  "name": [
+    {
+      "use": "official",
+      "family": "François",
+      "given": [
+        "Katherine"
+      ],
+      "suffix": [
+        "MD"
+      ]
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "022675198",
+      "use": "work"
+    },
+    {
+      "system": "email",
+      "value": "katherine.pulaski@enterprisehospital.be",
+      "use": "work"
+    }
+  ],
+  "address": [
+    {
+      "use": "home",
+      "text": "Jupiterlaan 5, 1853 Grimbergen",
+      "line": [
+        "Jupiterlaan 5"
+      ],
+      "_line": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
+              "valueString": "Jupiterlaan"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
+              "valueString": "5"
+            }
+          ]
+        }
+      ],
+      "city": "Grimbergen",
+      "postalCode": "1853",
+      "country": "BE"
+    }
+  ],
+  "gender": "female",
+  "birthDate": "1979-12-11"
+}

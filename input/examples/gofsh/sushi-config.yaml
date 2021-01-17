@@ -1,0 +1,5 @@
+canonical: http://sample.org
+fhirVersion: 4.0.1
+FSHOnly: true
+id: sample
+name: Sample

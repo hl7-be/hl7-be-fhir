@@ -1,0 +1,81 @@
+@startuml
+
+
+Title Mobile Medication Administration
+
+actor "Nurse" as Nurse
+participant "Nurse's Tablet" as MAP
+participant "MAR / Scheduler" as OP
+participant "MAR / EHR" as MAC
+
+		
+		
+		
+		
+
+		Nurse-> MAP : Nurse checks today's schedule\n
+
+
+		
+group Query Administration Requests
+MAP-> OP : Query for medication administration orders,\n- For today's shifts\n- For today's patients\n [[#iherxqry Search query1]]\n [[#iherx001bundle Bundle of Medication Requests]]\n
+end
+
+
+		
+
+
+		MAP-> Nurse : Notify (alert)\n
+
+		Nurse-> MAP : Read orders\n
+
+
+
+		
+
+		Nurse-> Nurse : Ask if patient took meds\n
+
+
+		
+alt 
+
+group Yes, Meds taken
+Nurse-> MAP : Register Meds taken\n
+end
+
+group No, Meds NOT taken
+Nurse-> MAP : Register Meds NOT taken\n
+end
+end
+
+
+		
+
+
+
+		Nurse-> Nurse : Administer drug\n
+
+		Nurse-> MAP : Register administration\n
+
+
+		
+
+		
+group P2. Update administration reports
+Nurse-> MAP : Nurse updates administration report\n [[#iheadm002 Lunch meds - taken]]\n
+end
+
+
+		
+
+		
+group P3. Upload administration reports
+MAP-> MAC : Refresh\n [[#iheadm001 ]]\n
+end
+
+
+
+
+	
+
+@enduml
