@@ -13,66 +13,66 @@ participant "MAR / EHR" as MAC
 		
 		
 
-		Nurse-> MAP : Nurse checks today's schedule\n
-
+		
+Nurse -> MAP : Nurse checks today's schedule\n
 
 		
 group Query Administration Requests
-MAP-> OP : Query for medication administration orders,\n- For today's shifts\n- For today's patients\n [[#iherxqry Search query1]]\n [[#iherx001bundle Bundle of Medication Requests]]\n
+
+MAP -> OP : Query for medication administration orders,\n- For today's shifts\n- For today's patients\n[[ExampleScenario-example-resources.html#iherxqry Search query1]][[ExampleScenario-example-resources.html#iherx001bundle Bundle of Medication Requests]]
 end
 
-
 		
 
 
-		MAP-> Nurse : Notify (alert)\n
-
-		Nurse-> MAP : Read orders\n
-
+		
+MAP -> Nurse : Notify (alert)\n
+		
+Nurse -> MAP : Read orders\n
 
 
 		
 
-		Nurse-> Nurse : Ask if patient took meds\n
-
+		
+Nurse -> Nurse : Ask if patient took meds\n
 
 		
 alt 
 
 group Yes, Meds taken
-Nurse-> MAP : Register Meds taken\n
-end
 
+Nurse -> MAP : Register Meds taken\n
+end
 group No, Meds NOT taken
-Nurse-> MAP : Register Meds NOT taken\n
-end
-end
 
+Nurse -> MAP : Register Meds NOT taken\n
+end
+end
 
 		
 
 
 
-		Nurse-> Nurse : Administer drug\n
-
-		Nurse-> MAP : Register administration\n
-
+		
+Nurse -> Nurse : Administer drug\n
+		
+Nurse -> MAP : Register administration\n
 
 		
 
 		
 group P2. Update administration reports
-Nurse-> MAP : Nurse updates administration report\n [[#iheadm002 Lunch meds - taken]]\n
-end
 
+Nurse -> MAP : Nurse updates administration report\n[[ExampleScenario-example-resources.html#iheadm002 Lunch meds - taken]]
+end
 
 		
 
 		
 group P3. Upload administration reports
-MAP-> MAC : Refresh\n [[#iheadm001 ]]\n
-end
 
+MAP -> MAC : Refresh\n[[ExampleScenario-example-resources.html#iheadm001 ]]
+end
 
 
 

@@ -75,7 +75,7 @@
 <li><p>Allergy Intolerance</p></li>
 <li><p><a href="StructureDefinition-be-model-homecare-team.html">Home Care Team</a></p></li>
 <li><p>Care Plan</p></li>
-<li><p><a href="StructureDefinition-be-model-vaccination.html">Vaccination</a></p></li>
+<li><p><a href="StructureDefinition-be-model-immunization.html">Immunization</a></p></li>
 <li><p><a href="StructureDefinition-be-model-patientwill.html">Patient Will</a></p></li>
 <li><p><a href="StructureDefinition-be-model-addiction.html">Addiction</a></p></li>
 <li><p><a href="StructureDefinition-be-model-prescriptionreferral.html">Prescription Referral</a></p></li>

@@ -1,0 +1,55 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "BeCSImmunizationConfirmationStatus",
+  "id": "be-cs-immunization-confirmation-status",
+  "title": "Immunization status Code System.",
+  "description": "Immunization status Code System.",
+  "version": "0.1.0",
+  "url": "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-immunization-confirmation-status",
+  "concept": [
+    {
+      "code": "unconfirmed",
+      "display": "unconfirmed",
+      "designation" : [
+        {
+          "language" : "fr-BE",
+          "value" : "non confirmé"
+        },
+        {
+          "language" : "nl-BE",
+          "value" : "niet bevestigd"
+        }
+      ]
+    },
+    {
+      "code": "confirmed",
+      "display": "confirmed",
+      "designation" : [
+        {
+          "language" : "fr-BE",
+          "value" : "confirmé"
+        },
+        {
+          "language" : "nl-BE",
+          "value" : "bevestigd"
+        }
+      ]
+    },
+    {
+      "code": "other",
+      "display": "other",
+      "designation" : [
+        {
+          "language" : "fr-BE",
+          "value" : "autre"
+        },
+        {
+          "language" : "nl-BE",
+          "value" : "andere"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+	"resourceType": "Communication",
+	"id": "be.comm6",
+	"meta": {
+		"profile": [
+			"https://www.hl7belgium.org/fhir/StructureDefinition/be-communication"
+		]
+	},
+	"language": "nl-BE",
+	"identifier": [
+		{
+			"system": "http://www.dzop.be/archive/communication",
+			"value": "d0000000-0000-0000-0000-000000000009"
+		}
+	],
+	"status": "completed",
+	"category": [
+		{
+			"coding": [
+				{
+					"code": "notification"
+				}
+			]
+		}
+	],
+	"priority": "urgent",
+	"subject": {
+		"reference": "Patient/pia",
+		"display": "pia"
+	},
+	"sent": "2019-11-11T10:20:00+01:00",
+	"recipient": [
+		{
+			"reference": "CareTeam/dzop-team-0002-doctors",
+			"display": "Doctors"
+		}
+	],
+	"sender": {
+		"reference": "Practitioner/dragon",
+		"display": "Dragon"
+	},
+	"payload": [
+		{
+			"contentString": "Please replace the bandage today, I did not do it yesterday in the visit"
+		}
+	]
+}

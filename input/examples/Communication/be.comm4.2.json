@@ -1,0 +1,53 @@
+{
+	"resourceType": "Communication",
+	"id": "be.comm4.2",
+	"meta": {
+		"profile": [
+			"https://www.hl7belgium.org/fhir/StructureDefinition/be-communication"
+		]
+	},
+	"language": "nl-BE",
+	"identifier": [
+		{
+			"value": "d0000000-0000-0000-0000-000000000008"
+		}
+	],
+	"basedOn": [
+		{
+			"reference": "Communication/be.comm4.1"
+		},
+		{
+			"display": "be.comm4.1"
+		}
+	],
+	"status": "completed",
+	"category": [
+		{
+			"coding": [
+				{
+					"code": "reminder"
+				}
+			]
+		}
+	],
+	"subject": {
+		"reference": "Patient/pia",
+		"display": "pia"
+	},
+	"sent": "2019-11-11T09:15:01+01:00",
+	"recipient": [
+		{
+			"reference": "CareTeam/dzop-team-0002-nurses",
+			"display": "Nurses"
+		}
+	],
+	"sender": {
+		"reference": "Organization/dzop",
+		"display": "DZOP"
+	},
+	"payload": [
+		{
+			"contentString": "Patient must be in hospital at 16h00 without food"
+		}
+	]
+}

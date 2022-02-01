@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="be-homecare-plan" />
+  <url value="https://www.hl7belgium.org/fhir/StructureDefinition/be-homecare-plan" />
+  <version value="0.1.0" />
+  <name value="BECarePlan" />
+  <status value="draft" />
+  <description value="This is the profile for Care Plan in a home care setting. A Care Plan contains the activities planned and/or performed by a care team to deliver care for a particular patient, usually targeting a specific goal or condition - or a set thereof." />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="CarePlan" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/CarePlan" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="CarePlan">
+      <path value="CarePlan" />
+      <definition value="Describes the intention of how a care team intends to deliver care for a particular patient, group or community for a period of time, usually limited to care for a specific condition or set of conditions." />
+    </element>
+    <element id="CarePlan.identifier">
+      <path value="CarePlan.identifier" />
+      <mustSupport value="true" />
+    </element>
+    <element id="CarePlan.instantiatesCanonical">
+      <path value="CarePlan.instantiatesCanonical" />
+      <short value="The protocol or definition that is instantiated by this care plan" />
+      <requirements value="This will be used when we have the &quot;Care Plan Templates&quot; - for example from weight loss to quit smoking, or hip replacement surgery physiotherapy for recovery" />
+      <mustSupport value="true" />
+    </element>
+    <element id="CarePlan.instantiatesUri">
+      <path value="CarePlan.instantiatesUri" />
+      <short value="External protocol or definition that is instantiated by this care plan" />
+      <requirements value="This is used for supporting external references to the care plan or protocol e.g. government guidelines" />
+      <mustSupport value="true" />
+    </element>
+    <element id="CarePlan.basedOn">
+      <path value="CarePlan.basedOn" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://www.hl7belgium.org/fhir/StructureDefinition/be-homecare-plan" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="CarePlan.replaces">
+      <path value="CarePlan.replaces" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://www.hl7belgium.org/fhir/StructureDefinition/be-homecare-plan" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="CarePlan.partOf">
+      <path value="CarePlan.partOf" />
+      <definition value="Another care plan of which this particular care plan is a component or step.&#xD;&#xA;Initially we start with 1 umbrella plan, but we want to evolve to include subplans (e.g. specialities) so we include this." />
+      <comment value="Each care plan is an independent request, such that having a care plan be part of another care plan can cause issues with cascading statuses." />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://www.hl7belgium.org/fhir/StructureDefinition/be-homecare-plan" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="CarePlan.status">
+      <path value="CarePlan.status" />
+      <mustSupport value="true" />
+    </element>
+    <element id="CarePlan.intent">
+      <path value="CarePlan.intent" />
+      <mustSupport value="true" />
+    </element>
+    <element id="CarePlan.category">
+      <path value="CarePlan.category" />
+      <definition value="Identifies what &quot;kind&quot; of plan this is to support differentiation between multiple co-existing plans; e.g. &quot;Home health&quot;, &quot;psychiatric&quot;, &quot;asthma&quot;, &quot;disease management&quot;, &quot;wellness plan&quot;, etc.&#xD;&#xA;This should be controlled terminology (e.g. SNOMED)" />
+      <mustSupport value="true" />
+    </element>
+    <element id="CarePlan.title">
+      <path value="CarePlan.title" />
+      <mustSupport value="true" />
+    </element>
+    <element id="CarePlan.description">
+      <path value="CarePlan.description" />
+      <mustSupport value="true" />
+    </element>
+    <element id="CarePlan.subject">
+      <path value="CarePlan.subject" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="CarePlan.encounter">
+      <path value="CarePlan.encounter" />
+      <mustSupport value="true" />
+    </element>
+    <element id="CarePlan.period">
+      <path value="CarePlan.period" />
+      <mustSupport value="true" />
+    </element>
+    <element id="CarePlan.created">
+      <path value="CarePlan.created" />
+      <comment value="Note that this is NOT the care plan start date, but the date it was created" />
+    </element>
+    <element id="CarePlan.author">
+      <path value="CarePlan.author" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient" />
+        <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner" />
+        <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitionerrole" />
+        <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization" />
+        <targetProfile value="https://www.hl7belgium.org/fhir/StructureDefinition/be-homecare-team" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="CarePlan.contributor">
+      <path value="CarePlan.contributor" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient" />
+        <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner" />
+        <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitionerrole" />
+        <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization" />
+        <targetProfile value="https://www.hl7belgium.org/fhir/StructureDefinition/be-homecare-team" />
+      </type>
+    </element>
+    <element id="CarePlan.careTeam">
+      <path value="CarePlan.careTeam" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://www.hl7belgium.org/fhir/StructureDefinition/be-homecare-team" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="CarePlan.goal">
+      <path value="CarePlan.goal" />
+      <mustSupport value="true" />
+    </element>
+    <element id="CarePlan.activity">
+      <path value="CarePlan.activity" />
+      <mustSupport value="true" />
+    </element>
+    <element id="CarePlan.activity.outcomeCodeableConcept">
+      <path value="CarePlan.activity.outcomeCodeableConcept" />
+      <mustSupport value="true" />
+    </element>
+    <element id="CarePlan.activity.progress">
+      <path value="CarePlan.activity.progress" />
+      <mustSupport value="true" />
+    </element>
+    <element id="CarePlan.activity.detail.kind">
+      <path value="CarePlan.activity.detail.kind" />
+      <mustSupport value="true" />
+    </element>
+    <element id="CarePlan.activity.detail.instantiatesCanonical">
+      <path value="CarePlan.activity.detail.instantiatesCanonical" />
+      <mustSupport value="true" />
+    </element>
+    <element id="CarePlan.activity.detail.instantiatesUri">
+      <path value="CarePlan.activity.detail.instantiatesUri" />
+      <mustSupport value="true" />
+    </element>
+    <element id="CarePlan.activity.detail.code">
+      <path value="CarePlan.activity.detail.code" />
+      <mustSupport value="true" />
+    </element>
+    <element id="CarePlan.activity.detail.status">
+      <path value="CarePlan.activity.detail.status" />
+      <mustSupport value="true" />
+    </element>
+    <element id="CarePlan.activity.detail.statusReason">
+      <path value="CarePlan.activity.detail.statusReason" />
+      <mustSupport value="true" />
+    </element>
+    <element id="CarePlan.activity.detail.doNotPerform">
+      <path value="CarePlan.activity.detail.doNotPerform" />
+      <mustSupport value="true" />
+    </element>
+    <element id="CarePlan.activity.detail.scheduled[x]">
+      <path value="CarePlan.activity.detail.scheduled[x]" />
+      <mustSupport value="true" />
+    </element>
+    <element id="CarePlan.activity.detail.location">
+      <path value="CarePlan.activity.detail.location" />
+      <mustSupport value="true" />
+    </element>
+    <element id="CarePlan.activity.detail.performer">
+      <path value="CarePlan.activity.detail.performer" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient" />
+        <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner" />
+        <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitionerrole" />
+        <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization" />
+        <targetProfile value="https://www.hl7belgium.org/fhir/StructureDefinition/be-homecare-team" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="CarePlan.activity.detail.description">
+      <path value="CarePlan.activity.detail.description" />
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>

@@ -1,0 +1,16 @@
+{
+  "resourceType": "Condition",
+  "id": "pia-depression",
+  "subject": {
+    "reference": "Patient/pia",
+    "display": "Pia"
+  },
+  "code": {
+    "text": "Depression",
+    "coding": [
+      {
+        "code": "xxxxxxxxxx"
+      }
+    ]
+  }
+}

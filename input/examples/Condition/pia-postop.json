@@ -1,0 +1,16 @@
+{
+  "resourceType": "Condition",
+  "id": "pia-postop",
+  "subject": {
+    "reference": "Patient/pia",
+    "display": "Pia"
+  },
+  "code": {
+    "text": "Post-op recovery...",
+    "coding": [
+      {
+        "code": "xxxxxxxxxx"
+      }
+    ]
+  }
+}

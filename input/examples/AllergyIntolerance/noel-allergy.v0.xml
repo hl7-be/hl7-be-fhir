@@ -1,0 +1,40 @@
+<AllergyIntolerance xmlns="http://hl7.org/fhir">
+  <id value="noel-allergy.v0"/>
+  <meta>
+    <profile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-allergyintolerance"/>
+  </meta>
+  <clinicalStatus>
+    <coding>
+      <system
+              value="http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"/>
+      <code value="active"/>
+    </coding>
+  </clinicalStatus>
+  <verificationStatus>
+    <coding>
+      <system
+              value="http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"/>
+      <code value="unconfirmed"/>
+    </coding>
+  </verificationStatus>
+  <type value="allergy"/>
+  <category value="medication"/>
+  <code>
+    <coding>
+      <code value="373270004"/>
+      <display value="Penicillin antibacterial"/>
+    </coding>
+    <text value="Allergic to Penicillin antibacterial"/>
+  </code>
+  <patient>
+    <reference value="Patient/noel"/>
+  </patient>
+  <onsetDateTime value="2020"/>
+  <recordedDate value="2020-02-20T14:58:00+11:00"/>
+  <recorder>
+    <reference value="Practitioner/durant"/>
+  </recorder>
+  <note>
+    <text value="to be confirmed by tests."/>
+  </note>
+</AllergyIntolerance>

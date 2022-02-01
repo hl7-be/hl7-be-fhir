@@ -1,0 +1,64 @@
+{
+  "resourceType": "Immunization",
+  "id": "immunization-example-not-given-contraindication",
+  "meta": {
+    "profile": [
+      "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-immunization"
+    ]
+  },
+  "extension": [
+    {
+      "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-recorder",
+      "valueReference": {
+        "reference": "Organization/org-uz-gent"
+      }
+    },
+    {
+      "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-immunizationLocation",
+      "valueReference": {
+        "reference": "Organization/org-uz-gent"
+      }
+    }
+  ],
+  "language": "nl-BE",
+  "identifier": [
+    {
+      "value": "6021840732",
+      "system": "https://www.kindengezin.be/vaccinatie/immunization-register"
+    }
+  ],
+  "status": "not-done",
+  "statusReason": {
+    "coding": [
+      {
+        "code": "MEDPREC",
+        "display": "Contra-indicatie"
+      }
+    ]
+  },
+  "occurrenceDateTime": "2020-03-12",
+  "vaccineCode": {
+    "coding": [
+      {
+        "code": "HBV",
+        "display": "Hepatitis B"
+      }
+    ]
+  },
+  "patient": {
+    "reference": "Patient/pia"
+  },
+  "performer": [
+    {
+      "actor": {
+        "reference": "Organization/org-uz-gent"
+      }
+    }
+  ],
+  "occurrenceString": "Summer 2011",
+  "note": [
+    {
+      "text": "Patiënt heeft nu koorts, aanbevolen 1 ​​week te wachten"
+    }
+  ]
+}

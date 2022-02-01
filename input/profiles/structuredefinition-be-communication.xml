@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="be-communication" />
+  <url value="https://www.hl7belgium.org/fhir/StructureDefinition/be-communication" />
+  <version value="0.1.0" />
+  <name value="BECommunication" />
+  <status value="draft" />
+  <description value="This is the technical specification for the Communication resource, as it is used in Belgium.&#xD;&#xA;&#xD;&#xA;This technical specification corresponds to the FHIR implementation of the Communication section of the Logical Data Model.&#xD;&#xA;&#xD;&#xA;This specification is compatible with the current version of KMEHR Diary Note, namely the selection of attributes that are supported, and the maximum length of the payload (320 characters).&#xD;&#xA;&#xD;&#xA;It also relies on the foundation Belgium resources, for example the Belgian Patient, Practitioner and other resources.&#xD;&#xA;" />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="w5" />
+    <uri value="http://hl7.org/fhir/fivews" />
+    <name value="FiveWs Pattern Mapping" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Communication" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Communication" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Communication.identifier">
+      <path value="Communication.identifier" />
+      <short value="Unique identifier for this communication"/>
+      <definition value="Unique identifier for this communication. Unlike the resource's _id, this identifier must resolve across systems."/>
+      <mustSupport value="true" />
+    </element>
+<!--
+    <element id="Communication.instantiatesCanonical">
+      <path value="Communication.instantiatesCanonical" />
+      <max value="0" />
+    </element>
+    <element id="Communication.instantiatesUri">
+      <path value="Communication.instantiatesUri" />
+      <max value="0" />
+    </element>
+-->
+    <element id="Communication.status">
+      <path value="Communication.status" />
+      <short value="Status of this communication: preparation | in-progress | not-done | on-hold | stopped | completed | entered-in-error | unknown"/>
+      <mustSupport value="true" />
+    </element>
+    <element id="Communication.subject">
+      <path value="Communication.subject" />
+      <short value="Subject of the communication - typically Patient"/>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient" />
+      </type>
+    </element>
+    <element id="Communication.topic">
+      <path value="Communication.topic" />
+      <short value="Topic of the communication"/>
+      <definition value="The topic of communication is related to the type of goal (BE) / Type of activity that the communication is about (FHIR)"/>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="preferred" />
+        <valueSet value="https://www.hl7belgium.org/fhir/ValueSet/be-diarytopic" />
+      </binding>
+    </element>
+    <element id="Communication.sent">
+      <path value="Communication.sent" />
+      <short value="Date and Time that the communication has been sent"/>
+      <mustSupport value="true" />
+    </element>
+    <element id="Communication.recipient">
+      <short value="Intended receiver of the communication"/>
+      <definition value="This field indicates the intended receiver of the communication. For messages, this SHALL be explicitly indicated, even when it can be assumed e.g. to be the patient's Care Team. For diary notes, this can be optional."/>
+      <path value="Communication.recipient" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Communication.sender">
+      <path value="Communication.sender" />
+      <short value="The actual sender of the communication"/>
+      <definition value="This field contains the sender of the communication. If the communication is entered by a nurse on behalf of a physician, this shall refer to the nurse."/>
+      <mustSupport value="true" />
+    </element>
+    <element id="Communication.payload">
+      <path value="Communication.payload" />
+      <short value="The content of the communication or diary note. Text (up to 320 characters), Attachments (base-64 encoded) or References."/>
+      <definition value="This content can be free Text (up to 320 characters), or Attachments (e.g. a photo) or References to other resources (e.g. a Binary resource containing a photo)."/>
+      <comment value="For systems that are intending to be backwards compatible with KMEHR, only the text is allowed."/>
+      <mustSupport value="true" />
+    </element>
+    <element id="Communication.payload.content[x]">
+      <path value="Communication.payload.content[x]" />
+      <short value="Communication content" />
+      <definition value="A communicated content (or for multi-part communications, one portion of the communication). This can be a string, an attachment, or a reference to a resource." />
+      <type>
+        <code value="string" />
+<!--
+        <profile value="https://www.hl7belgium.org/fhir/StructureDefinition/string320" />
+-->
+      </type>
+      <type>
+        <code value="Attachment" />
+      </type>
+      <type>
+        <code value="Reference" />
+      </type>
+      <comment value="NOTE: The string element is valid only for FHIR 4.0.1, and it will likely be replaced by another data type (Annotation) in future releases of FHIR and of this profile." />
+
+    </element>
+  </differential>
+</StructureDefinition>

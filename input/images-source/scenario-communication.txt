@@ -16,33 +16,33 @@ actor "David" as david
     
     
     
-    DZOP-> natalie : Blood must be taken\n [[#be.comm1 Resource 1]]\n
-
+    
+DZOP -> natalie : Blood must be taken\n[[ExampleScenario-scenario-communication-resources.html#be.comm1 Resource 1]]
     
 group Process
-natalie-> careteam : Patient has eaten... (NL)\n [[#be.comm2 Resource 2]]\n
-natalie-> careteam : Patient has eaten... (FR)\n [[#be.comm2 Resource 2]]\n
-natalie-> careteam : Patient has eaten... (EN)\n [[#be.comm2 Resource 2]]\n
-end
 
+natalie -> careteam : Patient has eaten... (NL)\n[[ExampleScenario-scenario-communication-resources.html#be.comm2 Resource 2]]
+natalie -> careteam : Patient has eaten... (FR)\n[[ExampleScenario-scenario-communication-resources.html#be.comm2 Resource 2]]
+natalie -> careteam : Patient has eaten... (EN)\n[[ExampleScenario-scenario-communication-resources.html#be.comm2 Resource 2]]
+end
     
 group Process
-dragon-> careteam : Today is also possible if patient can at 16h00\n [[#be.comm2 Resource 2]]\n
-natalie-> careteam : Patient can do it at 16h00\n [[#be.comm2 Resource 2]]\n
-end
 
+dragon -> careteam : Today is also possible if patient can at 16h00\n[[ExampleScenario-scenario-communication-resources.html#be.comm2 Resource 2]]
+natalie -> careteam : Patient can do it at 16h00\n[[ExampleScenario-scenario-communication-resources.html#be.comm2 Resource 2]]
+end
     
 group Process
-DZOP-> nurses : New Appointment - 16h00\n [[#be.comm2 Resource 2]]\n
-DZOP-> natalie : Reminder - blood collection at 16h00\n [[#be.comm2 Resource 2]]\n
-end
 
+DZOP -> nurses : New Appointment - 16h00\n[[ExampleScenario-scenario-communication-resources.html#be.comm2 Resource 2]]
+DZOP -> natalie : Reminder - blood collection at 16h00\n[[ExampleScenario-scenario-communication-resources.html#be.comm2 Resource 2]]
+end
     
 group Process
-natalie-> david : Send attachment\n [[#be.comm2 Resource 2]]\n
-david-> doctors : Forward\n [[#be.comm2 Resource 2]]\n
-end
 
+natalie -> david : Send attachment\n[[ExampleScenario-scenario-communication-resources.html#be.comm2 Resource 2]]
+david -> doctors : Forward\n[[ExampleScenario-scenario-communication-resources.html#be.comm2 Resource 2]]
+end
   
 
 @enduml

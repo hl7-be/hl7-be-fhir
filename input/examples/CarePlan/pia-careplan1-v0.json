@@ -1,0 +1,88 @@
+{
+  "resourceType": "CarePlan",
+  "meta": {
+    "profile": [
+      "https://www.hl7belgium.org/fhir/StructureDefinition/be-homecare-plan"
+    ],
+    "versionId": "0"
+  },
+  "id": "pia-careplan1-v0",
+  "status": "draft",
+  "intent": "proposal",
+  
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "homecare"
+        }
+      ]
+    }
+  ],
+  "title": "Careplan Pia 2019-2020",
+  "description": "Care plan for Pia to manage diabetes.",
+  "period": {
+    "start": "2019-11-02"
+  },
+  "created": "2019-11-02T09:15:15Z",
+  "author": {
+    "reference": "Practitioner/dragon"
+  },
+  "subject": {
+    "reference": "Patient/pia"
+  },
+  "contributor": [
+    {
+      "reference": "Practitioner/dragon"
+    }
+  ],
+  "careTeam": [
+    {
+      "reference": "CareTeam/dzop-team-0002.v1"
+    }
+  ],
+  "addresses": [
+    {
+      "reference": "Condition/pia-diabetes"
+    }
+  ],
+  "supportingInfo": [
+    {
+      "identifier": {
+        "system": "http://belrai.be",
+        "type": {
+          "coding": [
+            {
+              "code": "74196-7"
+            }
+          ]
+        }
+      }
+    }
+  ],
+
+  "goal": [
+    {
+      "display":"Diabetes management for Patient Pia"
+    },
+    {
+      "display":"Depression recovery"
+    },
+    {
+      "display":"Restore family connections"
+    }
+  ],
+
+  "activity": [
+    {
+      "progress": [
+        {
+          "text": "Planned"
+        }
+      ],
+      "reference": {
+        "display": "Appointment with nurse"
+      }
+    }
+  ]
+}

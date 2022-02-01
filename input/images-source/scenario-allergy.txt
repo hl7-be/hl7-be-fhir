@@ -12,26 +12,26 @@ actor "Dr. Lenoir\n(Specialist)" as SPEC
     
     
 
-    GP-> VAULT : Get patient's allergies\n [[#EB Empty Bundle]]\n
+    
+GP -> VAULT : Get patient's allergies\n[[ExampleScenario-scenario-allergy-resources.html#EB Empty Bundle]]
 
 
 
-
-    GP-> VAULT : Create new Allergy record entry\n [[#noel-allergy.v0 Allergy Record]]\n
-
-
-
-    SPEC-> VAULT : Get patient's allergies\n [[#noel-allergy.v0 Allergy Record]]\n
+    
+GP -> VAULT : Create new Allergy record entry\n[[ExampleScenario-scenario-allergy-resources.html#noel-allergy.v0 Allergy Record]]
 
 
-
-
-    SPEC-> VAULT : Update Allergy record\n [[#noel-allergy.v1 Updated Allergy Record]]\n
+    
+SPEC -> VAULT : Get patient's allergies\n[[ExampleScenario-scenario-allergy-resources.html#noel-allergy.v0 Allergy Record]]
 
 
 
-    GP-> VAULT : Get patient's allergies\n [[#noel-allergy.v1 Updated Allergy Record]]\n
+    
+SPEC -> VAULT : Update Allergy record\n[[ExampleScenario-scenario-allergy-resources.html#noel-allergy.v1 Updated Allergy Record]]
 
+
+    
+GP -> VAULT : Get patient's allergies\n[[ExampleScenario-scenario-allergy-resources.html#noel-allergy.v1 Updated Allergy Record]]
 
 
 
