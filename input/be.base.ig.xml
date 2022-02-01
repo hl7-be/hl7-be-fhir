@@ -1365,7 +1365,7 @@ A set of examples demonstrates the use of the profile." />
          <description value="NamingSystem - Product Manufacturer" />
          <groupingId value="vaccination" />
       </resource>
-
+<!--
       <resource>
          <reference>
             <reference value="Immunization/toto-hexa1" />
@@ -1488,7 +1488,7 @@ A set of examples demonstrates the use of the profile." />
       </resource>
       <resource>
          <reference>
-            <reference value="ImmunizationRecommendation/order-gabriel-flu" />
+            <reference value="MedicationRequest/order-gabriel-flu" />
          </reference>
          <fhirVersion value="4.0.1" />
          <name value="Gabriel - Flu vaccine prescription" />
@@ -1497,7 +1497,7 @@ A set of examples demonstrates the use of the profile." />
       </resource>
       <resource>
          <reference>
-            <reference value="ImmunizationRecommendation/order-simon-hpv" />
+            <reference value="MedicationRequest/order-simon-hpv" />
          </reference>
          <fhirVersion value="4.0.1" />
          <name value="Simon - HPV vaccine prescription" />
@@ -1534,7 +1534,7 @@ A set of examples demonstrates the use of the profile." />
       </resource>
       <resource>
          <reference>
-            <reference value="ImmunizationRecommendation/aymeric-rota" />
+            <reference value="MedicationRequest/aymeric-rota" />
          </reference>
          <fhirVersion value="4.0.1" />
          <name value="Aymeric - rotavirus prescription" />
@@ -1611,6 +1611,36 @@ A set of examples demonstrates the use of the profile." />
          <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination" />
          <groupingId value="vaccination" />
       </resource>
+      <resource>
+         <reference>
+            <reference value="Immunization/Immunization-covid-jan-1" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Jan's first COVID-19 vaccine" />
+         <description value="Jan's first COVID-19 vaccine" />
+         <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination" />
+         <groupingId value="immunization" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="Immunization/Immunization-covid-jan-2-discarded" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Jan's second COVID-19 vaccine - discarded" />
+         <description value="Jan's second COVID-19 vaccine - discarded" />
+         <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination" />
+         <groupingId value="immunization" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="Immunization/Immunization-covid-jan-3" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Jan's second COVID-19 vaccine" />
+         <description value="Jan's second COVID-19 vaccine" />
+         <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination" />
+         <groupingId value="immunization" />
+      </resource>
 
       <resource>
          <reference>
@@ -1621,7 +1651,7 @@ A set of examples demonstrates the use of the profile." />
          <description value="Observation - swelling reaction" />
          <groupingId value="vaccination" />
       </resource>
-
+-->
 <!--
       <resource>
          <reference>
