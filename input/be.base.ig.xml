@@ -1364,7 +1364,7 @@ A set of examples demonstrates the use of the profile." />
          <description value="NamingSystem - Product Manufacturer" />
          <groupingId value="immunization" />
       </resource>
-
+<!--
       <resource>
          <reference>
             <reference value="Immunization/toto-hexa1" />
@@ -1620,7 +1620,7 @@ A set of examples demonstrates the use of the profile." />
          <description value="Observation - swelling reaction" />
          <groupingId value="immunization" />
       </resource>
-
+-->
 <!--
       <resource>
          <reference>
